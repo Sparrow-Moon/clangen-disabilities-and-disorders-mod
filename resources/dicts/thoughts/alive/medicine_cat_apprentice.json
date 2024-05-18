@@ -262,22 +262,22 @@
 	{
         "id": "starwalker_medicine_cat_apprentice",
         "thoughts": [
-            "Is intently focusing on the herbs they're sorting.",
-			"Forgot to eat today and is wondering if anyone will notice if they take prey in the night",
+            "Is intently focusing on the herbs {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sorting",
+			"Forgot to eat today and is wondering if anyone will notice if {PRONOUN/m_c/subject} take prey in the night",
 			"Is doing circles around the medicine cat den",
-			"Chattering to r_c all about the herbs that they're learning.",
-			"Is intently watching as spiders spin cobwebs in the corner of the medicine den",
-			"Swishing their tail happily while they sort herbs",
-			"Volunteers to collect extra herbs for their mentor.",
-			"Is dilligently checking up on their sick clanmates.",
-			"Chatters to nobody about their favourite herbs.",
-			"Wonders about the first medicine cats.",
+			"Is chattering to r_c about all of the herbs that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} learning",
+			"Is intently watching as spiders spin webs in the corner of the medicine den",
+			"Is swishing {PRONOUN/m_c/poss} tail happily while they sort herbs",
+			"Volunteers to collect extra herbs for {PRONOUN/m_c/poss} mentor",
+			"Is diligently checking up on their sick Clanmates",
+			"Chatters to nobody about {PRONOUN/m_c/poss} favourite herbs",
+			"Wonders about the first medicine cats",
 			"Has heard that rats know how to cure Carrionplace Disease",
 			"Is worrying about r_c",
-			"Is worrying that they have forgotten something while sorting the herbs",
+			"Is worrying that {PRONOUN/m_c/subject} {VERB/m_c/have/has} forgotten something while sorting the herbs",
 			"Keeps rolling in the catmint to try and calm down",
-			"Hopes that their medicine cat name will end in -wing",
-			"Didn't hear r_c calling their name and was surprised when they looked up from the herbs"
+			"Hopes that {PRONOUN/m_c/poss} medicine cat name will end in -wing",
+			"Didn't hear r_c calling {PRONOUN/m_c/poss} name and was surprised when {PRONOUN/m_c/subject} looked up from the herbs"
         ],
         "perm_conditions": {
             "m_c": [
@@ -303,14 +303,14 @@
 	{
         "id": "ocd_medicine_cat_apprentice",
         "thoughts": [
-            "Is intently focusing on the herbs they're sorting.",
-			"Forgot to eat today and is stressing about it to their denmates",
+            "Is intently focusing on the herbs {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sorting",
+			"Forgot to eat today and is stressing about it to {PRONOUN/m_c/poss} denmates",
 			"Is recounting the herbs and making sure they're even",
 			"Is sorting the herbs into piles based on size",
 			"Is double checking that none of the herbs have gone bad",
-			"Talking to r_c about an issue they came into the den about last week",
+			"Is talking to r_c about an issue {PRONOUN/m_c/subject} ran into about the den last week",
 			"Was seen chucking out day old herbs",
-			"Is crying to r_c because they don't think they're good enough to be a medicine cat",
+			"Is crying to r_c because {PRONOUN/m_c/subject} don't think {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} good enough to be a medicine cat",
 			"Cries while sorting the moss for the nests",
 			"Cries because the cobwebs aren't even around the den"
         ],
@@ -334,5 +334,4 @@
             "living"
         ]
 	}
-	
 ]
