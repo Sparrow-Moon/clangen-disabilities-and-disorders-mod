@@ -1118,25 +1118,52 @@
                 "lasting grief"
             ]
         }
-	},
+    },
     {
         "id": "recurring shock",
         "thoughts": [
             "Visits the medicine cat den for thyme",
-			"Wakes up screaming after a nightmare",
-			"Panics after hearing a noise",
-			"Is seen trembling and looking around nervously",
-			"Snaps at r_c before profusely apologizing",
-			"Is comforted by r_c after a flashback",
-			"Is the only cat awake at moonhigh",
-			"Doesn't seem to enjoy hunting anymore",
-			"Is avoiding {PRONOUN/m_c/poss} Clanmates",
-			"Is startled after r_c snuck up behind {PRONOUN/m_c/object}"
+            "Wakes up screaming after a nightmare",
+            "Panics after hearing a noise",
+            "Is seen trembling and looking around nervously",
+            "Snaps at r_c before profusely apologizing",
+            "Is comforted by r_c after a flashback",
+            "Is the only cat awake at moonhigh",
+            "Doesn't seem to enjoy hunting anymore",
+            "Is avoiding {PRONOUN/m_c/poss} Clanmates",
+            "Is startled after r_c snuck up behind {PRONOUN/m_c/object}"
         ],
         "perm_conditions": {
             "m_c": [
                 "recurring shock"
             ]
         }
-	}
+    },
+    {
+        "id": "declawed_warrior",
+        "thoughts": [
+            "Flexes {PRONOUN/m_c/poss} sore paws in frustration",
+            "Refuses to give up on {PRONOUN/m_c/poss} dreams",
+            "Is determined to show that {PRONOUN/m_c/subject} can still be a real warrior",
+            "Put in extra effort this moon",
+            "Still has {PRONOUN/m_c/poss} teeth to bite any and all challengers",
+            "Is still just as capable as any other cat",
+            "Doesn't accept been looked down on from anyone",
+            "Volunteers for the dawn patrol",
+            "Is having a bit of a hard day",
+            "Is practicing battle moves that don't require claws",
+            "Misses {PRONOUN/m_c/poss} claws deeply",
+            "Feels insecure after meeting a cat from another Clan at the border",
+            "Goes on a solo hunt to keep busy"
+        ],
+        "main_status_constraint": [
+            "apprentice",
+            "warrior"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "declawed"
+            ]
+        }
+    }
 ]
