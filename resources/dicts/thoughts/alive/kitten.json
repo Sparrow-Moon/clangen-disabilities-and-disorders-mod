@@ -484,6 +484,58 @@
         "main_trait_constraint": [
             "bossy"
         ]
+    },
+    {
+        "id": "otherworldly_mind_to_alive_gen",
+        "thoughts": [
+            "Wants the monsters to go away",
+            "Is scared of the monster following {PRONOUN/m_c/object} around",
+            "Is making friends with the monster following {PRONOUN/m_c/object} around",
+            "Is talking to a cat that is invisible",
+            "Is having a conversation with a bird",
+            "Is hiding from something the other kits can't see"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "otherworldly mind"
+            ]
+        },
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "thunderous_spirit_to_alive_gen",
+        "thoughts": [
+            "Can't stop crying",
+            "Had a nightmare that r_c abandoned {PRONOUN/m_c/object}",
+            "Doesn't want to be left alone"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "thunderous spirit"
+            ]
+        },
+        "random_status_constraint": [
+            "kitten"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "disrupted_senses_kit",
+        "thoughts": [
+            "Complains loudly about how the world hates {PRONOUN/m_c/object}",
+            "Cries about how the world is too much",
+            "Is overwhelmed by all the sensations around {PRONOUN/m_c/object}",
+            "Wants to snuggle but doesn't like the feeling of touch",
+            "Doesn't like how much of the world there is"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "disrupted senses"
+            ]
+        }
     }
 ]
-
