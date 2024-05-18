@@ -393,19 +393,80 @@
             "childish"
         ]
     },
-    { "id": "childish_apprentice_elder",
+    {
+        "id": "childish_apprentice_elder",
         "thoughts": [
             "Pouts about being asked to check the elders for ticks",
             "Is hiding instead of taking care of the elders",
             "Is listening to r_c tell stories instead of cleaning out the den"
         ],
-        "main_trait_constraint":[
+        "main_trait_constraint": [
             "childish"
         ],
-        "random_status_constraint":[
+        "random_status_constraint": [
             "elder"
         ]
+    },
+	{
+        "id": "paralyzed_warrior_apprentice",
+        "thoughts": [
+            "Is eager to prove {PRONOUN/m_c/self} capable", 
+            "Refuses to let anyone say {PRONOUN/m_c/subject} can't be a warrior", 
+            "Is the fastest cat on two legs", 
+            "Carefully judges whether {PRONOUN/m_c/subject} can do their tasks for the day", 
+            "Is proudly standing among {PRONOUN/m_c/poss} Clanmates", 
+            "Wonders if {PRONOUN/m_c/subject} could become leader one day", 
+            "Hopes {PRONOUN/m_c/subject} {VERB/m_c/are/is} an inspiration", 
+            "Knows {PRONOUN/m_c/subject} {VERB/m_c/are/is} complete even without use of their hindlegs"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "paralyzed"
+            ]
+        }
+    },
+	{
+        "id": "starwalker_warrior_apprentice",
+        "thoughts": [
+            "Is eager to prove {PRONOUN/m_c/self} capable", 
+            "Weaves through {PRONOUN/m_c/poss} battle training like it's a dance", 
+            "Is very wriggly today", 
+            "Is chattering at anyone who comes close to {PRONOUN/m_c/object}", 
+            "Got distracted by some interesting bugs", 
+            "Got distracted by some songbirds in the trees", 
+            "Practices extra hard in the hopes to get ahead", 
+            "Dreams that {PRONOUN/m_c/subject} might one day be leader", 
+            "Wonders if Twolegs can speak cat", 
+            "Wonders why kittypets don't try to escape", 
+            "Found a kittypet's bell and played with it for most of the afternoon"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "starwalker",
+                "comet spirit"
+            ]
+        }
+    },
+	{
+        "id": "anxious_warrior_apprentice",
+        "thoughts": [
+            "Pretends that {PRONOUN/m_c/subject} can't hear {PRONOUN/m_c/poss} mentor calling {PRONOUN/m_c/object} for training", 
+            "Is hiding in the nursery like a kitten", 
+            "Jumped at a leaf that landed on {PRONOUN/m_c/poss} back", 
+            "Isn't sure that {PRONOUN/m_c/subject} {VERB/m_c/are/is} capable enough to be a warrior", 
+            "Is experiencing self doubt", 
+            "Trained alone so {PRONOUN/r_c/subject} wouldn't have to feel watched", 
+            "Messed up a practice move because {PRONOUN/m_c/subject} second guessed it", 
+            "Tripped over {PRONOUN/m_c/poss} own paws trying to stop too fast", 
+            "Is worried that {PRONOUN/m_c/subject}'ll never get any better", 
+            "Got scared of the mouse {PRONOUN/m_c/subject} {VERB/m_c/were/was} supposed to catch", 
+            "Is worried about the clouds in the sky", 
+            "Wonders if {PRONOUN/m_c/subject} should have been a medicine cat apprentice instead"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "anxiety"
+            ]
+        }
     }
-           
-    
 ]
