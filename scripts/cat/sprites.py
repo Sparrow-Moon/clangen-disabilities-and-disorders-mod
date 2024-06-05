@@ -132,7 +132,7 @@ class Sprites():
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
             'sokokecolours', 'agouticolours', 'singlestripecolours', 'maskedcolours',
             'shadersnewwhite', 'lightingnew',
-            'whitepatches', 'tortiepatchesmasks',
+            'whitepatches', 'tortiepatchesmasks', 'albinism', 'melanism',
             'fademask', 'fadestarclan', 'fadedarkforest',
             'symbols'
         ]:
@@ -194,6 +194,31 @@ class Sprites():
         for row, patches in enumerate(white_patches):
             for col, patch in enumerate(patches):
                 self.make_group('whitepatches', (col, row), f'white{patch}')
+
+        ##Albinism + Melanism Sheets
+        for a, i in enumerate(
+                ['FLATALBINO', 'REDALBINO', 'PINKALBINO', 'VIOLETALBINO', 'BLUEALBINO', 'GREENALBINO',
+                    'YELLOWALBINO']):
+            self.make_group('albinism', (a, 0), f'albinism{i}')     
+            self.make_group('albinism', (7, 0), f'skinALBINO')     
+            self.make_group('albinism', (8, 0), f'blepALBINO')  
+        for a, i in enumerate(
+                ['PINK', 'VIOLETPINK', 'YELLOWPINK', 'CYANPINK', 'BLUEPINK', 'MINTPINK', 'LIGHTBROWN', 'GHOSTPINK']):
+            self.make_group('albinism', (a, 1), f'eyes' + i)
+            self.make_group('albinism', (a, 2), f'eyes2{i}')
+            self.make_group('albinism', (a, 3), f'lazyeyes{i}')	
+        for a, i in enumerate(
+                ['FLATMELANISTIC', 'REDMELANISTIC', 'PINKMELANISTIC', 'VIOLETMELANISTIC', 'BLUEMELANISTIC',
+                    'GREENMELANISTIC', 'YELLOWMELANISTIC']):
+            self.make_group('melanism', (a, 0), f'melanism{i}')    
+            self.make_group('melanism', (7, 0), f'skinMELANISTIC')     
+            self.make_group('melanism', (8, 0), f'blepMELANISTIC')  
+        for a, i in enumerate(
+                ['RUBEN', 'DUSK', 'SUNSHADOW', 'DARKCYAN', 'DEEPBLUE', 'FERN', 'DARKBROWN', 'BLACKHOLE']):
+            self.make_group('melanism', (a, 1), f'eyes' + i)
+            self.make_group('melanism', (a, 2), f'eyes2{i}')
+            self.make_group('melanism', (a, 3), f'lazyeyes{i}')
+
 
         # Define colors and categories
         color_categories = [

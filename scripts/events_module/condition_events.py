@@ -433,7 +433,7 @@ class Condition_Events():
             "echoing shock", "irritable bowels", "loose body", "longcough", "burning light", "disrupted senses",
             "constant nightmares", "constant rash", "jellyfish joints", "lazy eye", "shattered soul", "budding spirit",
             "pcos", "infertile", "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism",
-            "curved spine", "jumbled mind", "counting fog"
+            "curved spine", "jumbled mind", "counting fog", "infertile"
 
         ]
 
@@ -591,7 +591,8 @@ class Condition_Events():
         injury_progression = {
             "poisoned": "redcough",
             "shock": "lingering shock",
-            "wretched claws": "declawed"
+            "wretched claws": "declawed",
+            "cutter's sickness": "infertile"
         }
 
         # need to hold this number so that we can check if the leader has died

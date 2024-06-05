@@ -75,7 +75,7 @@
         "retirement": [
             "Cats will never retire due to a permanent condition",
             "When this setting is off, cats with permanent conditions will choose whether or not they want to retire.",
-            false
+            true
         ],
         "become_mediator": [
             "Allow warriors and elders to choose to become mediators",

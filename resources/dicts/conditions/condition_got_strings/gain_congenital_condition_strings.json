@@ -82,6 +82,19 @@
         "r_c notices with some concern that any time m_c opens {PRONOUN/m_c/poss} eyes, {PRONOUN/m_c/subject} {VERB/m_c/mewl/mewls} incessantly and try to wriggle into the darkest corners of the medicine cat den. r_c suspects {PRONOUN/m_c/subject} may have chronic headaches.",
         "Rather than go outside in the bright sunlight to play with {PRONOUN/m_c/poss} littermates, m_c prefers to huddle by {PRONOUN/m_c/self} in the dark and quiet of the medicine cat den, {PRONOUN/m_c/poss} head hurting too much to move."
     ],
+	"albinism": [
+		"r_c has been watching the nursery carefully, {PRONOUN/r_c/subject} {VERB/r_c/suspect/suspects} that something about m_c is more than just been light furred, {PRONOUN/r_c/poss} suspicion is only heightened by how m_c avoids going into sunlight where {PRONOUN/m_c/subject} can.",
+		"While a light furred kitten isn't uncommon there's mutterings in the clan when m_c opens {PRONOUN/m_c/poss} eyes for the first time. It's known how light-furred and light-eyed kittens tend to have more health issues.",
+		"When m_c opens {PRONOUN/m_c/poss} eyes the first thing {PRONOUN/m_c/subject} {VERB/m_c/do/does} is complain about how bright the entire world is.",
+		"m_c doesn't come out into the clearing much, preferring to hide in the sheltered darkness of the nursery.",
+		"m_c keeps complaining about how the sun is bad and hurts {PRONOUN/m_c/poss} eyes."
+	],
+	"melanism": [
+		"r_c watches as m_c struggles to get out during the day, panting when the sun falls directly on {PRONOUN/m_c/object}.",
+		"m_c doesn't like playing at night, always squinting and struggling to see where {PRONOUN/m_c/subject} {VERB/m_c/are/is} going.",
+		"When {PRONOUN/m_c/poss} parent takes {PRONOUN/m_c/object} out for night trips to the dirtplace m_c whines about how much {PRONOUN/m_c/subject} {VERB/m_c/hate/hates} it.",
+		"m_c doesn't like going out in the sunshine at midday, {PRONOUN/m_c/subject} {VERB/m_c/complain/complains} it's simply too hot."
+	],
     "starwalker": [
 	   "m_c has been having issues socializing with {PRONOUN/m_c/poss} denmates, {PRONOUN/m_c/subject} {VERB/m_c/find/finds} it uncomfortable and somewhat terrifying. r_c understanding talks with {PRONOUN/m_c/object} about it saying {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} have to force {PRONOUN/m_c/self} into it.",
        "m_c is just like any other kit, rolling around and batting at bugs {PRONOUN/m_c/subject} {VERB/m_c/find/finds}. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} a bit louder, a bit more brash and doesn't seem to understand social cues. m_c might walk the paths between the stars.",

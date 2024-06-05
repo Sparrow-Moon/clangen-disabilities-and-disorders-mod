@@ -301,6 +301,52 @@
             "cold",
             "vengeful"
         ]
+    },	
+	{
+		"id": "skeptic_leader",
+		"thoughts": [
+			"Doesn't understand how {PRONOUN/m_c/subject} {VERB/m_c/have/has} managed to become leader",
+			"Doesn't feel worthy of the power that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} thrumming under {PRONOUN/m_c/poss} pelt",
+			"Shakes {PRONOUN/m_c/poss} head and insists that {PRONOUN/m_c/subject} only {VERB/m_c/have/has} one life and won't waste it",
+			"Stands proud to lead {PRONOUN/m_c/poss} clan",
+			"Is thinking about how to handle some news the medicine cat has told {PRONOUN/m_c/object}",
+			"Is worrying about the changing seasons",
+			"Is worried about the whispers of twoleg movements",
+			"Recently met a kittypet on the border",
+			"Is thinking about the future of c_n",
+			"Wonders if {PRONOUN/m_c/subject} should meet with the leader of another clan to talk about the recent revelations",
+			"Is worried about the next gathering",
+			"Doesn't feel worthy to be the leader",
+			"Is questioning if {PRONOUN/m_c/subject} should have been chosen as leader at all"
+		],
+		"main_trait_constraint": [
+			"skeptic"
+		]
+    },	
+	{
+		"id": "skeptic_leader_faithful_deputy",
+		"thoughts": [
+			"Talks to r_c about {PRONOUN/m_c/poss} insecurities as leader",
+			"Is talking to r_c about the strange dreams {PRONOUN/m_c/subject} {VERB/m_c/are/is} having recently",
+			"Is glad that r_c is {PRONOUN/m_c/poss} deputy",
+			"Wishes that r_c was the one having {PRONOUN/m_c/poss} dreams instead",
+			"Fully trusts r_c as deputy",
+			"Let's r_c take the lead for this moon's gathering",
+			"Talks to r_c about StarClan"
+		],
+		"main_trait_constraint": [
+			"skeptic"
+		],
+        "random_status_constraint": [
+            "deputy"
+        ],
+        "random_living_status":[
+            "living"
+        ],
+        "random_trait_constraint": [
+            "faithful",
+			"loyal"
+        ]
     }
    
 ]

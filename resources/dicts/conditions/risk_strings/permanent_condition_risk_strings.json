@@ -81,7 +81,10 @@
         "torn pelt": [
             "m_c licks the scrape on {PRONOUN/m_c/poss} pelt fastidiously. {PRONOUN/m_c/subject/CAP} might not be able to feel it, but {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been warned of the danger of infection by r_c.",
             "Rough ground in camp has torn m_c's pelt as {PRONOUN/m_c/subject} {VERB/m_c/drag/drags} {PRONOUN/m_c/self} around."
-        ]
+        ],   
+		"curved spine": [
+        "m_c can barely get out of {PRONOUN/m_c/poss} bed due to back pain. r_c feels {PRONOUN/m_c/poss} back and realizes that {PRONOUN/m_c/poss} spine is curved."
+		]
     },
     "raspy lungs": {
         "whitecough": [
@@ -320,8 +323,9 @@
 			"As m_c takes yet another night patrol, {PRONOUN/m_c/poss} Clanmates can only take notice of how worn down {PRONOUN/m_c/subject} {VERB/m_c/seem/seems}."
 		],
 		"kittenspace": [
-			"Sometimes, m_c feels younger than the age {PRONOUN/m_c/poss} body is. {PRONOUN/m_c/subject/CAP} talk to r_c about it, worried something is wrong with {PRONOUN/m_c/object}, but r_c assures {PRONOUN/m_c/object} that what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling is perfectly normal - {PRONOUN/m_c/poss} brain is just in kittenspace",
-			"m_c, despite being old for a kit, acts younger then {PRONOUN/m_c/subject} {VERB/m_c/are/is} sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in kittenspace."
+			"m_c has slipped into a safer frame of mind, following r_c around like a kitten and seeking the reassurance that everything will be okay.",
+			"While it's a little bit worrying how floaty m_c feels, {PRONOUN/m_c/subject} {VERB/m_c/find/finds} {PRONOUN/m_c/self} much more at ease to just let {PRONOUN/m_c/self} be a kitten in mind once more.",
+			"m_c has slipped back into a more kitten-like mindspace, wandering around the camp with a new sense of wonder and security."
 		],
 		"puppyspace": [
 			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just in puppyspace, and that's okay." ,
@@ -401,6 +405,78 @@
 				"As if m_c doesn't have enough issues with {PRONOUN/m_c/poss} headaches, now {PRONOUN/m_c/poss} ears are buzzing and no matter how much they shake {PRONOUN/m_c/poss} head or hide, it doesn't go away."
 		]
     },
+	"albinism": {
+		"sunblindness": [
+			"Seeing m_c been guided towards the medicine den r_c slips inside to make sure that everything is tucked away safely and neatly in preparation.",
+			"m_c winces at both the pain in {PRONOUN/m_c/poss} eyes as well as the fact that {PRONOUN/m_c/subject} can't really see and can only hear the clammour of {PRONOUN/m_c/poss} clanmates around {PRONOUN/m_c/object}.",
+			"m_c curses {PRONOUN/m_c/poss} sensitive eyes, now {PRONOUN/m_c/subject} {VERB/m_c/have/has} to spend time recovering from the glare of the sun.",
+			"The light of the sun reflecting off the grass and pools of water on the ground have caused m_c's eyes to ache and {PRONOUN/m_c/poss} vision to vanish."
+		],
+		"partial hearing loss": [
+			"r_c has to call a few times before m_c seems to hear {PRONOUN/r_c/object} for a talk about {PRONOUN/m_c/poss} ears. It's gentle but m_c still furiously denies that there's anything wrong.",
+			"The clan has noticed that it's taking a few repeats before m_c seems to actually hear what is been discussed.",
+			"m_c curls up in the shade of the den, frustrated by how the world seems a little bit duller recently."
+		],
+		"wasting disease": [
+			"m_c has been feeling really sick recently so {PRONOUN/m_c/subject} {VERB/m_c/go/goes} to r_c to talk about it. After some discussion they're both left worried with the conclusion it might be wasting disease.",
+			"Knowing that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a bit weaker than {PRONOUN/m_c/poss} clanmates m_c isn't surprised to find {PRONOUN/m_c/self} extra tired and ill recently.",
+			"Even knowing {PRONOUN/m_c/subject} {VERB/m_c/are/is} a bit weaker than {PRONOUN/m_c/poss} clanmates m_c never expected to be feeling this weak. Scarily it feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} fading."
+		],
+		"headache": [
+			"r_c carefully brings some water over to m_c where {PRONOUN/m_c/subject} {VERB/m_c/lie/lies} curled up in the medicine den with a headache.",
+			"The day is so bright, too bright for m_c that it makes {PRONOUN/m_c/object} wince and go back into the den to curl up and avoid the punishing glow."
+		],
+		"sunburn": [
+			"r_c winces alongside m_c as {PRONOUN/m_c/subject} {VERB/m_c/come/comes} into the medicine den, pale fur shining with the bright horrible red marks below.",
+			"{PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} only out in the sun for a short while... but it was long enough for m_c to get a sunburn.",
+			"m_c is feeling miserable and sore, regretting giving into the urge to nap in a sunbeam."
+		],
+		"severe sunburn": [
+			"r_c shakes {PRONOUN/r_c/poss} head seeing m_c gently herded into the medicine den. Not only is m_c sunburnt, it's a severe one.",
+			"m_c didn't think that {PRONOUN/m_c/subject} {VERB/m_c/were/was} out in the sun for that long, yet the angry red marks stingling under {PRONOUN/m_c/poss} fur tells another story.",
+			"m_c's unfortunately gotten a severe burn from been out in the heat of the sun this moon.",
+			"With {PRONOUN/m_c/poss} light and fine fur it's no wonder that poor m_c's had to go to the medicine den for a sunburn this season."
+		],
+		"running nose": [
+			"While it's only a small sniffle, m_c still goes to the medicine den and r_c just to make sure.",
+			"m_c trots to the medicine den with a runny nose."
+		],
+		"overstimulation": [
+			"r_c gently eases m_c out of the crowded camp and into the medicine den. It's not much but {PRONOUN/r_c/subject} {VERB/r_c/hope/hopes} that it's less overwhelming in the shaded cover of the den.",
+			"m_c's struggling more than usual this moon, the world too bright, too loud, far too overwhelming for {PRONOUN/m_c/object} to deal with easily.",
+			"With a shaking head and twitching tail, m_c looks wildly around the camp. {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} far too wound up by everything that's going on."
+		]
+	},
+	"melanism": {
+		"sunblindness": [
+			"r_c listens to m_c as {PRONOUN/m_c/subject} {VERB/m_c/complain/complains} about the sun's glare reflecting up into {PRONOUN/m_c/poss} eyes.",
+			"It's not uncommon for m_c to struggle with walking around at night.",
+			"m_c blinks out the darkness from {PRONOUN/m_c/poss} eyes... it doesn't work."
+		],
+		"heat stroke": [
+			"m_c weakly pants for someone to fetch r_c, something is more wrong than usual.",
+			"m_c finds {PRONOUN/m_c/self} cursing {PRONOUN/m_c/poss} black fur, it makes {PRONOUN/m_c/object} warm up too fast and struggle to cool down, panting and uselessly rolling in the coolest corner of the den they could find mind more than a little hazy."
+		],
+		"heat exhaustion": [
+			"r_c softly guides m_c into a much cooler and shaded corner of the medicine den. Away from the heat of the sun.",
+			"If there's one thing dark black fur isn't good for it's the heat. Poor m_c has been lying desperately in a puddle in the hopes to cool down."
+		],
+		"running nose": [
+			"After all the extra work that m_c has been doing for the clan {PRONOUN/m_c/subject} {VERB/m_c/come/comes} to r_c with a small bit of a running nose just to be safe.",
+			"Overworking {PRONOUN/m_c/self} has made m_c a little bit worn down and {PRONOUN/m_c/subject} {VERB/m_c/have/has} gotten a running nose.",
+			"m_c keeps sniffing and is ferried off to the medicine cat den."
+		],
+		"understimulation": [
+			"m_c listlessly paces in the den around r_c. Neither of them quite know what to do to get rid of the thrumming energy that's in {PRONOUN/m_c/object}.",
+			"With some frustration, m_c paces around the camp feeling like something is just off with the camp and world this moon.",
+			"m_c's tail keeps lashing out behind {PRONOUN/m_c/object}, frustrated by a sense that something is wrong but unable to explain to {PRONOUN/m_c/poss} clanmates why."
+		],
+		"fatigue": [
+			"r_c looks up to see m_c flop into the den. {PRONOUN/m_c/poss/CAP} {VERB/m_c/admit/admits} that it's just so tiring how the clan looks to {PRONOUN/m_c/object}.",
+			"After all the extra work that m_c has been doing around the camp, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} exhausted {PRONOUN/m_c/self}.",
+			"m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been on {PRONOUN/m_c/poss} feet for days, maybe {PRONOUN/m_c/subject} could sleep for that long as well."
+		]
+	},
     "heavy soul": {
         "lasting grief": [
             "r_c lays comfortingly beside m_c, purring as {PRONOUN/r_c/subject} {VERB/r_c/try/tries} to comfort {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} grief seems worse then normal, to a place not even herbs or words can fix.",
@@ -537,7 +613,15 @@
 			"m_c realizes that they are a budding spirit when one of {PRONOUN/m_c/poss} alters says it out loud!",
 			"m_c is starting to suspect that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a budding spirit because of the voices {PRONOUN/m_c/subject} hear.",
 			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a budding spirit. "
-		]
+		],        
+		"jumbled mind": [
+            "Being a comet spirit affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess.",
+            "Being a comet spirit affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess."
+        ],
+        "counting fog":[
+            "Being a comet spirit affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog.",
+            "Being a comet spirit affects how m_c processes numbers. The medicine cat assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
+        ]
     },
     "starwalker": {
 		"special interest": [
@@ -604,11 +688,15 @@
 		],
 		"kittenspace": [
 			"Sometimes, m_c feels younger than the age {PRONOUN/m_c/poss} body is. {PRONOUN/m_c/subject/CAP} talk to r_c about it, worried something is wrong with {PRONOUN/m_c/object}, but r_c assures {PRONOUN/m_c/object} that what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling is perfectly normal - {PRONOUN/m_c/poss} brain is just in kittenspace",
-			"m_c, despite being old for a kit, acts younger then {PRONOUN/m_c/subject} {VERB/m_c/are/is} sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in kittenspace."
+			"m_c, despite being old for a kit, acts younger then {PRONOUN/m_c/subject} {VERB/m_c/are/is} sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in kittenspace.",
+			"Sometimes m_c feels small and floaty, retreating to the safespace of {PRONOUN/m_c/poss} kittenhood feelings.",
+			"Despite been grown, m_c finds comfort in acting and playing around the camp like a small kitten.",
+			"m_c purrs and rolls around the camp, acting much like the youngest kittens in the nursery."
 		],
 		"puppyspace": [
 			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just in puppyspace, and that's okay." ,
-			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in puppyspace."
+			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in puppyspace.",
+			"m_c is rolling around and letting out little yaps as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a dog."
 		],
 		"kitten regressor": [
 			"m_c feels younger than the age {PRONOUN/m_c/poss} body is. {PRONOUN/m_c/subject/CAP} talk to r_c about it, worried something is wrong with {PRONOUN/m_c/object}, but r_c assures {PRONOUN/m_c/object} that what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling is perfectly normal - {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a kitten regressor.",
@@ -648,7 +736,15 @@
 			"m_c realizes that they are a budding spirit when one of {PRONOUN/m_c/poss} alters says it out loud!",
 			"m_c is starting to suspect that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a budding spirit because of the voices {PRONOUN/m_c/subject} hear.",
 			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a budding spirit. "
-		]
+		],        
+		"jumbled mind": [
+            "Being a starwalker affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess.",
+			"Being a starwalker affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess."
+        ],
+        "counting fog":[
+            "Being a starwalker affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog.",
+            "Being a starwalker affects how m_c processes numbers. The medicine cat assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
+        ]
     },
     "obsessive mind": {
 		"anxiety attack": [
@@ -896,6 +992,11 @@
 		"ear buzzing": [
 			"Due to m_c's lack of proper sleep, it's no surprise to r_c when {PRONOUN/m_c/subject} {VERB/m_c/come/comes} in, complaining of a buzzing in {PRONOUN/m_c/poss} ears that's not helping anything.",
 			"m_c grumbles about the ringing in {PRONOUN/m_c/poss} ears sounding like the bell on a kittypet's collar."
+		],
+		"kittenspace": [
+			"In {PRONOUN/m_c/poss} sleepy state, m_c has started to follow r_c around a bit like the younger kittens. Even badgering r_c with question after question about {PRONOUN/r_c/poss} work.",
+			"m_c isn't sure if it's just because of {PRONOUN/m_c/poss} tiredness or something else, but recently {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to have slipped into a mindset more like a young kitten.",
+			"m_c has been rolling around in {PRONOUN/m_c/poss} nest and whining about not wanting to sleep and nobody can make {PRONOUN/m_c/object}!"
 		],
 		"dizziness": [
 				"Sheepishly, m_c tells r_c that when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up, {PRONOUN/m_c/subject} {VERB/m_c/get/gets} really light-headed and dizzy.",

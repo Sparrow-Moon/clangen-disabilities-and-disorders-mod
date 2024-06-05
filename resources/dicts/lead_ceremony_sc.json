@@ -32,7 +32,14 @@
             "m_c leaves to speak with StarClan. {PRONOUN/m_c/subject/CAP} {VERB/m_c/close/closes} {PRONOUN/m_c/poss} eyes and {VERB/m_c/awaken/awakens} under a vast, inky black sky. {PRONOUN/m_c/subject/CAP} {VERB/m_c/turn/turns} around to see a wary group of cats approaching, stars dotting their fur."
       ]
 
-    }
+    },
+    "skeptic": {
+      "tags": [],
+      "lead_trait": ["skeptic"],
+      "text": [
+        "m_c leaves to speak with StarClan, not entirely certain that they will meet with {PRONOUN/m_c/object} tonight. With some hesitance {PRONOUN/m_c/subject} {VERB/m_c/close/closes} {PRONOUN/m_c/poss} eyes, opening them again to starry fields and Clanmates, friends long gone. Amusement radiates as the crowd greets the newest leader."
+      ]
+    }	
   },
 
   "default_life": {
@@ -49,6 +56,19 @@
       "life_giving": [
         {
           "text": "The starry cat approaches {PRONOUN/m_c/object} and, although the cat is unfamiliar, their meeting still feels like a reunion with an old friend. \"My name is r_c. You meet me tonight, but the cats under your care will all meet me one day when they join the stars. For now,\" the cat presses {PRONOUN/r_c/poss} nose to m_c's forehead, \"Take this gift, to help you [virtue].\"",
+          "virtue": ["endure in the face of hardship", "know when to fight and when to choose peace", "have the strength to overcome your fears", "lead with tireless energy", "see the dawn behind the darkness", "find wisdom in desperate times"]
+        }
+      ]
+    },
+
+    "only_guide_skeptic": {
+      "tags": ["new_clan", "guide"],
+      "lead_trait": ["skeptic"],
+      "star_trait": [],
+      "rank": [],
+      "life_giving": [
+        {
+          "text": "m_c hisses startled by the Starry Cat that approaches, although the cat is unfamiliar, their meeting reassures {PRONOUN/m_c/object}, feeling much like a reunion with an old friend. \"My name is r_c. You meet me tonight, but the cats under your care will all meet me one day when they join the stars. For now,\" the cat presses {PRONOUN/r_c/poss} nose to m_c's forehead, \"Take this gift, to help you [virtue].\"",
           "virtue": ["endure in the face of hardship", "know when to fight and when to choose peace", "have the strength to overcome your fears", "lead with tireless energy", "see the dawn behind the darkness", "find wisdom in desperate times"]
         }
       ]
@@ -779,6 +799,24 @@
         }
       ]
     },
+
+    "skeptic_warrior": {
+      "tags": [],
+      "lead_trait": ["skeptic"],
+      "star_trait": [],
+      "rank": ["warrior", "deputy"],
+      "life_giving": [
+        {
+          "text": "With a purr of amusement r_c steps up to m_c. Bowing {PRONOUN/r_c/poss} head, r_c presses noses with m_c giving {PRONOUN/m_c/object} a life for [virtue].",
+          "virtue": ["acceptance", "bravery", "certainty", "clear judgement", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
+        },
+        {
+          "text": "r_c reassures m_c that the clan trusts {PRONOUN/m_c/object} to be a good leader even despite {PRONOUN/m_c/poss} skeptic nature. With a purr of reassurance r_c offers a life for [virtue] before stepping back into the crowd.",
+          "virtue": ["faith", "hope", "trust in StarClan", "resiliance", "humility", "belief", "conviction"]
+        }
+      ]
+    },
+	
     "default_kit": {
       "tags": [],
       "lead_trait": [],

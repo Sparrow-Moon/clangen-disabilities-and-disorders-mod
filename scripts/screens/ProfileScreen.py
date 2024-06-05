@@ -935,6 +935,8 @@ class ProfileScreen(Screens):
                     continue
                 elif "declawed" in the_cat.permanent_condition:
                     output += 'declawed'
+                elif the_cat.permanent_condition in ["albinism", "melanism":
+                    continue
                 else:
                     output += 'has a permanent condition'
 

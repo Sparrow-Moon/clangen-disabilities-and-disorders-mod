@@ -1048,10 +1048,18 @@ class Events:
                 else:
                     text += "child."
 
+            ##Now we attempt something risky
+            cutter = random.randint(0, 50)
+            if cutter <= 10:
+                cat.get_injured("cutter's sickness")
+                text += " Of course not all seems entirely well.",
+                "m_c has to stop by the Medicine Den due to {PRONOUN/m_c/poss} worrying state of Cutter's Sickness."
+
             text = event_text_adjust(Cat, text, lost_cat, clan=game.clan)
 
             game.cur_events_list.append(
                 Single_Event(text, "misc", cat_IDs))
+
 
         # Perform a ceremony if needed
         print("checking ceremonies for returned cat")

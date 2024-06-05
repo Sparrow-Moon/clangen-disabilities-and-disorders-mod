@@ -287,7 +287,7 @@ class Pregnancy_Events():
             return
 
         thinking_amount = random.choices(["correct", "incorrect", "unsure"], [4, 1, 1], k=1)
-        if amount <= 3:
+        if amount <= 6:
             correct_guess = "small"
         else:
             correct_guess = "large"
@@ -303,7 +303,7 @@ class Pregnancy_Events():
             else:
                 text = Pregnancy_Events.PREGNANT_STRINGS["litter_guess"][0]
         else:
-            text = Pregnancy_Events.PREGNANT_STRINGS["litter_guess"][2]
+            text = choice(Pregnancy_Events.PREGNANT_STRINGS["unsure_litter_guess"])
 
         if clan.game_mode != 'classic':
             try:
@@ -951,13 +951,13 @@ class Pregnancy_Events():
     def get_amount_of_kits(cat):
         """Get the amount of kits which will be born."""
         min_kits = game.config["pregnancy"]["min_kits"]
-        min_kit = [min_kits] * game.config["pregnancy"]["one_kit_possibility"][cat.age]
-        two_kits = [min_kits + 1] * game.config["pregnancy"]["two_kit_possibility"][cat.age]
-        three_kits = [min_kits + 2] * game.config["pregnancy"]["three_kit_possibility"][cat.age]
-        four_kits = [min_kits + 3] * game.config["pregnancy"]["four_kit_possibility"][cat.age]
-        five_kits = [min_kits + 4] * game.config["pregnancy"]["five_kit_possibility"][cat.age]
-        max_kits = [game.config["pregnancy"]["max_kits"]] * game.config["pregnancy"]["max_kit_possibility"][cat.age]
-        amount = choice(min_kit + two_kits + three_kits + four_kits + five_kits + max_kits)
+        max_kits = game.config["pregnancy"]["max_kits"]
+        tiny_litter = [random.randint(min_kits, 3)] * game.config["pregnancy"]["tiny_litter_possibility"][cat.age]
+        small_litter = [random.randint(4, 6)] * game.config["pregnancy"]["small_litter_possibility"][cat.age]
+        large_litter = [random.randint(7, 9)] * game.config["pregnancy"]["large_litter_possibility"][cat.age]
+        huge_litter = [random.randint(10, max_kits)] * game.config["pregnancy"]["huge_litter_possibility"][cat.age]
+
+        amount = choice(tiny_litter + small_litter + large_litter + huge_litter)
 
         return amount
 

@@ -360,5 +360,23 @@
             "mediator",
             "mediator apprentice"
         ]
+    },
+    {
+        "id": "gen_dead_skeptic_cat",
+        "thoughts": [
+            "Is constantly surprised to be in the starfields.",
+			"Wonders at the stars around {PRONOUN/m_c/object}",
+			"Is struggling to understand that this is real",
+			"Watches over c_n in awe",
+			"Still can't believe that StarClan is real",
+			"Is wondering if this means there are other afterlives",
+			"Worries about the cats in the Dark Forest",
+			"Worries that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} deserve to really be here",
+			"Is in awe that {PRONOUN/m_c/subject} {VERB/m_c/get/gets} to see how c_n continues to grow without {PRONOUN/m_c/object}",
+			"Is curious about the tunnel to the Dark Forest"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ]
     }
 ]

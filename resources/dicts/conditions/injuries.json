@@ -1100,7 +1100,9 @@
         "cause_permanent": [
             "recurring shock",
 			"echoing shock",
-			"anxiety"
+			"anxiety",
+			"shattered soul",
+			"budding spirit"
         ],
         "herbs": [
             "thyme",
@@ -1342,7 +1344,8 @@
         ],
         "cause_permanent": [
             "paralyzed",
-            "recurring shock"
+            "recurring shock",
+			"curved spine"
         ],
         "herbs": [
             "juniper",
@@ -1376,7 +1379,8 @@
             "shock"
         ],
         "cause_permanent": [
-            "recurring shock"
+            "recurring shock",
+			"infertile"
         ],
         "herbs": [
             "dandelion",
@@ -1622,7 +1626,86 @@
             "moss"
         ]
     },
-
+    "sunburn":{
+        "duration": 2,        
+		"severity": "major",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "an infected wound",
+                "chance": 25
+            }
+        ],
+		"also_got": [
+			"heat exhaustion"
+		],
+        "cause_permanent": [
+        ],
+        "herbs": [
+            "cobwebs",
+            "marigold",
+            "wild_garlic",
+            "oak_leaves",
+            "goldenrod",
+            "juniper",
+            "ragwort",
+            "poppy",
+            "moss"
+        ]
+    },	
+    "severe sunburn":{
+        "duration": 4,
+        "severity": "severe",
+        "medicine_duration": 3,
+        "mortality": {
+            "newborn": 50,
+            "kitten": 50,
+            "adolescent": 100,
+            "young adult": 130,
+            "adult": 130,
+            "senior adult": 130,
+            "senior": 100
+        },
+        "illness_infectiousness": 0,
+        "risks": [
+            {
+                "name": "an infected wound",
+                "chance": 15
+            },
+			{
+				"name": "rash",
+				"chance": 15
+			}
+        ],
+		"also_got": [
+			"heat exhaustion"
+		],
+        "cause_permanent": [
+			"wasting disease"
+        ],
+        "herbs": [
+            "cobwebs",
+            "marigold",
+            "wild_garlic",
+            "oak_leaves",
+            "goldenrod",
+            "juniper",
+            "ragwort",
+            "poppy",
+            "moss"
+        ]
+    },
     "earache": {
         "duration": 1,
         "severity": "minor",
@@ -1795,6 +1878,58 @@
         ],
         "herbs": [
             
+        ]
+    },
+    "cutter's sickness": {
+        "duration": 3,
+        "severity": "minor",
+        "medicine_duration": 2,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 85,
+            "adolescent": 100,
+            "young adult": 100,
+            "adult": 150,
+            "senior adult": 85,
+            "senior": 50
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+			{
+				"name": "stomachache",
+				"chance": 10
+			},
+            {
+                "name": "headache",
+                "chance": 20
+            },
+			{
+				"name": "fatigue",
+				"chance": 10
+			},
+			{
+				"name": "sleeplessness",
+				"chance": 20
+			},
+			{
+				"name": "kittenspace",
+				"chance": 15
+			},
+			{
+				"name": "lethargy",
+				"chance": 30
+			}
+        ],
+        "also_got": [],
+        "cause_permanent": [
+			"infertile"
+        ],
+        "herbs": [
+            "juniper",
+            "thyme",
+            "poppy",
+			"catmint"
         ]
     },
 

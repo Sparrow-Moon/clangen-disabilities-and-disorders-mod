@@ -22,12 +22,12 @@
     "CHOCOLATE": "brown"
   },
   "possible_tints": {
-    "basic": ["pink", "gray", "red", "orange", "none"],
-    "warm": ["yellow", "purple"],
-    "cool": ["blue", "purple", "black"],
-    "white": ["yellow"],
-    "monochrome": ["blue", "black"],
-    "brown": ["yellow", "purple", "black"]
+    "basic": ["pink", "gray", "red", "orange", "lilac", "none"],
+    "warm": ["yellow", "purple", "lilac"],
+    "cool": ["blue", "purple", "black", "night", "green", "forest"],
+    "white": ["yellow", "white"],
+    "monochrome": ["blue", "black", "night"],
+    "brown": ["yellow", "purple", "black", "scarlet", "birch", "olive"]
   },
   "tint_colours":
   {
@@ -39,6 +39,14 @@
     "yellow": [250, 248, 225],
     "purple": [235, 225, 244],
     "blue": [218, 237, 245],
+	"green": [226, 245, 236],
+	"forest": [179, 194, 187],
+	"lilac": [244, 225, 244],
+	"scarlet": [194, 179, 180],
+	"birch": [194, 186, 175],
+	"olive": [190, 194, 179],
+	"night": [178, 190, 195],
+	"white": [231, 243, 243],
     "none": null
   }
 }

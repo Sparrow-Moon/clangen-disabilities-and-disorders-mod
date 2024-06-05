@@ -22,12 +22,13 @@
     "CHOCOLATE": "brown"
   },
   "possible_tints": {
-    "basic": ["none", "offwhite", "offwhite"],
-    "black": ["gray", "darkcream", "cream"],
-    "gray": ["gray"],
-    "ginger": ["darkcream", "cream", "pink"],
-    "brown": ["darkcream", "cream"],
-    "white": []
+    "basic": ["none", "offwhite", "offwhite", "blue-white", "sunshine", "starkit", "mint"],
+    "black": ["gray", "darkcream", "cream", "sunshine", "gold"],
+    "gray": ["gray", "blue"],
+    "ginger": ["darkcream", "cream", "pink", "ginger", "fire", "sunshine"],
+    "brown": ["darkcream", "cream", "birch", "gold", "lilac", "darklilac"],
+    "dark": ["black", "scarlet", "midnight"],
+	"white": []
   },
   "tint_colours":
   {
@@ -36,6 +37,20 @@
     "offwhite": [238, 249, 252],
     "gray": [208, 225, 229],
     "pink": [254, 248, 249],
+	"blue-white":[241, 241, 255],
+	"mint": [230, 250, 244],
+	"black": [74, 72, 76],
+	"midnight": [66, 64, 76],
+	"fire": [243, 227, 219],
+	"ginger": [243, 232, 214],
+	"scarlet": [76, 70, 70],
+	"birch": [204, 194, 186],
+	"starkit": [255, 243, 255],
+	"sunshine": [255, 255, 232],
+	"gold": [243, 236, 214],
+	"blue": [224, 230, 243],
+	"lilac": [240, 231, 243],
+	"darklilac": [224, 212, 230],
     "none": null
   }
 }

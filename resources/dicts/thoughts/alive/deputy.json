@@ -319,6 +319,25 @@
         "random_status_constraint": [
             "apprentice"
         ]
+    },
+	{
+        "id": "skeptic_deputy_to_gen",
+        "thoughts": [
+            "Is having a crisis about {PRONOUN/m_c/poss} position as deputy",
+			"Wonders how {PRONOUN/m_c/subject} will ever survive as leader",
+			"Doubts that {PRONOUN/m_c/subject} will recieve nine lives",
+			"Carefully choses cats for the daily patrols",
+			"Worries about the clan",
+			"Worries about what will happen when the leader dies",
+			"Curls up in {PRONOUN/m_c/poss} den and wonders if {PRONOUN/m_c/subject} will truly be able to fill the pawsteps of a leader",
+			"Follows the code as much as {PRONOUN/m_c/subject} can",
+			"Was forced to mediate between arguing clanmates",
+			"Is doubtful that anyone in c_n could look up to {PRONOUN/m_c/object}",
+			"Is struggling to understand how {PRONOUN/m_c/subject} recieved this position"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ]
     }
 
 ]

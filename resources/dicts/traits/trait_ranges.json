@@ -233,7 +233,13 @@
             "sociability": [0, 16],
             "aggression": [6, 10],
             "stability": [10, 16]
-        }
+        },
+		"skeptic": {
+            "lawfulness": [0, 8],
+            "sociability": [10, 14],
+            "aggression": [4, 12],
+            "stability": [10, 16]
+		}
     },
     "kit_traits": {
         "unruly": {

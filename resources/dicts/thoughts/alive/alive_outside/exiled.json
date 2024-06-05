@@ -15,5 +15,27 @@
             "Is thinking bitterly about {PRONOUN/m_c/poss} former Clanmates",
             "Is enjoying the chance to really put {PRONOUN/m_c/poss} hunting skills to the test"
         ]
-    }
+    },
+	{
+		"id": "skeptic_exiled",
+		"thoughts": [
+		  "Scoffs at the thought that {PRONOUN/m_c/subject} deserve this",
+		  "Curls up in a den and listens to the rain",
+		  "Is missing the company of c_n",
+		  "Is telling some rogues about c_n",
+		  "Is watching some kittypets and scoffing",
+		  "Doesn't believe that this is a fair punishment",
+		  "Wonders what r_c is doing",
+		  "Wonders if anyone will care when {PRONOUN/m_c/subject} {VERB/m_c/die/dies}",
+		  "Wonders if {PRONOUN/m_c/subject} will actually go to any kind of afterlife",
+		  "Imagines that {PRONOUN/m_c/subject} might be wandering the world forever"
+		],
+		"main_status_constraint": [
+		  "exiled"
+		],
+		"main_trait_constraint": [
+		  "skeptic"
+		]
+	}
+
 ]

@@ -349,6 +349,46 @@ class Cat():
             # APPEARANCE
             self.pelt = Pelt.generate_new_pelt(self.gender, [Cat.fetch_cat(i) for i in (self.parent1, self.parent2) if i], self.age)
 
+            specialty_conditions = []            
+            self_specialty = randint(1,120)
+            if self_specialty == 1 and example is False:            
+                for condition in PERMANENT:
+                    specialty = PERMANENT[condition]
+                    if specialty["congenital"] in ['genetic']:
+                        specialty_conditions.append(condition)
+            
+                new_condition = choice(specialty_conditions)
+                
+                # ALBINO AND MELANISTIC CATS! REAL! #
+                if new_condition == "albinism":
+                    self.pelt.skin = "ALBINO"
+                    self.pelt.albino = choice(Pelt.albinism)
+                    self.pelt.eye_colour = choice(Pelt.albino_eyes)
+                    if self.pelt.eye_colour2 != None:
+                        possible_eyes = Pelt.albino_eyes.copy()
+                        possible_eyes.remove(self.pelt.eye_colour)
+                        self.pelt.eye_colour2 = choice(possible_eyes)                  
+                    if self.pelt.lazy_eye != None:
+                        if self.pelt.eye_colour2 != None:
+                            self.pelt.lazy_eye = self.pelt.eye_colour2
+                        else: 
+                            self.pelt.lazy_eye = self.pelt.eye_colour
+                elif new_condition == "melanism":
+                    self.pelt.skin = "MELANISTIC"
+                    self.pelt.melanistic = choice(Pelt.melanism)
+                    self.pelt.eye_colour = choice(Pelt.melanistic_eyes)
+                    if self.pelt.eye_colour2 != None:
+                        possible_eyes = Pelt.melanistic_eyes.copy()
+                        possible_eyes.remove(self.pelt.eye_colour)
+                        self.pelt.eye_colour2 = choice(possible_eyes)
+                    if self.pelt.lazy_eye != None:
+                        if self.pelt.eye_colour2 != None:
+                            self.pelt.lazy_eye = self.pelt.eye_colour2
+                        else: 
+                            self.pelt.lazy_eye = self.pelt.eye_colour
+
+                self.get_permanent_condition(new_condition, born_with=True)
+
             #Personality
             self.personality = Personality(kit_trait=self.is_baby())
 
@@ -3167,7 +3207,10 @@ class Cat():
                 "white_patches": self.pelt.white_patches,
                 "vitiligo": self.pelt.vitiligo,
                 "points": self.pelt.points,
+                "albino": self.pelt.albino,
+                "melanistic": self.pelt.melanistic,
                 "white_patches_tint": self.pelt.white_patches_tint,
+                "vitiligo_tint": self.pelt.vitiligo_tint,
                 "pattern": self.pelt.pattern,
                 "tortie_base": self.pelt.tortiebase,
                 "tortie_color": self.pelt.tortiecolour,

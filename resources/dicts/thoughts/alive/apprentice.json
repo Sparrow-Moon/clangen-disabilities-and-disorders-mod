@@ -426,6 +426,85 @@
             "elder"
         ]
     },
+    {
+        "id": "skeptic_warrior_apprentice",
+        "thoughts": [
+            "Is questioning if {PRONOUN/m_c/subject} even {VERB/m_c/want/wants} to be a warrior in the future",
+			"Is wondering if {PRONOUN/m_c/subject} even should be a clan cat",
+			"Doubts StarClan is real",
+			"Proudly trots through the camp after {PRONOUN/m_c/subject} made an amazing catch",
+			"Is frowning as an elder tells {PRONOUN/m_c/object} stories of how the clans came to be",
+			"Scoffs at the idea that the leader has nine lives",
+			"Isn't sure {PRONOUN/m_c/subject} truly {VERB/m_c/believe/believes} the code is right"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ]
+    },	
+    {
+        "id": "skeptic_apprentice_to_other",
+        "thoughts": [
+            "Doesn't believe r_c's tales of adventures",
+			"Doesn't believe r_c is telling the truth about {PRONOUN/r_c/poss} skills",
+			"Mocks r_c for {PRONOUN/r_c/poss} unfailing belief in the warrior code",
+			"Is worried that r_c might be too guillible",
+			"Doesn't feel like {PRONOUN/m_c/subject} {VERB/m_c/fit/fits} in with the other apprentices",
+			"Got into a debate with the other apprentices over the warrior code",
+			"Feels jealous of r_c's beliefs in StarClan",
+			"Wonders if {PRONOUN/m_c/subject} could ever be as great as the other apprentices",
+			"Feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} the odd one out",
+			"Is wondering if any of the other apprentices actually like {PRONOUN/m_c/object}",
+			"Confessed to r_c {PRONOUN/m_c/subject} {VERB/m_c/didn't/don't} actually want to be a clan cat"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ],
+        "random_status_constraint": [
+            "apprentice",
+			"medicine cat apprentice",
+			"mediator apprentice"
+        ]
+    },	
+    {
+        "id": "skeptic_warrior_apprentice_to_disabled",
+        "thoughts": [
+            "Wonders why if StarClan's real it would let cats be hurt at all",
+			"Wonders at how brave r_c is",
+			"Wonders if r_c likes {PRONOUN/m_c/object}",
+			"Talks to r_c about the accomodations the clan has set up for {PRONOUN/r_c/object}",
+			"Helps r_c around the camp when {PRONOUN/r_c/subject} {VERB/m_c/need/needs} it",
+			"Wonders if r_c would be better off as a kittypet",
+			"Talks to r_c about why {PRONOUN/r_c/subject} {VERB/r_c/believe/believes} in StarClan",
+			"Wishes {PRONOUN/m_c/subject} could believe in the way of the clanlife as much as {PRONOUN/m_c/poss} disabled clanmates",
+			"Wonders what it would be like if r_c could be a real warrior",
+			"Sometimes wishes {PRONOUN/m_c/subject} could live in r_c's paws",
+			"Is playing with r_c",
+			"Has been assigned to help r_c with a task",
+			"Had to apologise to r_c... again",
+			"Is getting scolded by r_c for {PRONOUN/m_c/poss} behaviour",
+			"Argues with r_c about StarClan",
+			"Told r_c {PRONOUN/m_c/subject} wish that {PRONOUN/m_c/subject} {VERB/m_c/were/was} {PRONOUN/r_c/object}",
+			"Argues with r_c over soemthing small",
+			"Is in a deep conversation with r_c",
+			"Finds {PRONOUN/m_c/self} in awe of r_c",
+			"Got beaten in a camp competition by r_c"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ],
+        "perm_conditions": {
+            "r_c": [
+                "paralyzed",
+				"heavy soul",
+				"anxiety",
+				"declawed",
+				"obsessive mind",
+				"constant roaming pain",
+				"deaf",
+				"blind"
+            ]
+		}
+    },	
 	{
         "id": "paralyzed_warrior_apprentice",
         "thoughts": [

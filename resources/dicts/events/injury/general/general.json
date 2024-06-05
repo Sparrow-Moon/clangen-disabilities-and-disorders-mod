@@ -1068,5 +1068,39 @@
        "cat_skill": null,
        "other_cat_trait": null,
        "other_cat_skill": null
+    },    
+	{
+       "injury": "fatigue",
+       "camp": "any",
+       "tags": [
+           "Newleaf",
+           "Greenleaf",
+           "Leaf-fall",
+           "Leaf-bare"
+       ],
+       "event_text": "After all the work that m_c's put into helping the clan, it's not a shock that {PRONOUN/m_c/subject} {VERB/m_c/have/has} worn {PRONOUN/m_c/self} out and gotten fatigued.",
+       "history_text": null,
+       "cat_trait": null,
+       "cat_skill": null,
+       "other_cat_trait": null,
+       "other_cat_skill": null
+    },     
+	{
+       "injury": "cutter's sickness",
+       "camp": "any",
+       "tags": [
+           "Newleaf",
+           "Greenleaf",
+           "Leaf-fall",
+           "Leaf-bare"
+       ],
+       "event_text": "After m_c was out wandering the territory for longer than usual {PRONOUN/m_c/subject} {VERB/m_c/come/comes} back stumbling and disoriented. Apparently {PRONOUN/m_c/subject} ran into some Twolegs out there.",
+       "history_text": {
+            "reg_death": "m_c died after {PRONOUN/m_c/subject} {VERB/m_c/were/was} taken by Twolegs to the Cutter."
+        },
+       "cat_trait": null,
+       "cat_skill": null,
+       "other_cat_trait": null,
+       "other_cat_skill": null
     }
 ]

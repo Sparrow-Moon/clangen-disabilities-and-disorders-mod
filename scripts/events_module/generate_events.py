@@ -365,10 +365,10 @@ class GenerateEvents:
                 if event.injury == 'torn ear' and 'NOEAR' in cat.pelt.scars:
                     continue
 
-                if event.injury == 'wrenched claws' and ["CRIMSONBOOT", "BLUEBOOT", "YELLOWBOOT", 
+                if event.injury == 'wrenched claws' and cat.pelt.accessory in ["CRIMSONBOOT", "BLUEBOOT", "YELLOWBOOT",
                                                         "CYANBOOT", "REDBOOT", "LIMEBOOT", "GREENBOOT", 
                                                         "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT", 
-                                                        "PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"] in cat.pelt.accessory:
+                                                        "PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"]:
                     continue
 
             # check meddie tags

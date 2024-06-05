@@ -395,5 +395,17 @@
     "no_body": [
 
     ]
+  },
+  "skeptic": {
+    "body": [
+		"Despite {PRONOUN/r_c/poss}'s known skepticsm, r_c can't help but find {PRONOUN/r_c/self} hoping that Starclan is real and that m_c has made it there safely. Whispering words that {PRONOUN/r_c/subject} {VERB/r_c/hope/hopes} m_c can hear into stiff fur."
+
+    ],
+    "no_body": [
+		"No, m_c just can't be dead. r_c refuses to accept it. Any moment now m_c would come prancing into the camp to light up the world, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} sure of it. Any... moment... now.",
+		"Without m_c's body to mourn r_c wanders around the camp listlessly, worries {PRONOUN/r_c/subject} {VERB/r_c/refuse/refuses} to express clouding {PRONOUN/m_c/poss} mind.",
+		"r_c hisses and snaps at everycat attending m_c's vigil, finding it ridiculous, after all it's not posisble for m_c to be gone.",
+		"r_c hates knowing that m_c is gone, refusing to leave {PRONOUN/r_c/poss} den in the dread of not seeing {PRONOUN/m_c/object} there to greet {PRONOUN/r_c/object}."
+    ]
   }
 }

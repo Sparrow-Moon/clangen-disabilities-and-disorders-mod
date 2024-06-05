@@ -77,6 +77,16 @@
         "main_trait_constraint": [
             "vengeful"
         ]
+    },
+    {
+        "id": "skeptic_mediator_apprentice",
+        "thoughts": [
+            "Is been scolded for mocking {PRONOUN/m_c/poss} clanmates",
+			"Wonders if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the only sane cat in this clan"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ]
     }
     
 ]

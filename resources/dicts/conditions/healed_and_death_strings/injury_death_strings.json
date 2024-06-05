@@ -70,5 +70,11 @@
     ],
     "bee sting": [
         "m_c seemed to have a horrible reaction to {PRONOUN/m_c/poss} bee sting. Cats usually don't die from a sting, but it seems this time was different."
-    ]
+    ],
+	"severe sunburn": [
+		"m_c died due to complications from a severe sunburn."
+	],
+	"cutter's sickness": [
+		"Despite the best efforts of the clan m_c sucumb to Cutter's Sickness."
+	]
 }
