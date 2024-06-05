@@ -384,10 +384,7 @@ class MediationScreen(Screens):
         elif other_cat:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
-            if game.clan.clan_settings['first cousin mates']:
-                check_cousins = False
-            else:
-                check_cousins = other_cat.is_cousin(cat)
+            check_cousins = other_cat.is_cousin(cat)
 
             if other_cat.is_uncle_aunt(cat) or cat.is_uncle_aunt(other_cat) \
                     or other_cat.is_grandparent(cat) or \
@@ -458,7 +455,7 @@ class MediationScreen(Screens):
                 col2 += "child"
             elif cat.is_sibling(other_cat) or other_cat.is_sibling(cat):
                 col2 += "sibling"
-            elif not game.clan.clan_settings["first cousin mates"] and other_cat.is_cousin(cat):
+            elif other_cat.is_cousin(cat):
                 col2 += "cousin"
 
         self.selected_cat_elements["col2" + tag] = pygame_gui.elements.UITextBox(col2,
