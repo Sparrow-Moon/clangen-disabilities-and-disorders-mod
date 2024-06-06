@@ -24,10 +24,20 @@
 	"While it's not a possibility m_c still finds {PRONOUN/m_c/self} entertaining the possibility of kittens"
   ],
 
-  "litter_guess": [
-    "m_c hopes the litter will be small - {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} overwhelmed at the idea of a big litter.",
-    "m_c is hoping for a big litter!"
-  ],
+  "litter_guess": {
+	"small_litter" : [
+		"m_c hopes the litter will be small - {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} overwhelmed at the idea of a big litter.",
+		"m_c has hopes that this litter will be small. Nice and manageable.",
+		"As much as m_c is looking forwards to having kits of {PRONOUN/m_c/poss} own, {PRONOUN/m_c/subject} really {VERB/m_c/hope/hopes} it's not too many.",
+		"m_c really doesn't want a large litter. Only a few kittens would be more than enough."
+	],
+	"large_litter": [
+	    "m_c is hoping {PRONOUN/m_c/subject}'ll have a large litter.",
+		"m_c is daydreaming about having many kits. A large litter would suit {PRONOUN/m_c/object} perfectly.",
+		"m_c really hopes that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} having a large litter. More future warriors.",
+		"With the rest of the clan behind m_c {PRONOUN/m_c/subject} {VERB/m_c/think/thinks} {PRONOUN/m_c/subject} wouldn't mind a large litter."
+	]
+  },
 
   "unsure_litter_guess": [
     "m_c is unsure how many kits {PRONOUN/m_c/subject}'ll have.",
