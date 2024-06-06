@@ -728,14 +728,14 @@
                     "injury": [
                                 {
                         "cats": ["r_c"],
-                        "injuries": ["constant nightmares"],
+                        "injuries": ["nightmares"],
                         "scars": [],
                         "no_results": false
                                 }
                             ],
                         "history_text": {
-                        "reg_death": "r_c died from lack of sleep, {PRONOUN/r_c/poss} vision haunted by dark shadows.",
-                        "lead_death": "from lack of sleep, {PRONOUN/r_c/poss} vision haunted by dark shadows"
+                        "reg_death": "m_c died from lack of sleep, {PRONOUN/m_c/poss} vision haunted by dark shadows.",
+                        "lead_death": "from lack of sleep, {PRONOUN/m_c/poss} vision haunted by dark shadows"
                        }
                 },
                 {

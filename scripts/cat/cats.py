@@ -1119,7 +1119,6 @@ class Cat():
                 else:
                     extra_givers = sample(possible_sc_cats, k=amount)
             else:
-                #print(game.clan.darkforest_cats)
                 possible_df_cats = [i for i in game.clan.darkforest_cats if
                                     self.fetch_cat(i) and
                                     i not in life_givers and
@@ -1490,7 +1489,6 @@ class Cat():
         # CLAN FOCUS! - if the focus 'rest and recover' is selected
         elif game.clan.clan_settings.get("rest and recover") and\
             self.illnesses[illness]["duration"] + moons_prior - moons_with <= 0:
-            # print(f"rest and recover - illness {illness} of {self.name} healed earlier")
             self.healed_condition = True
             return False
 
@@ -1531,7 +1529,6 @@ class Cat():
         elif not self.injuries[injury]["complication"] and \
             game.clan.clan_settings.get("rest and recover") and\
             self.injuries[injury]["duration"] + moons_prior - moons_with <= 0:
-            # print(f"rest and recover - injury {injury} of {self.name} healed earlier")
             self.healed_condition = True
             return False
 
@@ -1564,14 +1561,14 @@ class Cat():
             "origin": "core",
             "splits": []
             }
-        #print(self.ID)
+        # print(self.ID)
         template["ID"] = str(len(self.alters) + 1)
-        template["role"] = choice(["co-host","caregiver","little","protecter","trauma holder","persecutor"])
-        extra = randint(1,5)
+        template["role"] = choice(["co-host", "caregiver", "little", "protecter", "trauma holder", "persecutor"])
+        extra = randint(1, 5)
         if extra < 5:
-            template["other"] = choice(["noncat", "rogue", "kittypet", "otherclan", "fictive",  "factive", "fuzztive"])
-        rng = randint(1,20)
-        gender="???"
+            template["other"] = choice(["noncat", "rogue", "kittypet", "otherclan", "fictive", "factive", "fuzztive"])
+        rng = randint(1, 20)
+        gender = "???"
         if rng <= 2:
             genderqueer_list = ["nonbinary", "neutrois", "agender", "genderqueer", "demigirl", "demiboy", "demienby",
                                 "genderfluid", "genderfae", "genderfaun", "genderflor", "bigender", "pangender", "???"]
@@ -1583,13 +1580,13 @@ class Cat():
         template["gender"] = gender
         alter_name = ""
         
-        #naming without making a whole new cat....yikers TT
+        # naming without making a whole new cat....yikers TT
         if os.path.exists('resources/dicts/names/names.json'):
             with open('resources/dicts/names/names.json') as read_file:
                 names_dict = ujson.loads(read_file.read())
         if template["other"] == "fictive" or template["other"] == "fuzztive":
-            canon_chance = randint(1,5)
-            if canon_chance == 2:
+            canon_chance = randint(1, 5)
+            if canon_chance == 1:
                 alter_name = choice(["Fireheart", "Graystripe", "Sandstorm", "Squirrelflight", "Brambleclaw", "Hollyleaf",
                                     "Jayfeather", "Lionblaze", "Dovewing", "Ivypool", "Yellowfang", "Ravenpaw", "Bristlefrost",
                                     "Ashfur", "Cinderpelt", "Alderheart", "Needletail", "Hawkfrost", "Mothwing", "Leafpool",
@@ -1605,8 +1602,8 @@ class Cat():
             
         if template["role"] == "little":
             if template["other"] == "fictive" or template["other"] == "fuzztive":
-                canon_chance = randint(1,50)
-                if canon_chance == 2:
+                canon_chance = randint(1, 50)
+                if canon_chance == 1:
                     alter_name = choice(["Snowkit", "Mosskit"])
                 else:
                     alter_name = choice(names_dict["normal_prefixes"])
@@ -1622,7 +1619,7 @@ class Cat():
             if splitrng < (len(self.alters)+1):
                 template["origin"] = self.alters[(splitrng-1)]['name']
                 self.add_split((splitrng-1), template["name"])
-        #print(template)
+        # print(template)
         self.alters.append(template)
 
     def moon_skip_permanent_condition(self, condition):
@@ -1634,9 +1631,9 @@ class Cat():
             self.permanent_condition[condition]["event_triggered"] = False
             return "skip"
         
-        #chance of splitting if plural
+        # chance of splitting if plural
         if self.is_plural():
-            splitting = randint(1,100)
+            splitting = randint(1, 100)
             if len(self.alters) < 1:
                 self.new_alter()
             if splitting < 15:
@@ -1961,7 +1958,7 @@ class Cat():
     def update_alters(self):
         if self.alters:
             for alter in self.alters:
-                if not "origin" in alter:
+                if "origin" not in alter:
                     alter["origin"] = "core"
                     alter["splits"] = []
 
@@ -1972,7 +1969,7 @@ class Cat():
         
         if name in ["shattered soul", "budding spirit"]:
             if self.is_plural():
-                print ("cat is already plural!")
+                print("cat is already plural!")
                 return
         
         intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
@@ -2071,7 +2068,7 @@ class Cat():
                 "event_triggered": new_perm_condition.new
             }
             if self.is_plural():
-                #self.system_core()
+                # self.system_core()
                 if len(self.alters) < 1:
                     self.new_alter()
             new_condition = True
@@ -2116,6 +2113,11 @@ class Cat():
         is_ill = True
         if len(self.illnesses) <= 0:
             is_ill = False
+
+        if "stimming" in self.illnesses:
+            self.pelt.blep = True
+        else:
+            self.pelt.blep = False
         return is_ill is not False
 
     def is_injured(self):
@@ -2135,12 +2137,9 @@ class Cat():
         if "budding spirit" in self.permanent_condition or "shattered soul" in self.permanent_condition:
             is_plural = True
         return is_plural
-    
-    #def is_split(self)
-        #if self.is_plural:
-        
-        
-        
+
+    # def is_split(self)
+        # if self.is_plural:
 
     def contact_with_ill_cat(self, cat: Cat):
         """handles if one cat had contact with an ill cat"""
@@ -2191,10 +2190,11 @@ class Cat():
         condition_directory = get_save_dir() + '/' + clanname + '/conditions'
         condition_file_path = condition_directory + '/' + self.ID + '_conditions.json'
 
-        if (not self.is_ill() and not self.is_injured() and not self.is_disabled()):
+        if not self.is_ill() and not self.is_injured() and not self.is_disabled():
             if os.path.exists(condition_file_path):
                 os.remove(condition_file_path)
             return
+
         if self.outside or self.dead:
             if not self.is_disabled():
                 if os.path.exists(condition_file_path):
@@ -2215,7 +2215,6 @@ class Cat():
         if self.is_plural():
             self.update_alters()
             conditions["alters"] = self.alters
-            
 
         game.safe_save(condition_file_path, conditions)
 

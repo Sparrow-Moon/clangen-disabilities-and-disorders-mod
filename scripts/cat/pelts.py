@@ -88,13 +88,16 @@ class Pelt():
         "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
     ]
+    # dad accessories
     toy_accessories = ["BALL", "MOUSE", "BONE"]
     blankie_accessories = ["MOSSBLANKIE"]
     flag_accessories = ["AUTISMFLAG", "DISFLAG", "ZEBFLAG"]
-    booties = [ 
-        "CRIMSONBOOT", "BLUEBOOT", "YELLOWBOOT", "CYANBOOT", "REDBOOT", "LIMEBOOT", "GREENBOOT", 
-        "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT", "PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT" 
+    booties = [
+        "CRIMSONBOOT", "BLUEBOOT", "YELLOWBOOT", "CYANBOOT", "REDBOOT", "LIMEBOOT", "GREENBOOT",
+        "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT", "PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"
     ]
+
+    all_natural_accessories = [plant_accessories, wild_accessories]
 
     tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
     spotted = ["Speckled", "Rosette"]
@@ -1121,9 +1124,9 @@ class Pelt():
         if not short:
 
             scar_details = {
-                "NOTAIL": "no tail",
+                "NOTAIL": "a stubby tail",
                 "HALFTAIL": "half a tail",
-                "NOPAW": "three legs",
+                "NOPAW": "three paws",
                 "NOLEFTEAR": "a missing ear",
                 "NORIGHTEAR": "a missing ear",
                 "NOEAR": "no ears"

@@ -321,13 +321,17 @@ def create_new_cat(Cat,
             # grab starting names and accs for loners/kittypets
             if kittypet:
                 name = choice(names.names_dict["loner_names"])
-                if choice([1, 2]) == 1:
-                    accessory = choice(Pelt.collars + Pelt.booties)
-            elif loner and choice([1, 2]) == 1:  # try to give name from full loner name list
+                if randint(1, 2) == 1:
+                    accessory = choice([choice(Pelt.collars), choice(Pelt.booties)])
+            elif loner and randint(1, 2) == 1:  # try to give name from full loner name list
                 name = choice(names.names_dict["loner_names"])
+                if randint(1, 2) == 1:
+                    accessory = choice(choice(Pelt.all_natural_accessories))
             else:
                 name = choice(
                     names.names_dict["normal_prefixes"])  # otherwise give name from prefix list (more nature-y names)
+                if randint(1, 3) > 1:
+                    accessory = choice(choice(Pelt.all_natural_accessories))
 
             # now we make the cats
             if new_name:  # these cats get new names

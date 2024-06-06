@@ -902,7 +902,6 @@ class ProfileScreen(Screens):
             bs_text = the_cat.status
         else:
             if the_cat.backstory:
-                # print(the_cat.backstory)
                 for category in BACKSTORIES["backstory_categories"]:
                     if the_cat.backstory in BACKSTORIES["backstory_categories"][category]:
                         bs_text = BACKSTORIES["backstory_display"][category]
@@ -971,7 +970,7 @@ class ProfileScreen(Screens):
         already_sick_injured = False
         if the_cat.is_injured():
             special_conditions = [
-                "overstimulation", "understimulation", "fatigue", "fainting"
+                "recovering from birth", "overstimulation", "understimulation", "fatigue", "fainting", "pregnant"
             ]
             all_special = True
             for condition in the_cat.injuries:

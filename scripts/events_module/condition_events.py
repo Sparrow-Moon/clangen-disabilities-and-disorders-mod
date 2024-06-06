@@ -111,7 +111,6 @@ class Condition_Events():
                 if game.clan.clan_settings.get("rest and recover"):
                     stopping_chance = game.config["focus"]["rest and recover"]["illness_prevent"]
                     if not int(random.random() * stopping_chance):
-                        # print(f"rest and recover - illness prevented for {cat.name}")
                         return triggered
 
                 season_dict = Condition_Events.ILLNESSES_SEASON_LIST[season]
@@ -154,6 +153,8 @@ class Condition_Events():
                 elif chosen_illness in ['kittenspace', 'puppyspace']:
                     event_string = f"Recently, {cat.name} has been acting a bit differently than usual." \
                                    f" It seems like they may have gone into {chosen_illness}."
+                elif chosen_illness == "stimming":
+                    event_string = f"{cat.name} has started {chosen_illness}."
                 else:
                     event_string = f"{cat.name} has gotten {chosen_illness}."
                 event_string = Condition_Events.change_condition_name(event_string)
@@ -226,7 +227,6 @@ class Condition_Events():
                 if game.clan.clan_settings.get("rest and recover"):
                     stopping_chance = game.config["focus"]["rest and recover"]["injury_prevent"]
                     if not int(random.random() * stopping_chance):
-                        # print(f"rest and recover - injury prevented for {cat.name}")
                         return False
 
                 if war:
@@ -260,7 +260,6 @@ class Condition_Events():
                         involved_cats.append(other_cat.ID)
                         Condition_Events.handle_relationship_changes(cat, injury_event, other_cat)
 
-                    #print(injury_event.event_text)
                     text = event_text_adjust(Cat, injury_event.event_text, cat, other_cat, other_clan_name)
                     text = Condition_Events.change_condition_name(text)
 
@@ -1098,7 +1097,6 @@ class Condition_Events():
                 else:
                     print("No herbs to use for this injury")
                     return
-                print(f"New herb found: {herb_used}")
 
             # deplete the herb
             amount_used = 1

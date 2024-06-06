@@ -531,17 +531,17 @@
                     "text": "r_c listens, shivering, as p_l describes the birth of the Dark Forest, the ancient, barely won battle between the good cats of the stars and the traitor amidst. {PRONOUN/r_c/subject/CAP} can't stop thinking about it in {PRONOUN/r_c/poss} nest that night, {PRONOUN/r_c/poss} sleep broken and uneasy.",
                     "exp": 0,
                     "weight": 20,
-                  "injury": [
+                    "injury": [
                                 {
                         "cats": ["r_c"],
-                        "injuries": ["constant nightmares"],
+                        "injuries": ["nightmares"],
                         "scars": [],
                         "no_results": false
                                 }
                             ],
                         "history_text": {
-                        "reg_death": "r_c died from lack of sleep, {PRONOUN/r_c/poss} vision haunted by dark shadows.",
-                        "lead_death": "from lack of sleep, {PRONOUN/r_c/poss} vision haunted by dark shadows"
+                        "reg_death": "m_c died from lack of sleep, {PRONOUN/m_c/poss} vision haunted by dark shadows.",
+                        "lead_death": "from lack of sleep, {PRONOUN/m_c/poss} vision haunted by dark shadows"
                        }
                 },
                 {
