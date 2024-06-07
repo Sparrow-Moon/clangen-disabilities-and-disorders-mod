@@ -1493,10 +1493,25 @@ class Events:
                     elif has_med:
                         chance = int(chance * 2.22)
 
-                    if cat.personality.trait in [
-                        'altruistic', 'compassionate', 'empathetic',
-                        'wise', 'faithful'
-                    ]:
+                    # med personality
+                    med_personalities = ["righteous", "compassionate", "thoughtful", "faithful", "loving", "wise"]
+                    med_personality = False
+                    index = 0
+                    for entry in med_personalities:
+                        if med_personalities[index] == cat.personality.trait:
+                            med_personality = True
+                        index += 1
+
+                    # med skill
+                    med_skills = ["CLEVER", "HEALER"]
+                    med_skill = False
+                    index = 0
+                    for entry in med_skills:
+                        if med_skills[index] == cat.skills:
+                            med_skill = True
+                        index += 1
+
+                    if med_personality or med_skill:
                         chance = int(chance / 1.3)
                     if cat.is_disabled():
                         chance = int(chance / 2)
@@ -1523,20 +1538,34 @@ class Events:
                                 break
 
                         chance = game.config["roles"]["mediator_app_chance"]
-                        if cat.personality.trait in [
-                            'charismatic', 'empathetic', 'responsible',
-                            'wise', 'thoughtful'
-                        ]:
-                            chance = int(chance / 1.5)
+
+                        # media personality
+                        media_personalities = ["charismatic", "compassionate", "thoughtful", "calm", "careful", "sincere"]
+                        media_personality = False
+                        index = 0
+                        for entry in media_personalities:
+                            if media_personalities[index] == cat.personality.trait:
+                                media_personality = True
+                            index += 1
+
+                        # media skill
+                        media_skills = ["TEACHER", "SPEAKER", "MEDIATOR", "CLEVER", "INSIGHTFUL", "KIT"]
+                        media_skill = False
+                        index = 0
+                        for entry in media_skills:
+                            if media_skills[index] == cat.skills:
+                                media_skill = True
+                            index += 1
+
+                        if media_personality or media_skill:
+                            chance = int(chance / 1.3)
                         if cat.is_disabled():
                             chance = int(chance / 2)
 
                         if chance == 0:
                             chance = 1
 
-                        # Only become a mediator if there is already one in the clan.
-                        if mediator_list and not has_mediator_apprentice and \
-                                not int(random.random() * chance):
+                        if not has_mediator_apprentice and not int(random.random() * chance):
                             self.ceremony(cat, 'mediator apprentice')
                             self.ceremony_accessory = True
                             self.gain_accessories(cat)
