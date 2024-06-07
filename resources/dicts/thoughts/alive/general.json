@@ -82,6 +82,28 @@
         ]
     },
     {
+        "id": "gen_testing_danger_thoughts",
+        "dangerous_thoughts": true,
+        "thoughts": [
+            "This is a test thought, if you don't have triggering thoughts on report me",
+			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
+			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
+			"Testing triggering thought detection, report if not toggled",
+			"This is a test thought, if you don't have triggering thoughts on report me",
+			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
+			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
+			"Testing triggering thought detection, report if not toggled",
+			"This is a test thought, if you don't have triggering thoughts on report me",
+			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
+			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
+			"Testing triggering thought detection, report if not toggled",
+			"This is a test thought, if you don't have triggering thoughts on report me",
+			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
+			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
+			"Testing triggering thought detection, report if not toggled"
+        ]
+    },
+    {
         "id": "gen_alive_not_working_insteadinthemedden",
         "not_working": true,
         "thoughts": [
