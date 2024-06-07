@@ -297,7 +297,7 @@
 			"Poor m_c is curled up in {PRONOUN/m_c/poss} den, tail protectively shielding {PRONOUN/m_c/poss} stomach"
 		],
 		"headache": [
-			"r_c sympathizes with m_c while {PRONOUN/m_c/subject} {VERB/m_c/complain/complains} about the headache {PRONOUN/m_c/subject} currently {VERB/m_c/have/has.",
+			"r_c sympathizes with m_c while {PRONOUN/m_c/subject} {VERB/m_c/complain/complains} about the headache {PRONOUN/m_c/subject} currently {VERB/m_c/have/has}.",
 			"Poor m_c is slinking back over to the medicine den for some herbs to deal with a headache.",
 			"m_c feels more irritable than usual due to a throbbing in {PRONOUN/m_c/poss} head.",
 			"m_c hisses at the sounds of {PRONOUN/m_c/poss} clanmates chatter. It's not helping with the pain going through {PRONOUN/m_c/poss} head."
