@@ -1,87 +1,73 @@
 {
-    "born without a leg": [
-        "m_c mewls, snuggling up to {PRONOUN/m_c/poss} parent as {PRONOUN/m_c/subject} anxiously {VERB/m_c/await/awaits} the verdict, but r_c is confident that m_c's lack of a leg won't slow {PRONOUN/m_c/object} down, and the new family is left to bond, relieved and purring.",
-        "It's immediately clear that m_c might take longer to find {PRONOUN/m_c/poss} feet - {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been born without one of the usual set."
-
-    ],
-    "weak leg": [
-        "As m_c toddles around the nursery, r_c watches and m_c's parent waits in suspense. Finally, r_c nods, and confirms that one of m_c's legs isn't developing at the same rate as the others.",
-        "m_c keeps falling to one side, and eventually it's clear that one of the legs on that side just isn't as strong as the others."
-
-    ],
-    "twisted leg": [
-        "r_c examines m_c as {PRONOUN/m_c/poss} parent holds {PRONOUN/m_c/object} by the scruff, checking on a leg that is becoming twisted as the kit grows.",
-        "When m_c tries to toddle around, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to be slower than {PRONOUN/m_c/poss} siblings. A quick inspection reveals that one of {PRONOUN/m_c/poss} legs was born twisted and deformed, but {PRONOUN/m_c/subject} should find {PRONOUN/m_c/poss} footing in life soon enough."
-
-    ],
-    "born without a tail": [
-        "m_c is healthy, r_c confirms, but {PRONOUN/m_c/subject} simply {VERB/m_c/haven't/hasn't} been born with a tail.",
-        "m_c is fluffy and full of yelling and the want for milk, but {PRONOUN/m_c/subject}'ll never be able to lash {PRONOUN/m_c/poss} tail like the other kittens, having been born without one."
-
-    ],
-    "paralyzed": [
-        "r_c soothes m_c's frantically worried parent - their kit will never walk, but it's still possible for {PRONOUN/m_c/object} to have a happy, healthy life.",
-        "It's immediately clear that m_c can't feel {PRONOUN/m_c/poss} hindlegs when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} born, but {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} like a happy bundle of newborn fluff anyway."
-
-    ],
-    "raspy lungs": [
-        "m_c has been having a lot of trouble keeping up while playing. r_c listens to {PRONOUN/m_c/poss} chest, and diagnoses {PRONOUN/m_c/object} as having raspy lungs.",
-        "As m_c grows, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} incapable of not snoring and panting loudly, until eventually it's clear {PRONOUN/m_c/poss} lungs are a little weaker than normal."
-
-    ],
-    "wasting disease": [
-        "r_c has been called in by m_c's worried parent, and unfortunately that worry was well-founded, as m_c seems to have wasting disease.",
-        "r_c isn't sure what's wrong with m_c, but it's clear that it's permanent.",
-        "m_c's tail droops when the medicine cat says that {PRONOUN/r_c/object} {VERB/r_c/aren't/isn't} sure what's wrong with m_c, but {PRONOUN/r_c/object} can treat the symptoms.",
-        "m_c seems weaker, lately, unable to play as much or explore as far.",
-        "m_c is a sickly kit and the Clan fears {PRONOUN/m_c/subject} may not live past kithood. Even if {PRONOUN/m_c/subject} {VERB/m_c/do/does}, this sickness may never leave {PRONOUN/m_c/object}."
-    ],
-    "blind": [
-        "m_c has never had any trouble getting around, but one day {PRONOUN/m_c/subject} {VERB/m_c/ask/asks} a strange question about how someone knew someone else was napping on the other side of camp, and r_c realizes {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} blind.",
-        "m_c fits in perfectly at first, but as {PRONOUN/m_c/subject} {VERB/m_c/grow/grows} and open {PRONOUN/m_c/poss} eyes, it becomes clear that to m_c there's no difference between having {PRONOUN/m_c/poss} eyes closed or open."
-
-    ],
-    "one bad eye": [
-        "Spotting m_c stumbling over something on {PRONOUN/m_c/poss} right side, r_c brings {PRONOUN/m_c/object} to the medicine cat den, where it becomes clear that eye isn't working as normal.",
-        "m_c has become good at not letting things approaching on {PRONOUN/m_c/poss} bad side startle {PRONOUN/m_c/object}, except it turns out that's not a normal universal experience for a kitten to have."
-
-    ],
-    "failing eyesight": [
-        "When m_c complains how dark it's been recently, r_c checks {PRONOUN/m_c/poss} eyesight over - only to find it near gone.",
-        "m_c doesn't understand how everyone else seems to see so far - and is sad to find out {PRONOUN/m_c/poss} eyesight is failing."
-
-    ],
-    "partial hearing loss": [
-        "r_c is called in to assess m_c's hearing, and while it's still present, m_c definitely isn't hearing clearly.",
-        "m_c keeps asking cats to repeat themselves, until it's clear that something about {PRONOUN/m_c/poss} hearing is weak and unreliable."
-
-    ],
-    "deaf": [
-        "When most kittens are learning to talk, m_c seems delayed. r_c is called, and {PRONOUN/r_c/subject} {VERB/r_c/report/reports} that while m_c will live life just fine, it appears {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} never been able to hear.",
-        "m_c isn't bothered by being deaf, though the Clan seems to want to comfort {PRONOUN/m_c/object} when everyone finds out that's why learning to talk has been so hard."
-
-    ],
-    "constant joint pain": [
-        "m_c's worried parent calls in r_c after weeks of constant pain. r_c can provide pain relief, but it's possible this may be a constant in m_c's life.",
-        "m_c refuses once again to go out and play, {PRONOUN/m_c/poss} joints swollen and painful. It's becoming clear that it's not an isolated instance, and m_c might need some help."
-
-    ],
-    "seizure prone": [
-        "r_c wakes m_c slowly. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} had a seizure, and are in the medicine cat den just while {PRONOUN/m_c/subject} {VERB/m_c/recover/recovers}, r_c explains. It might happen again in the future, and m_c needs to be prepared.",
-        "In the middle of camp, right as {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} about to pounce, m_c falls to the ground and begins shaking, a seizure rolling through {PRONOUN/m_c/poss} little body.",
-		"While m_c is playing with the other kittens {PRONOUN/m_c/subject} {VERB/m_c/go/goes} still, staring off at nothing before blinking and continuing as if no time passed at all.",
-		"m_c absently stares off at nothing, not responding when anyone calls {PRONOUN/m_c/poss} name.",
-		"m_c seems like a perfectly happy kitten, fine aside the fact that every so often {PRONOUN/m_c/subject} will lose balance due to an extra shaky paw."
-    ],
-    "allergies": [
-        "m_c sneezes again, {PRONOUN/m_c/poss} frantic parent yowling about whitecough, but r_c calms everyone down. It's only allergies, and {PRONOUN/r_c/subject} {VERB/r_c/have/has} just the herbs to help.",
-        "In the middle of playing, m_c sneezes so hard {PRONOUN/m_c/subject} {VERB/m_c/fall/falls} over. Again. This is really becoming a pattern."
-
-    ],
-    "persistent headaches": [
-        "r_c notices with some concern that any time m_c opens {PRONOUN/m_c/poss} eyes, {PRONOUN/m_c/subject} {VERB/m_c/mewl/mewls} incessantly and try to wriggle into the darkest corners of the medicine cat den. r_c suspects {PRONOUN/m_c/subject} may have chronic headaches.",
-        "Rather than go outside in the bright sunlight to play with {PRONOUN/m_c/poss} littermates, m_c prefers to huddle by {PRONOUN/m_c/self} in the dark and quiet of the medicine cat den, {PRONOUN/m_c/poss} head hurting too much to move."
-    ],
+  "born without a leg": [
+    "m_c mewls, snuggling up to {PRONOUN/m_c/poss} parent as they anxiously await the verdict, but r_c is confident that m_c's lack of a leg won't slow {PRONOUN/m_c/object} down, and the new family is left to bond, relieved and purring.",
+    "It's immediately clear that m_c might take longer to find {PRONOUN/m_c/poss} feet - {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been born without one of the usual set."
+  ],
+  "weak leg": [
+    "As m_c toddles around the nursery, r_c watches and m_c's parent waits in suspense. Finally, r_c nods, and confirms that one of m_c's legs isn't developing at the same rate as the others.",
+    "m_c keeps falling to one side, and eventually it's clear that one of the legs on that side just isn't as strong as the others."
+  ],
+  "twisted leg": [
+    "r_c examines m_c as {PRONOUN/m_c/poss} parent holds {PRONOUN/m_c/object} by the scruff, checking on a leg that is becoming twisted as the kit grows.",
+    "When m_c tries to toddle around, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to be slower than {PRONOUN/m_c/poss} siblings. A quick inspection reveals that one of {PRONOUN/m_c/poss} legs was born twisted and deformed, but {PRONOUN/m_c/subject} should find {PRONOUN/m_c/poss} footing in life soon enough."
+  ],
+  "born without a tail": [
+    "m_c is healthy, r_c confirms, but {PRONOUN/m_c/subject} simply {VERB/m_c/haven't/hasn't} been born with a tail.",
+    "m_c is fluffy and full of yelling and the want for milk, but {PRONOUN/m_c/subject}'ll never be able to lash {PRONOUN/m_c/poss} tail like the other kittens, having been born without one."
+  ],
+  "paralyzed": [
+    "r_c soothes m_c's frantically worried parent - their kit will never walk, but it's still possible for {PRONOUN/m_c/object} to have a happy, healthy life.",
+    "It's immediately clear that m_c can't feel {PRONOUN/m_c/poss} hindlegs when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} born, but {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} like a happy bundle of newborn fluff anyway."
+  ],
+  "raspy lungs": [
+    "m_c has been having a lot of trouble keeping up while playing. r_c listens to {PRONOUN/m_c/poss} chest, and diagnoses {PRONOUN/m_c/object} as having raspy lungs.",
+    "As m_c grows, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} incapable of not snoring and panting loudly, until eventually it's clear {PRONOUN/m_c/poss} lungs are a little weaker than normal."
+  ],
+  "wasting disease": [
+    "r_c has been called in by m_c's worried parent, and unfortunately that worry was well-founded, as m_c seems to have wasting disease.",
+    "The medicine cat isn't sure what's wrong with m_c, but it's clear that it's permanent.",
+    "m_c seems weaker, lately, unable to play as much or explore as far.",
+    "m_c is a sickly kit and the Clan fears {PRONOUN/m_c/subject} may not live past kithood. Even if {PRONOUN/m_c/subject} {VERB/m_c/do/does}, this sickness may never leave {PRONOUN/m_c/object}."
+  ],
+  "blind": [
+    "m_c has never had any trouble getting around, but one day {PRONOUN/m_c/subject} {VERB/m_c/ask/asks} a strange question about how someone knew someone else was napping on the other side of camp, and r_c realizes {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} blind.",
+    "m_c fits in perfectly at first, but as {PRONOUN/m_c/subject} {VERB/m_c/grow/grows} and open {PRONOUN/m_c/poss} eyes, it becomes clear that to m_c there's no difference between having {PRONOUN/m_c/poss} eyes closed or open."
+  ],
+  "one bad eye": [
+    "Spotting m_c stumbling over something on {PRONOUN/m_c/poss} right side, r_c brings {PRONOUN/m_c/object} to the medicine den, where it becomes clear that eye isn't working as normal.",
+    "m_c has become good at not letting things approaching on {PRONOUN/m_c/poss} bad side startle {PRONOUN/m_c/object}, except it turns out that's not a normal universal experience for a kitten to have."
+  ],
+  "failing eyesight": [
+    "When m_c complains how dark it's been recently, r_c checks {PRONOUN/m_c/poss} eyesight over - only to find it near gone.",
+    "m_c doesn't understand how everyone else seems to see so far - and is sad to find out {PRONOUN/m_c/poss} eyesight is failing."
+  ],
+  "partial hearing loss": [
+    "r_c is called in to assess m_c's hearing, and while it's still present, m_c definitely isn't hearing clearly.",
+    "m_c keeps asking cats to repeat themselves, until it's clear that something about {PRONOUN/m_c/poss} hearing is weak and unreliable."
+  ],
+  "deaf": [
+    "When most kittens are learning to talk, m_c seems delayed. r_c is called, and {PRONOUN/r_c/subject} {VERB/r_c/report/reports} that while m_c will live life just fine, it appears {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} never been able to hear.",
+    "m_c isn't bothered by being deaf, though the Clan seems to want to comfort {PRONOUN/m_c/object} when everyone finds out that's why learning to talk has been so hard."
+  ],
+  "constant joint pain": [
+    "m_c's worried parent calls in r_c after weeks of constant pain. r_c can provide pain relief, but it's possible this may be a constant in m_c's life.",
+    "m_c refuses once again to go out and play, {PRONOUN/m_c/poss} joints swollen and painful. It's becoming clear that it's not an isolated instance, and m_c might need some help."
+  ],
+  "seizure prone": [
+    "r_c wakes m_c slowly. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} had a seizure, and are in the medicine den just while {PRONOUN/m_c/subject} {VERB/m_c/recover/recovers}, r_c explains. It might happen again in the future, and m_c needs to be prepared.",
+    "In the middle of camp, right as {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} about to pounce, m_c falls to the ground and begins shaking, a seizure rolling through {PRONOUN/m_c/poss} little body.",
+    "While m_c is playing with the other kittens, {PRONOUN/m_c/subject} {VERB/m_c/go/goes} still, staring off at nothing before blinking and continuing as if no time had passed at all.",
+    "m_c absently stares off at nothing, not responding when anyone calls {PRONOUN/m_c/poss} name.",
+    "m_c seems like a perfectly happy kitten, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} perfectly healthy - aside from the fact that every so often, {PRONOUN/m_c/subject} will lose balance due to an extra shaky paw."
+  ],
+  "allergies": [
+    "m_c sneezes again, {PRONOUN/m_c/poss} frantic parent yowling about whitecough, but r_c calms everyone down. It's only allergies, and {PRONOUN/r_c/subject} {VERB/r_c/have/has} just the herbs to help.",
+    "In the middle of playing, m_c sneezes so hard {PRONOUN/m_c/subject} {VERB/m_c/fall/falls} over. Again. This is really becoming a pattern."
+  ],
+  "persistent headaches": [
+    "r_c notices with some concern that any time m_c opens {PRONOUN/m_c/poss} eyes, {PRONOUN/m_c/subject} {VERB/m_c/mewl/mewls} incessantly and try to wriggle into the darkest corners of the medicine den. r_c suspects {PRONOUN/m_c/subject} may have chronic headaches.",
+    "Rather than go outside in the bright sunlight to play with {PRONOUN/m_c/poss} littermates, m_c prefers to huddle by {PRONOUN/m_c/self} in the dark and quiet of the medicine den, {PRONOUN/m_c/poss} head hurting too much to move."
+  ],
 	"albinism": [
 		"r_c has been watching the nursery carefully, {PRONOUN/r_c/subject} {VERB/r_c/suspect/suspects} that something about m_c is more than just been light furred, {PRONOUN/r_c/poss} suspicion is only heightened by how m_c avoids going into sunlight where {PRONOUN/m_c/subject} can.",
 		"While a light furred kitten isn't uncommon there's mutterings in the clan when m_c opens {PRONOUN/m_c/poss} eyes for the first time. It's known how light-furred and light-eyed kittens tend to have more health issues.",
@@ -95,200 +81,199 @@
 		"When {PRONOUN/m_c/poss} parent takes {PRONOUN/m_c/object} out for night trips to the dirtplace m_c whines about how much {PRONOUN/m_c/subject} {VERB/m_c/hate/hates} it.",
 		"m_c doesn't like going out in the sunshine at midday, {PRONOUN/m_c/subject} {VERB/m_c/complain/complains} it's simply too hot."
 	],
-    "starwalker": [
-	   "m_c has been having issues socializing with {PRONOUN/m_c/poss} denmates, {PRONOUN/m_c/subject} {VERB/m_c/find/finds} it uncomfortable and somewhat terrifying. r_c understanding talks with {PRONOUN/m_c/object} about it saying {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} have to force {PRONOUN/m_c/self} into it.",
-       "m_c is just like any other kit, rolling around and batting at bugs {PRONOUN/m_c/subject} {VERB/m_c/find/finds}. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} a bit louder, a bit more brash and doesn't seem to understand social cues. m_c might walk the paths between the stars.",
-       "m_c doesn't seem to be a big fan of eye contact, {PRONOUN/m_c/poss} eyes often drift from {PRONOUN/m_c/poss} parents face and {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} take well to social cues."	,
-       "m_c has always felt different from other cats. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} know how to socialise and are always told that {PRONOUN/m_c/subject} {VERB/m_c/act/acts} weird. {PRONOUN/m_c/subject/CAP} find out that {PRONOUN/m_c/poss} {VERB/m_c/are/is} a Starwalker, and that's why {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} this way.",
-       "The feeling of certain things, like leaves touching {PRONOUN/m_c/poss} fur, or the noise of scratching, always seems much worse to m_c. {PRONOUN/m_c/subject/CAP} {VERB/m_c/think/thinks} {PRONOUN/m_c/subject} {VERB/m_c/are/is} just being dramatic until they discover that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a Starwalker.",
-	   "While the other kittens are rolling around m_c is more interested in talking with the Clan's medicine cat and soaking up information about the herbs.",
-	   "m_c struggles to change {PRONOUN/m_c/poss} routine, preferring to do things one way alone. {PRONOUN/m_c/subject/CAP} seems to have starwalker traits.",
-	   "While the other kittens in the Clan are out making multiple friends m_c prefers to stick with one or two particular cats and shies away from others.",
-	   "When it comes to trying out new games and nesting material m_c keeps making faces and looking very upset."
-    ],
-	"anxiety": [
-		"r_c's growing very used to m_c coming into the medicine den with a twitching tail and pressed down ears. They sit together with r_c purring as {PRONOUN/r_c/subject} steadily {VERB/r_c/answer/answers} all the rapid-fire worried questions.",
-		"When most kittens are already curiously looking around and exploring the camp, m_c is still hiding behind {PRONOUN/m_c/poss} parents and very awkwardly batting at leaves before running back into the nursery to hide.",
-		"It's normal for a kitten to get startled by new things, but even after identifying something m_c stares at it with wide eyes as if it would attack {PRONOUN/m_c/object}.",
-		"No matter how many reassurances {PRONOUN/m_c/poss} parents give them m_c still worries about each action that {PRONOUN/m_c/subject} {VERB/m_c/take/takes}.",
-		"m_c took {PRONOUN/m_c/poss} prey from the pile and then cried because {PRONOUN/m_c/subject} thought it might mean the rest of the Clan wouldn't have enough."
-	],	
-	"obsessive mind": [
-	    "m_c sleeps separately from {PRONOUN/m_c/poss} parent and denmates, liking {PRONOUN/r_c/poss} own nest that {PRONOUN/m_c/subject} can decorate and keep to how they like it. r_c explains to {PRONOUN/r_c/poss} concerned parent that {PRONOUN/m_c/subject} could have an obsessive mind, and it's nothing serious.",
-        "m_c hisses when some of {PRONOUN/m_c/poss} denmates playfight near {PRONOUN/m_c/poss} nest, quick to realign what they knocked out of place. {PRONOUN/m_c/poss/CAP} parent scolds {PRONOUN/m_c/object} for this but m_c complains that it makes {PRONOUN/m_c/object} anxious when {PRONOUN/r_c/poss} things are out of place.",
-        "m_c was seen sneaking out of camp and trotting towards a puddle, and rolling in it, seeming happy once {PRONOUN/m_c/subject} {VERB/m_c/shake/shakes} off the remaining water. When confronted, m_c just says water makes {PRONOUN/m_c/object} feel cleaner.",
-		"Counting and recounting, m_c keeps doing things a certain number of times and when asked {PRONOUN/m_c/subject} just says it's a reasonable number of times.",
-		"Around and around, m_c keeps asking the same questions not settled even when the answer is the same every time.",
-		"m_c has little habits that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} repeating like grooming {PRONOUN/m_c/poss} paws in a particular order or waving {PRONOUN/m_c/poss} tail at someone multiple times before even saying a greeting.",
-		"When it comes to cleaning the den, m_c is the best helper and very particular. Even if {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to need to place an item multiple times before it's just right."
-	],
-	"comet spirit": [
-        "m_c mewled and whined like any other kit, but {PRONOUN/m_c/poss} energy was through the nursery's roof and driving the queens mad, to the point they called r_c over just to see if {PRONOUN/r_c/subject} {VERB/r_c/have/has} anything to calm the rambunctious child. The medicine cat just chuckled, maybe the kit simply has a comet spirit, {PRONOUN/r_c/subject} had the right herb for it.",
-        "m_c was racing around the camp like an absolute whirlwind, getting under every cats paws, the warriors shake their heads and the queens sigh but as long as m_c doesn't get into trouble, they'll just have to deal with {PRONOUN/m_c/poss} energy.",
-        "m_c talked long into the afternoon about the bugs {PRONOUN/m_c/subject} saw, and how they're so cool and how they run away when you paw at them!",
-		"There's some frustration from the older Clan members at how distractable m_c is, but it's just the way that {PRONOUN/m_c/subject} {VERB/m_c/are/is}.",
-		"m_c eagerly follows the older warriors and apprentices, bounding from cat to cat with questions that make heads spin."
-	],
-    "antisocial": [
-       "m_c has been getting into arguments with the other kits recently. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} seem to understand what {PRONOUN/r_c/subject} did wrong, and don't seem bothered when other cats are upset with {PRONOUN/m_c/poss}. r_c understands {PRONOUN/m_c/subject} {VERB/m_c/are/is} not trying to upset anyone, {PRONOUN/m_c/subject} {VERB/m_c/are/is} just antisocial.",
-       "m_c has been having trouble enjoying the things around {PRONOUN/m_c/object}, especially playing with other kits. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} seem to enjoy being around others, and prefer to spend time on {PRONOUN/m_c/poss} own. m_c seems to be antisocial. {PRONOUN/m_c/subject/CAP} will still live a normal, happy life, the medicine cat says, {PRONOUN/m_c/subject} just {VERB/m_c/enjoy/enjoys} solitude more than others."
-   ],
-	"heavy soul": [
-        "r_c is brought to the nursery by a worried parent, m_c wasn't running around and playing like the other kits, just curled in a ball staring blankly at the wall. After some gentle talking with m_c the medicine cat sits back and softly explains {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} it's a heavy soul.",
-        "m_c hides from {PRONOUN/m_c/poss} denmates, much to the concern of {PRONOUN/m_c/poss} parent as they curl around their kit, they couldn't do much but purr in an attempt to comfort their child.",
-        "A denmate wonders why m_c won't play with anyone, and they try to become friends and play with {PRONOUN/m_c/object}. m_c agrees to play with them, but don't seem too energetic about it.",
-        "m_c has seemed more sluggish then the other kits {PRONOUN/m_c/poss} age, less energetic. Less focused on the reality and more lost in {PRONOUN/m_c/poss} thoughts."
-	],
-	"constant roaming pain": [
-		"After moons of m_c complaining of pains through {PRONOUN/m_c/poss} kithood, r_c sits back and softly explains that this pain will follow {PRONOUN/m_c/object} through {PRONOUN/m_c/poss} whole life and {PRONOUN/r_c/subject} can only offer temporary relief.",
-		"m_c insists that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not lying, {PRONOUN/m_c/subject} {VERB/m_c/have/has} pains all the time. It doesn't look like it'll ever go away.",
-		"Unlike other kittens m_c keeps {PRONOUN/m_c/self} mostly curled up in the nursery, constantly complaining of pains throughout {PRONOUN/m_c/poss} body.",
-		"When touched by another, m_c lets out yowls of pain. It's distressing for everyone that they can't really help {PRONOUN/m_c/object}."
-	],
-    "thunderous spirit": [
-        "r_c notices m_c struggles with strong and intense emotions and thinks that {PRONOUN/m_c/subject} may have a thunderous spirit.",
-        "m_c has a strong fear of abandonment and being left behind, to the point it is affecting {PRONOUN/m_c/poss} relationships.",
-        "While talking to another cat, m_c explains that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} emotions so strongly that some days it feels like {PRONOUN/m_c/poss} emotions are going to explode from {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} Clanmate encourages them to talk to the medicine cat, and m_c discovers that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a thunderous spirit.",
-        "Some of m_c's Clanmates notice that sometimes m_c behaves recklessly and struggles to trust others, and they tell {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} may has a thunderous spirit."
-    ],
-    "otherworldly mind": [
-        "r_c notices that m_c sees and hears things that other cats can't, and suggests that {PRONOUN/m_c/subject} {VERB/m_c/have/has} an otherworldly mind.",
-        "m_c often has strong believes that no other cat has, like how {PRONOUN/m_c/subject} can talk to birds or was once a powerful leader",
-        "Clanmates are worried about m_c, as sometimes the words {PRONOUN/m_c/subject} are saying are gibberish, or {PRONOUN/m_c/subject}'ll stop randomly in a conversation. Paired with other factors, m_c speaks to a medicine cat",
-        "A queen in the nursery notices that m_c keeps on complaining about a scary monster which {PRONOUN/m_c/subject} can't see, and they speak to some other Clanmates about it.",
-        "m_c cannot help but repeat what others say, {PRONOUN/m_c/subject} {VERB/m_c/have/has} to! {PRONOUN/m_c/poss/CAP} Clanmates think this is apart of something bigger",
-        "m_c is constantly worried that someone or something is after {PRONOUN/m_c/object}, and sometimes believes that cats have poisoned {PRONOUN/m_c/poss} prey or put thorns in {PRONOUN/m_c/poss} nest. {PRONOUN/m_c/poss/CAP} Clanmates talk to a medicine cat about it."
-    ],
-    "snow vision": [
-        "r_c notices that m_c struggles to see in the dark, more so than the other kits. {PRONOUN/m_c/subject} {VERB/r_c/speak/speaks} to m_c and discover that m_c has snow vision.",
-        "m_c is permanently seeing a snowy effect in their vision, and when {PRONOUN/m_c/subject} {VERB/m_c/speaks/speak} to a medicine cat about it, {PRONOUN/m_c/subject} {VERB/m_c/discovers/discover} that they have snow vision.",
-        "Clanmates are annoyed that m_c always refuses to go on night patrols, and when they confront them about it they discover its because m_c stuggles to see in the dark, and they realise that m_c has snow vison."
-    ],
-	"irritable bowels": [
-		"r_c is very carefully preparing yet another mixture of belly soothing herbs for m_c. {PRONOUN/r_c/subject}{VERB/m_c/'re/'s} worried about the consistancy of {PRONOUN/m_c/poss} issues.",
-		"m_c is yet again complaining about having a stomachache, this is becoming upsettingly common.",
-		"The parents of m_c worry when {PRONOUN/m_c/subject} {VERB/m_c/struggles/struggle} to properly eat and use the dirtplace, always in some form of discomfort."
-	],	
-	"mute": [
-		"When m_c's parents come in with {PRONOUN/m_c/object} to visit r_c it's about worries with {PRONOUN/m_c/object} not speaking. After some tests r_c sits back and gently explains it's likely that m_c's mute.",
-		"Initially there was some confusion over why m_c wasn't speaking, it's soon cleared up that there's nothing wrong {PRONOUN/m_c/subject} {VERB/m_c/are/is} just mute.",
-		"m_c has never needed words to speak, fluent enough with {PRONOUN/m_c/poss} body language and the Clan adapts to help {PRONOUN/m_c/object} be heard even in {PRONOUN/m_c/poss} silence.",
-		"Nobody knew silence could be so loud until m_c arrived."
-	],
-    "body biter":[
-        "After {PRONOUN/m_c/poss} parent is informed that m_c doesn't realize when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} pulling at {PRONOUN/m_c/poss} fur, m_c's parent drops {PRONOUN/m_c/object} off at the medicine cat den. r_c says that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a body biter.",
-        "m_c bites at {PRONOUN/m_c/poss} claws. It is possible that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a body biter.",
-        "m_c keeps getting told to not to pick at {PRONOUN/m_c/poss} scabs but m_c doesn't even realize when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} doing it.",
-        "m_c picks at {PRONOUN/m_c/poss} body when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} stressed."
-    ],
-	"jellyfish joints": [
-		"m_c curses {PRONOUN/m_c/poss} days of showing off {PRONOUN/m_c/poss} bendy paws in kithood, as now {PRONOUN/m_c/poss} joints ache, and r_c has told {PRONOUN/m_c/object} that {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} hypermobile. Meaning that there is no changing it.",
-		"After moons of seeing m_c bounce around painlessly, r_c calls {PRONOUN/m_c/object} into the medicine cat den to explain that the reason {PRONOUN/m_c/poss} joints have been hurting {PRONOUN/m_c/subject} is that maybe {PRONOUN/m_c/poss} flexible joints <i>weren't</i> the painless kind.",
-		"m_c's Clanmates look on when {PRONOUN/m_c/poss} joints bend in a way that most cats could only dream of.",
-		"m_c has recently been informed that most cats paws <i>don't</i> bend that way!"
-	],
-    "loose body": [
-		"r_c is getting a little tired of treating m_c's painful, loose and clicky joints, but {PRONOUN/r_c/subject} {VERB/m_c/realise/realises} that theres a reason m_c is in {PRONOUN/r_c/poss} den so often.",
-		"m_c has always been a trickster, showing off {PRONOUN/m_c/poss} strechy skin and bendy joints, but they soon feel the pain that comes from it and realises why {PRONOUN/m_c/poss} body feels this way.",
-		"m_c has to go to the dirtplace very frequently, and getting there always hurts {PRONOUN/m_c/poss} joints. {PRONOUN/m_c/subject} thought this was normal, but after speaking to some other cats, {PRONOUN/m_c/subject} realise its not.",
-		"After speaking to some of their Clanmates, m_c discovers that not every cat is in pain all the time.",
-        "m_c is always tired and always in pain, and {PRONOUN/m_c/subject} {VERB/m_c/decide/decides} it's time to speak to a medicine cat."
-	],
-	"burning light": [
-		"Walking out of the nursery for the first time, m_c mewls and rushes back inside, crying about how the light burns their eyes and they don't want to go outside. r_c is brought over to explain that unlike most cats m_c suffers from burning light, and there isn't much they can do to help but just wait out the burn.",
-		"Whenever m_c steps out of the nursery {PRONOUN/m_c/subject} {VERB/m_c/whine/whines} and {VERB/m_c/retreat/retreats} back inside.",
-		"While {PRONOUN/m_c/poss} nurserymates are already freely exploring and playing around the camp, m_c whimpers and complains about the evil sun trying to blind {PRONOUN/m_c/object}.",
-		"m_c hates going outside, {PRONOUN/m_c/subject} alway {VERB/m_c/complain/complains} about the burning in {PRONOUN/m_c/poss} eyes."
-	],
-	"disrupted senses": [
-		"r_c talks with m_c's parents about how much more sensitive {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} than other kittens. After some observation it seems that m_c might just have some disrupted senses.",
-		"Whenever m_c steps out of the nursery {PRONOUN/m_c/subject} {VERB/m_c/whine/whines} and {VERB/m_c/retreat/retreats} back inside.",
-		"While {PRONOUN/m_c/poss} nurserymates are already freely exploring and playing around the camp, m_c whimpers and complains about the evil sun trying to blind {PRONOUN/m_c/object}.",
-		"m_c hates going outside, {PRONOUN/m_c/subject} alway {VERB/m_c/complain/complains} about the burning in {PRONOUN/m_c/poss} eyes.",
-		"m_c is always complaining about how everyone else in the Clan around {PRONOUN/m_c/object} is just too loud.",
-		"It often seems to take m_c multiple attempts before {PRONOUN/m_c/subject} can understand what {PRONOUN/m_c/poss} Clanmates are trying to tell {PRONOUN/m_c/object}.",
-		"m_c complains often about how the nest around {PRONOUN/m_c/object} feels like against {PRONOUN/m_c/poss} pelt."
-	],
-    "jumbled noise": [
-        "r_c reassures m_c's parents that {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} disobediant, {PRONOUN/m_c/subject} just {VERB/m_c/have/has} a case of Jumbled Noise.",
-        "m_c has gotten overwhelmed by noise {PRONOUN/m_c/poss} entire life and has finally figured out why!",
-        "m_c is happy to know that the reason {PRONOUN/m_c/subject} sometimes lose words is because {PRONOUN/m_c/subject} {VERB/m_c/have/has} Jumbled Noise."
-    ],
-	"constant rash": [
-		"r_c has noticed that little m_c is often scratching at {PRONOUN/m_c/self} throughout the season, it would seem that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a near constant recurring rash.",
-		"No matter how much care m_c takes to follow the instructions given to {PRONOUN/m_c/object} by the medicine cat, nothing seems to keep the rash away.",
-		"m_c's a particularly grumpy kitten, mostly because {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} constantly itching and in pain from a rash that refuses to leave."
-	],
-	"lazy eye": [
-		"While looking the same as any other kit in the nursery there's a bit of a shock when m_c's eyes finally open. r_c's quick to reassure the parents that a lazy eye isn't anything to worry too much about.",
-		"Even if m_c's eye seems a little bit different, it doesn't really bother {PRONOUN/m_c/object}.",
-		"m_c doesn't understand the fuss that everyone keeps making about {PRONOUN/m_c/poss} eye. {PRONOUN/m_c/poss/CAP} {VERB/m_c/think/thinks} it makes {PRONOUN/m_c/object} look cool.",
-		"Despite been as healthy as any other kitten in the Nursery, m_c's been struggling to navigate and is dismayed to hear that {PRONOUN/m_c/poss} eyesight might never be as clear as {PRONOUN/m_c/poss} Clanmates."
-	],
-    "chattering tongue": [
-        "m_c's parent brings m_c to r_c for {PRONOUN/m_c/poss} uncontrolable movement. r_c says that {PRONOUN/m_c/subject} have a chattering tongue.",
-        "As m_c grows up, {PRONOUN/m_c/subject} start having uncontrolable movements.",
-        "m_c tics and is impulsive. {PRONOUN/m_c/subject/CAP} might have a chattering tongue."
-    ],
-    "shattered soul": [
-        "m_c has a nervous conversation with the medicine cat after not feeling like {PRONOUN/m_c/self} for awhile. The medicine cat tells m_c that {PRONOUN/m_c/subject} might be a shattered soul.",
-        "m_c realizes that they are a shattered soul when one of {PRONOUN/m_c/poss} alters says it out loud!",
-        "m_c is starting to suspect that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a shattered soul because of the voices {PRONOUN/m_c/subject} hear.",
-        "m_c vents to the medicine cat that sometimes it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own: {PRONOUN/m_c/subject} may be a shattered soul"
-    ],   
-    "budding spirit": [
-        "m_c has a nervous conversation with the medicine cat after not feeling like {PRONOUN/m_c/self} for awhile. The medicine cat tells m_c that {PRONOUN/m_c/subject} might be a budding spirit.",
-        "m_c realizes that they are a budding spirit when one of {PRONOUN/m_c/poss} alters says it out loud!",
-        "m_c is starting to suspect that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a budding spirit because of the voices {PRONOUN/m_c/subject} hear.",
-        "m_c vents to the medicine cat that sometimes it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own: {PRONOUN/m_c/subject} may be a budding spirit. "
-    ],
-    "testosterone deficiency": [
-        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
-        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
-    ],
-    "excess testosterone": [
-        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
-        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex. ",
-        "m_c doesn't look like a she-cat entirely, it looks like {PRONOUN/m_c/subject} has some excess testosterone, and that's okay!"
-    ],
-    "aneuploidy": [
-        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
-        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
-    ],
-    "mosaicism": [
-        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
-        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
-    ],
-    "chimerism": [
-        "The medicine cat carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do great!",
-        "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that m_c is intersex."
-    ],
-    "infertile": [
-        "r_c explains to m_c that {PRONOUN/m_c/subject} may be infertile.",
-        "m_c has discovered that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} infertile.",
-        "After m_c discovers that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} infertile, {PRONOUN/m_c/subject} {VERB/m_c/realize/realizes} that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a lot more to think about than {PRONOUN/m_c/subject} previously thought."
-    ],
-    "pcos": [
-        "After m_c comes to the medicine den asking for more herbs for their cramps, r_c insists on checking up on {PRONOUN/m_c/object}. It appears to be pcos.",
-        "After m_c has had a shark week for more than a week, r_c has dedided to check up on {PRONOUN/m_c/object}. It turns out that m_c has PCOS!",
-        "After m_c was stuck in {PRONOUN/m_c/poss} nest with cramps for days, r_c diagnoses m_c with PCOS."
-    ],
-    "falling paws": [
-        "m_c complains about feeling lightheaded whenever {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up too quickly. After running a few tests, r_c has come to the conclussion that m_c has falling paws.",
-        "After m_c faints in the middle of the medicine cat den, r_c diagnoses m_c with falling paws.",
-        "m_c has to sit down often when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up. A Clanmate jokes about {PRONOUN/m_c/object} having a set of always falling paws.",
-        "m_c can feel {PRONOUN/m_c/poss} heartbeat when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
-    ],
-    "curved spine": [
-        "m_c's spine has always been a little different, but it seems growing up has only made it worse. {PRONOUN/m_c/subject} clearly have a curved spine.",
-        "m_c can barely get out of {PRONOUN/m_c/poss} bed due to back pain. r_c feels {PRONOUN/m_c/poss} back and realizes that {PRONOUN/m_c/poss} spine is curved."
-    ],
-    "jumbled mind": [
-        "m_c frequently stumbles over {PRONOUN/m_c/poss} words. The medicine cat suspects {PRONOUN/m_c/subject} may have a jumbled mind.",
-        "m_c can't get a sentance out and is almost brought to tears. This has become a pattern and the medicine cat thinks that m_c has a jumbled mind."
-    ],
-    "counting fog": [
-        "r_c notices that m_c always repeats numbers when counting. It seems {PRONOUN/m_c/subject} may have counting fog.",
-        "When m_c notices that r_c had a lot of trouble with numbers, r_c does some testing to figure out what's going on with m_c. It turns out that m_c has some counting fog!"
-    ]
+  "starwalker": [
+    "m_c has been having issues socializing with {PRONOUN/m_c/poss} denmates - {PRONOUN/m_c/subject} {VERB/m_c/find/finds} it uncomfortable and somewhat terrifying. r_c understands, and talks about it with {PRONOUN/m_c/object}, saying {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} have to force {PRONOUN/m_c/self} into it.",
+    "m_c is just like any other kit, rolling around and batting at bugs {PRONOUN/m_c/subject} {VERB/m_c/find/finds} - but {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a bit louder, a bit more brash, and doesn't seem to understand social cues. m_c might walk the paths between the stars.",
+    "m_c doesn't seem to be a big fan of eye contact, {PRONOUN/m_c/poss} eyes often drift from {PRONOUN/m_c/poss} parent's face and {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} take well to social cues.",
+    "m_c has always felt different from other cats. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} know how to socialise and are always told that {PRONOUN/m_c/subject} {VERB/m_c/act/acts} weird. The medicine cat tells {PRONOUN/m_c/object} that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a starwalker, and that's why {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} this way.",
+    "The feeling of certain things, like leaves touching {PRONOUN/m_c/poss} fur, or the noise of scratching, has always seemed so much worse to m_c. {PRONOUN/m_c/subject/CAP} {VERB/m_c/think/thinks} {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} just being dramatic - until {PRONOUN/m_c/subject} {VERB/m_c/discover/discovers} that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a starwalker.",
+    "While the other kittens are rolling around, m_c is more interested in talking with the Clan's medicine cat and soaking up information about the herbs.",
+    "m_c struggles to change {PRONOUN/m_c/poss} routine, preferring to do things one way and alone. {PRONOUN/m_c/subject/CAP} may be a starwalker.",
+    "While the other kittens in the Clan are out making many friends, m_c prefers to stick with one or two particular cats and shies away from others.",
+    "When it comes to trying out new games and nesting material, m_c keeps making faces and looking very upset - {PRONOUN/m_c/subject} {VERB/m_c/like/likes} what {PRONOUN/m_c/subject} already {VERB/m_c/have/has}."
+  ],
+  "anxiety": [
+    "r_c is growing very used to m_c coming into the medicine den with a twitching tail and pressed down ears. They sit together, r_c purring as {PRONOUN/r_c/subject} steadily {VERB/r_c/answer/answers} all of {PRONOUN/m_c/poss} many worried questions.",
+    "While most kittens are already curiously looking around and exploring camp, m_c is still hiding behind {PRONOUN/m_c/poss} parents and very awkwardly batting at leaves, before running back into the nursery to hide.",
+    "It's normal for a kitten to get startled by new things, but even after identifying something, m_c stares at it with wide eyes as if it would attack {PRONOUN/m_c/object}.",
+    "No matter how many reassurances {PRONOUN/m_c/poss} parents give {PRONOUN/m_c/object}, m_c still worries about each action that {PRONOUN/m_c/subject} {VERB/m_c/take/takes}.",
+    "m_c took some prey from the fresh-kill pile, and then cried because {PRONOUN/m_c/subject} thought it might mean the rest of the Clan wouldn't have enough."
+  ],
+  "obsessive mind": [
+    "m_c sleeps separately from {PRONOUN/m_c/poss} parent and denmates, liking {PRONOUN/m_c/poss} own nest that {PRONOUN/m_c/subject} can decorate and keep it just how {PRONOUN/m_c/subject} {VERB/m_c/like/likes} it. r_c explains to {PRONOUN/m_c/poss} concerned parent that {PRONOUN/m_c/subject} could have an obsessive mind, and it's nothing serious.",
+    "m_c hisses when some of {PRONOUN/m_c/poss} denmates playfight near {PRONOUN/m_c/poss} nest, quick to realign what they knocked out of place. {PRONOUN/m_c/poss/CAP} parent scolds {PRONOUN/m_c/object} for this, but m_c complains that it makes {PRONOUN/m_c/object} anxious when {PRONOUN/m_c/poss} things are out of place.",
+    "m_c snuck out of camp, trotted towards a puddle, and rolled in it, seeming happy once {PRONOUN/m_c/subject} shook off the remaining water. When asked why, m_c just says water makes {PRONOUN/m_c/object} feel cleaner.",
+    "Counting and recounting, m_c keeps doing things a certain number of times and when asked why, {PRONOUN/m_c/subject} just {VERB/m_c/say/says} that it's a reasonable number of times.",
+    "Around and around, m_c keeps asking the same questions, not settled even though the answer is the same every time.",
+    "m_c has little habits that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} repeating, like grooming {PRONOUN/m_c/poss} paws in a particular order or waving {PRONOUN/m_c/poss} tail at someone multiple times before even saying a greeting.",
+    "When it comes to cleaning the den, m_c is the best helper and very particular - sometimes needing to place an item multiple times until it's just right."
+  ],
+  "comet spirit": [
+    "m_c mewled and whined like any other kit, but {PRONOUN/m_c/poss} energy was through the nursery's roof and driving the queens mad - to the point they called r_c over just to see if {PRONOUN/r_c/subject} {VERB/r_c/have/has} anything to calm the rambunctious kit. r_c chuckled and said m_c may simply have a comet spirit - {PRONOUN/r_c/subject} {VERB/r_c/have/has} some herbs that might help {PRONOUN/m_c/object} relax.",
+    "m_c races around camp like an absolute whirlwind, getting under every cat's paws. The warriors shake their heads and the queens sigh, but as long as m_c doesn't get into trouble, they'll just have to deal with {PRONOUN/m_c/poss} energy.",
+    "m_c talked long into the afternoon about the bugs {PRONOUN/m_c/subject} saw, and how they're so cool and how they run away when you paw at them!",
+    "There's some frustration from the older Clan members at how distractable m_c is, but it's just the way that {PRONOUN/m_c/subject} {VERB/m_c/are/is}.",
+    "m_c eagerly follows the older warriors and apprentices, bounding from cat to cat with questions that make heads spin."
+  ],
+  "antisocial": [
+    "m_c has been getting into arguments with the other kits recently. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} seem to understand what {PRONOUN/r_c/subject} did wrong, and don't seem bothered when other cats are upset with {PRONOUN/m_c/poss}. r_c understands {PRONOUN/m_c/subject} {VERB/m_c/are/is} not trying to upset anyone, {PRONOUN/m_c/subject} {VERB/m_c/are/is} just antisocial.",
+    "m_c has been having trouble enjoying the things around {PRONOUN/m_c/object}, especially playing with other kits. {PRONOUN/m_c/subject/CAP} {VERB/m_c/don't/doesn't} seem to enjoy being around others, and prefer to spend time on {PRONOUN/m_c/poss} own. m_c seems to be antisocial. {PRONOUN/m_c/subject/CAP} will still live a normal, happy life, the medicine cat says, {PRONOUN/m_c/subject} just {VERB/m_c/enjoy/enjoys} solitude more than others."
+  ],
+  "heavy soul": [
+    "r_c is brought to the nursery by a worried parent, m_c wasn't running around and playing like the other kits, just curled in a ball staring blankly at the wall. After some gentle talking with m_c the medicine cat sits back and softly explains {PRONOUN/r_c/subject} {VERB/r_c/think/thinks} it's a heavy soul.",
+    "m_c hides from {PRONOUN/m_c/poss} denmates, much to the concern of {PRONOUN/m_c/poss} parent as they curl around their kit, they couldn't do much but purr in an attempt to comfort their child.",
+    "A denmate wonders why m_c won't play with anyone, and they try to become friends and play with {PRONOUN/m_c/object}. m_c agrees to play with them, but don't seem too energetic about it.",
+    "m_c has seemed more sluggish then the other kits {PRONOUN/m_c/poss} age, less energetic. Less focused on the reality and more lost in {PRONOUN/m_c/poss} thoughts."
+  ],
+  "constant roaming pain": [
+    "After moons of m_c complaining of pains through {PRONOUN/m_c/poss} kithood, r_c sits back and softly explains that this pain will follow {PRONOUN/m_c/object} through {PRONOUN/m_c/poss} whole life and {PRONOUN/r_c/subject} can only offer temporary relief.",
+    "m_c insists that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not lying, {PRONOUN/m_c/subject} {VERB/m_c/have/has} pains all the time. It doesn't look like it'll ever go away.",
+    "Unlike other kittens m_c keeps {PRONOUN/m_c/self} mostly curled up in the nursery, constantly complaining of pains throughout {PRONOUN/m_c/poss} body.",
+    "When touched by another, m_c lets out yowls of pain. It's distressing for everyone that they can't really help {PRONOUN/m_c/object}."
+  ],
+  "thunderous spirit": [
+    "r_c notices m_c struggles with strong and intense emotions and thinks that {PRONOUN/m_c/subject} may have a thunderous spirit.",
+    "m_c has a strong fear of abandonment and being left behind, to the point it is affecting {PRONOUN/m_c/poss} relationships.",
+    "While talking to another cat, m_c explains that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} emotions so strongly that some days it feels like {PRONOUN/m_c/poss} emotions are going to explode from {PRONOUN/m_c/object}. {PRONOUN/m_c/poss/CAP} Clanmate encourages them to talk to the medicine cat, and m_c discovers that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a thunderous spirit.",
+    "Some of m_c's Clanmates notice that sometimes m_c behaves recklessly and struggles to trust others, and they tell {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} may has a thunderous spirit."
+  ],
+  "otherworldly mind": [
+    "r_c notices that m_c sees and hears things that other cats can't, and suggests that {PRONOUN/m_c/subject} {VERB/m_c/have/has} an otherworldly mind.",
+    "m_c often has strong believes that no other cat has, like how {PRONOUN/m_c/subject} can talk to birds or was once a powerful leader",
+    "Clanmates are worried about m_c, as sometimes the words {PRONOUN/m_c/subject} are saying are gibberish, or {PRONOUN/m_c/subject}'ll stop randomly in a conversation. Paired with other factors, m_c speaks to a medicine cat",
+    "A queen in the nursery notices that m_c keeps on complaining about a scary monster which {PRONOUN/m_c/subject} can't see, and they speak to some other Clanmates about it.",
+    "m_c cannot help but repeat what others say, {PRONOUN/m_c/subject} {VERB/m_c/have/has} to! {PRONOUN/m_c/poss/CAP} Clanmates think this is apart of something bigger",
+    "m_c is constantly worried that someone or something is after {PRONOUN/m_c/object}, and sometimes believes that cats have poisoned {PRONOUN/m_c/poss} prey or put thorns in {PRONOUN/m_c/poss} nest. {PRONOUN/m_c/poss/CAP} Clanmates talk to a medicine cat about it."
+  ],
+  "snow vision": [
+    "r_c notices that m_c struggles to see in the dark, more so than the other kits. {PRONOUN/m_c/subject} {VERB/r_c/speak/speaks} to m_c and discover that m_c has snow vision.",
+    "m_c is permanently seeing a snowy effect in their vision, and when {PRONOUN/m_c/subject} {VERB/m_c/speaks/speak} to a medicine cat about it, {PRONOUN/m_c/subject} {VERB/m_c/discovers/discover} that they have snow vision.",
+    "Clanmates are annoyed that m_c always refuses to go on night patrols, and when they confront them about it they discover its because m_c stuggles to see in the dark, and they realise that m_c has snow vison."
+  ],
+  "irritable bowels": [
+    "r_c is very carefully preparing yet another mixture of belly soothing herbs for m_c. {PRONOUN/r_c/subject}{VERB/m_c/'re/'s} worried about the consistancy of {PRONOUN/m_c/poss} issues.",
+    "m_c is yet again complaining about having a stomachache, this is becoming upsettingly common.",
+    "The parents of m_c worry when {PRONOUN/m_c/subject} {VERB/m_c/struggles/struggle} to properly eat and use the dirtplace, always in some form of discomfort."
+  ],
+  "mute": [
+    "When m_c's parents come in with {PRONOUN/m_c/object} to visit r_c it's about worries with {PRONOUN/m_c/object} not speaking. After some tests r_c sits back and gently explains it's likely that m_c's mute.",
+    "Initially there was some confusion over why m_c wasn't speaking, it's soon cleared up that there's nothing wrong {PRONOUN/m_c/subject} {VERB/m_c/are/is} just mute.",
+    "m_c has never needed words to speak, fluent enough with {PRONOUN/m_c/poss} body language and the Clan adapts to help {PRONOUN/m_c/object} be heard even in {PRONOUN/m_c/poss} silence.",
+    "Nobody knew silence could be so loud until m_c arrived."
+  ],
+  "body biter":[
+    "After {PRONOUN/m_c/poss} parent is informed that m_c doesn't realize when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} pulling at {PRONOUN/m_c/poss} fur, m_c's parent drops {PRONOUN/m_c/object} off at the medicine den. r_c says that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a body biter.",
+    "m_c bites at {PRONOUN/m_c/poss} claws. It is possible that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a body biter.",
+    "m_c keeps getting told to not to pick at {PRONOUN/m_c/poss} scabs but m_c doesn't even realize when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} doing it.",
+    "m_c picks at {PRONOUN/m_c/poss} body when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} stressed."
+  ],
+  "jellyfish joints": [
+    "m_c curses {PRONOUN/m_c/poss} days of showing off {PRONOUN/m_c/poss} bendy paws in kithood, as now {PRONOUN/m_c/poss} joints ache, and r_c has told {PRONOUN/m_c/object} that {PRONOUN/m_c/subject}{VERB/m_c/'s/'re} hypermobile. Meaning that there is no changing it.",
+    "After moons of seeing m_c bounce around painlessly, the medicine cat calls {PRONOUN/m_c/object} into the medicine den to explain that the reason {PRONOUN/m_c/poss} joints have been hurting {PRONOUN/m_c/subject} is that maybe {PRONOUN/m_c/poss} flexible joints <i>weren't</i> the painless kind.",
+    "m_c's Clanmates look on when {PRONOUN/m_c/poss} joints bend in a way that most cats could only dream of.",
+    "m_c has recently been informed that most cats paws <i>don't</i> bend that way!"
+  ],
+  "loose body": [
+    "r_c is getting a little tired of treating m_c's painful, loose and clicky joints, but {PRONOUN/r_c/subject} {VERB/m_c/realise/realises} that theres a reason m_c is in {PRONOUN/r_c/poss} den so often.",
+    "m_c has always been a trickster, showing off {PRONOUN/m_c/poss} strechy skin and bendy joints, but they soon feel the pain that comes from it and realises why {PRONOUN/m_c/poss} body feels this way.",
+    "m_c has to go to the dirtplace very frequently, and getting there always hurts {PRONOUN/m_c/poss} joints. {PRONOUN/m_c/subject} thought this was normal, but after speaking to some other cats, {PRONOUN/m_c/subject} realise its not.",
+    "After speaking to some of their Clanmates, m_c discovers that not every cat is in pain all the time.",
+    "m_c is always tired and always in pain, and {PRONOUN/m_c/subject} {VERB/m_c/decide/decides} it's time to speak to a medicine cat."
+  ],
+  "burning light": [
+    "Walking out of the nursery for the first time, m_c mewls and rushes back inside, crying about how the light burns their eyes and they don't want to go outside. r_c is brought over to explain that unlike most cats m_c suffers from burning light, and there isn't much they can do to help but just wait out the burn.",
+    "Whenever m_c steps out of the nursery {PRONOUN/m_c/subject} {VERB/m_c/whine/whines} and {VERB/m_c/retreat/retreats} back inside.",
+    "While {PRONOUN/m_c/poss} nurserymates are already freely exploring and playing around camp, m_c whimpers and complains about the evil sun trying to blind {PRONOUN/m_c/object}.",
+    "m_c hates going outside, {PRONOUN/m_c/subject} alway {VERB/m_c/complain/complains} about the burning in {PRONOUN/m_c/poss} eyes."
+  ],
+  "disrupted senses": [
+    "r_c talks with m_c's parents about how much more sensitive {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} than other kittens. After some observation it seems that m_c might just have some disrupted senses.",
+    "Whenever m_c steps out of the nursery {PRONOUN/m_c/subject} {VERB/m_c/whine/whines} and {VERB/m_c/retreat/retreats} back inside.",
+    "While {PRONOUN/m_c/poss} nurserymates are already freely exploring and playing around camp, m_c whimpers and complains about the evil sun trying to blind {PRONOUN/m_c/object}.",
+    "m_c hates going outside, {PRONOUN/m_c/subject} alway {VERB/m_c/complain/complains} about the burning in {PRONOUN/m_c/poss} eyes.",
+    "m_c is always complaining about how everyone else in the Clan around {PRONOUN/m_c/object} is just too loud.",
+    "It often seems to take m_c multiple attempts before {PRONOUN/m_c/subject} can understand what {PRONOUN/m_c/poss} Clanmates are trying to tell {PRONOUN/m_c/object}.",
+    "m_c complains often about how the nest around {PRONOUN/m_c/object} feels like against {PRONOUN/m_c/poss} pelt."
+  ],
+  "jumbled noise": [
+    "r_c reassures m_c's parents that {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} disobediant, {PRONOUN/m_c/subject} just {VERB/m_c/have/has} a case of Jumbled Noise.",
+    "m_c has gotten overwhelmed by noise {PRONOUN/m_c/poss} entire life and has finally figured out why!",
+    "m_c is happy to know that the reason {PRONOUN/m_c/subject} sometimes lose words is because {PRONOUN/m_c/subject} {VERB/m_c/have/has} Jumbled Noise."
+  ],
+  "constant rash": [
+    "r_c has noticed that little m_c is often scratching at {PRONOUN/m_c/self} throughout the season, it would seem that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a near constant recurring rash.",
+    "No matter how much care m_c takes to follow the instructions given to {PRONOUN/m_c/object} by the medicine cat, nothing seems to keep the rash away.",
+    "m_c's a particularly grumpy kitten, mostly because {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} constantly itching and in pain from a rash that refuses to leave."
+  ],
+  "lazy eye": [
+    "While looking the same as any other kit in the nursery there's a bit of a shock when m_c's eyes finally open. r_c's quick to reassure the parents that a lazy eye isn't anything to worry too much about.",
+    "Even if m_c's eye seems a little bit different, it doesn't really bother {PRONOUN/m_c/object}.",
+    "m_c doesn't understand the fuss that everyone keeps making about {PRONOUN/m_c/poss} eye. {PRONOUN/m_c/poss/CAP} {VERB/m_c/think/thinks} it makes {PRONOUN/m_c/object} look cool.",
+    "Despite been as healthy as any other kitten in the Nursery, m_c's been struggling to navigate and is dismayed to hear that {PRONOUN/m_c/poss} eyesight might never be as clear as {PRONOUN/m_c/poss} Clanmates."
+  ],
+  "chattering tongue": [
+    "m_c's parent brings m_c to r_c for {PRONOUN/m_c/poss} uncontrollable movement. r_c says that {PRONOUN/m_c/subject} have a chattering tongue.",
+    "As m_c grows up, {PRONOUN/m_c/subject} start having uncontrollable movements.",
+    "m_c tics and is impulsive. {PRONOUN/m_c/subject/CAP} might have a chattering tongue."
+  ],
+  "shattered soul": [
+    "m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a shattered soul.",
+    "m_c realizes that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a shattered soul when one of {PRONOUN/m_c/poss} alters says it out loud!",
+    "m_c is starting to suspect that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a shattered soul because of the voices {PRONOUN/m_c/subject} {VERB/m_c/hear/hears}.",
+    "m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a shattered soul."
+  ],
+  "budding spirit": [
+    "m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a budding spirit.",
+    "m_c realizes that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a budding spirit when one of {PRONOUN/m_c/poss} alters says it out loud!",
+    "m_c is starting to suspect that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a budding spirit because of the voices {PRONOUN/m_c/subject} {VERB/m_c/hear/hears}.",
+    "m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a budding spirit."
+  ],
+  "testosterone deficiency": [
+    "r_c carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do fine!",
+    "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} intersex."
+  ],
+  "excess testosterone": [
+    "r_c carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do fine!",
+    "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} intersex.",
+    "m_c doesn't look like a she-cat entirely, it looks like {PRONOUN/m_c/subject} {VERB/m_c/have/has} some excess testosterone - and that's okay!"
+  ],
+  "aneuploidy": [
+    "r_c carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do fine!",
+    "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} intersex."
+  ],
+  "mosaicism": [
+    "r_c carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do fine!",
+    "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} intersex."
+  ],
+  "chimerism": [
+    "r_c carefully soothes over all of m_c's parent's worries. Being intersex is perfectly normal and m_c will do fine!",
+    "While checking in on the nursery, the medicine cat notices something slightly different about m_c. It seems that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} intersex."
+  ],
+  "infertile": [
+    "r_c explains to m_c that {PRONOUN/m_c/subject} may be infertile.",
+    "m_c has discovered that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} infertile.",
+    "After m_c discovers that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} infertile, {PRONOUN/m_c/subject} {VERB/m_c/realize/realizes} that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a lot more to think about than {PRONOUN/m_c/subject} previously thought."
+  ],
+  "pcos": [
+    "After m_c comes to the medicine den asking for more herbs for their cramps, r_c insists on checking up on {PRONOUN/m_c/object}. It appears to be pcos.",
+    "After m_c was stuck in {PRONOUN/m_c/poss} nest with cramps for days, the medicine cat diagnoses m_c with pcos."
+  ],
+  "falling paws": [
+    "m_c complains about feeling lightheaded whenever {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up too quickly. After running a few tests, r_c has come to the conclusion that m_c has falling paws.",
+    "After m_c faints in the middle of the medicine den, the medicine cat diagnoses m_c with falling paws.",
+    "m_c has to sit down often when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up. A Clanmate jokes about {PRONOUN/m_c/object} having a set of always falling paws.",
+    "m_c can feel {PRONOUN/m_c/poss} heartbeat when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
+  ],
+  "curved spine": [
+    "m_c can barely get out of {PRONOUN/m_c/poss} bed due to back pain. r_c feels {PRONOUN/m_c/poss} back and realizes that {PRONOUN/m_c/poss} spine is curved.",
+    "m_c's spine has always been a little different, but it seems growing up has only made it worse. {PRONOUN/m_c/subject} clearly have a curved spine."
+  ],
+  "jumbled mind": [
+    "m_c frequently stumbles over {PRONOUN/m_c/poss} words. r_c suspects {PRONOUN/m_c/subject} may have a jumbled mind.",
+    "m_c can't get a sentence out and is almost brought to tears. This has become a pattern and the medicine cat thinks that m_c has a jumbled mind."
+  ],
+  "counting fog": [
+    "r_c notices that m_c always repeats numbers when counting. It seems {PRONOUN/m_c/subject} may have counting fog.",
+    "The medicine cat notices that m_c always repeats numbers when counting. It seems {PRONOUN/m_c/subject} may have counting fog."
+  ]
 }
