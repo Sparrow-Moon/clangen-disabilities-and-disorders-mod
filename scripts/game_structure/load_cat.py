@@ -87,7 +87,7 @@ def json_load():
                 eye_color=cat["eye_colour"],
                 eye_colour2=cat["eye_colour2"] if "eye_colour2" in cat else None,
                 paralyzed=cat["paralyzed"],
-                newborn_sprite=cat["sprite_newborn"] if "sprite_newborn" in cat else cat["sprite_kitten"],
+                newborn_sprite=cat["sprite_newborn"] if "sprite_newborn" in cat else None,
                 kitten_sprite=cat["sprite_kitten"] if "sprite_kitten" in cat else cat["sprite_kitten"],
                 adol_sprite=cat["sprite_adolescent"] if "sprite_adolescent" in cat else cat["sprite_adolescent"],
                 adult_sprite=cat["sprite_adult"] if "sprite_adult" in cat else cat["sprite_adult"],

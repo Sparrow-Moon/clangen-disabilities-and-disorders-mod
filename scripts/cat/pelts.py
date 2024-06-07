@@ -301,10 +301,14 @@ class Pelt():
                     self.cat_sprites['adult'] = 10
                 elif self.cat_sprites['adult'] == 2:
                     self.cat_sprites['adult'] = 11
+                self.cat_sprites['newborn'] = 20
                 self.cat_sprites['young adult'] = self.cat_sprites['adult']
                 self.cat_sprites['senior adult'] = self.cat_sprites['adult']
+                self.cat_sprites['para_young'] = 14
                 self.cat_sprites['para_adult'] = 16
         else:
+            self.cat_sprites['newborn'] = 20
+            self.cat_sprites['para_young'] = 14
             self.cat_sprites['para_adult'] = 15
         if self.cat_sprites['senior'] not in [12, 13, 14]:
             if self.cat_sprites['senior'] == 3:
@@ -656,7 +660,8 @@ class Pelt():
             'adolescent': random.randint(3, 5),
             'senior': random.randint(12, 14),
             'sick_young': 19,
-            'sick_adult': 18
+            'sick_adult': 18,
+            'para_young': 14
         }
         self.reverse = choice([True, False])
                 
