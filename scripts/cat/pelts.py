@@ -973,10 +973,10 @@ class Pelt():
         if self.vitiligo:
             vit_tints = random.randint(1, 15)
             if vit_tints == 1:
-                base_tints = sprites.vitiligo_tints["possible_tints"]["basic"]
-                if self.colour in sprites.vitiligo_tints["colour_groups"]:
-                    color_group = sprites.vitiligo_tints["colour_groups"].get(self.colour, "white")
-                    color_tints = sprites.vitiligo_tints["possible_tints"][color_group]
+                base_tints = sprites.vitiligo_tint["possible_tints"]["basic"]
+                if self.colour in sprites.vitiligo_tint["colour_groups"]:
+                    color_group = sprites.vitiligo_tint["colour_groups"].get(self.colour, "white")
+                    color_tints = sprites.vitiligo_tint["possible_tints"][color_group]
                 else:
                     color_tints = []
 

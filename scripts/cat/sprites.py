@@ -42,6 +42,12 @@ class Sprites():
         except:
             print("ERROR: Reading White Patches Tints")
 
+        try:
+            with open("sprites/dicts/vitiligo_tint.json", 'r') as read_file:
+                self.vitiligo_tint = ujson.loads(read_file.read())
+        except:
+            print("ERROR: Reading Vitiligo Tints")
+
     def spritesheet(self, a_file, name):
         """
         Add spritesheet called name from a_file.
