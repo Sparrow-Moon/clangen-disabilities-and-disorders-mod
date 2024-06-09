@@ -1,145 +1,149 @@
 {
-    "seizure": [
-        "m_c has recovered from {PRONOUN/m_c/poss} seizure.",
-        "m_c is up and moving again after resting from {PRONOUN/m_c/poss} seizure."
-    ],
-    "diarrhea": [
-        "m_c has stopped constantly running to the dirtplace, it seems {PRONOUN/m_c/poss} brush with diarrhea has ended.",
-        "m_c is finally feeling better, {PRONOUN/m_c/poss} experience with diarrhea now over."
-    ],
-    "fleas": [
-        "m_c has finally gotten rid of all {PRONOUN/m_c/poss} fleas.",
-        "m_c is free of fleas at last."
-    ],
-    "greencough": [
-        "m_c has recovered from greencough.",
-        "m_c is no longer coughing and sputtering, {PRONOUN/m_c/poss} case of greencough now cured.",
-        "m_c no longer has greencough."
-    ],
-    "kittencough": [
-        "m_c is free of kittencough, once again able to play and frolick.",
-        "m_c has recovered from kittencough.",
-        "m_c no longer has whitecough."
-    ],
-    "an infected wound": [
-        "The infection in m_c's wound has abated.",
-        "m_c's wound is no longer infected.",
-        "m_c's infection is gone."
-    ],
-    "redcough": [
-        "Somehow, miraculously, m_c has recovered from redcough."
-    ],
-    "running nose": [
-        "m_c's running nose has finally stopped running.",
-        "m_c no longer has a running nose.",
-        "m_c's running nose is gone."
-    ],
-    "whitecough": [
-        "m_c has recovered from whitecough.",
-        "m_c no longer has whitecough.",
-        "m_c's whitecough is gone."
-    ],
+	"seizure": [
+		"m_c has recovered from {PRONOUN/m_c/poss} seizure.",
+		"m_c is up and moving again after resting from {PRONOUN/m_c/poss} seizure."
+	],
+	"diarrhea": [
+		"m_c has stopped constantly running to the dirtplace, it seems {PRONOUN/m_c/poss} brush with diarrhea has ended.",
+		"m_c is finally feeling better, {PRONOUN/m_c/poss} experience with diarrhea now over."
+	],
+	"fleas": [
+		"m_c has finally gotten rid of all {PRONOUN/m_c/poss} fleas.",
+		"m_c is free of fleas at last."
+	],
+	"greencough": [
+		"m_c has recovered from greencough.",
+		"m_c is no longer coughing and sputtering, {PRONOUN/m_c/poss} case of greencough now cured.",
+		"m_c no longer has greencough."
+	],
+	"kittencough": [
+		"m_c is free of kittencough, once again able to play and frolick.",
+		"m_c has recovered from kittencough.",
+		"m_c no longer has whitecough."
+	],
+	"an infected wound": [
+		"The infection in m_c's wound has abated.",
+		"m_c's wound is no longer infected.",
+		"m_c's infection is gone."
+	],
+	"redcough": [
+		"Somehow, miraculously, m_c has recovered from redcough."
+	],
+	"running nose": [
+		"m_c's nose has finally stopped running.",
+		"m_c no longer has a running nose.",
+		"m_c's running nose is gone."
+	],
+	"whitecough": [
+		"m_c has recovered from whitecough.",
+		"m_c no longer has whitecough.",
+		"m_c's whitecough is gone."
+	],
 	"silvercough": [
         "m_c has recovered from silvercough.",
         "m_c no longer has silvercough.",
         "m_c's silvercough is gone."
 	],
-    "yellowcough": [
-        "m_c has survived yellowcough.",
-        "m_c has recovered from yellowcough.",
-        "m_c no longer has yellowcough.",
-        "m_c's yellowcough is gone."
-    ],
-    "a festering wound": [
-        "m_c's wound is no longer festering, the infection is gone.",
-        "m_c's festering wound seems to have gotten a bit better."
-    ],
-    "heat stroke": [
-        "m_c is no longer suffering from heat stroke.",
-        "m_c has recovered from heat stroke.",
-        "m_c is feeling much better, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} recovered from the heat stroke."
-    ],
-    "heat exhaustion": [
-        "m_c has recovered from the heat exhaustion.",
-        "m_c's heat exhaustion has abated.",
-        "m_c managed to recover from {PRONOUN/m_c/poss} heat exhaustion."
-    ],
-    "stomachache": [
-        "m_c is glad that {PRONOUN/m_c/poss} stomachache is finally gone.",
-        "m_c's stomachache has left.",
-        "m_c no longer has a stomachache."
-    ],
-    "nightmares": [
-        "m_c's nightmares have finally calmed.",
-        "m_c was struggling with a recent flood of nightmares, but thankfully they seem to have stopped.",
-        "m_c's nightmares have stopped.",
-        "m_c is no longer having nightmares."
-    ],
-    "grief stricken": [
-        "m_c will always feel {PRONOUN/m_c/poss} grief, but time has softened it, at least a little.",
-        "m_c gazes up into Silverpelt and finds that, finally, the grief has begun to lessen.",
-        "m_c wakes one day, after moons of numbness, and feels as though the world is less dull.",
-        "m_c tells {PRONOUN/m_c/self} that {PRONOUN/m_c/subject} can't let these feelings consume {PRONOUN/m_c/object}, instead {PRONOUN/m_c/subject} {VERB/m_c/have/has} to learn to live with it.",
-        "m_c picks {PRONOUN/m_c/self} up out of {PRONOUN/m_c/poss} nest and begins the day anew, a fresh conviction in {PRONOUN/m_c/poss} heart."
-    ],
+	"yellowcough": [
+		"m_c has survived yellowcough.",
+		"m_c has recovered from yellowcough.",
+		"m_c no longer has yellowcough.",
+		"m_c's yellowcough is gone."
+	],
+	"a festering wound": [
+		"m_c's wound is no longer festering, the infection is gone.",
+		"m_c's festering wound seems to have gotten a bit better."
+	],
+	"heat stroke": [
+		"m_c is no longer suffering from heat stroke.",
+		"m_c has recovered from heat stroke.",
+		"m_c is feeling much better, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} recovered from the heat stroke."
+	],
+	"heat exhaustion": [
+		"m_c has recovered from the heat exhaustion.",
+		"m_c's heat exhaustion has abated.",
+		"m_c managed to recover from {PRONOUN/m_c/poss} heat exhaustion."
+	],
+	"stomachache": [
+		"m_c is glad that {PRONOUN/m_c/poss} stomachache is finally gone.",
+		"m_c's stomachache has left.",
+		"m_c no longer has a stomachache."
+	],
+	"nightmares": [
+		"m_c's nightmares have finally calmed.",
+		"m_c was struggling with a recent flood of nightmares, but thankfully they seem to have stopped.",
+		"m_c's nightmares have stopped.",
+		"m_c is no longer having nightmares."
+	],
+	"grief stricken": [
+		"m_c will always feel {PRONOUN/m_c/poss} grief, but time has softened it, at least a little.",
+		"m_c gazes up into Silverpelt and finds that, finally, the grief has begun to lessen.",
+		"m_c wakes one day, after moons of numbness, and feels as though the world is less dull.",
+		"m_c tells {PRONOUN/m_c/self} that {PRONOUN/m_c/subject} can't let these feelings consume {PRONOUN/m_c/object}, instead {PRONOUN/m_c/subject} {VERB/m_c/have/has} to learn to live with it.",
+		"m_c picks {PRONOUN/m_c/self} up out of {PRONOUN/m_c/poss} nest and begins the day anew, a fresh conviction in {PRONOUN/m_c/poss} heart."
+	],
     "carrionplace disease": [
         "The stench coming from m_c is finally fading, {PRONOUN/m_c/subject} recovered from carrionplace disease.",
         "Against all odds, m_c has recovered from carrionplace disease."
     ],
-	"malnourished": ["WARNING: this string should never appear, nutrition are handled only in freshkill events."],
-	"starving": ["WARNING: this string should never appear, nutrition are handled only in freshkill events."],
+	"malnourished": [
+		"WARNING: this string should never appear, nutrition is handled only in freshkill events."
+	],
+	"starving": [
+		"WARNING: this string should never appear, nutrition is handled only in freshkill events."
+	],
 	"constipation": [
 		"After longer than m_c would like to admit, {PRONOUN/m_c/poss} constipation has passed.",
-		"With relief m_c finds that {PRONOUN/m_c/poss} trips to the dirtplace will once more end in a timely manner."
+		"With relief, m_c finds that {PRONOUN/m_c/poss} trips to the dirtplace will once more end in a timely manner."
 	],
 	"anxiety attack": [
 		"After a short while, m_c has calmed back down, no longer worrying about a threat that's not there.",
-		"m_c has spent the time talking with {PRONOUN/m_c/poss} Clanmates and has realised that there's nothing to worry about.",
+		"m_c has spent the time talking with {PRONOUN/m_c/poss} Clanmates and has realized that there's nothing to worry about.",
 		"Despite some lingering anxiety, m_c has calmed down and is able to feel secure in the knowledge that the Clan is safe.",
 		"m_c feels much better after some rest and time spent watching the Clan thrive."
 	],
 	"panic attack": [
-		"Despite still struggling a little bit m_c has mostly calmed down from {PRONOUN/m_c/poss} panic and feels able to take up {PRONOUN/m_c/poss} duties once more.",
-		"While {PRONOUN/m_c/poss} chest still races a bit as they leave the den, m_c is able to keep a clear head and rejoin {PRONOUN/m_c/poss} Clanmates.",
-		"With the help of {PRONOUN/m_c/poss} Clanmates m_c has steadied {PRONOUN/m_c/poss} breathing once more and feels ready to face the challenges of the day."
+		"Despite still struggling a little bit, m_c has mostly calmed down from {PRONOUN/m_c/poss} panic and feels able to take up {PRONOUN/m_c/poss} duties once more.",
+		"While {PRONOUN/m_c/poss} chest still races a bit as {PRONOUN/m_c/subject} {VERB/m_c/leave/leaves} the den, m_c is able to keep a clear head and rejoin {PRONOUN/m_c/poss} Clanmates.",
+		"With the help of {PRONOUN/m_c/poss} Clanmates, m_c has steadied {PRONOUN/m_c/poss} breathing once more and feels ready to face the challenges of the day."
 	],
 	"paranoia": [
-		"m_c's taken a while, but after so long stewing in {PRONOUN/m_c/poss} own head it's a relief to be able to greet {PRONOUN/m_c/poss} Clanmates without any sort of suspcions of danger anymore.",
-		"m_c is so relieved to be able to trust in {PRONOUN/m_c/poss} Clan and {PRONOUN/m_c/self} again."
+		"m_c has taken a while, but after so long stewing in {PRONOUN/m_c/poss} own head it's a relief to be able to greet {PRONOUN/m_c/poss} Clanmates without any sort of suspicions of danger anymore.",
+		"m_c is so relieved to be able to have trust in {PRONOUN/m_c/poss} Clan and {PRONOUN/m_c/self} again."
 	],
 	"absence": [
 		"m_c has come back to {PRONOUN/m_c/self} after been absent.",
-		"Between blinks m_c stretches out, continuing on {PRONOUN/m_c/poss} day as normal."
+		"Between blinks, m_c stretches out, continuing on {PRONOUN/m_c/poss} day as normal."
 	],
 	"spasms": [
-		"Despite some lingering twitching m_c's recovered from {PRONOUN/m_c/poss} spasm.",
+		"Despite some lingering twitching, m_c has recovered from {PRONOUN/m_c/poss} spasm.",
 		"m_c is able to get all of {PRONOUN/m_c/poss} paws underneath {PRONOUN/m_c/object} without issues."
 	],
 	"seasonal lethargy": [
-		"m_c knows that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} better then {PRONOUN/m_c/poss} mind, and with the change of season comes a new conviction to keep surviving.",
+		"m_c knows that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} better then {PRONOUN/m_c/poss} mind, and with the change of seasons comes a new conviction to keep surviving.",
 		"m_c's recent bout of fatigue seems to have ended",
 		"As the weather warms, m_c finally feels able to blink the recent fatigue away.",
 		"m_c wakes to the new dawn with a lightness in {PRONOUN/m_c/poss} chest and paws that has long been missed.",
-		"With the sounds of the songbirds in {PRONOUN/m_c/poss} ears m_c finds that the weight of fog over {PRONOUN/m_c/object} has risen.",
-		"As m_c observes the first growth of the season {PRONOUN/m_c/subject} feel like a new cat.",
+		"With the sounds of the songbirds in {PRONOUN/m_c/poss} ears, m_c finds that the weight of fog over {PRONOUN/m_c/object} has risen.",
+		"As m_c observes the first growth of the season, {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like a new cat.",
 		"m_c feels {PRONOUN/m_c/poss} tail swish with rekindled hope and trust in {PRONOUN/m_c/poss} own paws.",
-		"As the season changes the heavy weight in m_c's bones begins to fade. Finally {PRONOUN/m_c/subject} feel like {PRONOUN/m_c/subject} can rise with the sun rather than wishing it would leave {PRONOUN/m_c/object} to sleep."
+		"As the season changes, the heavy weight in m_c's bones begins to fade. Finally, {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like {PRONOUN/m_c/subject} can rise with the sun rather than wishing it would leave {PRONOUN/m_c/object} to sleep."
 	],
 	"lethargy": [
-		"After some moons the weight that's been in m_c's limbs has lifted and {PRONOUN/m_c/subject} finally {VERB/m_c/leave/leaves} {PRONOUN/m_c/poss} nest feeling rejuvinated.",
+		"After some moons, the weight that's been in m_c's limbs has lifted and {PRONOUN/m_c/subject} finally {VERB/m_c/leave/leaves} {PRONOUN/m_c/poss} nest, feeling rejuvenated.",
 		"While still somewhat tired, m_c is able to greet the dawn with the swish of {PRONOUN/m_c/poss} tail and a flick of {PRONOUN/m_c/poss} ears.",
 		"m_c feels {PRONOUN/m_c/poss} tail swish with rekindled hope and trust in {PRONOUN/m_c/poss} own paws.",
 		"m_c is able to raise {PRONOUN/m_c/poss} head towards the sun and face the dawn with renewed energy.",
-		"{PRONOUN/m_c/subject/CAP} might always be a bit tired and wrung out but m_c finds that it's the small things that make the days brighter."
+		"{PRONOUN/m_c/subject/CAP} might always be a bit tired and wrung out, but m_c finds that it's the small things that make the days brighter."
 	],
 	"nonverbal": [
-		"While cats are surprised to see m_c speaking again it is welcomed easily.",
+		"While cats are surprised to see m_c speaking again, it's welcomed wholeheartedly.",
 		"m_c cracks a joke at the gathering and makes some of the cats from the other Clans laugh.",
-		"m_c chats with some of {PRONOUN/m_c/poss} denmates comfortable and at ease."
+		"m_c chats with some of {PRONOUN/m_c/poss} denmates, comfortable and at ease."
 	],
 	"special interest": [
-		"While the intensity of m_c's love for the subject has faded it's not gone in the least and {PRONOUN/m_c/subject} {VERB/m_c/are/is} still ready to chat off another cat's ears if prompted.",
-		"m_c's able to refocus {PRONOUN/m_c/self} and stay on task, without always bringing {PRONOUN/m_c/poss} special interest into it.",
+		"While the intensity of m_c's love for the subject has faded, it's not gone in the slightest and {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} still ready to chat off another cat's ears if prompted.",
+		"m_c is able to refocus {PRONOUN/m_c/self} and stay on task, without always bringing {PRONOUN/m_c/poss} special interest into it.",
 		"m_c has some listlessness when {PRONOUN/m_c/poss} interest fades to slightly less all consuming.",
 		"m_c will always love {PRONOUN/m_c/poss} special interest, but can also make room for new interests."
 	],
@@ -150,54 +154,54 @@
 	"stimming": [
 		"For the moment, m_c has calmed {PRONOUN/m_c/poss} stimming.",
 		"m_c's stimming has become slightly less obvious.",
-		"After bouncing all around in {PRONOUN/m_c/poss} excitement m_c has calmed down.",
+		"After bouncing all around in {PRONOUN/m_c/poss} excitement, m_c has calmed down.",
 		"m_c's stimming has calmed {PRONOUN/m_c/object} back down.",
-		"m_c's finished self soothing with {PRONOUN/m_c/poss} stimming."
+		"m_c has finished self soothing with {PRONOUN/m_c/poss} stimming."
 	],
 	"indecision": [
-		"After a long period of deliberation m_c has made a decision.",
+		"After a long period of deliberation, m_c has made a decision.",
 		"m_c no longer feels trapped by indecision."
 	],
 	"impulsivity": [
 		"m_c has a clear head and is thinking through {PRONOUN/m_c/poss} decisions once more.",
-		"While still a bit twitchy and eager m_c has slowed down {PRONOUN/m_c/poss} decisions."
+		"While still a bit twitchy and eager, m_c has slowed down {PRONOUN/m_c/poss} decisions."
 	],
 	"vivid daydreams": [
-		"After all the daydreaming m_c feels once more able to engage with reality.",
+		"After all the daydreaming, m_c feels once more able to engage with reality.",
 		"m_c stopped daydreaming.",
 		"m_c is a lot more relaxed and feels able to focus completely on {PRONOUN/m_c/poss} tasks."
 	],
 	"hallucinations": [
-		"m_c is relieved when {PRONOUN/m_c/poss} head clears and {PRONOUN/m_c/subject} {VERB/m_c/are/is} no longer experiencing confusion or distress over what they see and hear.",
-		"m_c stopped halucinating things."
+		"m_c is relieved when {PRONOUN/m_c/poss} head clears and {PRONOUN/m_c/subject} {VERB/m_c/are/is} no longer experiencing confusion or distress over what {PRONOUN/m_c/subject} {VERB/m_c/see/sees} and {VERB/m_c/hear/hears}.",
+		"m_c has stopped hallucinating things."
 	],
 	"zoomies": [
-		"m_c has calmed back down from all {PRONOUN/m_c/poss} zooming around.",
-		"After all {PRONOUN/m_c/poss} zooming m_c has calmed down.",
-		"The Clan is relieved to see m_c is calm and collected once more.",
+		"m_c has calmed back down from all of {PRONOUN/m_c/poss} zooming around.",
+		"After all {PRONOUN/m_c/poss} zooming, m_c has calmed down.",
+		"The Clan is relieved to see that m_c is calm and collected once more.",
 		"m_c is no longer zooming around the camp like a particularly young kitten."
 	],
 	"compulsions": [
-		"With some relief m_c finds that {PRONOUN/m_c/subject} {VERB/m_c/are/is} able to balance {PRONOUN/m_c/poss} compulasions throughout the day.",
+		"With some relief, m_c finds that {PRONOUN/m_c/subject} {VERB/m_c/are/is} able to balance {PRONOUN/m_c/poss} compulsions throughout the day.",
 		"m_c has figured out a way to factor {PRONOUN/m_c/poss} compulsions more naturally into {PRONOUN/m_c/poss} routine.",
-		"m_c's been able to reorganize {PRONOUN/m_c/self} and {PRONOUN/m_c/poss} compulsions."
+		"m_c has been able to reorganize {PRONOUN/m_c/self} and {PRONOUN/m_c/poss} compulsions."
 	],
 	"turmoiled litter": [
-		"With much relief m_c is feeling a bit more like {PRONOUN/m_c/self}.",
-		"m_c could almost cry as a weight they weren't fully conscious of seems to lift.",
-		"m_c purrs as {PRONOUN/m_c/poss} kittens roll around {PRONOUN/m_c/object}, finally feeling like they can move on.",
-		"Sometimes a bond isn't instant and m_c finds that's alright."
+		"With much relief, m_c is feeling a bit more like {PRONOUN/m_c/self}.",
+		"m_c could almost cry as a weight {PRONOUN/m_c/subject} {VERB/m_c/were/was}n't fully conscious of seems to lift.",
+		"m_c purrs as {PRONOUN/m_c/poss} kittens roll around {PRONOUN/m_c/object}, finally feeling like {PRONOUN/m_c/subject} can move on.",
+		"Sometimes a bond isn't instant, and m_c finds that that's alright."
 	],
 	"sleeplessness": [
-		"m_c is so relieved to just get a somewhat peaceful nights sleep once more.",
-		"Once more m_c is able to sleep. At least for now."
+		"m_c is so relieved to just get a somewhat peaceful night's sleep once more.",
+		"Once more, m_c is able to sleep - at least, for now."
 	],
 	"sleep paralysis": [
-		"m_c's no longer stuck in {PRONOUN/m_c/poss} nest frozen awake.",
-		"With relief m_c's recent bout of sleep paralysis seems to have passed."
+		"m_c is no longer stuck in {PRONOUN/m_c/poss} nest, frozen awake.",
+		"With relief, m_c's recent bout of sleep paralysis seems to have passed."
 	],	
 	"burn out": [
-		"m_c is back on {PRONOUN/m_c/poss} paws after bring burnt out.",
+		"m_c is back on {PRONOUN/m_c/poss} paws after being burnt out.",
 		"m_c is no longer tired and exhausted from being burnt out."
 	],
 	"ear buzzing": [
@@ -206,7 +210,7 @@
 		"m_c sits and shares tongues freely with {PRONOUN/m_c/poss} Clanmates, no longer shaking {PRONOUN/m_c/poss} head to try and hear better."
 	],
 	"kittenspace": [
-		"After rolling around like a kitten m_c feels secure enough to resume {PRONOUN/m_c/poss} duties.",
+		"After rolling around like a kitten, m_c feels secure enough to resume {PRONOUN/m_c/poss} duties.",
 		"m_c is no longer in kittenspace and back on duty."
 	],
 	"puppyspace": [
@@ -215,26 +219,26 @@
 	],
 	"nest wetting": [
 		"After the embarrassment, m_c is relieved to wake up once more in a clean nest.",
-		"m_c's no longer wetting the nest and is welcomed back in.",
-		"m_c purrs when they wake up in nice clean moss."
+		"m_c is no longer wetting the nest and is welcomed back in.",
+		"m_c purrs when {PRONOUN/m_c/subject} {VERB/m_c/wake/wakes} up in nice clean moss."
 	],
 	"night dirtmaking": [
-		"m_c is able to once more sleep through the night without having to get up for the dirtplace.",
+		"m_c is able to once more sleep through the night without having to get up to go to the dirtplace.",
 		"To the relief of {PRONOUN/m_c/poss} denmates, m_c hasn't disturbed the den in the night anymore.",
-		"m_c rolls over in {PRONOUN/m_c/poss} nest, finally well rested without any night time trips to the dirtplace."
+		"m_c rolls over in {PRONOUN/m_c/poss} nest, finally well rested without any nighttime trips to the dirtplace."
 	],
 	"dizziness": [
 		"m_c's brief bout of dizziness has ended.",
-		"To m_c's relief {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} able to raise from {PRONOUN/m_c/poss} nest without falling back down.",
-		"m_c is no longer feeling dizzed when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
+		"To m_c's relief, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} able to raise from {PRONOUN/m_c/poss} nest without falling back down.",
+		"m_c is no longer feeling dizzied when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
 	],
 	"word loss": [
-		"With a bit of help from {PRONOUN/m_c/poss} Clanmates, m_c is able to speak in full sentances again.",
+		"With a bit of help from {PRONOUN/m_c/poss} Clanmates, m_c is able to speak in full sentences again.",
 		"After a bit of stumbling and fumbling, m_c has found words that are like what {PRONOUN/m_c/subject} {VERB/m_c/were/was} trying to say."
 	],
 	"information loss": [
-		"After m_c got clarification, m_c understands what {PRONOUN/m_c/poss} Clanmates were trying to tell {PRONOUN/m_c/object}.",
-		"When a Clanmate gives m_c instructions piece by piece instead of all at once, {PRONOUN/m_c/subject} were able to do the task to completion."
+		"After {PRONOUN/m_c/subject} got clarification, m_c understands what {PRONOUN/m_c/poss} Clanmates were trying to tell {PRONOUN/m_c/object}.",
+		"When a Clanmate gives m_c instructions piece by piece instead of all at once, {PRONOUN/m_c/subject} {VERB/m_c/were/was} able to do the task to completion."
 	],
 	"tics": [
 		"m_c has stopped ticing.",
@@ -246,7 +250,11 @@
 	],
 	"ear infection": [
 		"m_c is no longer struggling to hear.",
-		"r_c is happy to say that m_c no longer has an ear infection.",
+		"m_c is happy to say that {PRONOUN/m_c/subject} no longer {VERB/m_c/have/has} an ear infection.",
 		"m_c's ears no longer feel stuffed."
+	],
+	"nausea": [
+		"m_c is thankful to no longer be feeling nauseous",
+		"m_c isn't nauseous anymore and can return to {PRONOUN/m_c/poss} duties."
 	]
 }

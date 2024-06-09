@@ -744,7 +744,11 @@
         "counting fog":[
             "Being a starwalker affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog.",
             "Being a starwalker affects how m_c processes numbers. The medicine cat assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
-        ]
+        ],
+		"nausea": [
+			"m_c decided to try an old favorite food of {PRONOUN/m_c/inposs}, but {PRONOUN/m_c/subject} ended up not liking it. In fact, its texture and taste made m_c feel nauseous, and {PRONOUN/m_c/subject} now {VERB/m_c/lie/lies} in {PRONOUN/m_c/poss} nest, curled up and hoping that this feeling will go away soon.",
+    		"m_c decided to try an old favorite food of {PRONOUN/m_c/inposs}, but {PRONOUN/m_c/subject} ended up not liking it. In fact, its texture and taste made m_c feel nauseous, and {PRONOUN/m_c/subject} now {VERB/m_c/lie/lies} in {PRONOUN/m_c/poss} nest, curled up and hoping that this feeling will go away soon."
+  		]
     },
     "obsessive mind": {
 		"anxiety attack": [

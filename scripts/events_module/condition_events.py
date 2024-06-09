@@ -184,6 +184,7 @@ class Condition_Events():
         has_other_clan = False
         triggered = False
         text = None
+        leaddead = False
         random_number = int(random.random() * game.get_config_value("condition_related", f"{game.clan.game_mode}_injury_chance"))
 
         if cat.dead:
@@ -285,6 +286,7 @@ class Condition_Events():
                                 possible_scar = history_text_adjust(injury_event.history_text['scar'],
                                                                    other_clan_name, game.clan, other_cat_rc = other_cat)
                             if cat.status == 'leader' and 'lead_death' in injury_event.history_text:
+                                leaddead = True
                                 possible_death = history_text_adjust(injury_event.history_text['lead_death'],
                                                                     other_clan_name, game.clan, other_cat_rc = other_cat)
                             elif cat.status != 'leader' and 'reg_death' in injury_event.history_text:
@@ -307,7 +309,7 @@ class Condition_Events():
 
         if text is not None:
             types = ["health"]
-            if cat.dead:
+            if cat.dead or leaddead:
                 types.append("birth_death")
             if has_other_clan:
                 types.append("other_clans")
@@ -425,14 +427,15 @@ class Condition_Events():
         }
 
         scarless_conditions = [
-            "weak leg", "paralyzed", "raspy lungs", "wasting disease", "blind", "failing eyesight",
-            "one bad eye", "partial hearing loss", "deaf", "constant joint pain", "constantly dizzy",
-            "recurring shock", "lasting grief", "persistent headaches", "comet spirit", "heavy soul", "starwalker", "obsessive mind", "antisocial", "anxiety",
-            "constant roaming pain", "thunderous spirit", "otherworldly mind", "kitten regressor", "puppy regressor", "snow vision",
-            "echoing shock", "irritable bowels", "loose body", "longcough", "burning light", "disrupted senses",
-            "constant nightmares", "constant rash", "jellyfish joints", "lazy eye", "shattered soul", "budding spirit",
-            "pcos", "infertile", "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism",
-            "curved spine", "jumbled mind", "counting fog", "infertile"
+            "weak leg", "paralyzed", "raspy lungs", "wasting disease", "blind", "failing eyesight", "one bad eye",
+            "partial hearing loss", "deaf", "constant joint pain", "constantly dizzy", "recurring shock",
+            "lasting grief", "persistent headaches", "comet spirit", "heavy soul", "starwalker", "obsessive mind",
+            "antisocial", "anxiety", "constant roaming pain", "thunderous spirit", "otherworldly mind",
+            "kitten regressor", "puppy regressor", "snow vision", "echoing shock", "irritable bowels", "loose body",
+            "longcough", "burning light", "disrupted senses", "constant nightmares", "constant rash",
+            "jellyfish joints", "lazy eye", "shattered soul", "budding spirit", "pcos", "infertile",
+            "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism", "curved spine",
+            "jumbled mind", "counting fog", "albinism", "melanism"
 
         ]
 
@@ -502,7 +505,8 @@ class Condition_Events():
             "ticks": ["tick bites", "severe tick bites"],
             "nest wetting": "night dirtmaking",
             "nonverbal": "mute",
-            "tics": "tic attack"
+            "tics": "tic attack",
+            "nausea": "stomachache"
         }
         # ---------------------------------------------------------------------------- #
         #                         handle currently sick cats                           #

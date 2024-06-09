@@ -810,6 +810,18 @@ class ProfileScreen(Screens):
             # NEWLINE ----------
             output += "\n"
 
+        # NUTRITION INFO (if the game is in the correct mode)
+        if game.clan.game_mode in ["expanded", "cruel season"] and the_cat.is_alive() and FRESHKILL_ACTIVE:
+            nutr = None
+            if the_cat.ID in game.clan.freshkill_pile.nutrition_info:
+                nutr = game.clan.freshkill_pile.nutrition_info[the_cat.ID]
+            if nutr:
+                output += f"nutrition status: {round(nutr.percentage, 1)}%\n"
+            else:
+                output += f"nutrition status: 100%\n"
+
+
+
         return output
 
     def generate_column2(self, the_cat):
@@ -1049,7 +1061,7 @@ class ProfileScreen(Screens):
                 "grief stricken", "fleas", "malnourished", "starving", "paranoia", "seasonal lethargy", "lethargy",
                 "special interest", "hyperfixation", "stimming", "indecision", "impulsivity", "zoomies",
                 "sleeplessness", "burn out", "kittenspace", "puppyspace", "tics", "tic attack", "dizziness", 
-                "turmoiled litter", "nonverbal"
+                "turmoiled litter", "nonverbal", "nausea"
             ]
             all_special = True
             for condition in the_cat.illnesses:
@@ -1217,6 +1229,13 @@ class ProfileScreen(Screens):
                     output += '\ndizzy!'
                 else:
                     output += 'dizzy!'
+                    already_sick_injured = True
+
+            if "nausea" in the_cat.illnesses:
+                if already_sick_injured:
+                    output += '\nnauseous!'
+                else:
+                    output += 'nauseous!'
 
             if "nonverbal" in the_cat.illnesses:
                 if already_sick_injured:
@@ -2212,6 +2231,9 @@ class ProfileScreen(Screens):
 
             if name == 'dizziness':
                 insert = 'has been dizzy for'
+
+            if name == 'nausea':
+                insert = 'has been nauseous for'
 
             if moons_with != 1:
                 text_list.append(f"{insert} {moons_with} moons")
