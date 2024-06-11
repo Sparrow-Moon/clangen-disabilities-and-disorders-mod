@@ -373,6 +373,10 @@ class RelationshipScreen(Screens):
             else:
                 # Family Dot
                 related = self.the_cat.is_related(self.inspect_cat)
+                if not game.clan.clan_settings["second cousin mates"]:
+                    if not related:
+                        if self.the_cat.is_second_cousin(self.inspect_cat):
+                            related = True
                 if related:
                     self.inspect_cat_elements['family'] = pygame_gui.elements.UIImage(
                         scale(pygame.Rect((90, 300), (36, 36))),
@@ -456,6 +460,13 @@ class RelationshipScreen(Screens):
                         col2 += "related: sibling"
                 elif self.inspect_cat.is_cousin(self.the_cat):
                     col2 += "related: cousin"
+                elif self.inspect_cat.is_greatgrandkit(self.the_cat):
+                    col2 += "related: great grandchild"
+                elif self.the_cat.is_greatgrandkit(self.inspect_cat):
+                    col2 += "related: great grandparent"
+                elif not game.clan.clan_settings["second cousin mates"]:
+                    if self.the_cat.is_second_cousin(self.inspect_cat):
+                        col2 += "related: second cousin"
 
             self.inspect_cat_elements["col2"] = pygame_gui.elements.UITextBox(col2,
                                                                               scale(pygame.Rect((300, 650), (180, 180))),
@@ -593,7 +604,16 @@ class RelationshipScreen(Screens):
         else:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
-            check_cousins = the_relationship.cat_to.is_cousin(self.the_cat)
+            #check_cousins = the_relationship.cat_to.is_cousin(self.the_cat)
+            check_cousins = False
+            ggp_cat = the_relationship.cat_to.get_greatgrandparents()
+            ggp_other = self.the_cat.get_greatgrandparents()
+            
+            if not game.clan.clan_settings["second cousin mates"]:
+                for key in ggp_cat:
+                    for key2 in ggp_other:
+                        if key == key2:
+                            check_cousins = True
 
             if the_relationship.cat_to.is_uncle_aunt(self.the_cat) or self.the_cat.is_uncle_aunt(
                     the_relationship.cat_to) \
@@ -601,7 +621,8 @@ class RelationshipScreen(Screens):
                     self.the_cat.is_grandparent(the_relationship.cat_to) or \
                     the_relationship.cat_to.is_parent(self.the_cat) or \
                     self.the_cat.is_parent(the_relationship.cat_to) or \
-                    the_relationship.cat_to.is_sibling(self.the_cat) or check_cousins:
+                    self.the_cat.is_greatgrandkit(the_relationship.cat_to) or the_relationship.cat_to.is_greatgrandkit(self.the_cat) or \
+                    the_relationship.cat_to.is_sibling(self.the_cat) or the_relationship.cat_to.is_cousin(self.the_cat) or check_cousins:
                 related = True
                 self.relation_list_elements['relation_icon' + str(i)] = pygame_gui.elements.UIImage(
                     scale(pygame.Rect((pos_x + 10,

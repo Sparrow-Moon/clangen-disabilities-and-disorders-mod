@@ -384,16 +384,12 @@ class MediationScreen(Screens):
         elif other_cat:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
-            check_cousins = other_cat.is_cousin(cat)
+            check_cousins = False
+            if not game.clan.clan_settings["second cousin mates"]:
+                check_cousins = cat.is_second_cousin(other_cat)
 
-            if other_cat.is_uncle_aunt(cat) or cat.is_uncle_aunt(other_cat) \
-                    or other_cat.is_grandparent(cat) or \
-                    cat.is_grandparent(other_cat) or \
-                    other_cat.is_parent(cat) or \
-                    cat.is_parent(other_cat) or \
-                    other_cat.is_sibling(cat) or check_cousins:
-                related = True
-                self.selected_cat_elements['relation_icon' + tag] = pygame_gui.elements.UIImage(
+            related = cat.is_related(other_cat) or check_cousins
+            self.selected_cat_elements['relation_icon' + tag] = pygame_gui.elements.UIImage(
                     scale(pygame.Rect((x + 28,
                                        y + 28),
                                       (36, 36))),
@@ -457,6 +453,13 @@ class MediationScreen(Screens):
                 col2 += "sibling"
             elif other_cat.is_cousin(cat):
                 col2 += "cousin"
+            elif cat.is_greatgrandkit(other_cat):
+                col2 += "descendant"
+            elif other_cat.is_greatgrandkit(cat):
+                col2 += "ancestor"
+            elif not game.clan.clan_settings["second cousin mates"]:
+                if self.the_cat.is_second_cousin(self.inspect_cat):
+                    col2 += "cousin"
 
         self.selected_cat_elements["col2" + tag] = pygame_gui.elements.UITextBox(col2,
                                                                                  scale(pygame.Rect((x + 220, y + 252),
@@ -497,6 +500,11 @@ class MediationScreen(Screens):
 
             # If they are not both adults, or the same age, OR they are related, don't display any romantic affection,
             # even if they somehow have some. They should not be able to get any, but it never hurts to check.
+            if not game.clan.clan_settings["second cousin mates"]:
+                    if not related:
+                        if cat.is_second_cousin(other_cat):
+                            related = True
+            
             if not check_age or related:
                 display_romantic = 0
                 # Print, just for bug checking. Again, they should not be able to get love towards their relative.

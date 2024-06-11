@@ -1682,6 +1682,12 @@ class Cat():
         if not self.inheritance:
             self.inheritance = Inheritance(self)
         return self.inheritance.parents.keys()
+    
+    def get_greatgrandparents(self):
+        """Returns list containing greatgrandparents of cat(id)."""
+        if not self.inheritance:
+            self.inheritance = Inheritance(self)
+        return self.inheritance.great_grand_parents.keys()
 
     def get_siblings(self):
         """Returns list of the siblings(id)."""
@@ -1700,6 +1706,12 @@ class Cat():
         if not self.inheritance:
             self.inheritance = Inheritance(self)
         return other_cat.ID in self.inheritance.grand_kits.keys()
+    
+    def is_greatgrandkit(self, other_cat: Cat):
+        """Check if the cat is the grandparent of the other cat."""
+        if not self.inheritance:
+            self.inheritance = Inheritance(self)
+        return other_cat.ID in self.inheritance.great_grand_parents.keys()  
 
     def is_parent(self, other_cat: Cat):
         """Check if the cat is the parent of the other cat."""
@@ -1731,6 +1743,18 @@ class Cat():
         if not self.inheritance:
             self.inheritance = Inheritance(self)
         return other_cat.ID in self.inheritance.cousins.keys()
+    
+    def is_second_cousin(self, other_cat):
+        check_cousins = False
+        if not self.inheritance:
+            self.inheritance = Inheritance(self)
+        ggp_cat = other_cat.get_greatgrandparents()
+        ggp_other = self.get_greatgrandparents()
+        for key in ggp_cat:
+            for key2 in ggp_other:
+                if key == key2:
+                    check_cousins = True
+        return check_cousins
 
     def is_related(self, other_cat):
         """Checks if the given cat is related to the current cat, according to the inheritance."""
@@ -2368,6 +2392,9 @@ class Cat():
         # Inheritance check
         if self.is_related(other_cat):
             return False
+        elif not game.clan.clan_settings["second cousin mates"]:
+            if self.is_second_cousin(other_cat):
+                return False
 
         # check exiled, outside, and dead cats
         if (self.dead != other_cat.dead) or self.outside or other_cat.outside:

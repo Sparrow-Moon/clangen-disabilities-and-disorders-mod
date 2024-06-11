@@ -112,6 +112,11 @@
             "Allow romantic interactions with former mentors",
             "Allows mentors and the cats they trained to be romantic after they become warriors.",
             true
+        ],
+        "second cousin mates": [
+            "Allow second cousins to be mates and have romantic interactions",
+            "Allows cats with the same greatgrandparents but different grandparents to become mates.",
+            false
         ]
     },
     "freshkill_tactics":{
