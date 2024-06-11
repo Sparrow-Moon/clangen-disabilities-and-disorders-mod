@@ -165,8 +165,8 @@
 		"unmated_random_affair_chance": 10,
 		"tiny_litter_possibility": {"young adult": 18, "adult": 10, "senior adult": 15, "senior": 24},
         "small_litter_possibility": {"young adult": 18, "adult": 18, "senior adult": 24, "senior": 16},
-        "large_litter_possibility": {"young adult": 5, "adult": 12, "senior adult": 7, "senior": 5},
-        "huge_litter_possibility": {"young adult": 2, "adult": 4, "senior adult": 3, "senior": 2},
+        "large_litter_possibility": {"young adult": 0, "adult": 0, "senior adult": 0, "senior": 0},
+        "huge_litter_possibility": {"young adult": 0, "adult": 0, "senior adult": 0, "senior": 0},
 		"min_kits": 1,
 		"max_kits": 12,
 		"comment": [

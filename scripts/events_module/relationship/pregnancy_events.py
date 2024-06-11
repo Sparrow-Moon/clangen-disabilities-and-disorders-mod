@@ -287,7 +287,7 @@ class Pregnancy_Events():
             return
 
         thinking_amount = random.choices(["correct", "incorrect", "unsure"], [4, 1, 1], k=1)
-        if amount <= 6:
+        if amount <= 3:
             correct_guess = "small"
         else:
             correct_guess = "large"

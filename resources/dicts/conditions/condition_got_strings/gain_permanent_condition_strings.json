@@ -429,14 +429,5 @@
         "counting fog":[
             "Being a comet spirit affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
         ]
-    },
-
-  "cutter's sickness": {
-		"infertile": [
-		  "As the last dredges of the cutter's sickness leaves m_c, r_c struggles to inform {PRONOUN/m_c/object} of the fact that {PRONOUN/m_c/subject} may now be infertile.",
-		  "While m_c's pleased to finally be over cutter's sickness {PRONOUN/m_c/subject} {VERB/m_c/fear/fears} telling the clan about how {PRONOUN/m_c/subject} won't be able to have kits now.",
-		  "m_c knows without even been told, kits are no longer in {PRONOUN/m_c/poss} future.",
-		  "After all that time recovering, m_c cries over the changes in {PRONOUN/m_c/poss} scent and what that means."
-		]
-  }
+    }
 }

@@ -289,40 +289,5 @@
             "m_c got badly hurt when {PRONOUN/m_c/subject} fainted.",
             "m_c got head damaged after {PRONOUN/m_c/subject} fainted."
         ]
-    },
-	"cutter's sickness": {
-		"stomachache": [
-			"m_c can't help but complain to r_c about the pain {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} in {PRONOUN/m_c/poss} belly.",
-			"m_c hisses at a clan mate for brushing up beside {PRONOUN/m_c/object}, stomach still sensitive and sore.",
-			"Poor m_c is curled up in {PRONOUN/m_c/poss} den, tail protectively shielding {PRONOUN/m_c/poss} stomach"
-		],
-		"headache": [
-			"r_c sympathizes with m_c while {PRONOUN/m_c/subject} {VERB/m_c/complain/complains} about the headache {PRONOUN/m_c/subject} currently {VERB/m_c/have/has}.",
-			"Poor m_c is slinking back over to the medicine den for some herbs to deal with a headache.",
-			"m_c feels more irritable than usual due to a throbbing in {PRONOUN/m_c/poss} head.",
-			"m_c hisses at the sounds of {PRONOUN/m_c/poss} clanmates chatter. It's not helping with the pain going through {PRONOUN/m_c/poss} head."
-		],
-		"fatigue": [
-			"r_c's unsurprised to find m_c still in the den, curled up and staring at the wall. It just seems like the sickness is wearing {PRONOUN/m_c/object} out completely.",
-			"m_c feels like {PRONOUN/m_c/subject} have no energy for anything other than sleeping recently.",
-			"Even as the cats around {PRONOUN/m_c/object} get ready for their partols, m_c just feels like rolling back over and sleeping the days away.",
-			"All of m_c's energy seems to be spent on recovering, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} relived that {PRONOUN/m_c/poss} clanmates are willing to let {PRONOUN/m_c/object} just keep resting."
-		],
-		"sleeplessness": [
-			"After some complaints from {PRONOUN/m_c/poss} denmates, m_c finally goes to r_c in the hopes for a solution to {PRONOUN/m_c/poss} recent sleeplessness.",
-			"Recently m_c's been struggling more and more to get a good night's sleep.",
-			"m_c hasn't been able to properly settle down and sleep recently."
-		],
-		"kittenspace": [
-			"r_c already has to deal with kittens getting into {PRONOUN/r_c/poss} den and messing with the herbs, now m_c's helping them.",
-			"It seems that m_c's gone into a much younger headspace to handle recovery easier.",
-			"m_c declaws that been an adult is stupid, {PRONOUN/m_c/subject} {VERB/m_c/wish/wishes} to still be a kitten instead.",
-			"It appears that m_c is no longer acting fully like an adult but rather's the mindset of a kitten."
-		],
-		"lethargy": [
-			"r_c listens as m_c talks about how heavy the world feels around {PRONOUN/m_c/object}. It's crushing m_c under the weight of everything.",
-			"m_c feels more than just tired, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} listless and fogged.",
-			"Inexplicably, m_c feels like a sadness is drowning {PRONOUN/m_c/object}, something {PRONOUN/m_c/subject} can't fully name."
-		]
-	}
+    }
 }

@@ -1880,58 +1880,6 @@
             
         ]
     },
-    "cutter's sickness": {
-        "duration": 3,
-        "severity": "minor",
-        "medicine_duration": 2,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 85,
-            "adolescent": 100,
-            "young adult": 100,
-            "adult": 150,
-            "senior adult": 85,
-            "senior": 50
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [
-			{
-				"name": "stomachache",
-				"chance": 10
-			},
-            {
-                "name": "headache",
-                "chance": 20
-            },
-			{
-				"name": "fatigue",
-				"chance": 10
-			},
-			{
-				"name": "sleeplessness",
-				"chance": 20
-			},
-			{
-				"name": "kittenspace",
-				"chance": 15
-			},
-			{
-				"name": "lethargy",
-				"chance": 30
-			}
-        ],
-        "also_got": [],
-        "cause_permanent": [
-			"infertile"
-        ],
-        "herbs": [
-            "juniper",
-            "thyme",
-            "poppy",
-			"catmint"
-        ]
-    },
 
     "pregnant": {
         "duration": 2,
