@@ -944,16 +944,26 @@ class ProfileScreen(Screens):
                 if the_cat.permanent_condition[condition]['born_with'] is True and \
                         the_cat.permanent_condition[condition]["moons_until"] != -2:
                     continue
-                elif "declawed" in the_cat.permanent_condition:
-                    output += 'declawed'
-                elif the_cat.permanent_condition in ["albinism", "melanism"]:
-                    continue
-                else:
-                    output += 'has a permanent condition'
 
-                # NEWLINE ----------
-                output += "\n"
-                break
+            special_conditions = ["declawed", "albinism", "melanism"]
+            all_special = True
+            for condition in the_cat.permanent_condition:
+                if condition not in special_conditions:
+                    all_special = False
+                    break
+                if not all_special:
+                    output += 'has a permanent condition'
+                    already_disabled = True
+
+                if "declawed" in the_cat.permanent_condition:
+                    if already_disabled:
+                        output += ', declawed'
+                    else:
+                        output += 'declawed'
+
+                    # NEWLINE ----------
+                    output += "\n"
+                    break
             
         if the_cat.is_plural():
             con = ""
