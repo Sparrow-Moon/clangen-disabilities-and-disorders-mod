@@ -423,7 +423,8 @@ class Condition_Events():
             "RIGHTBLIND": ["one bad eye", "failing eyesight"],
             "BOTHBLIND": ["blind"],
             "RATBITE": ["weak leg"],
-            "DECLAWED": ["declawed"]
+            "DECLAWED": ["declawed"],
+            "RASH": ["constant rash"]
         }
 
         scarless_conditions = [
@@ -432,10 +433,9 @@ class Condition_Events():
             "lasting grief", "persistent headaches", "comet spirit", "heavy soul", "starwalker", "obsessive mind",
             "antisocial", "anxiety", "constant roaming pain", "thunderous spirit", "otherworldly mind",
             "kitten regressor", "puppy regressor", "snow vision", "echoing shock", "irritable bowels", "loose body",
-            "longcough", "burning light", "disrupted senses", "constant nightmares", "constant rash",
-            "jellyfish joints", "lazy eye", "shattered soul", "budding spirit", "pcos", "infertile",
-            "excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism", "curved spine",
-            "jumbled mind", "counting fog", "albinism", "melanism"
+            "longcough", "burning light", "disrupted senses", "constant nightmares", "jellyfish joints", "lazy eye", 
+            "shattered soul", "budding spirit", "pcos", "infertile", "excess testosterone", "aneuploidy", "testosterone deficiency", 
+            "chimerism", "mosaicism", "curved spine", "jumbled mind", "counting fog", "albinism", "melanism"
 
         ]
 

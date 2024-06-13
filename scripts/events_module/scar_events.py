@@ -150,7 +150,7 @@ class Scar_Events():
                 condition_scars = {
                     "LEGBITE", "THREE", "NOPAW", "TOETRAP", "NOTAIL", "HALFTAIL", "LEFTEAR", "RIGHTEAR",
                     "MANLEG", "BRIGHTHEART", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "LEFTBLIND",
-                    "RIGHTBLIND", "BOTHBLIND", "RATBITE"
+                    "RIGHTBLIND", "BOTHBLIND", "RATBITE", "DECLAWED", "RASH"
                 }
                 
                 scar_pool = list(set(scar_pool).difference(condition_scars))

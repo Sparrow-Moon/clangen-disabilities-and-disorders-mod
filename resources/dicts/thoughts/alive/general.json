@@ -2209,7 +2209,11 @@
             "Is wincing as {PRONOUN/m_c/subject} {VERB/m_c/walk/walks} around camp",
             "Doesn't want to leave the nest today",
             "Is curled up and crying about the pain",
-            "Is surprised to discover a new injury and struggling to remember where {PRONOUN/m_c/subject} got it"
+            "Is surprised to discover a new injury and struggling to remember where {PRONOUN/m_c/subject} got it",
+			"Is feeling generally sore",
+			"Is feeling exhausted and pleased",
+			"Doesn't want to admit {PRONOUN/m_c/subject} {VERB/m_c/are/is} in big pain",
+			"Curls up in the den extra tightly"
         ],
         "perm_conditions": {
             "m_c": [
@@ -3133,6 +3137,63 @@
             "deputy",
             "leader",
             "elder"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "gen_constant_rash",
+        "thoughts": [
+            "Is feeling like {PRONOUN/m_c/subject} {VERB/m_c/have/has} flees",
+			"Fogot to put on {PRONOUN/m_c/poss} herbal paste one time...",
+			"Thought {PRONOUN/m_c/subject} {VERB/m_c/were/was} finally free from the rash",
+			"It feeling incredibly itchy",
+			"Complains to r_c about the itchiness",
+			"Is annoyed with r_c in general",
+			"Feels on edge this moon",
+			"Wishes the itching would go away",
+			"Got caught by r_c scratching at {PRONOUN/m_c/self}",
+			"Feels like biting someone",
+			"Wishes the itchiness would just go away",
+			"Has discovered yet another new patch of rash"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "constant rash"
+            ]
+        },
+        "random_status_constraint": [
+            "kitten",
+            "apprentice",
+            "medicine cat apprentice",
+            "mediator apprentice",
+            "warrior",
+            "medicine cat",
+            "mediator",
+            "deputy",
+            "leader",
+            "elder"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "constant_rash_to_med",
+        "thoughts": [
+            "Complains that {PRONOUN/m_c/poss} herbal paste just makes {PRONOUN/m_c/object} itchier",
+			"Tells r_c {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} think the current paste is working",
+			"Finds the herbs in the den irritating"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "constant rash"
+            ]
+        },
+        "random_status_constraint": [
+            "medicine cat apprentice",
+            "mediator apprentice"
         ],
         "random_living_status": [
             "living"
