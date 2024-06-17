@@ -1565,7 +1565,7 @@ class Cat():
         template["ID"] = str(len(self.alters) + 1)
         template["role"] = choice(["co-host", "caregiver", "little", "protecter", "trauma holder", "persecutor"])
         extra = randint(1, 5)
-        if extra < 5:
+        if extra == 5:
             template["other"] = choice(["noncat", "rogue", "kittypet", "otherclan", "fictive", "factive", "fuzztive"])
         rng = randint(1, 20)
         gender = "???"

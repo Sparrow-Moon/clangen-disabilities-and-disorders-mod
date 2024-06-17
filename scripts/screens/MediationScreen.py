@@ -389,7 +389,8 @@ class MediationScreen(Screens):
                 check_cousins = cat.is_second_cousin(other_cat)
 
             related = cat.is_related(other_cat) or check_cousins
-            self.selected_cat_elements['relation_icon' + tag] = pygame_gui.elements.UIImage(
+            if related:
+                self.selected_cat_elements['relation_icon' + tag] = pygame_gui.elements.UIImage(
                     scale(pygame.Rect((x + 28,
                                        y + 28),
                                       (36, 36))),
