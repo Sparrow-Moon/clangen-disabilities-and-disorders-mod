@@ -68,7 +68,7 @@
             "comfort",
             "trust"
         ],
-        "event_text": "m_c gifts {PRONOUN/m_c/poss} beloved r_c with a acc_singular to wear in {PRONOUN/m_c/poss} pelt.",
+        "event_text": "m_c gifts {PRONOUN/m_c/poss} beloved r_c with acc_singular to wear in {PRONOUN/r_c/poss} pelt.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -92,7 +92,7 @@
             "comfort",
             "trust"
         ],
-        "event_text": "m_c gives r_c a acc_singular to make up for a bad fight between them.",
+        "event_text": "m_c gives r_c acc_singular to make up for a bad fight between them.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
@@ -110,14 +110,14 @@
             "Greenleaf",
             "Leaf-fall"
         ],
-        "event_text": "m_c disappears for a few days, then returns to camp with a acc_singular.",
+        "event_text": "m_c disappears for a few days, then returns to camp with acc_singular that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} know how to get off.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
         "other_cat_skill": null,
         "accessories": [
-            "COLLAR", 
-			"BOOTIES"
+            "COLLAR",
+            "BOOTIES"
         ]
     },
     {

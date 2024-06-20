@@ -377,8 +377,7 @@ def create_new_cat(Cat,
             new_cat.update_mentor()
 
         # Remove disabling scars, if they generated.
-        not_allowed = ['NOPAW', 'NOTAIL', 'HALFTAIL', 'NOEAR', 'BOTHBLIND', 'RIGHTBLIND',
-                       'LEFTBLIND', 'BRIGHTHEART', 'NOLEFTEAR', 'NORIGHTEAR', 'MANLEG']
+        not_allowed = []
         for scar in new_cat.pelt.scars:
             if scar in not_allowed:
                 new_cat.pelt.scars.remove(scar)
@@ -391,15 +390,8 @@ def create_new_cat(Cat,
                 chance = game.config["cat_generation"]["base_permanent_condition"] + 10
             if not int(random() * chance):
                 possible_conditions = []
-                genetics_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism",
-                                      "mosaicism"]
                 for condition in PERMANENT:
-                    if (kit or litter) and ((PERMANENT[condition]['congenital'] not in ['always', 'sometimes']) or (condition in genetics_exclusive)):
-                        continue
-                    # next part ensures that a kit won't get a condition that takes too long to reveal
-                    age = new_cat.moons
-                    leeway = 5 - (PERMANENT[condition]['moons_until'] + 1)
-                    if age > leeway:
+                    if (kit or litter) and PERMANENT[condition]['congenital'] not in ['always', 'sometimes']:
                         continue
                     possible_conditions.append(condition)
 
@@ -1020,9 +1012,18 @@ def event_text_adjust(Cat,
     """
 
     cat_dict = {}
+    cat_name = str(cat.name)
+    
+    if cat.is_plural():
+        if cat.front:
+            name = str(cat.front)
+            if len(cat.alters) > 0:
+                if name != cat_name:
+                        cat_name = name + " (" + str(cat.name) + ")"
+
 
     if cat:
-        cat_dict["m_c"] = (str(cat.name), choice(cat.pronouns))
+        cat_dict["m_c"] = (cat_name, choice(cat.pronouns))
         cat_dict["p_l"] = cat_dict["m_c"]
     if "acc_plural" in text:
         text = text.replace("acc_plural", str(ACC_DISPLAY[cat.pelt.accessory]["plural"]))
@@ -1114,9 +1115,19 @@ def ceremony_text_adjust(Cat,
     random_dead_parent = None
 
     adjust_text = text
+    
+    cat_name = str(cat.name)
+    
+    if cat.is_plural():
+        if cat.front:
+            name = str(cat.front)
+            if len(cat.alters) > 0:
+                if name != cat_name:
+                        cat_name = name + " (" + str(cat.name) + ")"
+            
 
     cat_dict = {
-        "m_c": (str(cat.name), choice(cat.pronouns)) if cat else ("cat_placeholder", None),
+        "m_c": (cat_name, choice(cat.pronouns)) if cat else ("cat_placeholder", None),
         "(mentor)": (str(mentor.name), choice(mentor.pronouns)) if mentor else ("mentor_placeholder", None),
         "(deadmentor)": (str(dead_mentor.name), choice(dead_mentor.pronouns)) if dead_mentor else (
             "dead_mentor_name", None),

@@ -241,7 +241,11 @@
 		"lazy eye": [
 			"While it's relieving that m_c's head damage has left minimal damage, r_c is still worried about {PRONOUN/m_c/poss} new lazy eye.",
 			"m_c's a bit annoyed by the fuss that {PRONOUN/m_c/poss} clanmates are making about {PRONOUN/m_c/poss} eye, it's not hurting or anything so {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} see why it should be a problem."
-		]
+		],
+        "face blindness":[
+            "After {PRONOUN/m_c/poss} head injury, m_c struggles to recognize the faces of other cats.",
+            "m_c is glad to be in the recovery stage, but misses the ease of being able to recognize other cats from a distance."
+        ] 
     },
     "damaged eyes": {
         "blind": [
@@ -335,8 +339,10 @@
 	"wrenched claws": {
 		"declawed": [
 			"r_c fusses over m_c's paws with {PRONOUN/m_c/object} before sitting back and shaking {PRONOUN/r_c/poss} head sadly. It appears {PRONOUN/m_c/subject} will have to learn to fight without {PRONOUN/m_c/poss} claws.",
-			"r_c frustratedly hisses over the state of m_c's paws and claws. Curse those horrible twolegs who did this.",
-			"Curse them, curse those twolegs for taking m_c away and bringing {PRONOUN/m_c/object} back without {PRONOUN/m_c/poss} claws."
+			"r_c frustratedly hisses over the state of m_c's paws and claws. Curse the decisions that led to this.",
+			"m_c has many curses to say as {PRONOUN/m_c/subject} {VERB/m_c/find/finds} that even healed {PRONOUN/m_c/poss} paws and claws will never be the same.",
+			"It appears that m_c's claws will never return to the most useable state as before {PRONOUN/m_c/subject} got them wrenched.",
+			"m_c curses all that {PRONOUN/m_c/subject} can realising that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} now declawed."
 		],
 		"recurring shock": [
 			"Ever since m_c's experiece with the twolegs {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} told r_c about having recurring flashes of been in a scary place, with slippery surfaces and screaming creatures all around.",
@@ -413,12 +419,46 @@
     "curved spine": [
         "m_c can barely get out of {PRONOUN/m_c/poss} bed due to back pain. r_c feels {PRONOUN/m_c/poss} back and realizes that {PRONOUN/m_c/poss} spine is curved."
     ],
+    "puzzled heart":[
+        "When other cats vent to m_c, {PRONOUN/m_c/subject/CAP} tend to give solutions rather than comfort. The medicine cat proposes that m_c is a puzzled heart.",
+        "m_c admits that {PRONOUN/m_c/subject} {VERB/m_c/have/has} never been able to read emotions, much less empathize with them."
+    ], 
+    "spirited heart":[
+        "After watching a bee die, m_c was left destitute for weeks. {PRONOUN/m_c/poss/CAP} emotions run strong: {PRONOUN/m_c/subject} is a spirited heart."
+    ],
+    "otherworldy mind":{
+        "parrot chatter":[
+            "When r_c mews hello to m_c, m_c mews it back a dozen times. It seems {PRONOUN/m_c/subject}{VERB/m_c/have/has} parrot chatter.",
+            "m_c often catches {PRONOUN/m_c/self} repeating the same word over and over. The medicine cat suggests it might be parrot chatter.",
+            "The medine cat assures that m_c's frequent repetition of words is common for an otherworldy mind."
+        ]
+    },
     "starwalker":{
         "jumbled mind": [
             "Being a starwalker affects how m_c process words. Whenever {PRONOUN/m_c/subject} speaks, it comes out as a jumbled mess."
         ],
         "counting fog":[
             "Being a starwalker affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
+        ],
+        "spirited heart":[
+            "After watching a bee die, m_c was left destitute for weeks. {PRONOUN/m_c/poss/CAP} emotions run strong: {PRONOUN/m_c/subject} is a spirited heart.",
+            "Being a starwalker amplifies how m_c feels emotions, especially the emotions of {PRONOUN/m_c/poss} clanmates. {PRONOUN/m_c/subject/CAP} may be a spirited heart."
+        ],
+        "puzzled heart":[
+            "When other cats vent to m_c, {PRONOUN/m_c/subject/CAP} tend to give solutions rather than comfort. The medicine cat proposes that m_c is a puzzled heart.",
+            "m_c admits that {PRONOUN/m_c/subject} {VERB/m_c/have/has} never been able to read emotions, much less empathize with them.",
+            "As a starwalker, m_c has never been able to connect with other cats in the same way. {PRONOUN/m_c/subject/CAP} may be a puzzled heart."
+        ],
+        "face blindness":[
+            "m_c struggles to tell {PRONOUN/m_c/poss} clanmates apart without hearing their voices. m_c is face blind.",
+            "m_c doesn't greet r_c until {PRONOUN/r_c/subject} {VERB/r_c/mew/mews} at {PRONOUN/m_c/object}. {PRONOUN/m_c/subject/CAP} is face blind.",
+            "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/find/finds} it easier to identify cats from their voices and scents, rather than their faces.",
+            "The medicine cat assures m_c that being unable to remember and recognize faces is a common part of being a starwalker."
+        ],
+        "parrot chatter":[
+            "When r_c mews hello to m_c, m_c mews it back a dozen times. It seems {PRONOUN/m_c/subject}{VERB/m_c/have/has} parrot chatter.",
+            "m_c often catches {PRONOUN/m_c/self} repeating the same word over and over. The medicine cat suggests it might be parrot chatter.",
+            "The medine cat assures that m_c's frequent repetition of words is common for a starwalker."
         ]
     },
     "comet spirit":
@@ -428,6 +468,16 @@
         ],
         "counting fog":[
             "Being a comet spirit affects how m_c processes numbers. r_c assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
+        ],
+        "spirited heart":[
+            "After watching a bee die, m_c was left destitute for weeks. {PRONOUN/m_c/poss} emotions run strong: {PRONOUN/m_c/subject} {VERB/m_c/are/is} a spirited heart.",
+            "Being a comet spirit amplifies how m_c feels emotions, especially the emotions of {PRONOUN/m_c/poss} clanmates. {PRONOUN/m_c/subject/CAP} may be a spirited heart."
+        ],
+        "parrot chatter":[
+            "When r_c mews hello to m_c, m_c mews it back a dozen times. It seems {PRONOUN/m_c/subject}{VERB/m_c/have/has} parrot chatter.",
+            "m_c often catches {PRONOUN/m_c/self} repeating the same word over and over. The medicine cat suggests it might be parrot chatter.",
+            "The medine cat assures that m_c's frequent repetition of words is common for a starwalker."
         ]
+
     }
 }

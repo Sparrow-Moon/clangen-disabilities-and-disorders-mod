@@ -314,6 +314,10 @@
 
   "loner_names": [
     "Song", "Error", "blackkat", "Moss", "Echo", "Pixil", "Bingle", "Capyy", "Jay", "Tinderwing", "Hackenslasher", "Sparrow Moon", "Tetris",
+
+    "Anjou", "Aslan", "Bae", "Bear Claw", "Berkeley", "Eclair", "Eola", "Farkleberry", "Forelle", "Hoshi", "Jelly Roll", "Keiffer", "Lambert",
+    "Liza", "Long John", "Partridge", "Pear", "Quince", "Thing-a-Ling", "Tosca", "Twain", "Webster",
+
     "Abigail", "Abuko", "Abyss", "Abby", "Acacia", "Ace", "Adaliz", "Adam", "Admiral", "Adora", "Aether", "Albert", "Alberto", "Alfred", "Agatha", "Agent Smith", "Agnes", "Ah ha", "Ah", "Aidan", "Aiden",
     "Akila", "Akilah", "Alaska", "Alastair", "Alba", "Albedo", "Alcina", "Alcor", "Alcyone", "Aldrich", "Alec", "Alex", "Alexa", "Alfie", "Alfredo", "Algernon", "Alice",
     "Alien", "Alma", "Alonzo", "Alphonse", "Alphys", "Altair", "Amanda", "Amani", "Amaretto", "Amari", "Amaya", "Amber", "Amelia", "Amethyst", "Amigo", "Amir", "Amity",
@@ -386,12 +390,12 @@
     "Nirvana", "Nisha", "Nissan", "Nitro", "Niu", "Nix", "Nixie", "Noche", "Noelle", "Noir", "Noodle", "Noodlefly", "Nook", "Nori", "Norm", "Norman", "Nottingham", "Nova", "Nucleus", "Neuroscientist", "Nugget", "Nuggets", "Nuka", "Nuri",
     "Nuru", "Nutella", "Nutmeg", "Nyx", "O'Leary", "Oakley", "Oapie", "Oberon", "Obi Wan", "Obsidian", "Octavia", "October", "Odetta", "Old Deuteronomy", "Old Man Sam",
     "Oleander", "Olga", "Oliva", "Oliver", "Ollie", "Omelet", "Omen", "Onion", "Onyx", "Oops", "Oopsy Dazey", "Opal", "Ophelia", "Orchard", "Oregano", "Oreo", "Orion", "Orzo",
-    "Oscar", "Oscypek", "Oshawott", "Osiris", "Otto", "Outlaw", "Outsider", "Owen", "Ox", "Oryx", "Pablo", "Pachirisu", "Padparadscha", "Paella", "Paimon", "Pallas", "Paloma", "Pancake", "Pancho", "Pandora", "Pango", "Pangur", "Panini", "Paprika", "Papyrus", "Paquito", "Para", "Pasta", "Patches", "Patience", "Paul", "Paulina", "Pavlova", "Pawmi", "Peach", "Peanut Butter", "Peanut Wigglebutt", "Peanut", "Pear", "Pearl",
+    "Oscar", "Oscypek", "Oshawott", "Osiris", "Otto", "Outlaw", "Outsider", "Owen", "Ox", "Oryx", "Pablo", "Pachirisu", "Padparadscha", "Paella", "Paimon", "Pallas", "Paloma", "Pancake", "Pancho", "Pandora", "Pango", "Pangur", "Panini", "Paprika", "Papyrus", "Paquito", "Para", "Pasta", "Patches", "Patience", "Paul", "Paulina", "Pavlova", "Pawmi", "Peach", "Peanut Butter", "Peanut Wigglebutt", "Peanut", "Pearl",
     "Pecan", "Pekhult", "Peko", "Penny", "Peony", "Pepita", "Pepper", "Pepsi", "Pequeno", "Perdito", "Peridot", "Periwinkle", "Perrserker",
     "Perry", "Peter", "Peter Pan", "Peter Parker", "Parhelion", "Peeta", "Petya", "Phantom", "Phasmo", "Phoenix", "Pichi", "Pichu", "Pickles", "Pierogi", "Pierre", "Pietro", "Piggy", "Pigment", "Pikachu", "Pillow", "Pina Colada", "Pineapple", "Ping Pong", "Ping", "Pinkie Pie", "Pinkie",
     "Pip", "Piper", "Pipkin", "Pippin", "Pipsqueak", "Pisces", "Pistol Star", "Pixel", "Pizza", "Pizza Place", "Plague", "Plato", "Playstation", "Plentiful Leaves", "Plot Twist", "Plumeria", "Pluto", "Pochito", "Pocket", "Pokey", "Poe", "Poki", "Pokotho", "Polaris", "Polly", "Pompompurin",
     "Pong", "Ponyboy", "Poopy", "Porkchop", "Porsche", "Potato", "Pot Roast", "Pouncival", "President", "President Blanket", "Prickle", "Pride", "Princess", "Pringle", "Private Eye", "Procyon", "Proton", "Pudding", "Puddles",
-    "Pumba", "Pumpernickel", "Pumpkin", "Punchy", "Punk", "Purdy", "Purri", "Purry", "Pushee", "Puzzle", "Qilian", "Quagmire", "Quake", "Quartermaster", "Quarter Pounder", "Quartz", "Quasar", "Qubo", "Queen", "Queenie", "Queeny", "Querida", "Quesadilla", "Queso Ruby", "Queso", "Quest", "Quickie", "Quimby", "Quince", "Quincy", "Quinn",
+    "Pumba", "Pumpernickel", "Pumpkin", "Punchy", "Punk", "Purdy", "Purri", "Purry", "Pushee", "Puzzle", "Qilian", "Quagmire", "Quake", "Quartermaster", "Quarter Pounder", "Quartz", "Quasar", "Qubo", "Queen", "Queenie", "Queeny", "Querida", "Quesadilla", "Queso Ruby", "Queso", "Quest", "Quickie", "Quimby", "Quincy", "Quinn",
     "Quino", "Quinzee", "Rabiah", "Radar", "Rafael", "Rafiki", "Raja", "Ramble", "Ramen", "Ramon", "Randy", "Rani", "Raptor", "Rapunzel",
     "Rarity", "Rat", "Ratau", "Ratoo", "Rattle", "Raven", "Ravioli", "Ray", "Raymond", "Razzle", "Rebel", "Reese", "Reeses Puff", "Regina", "Ren", "Renata", "Rhea", "Rhianna", "Rhubarb", "Ribosome", "Ricardo", "Rice", "Rico",
     "Rigatoni", "Rigel", "Righteous Bread Pudding", "Ringo", "Ringo Starr", "Rio", "Riolu", "Riot", "Risa", "River", "Rivulet", "Riya", "Rizz", "Roald", "Robbie", "Robert", "Rocket", "Rodeo", "Rolo",

@@ -2068,6 +2068,7 @@ class ProfileScreen(Screens):
             "curved spine": "scoliosis",
             "jumbled mind": "dyslexia",
             "counting fog": "dyscalculia",
+            "parrot chatter": "echolalia",
 
             "sunblindness": "light sensitivity",
 
@@ -2076,7 +2077,9 @@ class ProfileScreen(Screens):
             "sleeplessness": "insomnia",
             "ear buzzing": "tinnitus",
             "kittenspace": "littlespace",
-            "puppyspace": "petspace"
+            "puppyspace": "petspace",
+            "spirited heart": "hyperempathy",
+            "puzzled heart": "low empathy"
         }
         if not game.settings['warriorified names']:
             if condition in dad_names:

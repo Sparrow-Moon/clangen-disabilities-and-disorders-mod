@@ -197,6 +197,29 @@
         "main_trait_constraint": [
             "skeptic"
         ]
+	},
+	{
+        "id": "faceblind_mediator",
+        "thoughts": [
+            "Struggles to remember who {PRONOUN/m_c/subject} {VERB/m_c/were/was} helping",
+			"Nods along to r_c's complaints",
+			"Needs to talk with r_c",
+			"Is overwhelmed by trying to remember who is who",
+			"Struggles to defuse a situation without mixing up {PRONOUN/m_c/poss} clanmates",
+			"Worries about accidentally sabotaging clan relations",
+			"Is thinking about the next gathering",
+			"Is worried about relations with other clans",
+			"Wonders if this is truly {PRONOUN/m_c/poss} correct role",
+			"Is purring and content with {PRONOUN/m_c/poss} ability to help c_n",
+			"Is perfectly suited to sorting out disputes",
+			"Doesn't need to know r_c's face to know {PRONOUN/r_c/subject} {VERB/m_c/are/is} been over-reactive about a situation",
+			"Is done with r_c's dramatics"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "face blindness"
+            ]
+        }
     }
 ]
 

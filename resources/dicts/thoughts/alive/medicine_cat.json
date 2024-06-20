@@ -465,5 +465,34 @@
         "random_living_status": [
             "living"
         ]
+	},
+	{
+        "id": "faceblind_med_cat",
+        "thoughts": [
+            "Is stressing about keeping track of which herbs go to which cat",
+			"Verbally confirms {PRONOUN/m_c/subject} {VERB/m_c/are/is} talking to r_c",
+			"Piles up the herbs by cat name",
+			"Recognizes r_c by scent",
+			"Doesn't dare to look r_c in the face while sorting {PRONOUN/r_c/poss} herbs"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "face blindness"
+            ]
+        },
+        "random_status_constraint": [
+            "apprentice",
+            "medicine cat apprentice",
+            "mediator apprentice",
+            "warrior",
+            "medicine cat",
+            "mediator",
+            "deputy",
+            "leader",
+            "elder"
+        ],
+        "random_living_status": [
+            "living"
+        ]
 	}
 ]

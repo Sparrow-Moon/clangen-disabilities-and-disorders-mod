@@ -429,7 +429,7 @@
                 "chance": 80
             },
 			{
-				"name": "nonverbal",
+				"name": "verbal shutdown",
 				"chance": 20
 			},
 			{
@@ -464,7 +464,7 @@
 				"chance": 120
 			},
 			{
-				"name": "nonverbal",
+				"name": "verbal shutdown",
 				"chance": 20
 			},
             {
@@ -929,7 +929,7 @@
 				"chance": 5
 			},
             {
-                "name": "nonverbal",
+                "name": "verbal shutdown",
                 "chance": 40
             },
 			{
@@ -1003,7 +1003,23 @@
             {
                 "name": "nausea",
                 "chance": 20
-            }
+            },
+            {
+                "name": "spirited heart",
+                "chance": 100
+            },
+            {
+                "name": "puzzled heart",
+                "chance": 100
+            },
+            {
+				"name": "face blindness",
+				"chance": 75
+			},
+            {
+				"name": "parrot chatter",
+				"chance": 75
+			}
         ],
         "herbs": [ ]
     },
@@ -1200,7 +1216,15 @@
             {
                 "name": "counting fog",
                 "chance": 75
-            }
+            },
+            {
+                "name": "spirited heart",
+                "chance": 100
+            },
+            {
+				"name": "parrot chatter",
+				"chance": 70
+			}
         ],
         "herbs":[
             "poppy",
@@ -1306,6 +1330,10 @@
             {
                 "name": "sore",
                 "chance": 25
+            },
+            {
+                "name": "spirited heart",
+                "chance": 100
             }
         ],
         "herbs": [
@@ -1480,7 +1508,7 @@
                 "chance": 40
             },
             {
-                "name": "wrentched claws",
+                "name": "wrenched claws",
                 "chance": 80
             },
             {
@@ -1588,6 +1616,15 @@
             {
                 "name": "shattered soul",
                 "chance": 70
+            },
+            {
+                "name": "puzzled heart",
+                "chance": 100
+            },
+            
+            {
+                "name": "spirited heart",
+                "chance": 100
             }
 
         ],
@@ -1632,7 +1669,11 @@
             {
                 "name": "shattered soul",
                 "chance": 70
-            }
+            },
+            {
+				"name": "parrot chatter",
+				"chance": 70
+			}
         ],
         "herbs":[]
     },	
@@ -2522,6 +2563,94 @@
         "illness_infectiousness": [
         ],
         "risks": [
+        ],
+        "herbs": []
+    },
+    "spirited heart": {
+        "severity": "minor",
+        "congenital": "sometimes",
+        "moons_until": 4,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+				"name": "anxiety attack",
+				"chance": 15
+			}
+        ],
+        "herbs": []
+    },
+    "puzzled heart": {
+        "severity": "minor",
+        "congenital": "sometimes",
+        "moons_until": 4,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "herbs": []
+    },
+    "face blindness": {
+        "severity": "minor",
+        "congenital": "sometimes",
+        "moons_until": 2,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "headache",
+                "chance": 30
+            }
+        ],
+        "herbs": []
+    },
+    "parrot chatter": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 2,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+				"name": "stimming",
+				"chance": 5
+			}
         ],
         "herbs": []
     }

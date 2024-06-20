@@ -435,7 +435,8 @@ class Condition_Events():
             "kitten regressor", "puppy regressor", "snow vision", "echoing shock", "irritable bowels", "loose body",
             "longcough", "burning light", "disrupted senses", "constant nightmares", "jellyfish joints", "lazy eye", 
             "shattered soul", "budding spirit", "pcos", "infertile", "excess testosterone", "aneuploidy", "testosterone deficiency", 
-            "chimerism", "mosaicism", "curved spine", "jumbled mind", "counting fog", "albinism", "melanism"
+            "chimerism", "mosaicism", "curved spine", "jumbled mind", "counting fog", "albinism", "melanism", "spirited heart", 
+            "puzzled heart", "face blindness", "parrot chatter"
 
         ]
 
@@ -460,6 +461,11 @@ class Condition_Events():
                                 cat.pelt.lazy_eye = cat.pelt.eye_colour
                                 if cat.eye_colour2 != None:
                                     cat.pelt.lazy_eye = cat.pelt.eye_colour2
+                            '''elif perm_condition == 'recurring shock' and injury_name == "wrenched claws":                                 
+                                if injury_name not in cat.history.possible_history:
+                                    perm_condition = None
+                                    print(f"Hopefully failed to give recurring shock to non-traumatised cat")
+                                    THIS IS NOT WORKING FOR ME, :< Just blocks it all right now. '''
                         else:
                             return perm_condition
                 except KeyError:

@@ -151,8 +151,8 @@
             "r_c listens as m_c explains that it doesn't seem like {PRONOUN/m_c/subject} can hear the details of the world anymore.",
             "m_c realizes one day that the noises around them are no longer just quiet, but completely silent. It seems {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} lost {PRONOUN/m_c/poss} hearing entirely."
         ],
-		"nonverbal": [
-			"r_c has noticed that m_c is a lot quieter around the camp recently. After a quick checkup, it's nothing dangerous - {PRONOUN/m_c/subject} {VERB/m_c/have/has} just gone nonverbal.",
+		"verbal shutdown": [
+			"r_c has noticed that m_c is a lot quieter around the camp recently. After a quick checkup, it's nothing dangerous - {PRONOUN/m_c/subject} is experiencing a verbal shutdown.",
 			"m_c doesn't speak to anyone, preferring to use signs to communicate."
 		],
 		"ear buzzing": [
@@ -171,7 +171,7 @@
 			"m_c's awkward volume control has faded away until all {PRONOUN/m_c/poss} words are just too hard for {PRONOUN/m_c/poss} Clanmates to hear.",
 			"After struggling for so long to be heard, m_c has settled into a calm silence."
 		],
-		"nonverbal": [
+		"verbal shutdown": [
 			"r_c sits with m_c, trading signs back and forth when {PRONOUN/m_c/subject} {VERB/m_c/stop/stops} speaking.",
 			"Nobody minds when m_c has a few bad days and chooses to just use sign to communicate rather than trying to strain to speak.",
 			"Frustrated at not been able to tell if {PRONOUN/m_c/subject} {VERB/m_c/are/is} speaking clearly, m_c just decides to use {PRONOUN/m_c/poss} best communication method instead."
@@ -649,7 +649,7 @@
 				"m_c keeps purring to {PRONOUN/m_c/self} as an act of self soothing.",
 				"Some of m_c's Clanmates find themselves confused because of m_c running around the camp in small circles, seemingly chasing {PRONOUN/m_c/poss} tail."
 		],
-		"nonverbal": [
+		"verbal shutdown": [
 				"This moon has been overwhelming for everyone. {PRONOUN/r_c/subject/CAP} {VERB/r_c/encourage/encourages} the rest of the Clan to be understanding of that when m_c goes silent.",
 				"m_c nods {PRONOUN/m_c/poss} head and uses tail signs to talk with {PRONOUN/m_c/poss} Clanmates.",
 				"m_c is so glad {PRONOUN/m_c/poss} Clanmates understand that sometimes, {PRONOUN/m_c/subject} just {VERB/m_c/need/needs} the quiet when {PRONOUN/m_c/subject} can't speak."
@@ -1032,7 +1032,7 @@
 			"m_c's pelt has become torn from {PRONOUN/m_c/object} pulling out {PRONOUN/m_c/poss} fur.",
 			"m_c has been anxiously pulling out {PRONOUN/m_c/poss} fur."
 		],
-		"wrentched claws": [
+		"wrenched claws": [
 			"r_c sighs when m_c comes in after biting {PRONOUN/m_c/poss} claws to shreds.",
 			"m_c winces after realizing just how far down {PRONOUN/m_c/subject} {VERB/m_c/have/has} bitten {PRONOUN/m_c/poss} claws.",
 			"m_c has bitten {PRONOUN/m_c/poss} claws down to a useless state."

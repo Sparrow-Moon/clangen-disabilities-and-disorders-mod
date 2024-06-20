@@ -871,7 +871,7 @@
 				"chance": 15
 			},
 			{
-				"name": "nonverbal",
+				"name": "verbal shutdown",
 				"chance": 50
 			}
 		],
@@ -1050,7 +1050,7 @@
             "poppy"
         ]
     },	
-    "nonverbal": {
+    "verbal shutdown": {
         "severity": "minor",
         "mortality": {
             "newborn": 0,

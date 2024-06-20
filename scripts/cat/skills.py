@@ -194,8 +194,8 @@ class Skill():
         SkillPath.SENSE: "observing",
         SkillPath.KIT: "caretaking",
         SkillPath.STORY: "storytelling",
-        SkillPath.LORE: "lorekeeping",
-        SkillPath.CAMP: "campkeeping",
+        SkillPath.LORE: "lore keeping",
+        SkillPath.CAMP: "camp keeping",
         SkillPath.HEALER: "healing",
         SkillPath.STAR: "StarClan",
         SkillPath.OMEN: "omen",
@@ -203,7 +203,7 @@ class Skill():
         SkillPath.CLAIRVOYANT: "predicting",
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
-        SkillPath.DARK: "dark forest"
+        SkillPath.DARK: "Dark Forest"
     }
 
 
@@ -682,8 +682,3 @@ class CatSkills:
             new_skill = CatSkills.generate_new_catskills(status, moons)
 
         return new_skill
-
-
-
-
-

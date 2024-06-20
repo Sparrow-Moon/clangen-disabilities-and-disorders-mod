@@ -347,8 +347,27 @@
             "faithful",
 			"loyal"
         ]
-    }
-   
+    },
+    {
+        "id": "lead_faceblind",
+        "thoughts": [
+            "Leaves the deputy to assign patrols because {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} confident in identifying cats",
+			"Mistook r_c for someone else",
+			"Is thankful for r_c's understanding",
+			"Thinks r_c will make a great leader one day"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "face blindness"
+            ]
+        },
+        "random_status_constraint": [
+            "deputy"
+        ],
+        "random_living_status":[
+            "living"   
+        ]
+    } 
 ]
 
 

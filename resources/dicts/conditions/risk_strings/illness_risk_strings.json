@@ -215,7 +215,7 @@
 			"Something in m_c's chest feels tight, feels numb really. A weight that {PRONOUN/m_c/subject} {VERB/m_c/have/has} to carry around for the rest of {PRONOUN/m_c/poss} life."
 		]
 	},
-	"nonverbal": {
+	"verbal shutdown": {
 		"mute": [
 			"After all this time some of the Clan thinks that m_c should have started speaking again. r_c simply shakes their head, it's not up to those cats to demand that.",
 			"m_c simply shakes {PRONOUN/m_c/poss} head when a Clanmate asks if {PRONOUN/m_c/subject} {VERB/m_c/are/is} going to start speaking again soon.",

@@ -93,14 +93,14 @@
             "Greenleaf",
             "Leaf-fall"
         ],
-        "event_text": "After a crisis where m_c disappears for a few days {PRONOUN/m_c/subject} {VERB/m_c/return/returns} with a acc_singular.",
+        "event_text": "After a crisis where m_c disappeared for a few days, {PRONOUN/m_c/subject} {VERB/m_c/return/returns} with acc_singular.",
         "cat_trait": null,
         "cat_skill": null,
         "other_cat_trait": null,
         "other_cat_skill": null,
         "accessories": [
             "COLLAR",
-			"FLAG", 
+			"FLAG",
 			"BOOTIES"
         ]
     }

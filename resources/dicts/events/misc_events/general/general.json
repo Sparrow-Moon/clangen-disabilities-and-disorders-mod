@@ -100,11 +100,12 @@
         "tags": [
             "Leaf-bare"
         ],
-        "event_text": "m_c found a mysterious acc_singular growing in the frost and decided to wear it.",
+        "event_text": "m_c found acc_singular growing in the frost and decided to wear it.",
         "accessories": [
             "FORGET ME NOTS",
             "BLUEBELLS",
-            "POPPY"
+            "POPPY",
+            "LAVENDER"
         ]
     },
     {
@@ -427,6 +428,7 @@
         "camp": "any",
         "tags": [
             "Greenleaf",
+            "Leaf-fall",
             "other_cat",
             "other_cat_mate",
             "to_both",
@@ -455,7 +457,7 @@
             "Greenleaf",
             "Leaf-fall",
             "Leaf-bare",
-            "rc_to_mc",
+            "mc_to_rc",
             "comfort",
             "respect",
             "clan_kits"
@@ -524,7 +526,7 @@
 			"Leaf-fall",
 			"Leaf-bare"
 		],
-        "event_text": "While out on an adventure, m_c found an interesting object in the territory and decided to keep it.",
+        "event_text": "While out on an adventure, m_c found an interesting object in the territory and decides to keep it.",
         "accessories": [
 			"TOY"
 		]
@@ -537,7 +539,7 @@
 			"Leaf-fall",
 			"Leaf-bare"
 		],
-        "event_text": "After sneaking out of the territory, m_c has come back with an acc_singular that {PRONOUN/m_c/subject} {VERB/m_c/find/finds} comforting.",
+        "event_text": "After sneaking out of the territory, m_c has come back with acc_singular that {PRONOUN/m_c/subject} {VERB/m_c/find/finds} comforting.",
         "accessories": [
 			"TOY"
 		]
@@ -550,7 +552,7 @@
 			"Leaf-fall",
 			"Leaf-bare"
 		],
-        "event_text": "m_c found a nice acc_singular that {PRONOUN/m_c/subject} decided to keep and wear on {PRONOUN/m_c/poss} pelt.",
+        "event_text": "m_c found acc_singular that {PRONOUN/m_c/subject} {VERB/m_c/find/finds} comforting and decided to wear it on {PRONOUN/m_c/poss} pelt.",
         "accessories": [
 			"BLANKIE"
 		]
@@ -589,7 +591,7 @@
             "Leaf-fall",
             "Leaf-bare"
         ],
-        "event_text": "m_c found a acc_singular that makes them happy.",
+        "event_text": "m_c found acc_singular that makes them happy.",
         "accessories": [
             "FLAG"
         ]

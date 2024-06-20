@@ -338,6 +338,30 @@
         "main_trait_constraint": [
             "skeptic"
         ]
+	},
+	{
+        "id": "faceblind_deputy_to_gen",
+        "thoughts": [
+            "Is fretting about who to put on patrols",
+			"Is dancing around saying anyone's name",
+			"Definitely knows who is who in the clan",
+			"Struggles to remember what r_c is best at",
+			"Is not sure {PRONOUN/m_c/subject} {VERB/m_c/wish/wishes} to be deputy anymore",
+			"Feels like the whole clan is judging {PRONOUN/m_c/object}",
+			"Sets up yet more border patrols",
+			"Is relieved that c_n is patient with {PRONOUN/m_c/object}",
+			"Feels in control",
+			"Doesn't need to know who is who to manage the clan smoothly",
+			"Mixed up names in an announcement",
+			"Accidentally mixes up two cats into multiple patrols",
+			"Calls r_c the wrong name trying to speak to {PRONOUN/r_c/object}",
+			"Is worrying about the future"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "face blindness"
+            ]
+        }
     }
 
 ]

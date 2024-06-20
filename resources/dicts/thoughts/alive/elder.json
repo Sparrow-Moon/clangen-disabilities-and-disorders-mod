@@ -776,5 +776,16 @@
             "medicine cat",
             "medicine cat apprentice"
         ]
+    },
+    {
+        "id": "faceblind_elder",
+        "thoughts": [
+            "Blames {PRONOUN/m_c/poss} lack of recognition on failing memory"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "face blindness"
+            ]
+        }
     }
 ]

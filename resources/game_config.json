@@ -224,7 +224,11 @@
 		"become_mediator_chances": {
 			"warrior": 5000,
 			"elder": 400
-		}
+		},
+		"disabled_cat_med_chance_increase": 2,
+		"comment": [
+			"The disabled_cat_med_chance_increase (2 by default) will divide the chance of disabled cats becoming medicine cat/mediator apprentices by its value."
+		]
 	},
 	"lost_cat": {
 		"rejoin_chance": 20
@@ -285,7 +289,15 @@
 		"expanded_injury_chance": 250,
 		"cruel season_injury_chance": 150,
 		"permanent_condition_chance": 15,
-		"war_injury_modifier": 100
+		"war_injury_modifier": 100,
+		"max_alters": 50,
+		"max_splits": 3,
+		"comment": [
+			"max_alters = total number of alters per system. Recommended to be <100 unless you have a beefy computer.",
+			"max_alters must be at least 3 to prevent crashes.",
+			"max_splits = maximum number of new alters gained per moon in a system. recommended to be <10 unless you have a beefy computer.",
+			"max_splits must be at least 1"
+		]
 	},
 	"clan_creation": {
 		"rerolls": -1,
