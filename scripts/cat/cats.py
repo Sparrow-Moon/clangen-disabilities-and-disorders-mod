@@ -305,14 +305,14 @@ class Cat():
 
          # These things should only run when generating a new cat, rather than loading one in.
         if not loading_cat:
-            
-            # everyone is plural :3
             '''
+            # for testing conditionjs
+            
             if game.clan:
-                new_condition=choice(["shattered soul", "budding spirit"])
-                self.get_permanent_condition(new_condition, born_with=True)
-            
+                #new_condition=choice(["shattered soul", "budding spirit"])
+                self.get_permanent_condition("selective mutism", born_with=True)
             '''
+            
             
             # trans cat chances
             theythemdefault = game.settings["they them default"]

@@ -436,7 +436,7 @@ class Condition_Events():
             "longcough", "burning light", "disrupted senses", "constant nightmares", "jellyfish joints", "lazy eye", 
             "shattered soul", "budding spirit", "pcos", "infertile", "excess testosterone", "aneuploidy", "testosterone deficiency", 
             "chimerism", "mosaicism", "curved spine", "jumbled mind", "counting fog", "albinism", "melanism", "spirited heart", 
-            "puzzled heart", "face blindness", "parrot chatter"
+            "puzzled heart", "face blindness", "parrot chatter", "selective mutism"
 
         ]
 
@@ -510,7 +510,7 @@ class Condition_Events():
             "sleeplessness": "ongoing sleeplessness",
             "ticks": ["tick bites", "severe tick bites"],
             "nest wetting": "night dirtmaking",
-            "nonverbal": "mute",
+            "verbal shutdown": "mute",
             "tics": "tic attack",
             "nausea": "stomachache"
         }
@@ -1019,13 +1019,15 @@ class Condition_Events():
                             random_index = 1
                     event = possible_string_list[random_index]
                 except KeyError:
-                    if condition not in (cat.permanent_condition and cat.illnesses and cat.injuries):
-                        print(f"WARNING: {condition} couldn't be found in the risk strings! placeholder string was used")
-                        event = f"m_c has gotten {condition}."
-                        event = Condition_Events.change_condition_name(event)
-                    else:
-                        print(f"the game tried to give a cat {condition}, but they already have it! Please report in #bugs-and-typos in DaD's server")
-                        event = "this should not appear"
+                    print(
+                        f"WARNING: {new_condition_name} couldn't be found in the risk strings of {condition}! placeholder string was used"
+                    )
+                    event = f"m_c has gotten {new_condition_name}, a risk of {condition}."
+                    event = Condition_Events.change_condition_name(event)
+
+                if new_condition_name in (cat.permanent_condition or cat.illnesses or cat.injuries):
+                    print(f"the game tried to give a cat {new_condition_name}, but they already have it! Please report in #bugs-and-typos in DaD's server")
+                    event = "this should not appear"
 
                 event = Condition_Events.change_condition_name(event)
                 event = event_text_adjust(Cat, event, cat, other_cat=med_cat)  # adjust the text

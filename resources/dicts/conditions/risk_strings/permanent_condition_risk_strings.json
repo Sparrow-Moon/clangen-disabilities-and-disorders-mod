@@ -1622,5 +1622,13 @@
 		"joint pain":[
 			"m_c stretches as much as {PRONOUN/m_c/subject} can, but {PRONOUN/m_c/poss} back pain refuses to cease."
 		]
+	},
+	"selective mutism":{
+		"verbal shutdown": [
+			"It's been a really, really rough moon for m_c. {PRONOUN/m_c/poss/CAP} words may leave, but not {PRONOUN/m_c/poss} spirit.",
+			"Sometimes when the words get caught in m_c's throat and {PRONOUN/m_c/poss} chest feels heavy, signalling in cat sign helps instead.",
+			"r_c has noticed that m_c is a lot quieter around the camp recently. After a quick checkup, it's nothing dangerous - {PRONOUN/m_c/subject} is experiencing a verbal shutdown.",
+			"m_c doesn't speak to anyone, preferring to use signs to communicate."
+		]
 	}
 }
