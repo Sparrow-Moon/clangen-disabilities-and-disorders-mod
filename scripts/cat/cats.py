@@ -2042,37 +2042,20 @@ class Cat():
             born_with = True
         moons_until = condition["moons_until"]
         if born_with and moons_until != 0:
-            if name == "budding spirit":
+            if name in ["budding spirit", "shattered soul"]:
                 moons_until = randint(moons_until - 1, moons_until + 12)
-            if name == "shattered soul":
-                moons_until = randint(moons_until - 1, moons_until + 12)
-            if name == "starwalker":
+            if name in ["starwalker", "comet spirit"]:
                 moons_until = randint(moons_until - 1, moons_until + 10)
-            if name == "comet spirit":
-                moons_until = randint(moons_until - 1, moons_until + 10)
-            if name == "loose body":
-                moons_until = randint(moons_until - 1, moons_until + 6)
-            if name == "jellyfish joints":
+            if name in ["loose body", "jellyfish joints"]:
                 moons_until = randint(moons_until - 1, moons_until + 6)
             if name == "constant joint pain":
                 moons_until = randint(moons_until - 1, moons_until + 5)
-            if name == "body biter":
+            if name in ["body biter", "thunderous spirit", 
+                            "otherworldly mind", "jumbled noise"]:
                 moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "thunderous spirit":
-                moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "otherworldly mind":
-                moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "jumbled noise":
-                moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "obsessive mind":
+            if name in ["obsessive mind", "falling paws"]:
                 moons_until = randint(moons_until - 1, moons_until + 3)
-            if name == "falling paws":
-                moons_until = randint(moons_until - 1, moons_until + 3)
-            if name == "heavy soul":
-                moons_until = randint(moons_until - 1, moons_until + 2)
-            if name == "anxiety":
-                moons_until = randint(moons_until - 1, moons_until + 2)
-            if name == "snow vision":
+            if name in ["heavy soul", "anxiety", "snow vision"]:
                 moons_until = randint(moons_until - 1, moons_until + 2)
             else:
                 moons_until = randint(moons_until - 1, moons_until + 1)  # creating a range in which a condition can present
