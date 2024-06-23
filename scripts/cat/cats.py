@@ -2142,6 +2142,21 @@ class Cat():
                         if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
                             new_condition = choice(choice(possible_comorbidities))
 
+            if new_condition == "mute" and "selective mutism" in cat.permanent_condition:
+                while new_condition == "mute":
+                    new_condition = choice(possible_conditions)
+                    while new_condition in cat.permanent_condition:
+                        new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
+            if new_condition == "selective mutism" and "mute" in cat.permanent_condition:
+                while new_condition == "selective mutism":
+                    new_condition = choice(possible_conditions)
+                    while new_condition in cat.permanent_condition:
+                        new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
+
             if new_condition == "born without a leg":
                 cat.pelt.scars.append("NOPAW")
             elif new_condition == "born without a tail":
@@ -2172,23 +2187,28 @@ class Cat():
 
         intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
 
+        if name in intersex_exclusive and self.gender != "intersex":
+            return
+
+        if name == "failing eyesight" and "blind" in self.permanent_condition:
+            return
+
+        if name == "partial hearing loss" and "deaf" in self.permanent_condition:
+            return
+
         if name == "shattered soul" and "budding spirit" in self.permanent_condition:
-            print("cat is already plural!")
             return
         if name == "budding spirit" and "shattered soul" in self.permanent_condition:
-            print("cat is already plural!")
             return
-        if self.gender != "intersex":
-            if name in intersex_exclusive:
-                print("cat isn't intersex!")
-                return
-        if "blind" in self.permanent_condition and name == "failing eyesight":
+
+        if name == "spirited heart" and "puzzled heart" in self.permanent_condition:
             return
-        if "deaf" in self.permanent_condition and name == "partial hearing loss":
+        if name == "puzzled heart" and "spirited heart" in self.permanent_condition:
             return
-        if "spirited heart" in self.permanent_condition and name == "puzzled heart":
+
+        if name == "mute" and "selective mutism" in self.permanent_condition:
             return
-        if "puzzled heart" in self.permanent_condition and name == "spirited heart":
+        if name == "selective mutism" and "mute" in self.permanent_condition:
             return
 
         # remove accessories if need be
