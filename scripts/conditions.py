@@ -8,8 +8,8 @@ TODO: Docs
 
   # pylint: enable=line-too-long
 
-from scripts.game_structure.game_essentials import game
 from scripts.cat.skills import SkillPath
+from scripts.game_structure.game_essentials import game
 
 
 def medical_cats_condition_fulfilled(all_cats,
@@ -238,6 +238,7 @@ class PermanentCondition:
                  name,
                  severity,
                  moons_until,
+                 moon_start,
                  congenital='never',
                  mortality=0,
                  risks=None,
@@ -248,6 +249,7 @@ class PermanentCondition:
         self.severity = severity
         self.congenital = congenital
         self.moons_until = moons_until
+        self.moon_start = moon_start
         self.mortality = mortality
         self.risks = risks
         self.illness_infectiousness = illness_infectiousness

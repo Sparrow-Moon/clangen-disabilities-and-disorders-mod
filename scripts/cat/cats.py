@@ -1951,8 +1951,120 @@ class Cat():
         possible_conditions = []
         multiple_condition_chance = game.config["cat_generation"]["multiple_permanent_conditions"]
         max_conditions = game.config["cat_generation"]["max_conditions_born_with"]
+        comorbidity_chance = game.config["cat_generation"]["comorbidity_chance"]
         conditions = 1
         count = 1
+        possible_comorbidities = []
+        comorbid_conditions = {
+            "paralyzed": [
+                "curved spine"
+            ],
+            "constant joint pain": [
+                "curved spine"
+            ],
+            "seizure prone": [
+                "chattering tongue", "curved spine", "face blindness", "parrot chatter"
+            ],
+            "starwalker": [
+                "comet spirit", "burning light", "jumbled noise", "disrupted senses", "chattering tongue",
+                "jumbled mind", "counting fog", "spirited heart", "puzzled heart", "face blindness", "parrot chatter",
+                "selective mutism"
+            ],
+            "obsessive mind": [
+                "spirited heart"
+            ],
+            "heavy soul": [
+                "shattered soul", "budding spirit"
+            ],
+            "comet spirit": [
+                "starwalker", "burning light", "jumbled noise", "disrupted senses", "chattering tongue", "jumbled mind",
+                "counting fog", "spirited heart", "parrot chatter"
+            ],
+            "antisocial": [
+                "shattered soul", "budding spirit", "puzzled heart"
+            ],
+            "anxiety": [
+                "shattered soul", "budding spirit", "selective mutism"
+            ],
+            "constant roaming pain": [
+                "jellyfish joints", "loose body", "curved spine"
+            ],
+            "thunderous spirit": [
+                "shattered soul", "budding spirit", "spirited heart", "puzzled heart"
+            ],
+            "otherworldly mind": [
+                "shattered soul", "budding spirit"
+            ],
+            "irritable bowels": [
+                "jellyfish joints", "loose body"
+            ],
+            "jellyfish joints": [
+                "constant roaming pain", "irritable bowels", "loose body"
+            ],
+            "loose body": [
+                "constant roaming pain", "irritable bowels", "jellyfish joints"
+            ],
+            "burning light": [
+                "starwalker", "comet spirit", "jumbled noise", "disrupted senses"
+            ],
+            "jumbled noise": [
+                "starwalker", "comet spirit", "burning light", "disrupted senses"
+            ],
+            "disrupted senses": [
+                "starwalker", "comet spirit", "burning light", "jumbled noise"
+            ],
+            "chattering tongue": [
+                "seizure prone", "starwalker", "comet spirit", "parrot chatter"
+            ],
+            "shattered soul": [
+                "heavy soul", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
+            ],
+            "budding spirit": [
+                "heavy soul", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
+            ],
+            "testosterone deficiency": [
+                "infertile"
+            ],
+            "excess testosterone": [
+                "pcos", "infertile"
+            ],
+            "aneuploidy": [
+                "infertile"
+            ],
+            "mosaicism": [
+                "infertile"
+            ],
+            "chimerism": [
+                "infertile"
+            ],
+            "pcos": [
+                "infertile"
+            ],
+            "curved spine": [
+                "paralyzed", "constant joint pain", "seizure prone", "constant roaming pain"
+            ],
+            "jumbled mind": [
+                "starwalker", "comet spirit", "counting fog"
+            ],
+            "counting fog": [
+                "starwalker", "comet spirit", "jumbled mind"
+            ],
+            "spirited heart": [
+                "starwalker", "obsessive mind", "comet spirit", "thunderous spirit"
+            ],
+            "puzzled heart": [
+                "starwalker", "antisocial", "thunderous spirit"
+            ],
+            "face blindness": [
+                "seizure prone", "starwalker"
+            ],
+            "parrot chatter": [
+                "seizure prone", "starwalker", "comet spirit", "chattering tongue"
+            ],
+            "selective mutism": [
+                "starwalker", "anxiety"
+            ]
+        }
 
         for condition in PERMANENT:
             possible = PERMANENT[condition]
@@ -1965,24 +2077,75 @@ class Cat():
             count += 1
 
         while conditions:
+            for entry in comorbid_conditions:
+                if entry in cat.permanent_condition:
+                    possible_comorbidities.append(comorbid_conditions.get(entry))
+
             new_condition = choice(possible_conditions)
+            if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                new_condition = choice(choice(possible_comorbidities))
+
             while new_condition in cat.permanent_condition:
                 new_condition = choice(possible_conditions)
+                if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                    new_condition = choice(choice(possible_comorbidities))
+
+            while new_condition == "pcos" and cat.gender == "tom":
+                new_condition = choice(possible_conditions)
+                while new_condition in cat.permanent_condition:
+                    new_condition = choice(possible_conditions)
+                    if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                        new_condition = choice(choice(possible_comorbidities))
+
             if new_condition == "blind" and "failing eyesight" in cat.permanent_condition:
                 while new_condition == "blind":
                     new_condition = choice(possible_conditions)
                     while new_condition in cat.permanent_condition:
                         new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
             if new_condition == "failing eyesight" and "blind" in cat.permanent_condition:
                 while new_condition == "failing eyesight":
                     new_condition = choice(possible_conditions)
                     while new_condition in cat.permanent_condition:
                         new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
+
+            if new_condition == "spirited heart" and "puzzled heart" in cat.permanent_condition:
+                while new_condition == "spirited heart":
+                    new_condition = choice(possible_conditions)
+                    while new_condition in cat.permanent_condition:
+                        new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
+            if new_condition == "puzzled heart" and "spirited heart" in cat.permanent_condition:
+                while new_condition == "puzzled heart":
+                    new_condition = choice(possible_conditions)
+                    while new_condition in cat.permanent_condition:
+                        new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
+
+            if new_condition == "shattered soul" and "budding spirit" in cat.permanent_condition:
+                while new_condition == "shattered soul":
+                    new_condition = choice(possible_conditions)
+                    while new_condition in cat.permanent_condition:
+                        new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
+            if new_condition == "budding spirit" and "shattered soul" in cat.permanent_condition:
+                while new_condition == "budding spirit":
+                    new_condition = choice(possible_conditions)
+                    while new_condition in cat.permanent_condition:
+                        new_condition = choice(possible_conditions)
+                        if randint(1, comorbidity_chance) == 1 and possible_comorbidities:
+                            new_condition = choice(choice(possible_comorbidities))
 
             if new_condition == "born without a leg":
-                cat.pelt.scars.append('NOPAW')
+                cat.pelt.scars.append("NOPAW")
             elif new_condition == "born without a tail":
-                cat.pelt.scars.append('NOTAIL')
+                cat.pelt.scars.append("NOTAIL")
             elif new_condition == "lazy eye":
                 cat.pelt.lazy_eye = cat.pelt.eye_colour
                 if cat.pelt.eye_colour2 != None:
@@ -1990,7 +2153,8 @@ class Cat():
 
             self.get_permanent_condition(new_condition, born_with=True)
             conditions -= 1
-    
+            possible_comorbidities = []  # Reset possible_comorbidities so that the chances stay equal for each comorbidity
+
     def update_alters(self):
         if self.alters:
             for alter in self.alters:
@@ -1998,19 +2162,22 @@ class Cat():
                     alter["origin"] = "core"
                     alter["splits"] = []
 
-    def get_permanent_condition(self, name, born_with=False, event_triggered=False):
+    def get_permanent_condition(self, name, born_with=False, event_triggered=False, starting_moon=game.clan.age if game.clan else 0):
         if name not in PERMANENT:
-            print(str(self.name), f"WARNING: {name} is not in the permanent conditions collection.")
+            print(
+                str(self.name),
+                f"WARNING: {name} is not in the permanent conditions collection.",
+            )
             return
-        
+
+        intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
+
         if name == "shattered soul" and "budding spirit" in self.permanent_condition:
             print("cat is already plural!")
             return
         if name == "budding spirit" and "shattered soul" in self.permanent_condition:
             print("cat is already plural!")
             return
-        
-        intersex_exclusive = ["excess testosterone", "aneuploidy", "testosterone deficiency", "chimerism", "mosaicism"]
         if self.gender != "intersex":
             if name in intersex_exclusive:
                 print("cat isn't intersex!")
@@ -2024,11 +2191,18 @@ class Cat():
         if "puzzled heart" in self.permanent_condition and name == "spirited heart":
             return
 
-
         # remove accessories if need be
-        if 'NOTAIL' in self.pelt.scars and self.pelt.accessory in ['RED FEATHERS', 'BLUE FEATHERS', 'JAY FEATHERS']:
+        if 'NOTAIL' in self.pelt.scars and self.pelt.accessory in [
+            'RED FEATHERS',
+            'BLUE FEATHERS',
+            'JAY FEATHERS',
+        ]:
             self.pelt.accessory = None
-        if 'HALFTAIL' in self.pelt.scars and self.pelt.accessory in ['RED FEATHERS', 'BLUE FEATHERS', 'JAY FEATHERS']:
+        if "HALFTAIL" in self.pelt.scars and self.pelt.accessory in [
+            "RED FEATHERS",
+            "BLUE FEATHERS",
+            "JAY FEATHERS",
+        ]:
             self.pelt.accessory = None
 
         condition = PERMANENT[name]
@@ -2038,7 +2212,7 @@ class Cat():
             if game.clan and game.clan.game_mode == "cruel season":
                 mortality = int(mortality * 0.65)
 
-        if condition['congenital'] in ['always', 'intersex']:
+        if condition["congenital"] in ["always", "intersex"]:
             born_with = True
         moons_until = condition["moons_until"]
         if born_with and moons_until != 0:
@@ -2058,11 +2232,13 @@ class Cat():
             if name in ["heavy soul", "anxiety", "snow vision"]:
                 moons_until = randint(moons_until - 1, moons_until + 2)
             else:
-                moons_until = randint(moons_until - 1, moons_until + 1)  # creating a range in which a condition can present
+                moons_until = randint(
+                    moons_until - 1, moons_until + 1
+                )  # creating a range in which a condition can present
             if moons_until < 1:
                 moons_until = 1
 
-        if born_with and self.status not in ['kitten', 'newborn']:
+        if born_with and self.status not in ["kitten", "newborn"]:
             moons_until = -2
         elif born_with is False:
             moons_until = 0
@@ -2075,10 +2251,11 @@ class Cat():
             severity=condition["severity"],
             congenital=condition["congenital"],
             moons_until=moons_until,
+            moon_start=starting_moon,
             mortality=mortality,
             risks=condition["risks"],
             illness_infectiousness=condition["illness_infectiousness"],
-            event_triggered=event_triggered
+            event_triggered=event_triggered,
         )
 
         if new_perm_condition.name not in self.permanent_condition:
@@ -2091,7 +2268,7 @@ class Cat():
                 "illness_infectiousness": new_perm_condition.illness_infectiousness,
                 "risks": new_perm_condition.risks,
                 "complication": None,
-                "event_triggered": new_perm_condition.new
+                "event_triggered": new_perm_condition.new,
             }
             if self.is_plural():
                 # self.system_core()
@@ -3515,7 +3692,22 @@ class Personality():
 # Twelve example cats
 def create_example_cats():
     e = sample(range(12), 3)
-    not_allowed = []
+    scar_to_condition = {
+        "THREE": ["one bad eye"],
+        "NOLEFTEAR": ["partial hearing loss"],
+        "NORIGHTEAR": ["partial hearing loss"],
+        "NOEAR": ["partial hearing loss", "deaf"],
+        "NOPAW": ["lost a leg", "born without a leg"],
+        "NOTAIL": ["lost their tail", "born without a tail"],
+        "HALFTAIL": ["lost their tail"],
+        "BRIGHTHEART": ["one bad eye"],
+        "LEFTBLIND": ["one bad eye"],
+        "RIGHTBLIND": ["one bad eye"],
+        "BOTHBLIND": ["blind"],
+        "MANLEG": ["weak leg", "twisted leg"],
+        "RASH": ["constant rash"],
+        "DECLAWED": ["declawed"],
+    }
     for a in range(12):
         if a in e:
             game.choose_cats[a] = Cat(status='warrior', biome=None)
@@ -3527,7 +3719,7 @@ def create_example_cats():
         elif game.choose_cats[a].moons == 0:
             game.choose_cats[a].moons = choice([1, 2, 3, 4, 5])
         for scar in game.choose_cats[a].pelt.scars:
-            if scar in not_allowed:
+            if scar in scar_to_condition:
                 game.choose_cats[a].pelt.scars.remove(scar)
     
         #update_sprite(game.choose_cats[a])

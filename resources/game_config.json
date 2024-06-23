@@ -178,9 +178,10 @@
 		]
 	},
 	"cat_generation": {
-		"base_permanent_condition": 50,
+		"base_permanent_condition": 35,
 		"multiple_permanent_conditions": 20,
 		"max_conditions_born_with": 3,
+		"comorbidity_chance": 5,
 		"base_male_tortie": 13,
 		"base_female_tortie": 4,
 		"base_heterochromia": 120,
@@ -191,7 +192,9 @@
 		"comment": [
 			"multiple_permanent_conditions (20 by default) - 1/chance for a cat to be born with one extra permanent condition,",
 			"runs until it's tried to give a cat [max_conditions_born_with - 1] extra conditions.",
-			"max_conditions_born_with (3 by default) - the max amount of permanent conditions a cat can be born with."
+			"max_conditions_born_with (3 by default) - the max amount of permanent conditions a cat can be born with.",
+			"comorbidity_chance (5 by default) - 1/chance for a cat being given an extra permanent condition to be given",
+			"a condition that is comorbid with any of their existing ones instead of a random one."
 		]
 	},
 	"cat_name_controls": {
