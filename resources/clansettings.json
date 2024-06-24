@@ -108,6 +108,11 @@
                 false
             ]
         ],
+		"pregnancy turmoil": [
+			"Adds negative pregnancy events",
+			"Allows cats to have events like post-partum and false pregnancies.",
+			false
+		],
         "single parentage": [
             "Allow cats to have kittens with an unknown second parent",
             "Allow cats to have kittens with an unknown second biological parent. The cat will be listed as the only biological parent.",

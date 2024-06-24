@@ -297,5 +297,10 @@
     "Sometimes m_c's voice feels stuck in {PRONOUN/m_c/poss} chest, where the words clog and stifle {PRONOUN/m_c/object}. Sometimes its easier just not to talk at all.",
     "When m_c gets stressed, {PRONOUN/m_c/poss} words just disappear, leaving behind a heavy feeling.",
     "r_c assures m_c that even if {PRONOUN/m_c/poss} voice gets stuck, r_c will still be there to support {PRONOUN/m_c/object}."
-  ] 
+  ],
+	"thought blind": [
+		"When talking with r_c about {PRONOUN/m_c/poss} dreams for the future m_c reveals {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} have any image of what it might look like.",
+		"When m_c's talking with {PRONOUN/m_c/poss} clanmates {PRONOUN/m_c/subject} increasingly {VERB/m_c/get/gets} frustrated when trying to visualise what they describe.",
+		"m_c has come to the realisation that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} thought blind."
+	]
 }

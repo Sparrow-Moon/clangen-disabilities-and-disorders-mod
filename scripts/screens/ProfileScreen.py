@@ -992,7 +992,7 @@ class ProfileScreen(Screens):
         already_sick_injured = False
         if the_cat.is_injured():
             special_conditions = [
-                "recovering from birth", "overstimulation", "understimulation", "fatigue", "fainting", "pregnant"
+                "recovering from birth", "overstimulation", "understimulation", "fatigue", "fainting", "pregnant", "faux pregnant"
             ]
             all_special = True
             for condition in the_cat.injuries:
@@ -1064,6 +1064,12 @@ class ProfileScreen(Screens):
                     output += '\npregnant!'
                 else:
                     output += 'pregnant!'
+                    already_sick_injured = True
+            if "faux pregnant" in the_cat.injuries:
+                if already_sick_injured:
+                    output += '\npregnant?'
+                else:
+                    output += 'pregnant?'                    
                     already_sick_injured = True
 
         if the_cat.is_ill():
@@ -2079,7 +2085,9 @@ class ProfileScreen(Screens):
             "kittenspace": "littlespace",
             "puppyspace": "petspace",
             "spirited heart": "hyperempathy",
-            "puzzled heart": "low empathy"
+            "puzzled heart": "low empathy",
+            "faux pregnant": "phantom pregnancy",
+            "thought blind": "aphantasia"
         }
         if not game.settings['warriorified names']:
             if condition in dad_names:
@@ -2158,6 +2166,9 @@ class ProfileScreen(Screens):
 
             if name == 'pregnant':
                 insert = 'has been pregnant for'
+
+            elif name == 'faux pregnant':
+                insert = 'has been pregnant(?) for'
 
             if moons_with != 1:
                 text_list.append(f"{insert} {moons_with} moons")

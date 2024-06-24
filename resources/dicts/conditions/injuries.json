@@ -1881,7 +1881,29 @@
             
         ]
     },
-
+    "faux pregnant": {
+        "duration": 2,
+        "severity": "major",
+        "medicine_duration": 3,
+        "mortality": {
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "also_got": [
+        ],
+        "cause_permanent": [
+        ],
+        "herbs": [
+        ]
+    },
     "pregnant": {
         "duration": 2,
         "severity": "major",

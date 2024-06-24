@@ -1160,7 +1160,16 @@
         "duration": 1,
         "medicine_duration": 1,
         "infectiousness": 0,
-        "risks": [],
+        "risks": [
+			{
+				"name": "parroting",
+				"chance": 5
+			},
+			{
+				"name": "body biter",
+				"chance": 50
+			}
+		],
         "herbs": [
             "catmint"
         ]
@@ -1433,6 +1442,10 @@
 			},
 			{
 				"name": "sleep paralysis",
+				"chance": 25
+			},
+			{
+				"name": "fainting",
 				"chance": 25
 			}
 		],
@@ -1899,5 +1912,35 @@
             "burdock",
             "poppy"
         ]
+    },
+    "parroting": {
+        "severity": "minor",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 3,
+        "medicine_duration": 2,
+        "infectiousness": 0,
+        "risks": [
+		],
+        "herbs": [
+			"chamomile",
+			"goldenrod"
+		]
     }
 }

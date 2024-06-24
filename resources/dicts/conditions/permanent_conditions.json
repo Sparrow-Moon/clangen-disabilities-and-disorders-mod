@@ -320,7 +320,11 @@
             {
                 "name": "redcough",
                 "chance": 60
-            }
+            },
+			{
+				"name": "fainting",
+				"chance": 20
+			}
         ],
         "herbs": [
             "juniper",
@@ -439,7 +443,11 @@
             {
                 "name": "ear infection",
                 "chance": 50
-            }
+            },
+			{
+				"name": "word loss",
+				"chance": 20
+			}
         ],
         "herbs": []
     },
@@ -470,7 +478,11 @@
             {
                 "name": "ear infection",
                 "chance": 50
-            }		
+            },
+			{
+				"name": "word loss",
+				"chance": 20
+			}	
         ],
         "herbs": []
 
@@ -530,7 +542,11 @@
             {
                 "name": "spasms",
                 "chance": 10
-            }
+            },
+			{
+				"name": "fainting",
+				"chance": 15
+			}
         ],
         "herbs": [
             "ragwort",
@@ -568,7 +584,11 @@
             {
                 "name": "ear infection",
                 "chance": 60
-            }
+            },
+			{
+				"name": "fainting",
+				"chance": 90
+			}
         ],
         "herbs": []
     },
@@ -599,6 +619,10 @@
 			{
 				"name": "dizziness",
 				"chance": 15
+			},
+			{
+				"name": "fainting",
+				"chance": 50
 			}
         ],
         "herbs": []
@@ -799,7 +823,15 @@
             {
                 "name": "headache",
                 "chance": 20
-            }
+            },
+			{
+				"name": "ear buzzing",
+				"chance": 20
+			},
+			{
+				"name": "fainting",
+				"chance": 45
+			}
         ],
         "herbs": [
             "poppy",
@@ -1023,6 +1055,14 @@
             {
 				"name": "selective mutism",
 				"chance": 75
+			},
+			{
+				"name": "parroting",
+				"chance": 10
+			},
+			{
+				"name": "word loss",
+				"chance": 30
 			}
         ],
         "herbs": [ ]
@@ -1086,7 +1126,15 @@
             {
                 "name": "cracked pads",
                 "chance": 10
-            }
+            },
+			{
+				"name": "word loss",
+				"chance": 25
+			},
+			{
+				"name": "parroting",
+				"chance": 45
+			}
         ],
         "herbs":[
 			"chamomile",
@@ -1228,6 +1276,18 @@
             {
 				"name": "parrot chatter",
 				"chance": 70
+			},
+			{
+				"name": "stimming",
+				"chance": 25
+			},
+			{
+				"name": "word loss",
+				"chance": 10
+			},
+			{
+				"name": "parroting",
+				"chance": 20
 			}
         ],
         "herbs":[
@@ -1487,6 +1547,10 @@
 			{
 				"name": "fatigue",
 				"chance": 30
+			},
+			{
+				"name": "fainting",
+				"chance": 45
 			}
         ],
         "herbs": [
@@ -1530,7 +1594,11 @@
             {
                 "name": "small cut",
                 "chance": 80
-            }
+            },
+			{
+				"name": "stimming",
+				"chance": 20
+			}
         ],
         "herbs": [
             "juniper",
@@ -1681,6 +1749,10 @@
             {
 				"name": "parrot chatter",
 				"chance": 70
+			},
+            {
+				"name": "parroting",
+				"chance": 10
 			}
         ],
         "herbs":[]
@@ -2672,8 +2744,12 @@
 				"chance": 5
 			},
             {
-				"name": "verbal loss",
+				"name": "verbal shutdown",
 				"chance": 25
+			},
+			{
+				"name": "parroting",
+				"chance": 5
 			}
         ],
         "herbs": []
@@ -2701,6 +2777,29 @@
             {
 				"name": "anxiety attack",
 				"chance": 20
+			}
+        ],
+        "herbs": []
+    },
+    "thought blind": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 5,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+			{
+				"name": "face blindness",
+				"chance": 50
 			}
         ],
         "herbs": []

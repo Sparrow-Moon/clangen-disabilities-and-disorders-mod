@@ -214,6 +214,18 @@
 			"Usually with the warmth and the frost m_c finds that the heavy weight of exhaustion has left, but now all {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like is curling back up again and never leaving the den.",
 			"Something in m_c's chest feels tight, feels numb really. A weight that {PRONOUN/m_c/subject} {VERB/m_c/have/has} to carry around for the rest of {PRONOUN/m_c/poss} life."
 		]
+	},	
+	"stimming": {
+		"parroting": [
+			"It appears to r_c as though m_c is parroting as a form of stimming.",
+			"m_c is parroting in the midst of all {PRONOUN/m_c/poss} stimming.",
+			"m_c is behaving like a parrot to {PRONOUN/m_c/poss} Clanmates."
+		],
+		"body biter": [
+			"r_c lightly scolds m_c when {PRONOUN/r_c/subject} {VERB/m_c/notice/notices} that in all {PRONOUN/m_c/poss} stimming {PRONOUN/m_c/poss} has become a body biter.",
+			"Reluctantly m_c has to admit {PRONOUN/m_c/subject} might have a problem with body biting.",
+			"m_c stares at {PRONOUN/m_c/poss} bleeding paws with the realisation that it's self inflicted."
+		]
 	},
 	"verbal shutdown": {
 		"mute": [
@@ -271,6 +283,11 @@
 		"sleep paralysis": [
 			"r_c is surprised to find m_c coming to talk to {PRONOUN/r_c/object}. Slowly m_c explains that {PRONOUN/m_c/subject} {VERB/m_c/think/thinks} that cats of the dark forest are trying to drag {PRONOUN/m_c/object} there.",
 			"In the early hours of the morning poor m_c finds {PRONOUN/m_c/self} frozen, feeling like a creature is crawling all over {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} can't quite see."
+		],
+		"fainting": [
+			"Poor m_c came to r_c feeling rather faint due to {PRONOUN/m_c/poss} lack of sleep.",
+			"It would seem that m_c's body is at it's absolute limit making {PRONOUN/m_c/object} faint now.",
+			"m_c has had a case of fainting, most likely due to {PRONOUN/m_c/poss} lack of sleep."
 		]
 	},
 	"sleep paralysis": {

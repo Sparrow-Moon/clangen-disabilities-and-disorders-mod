@@ -17,11 +17,14 @@
 	"m_c announced that {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to be expecting kits.",
 	"Uneasily m_c talks to {PRONOUN/m_c/poss} clanmates about possibly expecting kits.",
 	"While m_c isn't entirely certain, the only explanation that makes sense is {PRONOUN/m_c/subject} {VERB/m_c/are/is} expecting kits.",
-	"It's been a long time since m_c's last heat, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} to be expecting kits.",
+	"While m_c isn't entirely certain, the only explanation that makes sense is {PRONOUN/m_c/subject} {VERB/m_c/are/is} expecting kits.",
 	"With more than a little trepidation m_c talks to the Medicine Cat about kitten care and what to expect.",
 	"m_c knows that {PRONOUN/m_c/subject} can't be expecting kits. Yet a longing rises up in {PRONOUN/m_c/object} anyway.",
 	"m_c is feeling parental and keeps longingly looking towards the nursery.",
-	"While it's not a possibility m_c still finds {PRONOUN/m_c/self} entertaining the possibility of kittens"
+	"m_c is convinced that {PRONOUN/m_c/subject} will be having kits soon and refuses to hear anything to the contrary.",
+	"m_c keeps looking towards the nursery with a mixture of hope and caution in {PRONOUN/m_c/poss} eyes.",
+	"m_c is pretty sure {PRONOUN/m_c/subject} {VERB/m_c/aren't/isn't} expecting kittens, and yet some part of {PRONOUN/m_c/object} is insisting it.",
+	"While m_c knows it's not really a possibility {PRONOUN/m_c/subject} still find {PRONOUN/m_c/self} entertaining the expectation of kits."
   ],
 
   "litter_guess": {
@@ -54,14 +57,28 @@
     "m_c invites {PRONOUN/m_c/poss} friends to feel {PRONOUN/m_c/poss} litter kick - surely these kittens are going to be talented warriors, because, well - ow."
 	],
 
-  "adoption_litter_guess": [
-    "m_c is unsure how many kits {PRONOUN/m_c/subject} could have.",
-	"While m_c isn't really pregnant {PRONOUN/m_c/subject} have been looking into other options.",
-	"m_c hopes that the talks {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} been having with that pregnant kittypet are going well.",
-	"m_c is looking forwards to meeting the kittens-- hopefully.",
-	"With trepidation m_c talks with the queens about possible kit names.",
-	"m_c has no idea how many names to prepare.",
-	"m_c is longingly imagining {PRONOUN/m_c/self} surrounded by kits."
+	"adoption_announce": [
+		"While m_c is disappointed to hear the medicine cat confirm that {PRONOUN/m_c/subject} really aren't expecting kittens, there is still hope that {PRONOUN/m_c/subject} could adopt.",
+		"Even if m_c won't be having {PRONOUN/m_c/poss} own kittens anytime soon, {PRONOUN/m_c/subject} {VERB/m_c/purr/purrs} at the thought of adopting.",
+		"m_c has been looking into the option of adopting a litter of kittens from outsiders.",
+		"To the surprise of the whole Clan m_c announces that {PRONOUN/m_c/subject} might be adopting soon.",
+		"Some of the clan is a bit apprehensive when m_c announces {PRONOUN/m_c/poss} plans to adopt.",
+		"Even if this pregnancy has turned out to be false, m_c still talks with {PRONOUN/m_c/poss} Clanmates about potential kitten names for the future.",
+		"Even though m_c isn't actually pregnant the Nursery has been seeing {PRONOUN/m_c/object} a lot more recently because {PRONOUN/m_c/subject} {VERB/m_c/are/is} now looking into adopting a litter."
+	],
+	"empty_nest": [
+		"m_c is longingly imagining {PRONOUN/m_c/self} surrounded by kittens.",
+		"Even if part of m_c knew it was too good to be true {PRONOUN/m_c/subject} still find {PRONOUN/m_c/self} crying for the kittens that never were.",
+		"m_c struggles to clean up the nest {PRONOUN/m_c/subject} had half made for kittens who never came.",
+		"With the confirmation of the Medicine Cat that there are no kittens, m_c hasn't been seen for a few days.",
+		"m_c is torn on whether to be happy or sad about the fact {PRONOUN/m_c/subject} {VERB/m_c/were/was} never pregnant after all.",
+		"Even with nothing to grieve m_c sits a quiet vigil for the kittens that never were.",
+		"{PRONOUN/m_c/poss/CAP} nest feels too empty for m_c.",
+		"Without kittens of {PRONOUN/m_c/poss} own, m_c's taken to helping in the Nursery a little bit more these past days.",
+		"Forelornly m_c cleans up the kitten toys and nest {PRONOUN/m_c/subject} had been putting together.",
+		"m_c refuses to clean up the nest {PRONOUN/m_c/subject} had made, leaving it as an offering to a cat who does have kits.",
+		"The whole nursery is silent as m_c cleans up {PRONOUN/m_c/poss} half-made nest.",
+		"Even knowing that m_c probably wasn't expecting real kits... it's hard for {PRONOUN/m_c/object} to swallow the swell of grief that comes at the thought of never seeing tiny bodies curled up beside {PRONOUN/m_c/object}."
 	],
 
   "major_severity": [
@@ -100,7 +117,18 @@
       "No one knows who m_c has had {PRONOUN/m_c/poss} {insert} with, but {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} very happy watching over {PRONOUN/m_c/poss} little offspring in the nursery.",
       "Whenever someone asks whether m_c will be alright raising {PRONOUN/m_c/poss} {insert} alone, {PRONOUN/m_c/subject} just {VERB/m_c/smile/smiles}, and reply that everything is going to work out fine.",
       "A {insert}! m_c welcomes them happily, and seems unperturbed by the lack of a partner in the nursery with {PRONOUN/m_c/object}."
+	  
     ],
+	"affair_outsider": [
+	  "m_c brought a {insert} back to camp refusing to explain {PRONOUN/m_c/self}.",
+	  "It appears as though m_c has been getting up to something with an outsider, bringing back a {insert} to camp.",
+	  "m_c claims to have found a {insert} while out on patrol and has volunteered to take the responsibility.",
+	  "After a few days of acting suspicious m_c has brought a {insert} back to camp.",
+	  "m_c has brought a {insert} back to camp looking incredibly pleased with {PRONOUN/m_c/self}.",
+	  "A {insert} was found just outside of camp looking suspiciously like m_c.",
+	  "m_c brought back a {insert} {PRONOUN/m_c/subject} had with a secret partner."
+	  
+	],
     "two_parents": [
       "m_c had a {insert} with r_c.",
       "In the nursery, m_c lies suckling a {insert}, r_c watching over them and purring so hard {PRONOUN/r_c/poss} body vibrates.",
@@ -182,5 +210,53 @@
 		"m_c lost one of {PRONOUN/m_c/poss} nine lives, but gave birth to a {insert}.",
 		"Although m_c gave birth to a {insert}, it came at the cost of one of {PRONOUN/m_c/poss} nine lives."
 	]
-  }
+  },
+
+  "adoption": {
+    "unmated_parent": [
+      "m_c found a {insert} and decides to adopt them.",
+	  "After a while of considering adoption m_c has found a {insert} and taken them in.",
+	  "While out in the territory m_c found a {insert} and brought them back to camp.",
+	  "m_c found a {insert} and has adopted them.",
+	  "Out in the territory m_c found a {insert} and cheerfully adopted them.",
+	  "m_c seems completely unphased about potentially raising the {insert} {PRONOUN/m_c/subject} found on {PRONOUN/m_c/poss} own.",
+	  "m_c looks forwards to parenting the {insert} {PRONOUN/m_c/subject} found.",
+	  "m_c has officially adopted a {insert}.",
+	  "After talking with the medicine cat m_c has officially adopted a {insert}.",
+	  "m_c is so grateful that {PRONOUN/m_c/subject} {VERB/m_c/were/was} able to adopt a {insert}.",
+	  "m_c is practically vibrating when told {PRONOUN/m_c/subject} may adopt the {insert} recently found in the territory."
+    ],
+    "two_parents": [
+      "m_c found a {insert} and has chosen to adopt them with r_c.",
+	  "While m_c and r_c were taking a romantic stroll in the territory they stumbled upon a {insert}. Together they choose to adopt them.",
+	  "m_c and r_c have adopted a {insert}.",
+	  "r_c excitedly talks to m_c about a {insert} the two have been looking to adopt.",
+	  "It's with much relief that r_c and m_c come back to camp with a newly adopted {insert}.",
+	  "Greeting the clan with delighted purrs m_c and r_c show off the new {insert} they adopted.",
+	  "Proudly m_c strolls into camp and up to r_c announcing that {PRONOUN/m_c/subject} adopted a {insert}.",
+	  "m_c and r_c both purr over the recently adopted {insert}."
+    ],
+    "dead_mate": [
+      "Choking on {PRONOUN/m_c/poss} many emotions, m_c looks at the {insert} {PRONOUN/m_c/subject} recently adopted and wishes that r_c could be there as well.",
+	  "m_c looks over {PRONOUN/m_c/poss} newly adopted {insert} with pride and longing. r_c always did wish for kittens.",
+	  "While m_c would never regret adopting the {insert} it's a little overwhelming thinking about been a parent without r_c.",
+	  "m_c hopes that r_c approves of {PRONOUN/m_c/poss} adopted {insert} from StarClan.",
+	  "Without hesitation m_c steps up to adopt the {insert}, hoping that in StarClan r_c is proud of {PRONOUN/m_c/object}.",
+	  "Some part of m_c wishes that the {insert} that {PRONOUN/m_c/subject} found could be r_c's-- but that's impossible.",
+	  "With a heaviness in m_c's heart {PRONOUN/m_c/subject} {VERB/m_c/look/looks} down at the adopted {insert} and wishes that r_c were there to help.",
+	  "m_c hopes that {PRONOUN/m_c/subject} {VERB/m_c/have/has} enough stories about r_c to tell to {PRONOUN/m_c/poss} adopted {insert} in the future."
+    ],
+    "both_unmated": [
+      "m_c found a {insert} and looks over towards r_c in the hopes that {PRONOUN/r_c/subject} could help.",
+	  "r_c brings in a {insert}, looking over to m_c with soemthing like hope.",
+	  "m_c has taken in a {insert} along with a very awkward r_c.",
+	  "When the {insert} was found both m_c and r_c stepped up to take care of them.",
+	  "r_c and m_c discuss co-adopting the {insert} that was recently found."
+    ],
+    "affair": [
+      "r_c brought a {insert} back to the clan {PRONOUN/r_c/subject} found on patrol. Out of everyone {PRONOUN/m_c/subject} {VERB/m_c/say/says} that m_c should take them in.",
+	  "m_c adopts a {insert}, it seems that r_c would like to help {PRONOUN/m_c/object}.",
+	  "r_c visits m_c in the nursery with {PRONOUN/m_c/poss} newly adopted {insert}, just to check up on {PRONOUN/m_c/object}."
+    ]
+  } 
 }
