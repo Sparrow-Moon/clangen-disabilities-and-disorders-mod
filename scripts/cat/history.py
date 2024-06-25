@@ -239,7 +239,7 @@ class History:
                 SkillPath.RUNNER: [ "running" ],
                 SkillPath.CLIMBER: [ "climbing" ],
                 SkillPath.SWIMMER: [ "swimming" ],
-                SkillPath.SPEAKER: [ "voicing things" ],
+                SkillPath.SPEAKER: [ "public speaking" ],
                 SkillPath.MEDIATOR: [ "resolving arguments" ],
                 SkillPath.CLEVER: [ "solving problems" ],
                 SkillPath.INSIGHTFUL: [ "providing insight" ],
@@ -255,7 +255,9 @@ class History:
                 SkillPath.DREAM: [ "understanding dreams" ],
                 SkillPath.CLAIRVOYANT: [ "predicting the future" ],
                 SkillPath.PROPHET: [ "understanding prophecies" ],
-                SkillPath.GHOST: [ "connecting to the afterlife" ]
+                SkillPath.GHOST: [ "connecting to the afterlife" ],
+                SkillPath.UNKNOWN: ["connecting to the Unknown Residence"],
+                SkillPath.QUEEN: ["understanding the needs of Queens"]
             }
 
         for _ment in cat.history.mentor_influence["skill"]:

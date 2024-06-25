@@ -1865,6 +1865,8 @@
         },
         "illness_infectiousness": [
         ],
+        "cause_permanent": [
+        ],
         "risks": [
             {
                 "name": "head damage",

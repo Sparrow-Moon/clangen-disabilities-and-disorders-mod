@@ -142,6 +142,18 @@ class SkillPath(Enum):
         "ghost sight",
         "ghost speaker"
     )
+    UNKNOWN = (
+        "interested in the Unkown Residence",
+        "Unknown Residence accord",
+        "deep Unkown Residence bond",
+        "unshakable Unknown Residence link",
+    )
+    QUEEN = (
+        "nursery helper",
+        "nursery aide",
+        "queen's aide",
+        "kitten deliverer"
+    )
 
     @staticmethod
     def get_random(exclude:list=()):
@@ -150,7 +162,7 @@ class SkillPath(Enum):
         uncommon_paths = [i for i in [SkillPath.GHOST, SkillPath.PROPHET,
                           SkillPath.CLAIRVOYANT, SkillPath.DREAM,
                           SkillPath.OMEN, SkillPath.STAR, SkillPath.HEALER,
-                          SkillPath.DARK]
+                          SkillPath.DARK, SkillPath.UNKNOWN]
                           if i not in exclude]
 
 
@@ -203,7 +215,9 @@ class Skill():
         SkillPath.CLAIRVOYANT: "predicting",
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
-        SkillPath.DARK: "Dark Forest"
+        SkillPath.DARK: "Dark Forest",
+        SkillPath.UNKNOWN: "Unknown Residence",
+        SkillPath.QUEEN: "midwife"
     }
 
 
@@ -340,7 +354,9 @@ class CatSkills:
         SkillPath.CLAIRVOYANT: SkillTypeFlag.SUPERNATURAL | SkillTypeFlag.OBSERVANT,
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
-        SkillPath.DARK: SkillTypeFlag.SUPERNATURAL
+        SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.UNKNOWN: SkillTypeFlag.SUPERNATURAL,        
+        SkillPath.QUEEN: SkillTypeFlag.SOCIAL | SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT
     }
     # pylint: enable=unsupported-binary-operation
 
