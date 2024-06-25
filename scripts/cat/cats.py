@@ -305,12 +305,12 @@ class Cat():
 
          # These things should only run when generating a new cat, rather than loading one in.
         if not loading_cat:
-            '''
-            # for testing conditionjs
             
+            # for testing conditions
+            '''
             if game.clan:
-                #new_condition=choice(["shattered soul", "budding spirit"])
-                self.get_permanent_condition("selective mutism", born_with=True)
+                new_condition=choice(["shattered soul", "budding spirit"])
+                self.get_permanent_condition(new_condition, born_with=True)
             '''
             
             
@@ -1644,6 +1644,24 @@ class Cat():
                 if 'pregnant' not in self.injuries or alter["role"] != "little":
                     can_front.append(alter["name"])
             self.front = choice(can_front)
+            if self.moons > 12 and self.status not in ["apprentice", "medicine cat apprentice", "mediator apprentice", "leader"]:
+                if game.clan.clan_settings["plural names"]:
+                    #chance of cat choosing a plural name: 1 in 100 default
+                    if game.config["condition_related"]["plural_names"] > 1:
+                        chance = randint(1, game.config["condition_related"]["plural_names"])
+                        if chance == 1:
+                            #CHOOSE PLURAL NAME
+                            if os.path.exists('resources/dicts/names/names.json'):
+                                with open('resources/dicts/names/names.json') as read_file:
+                                    names_dict = ujson.loads(read_file.read())
+                                    if not self.name.suffix in names_dict["plural_suffixes"]:
+                        
+                                        plural = choice(names_dict["plural_suffixes"])
+                                        old_name = self.name.suffix
+                                        self.name.suffix = plural
+                                        text = self.name.prefix + old_name + "'s headmates have discussed things, and they've decided a collective name will suit them better, like " + self.name.prefix + self.name.suffix + "."
+                                        game.cur_events_list.append(Single_Event(text, ["misc"], [self.ID]))
+                        
 
         if self.permanent_condition[condition]["event_triggered"]:
             self.permanent_condition[condition]["event_triggered"] = False

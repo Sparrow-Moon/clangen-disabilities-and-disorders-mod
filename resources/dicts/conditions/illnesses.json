@@ -1937,6 +1937,10 @@
         "medicine_duration": 2,
         "infectiousness": 0,
         "risks": [
+			{
+				"name": "parrot chatter",
+				"chance": 70
+			}
 		],
         "herbs": [
 			"chamomile",

@@ -108,11 +108,16 @@
 			"parent_to_kit": {
 				"romantic": 0,
 				"platonic": 40,
-				"dislike": 0,
+				"dislike": 25,
 				"admiration": 30,
 				"comfortable": 40,
-				"jealousy": 0,
-				"trust": 30
+				"jealousy": 20,
+				"trust": 30,
+				"comment": [
+					"Dislike and jealousy are called for the turmoiled litter events.",
+					"While still having platonic value at least.",
+					"Only occurs with the turmoil right after a litter is born though."
+				]
 			}
 		},
 		"sib_buff": {
@@ -163,7 +168,7 @@
 		"primary_chance_unmated": 130,
 		"random_affair_chance": 50,
 		"unmated_random_affair_chance": 10,
-		"false_pregnancy_chance": 120,
+		"false_pregnancy_chance": 80,
 		"tiny_litter_possibility": {"young adult": 18, "adult": 10, "senior adult": 15, "senior": 24},
         "small_litter_possibility": {"young adult": 18, "adult": 18, "senior adult": 24, "senior": 16},
         "large_litter_possibility": {"young adult": 10, "adult": 24, "senior adult": 15, "senior": 10},
@@ -176,10 +181,9 @@
 			"primary unmated - 1/chance for kits, relationship and other factors will influence this chance",
 			"Changed the way kit generation works. It now goes up by rolls.",
 			"tiny_litter(min-3), small(4-6), large(7-9), huge(10-max)",
-			"Please just use the config here to adjust those, if you don't want a particular litter size set odds to 0",
+			"Please just use the config here to adjust these, by default litters bigger than 6 should be disabled.",
 			"Small litter is to tell the game what counts as a small litter, default is 3",
-			"False pregnancy and failed adoptions are both hidden behind the pregnancy turmoil setting.",
-			"Failed adoption in this case is how often a false pregnancy results in no kits, no end of adoption."
+			"Failed adoption in this case is how often a false pregnancy results in no kits, no end of adoption. Toggled with the pregnancy turmoil setting in game."
 		]
 	},
 	"cat_generation": {
@@ -300,11 +304,14 @@
 		"war_injury_modifier": 100,
 		"max_alters": 50,
 		"max_splits": 3,
+		"plural_names": 100,
 		"comment": [
 			"max_alters = total number of alters per system. Recommended to be <100 unless you have a beefy computer.",
 			"max_alters must be at least 3 to prevent crashes.",
 			"max_splits = maximum number of new alters gained per moon in a system. recommended to be <10 unless you have a beefy computer.",
-			"max_splits must be at least 1"
+			"max_splits must be at least 1",
+			"plural_names = chance per moon that an adult system chooses a collective name.",
+			"plural_names must be at least 2. to disable, go to clan settings"
 		]
 	},
 	"clan_creation": {

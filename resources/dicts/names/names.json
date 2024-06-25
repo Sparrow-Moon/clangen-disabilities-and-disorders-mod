@@ -113,6 +113,9 @@
     "Zinnia"
   ],
 
+  "plural_suffixes":[" Collective", " System", " Pack", " Colony", " Conspiracy", "  Shoal", " Swarm", " Pounce", " Clutter", " Herd",
+   " Band", " Murder", " Charm", " Skulk", " Flock", " Cloud", " Pride", " Plague", " Nest", " Pod", " Family"],
+
   "clan_prefixes": [
     "Air", "Ashen", "Bat", "Bleak", "Bone", "Branch", "Burn", "Burnet", "Buttercup", "Canary", "Cinder", "Cloud",
     "Cloudy", "Cotton", "Crocus", "Crow", "Dandelion", "Day", "Doe", "Dove", "Egg", "Ember", "Fig", "Fire", "Flame",

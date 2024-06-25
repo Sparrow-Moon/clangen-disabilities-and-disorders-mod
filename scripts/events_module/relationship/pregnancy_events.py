@@ -250,6 +250,10 @@ class Pregnancy_Events():
         
         if not clan.clan_settings["same sex birth"] and cat.gender == "male":
             return
+            
+        # here's where we check for infertility, just in case ir slipped trough
+        if (cat and "infertile" in cat.permanent_condition) and not (other_cat and "infertile" in other_cat.permanent_condition):
+            return
         
         clan.pregnancy_data[cat.ID] = {
             "second_parent": str(other_cat.ID) if other_cat else None,
@@ -452,6 +456,11 @@ class Pregnancy_Events():
         other_cat_id = clan.pregnancy_data[cat.ID]["second_parent"]
         other_cat = Cat.all_cats.get(other_cat_id)
 
+        if clan.clan_settings["pregnancy turmoil"]:
+            turmoil = random.randint(1, 100)
+            if turmoil <= 20:
+                cat.get_ill("turmoiled litter", event_triggered=True)
+
         kits = Pregnancy_Events.get_kits(kits_amount, cat, other_cat, clan)
         kits_amount = len(kits)
         Pregnancy_Events.set_biggest_family()
@@ -544,12 +553,9 @@ class Pregnancy_Events():
             History.add_death(cat, death_text=death_event)
         elif clan.game_mode != 'classic' and not cat.outside:  # if cat doesn't die, give recovering from birth
             cat.get_injured("recovering from birth", event_triggered=True)
-            if clan.clan_settings["pregnancy turmoil"]:
-                turmoil = random.randint(1, 100)
-                if turmoil <= 20:
-                    cat.get_ill("turmoiled litter", event_triggered=True)
-                    possible_events = events["birth"]["turmoiled_birth"]
-                    event_list.append(choice(possible_events))
+            if 'turmoiled litter' in cat.illnesses:
+                possible_events = events["birth"]["turmoiled_birth"]
+                event_list.append(choice(possible_events))
             if 'blood loss' in cat.injuries:
                 if cat.status == 'leader':
                     death_event = ("died after a harsh kitting")
@@ -981,7 +987,13 @@ class Pregnancy_Events():
                     continue
                 if the_cat.ID in kit.get_parents():
                     if "turmoiled litter" in the_cat.illnesses:
-                        the_cat.relationships[kit.ID] = Relationship(the_cat, kit)   
+                        parent_to_kit = game.config["new_cat"]["parent_buff"]["parent_to_kit"]
+                        y = random.randrange(0, 15)
+                        start_relation = Relationship(the_cat, kit, False, True)
+                        start_relation.platonic_like += parent_to_kit["platonic"] - y
+                        start_relation.dislike += parent_to_kit["dislike"] - y
+                        start_relation.jealousy = parent_to_kit["jealousy"] - y
+                        the_cat.relationships[kit.ID] = start_relation 
                     else:
                         parent_to_kit = game.config["new_cat"]["parent_buff"]["parent_to_kit"]
                         y = random.randrange(0, 15)

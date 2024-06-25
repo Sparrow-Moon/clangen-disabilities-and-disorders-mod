@@ -807,11 +807,13 @@
 			"m_c's become something of an echo around camp, repeating words and sentences much like a colourful parrot."
 		],
 		"word loss": [
-			"With more than some frustration m_c talks with r_c about {PRONOUN/m_c/poss} recent difficulties with speaking properly and finding the proper words.",
-			"m_c's tail lashes in the air as the words just refuse to come to {PRONOUN/m_c/object}.",
+			"With more than some frustration m_c talks with r_c about {PRONOUN/m_c/poss} recent difficulties with speaking properly and finding the proper words, having to simplify {PRONOUN/m_c/poss} sentences.",
+			"m_c's tail lashes in the air as the proper words just refuse to come to {PRONOUN/m_c/object}.",
 			"m_c has been struggling to find the proper words to say what {PRONOUN/m_c/subject} {VERB/m_c/wish/wishes}.",
 			"Whenever m_c gets too excited and tries to speak too fast the words get lost.",
-			"Poor m_c has been stumbling over {PRONOUN/m_c/poss} words a lot more recently."
+			"Poor m_c has been stumbling over {PRONOUN/m_c/poss} words a lot more recently.",
+			"m_c feels a little bit upset when another cat jokes about {PRONOUN/m_c/poss} double wording sentences.",
+			"Because of how rapidly m_c has been speaking some of {PRONOUN/m_c/poss} words have slid into each other."
 		]
     },
     "obsessive mind": {
@@ -1722,7 +1724,10 @@
 	"parrot chatter": {
 		"stimming": [
 			"r_c has noticed that m_c is using {PRONOUN/m_c/poss} chattering as a form of stimming recently.",
-			"m_c has been stimming more often recently."
+			"m_c has been stimming more often recently.",
+			"It seems like m_c can barely stay still as {PRONOUN/m_c/subject} {VERB/m_c/wriggle/wriggles} {PRONOUN/m_c/poss} whole body in excitement for the whole day.",
+			"m_c keeps purring to {PRONOUN/m_c/self} as an act of self soothing.",
+			"Some of m_c's Clanmates find themselves confused because of m_c running around the camp in small circles, seemingly chasing {PRONOUN/m_c/poss} tail."
 		],
 		"verbal shutdown": [
 			"When r_c checks on m_c it's to discover that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in verbal shut down.",

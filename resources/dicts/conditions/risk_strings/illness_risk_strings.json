@@ -370,5 +370,9 @@
 			"Although {PRONOUN/m_c/poss} nausea is gone, m_c now has a stomachache.",
 			"m_c's nausea has turned into a stomachache."
 		]
+	},
+	"parroting": {
+		"parrot chatter": [
+		]
 	}
 }

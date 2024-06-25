@@ -256,5 +256,9 @@
 	"nausea": [
 		"m_c is thankful to no longer be feeling nauseous",
 		"m_c isn't nauseous anymore and can return to {PRONOUN/m_c/poss} duties."
+	],
+	"parroting": [
+		"m_c has finished {PRONOUN/m_c/poss} parroting",
+		"It looks like m_c's words are back to been {PRONOUN/m_c/poss} own now."
 	]
 }

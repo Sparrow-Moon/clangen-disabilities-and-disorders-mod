@@ -972,6 +972,13 @@ class Condition_Events():
                 if risk['name'] in progression:
                     if progression[risk['name']] in dictionary:
                         skip = True
+                #Making sure World Tired can only be given if you have dangerous settings on        
+                if not game.settings["allow shell farm"]:
+                    if risk['name'] == "world tired":
+                        skip = True      
+                if not game.clan.clan_settings["pregnancy turmoil"]:
+                    if risk['name'] == "turmoiled litter":
+                            skip = True
                 # if it is, then break instead of giving the risk
                 if skip is True:
                     break

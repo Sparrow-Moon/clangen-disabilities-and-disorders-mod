@@ -1076,8 +1076,8 @@ class ProfileScreen(Screens):
             special_conditions = [
                 "grief stricken", "fleas", "malnourished", "starving", "paranoia", "seasonal lethargy", "lethargy",
                 "special interest", "hyperfixation", "stimming", "indecision", "impulsivity", "zoomies",
-                "sleeplessness", "burn out", "kittenspace", "puppyspace", "tics", "tic attack", "dizziness", 
-                "turmoiled litter", "nonverbal", "nausea"
+                "sleeplessness", "burn out", "kittenspace", "puppyspace", "tics", "tic attack", "dizziness", "nausea",
+                "turmoiled litter", "verbal shutdown"
             ]
             all_special = True
             for condition in the_cat.illnesses:
@@ -1253,11 +1253,11 @@ class ProfileScreen(Screens):
                 else:
                     output += 'nauseous!'
 
-            if "nonverbal" in the_cat.illnesses:
+            if "verbal shutdown" in the_cat.illnesses:
                 if already_sick_injured:
-                    output += '\nnonverbal'
+                    output += '\nverbally shutdown'
                 else:
-                    output += 'nonverbal'
+                    output += 'verbally shutdown'
                     already_sick_injured = True
 
         return output
@@ -2075,6 +2075,7 @@ class ProfileScreen(Screens):
             "jumbled mind": "dyslexia",
             "counting fog": "dyscalculia",
             "parrot chatter": "echolalia",
+            "parroting": "echolalia",
 
             "sunblindness": "light sensitivity",
 
@@ -2087,7 +2088,8 @@ class ProfileScreen(Screens):
             "spirited heart": "hyperempathy",
             "puzzled heart": "low empathy",
             "faux pregnant": "phantom pregnancy",
-            "thought blind": "aphantasia"
+            "thought blind": "aphantasia",
+            "turmoiled litter": "post partum"
         }
         if not game.settings['warriorified names']:
             if condition in dad_names:
