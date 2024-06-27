@@ -3602,5 +3602,89 @@
         "relationship_constraint": [
             "app/mentor"
         ]
+    },
+    {
+        "id": "constant_joint_pain",
+        "thoughts": [
+            "Cries out in pain",
+            "Stays still so {PRONOUN/m_c/poss} joints don't hurt so much",
+            "Tries to warm {PRONOUN/m_c/poss} aching joints",
+            "Is used to the pain"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "constant joint pain"
+            ]
+        }
+    },
+    {
+        "id": "jellyfish_joints",
+        "thoughts": [
+            "Almost pops a joint out",
+            "Twists {PRONOUN/m_c/self} into a strange, yet comfortable shape for {PRONOUN/m_c/poss} nap",
+            "Shows off little tracks that {PRONOUN/m_c/subject} can do to r_c",
+            "Is used to {PRONOUN/m_c/poss} pain",
+            "Isn't sure why {PRONOUN/m_c/poss} joints are hurting today",
+            "Compares {PRONOUN/m_c/poss} joints to jellyfish",
+            "Pops a joint back in place without visiting a medicine cat"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "jellfish joints"
+            ]
+        }
+    },
+    {
+        "id": "jumbled_noise_to_noisy",
+        "thoughts": [
+            "Likes {PRONOUN/m_c/poss} noisy clanmates, but can't stand to be near them for long",
+            "Has to duck outside of the Nursery because of r_c",
+            "Avoids the loudness of kits in the Nursery",
+            "Gets a headache because of r_c"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "jumbled noise"
+            ]
+        },
+        "random_trait_constraint": [
+            "noisy_kit"
+        ]
+    },
+    {
+        "id": "kit_skill_jumbled_noise_to_kit",
+        "thoughts": [
+            "Loves kits but OH MY STARCLAN",
+            "Nurtures every kits growth and development but prefers the quieter ones",
+            "Steps into the Nursery to be greated by excited kits only to have to step out because of the noise",
+            "Tries to convice the kits to be a little quieter",
+            "Asks the kits to speak one at a time",
+            "Can't understand what any of the kits are saying",
+            "Empathizes with a kit struggling to say a word",
+            "Panics when {PRONOUN/m_c/subject} can't remember what r_c told {PRONOUN/m_c/object} that {PRONOUN/r_c/subject} {VERB/r_c/like/likes} to eat, only to breathe a sigh of relief when r_c says that {PRONOUN/r_c/poss} favorite prey has changed"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "jumbled noise"
+            ]
+        },
+        "main_trait_constraint": [
+            "KIT,1"
+        ],
+        "main_status_constraint": [
+            "apprentice",
+            "deputy",
+            "elder",
+            "leader",
+            "mediator apprentice",
+            "mediator",
+            "medicine cat apprentice",
+            "medicine cat",
+            "warrior"
+        ],
+        "random_age_constraint": [
+            "newborn",
+            "kitten"
+        ]
     }
 ]

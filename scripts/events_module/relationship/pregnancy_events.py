@@ -175,7 +175,6 @@ class Pregnancy_Events():
             if cat.ID in clan.pregnancy_data:
                 other_cat_id = clan.pregnancy_data[cat.ID]["second_parent"]
                 other_cat = Cat.all_cats.get(other_cat_id)
-            cats_involved.append(other_cat.ID)
 
         amount = Pregnancy_Events.get_amount_of_kits(cat)
         kits = Pregnancy_Events.get_kits(
