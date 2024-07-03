@@ -602,8 +602,7 @@ class Condition_Events():
         injury_progression = {
             "poisoned": "redcough",
             "shock": "lingering shock",
-            "wretched claws": "declawed",
-            "cutter's sickness": "infertile"
+            "wretched claws": "declawed"
         }
 
         # need to hold this number so that we can check if the leader has died
