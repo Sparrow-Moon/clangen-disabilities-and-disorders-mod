@@ -82,28 +82,6 @@
         ]
     },
     {
-        "id": "gen_testing_danger_thoughts",
-        "dangerous_thoughts": true,
-        "thoughts": [
-            "This is a test thought, if you don't have triggering thoughts on report me",
-			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
-			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
-			"Testing triggering thought detection, report if not toggled",
-			"This is a test thought, if you don't have triggering thoughts on report me",
-			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
-			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
-			"Testing triggering thought detection, report if not toggled",
-			"This is a test thought, if you don't have triggering thoughts on report me",
-			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
-			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
-			"Testing triggering thought detection, report if not toggled",
-			"This is a test thought, if you don't have triggering thoughts on report me",
-			"If you see me where I'm not meant to be(outside triggering thoughts) report me",
-			"Cat is thinking dangerous thoughts, if you don't have triggering thoughts on report",
-			"Testing triggering thought detection, report if not toggled"
-        ]
-    },
-    {
         "id": "gen_alive_not_working_insteadinthemedden",
         "not_working": true,
         "thoughts": [
@@ -3852,6 +3830,56 @@
             "m_c": [
                 "nausea"
             ]
+        }
+    },
+    {
+        "id": "gen_testing_danger_thoughts",
+        "dangerous_thoughts": true,
+        "thoughts": [
+            "Contemplates murdering a Clanmate",
+			"Is considering something horrible",
+			"Spoke casually of an accident on the Thunderpath"
+        ]
+    },
+    {
+        "id": "gen_stimharm",
+        "dangerous_thoughts": true,
+		"thoughts": [
+            "Keeps biting {PRONOUN/m_c/poss} own paws",
+			"Viciously scratches at {PRONOUN/m_c/poss} own ears",
+			"Is washing {PRONOUN/m_c/poss} paws until they bleed",
+			"Bites until it hurts",
+			"Is screaming until it hurts",
+			"Keeps slamming {PRONOUN/m_c/self} into the wall of the den",
+			"Slams {PRONOUN/m_c/poss} head into a tree over and over",
+			"Scratches open an old injury",
+			"Is clawing at {PRONOUN/m_c/self}",
+			"Scratches a rock over and over until {PRONOUN/m_c/poss} paws hurt",
+			"Purposely overgrooms",
+			"Is pulling {PRONOUN/m_c/poss} own fur out",
+			"Bites {PRONOUN/m_c/poss} claws down into nubs",
+			"Rubs mud into open wounds",
+			"Scratches {PRONOUN/m_c/self} until {PRONOUN/m_c/subject} {VERB/m_c/see/sees} red",
+			"Cries until {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like vomiting",
+			"Is shaking and shaking",
+			"Grinds {PRONOUN/m_c/poss} teeth until it catches",
+			"Bites down on {PRONOUN/m_c/poss} own cheek",
+			"Bites {PRONOUN/m_c/poss} own tongue until {PRONOUN/m_c/subject} {VERB/m_c/taste/tastes} copper",
+			"Thinks that red is a pretty colour",
+			"Claws at {PRONOUN/m_c/poss} own throat",
+			"Shoves a paw down {PRONOUN/m_c/poss} own throat",
+			"Keeps overeating until vomiting",
+			"Throwing {PRONOUN/m_c/self} at the wall over and over again"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "stimming"
+            ]
+        },
+        "perm_conditions": {
+			"m_c": [
+				"body biter"
+			]
         }
     }
 ]

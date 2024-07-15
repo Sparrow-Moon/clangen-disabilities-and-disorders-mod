@@ -367,17 +367,31 @@ class Pelt:
 
     def init_eyes(self, parents):
         if not parents:
-            self.eye_colour = choice(Pelt.eye_colours)
+            if self.albino:
+                self.eye_colour = choice(Pelt.albino_eyes)
+            elif self.melanistic:
+                self.eye_colour = choice(Pelt.melanistic_eyes)
+            else:
+                self.eye_colour = choice(Pelt.eye_colours)
         else:
             for _par in parents:
-                if _par.pelt.eye_colour in Pelt.albino_eyes + Pelt.melanistic_eyes: 
-                    if _par.pelt.eye_colour in ['CYANPINK', 'BLUEPINK', 'DARKCYAN', 'DEEPBLUE', 'GHOSTPINK', 'BLACKHOLE']:
-                        _par.pelt.eye_colour = choice(Pelt.blue_eyes)                      
-                    elif _par.pelt.eye_colour in ['YELLOWPINK', 'SUNSHADOW', 'LIGHTBROWN', 'DARKBROWN', 'PINK', 'VIOLETPINK', 'RUBEN', 'DUSK']:
-                        _par.pelt.eye_colour = choice(Pelt.yellow_eyes)    
-                    elif _par.pelt.eye_colour in ['MINTPINK','FERN']:
-                        _par.pelt.eye_colour = choice(Pelt.green_eyes)   
-            self.eye_colour = choice([i.pelt.eye_colour for i in parents] + [choice(Pelt.eye_colours)])
+                self.eye_colour = choice([i.pelt.eye_colour for i in parents] + [choice(Pelt.eye_colours)])
+
+        #Correct wrong eyes here
+        if not self.albino: 
+            if self.eye_colour in ['CYANPINK', 'BLUEPINK', 'GHOSTPINK']:
+                self.eye_colour = choice(Pelt.blue_eyes)                      
+            elif self.eye_colour in ['YELLOWPINK', 'LIGHTBROWN', 'PINK', 'VIOLETPINK']:
+                self.eye_colour = choice(Pelt.yellow_eyes)    
+            elif self.eye_colour == 'MINTPINK':
+                self.eye_colour = choice(Pelt.green_eyes)   
+        elif not self.melanistic: 
+            if self.eye_colour in ['DARKCYAN', 'DEEPBLUE', 'BLACKHOLE']:
+                self.eye_colour = choice(Pelt.blue_eyes)                      
+            elif self.eye_colour in ['SUNSHADOW', 'DARKBROWN', 'RUBEN', 'DUSK']:
+                self.eye_colour = choice(Pelt.yellow_eyes)    
+            elif self.eye_colour == 'FERN':
+                self.eye_colour = choice(Pelt.green_eyes)   
 
         # White patches must be initalized before eye color.
         num = game.config["cat_generation"]["base_heterochromia"]
@@ -393,15 +407,33 @@ class Pelt:
             num = 1
 
         if not random.randint(0, num):
-            if self.eye_colour in Pelt.yellow_eyes:
+            if self.eye_colour in Pelt.yellow_eyes + ['YELLOWPINK', 'SUNSHADOW', 'LIGHTBROWN', 'DARKBROWN', 'PINK', 'VIOLETPINK', 'RUBEN', 'DUSK']:
                 eye_choice = choice([Pelt.blue_eyes, Pelt.green_eyes])
                 self.eye_colour2 = choice(eye_choice)
-            elif self.eye_colour in Pelt.blue_eyes:
+            elif self.eye_colour in Pelt.blue_eyes + ['CYANPINK', 'BLUEPINK', 'DARKCYAN', 'DEEPBLUE', 'GHOSTPINK', 'BLACKHOLE']:
                 eye_choice = choice([Pelt.yellow_eyes, Pelt.green_eyes])
                 self.eye_colour2 = choice(eye_choice)
-            elif self.eye_colour in Pelt.green_eyes:
+            elif self.eye_colour in Pelt.green_eyes + ['MINTPINK','FERN']:
                 eye_choice = choice([Pelt.yellow_eyes, Pelt.blue_eyes])
                 self.eye_colour2 = choice(eye_choice)
+
+        ##CORRECT THE ALBINO/MELANISTIC CATS EYES HERE    
+        if self.albino:
+            if self.eye_colour2:
+                if self.eye_colour2 in Pelt.blue_eyes:
+                        self.eye_colour2 = choice(['CYANPINK', 'BLUEPINK', 'GHOSTPINK'])
+                elif self.eye_colour2 in Pelt.yellow_eyes:
+                        self.eye_colour2 = choice(['YELLOWPINK', 'LIGHTBROWN', 'PINK', 'VIOLETPINK'])                        
+                elif self.eye_colour2 in Pelt.green_eyes:
+                        self.eye_colour2 = 'MINTPINK'                              
+        elif self.melanistic:
+            if self.eye_colour2:
+                if self.eye_colour2 in Pelt.blue_eyes:
+                        self.eye_colour2 = choice(['DARKCYAN', 'DEEPBLUE', 'BLACKHOLE'])
+                elif self.eye_colour2 in Pelt.yellow_eyes:
+                        self.eye_colour2 = choice(['SUNSHADOW', 'DARKBROWN', 'RUBEN', 'DUSK'])                        
+                elif self.eye_colour2 in Pelt.green_eyes:
+                        self.eye_colour2 = 'FERN'      
 
     def pattern_color_inheritance(self, parents: tuple = (), gender="female"):
         # setting parent pelt categories
@@ -702,13 +734,43 @@ class Pelt:
 
     def init_skin(self, parents):
         # skin chances
+        ##Redoing the Albinism/Melanism Generation for inheritance Purposes :(
         if not parents:
-            self.skin = choice(Pelt.skin_sprites)
+            self_specialty = random.randint(1, 120)
+            if self_specialty == 1:
+                self.skin = "ALBINO"
+                self.albino = choice(Pelt.albinism)
+            elif self_specialty == 2:
+                self.skin = "MELANISTIC"
+                self.melanistic = choice(Pelt.melanism)
+            else:
+                # skin chances
+                self.skin = choice(Pelt.skin_sprites)
         else:
             for _par in parents:
+                self_specialty = random.randint(1, 120)                  
                 if _par.pelt.skin in ["ALBINO", "MELANISTIC"]:
-                    _par.pelt.skin = choice(Pelt.skin_sprites)
-                self.skin = choice([i.pelt.skin for i in parents] + Pelt.skin_sprites)
+                    if random.randint(0,1):
+                        self.skin = choice([i.pelt.skin for i in parents])
+                        if self.skin == "ALBINO":
+                            self.albino = choice(Pelt.albinism)
+                        elif self.skin == "MELANISTIC":
+                            self.melanistic = choice(Pelt.melanism)
+                    else:
+                        self.skin = choice([i.pelt.skin for i in parents] + Pelt.skin_sprites)
+                elif self_specialty == 1:
+                    self.skin = "ALBINO"
+                    self.albino = choice(Pelt.albinism)
+                elif self_specialty == 2:
+                    self.skin = "MELANISTIC"
+                    self.melanistic = choice(Pelt.melanism)  
+                else:
+                    self.skin = choice([i.pelt.skin for i in parents] + Pelt.skin_sprites)
+
+            if self.skin == "ALBINO" and not self.albino:
+                self.skin = choice(Pelt.skin_sprites)  
+            elif self.skin == "MELANISTIC" and not self.melanistic:    
+                self.skin = choice(Pelt.skin_sprites)
 
     def init_scars(self, age):
         if age == "newborn":
