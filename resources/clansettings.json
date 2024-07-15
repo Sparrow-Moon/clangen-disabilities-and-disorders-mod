@@ -114,8 +114,8 @@
             ]
         ],
 		"pregnancy turmoil": [
-			"Adds negative pregnancy events",
-			"Allows cats to have events like post-partum and false pregnancies.",
+			"Allow negative pregnancy events",
+			"Allows cats to have events like postpartum and false pregnancies.",
 			false
 		],
         "single parentage": [
@@ -123,14 +123,19 @@
             "Allow cats to have kittens with an unknown second biological parent. The cat will be listed as the only biological parent.",
             false
         ],
+        "tnr": [
+            "Allow cats outside your Clan to be neutered/spayed",
+            "Cats outside your Clan will have varying chances of being permanently prevented from having kits.",
+            false
+        ],
         "romantic with former mentor": [
             "Allow romantic interactions with former mentors",
             "Allows mentors and the cats they trained to be romantic after they become warriors.",
-            true
+            false
         ],
         "second cousin mates": [
             "Allow second cousins to be mates and have romantic interactions",
-            "Allows cats with the same greatgrandparents but different grandparents to become mates.",
+            "Allows cats with the same great-grandparents but different grandparents to become mates.",
             false
         ]
     },

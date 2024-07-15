@@ -528,5 +528,245 @@
     "default": "set of indigo booties",
     "plural": "sets of indigo booties",
     "singular": "a set of indigo booties"
+  },
+  "GRASS SNAKE": {
+    "default": "grass snake friend",
+    "plural": "grass snakes",
+    "singular": "a grass snake"
+  },
+  "BLUE RACER": {
+    "default": "blue racer snake friend",
+    "plural": "blue racer snakes",
+    "singular": "a blue racer snake"
+  },
+  "WESTERN COACHWHIP": {
+    "default": "western coachwhip friend",
+    "plural": "western coachwhips",
+    "singular": "a western coachwhip"
+  },
+  "KINGSNAKE": {
+    "default": "kingsnake friend",
+    "plural": "kingsnakes",
+    "singular": "a kingsnake"
+  },
+  "GRAY SQUIRREL": {
+    "default": "gray squirrel friend",
+    "plural": "gray squirrels",
+    "singular": "a gray squirrel"
+  },
+  "RED SQUIRREL": {
+    "default": "red squirrel friend",
+    "plural": "red squirrels",
+    "singular": "a red squirrel"
+  },
+  "CRAB": {
+    "default": "crab friend",
+    "plural": "crabs",
+    "singular": "a crab"
+  },
+  "WHITE RABBIT": {
+    "default": "white rabbit friend",
+    "plural": "white rabbits",
+    "singular": "a white rabbit"
+  },
+  "BLACK RABBIT": {
+    "default": "black rabbit",
+    "plural": "black rabbits",
+    "singular": "a black rabbit"
+  },
+  "BROWN RABBIT": {
+    "default": "brown rabbit",
+    "plural": "brown rabbits",
+    "singular": "a brown rabbit"
+  },
+  "INDIAN GIANT SQUIRREL": {
+    "default": "indian giant squirrel",
+    "plural": "indian giant squirrels",
+    "singular": "an indian giant squirrel"
+  },
+  "FAWN RABBIT": {
+    "default": "fawn rabbit",
+    "plural": "fawn rabbits",
+    "singular": "a fawn rabbit"
+  },
+  "BROWN AND WHITE RABBIT": {
+    "default": "brown and white rabbit",
+    "plural": "brown and white rabbits",
+    "singular": "a brown and white rabbit"
+  },
+  "BLACK AND WHITE RABBIT": {
+    "default": "black and white rabbit",
+    "plural": "black and white rabbits",
+    "singular": "a black and white rabbit"
+  },
+  "WHITE AND FAWN RABBIT": {
+    "default": "white and fawn rabbit",
+    "plural": "white and fawn rabbits",
+    "singular": "a white and fawn rabbit"
+  },
+  "BLACK VITILIGO RABBIT": {
+    "default": "black vitiligo rabbit",
+    "plural": "black and white spotted rabbits",
+    "singular": "a black and white spotted rabbit"
+  },
+  "BROWN VITILIGO RABBIT": {
+    "default": "brown vitiligo rabbit",
+    "plural": "brown and white spotted rabbits",
+    "singular": "a brown and white spotted rabbit"
+  },
+  "FAWN VITILIGO RABBIT": {
+    "default": "fawn vitiligo rabbit",
+    "plural": "fawn and white spotted rabbits",
+    "singular": "a fawn and white spotted rabbit"
+  },
+  "BLACKBIRD": {
+    "default": "blackbird friend",
+    "plural": "blackbird",
+    "singular": "a blackbird"
+  },
+  "ROBIN": {
+    "default": "robin friend",
+    "plural": "robins",
+    "singular": "a robin"
+  },
+  "JAY": {
+    "default": "jay friend",
+    "plural": "jays",
+    "singular": "a jay"
+  },
+  "THRUSH": {
+    "default": "thrush friend",
+    "plural": "thrushes",
+    "singular": "a thrush"
+  },
+  "CARDINAL": {
+    "default": "cardinal friend",
+    "plural": "cardinals",
+    "singular": "a cardinal"
+  },
+  "MAGPIE": {
+    "default": "magpie friend",
+    "plural": "magpies",
+    "singular": "a magpie"
+  },
+  "CUBAN TROGON": {
+    "default": "cuban trogon friend",
+    "plural": "cuban trogons",
+    "singular": "a cuban trogon"
+  },
+  "TAN RABBIT": {
+    "default": "tan rabbit friend",
+    "plural": "tan rabbits",
+    "singular": "a tan rabbit"
+  },
+  "TAN AND WHITE RABBIT" : {
+    "default": "tan and white rabbit",
+    "plural": "tan and white rabbits",
+    "singular": "a tan and white rabbit"
+  },
+  "TAN VITILIGO RABBIT": {
+    "default": "tan vitiligo rabbit",
+    "plural": "tan and white spotted rabbits",
+    "singular": "a tan and white spotted rabbit"
+  },
+  "RAT": {
+    "default": "rat friend",
+    "plural": "rats",
+    "singular": "a rat"
+  },
+  "WHITE MOUSE": {
+    "default": "white mouse friend",
+    "plural": "white mice",
+    "singular": "a white mouse"
+  },
+  "BLACK MOUSE": {
+    "default": "black mouse friend",
+    "plural": "black mice",
+    "singular": "a black mouse"
+  },
+  "GRAY MOUSE": {
+    "default": "gray mouse friend",
+    "plural": "gray mice",
+    "singular": "a gray mouse"
+  },
+  "BROWN MOUSE": {
+    "default": "brown mouse friend",
+    "plural": "brown mice",
+    "singular": "a brown mouse"
+  },
+  "GRAY RABBIT" : {
+    "default": "gray rabbit",
+    "plural": "gray rabbits",
+    "singular": "a gray rabbit"
+  },
+  "GRAY AND WHITE RABBIT" : {
+    "default": "gray and white rabbit",
+    "plural": "gray and white rabbits",
+    "singular": "a gray and white rabbit"
+  },
+  "GRAY VITILIGO RABBIT" : {
+    "default": "gray vitiligo rabbit",
+    "plural": "gray and white spotted rabbits",
+    "singular": "a gray and white spotted rabbit"
+  },
+  "BROWN SNAIL" : {
+    "default": "brown-shelled snail",
+    "plural": "brown-shelled snails",
+    "singular": "a brown-shelled snail"
+  },
+  "RED SNAIL" : {
+    "default": "red-shelled snail",
+    "plural": "red-shelled snails",
+    "singular": "a red-shelled snail"
+  },
+  "WORM" : {
+    "default": "worm friend",
+    "plural": "worms",
+    "singular": "a worm"
+  },
+  "BLUE SNAIL": {
+    "default": "blue-shelled snail",
+    "plural": "blue-shelled snails",
+    "singular": "a blue-shelled snail"
+  },
+  "ZEBRA ISOPOD": {
+    "default": "zebra isopod friend",
+    "plural": "zebra isopods",
+    "singular": "a zebra isopod"
+  },
+  "DUCKY ISOPOD": {
+    "default": "ducky isopod friend",
+    "plural": "ducky isopods",
+    "singular": "a ducky isopod"
+  },
+  "DAIRY COW ISOPOD": {
+    "default": "dairy cow isopod friend",
+    "plural": "dairy cow isopods",
+    "singular": "a dairy cow isopod"
+  },
+  "BEETLEJUICE ISOPOD": {
+    "default": "beetlejuice isopod friend",
+    "plural": "beetlejuice isopods",
+    "singular": "a beetlejuice isopod"
+  },
+  "BEE": {
+    "default": "bee friend",
+    "plural": "bees",
+    "singular": "a bee"
+  },
+  "RED LADYBUG": {
+    "default": "red ladybug friend",
+    "plural": "red ladybugs",
+    "singular": "a red ladybug"
+  },
+  "ORANGE LADYBUG": {
+    "default": "orange ladybug friend",
+    "plural": "orange ladybugs",
+    "singular": "an orange ladybug"
+  },
+  "YELLOW LADYBUG": {
+    "default": "yellow ladybug friend",
+    "plural": "yellow ladybugs",
+    "singular": "a yellow ladybug"
   }
 }

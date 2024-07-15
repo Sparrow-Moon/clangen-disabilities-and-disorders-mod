@@ -437,6 +437,7 @@
             "lost a leg",
             "weak leg",
             "twisted leg",
+            "bad knees",
             "recurring shock"
         ],
         "herbs": [
@@ -559,6 +560,7 @@
         "risks": [],
         "also_got": [],
         "cause_permanent": [
+            "bad knees"
         ],
         "herbs": [
             "elder_leaves",
@@ -991,7 +993,8 @@
             }
         ],
         "also_got": [
-            "shock"
+            "shock",
+			"ashcough"
         ],
         "cause_permanent": [
         ],
@@ -1029,7 +1032,8 @@
             }
         ],
         "also_got": [
-            "shock"
+            "shock",
+			"ashcough"
         ],
         "cause_permanent": [
             "lost their tail",
@@ -1354,7 +1358,6 @@
             "poppy"
         ]
     },
-
     "poisoned": {
         "duration": 2,
         "severity": "major",
@@ -1447,26 +1450,26 @@
         ]
     },
 
-   "sound headache" : {
+   "sound headache": {
         "duration": 1,
         "severity": "major",
         "medicine_duration": 1,
         "mortality": {
-                "newborn": 0,
-                "kitten": 0,
-                "adolescent": 0,
-                "young adult": 0,
-                "adult": 0,
-                "senior": 0,
-                "senior adult": 0
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
         },
         "illness_infectiousness": [
         ],
-        "risks":[
+        "risks": [
         ],
-        "also_got":[
+        "also_got": [
         ],
-	"cause_permanent": [
+        "cause_permanent": [
         ],
         "herbs": [
             "poppy",
@@ -1499,8 +1502,7 @@
             "juniper"
         ]
     },
-
-    "rash":{
+    "rash": {
         "duration": 3,
         "severity": "minor",
         "medicine_duration": 1,
@@ -1522,7 +1524,7 @@
         ],
         "also_got": [],
         "cause_permanent": [
-		"constant rash"
+		    "constant rash"
 		],
         "herbs": [
             "poppy",
@@ -1530,7 +1532,6 @@
 	        "elder_leaves"
         ]
     },
-
     "acute pain":{
         "duration": 3,
         "severity": "major",
@@ -1557,7 +1558,6 @@
             "poppy"
         ]
     },
-
     "wrenched claws":{
         "duration": 2,
         "severity": "major",
@@ -1573,11 +1573,11 @@
         },
         "illness_infectiousness": [],
         "risks": [
-		{
-			"name": "an infected wound",
-			"chance": 20
-			}
-		],
+            {
+                "name": "an infected wound",
+                "chance": 20
+            }
+        ],
         "also_got": [
             "bruises",
             "sore",
@@ -1724,7 +1724,7 @@
         ],
         "risks": [
 			{
-				"name": "an infected wound",
+				"name": "ear infection",
 				"chance": 25
 			},
 			{
@@ -1879,8 +1879,145 @@
             "dizziness",
             "headache"
         ],
+        "cause_permanent": [
+        ],
         "herbs": [
-            
+        ]
+    },
+    "knee locking": {
+        "duration": 1,
+        "severity": "major",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 10000,
+            "kitten": 10000,
+            "adolescent": 1000,
+            "young adult": 1000,
+            "adult": 1000,
+            "senior adult": 1000,
+            "senior": 100
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "broken bone",
+                "chance": 100
+            },
+            {
+                "name": "head damage",
+                "chance": 100
+            }
+        ],
+        "also_got": [
+            "scrapes",
+            "bruises",
+            "torn pelt"
+        ],
+        "cause_permanent": [
+        ],
+        "herbs": [
+            "moss"
+        ]
+    },
+    "severe tick bites":{
+        "duration": 2,
+        "severity": "major",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 40,
+            "kitten": 40,
+            "adolescent": 50,
+            "young adult": 60,
+            "adult": 60,
+            "senior adult": 50,
+            "senior": 40
+        },
+        "illness_infectiousness": [],
+        "risks": [
+            {
+                "name": "an infected wound",
+                "chance": 40
+            },
+			{
+				"name": "spasms",
+				"chance": 40
+			}
+        ],
+        "also_got": [
+			"dizziness"
+		],
+        "cause_permanent": [
+            "paralyzed"
+		],
+        "herbs": [
+            "moss",
+            "plantain",
+			"comfrey"
+        ]
+    },					
+    "nosebleed": {
+        "duration": 2,
+        "severity": "minor",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [],
+        "also_got": [
+			"blood loss"
+        ],
+        "cause_permanent": [
+        ],
+        "herbs": [
+            "horsetail",
+            "marigold",
+            "ragwort",
+            "juniper",
+			"moss",
+			"cobwebs"
+        ]
+    },		
+    "ashcough": {
+        "duration": 3,
+        "severity": "severe",
+        "medicine_duration": 2,
+        "mortality": {
+            "newborn": 10,
+            "kitten": 20,
+            "adolescent": 25,
+            "young adult": 30,
+            "adult": 30,
+            "senior adult": 20,
+            "senior": 10
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "also_got": [
+        ],
+        "cause_permanent": [
+			"longcough",
+			"raspy lungs"
+        ],
+        "herbs": [
+            "catmint",
+            "plantain",
+            "tansy",
+            "mullein",
+            "juniper",
+            "ragwort",
+            "poppy",
+            "moss"
         ]
     },
     "faux pregnant": {

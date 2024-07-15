@@ -1,0 +1,113 @@
+{
+	"paralyzed": [
+		"curved spine"
+	],
+	"constant joint pain": [
+		"curved spine"
+	],
+	"seizure prone": [
+		"chattering tongue", "curved spine", "face blindness", "parrot chatter"
+	],
+	"starwalker": [
+		"comet spirit", "burning light", "jumbled noise", "disrupted senses", "chattering tongue", "jumbled mind",
+		"counting fog", "spirited heart", "puzzled heart", "face blindness", "parrot chatter", "selective mutism",
+		"thought blind"
+	],
+	"obsessive mind": [
+		"spirited heart"
+	],
+	"heavy soul": [
+		"shattered soul", "budding spirit"
+	],
+	"comet spirit": [
+		"starwalker", "burning light", "jumbled noise", "disrupted senses", "chattering tongue", "jumbled mind",
+		"counting fog", "spirited heart", "parrot chatter"
+	],
+	"antisocial": [
+		"shattered soul", "budding spirit", "puzzled heart"
+	],
+	"anxiety": [
+		"shattered soul", "budding spirit", "selective mutism"
+	],
+	"constant roaming pain": [
+		"jellyfish joints", "loose body", "curved spine"
+	],
+	"thunderous spirit": [
+		"shattered soul", "budding spirit", "spirited heart", "puzzled heart"
+	],
+	"otherworldly mind": [
+		"shattered soul", "budding spirit"
+	],
+	"irritable bowels": [
+		"jellyfish joints", "loose body"
+	],
+	"jellyfish joints": [
+		"constant roaming pain", "irritable bowels", "loose body"
+	],
+	"loose body": [
+		"constant roaming pain", "irritable bowels", "jellyfish joints"
+	],
+	"burning light": [
+		"starwalker", "comet spirit", "jumbled noise", "disrupted senses"
+	],
+	"jumbled noise": [
+		"starwalker", "comet spirit", "burning light", "disrupted senses"
+	],
+	"disrupted senses": [
+		"starwalker", "comet spirit", "burning light", "jumbled noise"
+	],
+	"chattering tongue": [
+		"seizure prone", "starwalker", "comet spirit", "parrot chatter"
+	],
+	"shattered soul": [
+		"heavy soul", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
+	],
+	"budding spirit": [
+		"heavy soul", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
+	],
+	"testosterone deficiency": [
+		"infertile"
+	],
+	"excess testosterone": [
+		"pcos", "infertile"
+	],
+	"aneuploidy": [
+		"infertile"
+	],
+	"mosaicism": [
+		"infertile"
+	],
+	"chimerism": [
+		"infertile"
+	],
+	"pcos": [
+		"infertile"
+	],
+	"curved spine": [
+		"paralyzed", "constant joint pain", "seizure prone", "constant roaming pain"
+	],
+	"jumbled mind": [
+		"starwalker", "comet spirit", "counting fog"
+	],
+	"counting fog": [
+		"starwalker", "comet spirit", "jumbled mind"
+	],
+	"spirited heart": [
+		"starwalker", "obsessive mind", "comet spirit", "thunderous spirit"
+	],
+	"puzzled heart": [
+		"starwalker", "antisocial", "thunderous spirit"
+	],
+	"face blindness": [
+		"seizure prone", "starwalker", "thought blind"
+	],
+	"parrot chatter": [
+		"seizure prone", "starwalker", "comet spirit", "chattering tongue"
+	],
+	"selective mutism": [
+		"starwalker", "anxiety"
+	],
+	"thought blind": [
+		"starwalker", "face blindness"
+	]
+}

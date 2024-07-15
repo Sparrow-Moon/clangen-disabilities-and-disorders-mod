@@ -1,14 +1,13 @@
 import os
+from copy import copy
 
 import pygame
-
 import ujson
 
-from scripts.cat.names import names
 from scripts.game_structure.game_essentials import game
 
 
-class Sprites():
+class Sprites:
     cat_tints = {}
     white_patches_tints = {}
     clan_symbols = []
@@ -33,13 +32,13 @@ class Sprites():
         try:
             with open("sprites/dicts/tint.json", 'r') as read_file:
                 self.cat_tints = ujson.loads(read_file.read())
-        except:
+        except IOError:
             print("ERROR: Reading Tints")
 
         try:
             with open("sprites/dicts/white_patches_tint.json", 'r') as read_file:
                 self.white_patches_tints = ujson.loads(read_file.read())
-        except:
+        except IOError:
             print("ERROR: Reading White Patches Tints")
 
         try:
@@ -123,8 +122,8 @@ class Sprites():
         else:
             self.size = 50  # default, what base clangen uses
             print(f"lineart.png is not 3x7, falling back to {self.size}")
-            print(
-                f"if you are a modder, please update scripts/cat/sprites.py and do a search for 'if width / 3 == height / 7:'")
+            print(f"if you are a modder, please update scripts/cat/sprites.py and "
+                  f"do a search for 'if width / 3 == height / 7:'")
 
         del width, height  # unneeded
 
@@ -132,7 +131,8 @@ class Sprites():
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 'lazyeyes', 'skin', 'blep',
             'scars', 'missingscars', 'disabilityscars',
-            'medcatherbs', 'disabilityaccs', 'booties',
+            'medcatherbs', 'snake_accessories', 'smallAnimal_accessories', 'aliveInsect_accessories', 'disabilityaccs',
+            'booties',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -297,7 +297,7 @@ class Sprites():
 
         # define missing parts
         missing_parts_data = [
-            ["LEFTEAR", "RIGHTEAR", "NOTAIL", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "HALFTAIL", "NOPAW"]
+            ["LEFTEAR", "RIGHTEAR", "NOTAIL", "NOLEFTEAR", "NORIGHTEAR", "NOEAR", "HALFTAIL", "NOPAW", "TIPPED"]
         ]
 
         # scars
@@ -351,16 +351,32 @@ class Sprites():
             ["PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON"]
         ]
 
+        snake_data = [
+            ["GRASS SNAKE", "BLUE RACER", "WESTERN COACHWHIP", "KINGSNAKE"]
+        ]
+
+        smallAnimal_data = [
+            ["GRAY SQUIRREL", "RED SQUIRREL", "CRAB", "WHITE RABBIT", "BLACK RABBIT", "BROWN RABBIT", "INDIAN GIANT SQUIRREL", "FAWN RABBIT", "BROWN AND WHITE RABBIT", "BLACK AND WHITE RABBIT"],
+            ["WHITE AND FAWN RABBIT", "BLACK VITILIGO RABBIT", "BROWN VITILIGO RABBIT", "FAWN VITILIGO RABBIT", "BLACKBIRD", "ROBIN", "JAY", "THRUSH", "CARDINAL", "MAGPIE"],
+            ["CUBAN TROGON", "TAN RABBIT", "TAN AND WHITE RABBIT", "TAN VITILIGO RABBIT", "RAT", "WHITE MOUSE", "BLACK MOUSE", "GRAY MOUSE", "BROWN MOUSE", "GRAY RABBIT"],
+            ["GRAY AND WHITE RABBIT", "GRAY VITILIGO RABBIT"]
+        ]
+
+        aliveInsect_data = [
+            ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD", "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG"],
+            ["ORANGE LADYBUG", "YELLOW LADYBUG"]
+        ]
+
         disabilityaccs_data = [
             ["BALL", "MOUSE", "MOSSBLANKIE", "BONE"],
             ["AUTISMFLAG", "DISFLAG", "ZEBFLAG"]
         ]
-        
+
         booties_data = [
             ["CRIMSONBOOT", "BLUEBOOT", "YELLOWBOOT", "CYANBOOT", "REDBOOT", "LIMEBOOT"],
             ["GREENBOOT", "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT"],
             ["PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"]
-        ] 
+        ]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
@@ -393,6 +409,21 @@ class Sprites():
             for col, nyloncollar in enumerate(nyloncollars):
                 self.make_group('nyloncollars', (col, row), f'collars{nyloncollar}')
 
+        # snake accessories
+        for row, snake_accessories in enumerate(snake_data):
+            for col, snake_accessory in enumerate(snake_accessories):
+                self.make_group('snake_accessories', (col, row), f'acc_snake{snake_accessory}')
+
+        # smallAnimal accessories
+        for row, smallAnimal_accessories in enumerate(smallAnimal_data):
+            for col, smallAnimal_accessory in enumerate(smallAnimal_accessories):
+                self.make_group('smallAnimal_accessories', (col, row), f'acc_smallAnimal{smallAnimal_accessory}')
+
+        # aliveInsect accessories
+        for row, aliveInsect_accessories in enumerate(aliveInsect_data):
+            for col, aliveInsect_accessory in enumerate(aliveInsect_accessories):
+                self.make_group('aliveInsect_accessories', (col, row), f'acc_aliveInsect{aliveInsect_accessory}')
+
         # dismod accessories
         for row, disabilityaccs in enumerate(disabilityaccs_data):
             for col, disabilityacc in enumerate(disabilityaccs):
@@ -401,7 +432,7 @@ class Sprites():
         # booties added
         for row, bootiesaccs in enumerate(booties_data):
             for col, bootiesacc in enumerate(bootiesaccs):
-                self.make_group('booties', (col, row), f'booties{bootiesacc}')         
+                self.make_group('booties', (col, row), f'booties{bootiesacc}')
 
     def load_symbols(self):
         """
@@ -432,6 +463,17 @@ class Sprites():
 
             y_pos += 1
 
+    def dark_mode_symbol(self, symbol):
+        """Change the color of the symbol to dark mode, then return it
+        :param Surface symbol: The clan symbol to convert"""
+        dark_mode_symbol = copy(symbol)
+        var = pygame.PixelArray(dark_mode_symbol)
+        var.replace((87, 76, 45), (172, 157, 114))
+        del var
+        # dark mode color (172, 157, 114)
+        # debug hot pink (255, 105, 180)
+
+        return dark_mode_symbol
 
 # CREATE INSTANCE
 sprites = Sprites()

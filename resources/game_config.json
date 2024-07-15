@@ -178,6 +178,7 @@
 		"small_litter": 3,
 		"failed_adopt": {"intersex": 0.10, "female": 0.05, "male": 0.15},
 		"comment": [
+			"primary mated - 1/chance for kits, relationship and other factors will influence this chance",
 			"primary unmated - 1/chance for kits, relationship and other factors will influence this chance",
 			"Changed the way kit generation works. It now goes up by rolls.",
 			"tiny_litter(min-3), small(4-6), large(7-9), huge(10-max)",
@@ -277,8 +278,11 @@
 			"due to how it's written in the save files. So don't try to 'fix' it."
 		]
 	},
+	"event_generation": {
+		"debug_ensure_event_id": null
+	},
 	"death_related": {
-		"leader_death_chance": 125,
+		"leader_death_chance": 50,
 		"classic_death_chance": 500,
 		"expanded_death_chance": 350,
 		"cruel season_death_chance": 300,

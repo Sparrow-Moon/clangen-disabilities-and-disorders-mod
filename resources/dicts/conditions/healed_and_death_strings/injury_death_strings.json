@@ -69,7 +69,11 @@
         "m_c couldn't survive {PRONOUN/m_c/poss} broken back."
     ],
     "bee sting": [
+        "m_c died from {PRONOUN/m_c/poss} bee sting.",
         "m_c seemed to have a horrible reaction to {PRONOUN/m_c/poss} bee sting. Cats usually don't die from a sting, but it seems this time was different."
+    ],
+    "knee locking": [
+        "m_c took a bad fall and by the time a Clanmate responded... {PRONOUN/m_c/subject} {VERB/m_c/were/was} gone."
     ],
 	"severe sunburn": [
 		"m_c died due to complications from a severe sunburn."

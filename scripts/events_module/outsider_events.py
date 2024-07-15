@@ -2,9 +2,8 @@ import random
 
 from scripts.cat.cats import Cat
 from scripts.cat.history import History
-from scripts.events_module.generate_events import GenerateEvents
-from scripts.game_structure.game_essentials import game
 from scripts.event_class import Single_Event
+from scripts.game_structure.game_essentials import game
 
 
 # ---------------------------------------------------------------------------- #
@@ -16,6 +15,12 @@ class OutsiderEvents:
 
     @staticmethod
     def killing_outsiders(cat: Cat):
+        if "lead_den_outsider_event" in game.clan.clan_settings:
+            if game.clan.clan_settings["lead_den_outsider_event"]:
+                info_dict = game.clan.clan_settings["lead_den_outsider_event"]
+                if cat.ID == info_dict["cat_ID"]:
+                    return
+
         # killing outside cats
         if cat.outside:
             if random.getrandbits(6) == 1 and not cat.dead:

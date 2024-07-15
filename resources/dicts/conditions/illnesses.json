@@ -131,10 +131,14 @@
                 "name": "yellowcough",
                 "chance": 60
             },
-		{
-		"name": "longcough",
-		"chance": 120
-		}
+		    {
+		        "name": "longcough",
+		        "chance": 120
+		    },
+			{
+				"name": "nosebleed",
+				"chance": 90
+			}
         ],
         "herbs": [
             "catmint",
@@ -173,7 +177,11 @@
             {
                 "name": "silvercough",
                 "chance": 10
-            }
+            },
+			{
+				"name": "nosebleed",
+				"chance": 90
+			}
         ],
         "herbs": [
             "catmint",
@@ -275,7 +283,12 @@
         "duration": 50,
         "medicine_duration": 40,
         "infectiousness": 0,
-        "risks": [],
+        "risks": [
+			{
+				"name": "nosebleed",
+				"chance": 5
+			}
+		],
         "herbs": [
             "lungwort",
             "mullein",
@@ -315,10 +328,14 @@
                 "name": "whitecough",
                 "chance": 15
             },
-		{
-		"name": "silvercough",
-		"chance": 15
-		}
+		    {
+		        "name": "silvercough",
+		        "chance": 15
+		    },
+			{
+				"name": "nosebleed",
+				"chance": 90
+			}
         ],
         "herbs": [
             "ragwort",
@@ -357,7 +374,11 @@
             {
                 "name": "silvercough",
                 "chance": 5
-            }			
+            },
+			{
+				"name": "nosebleed",
+				"chance": 90
+			}			
         ],
         "herbs": [
             "catmint",
@@ -397,7 +418,11 @@
             {
                 "name": "greencough",
                 "chance": 18
-            }
+            },
+			{
+				"name": "nosebleed",
+				"chance": 90
+			}
         ],
         "herbs": [
             "catmint",
@@ -409,7 +434,7 @@
             "poppy",
             "moss"
         ]
-    },	
+    },
     "yellowcough": {
         "severity": "major",
         "mortality": {
@@ -437,7 +462,11 @@
             {
                 "name": "redcough",
                 "chance": 80
-            }
+            },
+			{
+				"name": "nosebleed",
+				"chance": 45
+			}
         ],
         "herbs": [
             "lungwort"
@@ -500,7 +529,12 @@
         "duration": 1,
         "medicine_duration": 1,
         "infectiousness": 0,
-        "risks": [],
+        "risks": [
+			{
+				"name": "fainting",
+				"chance": 25
+			}
+		],
         "herbs": [
             "juniper",
             "ragwort",
@@ -534,7 +568,11 @@
             {
                 "name": "heat stroke",
                 "chance": 5
-            }
+            },
+			{
+				"name": "nosebleed",
+				"chance": 3
+			}
         ],
         "herbs": [
             "juniper",
@@ -577,6 +615,10 @@
 			{
 				"name": "irritable bowels",
 				"chance": 100
+			},
+			{
+				"name": "nausea",
+				"chance": 15
 			}
         ],
         "herbs": [
@@ -767,8 +809,12 @@
             {
                 "name": "tic attack",
                 "chance": 80
-            }
-			],
+            },
+			{
+				"name": "nausea",
+				"chance": 20
+			}
+		],
         "herbs": [
             "catmint",
 			"thyme",
@@ -837,22 +883,22 @@
     "paranoia": {
         "severity": "severe",
         "mortality": {
-            "newborn": 50,
-            "kitten": 50,
+            "newborn": 0,
+            "kitten": 0,
             "adolescent": 60,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
+            "young adult": 60,
+            "adult": 60,
+            "senior adult": 60,
+            "senior": 60
         },
         "medicine_mortality": {
-            "newborn": 70,
-            "kitten": 70,
-            "adolescent": 80,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 100,
+            "young adult": 100,
+            "adult": 100,
+            "senior adult": 100,
+            "senior": 100
         },
         "duration": 6,
         "medicine_duration": 4,
@@ -1259,6 +1305,10 @@
 			{
 				"name": "hallucinations",
 				"chance": 120
+			},
+            {
+				"name": "vivid daydreamer",
+				"chance": 120
 			}
 		],
         "herbs": [
@@ -1560,18 +1610,18 @@
             "kitten": 0,
             "adolescent": 0,
             "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
+            "adult": 2000,
+            "senior adult": 1500,
+            "senior": 1000
         },
         "medicine_mortality": {
             "newborn": 0,
             "kitten": 0,
             "adolescent": 0,
             "young adult": 0,
-            "adult": 2000,
-            "senior adult": 1500,
-            "senior": 1000
+            "adult": 5000,
+            "senior adult": 4500,
+            "senior": 4000
         },
         "duration": 2,
         "medicine_duration": 1,
@@ -1584,10 +1634,6 @@
             {
                 "name": "ear buzzing",
                 "chance": 20
-            },
-            {
-                "name": "earache",
-                "chance": 25
             }
         ],
         "herbs": [
@@ -1766,7 +1812,7 @@
             "young adult": 0,
             "adult": 0,
             "senior adult": 0,
-            "elder": 0
+            "senior": 0
         },
         "medicine_mortality": {
             "newborn": 0,
@@ -1790,7 +1836,7 @@
                 "chance": 15
             },
             {
-                "name": "spams",
+                "name": "spasms",
                 "chance": 40
             }
         ],
@@ -1814,7 +1860,7 @@
             "young adult": 0,
             "adult": 0,
             "senior adult": 0,
-            "elder": 0
+            "senior": 0
         },
         "duration": 1,
         "medicine_duration": 0,
@@ -1840,7 +1886,7 @@
             "young adult": 0,
             "adult": 0,
             "senior adult": 0,
-            "elder": 0
+            "senior": 0
         },
         "duration": 1,
         "medicine_duration": 0,
@@ -1946,5 +1992,66 @@
 			"chamomile",
 			"goldenrod"
 		]
+    },
+    "strong attachment": {
+        "severity": "major",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 3,
+        "medicine_duration": 2,
+        "infectiousness": 0,
+        "risks": [
+        ],
+        "herbs": [
+            "poppy",
+            "chamomile",
+            "thyme"
+        ]
+   },
+   "black and white cloud": {
+        "severity": "major",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 3,
+        "medicine_duration": 2,
+        "infectiousness": 0,
+        "risks": [
+        ],
+        "herbs": [
+            "chamomile",
+            "thyme"
+        ]
     }
 }

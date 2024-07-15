@@ -324,6 +324,10 @@
 			{
 				"name": "fainting",
 				"chance": 20
+			},
+			{
+				"name": "nosebleed",
+				"chance": 50
 			}
         ],
         "herbs": [
@@ -447,6 +451,10 @@
 			{
 				"name": "word loss",
 				"chance": 20
+			},
+			{
+				"name": "earache",
+				"chance": 30
 			}
         ],
         "herbs": []
@@ -482,7 +490,11 @@
 			{
 				"name": "word loss",
 				"chance": 20
-			}	
+			},
+			{
+				"name": "earache",
+				"chance": 30
+			}
         ],
         "herbs": []
 
@@ -588,6 +600,10 @@
 			{
 				"name": "fainting",
 				"chance": 90
+			},
+			{
+				"name": "nosebleed",
+				"chance": 45
 			}
         ],
         "herbs": []
@@ -623,7 +639,15 @@
 			{
 				"name": "fainting",
 				"chance": 50
-			}
+			},
+			{
+				"name": "earache",
+				"chance": 25
+			},
+            {
+                "name": "nausea",
+                "chance": 30
+            }
         ],
         "herbs": []
     },
@@ -1063,6 +1087,10 @@
 			{
 				"name": "word loss",
 				"chance": 30
+			},
+            {
+				"name": "vivid daydreamer",
+				"chance": 80
 			}
         ],
         "herbs": [ ]
@@ -1288,6 +1316,10 @@
 			{
 				"name": "parroting",
 				"chance": 20
+			},
+            {
+				"name": "vivid daydreamer",
+				"chance": 80
 			}
         ],
         "herbs":[
@@ -1402,6 +1434,10 @@
             {
 				"name": "selective mutism",
 				"chance": 50
+			},
+            {
+				"name": "vivid daydreamer",
+				"chance": 80
 			}
         ],
         "herbs": [
@@ -1464,6 +1500,10 @@
 			{
 				"name": "fatigue",
 				"chance": 25
+			},
+			{
+				"name": "earache",
+				"chance": 50
 			}
 	],
 	"herbs": [
@@ -1551,6 +1591,14 @@
 			{
 				"name": "fainting",
 				"chance": 45
+			},
+			{
+				"name": "nosebleed",
+				"chance": 60
+			},
+			{
+				"name": "earache",
+				"chance": 45
 			}
         ],
         "herbs": [
@@ -1598,6 +1646,18 @@
 			{
 				"name": "stimming",
 				"chance": 20
+			},
+			{
+				"name": "nosebleed",
+				"chance": 30
+			},
+			{
+				"name": "earache",
+				"chance": 50
+			},
+			{
+				"name": "ear infection",
+				"chance": 70
 			}
         ],
         "herbs": [
@@ -1697,7 +1757,6 @@
                 "name": "puzzled heart",
                 "chance": 100
             },
-            
             {
                 "name": "spirited heart",
                 "chance": 100
@@ -1857,6 +1916,10 @@
 			{
 				"name": "nest wetting",
 				"chance": 25
+			},
+			{
+				"name": "nausea",
+				"chance": 10
 			}
         ],
         "herbs": [
@@ -1893,6 +1956,10 @@
 			{
 				"name": "fatigue",
 				"chance": 15
+			},
+			{
+				"name": "nosebleed",
+				"chance": 45
 			}
         ],
         "herbs": [
@@ -2029,22 +2096,26 @@
 		},
 		"illness_infectiousness": [],
 		"risks": [
-		{
-			"name": "headache",
-			"chance": 50
-		},
-        {
-		    "name": "sound headache",
-            "chance": 20
-        },
-        {
-            "name": "information loss",
-            "chance": 40
-        },
-        {
-            "name": "word loss",
-            "chance": 40
-        }
+			{
+				"name": "headache",
+				"chance": 50
+			},
+			{
+				"name": "sound headache",
+				"chance": 20
+			},
+			{
+				"name": "information loss",
+				"chance": 40
+			},
+			{
+				"name": "word loss",
+				"chance": 40
+			},
+			{
+				"name": "earache",
+				"chance": 45
+			}
         ],
         "herbs": []
     },
@@ -2176,6 +2247,10 @@
 			{
 				"name": "whitecough",
 				"chance": 35
+			},
+			{
+				"name": "earache",
+				"chance": 45
 			}
         ],
         "herbs": [
@@ -2803,5 +2878,145 @@
 			}
         ],
         "herbs": []
+    },
+    "vivid daydreamer": {
+        "severity": "minor",
+        "congenital": "never",
+        "moons_until": 5,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+			{
+				"name": "vivid daydreams",
+				"chance": 10
+			},
+            {
+				"name": "hallucinations",
+				"chance": 50
+			}
+        ],
+        "herbs": []
+    },
+    "frequent fainting": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 5,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "dizziness",
+                "chance": 10
+            },
+            {
+                "name": "headache",
+                "chance": 30
+            },
+            {
+                "name": "fainting",
+                "chance": 25
+            },
+            {
+                "name": "seizure",
+                "chance": 80
+            }
+        ],
+        "herbs": []
+    },
+    "flooded paws": {
+        "severity": "minor",
+        "congenital": "always",
+        "moons_until": 8,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "dizziness",
+                "chance": 15
+            },
+            {
+                "name": "headache",
+                "chance": 30
+            },
+            {
+                "name": "fainting",
+                "chance": 60
+            },
+            {
+				"name": "fatigue",
+				"chance": 50
+			},
+            {
+                "name": "nausea",
+                "chance": 30
+            }
+        ],
+        "herbs": []
+    },
+    "bad knee": {
+       "severity": "major",
+        "congenital": "sometimes",
+        "moons_until": 6,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "sore",
+                "chance": 10
+            },
+            {
+                "name": "joint pain",
+                "chance": 20
+            },
+            {
+                "name": "acute pain",
+                "chance": 30
+            },
+            {
+                "name": "knee locking",
+                "chance": 20
+            }
+        ],
+        "herbs": [
+            "poppy",
+            "daisy",
+            "moss"
+        ]
     }
 }

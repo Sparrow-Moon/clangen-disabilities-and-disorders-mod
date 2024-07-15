@@ -4,7 +4,7 @@
 		"m_c is up and moving again after resting from {PRONOUN/m_c/poss} seizure."
 	],
 	"diarrhea": [
-		"m_c has stopped constantly running to the dirtplace, it seems {PRONOUN/m_c/poss} brush with diarrhea has ended.",
+		"m_c has stopped constantly running to the dirtplace. It seems {PRONOUN/m_c/poss} brush with diarrhea has ended.",
 		"m_c is finally feeling better, {PRONOUN/m_c/poss} experience with diarrhea now over."
 	],
 	"fleas": [
@@ -82,15 +82,16 @@
 		"m_c tells {PRONOUN/m_c/self} that {PRONOUN/m_c/subject} can't let these feelings consume {PRONOUN/m_c/object}, instead {PRONOUN/m_c/subject} {VERB/m_c/have/has} to learn to live with it.",
 		"m_c picks {PRONOUN/m_c/self} up out of {PRONOUN/m_c/poss} nest and begins the day anew, a fresh conviction in {PRONOUN/m_c/poss} heart."
 	],
-    "carrionplace disease": [
-        "The stench coming from m_c is finally fading, {PRONOUN/m_c/subject} recovered from carrionplace disease.",
-        "Against all odds, m_c has recovered from carrionplace disease."
-    ],
+	"carrionplace disease": [
+		"The stench coming from m_c is finally fading - {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} recovered from carrionplace disease.",
+		"Against all odds, m_c has recovered from carrionplace disease."
+	],
 	"malnourished": [
-		"WARNING: this string should never appear, nutrition is handled only in freshkill events."
+		"m_c finally feels energized again. It seems the newly consistent meals have done {PRONOUN/m_c/object} good."
 	],
 	"starving": [
-		"WARNING: this string should never appear, nutrition is handled only in freshkill events."
+		"m_c's paws no longer feel quite so heavy. {PRONOUN/m_c/subject/CAP} can tell that {PRONOUN/m_c/subject} still need to eat more, but at least the situation isn't as dire.",
+		"m_c still feels the rumbles of hunger in {PRONOUN/m_c/poss} belly, but it's nothing compared to the emptiness {PRONOUN/m_c/subject}'d so recently experienced."
 	],
 	"constipation": [
 		"After longer than m_c would like to admit, {PRONOUN/m_c/poss} constipation has passed.",
@@ -259,6 +260,16 @@
 	],
 	"parroting": [
 		"m_c has finished {PRONOUN/m_c/poss} parroting",
-		"It looks like m_c's words are back to been {PRONOUN/m_c/poss} own now."
-	]
+		"It looks like m_c's words are back to being {PRONOUN/m_c/poss} own now."
+	],
+	"strong attachment": [
+        "After speaking with {PRONOUN/m_c/object}, r_c has noticed that m_c is able to separate from {PRONOUN/m_c/poss} one special cat once more.",
+        "m_c is finally able to get {PRONOUN/m_c/poss} Clanmate out of {PRONOUN/m_c/poss} head, no longer lost in {PRONOUN/m_c/poss} thoughts of them, and allowing m_c to complete {PRONOUN/m_c/poss} duties again.",
+        "Finally, after a few moons, m_c is no longer lashing out at cats that get between {PRONOUN/m_c/object} and {PRONOUN/m_c/poss} favorite cat."
+    ],
+    "black and white cloud": [
+        "r_c has spoken with m_c, and it seems like {PRONOUN/m_c/subject} are able to think clearly again, no longer lashing out at every cat around {PRONOUN/m_c/object}.",
+        "m_c is able to realize that every cat has flaws, and that no cat is perfect. The black and white cloud over {PRONOUN/m_c/poss} eyes seems to have dispersed.",
+        "m_c no longer feels as if everyone is horrible, able to once more see the gray between the black and the white."
+    ]
 }

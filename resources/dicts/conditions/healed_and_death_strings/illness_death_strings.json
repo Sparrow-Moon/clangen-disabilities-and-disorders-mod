@@ -1,0 +1,209 @@
+{
+  "seizure": [
+    "m_c died from a seizure.",
+    "m_c died during a seizure."
+  ],
+  "diarrhea": [
+    "m_c died to the dehydration caused by diarrhea.",
+    "m_c's body could not keep up with the demands of {PRONOUN/m_c/poss} illness and they died.",
+    "Diarrhea is no joke, the extreme dehydration it caused has killed m_c."
+  ],
+  "fleas": [
+    "this should not appear! m_c died of fleas?"
+  ],
+  "greencough": [
+    "m_c died to greencough.",
+    "m_c was killed by greencough.",
+    "Greencough killed m_c.",
+    "Greencough has taken m_c's life."
+  ],
+  "kittencough": [
+    "m_c died to kittencough.",
+    "m_c was killed by kittencough.",
+    "Kittencough has killed m_c.",
+    "Kittencough has taken m_c's life."
+  ],
+  "an infected wound": [
+    "m_c died to an infection.",
+    "m_c succumbed to an infection.",
+    "m_c was killed by {PRONOUN/m_c/poss} infected wound.",
+    "m_c's infection progressed too far and left {PRONOUN/m_c/subject} cold in their nest."
+  ],
+  "carrionplace disease": [
+    "m_c died to carrionplace disease.",
+    "Carrionplace disease has killed m_c."
+  ],
+  "redcough": [
+    "m_c died to redcough.",
+    "Redcough has finally taken m_c.",
+    "Redcough has killed m_c."
+  ],
+  "running nose": [
+    "this should not appear! m_c died of a running nose?"
+  ],
+  "whitecough": [
+    "m_c died to whitecough.",
+    "Whitecough killed m_c.",
+    "m_c was killed by whitecough.",
+    "The whitecough didn't have a chance to progress further: it was already strong enough to kill m_c."
+  ],
+  "silvercough": [
+    "m_c died to silvercough.",
+    "silvercough killed m_c.",
+    "m_c was killed by silvercough.",
+    "The silvercough didn't have a chance to progress further: it was already strong enough to kill m_c."
+  ],
+  "yellowcough": [
+    "m_c died to yellowcough.",
+    "Yellowcough has killed m_c.",
+    "m_c was killed by yellowcough.",
+    "Yellowcough has taken m_c's life."
+  ],
+  "a festering wound": [
+    "m_c has died to a festering wound.",
+    "A festering wound has killed m_c.",
+    "{PRONOUN/m_c/poss/CAP} festering wound has finally killed m_c."
+  ],
+  "heat stroke": [
+    "m_c died to heat stroke.",
+    "{PRONOUN/m_c/poss/CAP} case of heat stroke has killed m_c."
+  ],
+  "heat exhaustion": [
+    "this should not appear! m_c died of heat exhaustion?"
+  ],
+  "stomachache": [
+    "this should not appear! m_c died of a stomachache?"
+  ],
+  "nightmares": [
+    "this should not appear! m_c died of nightmares?"
+  ],
+  "grief stricken": [
+    "this should not appear! m_c died from {PRONOUN/m_c/poss} grief?"
+  ],
+  "malnourished": [
+    "this should not appear! m_c died from malnourishment?"
+  ],
+  "starving": [
+    "m_c died to starvation.",
+    "m_c couldn't go on any longer and collapsed from starvation.",
+    "Starvation has killed m_c.",
+    "m_c's body couldn't continue on without nourishment, {PRONOUN/m_c/subject} never woke up from {PRONOUN/m_c/poss} sleep.",
+    "Starvation finally caught up to m_c.",
+    "Skinny and exhausted, m_c could no longer continue without food.",
+    "The lack of food has finally killed m_c."
+  ],
+  "anxiety attack": [
+    "this should not appear! m_c died from an anxiety attack?"
+  ],
+  "panic attack": [
+    "m_c died from {PRONOUN/m_c/poss} panic attack.",
+    "m_c's panic attack was too much for {PRONOUN/m_c/poss} tiny body.",
+    "m_c couldn't survive {PRONOUN/m_c/poss} panic attack."
+  ],
+  "paranoia": [
+    "When m_c's Clanmates warn {PRONOUN/m_c/object} of a badger in the area, {PRONOUN/m_c/subject} {VERB/m_c/do/does}n't trust them, paranoid that they're lying to {PRONOUN/m_c/object}. Unfortunately, {PRONOUN/m_c/subject} soon {VERB/m_c/discover/discovers} that they were telling the truth.",
+    "When m_c's Clanmates warn {PRONOUN/m_c/object} of dogs in the area, {PRONOUN/m_c/subject} {VERB/m_c/do/does}n't trust them, paranoid that they're lying to {PRONOUN/m_c/object}. Unfortunately, {PRONOUN/m_c/subject} soon {VERB/m_c/discover/discovers} that they were telling the truth.",
+    "When m_c's Clanmates warn {PRONOUN/m_c/object} of rogues in the area, {PRONOUN/m_c/subject} {VERB/m_c/do/does}n't trust them, paranoid that they're lying to {PRONOUN/m_c/object}. Unfortunately, {PRONOUN/m_c/subject} soon {VERB/m_c/discover/discovers} that they were telling the truth.",
+    "When m_c's Clanmates warn {PRONOUN/m_c/object} of a wolverine in the area, {PRONOUN/m_c/subject} {VERB/m_c/do/does}n't trust them, paranoid that they're lying to {PRONOUN/m_c/object}. Unfortunately, {PRONOUN/m_c/subject} soon {VERB/m_c/discover/discovers} that they were telling the truth."
+  ],
+  "absence": [
+    "m_c died from {PRONOUN/m_c/poss} absence.",
+    "m_c died during {PRONOUN/m_c/poss} absence."
+  ],
+  "spasms": [
+    "m_c died from {PRONOUN/m_c/poss} spasms."
+  ],
+  "constipation": [
+    "Turns out, m_c's constipation was actually an intestinal blockage - one that {PRONOUN/m_c/subject} could not survive."
+  ],
+  "seasonal lethargy": [
+    "this REALLY should not appear! m_c died from seasonal lethargy?"
+  ],
+  "lethargy": [
+    "this REALLY should not appear! m_c died from lethargy?"
+  ],
+  "verbal shutdown": [
+    "this should not appear! m_c died from having a verbal shutdown?"
+  ],
+  "special interest": [
+    "this should not appear! m_c died from having a special interest?"
+  ],
+  "hyperfixation": [
+    "this should not appear! m_c died from having a hyperfixation?"
+  ],
+  "stimming": [
+    "this should not appear! m_c died from stimming?"
+  ],
+  "indecision": [
+    "this should not appear! m_c died from indecision?"
+  ],
+  "impulsivity": [
+    "this should not appear! m_c died from impulsivity?"
+  ],
+  "vivid daydreams": [
+    "this should not appear! m_c died from having vivid daydreams?"
+  ],
+  "hallucinations": [
+    "this should not appear! m_c died from having hallucinations?"
+  ],
+  "zoomies": [
+    "this should not appear! m_c died from having the zoomies?"
+  ],
+  "compulsions": [
+    "this should not appear! m_c died from having compulsions?"
+  ],
+  "turmoiled litter": [
+    "this should not appear! m_c died from having a turmoiled litter?"
+  ],
+  "sleeplessness": [
+    "m_c died from having too little sleep.",
+    "m_c's lack of sleep killed {PRONOUN/m_c/object}.",
+    "Although m_c's lack of sleep really did a number on {PRONOUN/m_c/poss} body, the medicine cat didn't think it would kill {PRONOUN/m_c/object}."
+  ],
+  "sleep paralysis": [
+    "this should not appear! m_c died of sleep paralysis?"
+  ],
+  "burn out": [
+    "this should not appear! m_c died of burn out?"
+  ],
+  "ear buzzing": [
+    "this should not appear! m_c died of ear buzzing?"
+  ],
+  "ear infection": [
+    "Somehow, m_c's ear infection killed {PRONOUN/m_c/object}.",
+    "m_c's ear infection was severe enough to kill {PRONOUN/m_c/object}."
+  ],
+  "kittenspace": [
+    "this should not appear! m_c died from kittenspace?"
+  ],
+  "puppyspace": [
+    "this should not appear! m_c died from puppyspace?"
+  ],
+  "nest wetting": [
+    "this should not appear! m_c died from wetting the nest?"
+  ],
+  "night dirtmaking": [
+    "this should not appear! m_c died from night dirtmaking?"
+  ],
+  "tics": [
+    "this should not appear! m_c died from ticing?"
+  ],
+  "tic attack": [
+    "this should not appear! m_c died from a tic attack?"
+  ],
+  "information loss": [
+    "this should not appear! m_c died from information loss?"
+  ],
+  "word loss": [
+    "this should not appear! m_c died from word loss?"
+  ],
+  "dizziness": [
+    "this should not appear! m_c died from being dizzy?"
+  ],
+  "nausea": [
+    "this should not appear! m_c died from being nauseous?"
+  ],
+  "parroting": [
+    "this should not appear! m_c died from parroting?"
+  ]
+}

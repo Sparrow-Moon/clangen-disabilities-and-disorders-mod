@@ -531,7 +531,7 @@
                     "text": "r_c listens, shivering, as p_l describes the birth of the Dark Forest, the ancient, barely won battle between the good cats of the stars and the traitor amidst. {PRONOUN/r_c/subject/CAP} can't stop thinking about it in {PRONOUN/r_c/poss} nest that night, {PRONOUN/r_c/poss} sleep broken and uneasy.",
                     "exp": 0,
                     "weight": 20,
-                    "injury": [
+                  "injury": [
                                 {
                         "cats": ["r_c"],
                         "injuries": ["nightmares"],
@@ -954,7 +954,7 @@
                     ]
                 },
                 {
-                    "text": "The cats think they're safe on the other side of the valley. It's a well known spot for teaching, distant but with a view of the avalanche prone spot on the otherside, c_n cats have been here before. Surely they're safe. They are mistaken.",
+                    "text": "The cats think they're safe on the other side of the valley. It's a well-known spot for teaching, distant but with a view of the avalanche prone spot on the otherside, c_n cats have been here before. Surely they're safe. They are mistaken.",
                     "exp": 0,
                     "weight": 1,
                     "injury": [

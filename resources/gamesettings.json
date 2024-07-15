@@ -16,21 +16,16 @@
         }
     ],
     "general": {
-
         "allow shell farm": [
             "Allow triggering topics (hover)",
             "Triggering topics such as self harm and suicidal thoughts will be allowed.",
             false
         ],
-
         "warriorified names": [
             "Use warriors names for the new conditions",
-            "IE: use starwalker instead of autism",
+            "IE: use starwalker instead of autism.",
             true
         ],
-
-
-        
         "dark mode": [
             "Dark mode",
             "Camp backgrounds will match with the mode: nighttime for dark mode and daytime for light mode.",
@@ -38,12 +33,12 @@
         ],
         "custom cursor": [
             "Custom cursor",
-            "The cursor will be replaced with a cat paw.",
+            "The cursor will be replaced with a cat paw. The cursor is currently unfinished and is prone to crashing.",
             false
         ],
         "keybinds": [
             "Keybinds",
-            "Enables certian keybinds to be used throughout the menus for quick navigation.",
+            "Enables certain keybinds to be used throughout the menus for quick navigation.",
             false
         ],
         "shaders": [

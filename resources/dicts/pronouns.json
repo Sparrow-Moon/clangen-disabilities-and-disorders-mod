@@ -6,7 +6,8 @@
       "poss": "their",
       "inposs": "theirs",
       "self": "themself",
-      "conju": 1
+      "conju": 1,
+      "tags": ["default"]
     },
     {
       "subject": "she",
@@ -14,7 +15,8 @@
       "poss": "her",
       "inposs": "hers",
       "self": "herself",
-      "conju": 2
+      "conju": 2,
+      "tags": ["default"]
     },
     {
       "subject": "he",
@@ -22,7 +24,458 @@
       "poss": "his",
       "inposs": "his",
       "self": "himself",
-      "conju": 2
+      "conju": 2,
+      "tags": ["default"]
+    },
+    {
+      "subject": "ae",
+      "object": "aer",
+      "poss": "aers",
+      "inposs": "aers",
+      "self": "aerself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "astra",
+      "object": "astral",
+      "poss": "astrals",
+      "inposs": "astrals",
+      "self": "astralself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "bat",
+      "object": "bat",
+      "poss": "bats",
+      "inposs": "bats",
+      "self": "batself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "bea",
+      "object": "beam",
+      "poss": "beams",
+      "inposs": "beams",
+      "self": "beamself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "ber",
+      "object": "berry",
+      "poss": "berrys",
+      "inposs": "berrys",
+      "self": "berryself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "bun",
+      "object": "bun",
+      "poss": "buns",
+      "inposs": "buns",
+      "self": "bunself",
+      "conju": 2,
+      "tags": ["nounself", "common"]
+    },
+    {
+      "subject": "caw",
+      "object": "caw",
+      "poss": "caws",
+      "inposs": "caws",
+      "self": "cawself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "chir",
+      "object": "chirp",
+      "poss": "chirps",
+      "inposs": "chirps",
+      "self": "chirpself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "claw",
+      "object": "claw",
+      "poss": "claws",
+      "inposs": "claws",
+      "self": "clawself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "click",
+      "object": "click",
+      "poss": "clicks",
+      "inposs": "clicks",
+      "self": "clickself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "clo",
+      "object": "cloud",
+      "poss": "clouds",
+      "inposs": "clouds",
+      "self": "cloudself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "co",
+      "object": "co",
+      "poss": "cos",
+      "inposs": "cos",
+      "self": "coself",
+      "conju": 2,
+      "tags": ["pleopronoun"]
+    },
+    {
+      "subject": "dae",
+      "object": "daem",
+      "poss": "daer",
+      "inposs": "daers",
+      "self": "daemself",
+      "conju": 2,
+      "tags": ["pleopronoun"]
+    },
+    {
+      "subject": "drip",
+      "object": "drop",
+      "poss": "drips",
+      "inposs": "drops",
+      "self": "dropself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "e",
+      "object": "em",
+      "poss": "eir",
+      "inposs": "eirs",
+      "self": "emself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "ey",
+      "object": "em",
+      "poss": "eir",
+      "inposs": "eirs",
+      "self": "emself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "fae",
+      "object": "faer",
+      "poss": "faer",
+      "inposs": "faers",
+      "self": "faerself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "faun",
+      "object": "faun",
+      "poss": "fauns",
+      "inposs": "fauns",
+      "self": "faunself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "fang",
+      "object": "fang",
+      "poss": "fangs",
+      "inposs": "fangs",
+      "self": "fangself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "fern",
+      "object": "fern",
+      "poss": "ferns",
+      "inposs": "ferns",
+      "self": "fernself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "fluff",
+      "object": "fluff",
+      "poss": "fluffs",
+      "inposs": "fluffs",
+      "self": "fluffself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "fox",
+      "object": "fox",
+      "poss": "foxs",
+      "inposs": "foxs",
+      "self": "foxself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "grr",
+      "object": "grr",
+      "poss": "grr",
+      "inposs": "grrs",
+      "self": "grrself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "hiss",
+      "object": "hiss",
+      "poss": "hisses",
+      "inposs": "hisses",
+      "self": "hissself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "it",
+      "object": "it",
+      "poss": "its",
+      "inposs": "its",
+      "self": "itself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "lea",
+      "object": "leaf",
+      "poss": "leafs",
+      "inposs": "leaves",
+      "self": "leafself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "moon",
+      "object": "moon",
+      "poss": "moons",
+      "inposs": "moons",
+      "self": "moonself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "mrr",
+      "object": "mrrp",
+      "poss": "mrrps",
+      "inposs": "mrrps",
+      "self": "mrrpself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "ne",
+      "object": "nem",
+      "poss": "nir",
+      "inposs": "nirs",
+      "self": "nemself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "null",
+      "object": "null",
+      "poss": "nulls",
+      "inposs": "nulls",
+      "self": "nullself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "petal",
+      "object": "petal",
+      "poss": "petals",
+      "inposs": "petals",
+      "self": "petalself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "pitter",
+      "object": "patter",
+      "poss": "pitters",
+      "inposs": "patters",
+      "self": "patterself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "purr",
+      "object": "purr",
+      "poss": "purrs",
+      "inposs": "purrs",
+      "self": "purrself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "rai",
+      "object": "rain",
+      "poss": "rains",
+      "inposs": "rains",
+      "self": "rainself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "rey",
+      "object": "reym",
+      "poss": "reyr",
+      "inposs": "reyrs",
+      "self": "reymself",
+      "conju": 2,
+      "tags": ["pleopronoun"]
+    },
+    {
+      "subject": "ro",
+      "object": "rose",
+      "poss": "roses",
+      "inposs": "roses",
+      "self": "roseself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "sin",
+      "object": "sin",
+      "poss": "sins",
+      "inposs": "sins",
+      "self": "sinself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "sno",
+      "object": "snow",
+      "poss": "snows",
+      "inposs": "snows",
+      "self": "snowself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "star",
+      "object": "star",
+      "poss": "stars",
+      "inposs": "stars",
+      "self": "starself",
+      "conju": 2,
+      "tags": ["nounself", "common"]
+    },
+    {
+      "subject": "stor",
+      "object": "storm",
+      "poss": "storms",
+      "inposs": "storms",
+      "self": "stormself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "sun",
+      "object": "sun",
+      "poss": "suns",
+      "inposs": "suns",
+      "self": "sunself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "they",
+      "object": "them",
+      "poss": "their",
+      "inposs": "theirs",
+      "self": "themselves",
+      "conju": 1,
+      "tags": ["special"]
+    },
+    {
+      "subject": "thon",
+      "object": "thon",
+      "poss": "thons",
+      "inposs": "thons",
+      "self": "thonself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "ve",
+      "object": "ven",
+      "poss": "ver",
+      "inposs": "vers",
+      "self": "venself",
+      "conju": 2,
+      "tags": ["pleopronoun"]
+    },
+    {
+      "subject": "ve",
+      "object": "ver",
+      "poss": "vis",
+      "inposs": "vis",
+      "self": "verself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "voi",
+      "object": "void",
+      "poss": "voids",
+      "inposs": "voids",
+      "self": "voidself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "wra",
+      "object": "wrath",
+      "poss": "wraths",
+      "inposs": "wraths",
+      "self": "wrathself",
+      "conju": 2,
+      "tags": ["nounself"]
+    },
+    {
+      "subject": "xe",
+      "object": "xem",
+      "poss": "xyr",
+      "inposs": "xyrs",
+      "self": "xemself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "ze",
+      "object": "hir",
+      "poss": "hir",
+      "inposs": "hirs",
+      "self": "hirself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
+    },
+    {
+      "subject": "ze",
+      "object": "zir",
+      "poss": "zir",
+      "inposs": "zirs",
+      "self": "zirself",
+      "conju": 2,
+      "tags": ["pleopronoun", "common"]
     }
   ]
 }

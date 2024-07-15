@@ -1,0 +1,101 @@
+{
+  "running nose": [
+    "m_c woke up with a running nose.",
+    "m_c has been sniffling constantly.",
+    "m_c has a running nose."
+  ],
+  "stomachache": [
+    "m_c has a stomachache.",
+    "m_c's belly has been upset all day."
+  ],
+  "fleas": [
+    "m_c seems to have picked up some fleas.",
+    "m_c has been scratching and itching all day, it seems {PRONOUN/m_c/poss} have fleas."
+  ],
+  "heat exhaustion": [
+    "m_c spent too long out in the sun, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten heat exhaustion."
+  ],
+  "heat stroke": [
+    "m_c spent too long out in the sun, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten heat stroke."
+  ],
+  "kittencough": [
+    "m_c has gotten kittencough.",
+    "m_c is sick with kittencough."
+  ],
+  "whitecough": [
+    "m_c has gotten whitecough.",
+    "m_c is sick with whitecough."
+  ],
+  "silvercough": [
+    "m_c has gotten silvercough.",
+    "m_c is sick with silvercough."
+  ],
+  "greencough": [
+    "m_c has gotten greencough.",
+    "m_c is sick with greencough."
+  ],
+  "yellowcough": [
+    "m_c has gotten yellowcough.",
+    "m_c is sick with yellowcough."
+  ],
+  "malnourished": [
+    "m_c has become malnourished.",
+    "Lack of freshkill has left m_c malnourished."
+  ],
+  "starving": [
+    "m_c is starving."
+  ],
+  "anxiety attack": [
+    "m_c has gotten worked up into an anxiety attack.",
+	"With all the stress weighing on {PRONOUN/m_c/poss} mind, m_c's gotten an anxiety attack."
+  ],
+  "stimming": [
+    "m_c has started stimming.",	
+	"m_c has been stimming a lot more than normal recently.",
+	"The clan is happy to see m_c stimming more."
+  ],
+  "zoomies": [
+    "m_c has gotten the zoomies!",
+	"m_c is driving the camp wild zooming around.",
+	"m_c has gotten the zoomies",
+	"It appears as though m_c has the zoomies."
+  ],
+  "sleeplessness": [
+    "m_c has been unable to get any sleep.",
+	"This past moon it has been difficult for m_c to sleep.",
+	"m_c is currently having trouble sleeping properly."
+  ],
+  "burn out": [
+    "m_c has gotten burnt out.",
+	"Poor m_c is suffering from burn out.",
+	"m_c is currently experiencing burn out."
+  ],
+  "ear buzzing": [
+    "m_c's ears won't stop ringing, no matter what {PRONOUN/m_c/subject} {VERB/m_c/do/does}.",
+	"m_c's ears just won't stop buzzing.",
+	"Poor m_c has a fly or something stuck in {PRONOUN/m_c/poss} ears."	
+  ],
+  "nest wetting": [
+    "m_c is experiencing some nest wetting."
+  ],
+  "night dirtmaking": [
+    "m_c is experiencing some night dirtmaking."
+  ],
+  "kittenspace": [
+    "Recently, m_c has been acting a bit differently than usual. It seems like {PRONOUN/m_c/subject} may {VERB/m_c/have/has} gone into kittenspace.",
+	"m_c's been acting a little bit different than usual, much younger and more reliant on {PRONOUN/m_c/poss} clanmates. m_c has gone into kittenspace"
+  ],
+  "puppyspace": [
+    "Recently, m_c has been acting a bit differently than usual. It seems like {PRONOUN/m_c/subject} may {VERB/m_c/have/has} gone into puppyspace."
+  ],
+  "seasonal lethargy": [
+    "m_c has been experiencing some seasonal lethargy lately.",
+	"This past season has weighed heavily on m_c and {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} experiencing some seasonal lethargy.",
+	"It looks like m_c has seasonal lethargy."
+  ],
+  "nightmares": [
+    "m_c has been experiencing frequent nightmares lately.",
+	"m_c has been struggling recently with nightmares",
+	"This past moon m_c has been plagued with nightmares."
+  ]
+}

@@ -629,7 +629,7 @@
                 ]
             },
             {
-                "text": "Even though r_c made it out, {PRONOUN/r_c/subject} swear someone pushed them, and blame s_c. s_c denies it and says they should get r_c back to camp to get {PRONOUN/r_c/poss} injury looked at.",
+                "text": "Even though r_c made it out, {PRONOUN/r_c/subject} {VERB/r_c/swear/swears} someone pushed {PRONOUN/r_c/object}, and {VERB/r_c/blame/blames} s_c. s_c denies it and says they should get r_c back to camp to get {PRONOUN/r_c/poss} injury looked at.",
                 "exp": 0,
                 "weight": 10,
                 "stat_trait": [
@@ -684,7 +684,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Trailing behind p_l, the ground trembles beneath r_c's paws. {PRONOUN/r_c/subject/CAP} {VERB/r_c/look/looks} around wildly for safe footing - just as the earth caves in beneath {PRONOUN/r_c/object} and the world goes dark.",
+        "intro_text": "As r_c trails behind p_l, the ground trembles beneath {PRONOUN/r_c/poss}'s paws. {PRONOUN/r_c/subject/CAP} {VERB/r_c/look/looks} around wildly for safe footing - just as the earth caves in beneath {PRONOUN/r_c/object} and the world goes dark.",
         "decline_text": "Thankfully, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} on the edge of the obstruction, and {VERB/r_c/wriggle/wriggles} {PRONOUN/r_c/poss} way clear.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -854,7 +854,7 @@
         "max_cats": 2,
         "min_max_status": {},
         "weight": 20,
-        "intro_text": "Trailing behind p_l, the ground trembles beneath r_c's paws. {PRONOUN/r_c/subject/CAP} {VERB/r_c/look/looks} around wildly for safe footing - just as the earth caves in beneath {PRONOUN/r_c/object} and the world goes dark.",
+        "intro_text": "As r_c trails behind p_l, the ground trembles beneath {PRONOUN/r_c/poss}'s paws. {PRONOUN/r_c/subject/CAP} {VERB/r_c/look/looks} around wildly for safe footing - just as the earth caves in beneath {PRONOUN/r_c/object} and the world goes dark.",
         "decline_text": "Thankfully, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} on the edge of the obstruction, and {VERB/r_c/wriggle/wriggles} {PRONOUN/r_c/poss} way clear.",
         "chance_of_success": 50,
         "success_outcomes": [
@@ -1170,7 +1170,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c heads off to map out a thick field of tall grass {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} always found confusing. Hunting, fighting, driving off predators; it all requires knowledge of {PRONOUN/r_c/poss} home turf. It's always worth making sure {PRONOUN/r_c/poss} mental map is up to date.",
+                "text": "r_c heads off to map out a thick field of tall grass {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} always found confusing. Hunting, fighting, driving off predators - it all requires knowledge of {PRONOUN/r_c/poss} home turf. It's always worth making sure {PRONOUN/r_c/poss} mental map is up to date.",
                 "exp": 20,
                 "weight": 20,
                 "art": "fst_hunt_fun1"
@@ -1238,7 +1238,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c heads off to map out a thick field of tall grass {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} always found confusing. Hunting, fighting, driving off predators; it all requires knowledge of {PRONOUN/r_c/poss} home turf. It's always worth making sure {PRONOUN/r_c/poss} mental map is up to date. It feels a little like more work though, and isn't exactly the peaceful break {PRONOUN/r_c/subject} hoped for.",
+                "text": "r_c heads off to map out a thick field of tall grass {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} always found confusing. Hunting, fighting, driving off predators - it all requires knowledge of {PRONOUN/r_c/poss} home turf. It's always worth making sure {PRONOUN/r_c/poss} mental map is up to date. It feels a little like more work though, and isn't exactly the peaceful break {PRONOUN/r_c/subject} hoped for.",
                 "exp": 20,
                 "weight": 20,
                 "art": "fst_hunt_fun1"
@@ -1307,7 +1307,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "r_c heads off to map out a thick field of tall grass {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} always found confusing. Hunting, fighting, driving off predators; it all requires knowledge of {PRONOUN/r_c/poss} home turf. It's always worth making sure {PRONOUN/r_c/poss} mental map is up to date. It feels a little like more work though, and isn't exactly the peaceful break {PRONOUN/r_c/subject} hoped for.",
+                "text": "r_c heads off to map out a thick field of tall grass {PRONOUN/r_c/subject}{VERB/r_c/'ve/'s} always found confusing. Hunting, fighting, driving off predators - it all requires knowledge of {PRONOUN/r_c/poss} home turf. It's always worth making sure {PRONOUN/r_c/poss} mental map is up to date. It feels a little like more work though, and isn't exactly the peaceful break {PRONOUN/r_c/subject} hoped for.",
                 "exp": 20,
                 "weight": 20,
                 "art": "fst_hunt_fun1"
@@ -1847,7 +1847,7 @@
         "chance_of_success": 60,
         "success_outcomes": [
             {
-                "text": "app1 carefully practices padding around, in the pitch black, in the dim where the light from the entrance still reaches, with their eyes shut, all of it. It's definitely easier in bigger burrows than the ones rabbits make, and it's good to train where no one can see them faceplant into the walls. app2 does notice when app1 faceplants into them though!",
+                "text": "app1 carefully practices padding around, in the pitch black, in the dim where the light from the entrance still reaches, with {PRONOUN/app1/poss} eyes shut, all of it. It's definitely easier in bigger burrows than the ones rabbits make, and it's good to train where no one can see {PRONOUN/app1/object} faceplant into the walls. app2 does notice when app1 faceplants into {PRONOUN/app2/object} though!",
                 "exp": 15,
                 "weight": 20,
                 "art": "gen_happy_cat2",
@@ -1869,7 +1869,7 @@
                 ]
             },
             {
-                "text": "p_l reassures app1 that this sett is well known and safe. But with a little mischief in their expression, p_l suggests being careful where they set their paws. app1 discovers what that means when they're wandering around in the dark and slide head over heels down a steep slope, straight into app2 with an oof! Maybe that'd be fun to do again?",
+                "text": "p_l reassures app1 that this sett is well known and safe. But with a little mischief in {PRONOUN/p_l/poss} expression, p_l suggests being careful where {PRONOUN/app1/subject} {VERB/app1/set/sets} {PRONOUN/app1/poss} paws. app1 discovers what that means when {PRONOUN/app1/subject}{VERB/app1/'re/'s} wandering around in the dark and slide head over heels down a steep slope, straight into app2 with an oof! Maybe that'd be fun to do again?",
                 "exp": 15,
                 "weight": 5,
                 "art": "gen_bord_twocat_hostile_app_app",
@@ -1955,7 +1955,7 @@
         ],
         "fail_outcomes": [
             {
-                "text": "app1 refuses to believe tunnels could possibly be hard to navigate. They also refuse to get any closer to them, and start an argument with p_l about it. app2 sides with p_l and no one learns anything in the squabbling.",
+                "text": "app1 refuses to believe tunnels could possibly be hard to navigate. {PRONOUN/app1/subject/CAP} also {VERB/app1/refuse/refuses} to get any closer to them, and start an argument with p_l about it. app2 sides with p_l and no one learns anything in the squabbling.",
                 "exp": 0,
                 "weight": 20,
                 "art": "gen_train_argue",
@@ -1977,7 +1977,7 @@
                 ]
             },
             {
-                "text": "app1 maintains that tunnels aren't useful for anything, just annoying obstacles in the landscape, and p_l can't get them to take the training session seriously. They distract app2 as well, and eventually p_l has to give up on teaching.",
+                "text": "app1 maintains that tunnels aren't useful for anything, just annoying obstacles in the landscape. p_l can't get {PRONOUN/app1/object} to take the training session seriously. {PRONOUN/app1/subject/CAP} {VERB/app1/distract/distracts} app2 as well, and eventually p_l has to give up on teaching.",
                 "exp": 0,
                 "weight": 20,
                 "art": "gen_train_argue",
@@ -2122,7 +2122,7 @@
             "normal adult": [1, 6]
         },
         "weight": 20,
-        "intro_text": "p_l approaches r_c, asking if {PRONOUN/r_c/subject} wouldn't mind showing p_l {PRONOUN/r_c/poss} hunting techniques, and perhaps doing some training with {PRONOUN/p_l/object}?",
+        "intro_text": "p_l approaches r_c, asking if {PRONOUN/r_c/subject} wouldn't mind showing p_l {PRONOUN/r_c/poss} hunting techniques and perhaps doing some training with {PRONOUN/p_l/object}?",
         "decline_text": "r_c declines gently, explaining that {PRONOUN/r_c/subject} {VERB/r_c/have/has} too much work to do.",
         "chance_of_success": 60,
         "success_outcomes": [
@@ -2217,7 +2217,7 @@
                 ]
             },
             {
-                "text": "r_c spots p_l looking at {PRONOUN/r_c/object} a little bit too admiringly, and ends the training session early, diplomatically making up an excuse.",
+                "text": "r_c spots p_l looking at {PRONOUN/r_c/object} a little bit too admiringly, and ends the training session early with a diplomatic and completely made-up excuse.",
                 "exp": 0,
                 "weight": 20,
                 "art": "mtn_hunt_kea_leafbare_parentchildapprentice1",
