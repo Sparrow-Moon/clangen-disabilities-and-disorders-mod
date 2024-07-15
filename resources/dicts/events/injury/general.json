@@ -8519,5 +8519,44 @@
                 "injuries": ["fatigue"]
             }
         ]
+    },
+    {
+        "event_id": "gen_injury_sunburn_any1",
+        "location": ["mountainous", "beach", "plains"],
+        "season": ["newleaf", "greenleaf"],
+        "weight": 20,
+        "event_text": "The sun has been particularly harsh this season and poor m_c is left wincing when {PRONOUN/m_c/subject} {VERB/m_c/wake/wakes} up with a sunburn.",
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["sunburn"]
+            }
+        ]
+    },
+    {
+        "event_id": "gen_injury_sunburn_any2",
+        "location": ["mountainous", "beach", "plains"],
+        "season": ["newleaf", "greenleaf"],
+        "weight": 20,
+        "event_text": "After a hard day's work out in the sun m_c pads over to the medicine den wincing with the beginnings of sunburn under {PRONOUN/m_c/poss} fur.",
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["sunburn"]
+            }
+        ]
+    },
+    {
+        "event_id": "gen_injury_sunburn_any3",
+        "location": ["any"],
+        "season": ["newleaf", "greenleaf"],
+        "weight": 20,
+        "event_text": "m_c has had the unfortunate luck to get a sunburn.",
+        "injury": [
+            {
+                "cats": ["m_c"],
+                "injuries": ["sunburn"]
+            }
+        ]
     }
 ]
