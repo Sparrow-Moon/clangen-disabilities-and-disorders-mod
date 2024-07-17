@@ -1210,7 +1210,7 @@ class Pelt:
 
         # Now it's time for gender
         if cat.genderalign in ["female", "trans female"]:
-            color_name = f"{color_name} she-cat"
+            color_name = f"{color_name} molly"
         elif cat.genderalign in ["male", "trans male"]:
             color_name = f"{color_name} tom"
         else:

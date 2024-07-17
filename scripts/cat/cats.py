@@ -778,50 +778,6 @@ class Cat:
 
         # These things should only run when generating a new cat, rather than loading one in.
         if not loading_cat:
-            
-            # for testing conditions
-            '''
-            if game.clan:
-                new_condition=choice(["shattered soul", "budding spirit"])
-                self.get_permanent_condition(new_condition, born_with=True)
-            '''
-
-            # APPEARANCE
-            self.pelt = Pelt.generate_new_pelt(self.gender, [Cat.fetch_cat(i) for i in (self.parent1, self.parent2) if i], self.age)
-
-        ##Albino and Melanistic Cats still real!
-        if self.pelt.albino != None:
-            self.get_permanent_condition("albinism", born_with=True)                     
-        elif self.pelt.melanistic != None:
-            self.get_permanent_condition("melanism", born_with=True)     
-            
-            #Personality
-            self.personality = Personality(kit_trait=self.is_baby())
-
-            # experience and current patrol status
-            if self.age in ['young', 'newborn']:
-                self.experience = 0
-            elif self.age in ['adolescent']:
-                m = self.moons
-                self.experience = 0
-                while m > Cat.age_moons['adolescent'][0]:
-                    ran = game.config["graduation"]["base_app_timeskip_ex"]
-                    exp = choice(
-                        list(range(ran[0][0], ran[0][1] + 1)) + list(range(ran[1][0], ran[1][1] + 1)))
-                    self.experience += exp + 3
-                    m -= 1
-            elif self.age in ['young adult', 'adult']:
-                self.experience = randint(Cat.experience_levels_range["prepared"][0],
-                                        Cat.experience_levels_range["proficient"][1])
-            elif self.age in ['senior adult']:
-                self.experience = randint(Cat.experience_levels_range["competent"][0],
-                                        Cat.experience_levels_range["expert"][1])
-            elif self.age in ['senior']:
-                self.experience = randint(Cat.experience_levels_range["competent"][0],
-                                        Cat.experience_levels_range["master"][1])
-            else:
-                self.experience = 0
-
             self.init_generate_cat(skill_dict)
 
         # In camp status
@@ -979,6 +935,13 @@ class Cat:
 
         if not theythemdefault and self.age != "newborn":
             self.handle_pronouns()
+            
+        # for testing conditions
+        '''
+        if game.clan:
+            new_condition=choice(["shattered soul", "budding spirit"])
+            self.get_permanent_condition(new_condition, born_with=True)
+        '''
 
         # APPEARANCE
         self.pelt = Pelt.generate_new_pelt(
@@ -986,6 +949,12 @@ class Cat:
             [Cat.fetch_cat(i) for i in (self.parent1, self.parent2) if i],
             self.age,
         )
+
+        ##Albino and Melanistic Cats still real!
+        if self.pelt.albino != None:
+            self.get_permanent_condition("albinism", born_with=True)                     
+        elif self.pelt.melanistic != None:
+            self.get_permanent_condition("melanism", born_with=True)   
 
         # Personality
         self.personality = Personality(kit_trait=self.is_baby())
