@@ -1,7 +1,7 @@
 {
     "claw-wound": {
 		"recurring shock": [
-			"After m_c recovers from {PRONOUN/m_c/poss} claw-wound {PRONOUN/m_c/subject} still {VERB/m_c/seem/seems} to be on edge. After talking with r_c it's determined that the experience has left {PRONOUN/m_c/object} with some form of echoing shock.",
+			"After m_c recovers from {PRONOUN/m_c/poss} claw-wound {PRONOUN/m_c/subject} still {VERB/m_c/seem/seems} to be on edge. After talking with r_c it's determined that the experience has left {PRONOUN/m_c/object} with some form of recurring shock.",
 			"Despite knowing that {PRONOUN/m_c/poss} Clanmates would never hurt {PRONOUN/m_c/object}, m_c quietly admits to r_c that {PRONOUN/m_c/subject} can't help but find {PRONOUN/m_c/self} on edge just... waiting.",
 			"Even fully recovered from {PRONOUN/m_c/poss} claw-wound something still seems to be a bit off with m_c, something lingering over {PRONOUN/m_c/object}."
 		]
@@ -403,22 +403,22 @@
 	},
     "severe tick bites": {
         "paralyzed": [
-            "r_c looking rather harried comes over to m_c. As gently as {PRONOUN/r_c/subject} {VERB/m_c/can/could} {PRONOUN/m_c/subject} {VERB/m_c/explain/explains} to m_c that the ticks have made {PRONOUN/m_c/object} unable to walk.",
-			"With more than a little distress m_c keeps asking r_c over and over why {PRONOUN/m_c/poss} legs aren't responding.",
-			"Who knew a little harmless tick could cause this. m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
+            "r_c, looking rather worried, comes over to m_c. As gently as {PRONOUN/r_c/subject} can, {PRONOUN/r_c/subject} {VERB/r_c/explain/explains} to m_c that the ticks have made {PRONOUN/m_c/object} unable to walk.",
+			"With more than a little distress, m_c keeps asking r_c over and over why {PRONOUN/m_c/poss} legs aren't responding.",
+			"Who knew a harmless little tick could cause this. m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
         ]
     },
 	"ashcough": {
 		"longcough": [
-			"After the ash finally clears from m_c's lungs r_c talks to {PRONOUN/m_c/object} about the lingering cough that might never leave.",
-			"r_c has noticed that while m_c is breathing easier {PRONOUN/m_c/subject} {VERB/m_c/appear/appears} to have a lingering longcough.",
-			"m_c's relief to have a clear chest is offset by the copugh that still refuses to leave {PRONOUN/m_c/object} in peace."
+			"After the ash finally clears from m_c's lungs, r_c talks to {PRONOUN/m_c/object} about the lingering cough that might never leave.",
+			"r_c has noticed that while m_c is breathing easier, {PRONOUN/m_c/subject} {VERB/m_c/appear/appears} to have a lingering cough.",
+			"m_c's relief to have a clear chest is offset by the cough that still refuses to leave {PRONOUN/m_c/object} in peace."
 		],
 		"raspy lungs": [
-			"While the worst of m_c's recovery is past r_c still worries about the damage to {PRONOUN/m_c/poss} lungs.",
-			"m_c's breathing has evened out to everyone's relief, still r_c warns {PRONOUN/m_c/object} that {PRONOUN/m_c/poss} lungs just might not be as strong as before.",
-			"With the ash and smoke free from m_c's pelt and lung's it's become obvious that it done a lot more than surface damage.",
-			"Due to the effects of ashcough m_c's lungs have weakened and now a rasp is in {PRONOUN/m_c/poss} every breath."
+			"While the worst of m_c's recovery has passed, r_c still worries about the damage to {PRONOUN/m_c/poss} lungs.",
+			"To everyone's relief, m_c's breathing has evened out. Still, r_c warns {PRONOUN/m_c/object} that {PRONOUN/m_c/poss} lungs just might not be as strong as before.",
+			"With the ash and smoke free from m_c's pelt and lungs, it's become obvious that it did a lot more than surface damage.",
+			"Due to the effects of ashcough, m_c's lungs have weakened and now a rasp is present in {PRONOUN/m_c/poss} every breath."
 		]
 	}
 }

@@ -47,33 +47,32 @@
   ],
   "anxiety attack": [
     "m_c has gotten worked up into an anxiety attack.",
-	"With all the stress weighing on {PRONOUN/m_c/poss} mind, m_c's gotten an anxiety attack."
+	"With all the stress weighing on {PRONOUN/m_c/poss} mind, m_c has gotten an anxiety attack."
   ],
   "stimming": [
-    "m_c has started stimming.",	
-	"m_c has been stimming a lot more than normal recently.",
-	"The clan is happy to see m_c stimming more."
+    "m_c has started stimming.",
+	"m_c has been stimming a lot more than usual recently.",
+	"The Clan is happy to see m_c stimming more."
   ],
   "zoomies": [
     "m_c has gotten the zoomies!",
-	"m_c is driving the camp wild zooming around.",
-	"m_c has gotten the zoomies",
-	"It appears as though m_c has the zoomies."
+	"m_c is driving camp wild because of {PRONOUN/m_c/poss} zooming around.",
+	"It appears as though m_c has the zoomies!"
   ],
   "sleeplessness": [
     "m_c has been unable to get any sleep.",
-	"This past moon it has been difficult for m_c to sleep.",
-	"m_c is currently having trouble sleeping properly."
+	"This past moon, it's been difficult for m_c to sleep.",
+	"m_c is having trouble sleeping properly."
   ],
   "burn out": [
     "m_c has gotten burnt out.",
-	"Poor m_c is suffering from burn out.",
-	"m_c is currently experiencing burn out."
+	"m_c is suffering from some burn out.",
+	"m_c is experiencing some burn out."
   ],
   "ear buzzing": [
     "m_c's ears won't stop ringing, no matter what {PRONOUN/m_c/subject} {VERB/m_c/do/does}.",
 	"m_c's ears just won't stop buzzing.",
-	"Poor m_c has a fly or something stuck in {PRONOUN/m_c/poss} ears."	
+	"Poor m_c feels like {PRONOUN/m_c/subject} {VERB/m_c/have/has} a fly or something stuck in {PRONOUN/m_c/poss} ears."
   ],
   "nest wetting": [
     "m_c is experiencing some nest wetting."
@@ -83,19 +82,19 @@
   ],
   "kittenspace": [
     "Recently, m_c has been acting a bit differently than usual. It seems like {PRONOUN/m_c/subject} may {VERB/m_c/have/has} gone into kittenspace.",
-	"m_c's been acting a little bit different than usual, much younger and more reliant on {PRONOUN/m_c/poss} clanmates. m_c has gone into kittenspace"
+	"m_c has been acting a little bit differently than usual - much younger and more reliant on {PRONOUN/m_c/poss} Clanmates. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} gone into kittenspace"
   ],
   "puppyspace": [
     "Recently, m_c has been acting a bit differently than usual. It seems like {PRONOUN/m_c/subject} may {VERB/m_c/have/has} gone into puppyspace."
   ],
   "seasonal lethargy": [
     "m_c has been experiencing some seasonal lethargy lately.",
-	"This past season has weighed heavily on m_c and {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} experiencing some seasonal lethargy.",
+	"This past season has weighed heavily on m_c, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} experiencing some seasonal lethargy.",
 	"It looks like m_c has seasonal lethargy."
   ],
   "nightmares": [
     "m_c has been experiencing frequent nightmares lately.",
 	"m_c has been struggling recently with nightmares",
-	"This past moon m_c has been plagued with nightmares."
+	"This past moon, m_c has been plagued with nightmares."
   ]
 }

@@ -290,7 +290,7 @@
         "location": ["forest"],
         "season": ["greenleaf"],
         "weight": 30,
-        "event_text": "A fire rages through the forest. m_c manages to escape, but struggles to fully breathe due to the exposure to the smoke.",
+        "event_text": "A fire rages through the forest. m_c manages to escape, but struggles to properly breathe due to exposure to the smoke.",
         "m_c": {
             "age": [
                 "adolescent",
@@ -302,14 +302,19 @@
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["ashcough"]
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "ashcough"
+                ]
             }
         ],
         "history": [
             {
                 "cats": ["m_c"],
-                "reg_death": "m_c died from smoke inhalation after a fire."
+                "reg_death": "m_c died from smoke inhalation after a forest fire.",
+                "lead_death": "died from smoke inhalation after a forest fire"
             }
         ]
     },
@@ -318,7 +323,7 @@
         "location": ["forest"],
         "season": ["greenleaf"],
         "weight": 30,
-        "event_text": "After a fire breaks out in the camp, m_c's been coughing and wheezing, struggling with ash caught in {PRONOUN/m_c/poss} throat and lungs.",
+        "event_text": "After a fire breaks out in camp, m_c has been coughing and wheezing, struggling to breathe with ash caught in {PRONOUN/m_c/poss} throat and lungs.",
         "m_c": {
             "age": [
                 "adolescent",
@@ -337,7 +342,8 @@
         "history": [
             {
                 "cats": ["m_c"],
-                "reg_death": "m_c died from smoke inhalation after a fire."
+                "reg_death": "m_c died from smoke inhalation after a forest fire.",
+                "lead_death": "died from smoke inhalation after a forest fire"
             }
         ]
     }

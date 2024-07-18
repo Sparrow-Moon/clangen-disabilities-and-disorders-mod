@@ -594,60 +594,11 @@ class MedDenScreen(Screens):
 
     @staticmethod
     def change_condition_name(condition_list):
-        dad_names = {
-            "starwalker": "autism",
-            "obsessive mind": "OCD",
-            "heavy soul": "chronic depression",
-            "comet spirit": "ADHD",
-            "antisocial": "ASPD",
-            "constant roaming pain": "fibromyalgia",
-            "ongoing sleeplessness": "chronic insomnia",
-            "body biter": "BFRD",
-            "thunderous spirit": "BPD",
-            "otherworldly mind": "schizophrenia",
-            "snow vision": "visual snow",
-            "kitten regressor": "age regressor",
-            "puppy regressor": "pet regressor",
-            "irritable bowels": "IBS",
-            "jellyfish joints": "HSD",
-            "loose body": "hEDS",
-            "burning light": "chronic light sensitivity",
-            "jumbled noise": "APD",
-            "disrupted senses": "SPD",
-            "constant rash": "eczema",
-            "chattering tongue": "tourette's",
-            "falling paws": "orthostatic hypotension",
-            "shattered soul": "DID",
-            "budding spirit": "OSDD",
-            "curved spine": "scoliosis",
-            "jumbled mind": "dyslexia",
-            "counting fog": "dyscalculia",
-            "spirited heart": "hyperempathy",
-            "puzzled heart": "low empathy",
-            "parrot chatter": "echolalia",
-            "thought blindness": "aphantasia",
-            "vivid daydreamer": "maladaptive daydreamer",
-            "frequent fainting": "vasovagal syncope",
-            "flooded paws": "POTS",
-            "bad knee": "meniscus tear",
-
-            "sunblindness": "light sensitivity",
-
-            "seasonal lethargy": "seasonal depression",
-            "lethargy": "depression",
-            "turmoiled litter": "postpartum",
-            "sleeplessness": "insomnia",
-            "ear buzzing": "tinnitus",
-            "kittenspace": "littlespace",
-            "puppyspace": "petspace",
-            "parroting": "echolalia",
-            "ashcough": "smoke inhalation"
-        }
         length = 0
         if not game.settings["warriorified names"]:
             while length < len(condition_list):
-                if condition_list[length] in dad_names:
-                    condition_list[length] = condition_list[length].replace(condition_list[length], dad_names.get(condition_list[length]))
+                if condition_list[length] in Cat.dad_names:
+                    condition_list[length] = condition_list[length].replace(condition_list[length], Cat.dad_names.get(condition_list[length]))
                 length += 1
 
         return condition_list

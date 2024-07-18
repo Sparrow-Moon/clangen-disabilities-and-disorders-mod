@@ -121,8 +121,8 @@
 			"It would appear that due to m_c's wasting disease, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} experiencing some risk of fainting."
 		],
 		"nosebleed": [
-			"r_c sighs bringing yet more moss over and instructing m_c to tilt {PRONOUN/m_c/poss} head in the hopes that it'll help with {PRONOUN/m_c/poss} nosebleed.",
-			"m_c's gotten a nosebleed."
+			"r_c sighs, bringing even more moss over and instructing m_c to tilt {PRONOUN/m_c/poss} head up in the hopes that it'll help with {PRONOUN/m_c/poss} nosebleed.",
+			"m_c has gotten a nosebleed."
 		]
     },
     "one bad eye": {
@@ -182,7 +182,7 @@
 		],
 		"earache": [
 			"r_c patiently assists m_c with {PRONOUN/m_c/poss} complaints of an earache.",
-			"m_c's gotten an earache this moon."
+			"m_c has gotten an earache."
 		]
     },
     "deaf": {
@@ -208,7 +208,7 @@
 		],
 		"earache": [
 			"r_c patiently assists m_c with {PRONOUN/m_c/poss} complaints of an earache.",
-			"m_c's gotten an earache this moon."
+			"m_c has gotten an earache."
 		]
     },
     "constant joint pain": {
@@ -269,7 +269,7 @@
 			"m_c wasn't expecting to faint today, it would seem that {PRONOUN/m_c/poss} allergies are worse than usual this season."
 		],
 		"nosebleed": [
-			"m_c worriedly comes to r_c fearing redcough when a sneeze comes along with blood, thankfully it's just a nosebleed.",
+			"m_c worriedly comes to r_c, fearing redcough when a sneeze comes along with blood. Thankfully, it's just a nosebleed.",
 			"m_c has noticed that all {PRONOUN/m_c/poss} sneezing seems to have led to a nosebleed."
 		]
     },
@@ -296,13 +296,13 @@
 			"m_c fainted trying to power through the day."
 		],
 		"earache": [
-			"r_c's noticed that m_c's dizziness seems even worse than usual and discerns that the cause is an earache.",
+			"r_c has noticed that m_c's dizziness seems even worse than usual, and discerns that the cause is an earache.",
 			"m_c's ears have been aching and hurting recently.",
-			"Poor m_c's noticed that {PRONOUN/m_c/poss} dizziness is accompanied with a sharp pain in the ears recently."
+			"Poor m_c has noticed that {PRONOUN/m_c/poss} dizziness is accompanied with a sharp pain in {PRONOUN/m_c/poss} ears recently."
 		],
 		"nausea": [
 			"r_c brings over some light prey for m_c in the hope that it will sooth {PRONOUN/m_c/poss} nausea.",
-			"Due to how m_c's vision sways {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a little bit nauseous."
+			"Due to how m_c's vision sways, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a bit nauseous."
 		]
     },
     "recurring shock": {
@@ -845,9 +845,9 @@
             "Being a starwalker affects how m_c processes numbers. The medicine cat assures {PRONOUN/m_c/object} that it's okay, m_c just has counting fog."
         ],
 		"nausea": [
-			"When m_c tried to eat, {PRONOUN/m_c/subject} had to quickly turn to r_c and ask for some nausea soothing herbs.",
+			"When m_c tried to eat, {PRONOUN/m_c/subject} had to quickly turn to r_c and ask for some anti-nausea herbs.",
 			"m_c decided to try an old favorite food of {PRONOUN/m_c/inposs}, but {PRONOUN/m_c/subject} ended up not liking it. In fact, its texture and taste made m_c feel nauseous, and {PRONOUN/m_c/subject} now {VERB/m_c/lie/lies} in {PRONOUN/m_c/poss} nest, curled up and hoping that this feeling will go away soon.",
-			"While m_c is hungry, that hunger is manifesting as a case of nausea.",
+			"When m_c is hungry, that hunger manifests as a case of nausea.",
 			"m_c isn't able to finish {PRONOUN/m_c/poss} prey, leaving it half eaten and looking like {PRONOUN/m_c/subject} might be sick."
   		],
 		"parroting": [
@@ -1129,7 +1129,7 @@
 		"earache": [
 			"m_c complains to r_c about the sharp repeating pain within {PRONOUN/m_c/poss} ears.",
 			"m_c keeps shaking {PRONOUN/m_c/poss} head, uselessly trying to dull the pain coming from {PRONOUN/m_c/poss} ears.",
-			"m_c complains to a clanmate about the earache that's plaguing {PRONOUN/m_c/object} this moon."
+			"m_c complains to a Clanmate about the earache that's plaguing {PRONOUN/m_c/object} this moon."
 		]
     },
     "ongoing sleeplessness": {
@@ -1197,12 +1197,12 @@
 			"m_c sheepishly apologises to {PRONOUN/m_c/poss} Clanmates for the scare. It looks like {PRONOUN/m_c/poss} lack of sleep has led to fainting."
 		],
 		"nosebleed": [
-			"r_c fusses over m_c, after {PRONOUN/m_c/subject} walked into a rock and gave {PRONOUN/m_c/self} a nosebleed.",
-			"A Clanmate worriedly asks if m_c's okay noticing that {PRONOUN/m_c/subject} {VERB/m_c/has/have} a nosebleed"
+			"r_c fusses over m_c after {PRONOUN/m_c/subject} walked into a rock and gave {PRONOUN/m_c/self} a nosebleed.",
+			"A Clanmate worriedly asks if m_c's okay after noticing that {PRONOUN/m_c/subject} {VERB/m_c/has/have} a nosebleed."
 		],
 		"earache": [
 			"m_c complains to r_c about an earache.",
-			"Frustrated m_c buries {PRONOUN/m_c/poss} head into the moss hoping it'll dull the pain in {PRONOUN/m_c/poss} ears."
+			"Frustrated, m_c buries {PRONOUN/m_c/poss} head into moss, hoping it'll dull the pain in {PRONOUN/m_c/poss} ears."
 		]
     },
 	"body biter": {
@@ -1240,20 +1240,20 @@
 		],
 		"earache": [
 			"r_c catches m_c scratching at {PRONOUN/m_c/poss} ears until they're sore.",
-			"Chasing an itch within {PRONOUN/m_c/poss} ears, m_c's given {PRONOUN/m_c/self} an earache.",
+			"After chasing an itch within {PRONOUN/m_c/poss} ears, m_c gave {PRONOUN/m_c/self} an earache.",
 			"m_c keeps jabbing {PRONOUN/m_c/poss} claws into {PRONOUN/m_c/poss} ears until it hurts.",
 			"m_c purposely jabbed things into {PRONOUN/m_c/poss} ears."
 		],
 		"ear infection": [
-			"When m_c comes into the medicine den to talk with r_c, {PRONOUN/r_c/subject} is quick to notice that m_c's ears look inflamed.",
-			"After purposely scratching at and putting objects into {PRONOUN/m_c/poss} ears, it's no shock that m_c's gotten an ear infection.",
-			"m_c's gotten an ear infection after putting objects into {PRONOUN/m_c/poss} ears."
-		]		
+			"When m_c comes into the medicine den to talk with r_c, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} quick to notice that m_c's ears look inflamed.",
+			"After purposely scratching at and putting objects into {PRONOUN/m_c/poss} ears, it's no shock that m_c has gotten an ear infection.",
+			"m_c has gotten an ear infection after putting objects into {PRONOUN/m_c/poss} ears."
+		]
 	},
 
     "declawed": {
 		"an infected wound": [
-				"r_c hisses as m_c limps into the medicine den. {PRONOUN/r_c/subject/CAP} {VERB/r_c/don't/doesn't} even have to check to know there's something wrong with m_c's paws.",
+				"r_c hisses as m_c limps into the medicine den. {PRONOUN/r_c/subject/CAP} {VERB/r_c/do/does}n't even have to check to know there's something wrong with m_c's paws.",
 				"m_c can barely walk. {PRONOUN/m_c/poss/CAP} paws are angry and swollen.",
 				"Once again, m_c finds {PRONOUN/m_c/self} cursing the Twolegs who did this to {PRONOUN/m_c/object} as {PRONOUN/m_c/poss} paws burn and ache painfully around {PRONOUN/m_c/poss} toes."
 		],
@@ -1378,11 +1378,11 @@
 				"Awkwardly, m_c moves {PRONOUN/m_c/poss} soiled nesting out of the den."
 		],
 		"nausea": [
-			"When m_c tried to eat, {PRONOUN/m_c/subject} had to quickly turn to r_c and ask for some nausea soothing herbs.",
-			"While m_c is hungry, that hunger is manifesting as a case of nausea.",
+			"When m_c tried to eat, {PRONOUN/m_c/subject} had to quickly turn to r_c and ask for some anti-nausea herbs.",
+			"When m_c is hungry, that hunger manifests as a case of nausea.",
 			"m_c isn't able to finish {PRONOUN/m_c/poss} prey, leaving it half eaten and looking like {PRONOUN/m_c/subject} might be sick."
-		]
-    },
+  		]
+	},
     "snow vision": {
 		"sunblindness": [
 				"m_c loudly complains to r_c about the flares and spots that now take up {PRONOUN/m_c/poss} vision, leaving {PRONOUN/m_c/object} unable to properly see at all.",
@@ -1404,8 +1404,8 @@
 				"m_c just feels so tired all of the time because of {PRONOUN/m_c/poss} persistent cough."
 		],
 		"nosebleed": [
-			"In a bit of a panic m_c goes to r_c about the blood {PRONOUN/m_c/subject} noticed in {PRONOUN/m_c/poss} coughs, after a quick checkover it's established to just be a nosebleed.",
-			"m_c's gotten a nosebleed."
+			"In a bit of a panic, m_c goes to r_c about the blood {PRONOUN/m_c/subject} noticed in {PRONOUN/m_c/poss} coughs, but after a quick checkover, it's established to just be a nosebleed.",
+			"m_c has gotten a nosebleed."
 		]
     },
     "jellyfish joints": {
@@ -1521,12 +1521,12 @@
 		"fatigue": [
 				"r_c has noticed that m_c seems more exhausted than usual recently. After talking with {PRONOUN/m_c/object} {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} reassured that it's just a bit of fatigue.",
 				"Will all the discordant sensations that m_c experiences daily it's not a surprise that {PRONOUN/m_c/subject} {VERB/m_c/find/finds} {PRONOUN/m_c/self} experiencing some fatigue.",
-				"m_c is feeling incredibly worn down and fatiged this season."
+				"m_c is feeling incredibly worn down and fatigued this season."
 		],
 		"earache": [
-			"m_c complains to r_c that all the jumbled sounds around {PRONOUN/m_c/object} has left {PRONOUN/m_c/poss} ears aching.",
-			"Poor m_c is wincing around the camp, extra sensitive due to an earache.",
-			"While sounds are already hard for m_c to discern it's even harder when {PRONOUN/m_c/poss} ears have a sharp pain within."
+			"m_c complains to r_c that all the jumbled sounds around {PRONOUN/m_c/object} {VERB/m_c/have/has} left {PRONOUN/m_c/poss} ears aching.",
+			"Poor m_c is wincing around camp, extra sensitive due to an earache.",
+			"While sounds are already hard for m_c to discern, it's even harder when {PRONOUN/m_c/poss} ears have a sharp pain within."
 		]
 	},
 	"jumbled noise": {
@@ -1552,9 +1552,9 @@
 			"m_c falters, unable to use the words {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to."
 		],
 		"earache": [
-			"m_c complains to r_c that all the jumbled sounds around {PRONOUN/m_c/object} has left {PRONOUN/m_c/poss} ears aching.",
-			"Poor m_c is wincing around the camp, extra sensitive due to an earache.",
-			"While sounds are already hard for m_c to discern it's even harder when {PRONOUN/m_c/poss} ears have a sharp pain within."
+			"m_c complains to r_c that all the jumbled sounds around {PRONOUN/m_c/object} {VERB/m_c/have/has} left {PRONOUN/m_c/poss} ears aching.",
+			"Poor m_c is wincing around camp, extra sensitive due to an earache.",
+			"While sounds are already hard for m_c to discern, it's even harder when {PRONOUN/m_c/poss} ears have a sharp pain within."
 		]
     },
     "constant nightmares": {
@@ -1575,13 +1575,13 @@
 		],
 		"paranoia": [
 				"r_c is surprised to find m_c in the medicine den watching {PRONOUN/r_c/object} with narrowed eyes full of suspicion.",
-				"On edge from {PRONOUN/m_c/poss} disrupted nighmare full sleep, m_c's certain that something is out there, just waiting for the Clan to drop guard.",
+				"On edge from {PRONOUN/m_c/poss} disrupted nightmare full sleep, m_c's certain that something is out there, just waiting for the Clan to drop guard.",
 				"m_c's been insisting on taking every single border patrol possible, antagonizing anyone {PRONOUN/m_c/subject} {VERB/m_c/meet/meets} certain of ill-intent."
 		],
 		"fatigue": [
 				"r_c finds m_c in the back of the medicine den staring at the wall blankly. With a shaky voice m_c asks {PRONOUN/r_c/object} if there's ever going to be an end to these exhausting nightmares.",
 				"m_c really wishes that {PRONOUN/m_c/subject} could feel rested after sleeping.",
-				"All the nightamres that m_c experiences have left {PRONOUN/m_c/object} struggling to look awake during the day."
+				"All the nightmares that m_c experiences have left {PRONOUN/m_c/object} struggling to look awake during the day."
 		]
     },
     "constant rash": {
@@ -1603,11 +1603,11 @@
 		"whitecough": [
 				"As whitecough season comes around again r_c notices that m_c is one of the first in the Clan who's unfortunate enough to catch it.",
 				"With a bit of frustration m_c slinks off to the medicine den to get some help with the bout of whitecough that's caught {PRONOUN/m_c/object}.",
-				"Unfortunately due to {PRONOUN/m_c/poss} rash, m_c's a bit more succeptible to whitecough when it comes around the Clan."
+				"Unfortunately due to {PRONOUN/m_c/poss} rash, m_c's a bit more susceptible to whitecough when it comes around the Clan."
 		],
 		"earache": [
-			"m_c complains loudly to r_c about how scratching at the rash around {PRONOUN/m_c/poss} ears has left them aching and sore.",
-			"It appears that m_c's rash has spread into {PRONOUN/m_c/poss} ears and left them aching.",
+			"m_c loudly complains to r_c about how scratching at the rash around {PRONOUN/m_c/poss} ears has left them aching and sore.",
+			"It appears that m_c's rash has spread into {PRONOUN/m_c/poss} ears and left them achy.",
 			"Some of m_c's Clanmates have grown tired of hearing m_c complain about the itchy soreness within {PRONOUN/m_c/poss} ears."
 		]
     },
@@ -1654,7 +1654,7 @@
 			"Poor m_c's woken up with a headache. Asking for r_c {PRONOUN/m_c/subject} {VERB/m_c/worry/worries} about how it will impair {PRONOUN/m_c/object}.",
 			"Grumbling, m_c makes {PRONOUN/m_c/poss} way to the medicine den to get some herbs to chase away a headache.",
 			"Resolutely m_c ignores the dull throb in {PRONOUN/m_c/poss} head in the hopes that ignoring it will make it vanish.",
-			"After all the squinting m_c's been doing trying to clearly see things, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not suprised to have a bit of a headache.",
+			"After all the squinting m_c's been doing trying to clearly see things, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not surprised to have a bit of a headache.",
 			"Waking up, m_c lets out a small groan. It seems like it will be a bad day with {PRONOUN/m_c/poss} head swimming a bit."
 		],
 		"dizziness": [
@@ -1710,12 +1710,12 @@
 			"m_c staggers when {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to stand up.",
 			"The world tilts around m_c when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up.",
 			"m_c gets dizzy again.",
-			"m_c feels cold and dizy when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
+			"m_c feels cold and dizzy when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
 		],
 		"headache": [
-			"r_c notices m_c whince after standing up.",
+			"r_c notices m_c wince after standing up.",
 			"m_c sighs and ignores the headache {PRONOUN/m_c/subject} {VERB/m_c/get/gets} from {PRONOUN/m_c/poss} blood rushing to {PRONOUN/m_c/poss} head.",
-			"m_c feels cold and dizy for a second before getting a headache.",
+			"m_c feels cold and dizzy for a second before getting a headache.",
 			"m_c shakes the cobwebs out of {PRONOUN/m_c/poss} head when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up and {PRONOUN/m_c/subject} {VERB/m_c/get/gets} a headache."
 		],
 		"fainting": [
@@ -1726,7 +1726,7 @@
 			"m_c feels {PRONOUN/m_c/poss} paws go cold before {PRONOUN/m_c/subject} faint."
 		],
 		"bruises": [
-			"m_c slowly stands up and slinks to r_c. m_c tells r_c that {PRONOUN/m_c/subject} got these bruises when {PRONOUN/m_c/subject} almost fainted and sat back down too sudenly.",
+			"m_c slowly stands up and slinks to r_c. m_c tells r_c that {PRONOUN/m_c/subject} got these bruises when {PRONOUN/m_c/subject} almost fainted and sat back down too suddenly.",
 			"m_c narrowly avoided fainting but got some bruises in the process.",
 			"m_c fell down to avoid fainting and got hurt in the process."
 		],
@@ -1794,7 +1794,8 @@
 	},
 	"excess testosterone": {
 		"pcos": [
-			"After m_c comes to the medicine den asking for more herbs for their cramps, r_c insists on checking up on {PRONOUN/m_c/object}. It appears {PRONOUN/m_c/poss} excess testosterone has resulted in pcos."
+			"After m_c comes to the medicine den asking for more herbs for {PRONOUN/m_c/poss} cramps, r_c insists on checking up on {PRONOUN/m_c/object}. It appears {PRONOUN/m_c/poss} excess testosterone has resulted in pcos.",
+			"After m_c comes to the medicine den asking for more herbs for {PRONOUN/m_c/poss} cramps, the medicine cat insists on checking up on {PRONOUN/m_c/object}. It appears {PRONOUN/m_c/poss} excess testosterone has resulted in pcos."
 		],
 		"infertile": [
 			"r_c explains to m_c that {PRONOUN/m_c/subject} may be infertile due to {PRONOUN/m_c/poss} excess testosterone.",
@@ -1909,7 +1910,7 @@
 			"m_c stood up too fast and ended up crashing back down to the distress of {PRONOUN/m_c/poss} Clanmates.",
 			"m_c fainted trying to power through the day.",
 			"m_c thought {PRONOUN/m_c/subject} could ride out the wave of dizziness, only to wake up on the ground.",
-			"m_c assures {PRONOUN/m_c/poss} clanmates that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine. The fainting spell only lasted a few moments."
+			"m_c assures {PRONOUN/m_c/poss} Clanmates that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine. The fainting spell only lasted a few moments."
 		],
 		"headache":[
 			"m_c knows the day isn't starting well when there's a dull thumping in {PRONOUN/m_c/poss} head.",
@@ -1929,7 +1930,7 @@
 		],
 		"fainting":[
 			"m_c stood up too fast and ended up crashing back down to the distress of {PRONOUN/m_c/poss} Clanmates.",
-			"m_c assures {PRONOUN/m_c/poss} clanmates that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine. The fainting spell only lasted a few moments.",
+			"m_c assures {PRONOUN/m_c/poss} Clanmates that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine. The fainting spell only lasted a few moments.",
 			"m_c thought {PRONOUN/m_c/subject} could ride out the wave of dizziness, only to wake up on the ground."
 		],
 		"headache":[
@@ -1951,7 +1952,7 @@
 			"m_c's knees are sore again."
 		],
 		"joint pain": [
-			"m_c asks a clanmate to get r_c to help {PRONOUN/m_c/object} stretch out {PRONOUN/m_c/poss} legs.",
+			"m_c asks a Clanmate to get r_c to help {PRONOUN/m_c/object} stretch out {PRONOUN/m_c/poss} legs.",
 			"m_c groans in pain when {PRONOUN/m_c/poss} knees hurt too much to get up.",
 			"A hiss comes from m_c's den as {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to get {PRONOUN/m_c/poss} legs comfortable."
 		],
@@ -1960,8 +1961,20 @@
 			"A lot of m_c's Clanmates are worried about {PRONOUN/m_c/object} due to how m_c refuses to move from the sheer pain of it."
 		],
 		"knee locking": [
-			"r_c moves m_c to the medicine den when {PRONOUN/m_c/poss} knees lock up from pain in the middle of the camp.",
-			"m_c tries to get up from {PRONOUN/m_c/poss} nest but collapses back down into it before calling for the medicine cat."
+			"r_c moves m_c to the medicine den after {PRONOUN/m_c/poss} knees lock up from pain in the middle of camp.",
+			"m_c tries to get up from {PRONOUN/m_c/poss} nest, but collapses back down into it before calling for the medicine cat."
 		]
-	}	
+	},
+	"spirited heart": {
+		"anxiety attack": [
+			"m_c spends a few hours convincing a Clanmate to not kill a rabbit kit, and although {PRONOUN/m_c/subject} {VERB/m_c/were/was} successful, it still leaves {PRONOUN/m_c/poss} wracked with anxiety.",
+			"m_c spends a few hours convincing a Clanmate to not kill a rabbit kit, and although {PRONOUN/m_c/subject} {VERB/m_c/were/was} successful, it still leaves {PRONOUN/m_c/poss} wracked with anxiety."
+		]
+	},
+	"face blindness": {
+		"headache": [
+			"m_c finds it difficult to try to focus on the faces of {PRONOUN/m_c/poss} Clanmates today. By the end of the day, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} left with a pounding headache.",
+			"m_c finds it difficult to try to focus on the faces of {PRONOUN/m_c/poss} Clanmates today. By the end of the day, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} left with a pounding headache."
+		]
+	}
 }

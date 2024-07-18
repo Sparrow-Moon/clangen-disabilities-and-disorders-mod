@@ -92,11 +92,11 @@
     {
         "id": "kit_alive_med_cat",
         "thoughts": [
-            "Refuses to eat the herbs the medicine cat has given {PRONOUN/m_c/object} for {PRONOUN/m_c/poss} tummy",
+            "Refuses to eat the herbs r_c has given {PRONOUN/m_c/object} for {PRONOUN/m_c/poss} tummy",
             "Hides in the medicine cat's herb stores",
-            "Is asking the medicine cat about StarClan",
-            "Is asking the medicine cat why all the herbs have to be stinky and gross",
-            "Wants to follow the medicine cat everywhere"
+            "Is asking r_c about StarClan",
+            "Is asking r_c why all the herbs have to be stinky and gross",
+            "Wants to follow r_c everywhere"
         ],
         "random_status_constraint": [
             "medicine cat",
@@ -542,15 +542,15 @@
     {
         "id": "comet_spirit_kit",
         "thoughts": [
-            "Is constantly losing things",
-			"Really upset about something",
+            "Constantly loses things",
+			"Is really upset about something",
 			"Refuses to stay still for grooming",
 			"Attempts to sneak out of camp constantly",
 			"Wants to be free to explore"
         ],
         "perm_conditions": {
             "m_c": [
-                "comet spririt"
+                "comet spirit"
             ]
         }
     },

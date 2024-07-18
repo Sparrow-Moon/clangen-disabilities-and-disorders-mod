@@ -6637,7 +6637,9 @@
                 "cats": [
                     "m_c"
                 ],
-                "scar": "m_c got a constant rash from an encounter with poison ivy."
+                "scar": "m_c got a constant rash from an encounter with poison ivy.",
+                "reg_death": "this should not appear",
+                "lead_death": "this should not appear"
             }
         ]
     },
@@ -6690,7 +6692,9 @@
                 "cats": [
                     "m_c"
                 ],
-                "scar": "m_c got a constant rash from an encounter with poison ivy."
+                "scar": "m_c got a constant rash from an encounter with poison ivy.",
+                "reg_death": "this should not appear",
+                "lead_death": "this should not appear"
             }
         ]
     },
@@ -7921,31 +7925,39 @@
                 "adjust": "reduce_eighth"
             }
         ]
-    },,
+    },
     {
         "event_id": "gen_injury_severetickbites_anysenioradultsenior1",
         "location": ["any"],
         "season": ["any"],
-        "weight": 20,
-        "event_text": "Where ordinarily m_c would be complaining about the itchy tick bites dotting {PRONOUN/m_c/poss} pelt, now {PRONOUN/m_c/subject} {VERB/m_c/sit/sits} silent with them.",
+        "weight": 5,
+        "event_text": "Where ordinarily, m_c would be complaining about the itchy tick bites dotting {PRONOUN/m_c/poss} pelt, {PRONOUN/m_c/subject} now {VERB/m_c/sit/sits} silently.",
         "m_c": {
             "age": [
                 "senior adult",
                 "senior"
             ],
-            "status": ["any"]
+            "status": [
+                "any"
+            ]
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["severe tick bites"]
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "severe tick bites"
+                ]
             }
         ],
 		"history": [
 		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
+			  "cats": [
+                  "m_c"
+              ],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
 		  }
         ]
     },
@@ -7953,14 +7965,16 @@
         "event_id": "gen_injury_severetickbites_anysenioradultsenior2",
         "location": ["any"],
         "season": ["any"],
-        "weight": 20,
-        "event_text": "m_c started the day yowling about {PRONOUN/m_c/poss} ticks, now though, worringly {PRONOUN/m_c/poss} yowling has fallen quiet and slurred.",
+        "weight": 5,
+        "event_text": "m_c started the day yowling about {PRONOUN/m_c/poss} ticks, but now, {PRONOUN/m_c/poss} yowling has fallen quiet and slurred.",
         "m_c": {
             "age": [
                 "senior adult",
                 "senior"
             ],
-            "status": ["any"],
+            "status": [
+                "any"
+            ],
             "trait": [
                 "cold",
                 "fierce",
@@ -7973,15 +7987,21 @@
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["severe tick bites"]
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "severe tick bites"
+                ]
             }
         ],
 		"history": [
 		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
+			  "cats": [
+                  "m_c"
+              ],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
 		  }
         ]
     },
@@ -7990,14 +8010,16 @@
         "location": ["any"],
         "season": ["any"],
         "tags": ["clan:apprentice"],
-        "weight": 20,
-        "event_text": "With a pointed tone, m_c reminds other cats that {PRONOUN/m_c/poss} ticks haven't been seen to. Each time {PRONOUN/m_c/subject} {VERB/m_c/repeat/repeats} the statement it's more slurred.",
+        "weight": 5,
+        "event_text": "With a pointed tone, m_c reminds other cats that {PRONOUN/m_c/poss} ticks haven't been seen to. Each time {PRONOUN/m_c/subject} {VERB/m_c/repeat/repeats} the statement, it's more slurred.",
         "m_c": {
             "age": [
                 "senior adult",
                 "senior"
             ],
-            "status": ["any"],
+            "status": [
+                "any"
+            ],
             "trait": [
                 "cold",
                 "fierce",
@@ -8010,15 +8032,21 @@
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["severe tick bites"]
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "severe tick bites"
+                ]
             }
         ],
 		"history": [
 		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
+			  "cats": [
+                  "m_c"
+              ],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
 		  }
         ]
     },
@@ -8026,14 +8054,16 @@
         "event_id": "gen_injury_severetickbites_anysenioradultsenior4",
         "location": ["any"],
         "season": ["any"],
-        "weight": 20,
-        "event_text": "m_c's quietly been getting more frustrated by {PRONOUN/m_c/poss} tick bites, refusing to bother anyone with the issue. It becomes very clear something is wrong when {PRONOUN/m_c/subject} {VERB/m_c/fall/falls} over in the nest.",
+        "weight": 5,
+        "event_text": "m_c has quietly been getting more frustrated by {PRONOUN/m_c/poss} tick bites, but {PRONOUN/m_c/subject} {VERB/m_c/refuse/refuses} to bother anyone with the issue. However, it becomes very clear something is wrong when {PRONOUN/m_c/subject} {VERB/m_c/fall/falls} over in {PRONOUN/m_c/poss} nest.",
         "m_c": {
             "age": [
                 "senior adult",
                 "senior"
             ],
-            "status": ["any"],
+            "status": [
+                "any"
+            ],
             "trait": [
                 "calm",
                 "careful",
@@ -8046,7 +8076,9 @@
         },
         "injury": [
             {
-                "cats": ["m_c"],
+                "cats": [
+                    "m_c"
+                ],
                 "injuries": [
                     "severe tick bites"
                 ]
@@ -8054,9 +8086,11 @@
         ],
 		"history": [
 		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
+			  "cats": [
+                  "m_c"
+              ],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
 		  }
         ]
     },
@@ -8095,67 +8129,25 @@
         "location": ["any"],
         "season": ["any"],
         "weight": 20,
-        "event_text": "During tick duty m_c wasn't paying attention and as a result has gotten a number of itchy tick bites of {PRONOUN/m_c/poss} own.",
+        "event_text": "During tick duty, m_c wasn't paying attention and as a result has gotten a number of itchy tick bites of {PRONOUN/m_c/poss} own.",
         "m_c": {
             "age": [
                 "any"
             ],
             "status": [
-				"apprentice", 
-				"medicine cat apprentic"
+				"apprentice",
+				"medicine cat apprentice"
 			]
         },
         "injury": [
             {
-                "cats": ["m_c"],
+                "cats": [
+                    "m_c"
+                ],
                 "injuries": [
                     "tick bites"
                 ]
             }
-        ]
-    },
-    {
-        "event_id": "gen_injury_severetickbites_helper0",
-        "location": ["any"],
-        "season": ["any"],
-        "weight": 20,
-        "event_text": "During tick duty poor m_c suffered from some tick bites {PRONOUN/m_c/self}. It's left {PRONOUN/m_c/object} disoriented and stumbling around the camp.",
-        "m_c": {
-            "age": [
-                "any"
-            ],
-            "status": [
-				"apprentice", 
-				"medicine cat apprentic",
-				"medicine cat"
-			],
-            "trait": [
-                "any"
-            ]
-        },
-		"r_c": {
-			"age": [
-				"senior adult",
-				"senior"
-			],
-			"status": [
-				"any"
-			]
-		},
-        "injury": [
-            {
-                "cats": ["m_c"],
-                "injuries": [
-                    "severe tick bites"
-                ]
-            }
-        ],
-		"history": [
-		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
-		  }
         ]
     },
     {
@@ -8163,22 +8155,18 @@
         "location": ["any"],
         "season": ["any"],
         "weight": 20,
-        "event_text": "After helping r_c out with {PRONOUN/r_c/poss} ticks m_c stumbles, limbs not properly responding, it appears that {PRONOUN/m_c/subject} got bitten by the ticks {PRONOUN/m_c/self}.",
+        "event_text": "During tick duty, poor m_c suffered from some tick bites {PRONOUN/m_c/self}. It's left {PRONOUN/m_c/object} disoriented and stumbling around camp.",
         "m_c": {
             "age": [
                 "any"
             ],
             "status": [
-				"apprentice", 
-				"medicine cat apprentic",
+				"apprentice",
+				"medicine cat apprentice",
 				"medicine cat"
 			],
             "trait": [
-                "calm",
-                "compassionate",
-                "dreamer",
-				"faithful",
-				"loving",
+                "any"
             ]
         },
 		"r_c": {
@@ -8192,17 +8180,20 @@
 		},
         "injury": [
             {
-                "cats": ["m_c"],
+                "cats": [
+                    "m_c"
+                ],
                 "injuries": [
-                    "tick bites"
+                    "severe tick bites"
                 ]
             }
         ],
 		"history": [
 		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
+			  "cats": [
+                  "m_c"],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
 		  }
         ]
     },
@@ -8211,14 +8202,67 @@
         "location": ["any"],
         "season": ["any"],
         "weight": 20,
-        "event_text": "Because m_c wasn't paying attention while on tick duty {PRONOUN/m_c/subject} {VERB/m_c/have/has} suffered from some bites of {PRONOUN/m_c/poss} own, and it's paralysis tick season.",
+        "event_text": "After helping r_c out with {PRONOUN/r_c/poss} ticks, m_c stumbles, {PRONOUN/m_c/poss} limbs not properly responding. It appears that {PRONOUN/m_c/subject} got bitten by the ticks {PRONOUN/m_c/self}.",
         "m_c": {
             "age": [
                 "any"
             ],
             "status": [
-				"apprentice", 
-				"medicine cat apprentic",
+				"apprentice",
+				"medicine cat apprentice",
+				"medicine cat"
+			],
+            "trait": [
+                "calm",
+                "compassionate",
+                "dreamer",
+				"faithful",
+				"loving"
+            ]
+        },
+		"r_c": {
+			"age": [
+				"senior adult",
+				"senior"
+			],
+			"status": [
+				"any"
+			]
+		},
+        "injury": [
+            {
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "severe tick bites"
+                ]
+            }
+        ],
+		"history": [
+		  {
+			  "cats": [
+                  "m_c"
+              ],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
+		  }
+        ]
+    },
+    {
+        "event_id": "gen_injury_severetickbites_helper3",
+        "location": ["any"],
+        "season": ["any"],
+        "tags": ["clan:medicine cat"],
+        "weight": 20,
+        "event_text": "Because m_c wasn't paying attention while on tick duty, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} suffered from some bites of {PRONOUN/m_c/poss} own. Something seems wrong, though, and the medicine cat worries - it's paralysis tick season.",
+        "m_c": {
+            "age": [
+                "any"
+            ],
+            "status": [
+				"apprentice",
+				"medicine cat apprentice",
 				"medicine cat"
 			],
             "trait": [
@@ -8230,7 +8274,9 @@
         },
         "injury": [
             {
-                "cats": ["m_c"],
+                "cats": [
+                    "m_c"
+                ],
                 "injuries": [
                     "severe tick bites"
                 ]
@@ -8238,9 +8284,11 @@
         ],
 		"history": [
 		  {
-			  "cats": ["m_c"],
-			  "reg_death": "m_c died from severe tick bites.",
-			  "lead_death": "m_c {VERB/m_c/were/was} killed by the complications of severe tick bites."
+			  "cats": [
+                  "m_c"
+              ],
+			  "reg_death": "m_c killed by complications from severe tick bites.",
+			  "lead_death": "killed by complications from severe tick bites"
 		  }
         ]
     },
@@ -8466,18 +8514,24 @@
         "event_id": "gen_injury_earache_any1",
         "location": ["any"],
         "season": ["any"],
-        "weight": 20,
-        "event_text": "Poor m_c's had the unfortunate luck to get an earache this moon.",
+        "weight": 10,
+        "event_text": "Poor m_c has had the unfortunate luck to get an earache this moon.",
         "m_c": {
             "age": [
                 "any"
             ],
-            "status": ["any"]
+            "status": [
+                "any"
+            ]
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["earache"]
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "earache"
+                ]
             }
         ]
     },
@@ -8486,18 +8540,23 @@
         "location": ["any"],
         "season": ["any"],
         "tags": ["clan:medicine cat"],
-        "weight": 20,
-        "event_text": "After m_c visits the medicine den for some dizziness it's revealed that the cause is an earache.",
+        "weight": 10,
+        "event_text": "After m_c visits the medicine den for some dizziness, it's revealed that the cause is an earache.",
         "m_c": {
             "age": [
                 "any"
             ],
-            "status": ["any"]
+            "status": [
+                "any"
+            ]
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["earache"]
+                "cats": [
+                    "m_c"],
+                "injuries": [
+                    "earache"
+                ]
             }
         ]
     },
@@ -8506,17 +8565,23 @@
         "location": ["any"],
         "season": ["any"],
         "weight": 20,
-        "event_text": "Despite sleeping, m_c still feels absolutely exhausted, it would seem that {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten some fatigue.",
+        "event_text": "Despite sleeping, m_c still feels absolutely exhausted, it seems that {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten some fatigue.",
         "m_c": {
             "age": [
                 "any"
             ],
-            "status": ["any"]
+            "status": [
+                "any"
+            ]
         },
         "injury": [
             {
-                "cats": ["m_c"],
-                "injuries": ["fatigue"]
+                "cats": [
+                    "m_c"
+                ],
+                "injuries": [
+                    "fatigue"
+                ]
             }
         ]
     },

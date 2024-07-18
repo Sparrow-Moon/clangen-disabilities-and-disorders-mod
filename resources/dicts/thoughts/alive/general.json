@@ -2211,16 +2211,16 @@
 			"Is feeling exhausted and pleased",
 			"Doesn't want to admit {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} in a lot of pain",
 			"Curls up in the den extra tightly",
-			"Is trying out a new herbal painkiller from the med cat",
+			"Tries out a new herbal painkiller from the medicine cat",
 			"Feels awful today",
-			"Thinks {PRONOUN/m_c/subject} know exactly what the weather will be for the rest of the day",
+			"Thinks {PRONOUN/m_c/subject} {VERB/m_c/know/knows} exactly what the weather will be for the rest of the day",
 			"Is extra achy today",
 			"Keeps {PRONOUN/m_c/self} as far away from anyone as {PRONOUN/m_c/subject} can",
-			"Complaining about back pain",
-			"Complaining about paw pain",
+			"Is complaining about back pain",
+			"Is complaining about paw pain",
 			"Worries about the ants under {PRONOUN/m_c/poss} skin",
 			"Talks to r_c about {PRONOUN/m_c/poss} insecurities",
-			"Feels useless when in so much pain",
+			"Feels useless when {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} in this much pain",
 			"Worries that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a burden to c_n",
 			"Has a lot of pain in {PRONOUN/m_c/poss} paws",
 			"Thought {PRONOUN/m_c/subject} dislocated a paw",
@@ -2559,19 +2559,19 @@
         ]
     },
     {
-        "id": "grieving_gen",
+        "id": "lasting_grief_to_dead_relation",
         "thoughts": [
-            "Feels like {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to be alone for today",
-			"Is missing r_c like {PRONOUN/r_c/subject} vanished yesterday",
-			"Wonders if r_c is alright wherever {PRONOUN/r_c/subject} are",
-			"Thought they saw r_c the other day... but it was only a trick of light",
+            "Wants to be alone for today",
+			"Misses r_c like {PRONOUN/r_c/subject} vanished yesterday",
+			"Wonders if r_c is alright wherever {PRONOUN/r_c/subject} {VERB/m_c/are/is}",
+			"Thought {PRONOUN/m_c/subject} saw r_c the other day... but it was only a trick of light",
 			"Wonders if this grief will ever leave {PRONOUN/m_c/object}",
-			"Curls up in the den and refuses to leave",
-			"Wanders around the camp listlessly looking for a cat who's not there",
-			"Is feeling sad today",
+			"Curls up in {PRONOUN/m_c/poss} nest and refuses to leave",
+			"Wanders around camp listlessly, looking for a cat who's not there",
+			"Feels sad today",
 			"Looks up at the stars and wonders if r_c is looking back",
 			"Wonders if r_c found {PRONOUN/r_c/poss} way safely to StarClan or not",
-			"Cries at the realisation the last of r_c's scent has left the den"
+			"Cries at the realization the last of r_c's scent has left the den"
         ],
         "perm_conditions": {
             "m_c": [
@@ -2585,7 +2585,7 @@
 			"app/mentor",
 			"mates",
 			"littermates"
-        ],		
+        ],
         "random_living_status": [
             "starclan",
 			"darkforest",
@@ -2651,19 +2651,19 @@
 			"Volunteered to guard the camp... mostly so {PRONOUN/m_c/subject} didn't make a fool of {PRONOUN/m_c/self}",
 			"Worries {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} out too much",
 			"Worries {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} stand out enough",
-			"Somehow is convinced that nobody in the c_n cares about {PRONOUN/m_c/object}",
+			"Is somehow convinced that nobody in the c_n cares about {PRONOUN/m_c/object}",
 			"Keeps scratching at everything {PRONOUN/m_c/subject} can",
 			"Scratches random objects to get {PRONOUN/m_c/poss} anxious energy out",
-			"Is cleaning up excess shed fur",
+			"Cleans up excess shed",
 			"Worries about {PRONOUN/m_c/poss} shedding",
 			"Struggles to communicate {PRONOUN/m_c/poss} needs",
 			"Lost sight of the patrol and thought {PRONOUN/m_c/subject} {VERB/m_c/were/was} abandoned",
-			"Is uneasily trying to predict the weather",
+			"Uneasily tries to predict the weather",
 			"Cries when r_c asks a simple question",
-			"Wondering if {PRONOUN/m_c/subject} {VERB/m_c/are/is} a traitor",
+			"Wonders if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} a traitor",
 			"Confessed to something small that {PRONOUN/m_c/subject} {VERB/m_c/think/thinks} is bothering others",
 			"Thinks that r_c is mad at {PRONOUN/m_c/object}",
-			"Worries about how many twolegs are coming around"
+			"Worries about how many Twolegs are roaming around"
         ],
         "perm_conditions": {
             "m_c": [
@@ -2802,10 +2802,10 @@
 			"Got side-tracked talking to r_c",
 			"Is entertaining the kits with silly stories",
 			"Lost track of time again",
-			"Realises that {PRONOUN/m_c/subject} forgot to eat",
-			"Lost the cool item {PRONOUN/m_c/subject} just had two ear-flicks ago",
-			"Is distressed looking for something",
-			"Tripped over {PRONOUN/m_c/poss} own paws moving too fast",
+			"Realizes that {PRONOUN/m_c/subject} forgot to eat",
+            "Lost the cool item {PRONOUN/m_c/subject} just had two ear-flicks ago",
+			"Is distressed, looking for something",
+			"Trips over {PRONOUN/m_c/poss} own paws moving too fast",
 			"Has asked r_c the same question three times in the past hour",
 			"Can't stay still",
 			"Feels certain {PRONOUN/m_c/subject} forgot something important...",
@@ -2813,7 +2813,7 @@
 			"Can't start a task for who knows what reason",
 			"Cries to r_c about {PRONOUN/m_c/poss} frustration",
 			"Wonders if {PRONOUN/m_c/subject} really {VERB/m_c/are/is} just lazy",
-			"Accidentally marked the wrong borderline",
+			"Accidentally marked the wrong border",
 			"Got into an argument about something small with r_c"
         ],
         "perm_conditions": {
@@ -2876,10 +2876,10 @@
 			"Has been talking to the air",
 			"Has been talking to {PRONOUN/m_c/self}",
 			"Is not feeling enough emotions",
-			"Finally got some sleep but it didn't help",
+			"Finally got some sleep, but it didn't help",
 			"Feels more exhausted after sleeping",
-			"Had the worst sleep in the world",
-			"Declares sleep is for the weak"
+			"Just had the worst sleep in the whole Clans",
+			"Declares that sleep is for the weak"
         ],
         "perm_conditions": {
             "m_c": [
@@ -3818,11 +3818,11 @@
     {
         "id": "gen_nausea",
         "thoughts": [
-            "Struggles to determine if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sick nauseous or hungry",
+            "Struggles to determine if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sick nauseous or just hungry",
 			"Is frowning at {PRONOUN/m_c/poss} prey",
 			"Dry heaves in the corner of the den",
 			"Races out of the camp due to a scent making things worse",
-			"Buries {PRONOUN/m_c/self} in the den",
+			"Buries {PRONOUN/m_c/self} in {PRONOUN/m_c/poss} nest",
 			"Feels miserable at the thought of eating",
 			"Slowly sips water trying to sooth the nausea"
         ],

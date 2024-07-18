@@ -976,7 +976,7 @@ class MakeClanScreen(Screens):
                 else:
                     perm_cond_text += ":\n"
                 for condition in selected.permanent_condition:
-                    perm_cond_text += str(condition) + "\n"
+                    perm_cond_text += self.change_condition_name(str(condition)) + "\n"
                 perm_cond_text = perm_cond_text[:-1]
 
                 self.elements["cat_info"].set_text(
@@ -1010,6 +1010,14 @@ class MakeClanScreen(Screens):
             self.elements["next_step"].disable()
             self.elements["cat_info"].hide()
             self.elements["cat_name"].hide()
+
+    @staticmethod
+    def change_condition_name(condition):
+        if not game.settings["warriorified names"]:
+            if condition in Cat.dad_names:
+                condition = condition.replace(condition, Cat.dad_names.get(condition))
+
+        return condition
 
     def refresh_cat_images_and_info(self, selected=None):
         """Update the image of the cat selected in the middle. Info and image.

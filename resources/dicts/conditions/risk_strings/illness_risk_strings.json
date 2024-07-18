@@ -22,8 +22,8 @@
 		],
 		"nosebleed": [
 			"r_c reassures m_c that {PRONOUN/m_c/subject} just {VERB/m_c/have/has} a simple nosebleed.",
-			"In the midst of all m_c's coughing and sneezing {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
-			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose has resulted in a nosebleed."
+			"In the midst of all m_c's coughing and sneezing, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
+			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose {VERB/m_c/have/has} resulted in a nosebleed."
 		]
     },
     "kittencough": {
@@ -32,7 +32,7 @@
             "m_c coughs pathetically, wondering why it's not getting better - and why {PRONOUN/m_c/subject} {VERB/m_c/have/has} to be in the stinky medicine den now."
         ],
 		"nosebleed": [
-			"r_c reassures m_c's worried parents that {PRONOUN/m_c/poss} bleeding nose is not redcough.",
+			"r_c reassures m_c's worried parent that {PRONOUN/m_c/poss} bleeding nose is not redcough.",
 			"m_c's kittencough appears to have come along with a nosebleed."
 		]
     },
@@ -46,7 +46,7 @@
 		"nosebleed": [
 			"It's all that r_c can do to help m_c with the additional nosebleed alongside {PRONOUN/m_c/poss} redcough.",
 			"m_c's struggle to breathe only becomes worse as {PRONOUN/m_c/poss} nose freely bleeds."
-		]	
+		]
 	},
     "running nose": {
         "whitecough": [
@@ -60,7 +60,7 @@
 			"Miserably, m_c coughs and sneezing {PRONOUN/m_c/poss} way to the medicine den, it seems {PRONOUN/m_c/poss} running nose has turned into silvercough."
 		],
 		"nosebleed": [
-			"Concerned m_c goed to r_c about the nosebleed that {PRONOUN/m_c/poss} running nose has turned into.",
+			"Concerned, m_c goes to r_c about the nosebleed that {PRONOUN/m_c/poss} running nose has turned into.",
 			"m_c has noticed that the fluid running from {PRONOUN/m_c/poss} nose appears to be blood."
 		]
     },
@@ -75,8 +75,8 @@
 		],
 		"nosebleed": [
 			"r_c reassures m_c that {PRONOUN/m_c/subject} just {VERB/m_c/have/has} a simple nosebleed.",
-			"In the midst of all m_c's coughing and sneezing {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
-			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose has resulted in a nosebleed."
+			"In the midst of all m_c's coughing and sneezing, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
+			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose {VERB/m_c/have/has} resulted in a nosebleed."
 		]
     },
     "silvercough": {
@@ -86,8 +86,8 @@
         ],
 		"nosebleed": [
 			"r_c reassures m_c that {PRONOUN/m_c/subject} just {VERB/m_c/have/has} a simple nosebleed.",
-			"In the midst of all m_c's coughing and sneezing {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
-			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose has resulted in a nosebleed."
+			"In the midst of all m_c's coughing and sneezing, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
+			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose {VERB/m_c/have/has} resulted in a nosebleed."
 		]
     },
     "yellowcough": {
@@ -97,8 +97,8 @@
         ],
 		"nosebleed": [
 			"r_c reassures m_c that {PRONOUN/m_c/subject} just {VERB/m_c/have/has} a simple nosebleed.",
-			"In the midst of all m_c's coughing and sneezing {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
-			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose has resulted in a nosebleed."
+			"In the midst of all m_c's coughing and sneezing, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} gotten a nosebleed.",
+			"All of m_c's attempts to clear {PRONOUN/m_c/poss} nose {VERB/m_c/have/has} resulted in a nosebleed."
 		]
     },
     "heat exhaustion": {
@@ -107,15 +107,15 @@
             "m_c rolls around dazedly in {PRONOUN/m_c/poss} nest, searching for a cooler spot. {PRONOUN/m_c/poss/CAP} exhaustion is beyond just a little thing and {PRONOUN/m_c/poss} confused brain still has enough observational power to recognise full heat stroke."
         ],
 		"nosebleed": [
-			"r_c desperately presses the damp moss to m_c's forehead, calling for a Clanmate to assist and get cleaner moss as {PRONOUN/m_c/poss} nose starts to bleed.",
-			"Weakly m_c pants, struggling to cleanly breathe as {PRONOUN/m_c/poss} nose begins to bleed.",
-			"The heat exhaustion that m_c has led to a nosebleed."
+			"r_c desperately presses damp moss to m_c's forehead, calling for a Clanmate to assist and get cleaner moss as {PRONOUN/m_c/poss} nose starts to bleed.",
+			"m_c weakly pants, struggling to properly breathe as {PRONOUN/m_c/poss} nose begins to bleed.",
+			"The heat exhaustion that m_c has has led to a nosebleed."
 		]
     },
 	"heat stroke": {
 		"fainting": [
 			"As if m_c's heat stroke isn't already terrifying, r_c now has to monitor {PRONOUN/m_c/object} through a fainting spell.",
-			"m_c's fainted from the effects of {PRONOUN/m_c/poss} heat stroke."
+			"m_c has fainted from the effects of {PRONOUN/m_c/poss} heat stroke."
 		]
 	},
     "stomachache": {
@@ -132,8 +132,8 @@
 			"While m_c's stomachache has passed there's a lingering sense that something within is wrong. {PRONOUN/m_c/subject/CAP} still {VERB/m_c/feel/feels} a bit bloated and off."
 		],
 		"nausea": [
-			"r_c has noticed that m_c is struggling to eat, it appears that {PRONOUN/m_c/poss} stomachache has left {PRONOUN/m_c/object} with nausea.",
-			"The aching in m_c's stomache has resulted in nausea."
+			"r_c has noticed that m_c is struggling to eat, it appears that {PRONOUN/m_c/poss} stomachache has left {PRONOUN/m_c/object} nauseous.",
+			"The aching in m_c's stomach has resulted in some nausea."
 		]
 	},
     "nightmares": {
@@ -199,7 +199,7 @@
 	"anxiety attack": {
 		"panic attack": [
 			"r_c carefully remains outside of m_c's personal space and attempts to count with {PRONOUN/m_c/object}, desperately hoping the distraction will prevent {PRONOUN/m_c/poss} anxiety from further progressing to full panic.",
-			"m_c's tail lashes, eyes darting around the camp. {PRONOUN/m_c/poss/CAP} paws dig into the dirt of the denfloor and {PRONOUN/m_c/subject} {VERB/m_c/look/looks} moments away from bolting at the slightest movement.",
+			"m_c's tail lashes, eyes darting around the camp. {PRONOUN/m_c/poss/CAP} paws dig into the dirt of the den floor and {PRONOUN/m_c/subject} {VERB/m_c/look/looks} moments away from bolting at the slightest movement.",
 			"Instead of fading the anxiety only seems to build and build until m_c feels like {PRONOUN/m_c/subject} can't breathe, everything is dangerous and wrong and {PRONOUN/m_c/subject} {VERB/m_c/need/needs} out, out.",
 			"It's irrational, there's nothing there, {PRONOUN/m_c/subject} {VERB/m_c/are/is} not in any danger here. m_c keeps reminding {PRONOUN/m_c/self} over and over as {PRONOUN/m_c/poss} chest grows tighter and tighter.",
 			"{PRONOUN/m_c/subject} can't breathe, m_c can't breathe drowning on land, drowning in the panic that floods {PRONOUN/m_c/poss} body putting all {PRONOUN/m_c/poss} fur on end."
@@ -211,15 +211,15 @@
 			"While there is no reason to worry m_c refuses to see it that way and stands stiffly at the camp entry fur all on end and ears raised to hear absolutely everything."
 		],
 		"tic": [
-			"r_c calmly explains that this sometimes happens to cats who are panicing. This doesn't help soothe m_c's mind or twitching tail.",
+			"r_c calmly explains that this sometimes happens to cats who are panicking. This doesn't help soothe m_c's mind or twitching tail.",
 			"When m_c squeaks and can't stop squeaking during {PRONOUN/m_c/poss} anxiety attack."
 		],
 		"tic attack":[
-			"r_c calmly explains that what m_c is experincing is a tic attack.",
+			"r_c calmly explains that what m_c is experiencing is a tic attack.",
 			"m_c can't control {PRONOUN/m_c/poss} movement during {PRONOUN/m_c/poss} anxiety attack."
 		],
 		"nausea": [
-			"m_c admits to r_c that due to {PRONOUN/m_c/poss} anxiety {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} incredibly nauseous.",
+			"m_c admits to r_c that due to {PRONOUN/m_c/poss} anxiety, {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} incredibly nauseous.",
 			"All of m_c's anxieties have left {PRONOUN/m_c/object} feeling rather nauseous."
 		]
 	},
@@ -250,7 +250,7 @@
 			"From all of the panic m_c's head is spinning and {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} not sure {PRONOUN/m_c/subject} can trust {PRONOUN/m_c/poss} own paws."
 		],
 		"tic": [
-			"Heart pounding, and claws sheathing and unsheathing, m_c goes to r_c to ask what's going on! Unortunatly for m_c, r_c can't help with {PRONOUN/m_c/poss} ticing.",
+			"Heart pounding, and claws sheathing and unsheathing, m_c goes to r_c to ask what's going on! Unfortunately for m_c, r_c can't help with {PRONOUN/m_c/poss} ticing.",
 			"{PRONOUN/m_c/poss/CAP} anxiety attack has caused m_c to start ticing.",
 			"Adding to m_c's panic, {PRONOUN/m_c/poss} body has started moving without {PRONOUN/m_c/poss} say so."
 		],

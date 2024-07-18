@@ -803,9 +803,16 @@ def create_new_cat(
                     neutered_this_moon = True
             if kittypet and randint(1, 3) == 1 and age > 1 and not new_cat.neutered:
                 new_cat.vaccinated = True
+            if not kittypet and new_cat.vaccinated and not new_cat.neutered:  # Maybe fixed a bug?
+                new_cat.neutered = True
+                neutered_this_moon = True
 
             if neutered_this_moon and ((kittypet and age > 12 and randint(1, 10) == 1) or loner or other_clan):
                 cat_gain_age = randint(3, age)
+                if kittypet and age > 24:
+                    cat_gain_age = randint(3, 24)
+                elif kittypet:
+                    cat_gain_age = randint(3, 12)
                 clan_gain_moon = (age - cat_gain_age) + (int(game.clan.age) - age)
                 if clan_gain_moon < 0:
                     clan_gain_moon = 0

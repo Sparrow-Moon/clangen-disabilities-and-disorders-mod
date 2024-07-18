@@ -266,20 +266,20 @@
             "m_c got badly hurt when {PRONOUN/m_c/subject} fainted.",
             "m_c got head damaged after {PRONOUN/m_c/subject} fainted."
         ]
-    },		
+    },
 	"ashcough": {
 		"redcough": [
-			"As the black ash and smoke filling m_c's coughing turns to red r_c knows that death is likely days away now.",
-			"m_c weakly coughs, rasping on every breath, the red mixing with dark ash tells all."
+			"As the black ash and smoke fills m_c's lungs, {PRONOUN/m_c/poss} coughs turn red. r_c knows that death is likely days away now.",
+			"As m_c weakly coughs, rasping on every breath, the red mixing with dark ash tells all."
 		]
 	},
 	"severe tick bites": {
         "an infected wound": [
-            "r_c sighs, and tries to gently extract the head of the tick that was left when the insect was plucked off of m_c. With the contaminant, the little tick bite has become infected.",
+            "r_c sighs and tries to gently extract the head of the tick that was left behind when the insect was plucked off of m_c. With that contaminant, the little tick bite has become infected.",
             "The tick on m_c was left for far too long. The area is now swollen and warm - definite signs of infection."
         ],
 		"spasms": [
-			"Worryingly m_c's limbs are beginning to spasm and jerk around {PRONOUN/m_c/object}. While {PRONOUN/m_c/subject} {VERB/m_c/attempt/attempts} to recover in the medicine den, r_c reexamines the removed ticks {PRONOUN/r_c/subject} {VERB/r_c/have/has} to inform the clan of the risk these ticks may pose.",
+			"Worryingly, m_c's limbs are beginning to spasm and jerk around {PRONOUN/m_c/object}. While {PRONOUN/m_c/subject} {VERB/m_c/attempt/attempts} to recover in the medicine den, r_c reexamines the removed ticks {PRONOUN/r_c/subject} {VERB/r_c/have/has} to inform the Clan of the risk these ticks may pose.",
 			"Alongside the tick bites, m_c has noticed that {PRONOUN/m_c/poss} limbs seem to have gained their own opinions on things.",
 			"m_c jerks around in {PRONOUN/m_c/poss} nest, awkwardly flailing a paw around without any real ability to stop it."
 		]

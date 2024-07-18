@@ -96,6 +96,56 @@ class Cat:
         "master": (321, 321),
     }
 
+    dad_names = {
+        "starwalker": "autism",
+        "obsessive mind": "OCD",
+        "heavy soul": "chronic depression",
+        "comet spirit": "ADHD",
+        "antisocial": "ASPD",
+        "constant roaming pain": "fibromyalgia",
+        "ongoing sleeplessness": "chronic insomnia",
+        "body biter": "BFRD",
+        "thunderous spirit": "BPD",
+        "otherworldly mind": "schizophrenia",
+        "snow vision": "visual snow",
+        "kitten regressor": "age regressor",
+        "puppy regressor": "pet regressor",
+        "irritable bowels": "IBS",
+        "jellyfish joints": "HSD",
+        "loose body": "hEDS",
+        "burning light": "chronic light sensitivity",
+        "jumbled noise": "APD",
+        "disrupted senses": "SPD",
+        "constant rash": "eczema",
+        "chattering tongue": "tourette's",
+        "falling paws": "orthostatic hypotension",
+        "shattered soul": "DID",
+        "budding spirit": "OSDD",
+        "curved spine": "scoliosis",
+        "jumbled mind": "dyslexia",
+        "counting fog": "dyscalculia",
+        "spirited heart": "hyperempathy",
+        "puzzled heart": "low empathy",
+        "parrot chatter": "echolalia",
+        "thought blind": "aphantasia",
+        "vivid daydreamer": "maladaptive daydreamer",
+        "frequent fainting": "vasovagal syncope",
+        "flooded paws": "POTS",
+        "bad knee": "meniscus tear",
+
+        "sunblindness": "light sensitivity",
+        "faux pregnant": "phantom pregnancy",
+
+        "seasonal lethargy": "seasonal depression",
+        "lethargy": "depression",
+        "turmoiled litter": "postpartum",
+        "sleeplessness": "insomnia",
+        "ear buzzing": "tinnitus",
+        "kittenspace": "littlespace",
+        "puppyspace": "petspace",
+        "parroting": "echolalia"
+    }
+
     default_pronouns = [
         {
             "subject": "they",
@@ -2540,11 +2590,12 @@ class Cat:
                                 with open('resources/dicts/names/names.json') as read_file:
                                     names_dict = ujson.loads(read_file.read())
                                     if self.name.suffix not in names_dict["normal_plural_suffixes"] and self.name.suffix not in names_dict["leader_plural_suffixes"]:
+                                        self.specsuffix_hidden = True
                                         plural = choice(names_dict["normal_plural_suffixes"])
                                         old_suffix = self.name.suffix
                                         if self.status == "leader":
-                                            self.specsuffix_hidden = True
                                             plural = choice(names_dict["leader_plural_suffixes"])
+                                            old_suffix = "star"
                                         self.name.suffix = plural
                                         text = self.name.prefix + old_suffix + "'s headmates have discussed things, and they've decided that a collective name will suit them better, like " + self.name.prefix + self.name.suffix + "!"
                                         game.cur_events_list.append(Single_Event(text, ["misc"], [self.ID]))
