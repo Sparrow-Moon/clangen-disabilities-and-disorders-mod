@@ -728,6 +728,7 @@ class Cat:
         self.permanent_condition = {}
         self.alters = []
         self.front = None
+        self.awakened = None
         self.df = False
         self.experience_level = None
 
@@ -926,6 +927,17 @@ class Cat:
                     self.age_moons[key_age][0], self.age_moons[key_age][1] + 1
                 ):
                     self.age = key_age
+    
+    def generate_ability(self):
+        template = {
+            "type": "guide",
+            "class": "c",
+            "ability": "none",
+            "desc": "none"
+            }
+        esp = randint(1,2)
+        if esp == 1:
+            template["type"] = "esper"
 
     def init_generate_cat(self, skill_dict):
         """
@@ -943,7 +955,11 @@ class Cat:
         #for testing conditions for dadm
         #if not self.example:
             #new_condition = choice(["spirited heart", "puzzled heart"])
-            #self.get_permanent_condition(new_condition, born_with=True) 
+            #self.get_permanent_condition(new_condition, born_with=True)
+        
+        awakened_chance = randint(1,2)
+        if awakened_chance == 1:
+            self.generate_ability()
 
         # trans cat chances
         theythemdefault = game.settings["they them default"]
@@ -3381,8 +3397,11 @@ class Cat:
             is_plural = True
         return is_plural
 
-    # def is_split(self)
-        # if self.is_plural:
+    def is_awakened(self):
+        awakened = False
+        if self.awakened == "esper" or self.awakened == "guide":
+            awakened = True
+        return awakened
 
     def contact_with_ill_cat(self, cat: Cat):
         """handles if one cat had contact with an ill cat"""
@@ -3468,6 +3487,9 @@ class Cat:
         if self.is_plural():
             self.update_alters()
             conditions["alters"] = self.alters
+        
+        if self.is_awakened():
+            conditions["awakened"] = self.awakened
 
         game.safe_save(condition_file_path, conditions)
 
@@ -3491,6 +3513,7 @@ class Cat:
                 if self.is_plural():
                     self.alters = rel_data["alters"]
                     self.update_alters()
+                self.awakened = rel_data("awakened", {})
 
             if "paralyzed" in self.permanent_condition and not self.pelt.paralyzed:
                 self.pelt.paralyzed = True
@@ -4965,7 +4988,7 @@ def create_cat(status, moons=None, biome=None):
         elif new_cat.moons < 4 and randint(1, 10) == 1:
             new_cat.moons = 0  # get potated
 
-    # Give conditions for disabling scars, if they generated.
+    # Give conditions for disabling scars, if they d.
     scar_to_condition = {
         "THREE": ["one bad eye"],
         "FOUR": ["weak leg", "no", "no"],
