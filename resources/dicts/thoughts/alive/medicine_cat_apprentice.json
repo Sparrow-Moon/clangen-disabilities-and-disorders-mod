@@ -384,5 +384,16 @@
         "random_living_status": [
             "living"
         ]
+	},
+    {
+        "id": "face_blindness_medicine_cat_apprentice",
+        "thoughts": [
+            "Struggles to tell {PRONOUN/m_c/poss} clanmates apart because of the strong scent of herbs."
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "face blindness"
+            ]
+        }
 	}
 ]

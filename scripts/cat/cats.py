@@ -939,6 +939,11 @@ class Cat:
         ]
         intersex_genderqueer_list = genderqueer_list.copy()
         intersex_genderqueer_list.append("intergender")
+        
+        #for testing conditions for dadm
+        #if not self.example:
+            #new_condition = choice(["spirited heart", "puzzled heart"])
+            #self.get_permanent_condition(new_condition, born_with=True) 
 
         # trans cat chances
         theythemdefault = game.settings["they them default"]

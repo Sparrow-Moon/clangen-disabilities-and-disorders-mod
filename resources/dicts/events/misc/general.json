@@ -3953,7 +3953,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 20,
+    "weight": 30,
     "event_text": "With the medicine cat's assistance, m_c finds acc_singular to serve as an emotional support companion.",
     "new_accessory": [
       "SNAKE",
@@ -3973,6 +3973,88 @@
         "thunderous spirit",
         "otherworldy mind",
         "heavy soul"
+      ]
+    }
+  },
+  {
+    "event_id": "gen_misc_service_animal_OI",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 20,
+    "event_text": "The medicine cat helps m_c find a companion to alert the clan when {PRONOUN/m_c/subject} faint.",
+    "new_accessory": [
+      "SNAKE",
+      "SMALLANIMAL"
+    ],
+    "m_c": {
+      "age": [
+        "adolescent",
+        "young adult",
+        "adult",
+        "senior adult",
+        "senior"
+      ],
+      "permanent_condition": [
+        "flooded paws",
+        "frequent fainting",
+        "falling paws",
+        "seizure prone"
+      ]
+    }
+  },
+  {
+    "event_id": "gen_misc_service_animal_OI",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 20,
+    "event_text": "The medicine cat helps m_c find a companion to alert the clan when {PRONOUN/m_c/subject} {VERB/m_c/have/has} a seizure.",
+    "new_accessory": [
+      "SNAKE",
+      "SMALLANIMAL"
+    ],
+    "m_c": {
+      "age": [
+        "adolescent",
+        "young adult",
+        "adult",
+        "senior adult",
+        "senior"
+      ],
+      "permanent_condition": [
+        "frequent fainting",
+        "seizure prone"
+      ]
+    }
+  },
+  {
+    "event_id": "gen_misc_service_animal_mobility",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 20,
+    "event_text": "With some help from the medicine cat, m_c find a trained companion to help {PRONOUN/m_c/object} travel on bad days.",
+    "new_accessory": [
+      "SMALLANIMAL"
+    ],
+    "m_c": {
+      "age": [
+        "adolescent",
+        "young adult",
+        "adult",
+        "senior adult",
+        "senior"
+      ],
+      "permanent_condition": [
+        "curved spine",
+        "bad knee",
+        "weak leg",
+        "paralyzed",
+        "born without a leg",
+        "lost a leg",
+        "twisted leg",
+        "constant roaming pain"
       ]
     }
   }
