@@ -258,6 +258,11 @@
 			"r_c gently helps m_c to lie down in one of the spare nests in the medicine den. It's better than letting {PRONOUN/m_c/object} stumble around the camp.",
 			"m_c feels a little bit dizzy from the tiredness weighing {PRONOUN/m_c/object} down.",
 			"Due to how overtired m_c's been, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} stood up and needed to sit back down with a spinning head."
+		],
+		"brain fog": [
+			"m_c comes into r_c's den looking very confused, admitting {PRONOUN/m_c/subject} {VERB/m_c/are/is} very tired and losing track of things.",
+			"m_c has some brain fog.",
+			"The clan has noticed that m_c seems distracted unable to hold onto {PRONOUN/m_c/poss} thoughts due to fatigue."
 		]
 	},
     "fainting": {

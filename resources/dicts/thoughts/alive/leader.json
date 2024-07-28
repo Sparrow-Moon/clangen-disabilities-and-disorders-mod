@@ -370,6 +370,22 @@
         "random_living_status":[
             "living"   
         ]
+    },
+    {
+        "id": "brain_fog_leader",
+        "thoughts": [
+            "Keeps forgetting what {PRONOUN/m_c/subject} wanted to tell the Clan about",
+			"Has a niggling suspicion {PRONOUN/m_c/subject} forgot something important",
+			"Has a bad case of no thoughts",
+			"Feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} still asleep",
+			"Struggles to properly direct c_n with a foggy head",
+			"Worries about the approaching gathering"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "brain fog"
+            ]
+        }
     }
 ]
 

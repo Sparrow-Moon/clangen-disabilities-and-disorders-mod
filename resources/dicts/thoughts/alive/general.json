@@ -3848,6 +3848,48 @@
         "random_living_status": [
             "living"
         ]
+    },    {
+        "id": "gen_brain_fog",
+        "thoughts": [
+            "Calls to r_c only to forget why",
+			"Keeps losing track of {PRONOUN/m_c/poss} tasks",
+			"Walked back into the den for... something",
+			"Struggles to remember if {PRONOUN/m_c/subject} ate",
+			"Feels confused",
+			"Lost track of time",
+			"Keeps struggling to remain on task",
+			"Struggles to maintain a topic of conversation with r_c",
+			"Would prefer to still be sleeping",
+			"Longs for {PRONOUN/m_c/poss} nest",
+			"Is tempted to pretend the day is already over",
+			"Keeps getting distracted talking to r_c",
+			"Feels listless",
+			"Feels a bit unsteady",
+			"Can't remember if {PRONOUN/m_c/subject} finished {PRONOUN/m_c/poss} patrol properly",
+			"Has to ask r_c the same question multiple times",
+			"Feels uncertain of what {PRONOUN/m_c/subject} {VERB/m_c/are/is} doing",
+			"Head empty",
+			"Lost track of {PRONOUN/m_c/poss} thoughts",
+			"Feels like {PRONOUN/m_c/poss} head is foggy",
+			"Feels fuzzy today",
+			"Retraces {PRONOUN/m_c/poss} pawsteps",
+			"Repeats tasks under {PRONOUN/m_c/poss} breath missing one or two",
+			"No thoughts, head empty",
+			"No thoughts, just fog",
+			"Wonders why {PRONOUN/m_c/subject} {VERB/m_c/are/is} here",
+			"Can't quite catch {PRONOUN/m_c/poss} thoughts"
+        ],
+        "main_age_constraint": [
+            "adolescent",
+			"adult",
+			"young adult"
+			"senior adult"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "brain fog"
+            ]
+        }
     },
 	{
         "id": "gen_danger_thoughts",

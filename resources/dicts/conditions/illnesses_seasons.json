@@ -10,7 +10,8 @@
 		"nest wetting": 10,
 		"kittenspace": 1,
 		"puppyspace": 1,
-		"stimming": 2
+		"stimming": 2,
+		"brain fog": 2
     },
     "Greenleaf":{
         "fleas": 2,
@@ -22,7 +23,8 @@
 		"ear buzzing": 5,
 		"nest wetting": 10,
 		"kittenspace": 1,
-		"stimming": 2
+		"stimming": 2,
+		"brain fog": 2
     },
     "Leaf-fall":{
         "stomachache":1,
@@ -36,7 +38,8 @@
 		"nest wetting": 20,
 		"silvercough": 4,
 		"puppyspace": 1,
-		"stimming": 1
+		"stimming": 1,
+		"brain fog": 2
     },
     "Leaf-bare":{
         "stomachache":1,
@@ -53,6 +56,7 @@
 		"nightmares": 10,
 		"kittenspace": 1,
 		"puppyspace": 1,
-		"stimming": 3
+		"stimming": 3,
+		"brain fog": 2
     }
 }
