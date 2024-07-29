@@ -990,6 +990,13 @@ class Cat:
 
         if not theythemdefault and self.age != "newborn":
             self.handle_pronouns()
+            
+        # for testing conditions
+        '''
+        if game.clan:
+            new_condition=choice(["shattered soul", "budding spirit"])
+            self.get_permanent_condition(new_condition, born_with=True)
+        '''
 
         # APPEARANCE
         self.pelt = Pelt.generate_new_pelt(
@@ -997,6 +1004,12 @@ class Cat:
             [Cat.fetch_cat(i) for i in (self.parent1, self.parent2) if i],
             self.age,
         )
+
+        ##Albino and Melanistic Cats still real!
+        if self.pelt.albino != None:
+            self.get_permanent_condition("albinism", born_with=True)                     
+        elif self.pelt.melanistic != None:
+            self.get_permanent_condition("melanism", born_with=True)   
 
         # Personality
         self.personality = Personality(kit_trait=self.is_baby())
@@ -3219,37 +3232,20 @@ class Cat:
             born_with = True
         moons_until = condition["moons_until"]
         if born_with and moons_until != 0:
-            if name == "budding spirit":
+            if name in ["budding spirit", "shattered soul"]:
                 moons_until = randint(moons_until - 1, moons_until + 12)
-            if name == "shattered soul":
-                moons_until = randint(moons_until - 1, moons_until + 12)
-            if name == "starwalker":
+            if name in ["starwalker", "comet spirit"]:
                 moons_until = randint(moons_until - 1, moons_until + 10)
-            if name == "comet spirit":
-                moons_until = randint(moons_until - 1, moons_until + 10)
-            if name == "loose body":
-                moons_until = randint(moons_until - 1, moons_until + 6)
-            if name == "jellyfish joints":
+            if name in ["loose body", "jellyfish joints"]:
                 moons_until = randint(moons_until - 1, moons_until + 6)
             if name == "constant joint pain":
                 moons_until = randint(moons_until - 1, moons_until + 5)
-            if name == "body biter":
+            if name in ["body biter", "thunderous spirit", 
+                            "otherworldly mind", "jumbled noise"]:
                 moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "thunderous spirit":
-                moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "otherworldly mind":
-                moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "jumbled noise":
-                moons_until = randint(moons_until - 1, moons_until + 4)
-            if name == "obsessive mind":
+            if name in ["obsessive mind", "falling paws"]:
                 moons_until = randint(moons_until - 1, moons_until + 3)
-            if name == "falling paws":
-                moons_until = randint(moons_until - 1, moons_until + 3)
-            if name == "heavy soul":
-                moons_until = randint(moons_until - 1, moons_until + 2)
-            if name == "anxiety":
-                moons_until = randint(moons_until - 1, moons_until + 2)
-            if name == "snow vision":
+            if name in ["heavy soul", "anxiety", "snow vision"]:
                 moons_until = randint(moons_until - 1, moons_until + 2)
             else:
                 moons_until = randint(
@@ -4624,11 +4620,13 @@ class Cat:
                 "pelt_name": self.pelt.name,
                 "pelt_color": self.pelt.colour,
                 "pelt_length": self.pelt.length,
-                "sprite_kitten": self.pelt.cat_sprites["kitten"],
-                "sprite_adolescent": self.pelt.cat_sprites["adolescent"],
-                "sprite_adult": self.pelt.cat_sprites["adult"],
-                "sprite_senior": self.pelt.cat_sprites["senior"],
-                "sprite_para_adult": self.pelt.cat_sprites["para_adult"],
+                "sprite_newborn": self.pelt.cat_sprites['newborn'],
+                "sprite_kitten": self.pelt.cat_sprites['kitten'],
+                "sprite_adolescent": self.pelt.cat_sprites['adolescent'],
+                "sprite_adult": self.pelt.cat_sprites['adult'],
+                "sprite_senior": self.pelt.cat_sprites['senior'],
+                "sprite_para_young": self.pelt.cat_sprites['para_young'],
+                "sprite_para_adult": self.pelt.cat_sprites['para_adult'],
                 "eye_colour": self.pelt.eye_colour,
                 "eye_colour2": self.pelt.eye_colour2 if self.pelt.eye_colour2 else None,
                 "lazy_eye": self.pelt.lazy_eye if self.pelt.lazy_eye else None,
@@ -4636,7 +4634,10 @@ class Cat:
                 "white_patches": self.pelt.white_patches,
                 "vitiligo": self.pelt.vitiligo,
                 "points": self.pelt.points,
+                "albino": self.pelt.albino,
+                "melanistic": self.pelt.melanistic,
                 "white_patches_tint": self.pelt.white_patches_tint,
+                "vitiligo_tint": self.pelt.vitiligo_tint,
                 "pattern": self.pelt.pattern,
                 "tortie_base": self.pelt.tortiebase,
                 "tortie_color": self.pelt.tortiecolour,

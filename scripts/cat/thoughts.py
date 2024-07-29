@@ -1,6 +1,6 @@
 import traceback
 from random import choice
-
+from scripts.game_structure.game_essentials import game
 import ujson
 
 
@@ -71,6 +71,10 @@ class Thoughts:
         # This is for checking the 'not_working' status
         if "not_working" in thought:
             if thought["not_working"] != main_cat.not_working():
+                return False
+        ## DANGEROUS THOUGHTS
+        if "dangerous_thoughts" in thought:
+            if not game.settings["allow shell farm"]:
                 return False
 
         # This is for checking if another cat is needed and there is another cat

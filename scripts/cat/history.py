@@ -246,30 +246,32 @@ class History:
 
         # working under the impression that these blurbs will be preceded by "become better at"
         skill_influence_text = {
-            SkillPath.TEACHER: ["teaching"],
-            SkillPath.HUNTER: ["hunting"],
-            SkillPath.FIGHTER: ["fighting"],
-            SkillPath.RUNNER: ["running"],
-            SkillPath.CLIMBER: ["climbing"],
-            SkillPath.SWIMMER: ["swimming"],
-            SkillPath.SPEAKER: ["voicing things"],
-            SkillPath.MEDIATOR: ["resolving arguments"],
-            SkillPath.CLEVER: ["solving problems"],
-            SkillPath.INSIGHTFUL: ["providing insight"],
-            SkillPath.SENSE: ["noticing small details"],
-            SkillPath.KIT: ["caring for kits"],
-            SkillPath.STORY: ["storytelling"],
-            SkillPath.LORE: ["remembering lore"],
-            SkillPath.CAMP: ["caring for camp"],
-            SkillPath.HEALER: ["healing"],
-            SkillPath.STAR: ["connecting to StarClan"],
-            SkillPath.DARK: ["connecting to the Dark Forest"],
-            SkillPath.OMEN: ["finding omens"],
-            SkillPath.DREAM: ["understanding dreams"],
-            SkillPath.CLAIRVOYANT: ["predicting the future"],
-            SkillPath.PROPHET: ["understanding prophecies"],
-            SkillPath.GHOST: ["connecting to the afterlife"]
-        }
+                SkillPath.TEACHER: [ "teaching" ],
+                SkillPath.HUNTER: [ "hunting" ],
+                SkillPath.FIGHTER: [ "fighting" ],
+                SkillPath.RUNNER: [ "running" ],
+                SkillPath.CLIMBER: [ "climbing" ],
+                SkillPath.SWIMMER: [ "swimming" ],
+                SkillPath.SPEAKER: [ "public speaking" ],
+                SkillPath.MEDIATOR: [ "resolving arguments" ],
+                SkillPath.CLEVER: [ "solving problems" ],
+                SkillPath.INSIGHTFUL: [ "providing insight" ],
+                SkillPath.SENSE: [ "noticing small details" ],
+                SkillPath.KIT: [ "caring for kits" ],
+                SkillPath.STORY: [ "storytelling" ],
+                SkillPath.LORE: [ "remembering lore" ],
+                SkillPath.CAMP: [ "caring for camp" ],
+                SkillPath.HEALER: [ "healing" ],
+                SkillPath.STAR: [ "connecting to StarClan" ],
+                SkillPath.DARK: [ "connecting to the Dark Forest" ],
+                SkillPath.OMEN: [ "finding omens" ],
+                SkillPath.DREAM: [ "understanding dreams" ],
+                SkillPath.CLAIRVOYANT: [ "predicting the future" ],
+                SkillPath.PROPHET: [ "understanding prophecies" ],
+                SkillPath.GHOST: [ "connecting to the afterlife" ],
+                SkillPath.UNKNOWN: ["connecting to the Unknown Residence"],
+                SkillPath.QUEEN: ["understanding the needs of Queens"]
+            }
 
         for _ment in cat.history.mentor_influence["skill"]:
             cat.history.mentor_influence["skill"][_ment]["strings"] = []

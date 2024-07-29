@@ -777,7 +777,9 @@ class Inheritance:
         ) + self.get_no_blood_relatives(self.grand_parents)
 
     # ---------------------------------------------------------------------------- #
-    #                                 great_grandparents                                #
+
+    #                                 great_grand_parents                          #
+
     # ---------------------------------------------------------------------------- #
 
     def get_blood_great_grandparents(self) -> list:

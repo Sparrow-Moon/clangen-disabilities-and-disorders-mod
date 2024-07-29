@@ -169,10 +169,10 @@
 		"random_affair_chance": 50,
 		"unmated_random_affair_chance": 10,
 		"false_pregnancy_chance": 80,
-		"tiny_litter_possibility": {"young adult": 9, "adult": 5, "senior adult": 7, "senior": 12},
-        "small_litter_possibility": {"young adult": 5, "adult": 9, "senior adult": 12, "senior": 8},
-        "large_litter_possibility": {"young adult": 0, "adult": 0, "senior adult": 0, "senior": 0},
-        "huge_litter_possibility": {"young adult": 0, "adult": 0, "senior adult": 0, "senior": 0},
+		"tiny_litter_possibility": {"young adult": 18, "adult": 10, "senior adult": 15, "senior": 18},
+        "small_litter_possibility": {"young adult": 16, "adult": 18, "senior adult": 18, "senior": 8},
+        "large_litter_possibility": {"young adult": 8, "adult": 16, "senior adult": 7, "senior": 1},
+        "huge_litter_possibility": {"young adult": 2, "adult": 4, "senior adult": 1, "senior": 0},
 		"min_kits": 1,
 		"max_kits": 12,
 		"small_litter": 3,
@@ -238,7 +238,7 @@
 			"warrior": 5000,
 			"elder": 400
 		},
-		"disabled_cat_med_chance_increase": 2,
+		"disabled_cat_med_chance_increase": 1.5,
 		"comment": [
 			"The disabled_cat_med_chance_increase (2 by default) will divide the chance of disabled cats becoming medicine cat/mediator apprentices by its value."
 		]

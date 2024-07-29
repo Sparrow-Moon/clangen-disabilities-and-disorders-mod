@@ -97,6 +97,18 @@ class SkillPath(Enum):
         "prophet",
     )
     GHOST = ("morbid curiosity", "ghost sense", "ghost sight", "ghost speaker")
+    UNKNOWN = (
+        "interested in the Unkown Residence",
+        "Unknown Residence accord",
+        "deep Unkown Residence bond",
+        "unshakable Unknown Residence link",
+    )
+    QUEEN = (
+        "nursery helper",
+        "nursery aide",
+        "queen's aide",
+        "kitten deliverer"
+    )
 
     @staticmethod
     def get_random(exclude: list = ()):
@@ -113,6 +125,7 @@ class SkillPath(Enum):
                 SkillPath.STAR,
                 SkillPath.HEALER,
                 SkillPath.DARK,
+                SkillPath.UNKNOWN
             ]
             if i not in exclude
         ]
@@ -173,6 +186,8 @@ class Skill:
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
         SkillPath.DARK: "Dark Forest",
+        SkillPath.UNKNOWN: "Unknown Residence",
+        SkillPath.QUEEN: "midwife"
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):
@@ -322,6 +337,8 @@ class CatSkills:
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
         SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.UNKNOWN: SkillTypeFlag.SUPERNATURAL,        
+        SkillPath.QUEEN: SkillTypeFlag.SOCIAL | SkillTypeFlag.SMART | SkillTypeFlag.OBSERVANT
     }
 
     # pylint: enable=unsupported-binary-operation

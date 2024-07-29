@@ -1634,6 +1634,26 @@
         ]
     },
     {
+        "id": "skeptic_apprentice",
+        "thoughts": [
+            "Is questioning if Starclan is real",
+			"Is questioning the leader's abilities, {VERB/m_c/do/does} {PRONOUN/m_c/subject} really have 9 lives?",
+			"Was caught nosing around Twolegplace recently",
+			"Smells a bit like kittypet food",
+			"Was caught eating kittypet food",
+			"Got caught sneaking out of camp",
+			"Is having a crisis of faith"
+        ],
+        "main_status_constraint": [
+            "apprentice",
+            "mediator apprentice",
+            "medicine cat apprentice"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ]
+    },
+    {
         "id": "paralyzed_gen_to_alive_gen",
         "thoughts": [
             "Goes for a swim",
@@ -2217,6 +2237,88 @@
         ],
         "random_living_status": [
             "living"
+        ]
+    },	
+    {
+        "id": "albino_to_alive_gen",
+        "thoughts": [
+			"Doesn't like how harsh the sun is",
+			"Doesn't like how other cats look at {PRONOUN/m_c/object} funny",
+			"Is feeling insecure about how {PRONOUN/m_c/subject} {VERB/m_c/look/looks}",
+			"Is exaggerating {PRONOUN/m_c/poss} weaknesses",
+			"Feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} the odd one out"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "albinism"
+            ]
+        },
+        "random_living_status": [
+            "living"
+        ]
+    },	
+    {
+        "id": "melanistic_to_alive_gen",
+        "thoughts": [
+            "Is pretending {PRONOUN/m_c/subject} {VERB/m_c/are/is} r_c's shadow come alive",
+			"Doesn't want to go on the night patrol because it's hard to see",
+			"Recently crashed into the wall of the den because it 'snuck up on {PRONOUN/m_c/object}'",
+			"Doesn't like r_c very much",
+			"Refuses to go outside because it's too hot",
+			"Has been working really hard recently"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "melanism"
+            ]
+        },
+        "random_status_constraint": [
+            "kitten",
+            "apprentice",
+            "medicine cat apprentice",
+            "mediator apprentice",
+            "warrior",
+            "medicine cat",
+            "mediator",
+            "deputy",
+            "leader",
+            "elder"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "grieving_gen",
+        "thoughts": [
+            "Feels like {PRONOUN/m_c/subject} {VERB/m_c/want/wants} to be alone for today",
+			"Is missing r_c like {PRONOUN/r_c/subject} vanished yesterday",
+			"Wonders if r_c is alright wherever {PRONOUN/r_c/subject} are",
+			"Thought they saw r_c the other day... but it was only a trick of light",
+			"Wonders if this grief will ever leave {PRONOUN/m_c/object}",
+			"Curls up in the den and refuses to leave",
+			"Wanders around the camp listlessly looking for a cat who's not there",
+			"Is feeling sad today",
+			"Looks up at the stars and wonders if r_c is looking back",
+			"Wonders if r_c found {PRONOUN/r_c/poss} way safely to StarClan or not"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "lasting grief"
+            ]
+        },
+        "relationship_constraint": [
+            "parent/child",
+			"siblings",
+			"mentor/app",
+			"app/mentor",
+			"mates",
+			"littermates"
+        ],		
+        "random_living_status": [
+            "starclan",
+			"darkforest",
+			"unknownresidence"
         ]
     },
     {
@@ -2859,6 +2961,35 @@
             ]
         }
 	},
+    {
+        "id": "declawed_warrior",
+        "thoughts": [
+            "Flexes {PRONOUN/m_c/poss} sore paws in frustration",
+            "Refuses to give up on {PRONOUN/m_c/poss} dreams",
+            "Is determined to show that {PRONOUN/m_c/subject} can still be a real warrior",
+            "Put in extra effort this moon",
+            "Still has {PRONOUN/m_c/poss} teeth to bite any and all challengers",
+            "Is still just as capable as any other cat",
+            "Doesn't accept been looked down on from anyone",
+            "Volunteers for the dawn patrol",
+            "Is having a bit of a hard day",
+            "Is practicing battle moves that don't require claws",
+            "Misses {PRONOUN/m_c/poss} claws deeply",
+            "Feels insecure after meeting a cat from another Clan at the border",
+            "Goes on a solo hunt to keep busy",
+			"Is frustrated by the pain in {PRONOUN/m_c/poss} paws",
+			"Feels like everycat is juding {PRONOUN/m_c/object}"
+        ],
+        "main_status_constraint": [
+            "apprentice",
+			"warrior"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "declawed"
+            ]
+        }
+    },
     {
         "id": "otherworldly_mind_to_alive_gen",
         "thoughts": [
@@ -3702,6 +3833,7 @@
         }
     },
     {
+
         "id": "gen_frequent_fainting",
         "thoughts": [
             "Stood up too fast again",
@@ -3716,8 +3848,7 @@
         "random_living_status": [
             "living"
         ]
-    },
-    {
+    },    {
         "id": "gen_brain_fog",
         "thoughts": [
             "Calls to r_c only to forget why",
@@ -3758,6 +3889,105 @@
         "has_injuries": {
             "m_c": [
                 "brain fog"
+            ]
+        }
+    },
+	{
+        "id": "gen_danger_thoughts",
+        "dangerous_thoughts": true,
+        "thoughts": [
+            "Contemplates murdering a Clanmate",
+			"Is considering something horrible",
+			"Spoke casually of an accident on the Thunderpath",
+			"Spoke rudely about StarClan",
+			"Believes that the Code is too restrictive",
+			"Feels like StarClan has foresaken {PRONOUN/m_c/object}",
+			"Is in a bad place",
+			"Feels unreal",
+			"Saw a line of 1s and 0s",
+			"Believes that nothing in the world is real",
+			"Feels apart from {PRONOUN/m_c/poss} body",
+			"Wonders what it would feel like to bath in blood",
+			"Has an itch under {PRONOUN/m_c/poss} fur that won't leave",
+			"The blood won't come off",
+			"Stares for too long at a Clanmate",
+			"Prey tastes like ash in {PRONOUN/m_c/poss} mouth",
+			"Wonders why {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} still in c_n",
+			"Contemplates the Thunderpath",
+			"Wonders what it would be like to be a mouse",
+			"Wonders what been eaten feels like",
+			"Feels outside {PRONOUN/m_c/poss} paws",
+			"Doesn't want to see anybody",
+			"Goes for a walk in the dangerous areas of the territory",
+			"Believes that StarClan is calling {PRONOUN/m_c/object}",
+			"Thinks that {PRONOUN/m_c/subject} {VERB/m_c/are/is} clearly the one who should lead c_n",
+			"Wonders at how easy it is to murder",
+			"Definitely could get away with murder",
+			"Believes {PRONOUN/m_c/subject} could walk on clouds",
+			"Worries {PRONOUN/m_c/subject} might hurt someone",
+			"Doesn't feel safe around kits",
+			"Doesn't feel safe around others",
+			"Feels only half there",
+			"Keeps hearing whispers around {PRONOUN/m_c/object}",
+			"Feels like the territory is too big",
+			"Had a dream about StarClan",
+			"Wonders if it's bad death is a comfort",
+			"Ready to die for c_n",
+			"Ready to kill for c_n",
+			"Thinks {PRONOUN/m_c/subject} saw a double of {PRONOUN/m_c/self}",
+			"Wonders about having an evil counterpart",
+			"Feels like something is trying to take over",
+			"Is questioning the leader's reality",
+			"Thought c_n was gone",
+			"Dreams about setting the world on fire",
+			"{PRONOUN/m_c/poss} paws feel wrong",
+			"This isn't {PRONOUN/m_c/poss} body",
+			"Feels like an outsider",
+			"Wonders if anyone really cares about {PRONOUN/m_c/object}",
+			"Briefly contemplates death",
+			"Doesn't fear dying at all",
+			"Fears dying",
+			"Had a horrible nightmare about a forest"
+        ]
+    },
+    {
+        "id": "gen_stimharm",
+        "dangerous_thoughts": true,
+        "thoughts": [
+            "Keeps biting {PRONOUN/m_c/poss} own paws",
+            "Viciously scratches at {PRONOUN/m_c/poss} own ears",
+            "Is washing {PRONOUN/m_c/poss} paws until they bleed",
+            "Bites until it hurts",
+            "Is screaming until it hurts",
+            "Keeps slamming {PRONOUN/m_c/self} into the wall of the den",
+            "Slams {PRONOUN/m_c/poss} head into a tree over and over",
+            "Scratches open an old injury",
+            "Is clawing at {PRONOUN/m_c/self}",
+            "Scratches a rock over and over until {PRONOUN/m_c/poss} paws hurt",
+            "Purposely overgrooms",
+            "Is pulling {PRONOUN/m_c/poss} own fur out",
+            "Bites {PRONOUN/m_c/poss} claws down into nubs",
+            "Rubs mud into open wounds",
+            "Scratches {PRONOUN/m_c/self} until {PRONOUN/m_c/subject} {VERB/m_c/see/sees} red",
+            "Cries until {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like vomiting",
+            "Is shaking and shaking",
+            "Grinds {PRONOUN/m_c/poss} teeth until it catches",
+            "Bites down on {PRONOUN/m_c/poss} own cheek",
+            "Bites {PRONOUN/m_c/poss} own tongue until {PRONOUN/m_c/subject} {VERB/m_c/taste/tastes} copper",
+            "Thinks that red is a pretty colour",
+            "Claws at {PRONOUN/m_c/poss} own throat",
+            "Shoves a paw down {PRONOUN/m_c/poss} own throat",
+            "Keeps overeating until vomiting",
+            "Throwing {PRONOUN/m_c/self} at the wall over and over again"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "stimming"
+            ]
+        },
+        "perm_conditions": {
+            "m_c": [
+                "body biter"
             ]
         }
     }

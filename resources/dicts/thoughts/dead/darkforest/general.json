@@ -65,5 +65,37 @@
         "random_living_status": [
             "living"
         ]
+    },
+    {
+        "id": "skeptic_dark_forest_cat",
+        "thoughts": [
+            "Shivers in the darkness of this forest",
+			"Wishes that {PRONOUN/m_c/subject} knew where {PRONOUN/m_c/subject} {VERB/m_c/were/was}",
+			"Wonders if {PRONOUN/m_c/subject} {VERB/m_c/are/is} actually still alive.",
+			"Thinks {PRONOUN/m_c/subject} saw another cat and hisses",
+			"Curses the Warrior Code",
+			"Is failing to groom muck from their coat",
+			"Looks up and wonders where the stars are",
+			"Thinks {PRONOUN/m_c/subject} found the tunnel to StarClan the other night",
+			"Is hoping that {PRONOUN/m_c/subject} fade soon",
+			"Wishes that death was nothingness"
+        ],
+        "main_trait_constraint": [
+            "skeptic"
+        ]
+    },
+    {
+        "id": "rebellious_dark_forest_cat",
+        "thoughts": [
+            "Doesn't think {PRONOUN/m_c/subject} {VERB/m_c/deserve/deserves} this",
+			"Refuses to let the thorns keep {PRONOUN/m_c/object} trapped here",
+			"Hisses and slashes at the shadows around {PRONOUN/m_c/object}",
+			"Yowls and curses c_n for abandoning {PRONOUN/m_c/object} to this place",
+			"Is thinking of how to escape this place",
+			"Refuses to admit that {PRONOUN/m_c/subject} brought this upon {PRONOUN/m_c/self}"
+        ],
+        "main_trait_constraint": [
+            "rebellious"
+        ]
     }
 ]

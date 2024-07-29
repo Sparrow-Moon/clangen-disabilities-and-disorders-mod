@@ -74,5 +74,8 @@
     ],
     "knee locking": [
         "m_c took a bad fall and by the time a Clanmate responded... {PRONOUN/m_c/subject} {VERB/m_c/were/was} gone."
-    ]
+    ],
+	"severe sunburn": [
+		"m_c died due to complications from a severe sunburn."
+	]
 }

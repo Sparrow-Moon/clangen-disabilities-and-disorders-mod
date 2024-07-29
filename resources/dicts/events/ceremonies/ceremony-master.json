@@ -378,7 +378,8 @@
       "strange",
       "strict",
       "wise",
-      "thoughtful"
+      "thoughtful",
+	  "skeptic"
     ],
     "Surprising (mentor), the first thing that m_c does after {PRONOUN/m_c/poss} apprentice ceremony is gather moss, just to make sure everyone has fresh bedding."
   ],
@@ -567,7 +568,8 @@
       "confident",
       "strange",
       "arrogant",
-      "rebellious"
+      "rebellious",
+	  "skeptic"
     ],
     "As {PRONOUN/m_c/poss} mentor is about to be chosen, m_c interrupts and announces {PRONOUN/m_c/subject} {VERB/m_c/want/wants} {PRONOUN/m_c/poss} mentor to be (mentor). {PRONOUN/m_c/subject/CAP} {VERB/m_c/stride/strides} forward with confidence to touch noses with (mentor) when it's allowed."
   ],
@@ -2009,6 +2011,42 @@
       "all_traits"
     ],
     "Inspired by (old_name)'s r_h, (previous_mentor) names {PRONOUN/m_c/object} m_c and welcomes {PRONOUN/m_c/object} as a full medicine cat."
+  ],
+  "med_53": [
+    [
+      "medicine cat",
+      "prepared",
+      "general_mentor",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "skeptic"
+    ],
+    "(old_name) still doesn't seem to believe in Starclan but it makes no difference as {PRONOUN/m_c/subject} {VERB/m_c/step/steps} up and are welcomed by (previous_mentor) as a full medicine cat by the name of m_c"
+  ],
+  "med_54": [
+    [
+      "medicine cat",
+      "prepared",
+      "dead_mentor",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "skeptic"
+    ],
+    "As m_c accepts {PRONOUN/m_c/poss} new name in the face of the full moon {PRONOUN/m_c/subject} {VERB/m_c/take/takes} a deep breath. {PRONOUN/m_c/subject/CAP} only wish that (deadmentor) could be here to once more tell {PRONOUN/m_c/object} the fantasy tales of Starclan."
+  ],  
+  "med_54_a": [
+    [
+      "medicine cat",
+      "unprepared",
+      "general_mentor",
+      "general_parents",
+      "general_leader",
+      "general_backstory",
+      "skeptic"
+    ],
+    "(old_name) hisses and lashes {PRONOUN/m_c/poss} tail when a clanmate calls {PRONOUN/m_c/object} m_c. It's frustrating for {PRONOUN/m_c/object} to hear the name knowing that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} yet deserve it."
   ],
   "warrior_0": [
     [

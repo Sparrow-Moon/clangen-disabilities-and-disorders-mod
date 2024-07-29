@@ -118,7 +118,7 @@
     "reserved_adult": {
       "tags": [],
       "lead_trait": [],
-      "star_trait": ["calm", "careful", "insecure", "lonesome", "loyal", "nervous", "sneaky", "strange"],
+      "star_trait": ["calm", "careful", "insecure", "lonesome", "loyal", "nervous", "sneaky", "strange", "skeptic"],
       "rank": ["warrior", "elder", "medicine cat", "mediator", "apprentice", "deputy", "medicine cat apprentice", "mediator apprentice"],
       "life_giving": [
         {
@@ -934,7 +934,25 @@
           "stubbornness", "authority"]
         }
       ]
+    }, 
+	
+    "skeptic_warrior": {
+      "tags": [],
+      "lead_trait": ["skeptic"],
+      "star_trait": [],
+      "rank": ["warrior", "deputy"],
+      "life_giving": [
+        {
+          "text": "With mirrored skepticsm r_c walks up to m_c. With a roll of {PRONOUN/r_c/poss} eyes and no words exchanged {PRONOUN/m_c/subject} {VERB/r_c/give/gives} a life for [virtue]",
+          "virtue": ["certainty", "clear judgement", "confidence", "courage", "endurance", "farsightedness", "strength", "ferocity", "cunning", "shamelessness", "bloodlust", "authority"]
+        },
+        {
+          "text": "As if mocking m_c, r_c steps out from behind {PRONOUN/m_c/object} with a wicked grin and swishing tail. \"With this life, I grant you [virtue].\" {PRONOUN/r_c/poss} part down {PRONOUN/r_c/subject} swiftly vanished back into the shadows around.",
+          "virtue": ["determination", "endurance", "strength", "ferocity", "cunning", "bloodlust", "stubbornness", "authority"]
+        }
+      ]
     },
+	
     "default_kit": {
       "tags": [],
       "lead_trait": [],

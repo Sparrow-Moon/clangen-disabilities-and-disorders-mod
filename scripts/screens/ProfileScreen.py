@@ -967,7 +967,12 @@ class ProfileScreen(Screens):
         elif the_cat.exiled:
             output += "<font color='#FF0000'>exiled</font>"
         else:
-            output += the_cat.status
+            if the_cat.dead:
+                output += f"<font color='#7C97DD'>starclan {the_cat.status}</font>"
+            elif the_cat.df:
+                output += f"<font color='#370D15'>dark forest {the_cat.status}</font>"   
+            else:    
+                output += the_cat.status
 
         # NEWLINE ----------
         output += "\n"
@@ -1125,21 +1130,26 @@ class ProfileScreen(Screens):
                 if (the_cat.permanent_condition[condition]["born_with"] is True and the_cat.permanent_condition[condition]["moons_until"] != -2) or ("excess testosterone" in the_cat.permanent_condition[condition] or "aneuploidy" in the_cat.permanent_condition[condition] or "testosterone deficiency" in the_cat.permanent_condition[condition] or "chimerism" in the_cat.permanent_condition[condition] or "mosaicism" in the_cat.permanent_condition[condition]):
                     continue
 
+            special_conditions = ["declawed", "albinism", "melanism"]
+            all_special = True
+            for condition in the_cat.permanent_condition:
+                if condition not in special_conditions:
+                    all_special = False
+                    break
                 if not all_special:
-                    output += "has a permanent condition"
+                    output += 'has a permanent condition'
                     already_disabled = True
 
                 if "declawed" in the_cat.permanent_condition:
                     if already_disabled:
-                        output += "\ndeclawed"
+                        output += ', declawed'
                     else:
-                        output += "declawed"
-                        already_disabled = True
+                        output += 'declawed'
 
-                # NEWLINE ----------
-                output += "\n"
-                break
-
+                    # NEWLINE ----------
+                    output += "\n"
+                    break
+            
         if the_cat.is_plural():
             con = ""
             if "shattered soul" in the_cat.permanent_condition:
@@ -1235,7 +1245,7 @@ class ProfileScreen(Screens):
                 "grief stricken", "fleas", "malnourished", "starving", "paranoia", "seasonal lethargy", "lethargy",
                 "special interest", "hyperfixation", "stimming", "indecision", "impulsivity", "zoomies",
                 "sleeplessness", "burn out", "kittenspace", "puppyspace", "tics", "tic attack", "dizziness", "nausea",
-                "turmoiled litter"
+                "turmoiled litter", "verbal shutdown"
             ]
             all_special = True
             for condition in the_cat.illnesses:
@@ -1426,6 +1436,13 @@ class ProfileScreen(Screens):
                         output += "recovering from a turmoiled birth!"
                     else:
                         output += "experiencing postpartum!"
+
+            if "verbal shutdown" in the_cat.illnesses:
+                if already_sick_injured:
+                    output += '\nverbally shutdown'
+                else:
+                    output += 'verbally shutdown'
+                    already_sick_injured = True
 
         return output
 

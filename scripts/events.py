@@ -1011,6 +1011,7 @@ class Events:
 
             game.cur_events_list.append(Single_Event(text, "misc", cat_IDs))
 
+
         # Perform a ceremony if needed
         for cat_ID in cat_IDs:
             x = Cat.fetch_cat(cat_ID)
@@ -2644,14 +2645,14 @@ class Events:
             if cat.gender == "male":
                 gender = "tom"
             elif cat.gender == "female":
-                gender = "she-cat"
+                gender = "molly"
             else:
                 gender = cat.gender
 
             if cat.genderalign == "trans male":
                 trans = "tom"
             elif cat.genderalign == "trans female":
-                trans = "she-cat"
+                trans = "molly"
             else:
                 trans = cat.genderalign
             text = f"{cat.name} has realized that \"{gender}\" doesn't describe how they feel anymore - {trans} does it much better."

@@ -327,7 +327,12 @@
         "recurring shock": [
             "r_c has to reassure m_c that nobody poisoned {PRONOUN/m_c/poss} prey.",
             "After recovering from {PRONOUN/m_c/poss} brush with poisoning, m_c still has a lingering sense of dread about where {PRONOUN/m_c/object} got poisoned."
-        ]
+        ],
+		"infertile": [
+		  "r_c explains to m_c that {PRONOUN/m_c/subject} may be infertile.",
+		  "After recovering from been poisoned something about m_c feels different. Later {PRONOUN/m_c/subject} {VERB/m_c/realise/realises} with the help of the medicine cat that {PRONOUN/m_c/subject} might no longer be able to have kits.",
+		  "While some cats would be upset about been told {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} now infertile, m_c is just relieved to be over {PRONOUN/m_c/poss} poisoning."
+    ]
     },
 	"rash": {
 		"constant rash": [

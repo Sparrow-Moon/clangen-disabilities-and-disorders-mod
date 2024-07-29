@@ -202,6 +202,23 @@
 			"All m_c's frantic itching has left {PRONOUN/m_c/poss} fur looking rather patchy in places."
 		]
 	},
+	"sunburn": {
+		"an infected wound": [
+			"When m_c comes to r_c for {PRONOUN/m_c/poss} typical care it's with a complaint that the burn feels like it's fresh once more.",
+			"m_c tries to ignore the returning heat to {PRONOUN/m_c/poss} sunburn, hoping that it'll just go away if {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} pay attention to it."
+		]
+	},
+	"severe sunburn": {
+		"an infected wound": [
+			"r_c gently soothes m_c's sunburn with a fresh coat of herbs and cobwebs, fussing as it looks rawer and has a bit of a sickly smell to it.",
+			"m_c worries about the smell that's starting to come from {PRONOUN/m_c/poss} sunburn."
+		],
+		"rash": [
+			"m_c complains to r_c about how {PRONOUN/m_c/poss} sunburn has become itchy and irritated. Looks like it's bubbled into a rash.",
+			"As {PRONOUN/m_c/poss} skin starts to peel from the sunburn, m_c discovers{PRONOUN/m_c/self} getting itchier and itchier.",
+			"Below m_c's sunburn {PRONOUN/m_c/poss} skin has bubbled with an irritating itchy rash."
+		]
+	},
 	"wrenched claws": {
 		"an infected wound": [
 			"Much to m_c's distress {PRONOUN/m_c/poss} paw has started to get more and more sore. When {PRONOUN/m_c/subject} {VERB/m_c/go/goes} to complain to r_c about it, {PRONOUN/r_c/subject} {VERB/r_c/look/looks} quite worried and explains it might be infected.",

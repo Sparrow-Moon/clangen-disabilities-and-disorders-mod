@@ -1263,6 +1263,72 @@
             "living"
         ]
     },
+	{
+		"id": "rebellious_warrior",
+		"thoughts": [
+			"Refuses to go on {PRONOUN/m_c/poss} assigned patrol",
+			"Mocks the leader",
+			"Mocks a clanmate",
+			"Refuses to obey the code",
+			"Mocks StarClan",
+			"Goes on a solo patrol despite been told not to",
+			"Fights with {PRONOUN/m_c/poss} claws unsheethed",
+			"Picks fights at the borders",
+			"Smells like kittypet food",
+			"Is acting suspicious",
+			"Thinks the code is too restrictive",
+			"Thinks the code is silly"
+		],
+		"main_trait_constraint": [
+			"rebellious"
+		]
+	},
+	{
+		"id": "skeptic_warrior",
+		"thoughts": [
+			"Is questioning the Warrior Code",
+			"Is questioning StarClan",
+			"Doesn't know if {PRONOUN/m_c/subject} {VERB/m_c/believe/believes} {PRONOUN/m_c/subject} {VERB/m_c/are/is} on the right path",
+			"Spends the night stargazing",
+			"Wonders if {PRONOUN/m_c/subject} {VERB/m_c/are/is} good enough for the clan",
+			"Believes prophecies are made up by cats who want to get out of chores",
+			"Had a strange dream... but dismissed it",
+			"Keeps seeing weird things around camp and dismissing them",
+			"Refusing to go to the gathering this moon",
+			"Is making up ghost stories",
+			"Thought {PRONOUN/m_c/subject} saw a bird but it was just a leaf",
+			"Is sorting the prey pile for anything rotten",
+			"Worries that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} belong",
+			"Feels like c_n is judging {PRONOUN/m_c/object} for {PRONOUN/m_c/poss} lack of belief",
+			"Hunts extra this moon feeling guilty",
+			"Is fetching extra herbs for the Medicine Cats"
+		],
+		"main_trait_constraint": [
+			"skeptic"
+		]
+	},
+	{
+		"id": "skeptic_warrior_to_dead_app",
+		"thoughts": [
+			"Thought {PRONOUN/m_c/subject} saw r_c shadowing {PRONOUN/m_c/object}... but that's not possible",
+			"Has prickles under {PRONOUN/m_c/poss} fur feeling like someone is judging {PRONOUN/m_c/object}",
+			"Wonders what kind of warrior r_c would have grown to be",
+			"Is thinking about r_c and {PRONOUN/m_c/poss} lost potential",
+			"Keeps seeing the shadows of lost apprentices around the camp"
+		],
+		"random_status_constraint": [
+			"apprentice"
+		],
+		"main_trait_constraint": [
+			"skeptic"
+		],
+		"random_living_status": [
+			"starclan"
+		],
+        "relationship_constraint": [
+            "mentor/app"
+        ]	
+	},
     {
         "id": "lasting_grief_warrior",
         "thoughts": [
@@ -1282,6 +1348,70 @@
             ]
         }
     },
+	{
+		"id": "starwalker_warrior",
+		"thoughts": [
+			"Has {PRONOUN/m_c/poss} head in the clouds",
+			"Is distracted by the shapes of the leaves around {PRONOUN/m_c/object}",
+			"Was caught humming to {PRONOUN/m_c/self}",
+			"Volunteers for the morning patrol",
+			"Chatters to the local rats",
+			"Relaxes in a sunbeam for most of the afternoon",
+			"Is considering {PRONOUN/m_c/poss} name deeply",
+			"Wonders if {PRONOUN/m_c/subject} can ask to be renamed with the suffix of -whisker",
+			"Wonders if {PRONOUN/m_c/subject} can ask to be renamed with the suffix of -kudzu",
+			"Wonders if {PRONOUN/m_c/subject} can ask to be renamed with the suffix of -path",
+			"Wonders if {PRONOUN/m_c/subject} can learn the dog language of Fang",
+			"Wonders if {PRONOUN/m_c/subject} could become deputy one day",
+			"Thinks {PRONOUN/m_c/subject} saw a sign the other day",
+			"Wonders about afterlives other than StarClan",
+			"Is thinking about having kittens",
+			"Is proud to be a full warrior of c_n",
+			"Is daydreaming about been leader",
+			"Has high hopes for the future",
+			"Was seen watching the Twoleg place",
+			"Bragging about how far {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} travelled",
+			"Vanished for a few weeks and come back smug",
+			"Is dreaming of leading the clan somewhere new",
+			"Wants to scout out new territory",
+			"Dreams of places far away",
+			"Is listening to the gossip in the winds",
+			"Was seen racing with some hounds",
+			"Was seen racing some horses",
+			"Knows the territory back to front",			
+			"Refuses to change {PRONOUN/m_c/poss} patrol schedule",
+			"Stubbornly refuses to leave the den today",
+			"Will only hunt for one specific thing"
+		],
+        "perm_conditions": {
+            "m_c": [
+                "starwalker"
+            ]
+        }
+	},
+	{
+		"id": "starwalker_warrior_to_younger",
+		"thoughts": [
+			"Talks with r_c about {PRONOUN/m_c/poss} hopes and dreams",
+			"Purrs when r_c comes to {PRONOUN/m_c/object} for advice",
+			"Is wondering if {PRONOUN/m_c/subject} {VERB/m_c/could/can} take on an apprentice",
+			"Is telling stories to the younger cats",
+			"Helps the apprentices take care of the kittens of the clan",
+			"Is telling old stories to the younger members of the clan",
+			"Wishes to talk to r_c about a dream {PRONOUN/r_c/subject} had",
+			"Saw r_c in a dream the other night",
+			"Is worrying about r_c's future"
+		],
+        "perm_conditions": {
+            "m_c": [
+                "starwalker"
+            ]
+        },
+		"random_status_constraint": [
+			"apprentice",
+			"kitten"
+		]
+	},
     {
         "id": "recurring_shock_warrior",
         "thoughts": [
@@ -1300,6 +1430,20 @@
             "m_c": [
                 "recurring shock"
             ]
-        }
+        },
+		"random_status_constraint": [
+				"apprentice",
+				"medicine cat apprentice",
+				"mediator apprentice",
+				"warrior",
+				"medicine cat",
+				"mediator",
+				"deputy",
+				"leader",
+				"elder"
+		],
+		"random_living_status": [
+			"living"
+		]
     }
 ]
