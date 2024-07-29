@@ -3877,7 +3877,8 @@
 			"No thoughts, head empty",
 			"No thoughts, just fog",
 			"Wonders why {PRONOUN/m_c/subject} {VERB/m_c/are/is} here",
-			"Can't quite catch {PRONOUN/m_c/poss} thoughts"
+			"Can't quite catch {PRONOUN/m_c/poss} thoughts",
+			"Feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} forgetting something important"
         ],
         "main_age_constraint": [
             "adolescent",
