@@ -967,7 +967,12 @@ class ProfileScreen(Screens):
         elif the_cat.exiled:
             output += "<font color='#FF0000'>exiled</font>"
         else:
-            output += the_cat.status
+            if the_cat.dead:
+                output += f"<font color='#7C97DD'>starclan {the_cat.status}</font>"
+            elif the_cat.df:
+                output += f"<font color='#370D15'>dark forest {the_cat.status}</font>"   
+            else:    
+                output += the_cat.status
 
         # NEWLINE ----------
         output += "\n"
