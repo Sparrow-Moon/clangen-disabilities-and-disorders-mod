@@ -968,6 +968,10 @@ class MakeClanScreen(Screens):
                     pronoun_text += pronoun.get("subject") + "/"
                 if pronoun_text[-1] == "/":
                     pronoun_text = pronoun_text[:-1]
+                    
+            awakened_text = ""        
+            if selected.awakened:
+                awakened_text = selected.awakened["class"] + "-class " + selected.awakened["type"] + "\n"
 
             if selected.permanent_condition:
                 perm_cond_text = "condition"
@@ -986,6 +990,7 @@ class MakeClanScreen(Screens):
                     + "\n"
                     + str(selected.age)
                     + "\n"
+                    + awakened_text
                     + str(selected.personality.trait)
                     + "\n"
                     + str(selected.skills.skill_string())
@@ -1001,6 +1006,7 @@ class MakeClanScreen(Screens):
                     + "\n"
                     + str(selected.age)
                     + "\n"
+                    + awakened_text
                     + str(selected.personality.trait)
                     + "\n"
                     + str(selected.skills.skill_string())

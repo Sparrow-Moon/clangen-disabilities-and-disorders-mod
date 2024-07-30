@@ -850,6 +850,10 @@ class ProfileScreen(Screens):
             output += the_cat.age
         # NEWLINE ----------
         output += "\n"
+        
+        #AWAKENED
+        if the_cat.awakened:
+            output += the_cat.awakened["class"] + "-class " + the_cat.awakened["type"] + "\n"
 
         # EYE COLOR
         output += "eyes: " + str(the_cat.describe_eyes())

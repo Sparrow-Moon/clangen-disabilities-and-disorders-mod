@@ -929,15 +929,30 @@ class Cat:
                     self.age = key_age
     
     def generate_ability(self):
+        if os.path.exists('resources/dicts/esper.json'):
+            with open('resources/dicts/esper.json') as read_file:
+                powers_dict = ujson.loads(read_file.read())
         template = {
             "type": "guide",
-            "class": "c",
+            "class": "C",
             "ability": "none",
             "desc": "none"
             }
+        strength = randint(1,10)
+        if strength == 10:
+            template["class"] = "S"
+        elif strength > 7:
+            template["class"] = "A"
+        elif strength > 4:
+            template["class"] = "B"
+        
         esp = randint(1,2)
         if esp == 1:
             template["type"] = "esper"
+            power = choice(["pyrokinesis","hydrokinesis","cyrokinesis", "geokinesis", "aerokinesis"])
+            template["ability"] = power
+            template["desc"] = powers_dict[power]["power"]
+        self.awakened = template
 
     def init_generate_cat(self, skill_dict):
         """
@@ -960,7 +975,6 @@ class Cat:
         awakened_chance = randint(1,2)
         if awakened_chance == 1:
             self.generate_ability()
-
         # trans cat chances
         theythemdefault = game.settings["they them default"]
         self.genderalign = self.gender
@@ -1042,6 +1056,7 @@ class Cat:
                                     Cat.experience_levels_range["master"][1])
         else:
             self.experience = 0
+        
 
         if not skill_dict:
             self.skills = CatSkills.generate_new_catskills(self.status, self.moons)
@@ -3384,6 +3399,12 @@ class Cat:
         if len(self.injuries) <= 0:
             is_injured = False
         return is_injured is not False
+    
+    def is_awakened(self):
+        awakened = False
+        if self.awakened:
+            awakened = True
+        return awakened
 
     def is_disabled(self):
         is_disabled = True
@@ -3399,7 +3420,7 @@ class Cat:
 
     def is_awakened(self):
         awakened = False
-        if self.awakened == "esper" or self.awakened == "guide":
+        if self.awakened:
             awakened = True
         return awakened
 
@@ -3461,7 +3482,7 @@ class Cat:
         condition_file_path = condition_directory + "/" + self.ID + "_conditions.json"
 
         if (
-            (not self.is_ill() and not self.is_injured() and not self.is_disabled())
+            (not self.is_ill() and not self.is_injured() and not self.is_disabled() and not self.is_awakened())
         ):
             if os.path.exists(condition_file_path):
                 os.remove(condition_file_path)
@@ -3513,7 +3534,7 @@ class Cat:
                 if self.is_plural():
                     self.alters = rel_data["alters"]
                     self.update_alters()
-                self.awakened = rel_data("awakened", {})
+                self.awakened = rel_data["awakened"]
 
             if "paralyzed" in self.permanent_condition and not self.pelt.paralyzed:
                 self.pelt.paralyzed = True

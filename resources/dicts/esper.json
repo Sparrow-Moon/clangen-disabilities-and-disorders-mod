@@ -1,0 +1,27 @@
+{
+    "pyrokinesis": {
+    "power": "can manipulate and control fire",
+    "class": ["S", "A", "B", "C"],
+    "tags": ["major", "minor"]
+    },
+    "hydrokinesis": {
+    "power": "can manipulate and control water",
+    "class": ["S", "A", "B", "C"],
+    "tags": ["major", "minor"]
+    },
+    "cyrokinesis": {
+    "power": "can manipulate and control ice",
+    "class": ["S", "A", "B", "C"],
+    "tags": ["major", "minor"]
+    },
+    "geokinesis": {
+    "power": "can manipulate and control rocks",
+    "class": ["S", "A", "B", "C"],
+    "tags": ["major", "minor"]
+    },
+    "aerokinesis": {
+    "power": "can manipulate and control wind",
+    "class": ["S", "A", "B", "C"],
+    "tags": ["major", "minor"]
+    }
+}
