@@ -18,7 +18,7 @@ from scripts.utility import event_text_adjust, scale, ACC_DISPLAY, process_text,
 from scripts.utility import get_text_box_theme, scale_dimentions, shorten_text_to_fit
 from .Screens import Screens
 from ..cat.history import History
-from ..game_structure.windows import ChangeCatName, KillCat, ChangeCatToggles
+from ..game_structure.windows import ChangeCatName, KillCat, ChangeCatToggles, GuideEsper
 from ..housekeeping.datadir import get_save_dir
 
 
@@ -221,6 +221,8 @@ class ProfileScreen(Screens):
                 self.change_screen("ceremony screen")
             elif event.ui_element == self.profile_elements["med_den"]:
                 self.change_screen("med den screen")
+            elif event.ui_element == self.profile_elements["guide_button"]:
+                GuideEsper(self.the_cat)
             elif (
                 "mediation" in self.profile_elements
                 and event.ui_element == self.profile_elements["mediation"]
@@ -677,6 +679,15 @@ class ProfileScreen(Screens):
             manager=MANAGER,
         )
         self.profile_elements["cat_image"].disable()
+        #PUT GUIDE BUTTON HERE
+        self.profile_elements["guide_button"] = UIImageButton(
+            scale(pygame.Rect((250, 760), (196, 56))),
+            "",
+            object_id="#guide_button",
+            manager=MANAGER,
+            starting_height=2,
+        )
+        self.profile_elements["guide_button"].hide()
 
         # if cat is a med or med app, show button for their den
         self.profile_elements["med_den"] = UIImageButton(
@@ -691,7 +702,11 @@ class ProfileScreen(Screens):
             or self.the_cat.is_ill()
             or self.the_cat.is_injured()
         ):
-            self.profile_elements["med_den"].show()
+            if self.the_cat.is_ill() and "rampaging" in self.the_cat.illnesses:
+                self.profile_elements["guide_button"].show()
+                self.profile_elements["med_den"].hide()
+            else:
+                self.profile_elements["med_den"].show()
         else:
             self.profile_elements["med_den"].hide()
 
@@ -1239,7 +1254,7 @@ class ProfileScreen(Screens):
                 "grief stricken", "fleas", "malnourished", "starving", "paranoia", "seasonal lethargy", "lethargy",
                 "special interest", "hyperfixation", "stimming", "indecision", "impulsivity", "zoomies",
                 "sleeplessness", "burn out", "kittenspace", "puppyspace", "tics", "tic attack", "dizziness", "nausea",
-                "turmoiled litter"
+                "turmoiled litter", "rampaging"
             ]
             all_special = True
             for condition in the_cat.illnesses:
@@ -1430,6 +1445,12 @@ class ProfileScreen(Screens):
                         output += "recovering from a turmoiled birth!"
                     else:
                         output += "experiencing postpartum!"
+            if "rampaging" in the_cat.illnesses:
+                if already_sick_injured:
+                    output += "\nrampaging!"
+                else:
+                    output += "rampaging!"
+                    already_sick_injured = True
 
         return output
 
@@ -2322,14 +2343,18 @@ class ProfileScreen(Screens):
         )
 
         # gather a list of all the conditions and info needed.
-        all_illness_injuries = [
+        all_illness_injuries = []
+        if self.the_cat.awakened:
+            if self.the_cat.awakened["type"] == "esper":
+                all_illness_injuries.extend(
+            [(self.the_cat.awakened["ability"], (self.the_cat.awakened["desc"]+ "<br>" + self.the_cat.awakened["class"] + "-class"))]) 
+        all_illness_injuries.extend([
             (i, self.get_condition_details(i))
             for i in self.the_cat.permanent_condition
             if not (
                 self.the_cat.permanent_condition[i]["born_with"]
                 and self.the_cat.permanent_condition[i]["moons_until"] != -2
-            )
-        ]
+            )])
         all_illness_injuries.extend(
             [(i, self.get_condition_details(i)) for i in self.the_cat.injuries]
         )
@@ -2420,6 +2445,14 @@ class ProfileScreen(Screens):
         text_list.append(f"{alter['role']}")
         if alter["other"] != "cat":
             text_list.append(alter["other"])
+        text = "<br>".join(text_list)
+        # print(text)
+        return text
+    
+    def get_ability_details(self, awakened):
+        text_list = []
+        text_list.append(f"{awakened['ability']}")
+        text_list.append(f"{awakened['desc']}")
         text = "<br>".join(text_list)
         # print(text)
         return text

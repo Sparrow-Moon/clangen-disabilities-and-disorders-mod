@@ -715,6 +715,7 @@ class Patrol:
         print(skill_updates)
 
         success = int(random.random() * 120) < success_chance
+                        
         return (success_outcome if success else fail_outcome, success)
 
     def update_resources(self, biome_dir, leaf):

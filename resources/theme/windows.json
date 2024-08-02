@@ -42,5 +42,8 @@
             "shadow_width": "0",
             "enable_title_bar": "0"
         }
+    },
+    "#guiding_window": {
+        "prototype": "#window_base_theme"
     }
 }

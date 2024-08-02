@@ -5150,5 +5150,22 @@
                 "path": "resources/images/buttons/filters_tab_hover.png"
             }
         }
+    },
+    "#guide_button": {
+        "prototype": "#image_button",
+        "images": {
+            "normal_image": {
+                "path": "resources/images/buttons/guide.png"
+            },
+            "hovered_image": {
+                "path": "resources/images/buttons/guide_hover.png"
+            },
+            "selected_image": {
+                "path": "resources/images/buttons/guide_hover.png"
+            },
+            "disabled_image": {
+                "path": "resources/images/buttons/guide_unavailable.png"
+            }
+        }
     }
 }

@@ -729,6 +729,7 @@ class Cat:
         self.alters = []
         self.front = None
         self.awakened = None
+        self.guided = False
         self.df = False
         self.experience_level = None
 
@@ -949,7 +950,10 @@ class Cat:
         esp = randint(1,2)
         if esp == 1:
             template["type"] = "esper"
-            power = choice(["pyrokinesis","hydrokinesis","cyrokinesis", "geokinesis", "aerokinesis"])
+            power = choice(["pyrokinesis","hydrokinesis","cyrokinesis", "geokinesis", "aerokinesis", "illusions", "shapeshifting",
+                            "super strength", "enhanced senses", "telekinesis", "chimera", "invisibility", "incorporeal", "mind control",
+                            "flight","levitation", "teleportation", "electromagnetic control", "light manipulation", "beast speak",
+                            "dendrokinesis", "electrokinesis", "telempathy", "leaf speak", "astral projection"])
             template["ability"] = power
             template["desc"] = powers_dict[power]["power"]
         self.awakened = template
@@ -2383,6 +2387,13 @@ class Cat:
         """handles the moon skip for illness"""
         if not self.is_ill():
             return True
+        
+        if illness == "rampaging":
+            if self.guided:
+                self.guided = False
+                self.healed_condition = True
+                return False
+            #COME BACK HERE
 
         if self.illnesses[illness]["event_triggered"]:
             self.illnesses[illness]["event_triggered"] = False
@@ -2775,6 +2786,11 @@ class Cat:
             return
         if name == "kittencough" and self.status != "kitten":
             return
+        if name == "rampaging":
+            if not self.awakened:
+                return
+            elif self.awakened["type"] == "guide":
+                return
 
         illness = ILLNESSES[name]
         mortality = illness["mortality"][self.age]
@@ -3491,8 +3507,12 @@ class Cat:
         if self.outside or self.dead:
             if not self.is_disabled():
                 if os.path.exists(condition_file_path):
-                    os.remove(condition_file_path)
-                return
+                        os.remove(condition_file_path)
+                        return
+            if not self.is_awakened():
+                if os.path.exists(condition_file_path):
+                        os.remove(condition_file_path)
+                        return
 
         conditions = {}
 

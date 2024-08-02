@@ -1,27 +1,77 @@
 {
     "pyrokinesis": {
-    "power": "can manipulate and control fire",
-    "class": ["S", "A", "B", "C"],
-    "tags": ["major", "minor"]
+    "power": "can manipulate and control fire"
     },
     "hydrokinesis": {
-    "power": "can manipulate and control water",
-    "class": ["S", "A", "B", "C"],
-    "tags": ["major", "minor"]
+    "power": "can manipulate and control water"
     },
     "cyrokinesis": {
-    "power": "can manipulate and control ice",
-    "class": ["S", "A", "B", "C"],
-    "tags": ["major", "minor"]
+    "power": "can manipulate and control ice"
     },
     "geokinesis": {
-    "power": "can manipulate and control rocks",
-    "class": ["S", "A", "B", "C"],
-    "tags": ["major", "minor"]
+    "power": "can manipulate and control rocks"
     },
     "aerokinesis": {
-    "power": "can manipulate and control wind",
-    "class": ["S", "A", "B", "C"],
-    "tags": ["major", "minor"]
+    "power": "can manipulate and control wind"
+    },
+    "illusions": {
+        "power": "can create illusions"
+    },
+    "shapeshifting": {
+        "power": "can transform into other animals"
+    },
+    "super strength": {
+        "power": "supernaturally enhanced strength"
+    },
+    "enhanced senses": {
+        "power": "can sense things beyond"
+    },
+    "telekinesis": {
+        "power": "can move things using the mind"
+    },
+    "chimera": {
+        "power": "has body part(s) of a different animal"
+    },
+    "invisibility": {
+        "power": "can turn invisible"
+    },
+    "incorporeal": {
+        "power": "can travel through objects"
+    },
+    "mind control": {
+        "power": "can control the minds of other cats"
+    },
+    "flight": {
+        "power": "can fly (without wings)"
+    },
+    "levitation": {
+        "power": "can float above the ground"
+    },
+    "teleportation": {
+        "power": "can teleport to another location"
+    },
+    "electromagnetic control": {
+        "power": "can manipulate magnetic fields "
+    },
+    "light manipulation":{
+        "power": "can control light and shadows"
+    },
+    "beast speak": {
+        "power": "can communicate with other animals"
+    },
+    "dendrokinesis": {
+        "power": "can manipulate and control plants"
+    },
+    "electrokinesis": {
+        "power": "can manipulate and control lightning"
+    },
+    "telempathy":  {
+        "power": "can broadcast and sense emotions"
+    },
+    "leaf speak": {
+        "power": "can communicate with plants"
+    },
+    "astral projection": {
+        "power": "can project souls and spirits"
     }
 }

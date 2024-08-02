@@ -188,13 +188,13 @@
 		]
 	},
 	"cat_generation": {
-		"base_permanent_condition": 35,
-		"multiple_permanent_conditions": 20,
+		"base_permanent_condition": 5,
+		"multiple_permanent_conditions": 10,
 		"max_conditions_born_with": 3,
 		"comorbidity_chance": 5,
 		"base_male_tortie": 13,
 		"base_female_tortie": 4,
-		"base_heterochromia": 120,
+		"base_heterochromia": 12,
 		"direct_inheritance": 15,
 		"wildcard_tortie": 9,
 		"vit_chance": 8,
@@ -218,13 +218,13 @@
 		]
 	},
 	"accessory_generation": {
-		"base_acc_chance": 150,
-		"med_modifier": -80,
-		"baby_modifier": -20,
-		"elder_modifier": 20,
-		"happy_trait_modifier": -30,
-		"grumpy_trait_modifier": 30,
-		"ceremony_modifier": -20
+		"base_acc_chance": 15,
+		"med_modifier": -8,
+		"baby_modifier": -2,
+		"elder_modifier": 2,
+		"happy_trait_modifier": -3,
+		"grumpy_trait_modifier": 3,
+		"ceremony_modifier": -2
 	},
 	"fading": {
 		"age_to_fade": 202,

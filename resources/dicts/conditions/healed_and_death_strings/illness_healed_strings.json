@@ -271,5 +271,8 @@
         "r_c has spoken with m_c, and it seems like {PRONOUN/m_c/subject} are able to think clearly again, no longer lashing out at every cat around {PRONOUN/m_c/object}.",
         "m_c is able to realize that every cat has flaws, and that no cat is perfect. The black and white cloud over {PRONOUN/m_c/poss} eyes seems to have dispersed.",
         "m_c no longer feels as if everyone is horrible, able to once more see the gray between the black and the white."
-    ]
+    ],
+	"rampaging": [
+		"With the help of a guide, m_c was able to overcome {PRONOUN/m_c/poss} rampage."
+	]
 }

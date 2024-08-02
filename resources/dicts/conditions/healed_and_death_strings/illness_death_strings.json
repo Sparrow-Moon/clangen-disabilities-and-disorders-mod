@@ -205,5 +205,9 @@
   ],
   "parroting": [
     "this should not appear! m_c died from parroting?"
+  ],
+  "rampaging": [
+    "Without a guide to stop {PRONOUN/m_c/poss} rampage, m_c's abilities imploded, leaving {PRONOUN/m_c/object} dead.",
+    "m_c was too far gone for any guiding, and died during {PRONOUN/m_c/poss} rampage."
   ]
 }

@@ -3,7 +3,7 @@
 import random
 import re
 from os.path import exists as path_exists
-from random import choice, choices
+from random import choice, choices, randint
 from typing import List, Dict, Union, TYPE_CHECKING
 
 import pygame
@@ -483,11 +483,26 @@ class PatrolOutcome:
 
     def _handle_condition_and_scars(self, patrol: "Patrol") -> str:
         """Handle injuring cats, or giving scars"""
+        results = []
+        #rampaging risk
+        num_rampage = 0
+        if not self.success:
+            for kitty in patrol.patrol_cats:
+                if kitty.is_awakened():
+                    if kitty.awakened["type"] == "esper":
+                        rampage_chance = randint(1,4)
+                        if rampage_chance ==1:
+                            kitty.get_ill("rampaging")
+                            results.append(f"{kitty.name} is rampaging!.")
+                            num_rampage += 1
+                            print("RAMPAGE!")
 
         if not self.injury:
-            return ""
-
-        results = []
+            if num_rampage == 0:
+                return ""
+            else:
+                return " ".join(results)
+            
         condition_lists = INJURY_GROUPS
 
         for block in self.injury:

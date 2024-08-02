@@ -96,5 +96,8 @@
     "m_c has been experiencing frequent nightmares lately.",
 	"m_c has been struggling recently with nightmares",
 	"This past moon, m_c has been plagued with nightmares."
+  ],
+  "rampaging":[
+    "The combination of stress and overuse of {PRONOUN/m_c/poss} abilities has led to m_c entering a rampage."
   ]
 }
