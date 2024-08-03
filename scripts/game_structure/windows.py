@@ -738,6 +738,7 @@ class GuideEsper(UIWindow):
             i
             for i in Cat.all_cats_list
             if not i.faded
+            and not i.dead
             and i.is_awakened()
             and i.awakened["type"] == "guide"
         ]
