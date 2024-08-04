@@ -2080,7 +2080,7 @@
         },
         "duration": 10,
         "medicine_duration": 10,
-        "infectiousness": 0,
+        "infectiousness": 10,
         "risks": [
             {
                 "name": "bruises",

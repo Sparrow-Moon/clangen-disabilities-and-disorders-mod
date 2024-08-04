@@ -739,6 +739,7 @@ class GuideEsper(UIWindow):
             for i in Cat.all_cats_list
             if not i.faded
             and not i.dead
+            and i.status not in ["kitten", "newborn"]
             and i.is_awakened()
             and i.awakened["type"] == "guide"
         ]
@@ -835,7 +836,7 @@ class GuideEsper(UIWindow):
             text += "\nvery high"
         self.cat_info = pygame_gui.elements.UITextBox(
             text,
-            scale(pygame.Rect((900, 400), (400, 300))),
+            scale(pygame.Rect((880, 380), (400, 300))),
             visible=True,
             object_id="#text_box_30_horizleft",
             manager=MANAGER,
@@ -847,6 +848,7 @@ class GuideEsper(UIWindow):
         if cat.status in ["medicine cat", "mediator", "medicine cat apprentice", "mediator apprentice"]:
             buff += 1
         buff += self.calculate_rank_difference(self.the_cat, cat)
+        #print(cat.ID)
         if self.the_cat.relationships[cat.ID]:
             if self.the_cat.relationships[cat.ID].platonic_like > 20 or self.the_cat.relationships[cat.ID].trust > 20:
                 buff += 1
@@ -889,11 +891,17 @@ class GuideEsper(UIWindow):
         text = ""
         if guide > 5:
             text = "Success!"
+            self.the_cat.guided = True
         else:
             text = "Fail..."
+            guide_injured = randint(1,10)
+            if guide_injured == 1:
+                text += str(self.selected_cat.name) + " was hurt!"
+                injury = choice(["sore", "bruises"])
+                self.selected_cat.get_injured(injury)
         self.result = pygame_gui.elements.UITextBox(
             text,
-            scale(pygame.Rect((900, 550), (400, 300))),
+            scale(pygame.Rect((880, 500), (300, 300))),
             visible=True,
             object_id="#text_box_30_horizleft",
             manager=MANAGER,
@@ -902,7 +910,6 @@ class GuideEsper(UIWindow):
         self.guide_button.disable()
         for button in self.potential_guides_buttons:
             self.potential_guides_buttons[button].disable()
-        self.the_cat.guided = True
         
     def process_event(self, event):
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
