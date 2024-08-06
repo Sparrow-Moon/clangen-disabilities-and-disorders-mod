@@ -952,10 +952,10 @@ class Cat:
             template["type"] = "esper"
             power = choice(["pyrokinesis","hydrokinesis","cyrokinesis", "geokinesis", "aerokinesis", "illusions", "shapeshifting",
                             "super strength", "enhanced senses", "telekinesis", "chimera", "invisibility", "incorporeal", "mind control",
-                            "flight","levitation", "teleportation", "electromagnetic control", "light manipulation", "beast speak",
-                            "dendrokinesis", "electrokinesis", "telempathy", "leaf speak", "astral projection"])
+                            "flight","teleportation", "electromagnetic control", "light manipulation", "beast speak",
+                            "dendrokinesis", "electrokinesis", "telempathy", "astral projection"])
             template["ability"] = power
-            template["desc"] = powers_dict[power]["power"]
+            template["desc"] = choice(powers_dict[power][template["class"]])
         self.awakened = template
 
     def init_generate_cat(self, skill_dict):

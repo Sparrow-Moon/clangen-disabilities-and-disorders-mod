@@ -1,77 +1,553 @@
 {
     "pyrokinesis": {
-    "power": "can manipulate and control fire"
+        "power": "can manipulate and control fire",
+        "C": [
+            "can create small flames",
+            "can spark fires with a paw",
+            "sneezes sparks"
+        ],
+        "B": [
+            "can create flames",
+            "can burn others through touch",
+            "can breathe fire",
+            "can move fire"
+        ],
+        "A":[
+            "can create large flames",
+            "can burn others through touch",
+            "has a tail made of fire",
+            "can breathe large bursts of fire",
+            "can set things on fire with a thought"
+        ],
+        "S":[
+            "can create massive flames",
+            "can summon storms of fire",
+            "can disintegrate things with a paw",
+            "can set things on fire with a thought",
+            "can burst into flames"
+
+        ]
     },
     "hydrokinesis": {
-    "power": "can manipulate and control water"
+        "power": "can manipulate and control water",
+        "C": [
+            "can create bubbles",
+            "can control small streams of water"
+        ],
+        "B": [
+            "can move water",
+            "can create streams of water",
+            "can summon rain clouds",
+            "can walk on water"
+        ],
+        "A":[
+            "can summon rainstorms",
+            "can control waves of water",
+            "can trap others in bubbles",
+            "can create platforms of water"
+        ],
+        "S":[
+            "can summon floods of water",
+            "can control waves of water",
+            "can trap others in bubbles",
+            "can create platforms of water"
+        ]
     },
     "cyrokinesis": {
-    "power": "can manipulate and control ice"
+        "power": "can manipulate and control ice",
+        "C": [
+            "is ice cold to the touch",
+            "sneezes snowflakes"
+        ],
+        "B": [
+            "can breath streams of frost",
+            "can summon snow",
+            "can freeze things with a paw"
+        ],
+        "A": [
+            "can summon snow",
+            "can breath streams of frost",
+            "can freeze things with a paw"
+        ],
+        "S": [
+            "can summon hailstorms",
+            "can turn living things into ice"
+        ]
     },
     "geokinesis": {
-    "power": "can manipulate and control rocks"
+        "power": "can manipulate and control rocks",
+        "C": [
+            "can summon and control pebbles",
+            "can control sand"
+        ],
+        "B": [
+            "can summon and control rocks",
+            "can create rock platforms",
+            "can control sand"
+        ],
+        "A": [
+            "can summon and control boulders",
+            "can create and control golems",
+            "can summon sandstorms",
+            "can create rock platforms",
+            "can cause minor earthquakes"
+        ],
+        "S": [
+            "can turn living things into stone",
+            "can summon and control boulders",
+            "can create and control golems",
+            "can summon sandstorms",
+            "can cause major earthquakes"
+        ]
     },
     "aerokinesis": {
-    "power": "can manipulate and control wind"
+        "power": "can manipulate and control wind",
+        "C": [
+            "can control small gusts of wind",
+            "purifies the surrounding air"
+        ],
+        "B": [
+            "can control gusts of wind",
+            "can create small blades of wind",
+            "can summon fog"
+        ],
+        "A": [
+            "can control large gusts of wind",
+            "can create blades of wind",
+            "can create walls of wind",
+            "can summon heavy fogs"
+        ],
+        "S": [
+            "can summon tornados",
+            "can summon hurricanes",
+            "can control large gusts of wind",
+            "can create large blades of wind",
+            "can create walls of wind"
+        ]
     },
     "illusions": {
-        "power": "can create illusions"
+        "power": "can create illusions",
+        "C": [
+            "can make illusions targetting one sense",
+            "can make small illusions"
+        ],
+        "B": [
+            "can make illusions targetting multiple senses",
+            "can create illusions of prey"
+        ],
+        "A": [
+            "can make illusions targetting multiple senses",
+            "can create illusions of other cats",
+            "can create illusions of predators"
+        ],
+        "S": [
+            "can trap other cats in illusions",
+            "can create illusions of other cats"
+        ]
     },
     "shapeshifting": {
-        "power": "can transform into other animals"
+        "power": "can transform into other animals",
+        "C": [
+           "can change fur color at will",
+           "can change eye color at will"
+        ],
+        "B": [
+            "can transform into a bird",
+            "can transform into a fish",
+            "can transform into a raccoon",
+            "can transform into a squirrel",
+            "can transform into a mouse",
+            "can transform into a rat",
+            "can transform into a gopher",
+            "can shrink"
+        ],
+        "A": [
+            "can transform into any cat",
+            "can transform into a canine",
+            "can transform into a bird of prey",
+            "can transform into a shark",
+            "can transform into a badger",
+            "can shrink or grow"
+        ],
+        "S": [
+            "can transform into any animal",
+            "can transform into any cat",
+            "can transform into a big cat",
+            "can transform into a bird of prey",
+            "can transform into a bear",
+            "can shrink or grow"
+        ]
     },
     "super strength": {
-        "power": "supernaturally enhanced strength"
+        "power": "supernaturally enhanced strength",
+        "C": [
+            "is stronger than the average cat",
+            "has an unnaturally strong bite"
+        ],
+        "B": [
+            "is strong enough to crush rocks",
+            "has the bite of a dog"	
+        ],
+        "A": [
+            "is strong enough to crush boulders",
+            "has the bite of a dog",
+            "can easily crush bones"
+        ],
+        "S": [
+            "can destroy anything with a paw",
+            "has the bite of a jaguar",
+            "can easily crush bones"
+        ]
     },
     "enhanced senses": {
-        "power": "can sense things beyond"
+        "power": "can sense things beyond",
+        "C": [
+            "can hear better than the average cat",
+            "can see better than the average cat"
+        ],
+        "B": [
+            "can see things from far away",
+            "can hear things from far away"
+        ],
+        "A": [
+            "can see things from far away",
+            "can hear things from far away",
+            "can sense the near future"
+        ],
+        "S": [
+            "can sense the future",
+            "can hear and see things from far away"
+        ]
     },
     "telekinesis": {
-        "power": "can move things using the mind"
+        "power": "can move things using the mind",
+        "C": [
+            "can push small objects with a thought",
+            "can float small objects"
+        ],
+        "B": [
+            "can push objects with a thought",
+            "can make objects float"
+        ],
+        "A": [
+            "can push objects with a thought",
+            "can move other cats with a thought",
+            "can make objects float"
+        ],
+        "S": [
+            "can push large objects with a thought",
+            "can move other cats with a thought",
+            "can make large objects float"
+        ]
     },
     "chimera": {
-        "power": "has body part(s) of a different animal"
+        "power": "has body part(s) of a different animal",
+        "C": [
+            "has lizard eyes",
+            "has a fox tail"
+            
+        ],
+        "B": [
+            "has hooves",
+            "has hawk eyes",
+            "has horns",
+            "has two tails",
+            "has rabbit ears",
+            "has antlers"
+        ],
+        "A": [
+            "has bird wings",
+            "has bat wings",
+            "has hooves",
+            "has horns",
+            "has antlers",
+            "has spider legs",
+            "has fins",
+            "is covered in armored scales",
+            "has three fox tails"
+
+        ],
+        "S": [
+            "had bird wings",
+            "has bat wings",
+            "has spider legs",
+            "has fins and gills",
+            "has horns and saber fangs",
+            "is covered in armored scales",
+            "has nine fox tails"
+        ]
     },
     "invisibility": {
-        "power": "can turn invisible"
+        "power": "can turn invisible",
+        "C": [
+            "can become translucent",
+            "appears to be blurry"
+        ],
+        "B": [
+            "can become translucent",
+            "can turn partially invisible"
+        ],
+        "A": [
+            "can turn invisible",
+            "can turn partially invisible"
+        ],
+        "S": [
+            "can turn invisible",
+            "can turn other cats invisible"
+        ]
     },
     "incorporeal": {
-        "power": "can travel through objects"
+        "power": "can travel through objects",
+        "C": [
+            "can dodge better than the average cat",
+            "can see through plants"
+        ],
+        "B": [
+            "can travel through other cats",
+            "can travel through plants",
+            "can see through cats",
+            "can see through plants"
+        ],
+        "A": [
+            "can travel through inorganic material",
+            "can travel through organic material",
+            "can dodge any attack"
+        ],
+        "S": [
+            "can travel through any material",
+            "can dodge any attack"
+        ]
     },
     "mind control": {
-        "power": "can control the minds of other cats"
+        "power": "can control the minds of others",
+        "C": [
+            "can influence the feelings of others",
+            "is supernaturally charismatic"
+        ],
+        "B": [
+            "can influence the feelings of others",
+            "has powerful suggestions",
+            "has a mesmerizing gaze"
+        ],
+        "A": [
+            "has powerful suggestions",
+            "can hypnotize others",
+            "has a mesmerizing gaze"
+        ],
+        "S": [
+            "can control the minds of other cats",
+            "can puppeteer other cats with ease",
+            "can hypnotize others"
+        ]
     },
     "flight": {
-        "power": "can fly (without wings)"
-    },
-    "levitation": {
-        "power": "can float above the ground"
+        "power": "can fly (without wings)",
+        "C": [
+            "can levitate a few inches",
+            "can glide in the air",
+            "can jump unnaturally high"
+        ],
+        "B": [
+            "can float above the ground",
+            "can glide in the air",
+            "can leap great distances"
+        ],
+        "A": [
+            "can float above the ground",
+            "can soar across the sky",
+            "can leap great distances"
+        ],
+        "S": [
+            "can soar across the sky",
+            "can walk in the air",
+            "can bounce over trees"
+        ]
     },
     "teleportation": {
-        "power": "can teleport to another location"
+        "power": "can teleport to another location",
+        "C": [
+            "seems to blink between spaces",
+            "can teleport a few inches"
+        ],
+        "B": [
+            "can teleport short distances",
+            "seems to blink between spaces"
+        ],
+        "A": [
+            "can teleport moderate distances",
+            "can teleport a few seconds into the future",
+            "can teleport a few seconds into the past"
+        ],
+        "S": [
+            "can teleport great distances",
+            "can teleport a few minutes into the future",
+            "can teleport a few minutes into the past"
+        ]
     },
     "electromagnetic control": {
-        "power": "can manipulate magnetic fields "
+        "power": "can manipulate magnetic fields",
+        "C": [
+            "has fur charged with static shocks",
+            "can always sense true north"
+        ],
+        "B": [
+            "can track down metal objects",
+            "can move small metal objects",
+            "has a body that acts like a magnet"
+        ],
+        "A": [
+            "has a body that acts like a magnet",
+            "can move metal objects",
+            "can distort magnetic fields"
+        ],
+        "S": [
+            "can move large metal objects",
+            "can distort magnetic fields"
+        ]
     },
     "light manipulation":{
-        "power": "can control light and shadows"
+        "power": "can control light and shadows",
+        "C": [
+            "glows in the dark",
+            "can create elaborate shadow puppets"
+        ],
+        "B": [
+            "can summon small balls of light",
+            "can create elaborate shadow puppets"
+        ],
+        "A": [
+            "can summon balls of light",
+            "can slip into the shadows",
+            "can shroud others in darkness",
+            "can blind others with light"
+        ],
+        "S": [
+            "can summon large balls of light",
+            "can transform into a shadow",
+            "can travel through shadows",
+            "can shroud others in shadow",
+            "can blind others with light"
+        ]
     },
     "beast speak": {
-        "power": "can communicate with other animals"
+        "power": "can communicate with other animals",
+        "C": [
+            "can sense the emotions of non-cats",
+            "can hear the voices of other species"
+        ],
+        "B": [
+            "understands the words of prey",
+            "can understand twolegs fluently"
+        ],
+        "A": [
+            "can communicate with canines",
+            "can communicate with prey",
+            "can understand twolegs fluently",
+            "can communicate with aquatic creatures",
+            "can communicate with birds"
+        ],
+        "S": [
+            "is fluent in every species' language",
+            "can control other animals"
+        ]
     },
     "dendrokinesis": {
-        "power": "can manipulate and control plants"
+        "power": "can manipulate and control plants",
+        "C": [
+            "can grow small flowers",
+            "has a tail  made of leaves",
+            "is poisonous",
+            "can sense the feelings of plants"
+        ],
+        "B": [
+            "can grow small flowers",
+            "is venomous",
+            "can speak to plants",
+            "can sense the feelings of plants"
+        ],
+        "A": [
+            "can make any plant bloom or wither",
+            "can summon small brambles",
+            "can travel through trees",
+            "can summon vines",
+            "can speak to plants"
+        ],
+        "S": [
+            "can summon walls of thorns",
+            "can make any plant bloom or wither",
+            "can travel through trees",
+            "can summon armies of vines"
+        ]
     },
     "electrokinesis": {
-        "power": "can manipulate and control lightning"
+        "power": "can manipulate and control lightning",
+        "C": [
+            "sneezes sparks",
+            "glows in the dark",
+            "has fur charged with static shocks",
+            "can sense thunderstorms",
+            "serves as a conduit"
+        ],
+        "B": [
+            "can shock other cats",
+            "can summon small balls of lightning",
+            "serves as a conduit"
+        ],
+        "A": [
+            "can call down lightning",
+            "can shock other cats",
+            "can summon balls of electricity"
+        ],
+        "S": [
+            "can summon thunder storms",
+            "can call down lightning",
+            "can blast electricity from a paw"
+        ]
     },
     "telempathy":  {
-        "power": "can broadcast and sense emotions"
-    },
-    "leaf speak": {
-        "power": "can communicate with plants"
+        "power": "can broadcast and sense emotions",
+        "C": [
+            "can sense strong emotions",
+            "can broadcast strong emotions"
+        ],
+        "B": [
+            "can sense the emotions of others",
+            "can sense the desires of others",
+            "has a calming aura"
+        ],
+        "A": [
+            "can sense the emotions of others",
+            "can sense the desires of others",
+            "can hear strong thoughts",
+            "has a powerful calming aura"
+        ],
+        "S": [
+            "can sense and influence the emotions of others",
+            "can hear the thoughts of others",
+            "can change the emotions of other cats",
+            "has a powerful calming aura"
+        ]
     },
     "astral projection": {
-        "power": "can project souls and spirits"
+        "power": "can project souls and spirits",
+        "C": [
+            "can see echoes of the past",
+            "can see ghosts"
+        ],
+        "B": [
+            "can see echoes of the past",
+            "can see ghosts",
+            "can enter the dreams of others"
+        ],
+        "A": [
+            "can enter the dreams of others",
+            "can summon ghosts",
+            "can possess sleeping cats"
+        ],
+        "S": [
+            "can broadcast the dreams of others",
+            "can summon ghosts",
+            "can possess other cats"
+        ]
     }
 }
