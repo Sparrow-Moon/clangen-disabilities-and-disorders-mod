@@ -125,8 +125,9 @@ class Sprites:
             'lineart', 'lineartdf', 'lineartdead',
             'eyes', 'eyes2', 'lazyeyes', 'skin', 'blep',
             'scars', 'missingscars', 'disabilityscars',
-            'medcatherbs', 'snake_accessories', 'smallAnimal_accessories', 'aliveInsect_accessories', 'disabilityaccs',
-            'booties',
+            'medcatherbs', 'snake_accessories', 'smallAnimal_accessories', 'aliveInsect_accessories', 'deadInsect_accessories',
+            'plant2_accessories', 'flower_accessories','fruit_accessories', 'crafted_accessories', 'tail2_accessories','disabilityaccs',
+            'booties', 'beetleeyes', 'beetleeyes2', 'beetlemore', 'beetlemore2',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -157,17 +158,34 @@ class Sprites:
 
         # Define eye colors
         eye_colors = [
-            ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
-             'HEATHERBLUE', 'SUNLITICE'],
-            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW']
-        ]
+            ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'HEATHERBLUE', 'SUNLITICE'],
+            ['COPPER', 'SAGE', 'COBALT', 'PALEBLUE', 'BRONZE', 'SILVER', 'PALEYELLOW', 'GOLD', 'GREENYELLOW', 'FOXGLOVE', 'OLIVE', 'EASTER']
+            ]
+        beetle_eyes = [    
+            ['ROSE', 'ALGAE', 'SEAFOAM', 'LIGHT FLAME', 'CLOUDY', 'RED', 'TURQUOISE', 'SWAMP', 'RAINY', 'AQUAMARINE', 'EARTH', 'PUMPKIN'],
+            ['LILAC', 'PERIWINKLE', 'VIOLET', 'POND', 'DIRT', 'BROWN', 'CEDAR', 'CHRISTMAS', 'COTTON CANDY', 'VALENTINE', 'FIREWORK', 'LUCKY']
+            ]
+        beetle_more = [    
+            ['DARK PINE', 'FALL', 'FOREST FIRE', 'GOLD MOON', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE', 'OXIDIZED', 'SNOW', 'BERRY BANANA', 'DAWN SKY'],
+            ['TWILIGHT SKY', 'WORMY', 'BLUE HAZEL', 'THUNDERBOLT', 'VOLCANO', 'SEASHELL', 'PARADOX', 'CURSE', 'BLESSING', 'LIME', 'PALE BROWN', 'CRIMSON']
+            ]
 
         for row, colors in enumerate(eye_colors):
             for col, color in enumerate(colors):
                 self.make_group('eyes', (col, row), f'eyes{color}')
                 self.make_group('eyes2', (col, row), f'eyes2{color}')
                 self.make_group('lazyeyes', (col, row), f'lazyeyes{color}')
+        
+        for row, colors in enumerate(beetle_eyes):
+            for col, color in enumerate(colors):
+                self.make_group('beetleeyes', (col, row), f'eyes{color}')
+                self.make_group('beetleeyes2', (col, row), f'eyes2{color}')
 
+        for row, colors in enumerate(beetle_more):
+            for col, color in enumerate(colors):
+                self.make_group('beetlemore', (col, row), f'eyes{color}')
+                self.make_group('beetlemore2', (col, row), f'eyes2{color}')
+                
         # Define white patches
         white_patches = [
             ['FULLWHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANYTWO', 'MOON', 'PHANTOM', 'POWDER',
@@ -334,6 +352,31 @@ class Sprites:
         aliveInsect_data = [
             ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD", "DAIRY COW ISOPOD", "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG"],
             ["ORANGE LADYBUG", "YELLOW LADYBUG"]
+        ],
+        
+        deadInsect_data = [
+            ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH", "POLYPHEMUS MOTH", "MINT MOTH"]
+        ]
+        
+        plant2_data = [
+            ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"]
+        ]
+        
+        flower_data = [
+            ["DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY", "CATNIP FLOWER", "BLANKET FLOWER", "ALLIUM", "LACELEAF", "PURPLE GLORY"],
+            ["YELLOW PRIMROSE", "HESPERIS", "MARIGOLD", "WISTERIA"]
+        ]
+        
+        fruit_data = [
+            ["RASPBERRY", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"]
+        ]
+        
+        crafted_data = [
+            ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"]
+        ]
+        
+        tail2_data = [
+            ["SEAWEED", "DAISY CORSAGE"]
         ]
 
         disabilityaccs_data = [
@@ -392,7 +435,37 @@ class Sprites:
         for row, aliveInsect_accessories in enumerate(aliveInsect_data):
             for col, aliveInsect_accessory in enumerate(aliveInsect_accessories):
                 self.make_group('aliveInsect_accessories', (col, row), f'acc_aliveInsect{aliveInsect_accessory}')
-
+        
+        # deadInsect accessories
+        for row, deadInsect_accessories in enumerate(deadInsect_data):
+            for col, deadInsect_accessory in enumerate(deadInsect_accessories):
+                self.make_group('deadInsect_accessories', (col, row), f'acc_deadInsect{deadInsect_accessory}')
+        
+        # plant2 accessories
+        for row, plant2_accessories in enumerate(plant2_data):
+            for col, plant2_accessory in enumerate(plant2_accessories):
+                self.make_group('plant2_accessories', (col, row), f'acc_plant2{plant2_accessory}')
+                
+        # flower accessories
+        for row, flower_accessories in enumerate(flower_data):
+            for col, flower_accessory in enumerate(flower_accessories):
+                self.make_group('flower_accessories', (col, row), f'acc_flower{flower_accessory}')
+        
+        # fruit accessories
+        for row, fruit_accessories in enumerate(fruit_data):
+            for col, fruit_accessory in enumerate(fruit_accessories):
+                self.make_group('fruit_accessories', (col, row), f'acc_fruit{fruit_accessory}')
+        
+        # crafted accessories
+        for row, crafted_accessories in enumerate(crafted_data):
+            for col, crafted_accessory in enumerate(crafted_accessories):
+                self.make_group('crafted_accessories', (col, row), f'acc_crafted{crafted_accessory}')
+        
+        # tail2 accessories
+        for row, tail2_accessories in enumerate(tail2_data):
+            for col, tail2_accessory in enumerate(tail2_accessories):
+                self.make_group('tail2_accessories', (col, row), f'acc_tail2{tail2_accessory}')
+             
         # dismod accessories
         for row, disabilityaccs in enumerate(disabilityaccs_data):
             for col, disabilityacc in enumerate(disabilityaccs):

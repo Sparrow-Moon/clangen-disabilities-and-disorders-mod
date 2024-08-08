@@ -768,5 +768,210 @@
     "default": "yellow ladybug friend",
     "plural": "yellow ladybugs",
     "singular": "a yellow ladybug"
+  },
+  "BIRD SKULL":{
+  "default": "bird skull",
+  "plural": "bird skulls",
+  "singular": "bird skull"
+  },
+  "DAISY CORSAGE": {
+  "default": "daisy tail corsage",
+  "plural": "daisy corsages",
+  "singular": "daisy corsage"
+  },
+  "BAMBOO": {
+  "default": "bamboo in nest",
+  "plural": "bamboo",
+  "singular": "bamboo"
+  },
+  "WILLOWBARK BAG": {
+  "default": "willow-bark bag",
+  "plural": "willow-bark bags",
+  "singular": "willow-bark bag"
+  },
+  "CLAY DAISY POT": {
+  "default": "clay-and-mousehide daisy pot",
+  "plural": "clay daisy pots",
+  "singular": "clay daisy pot"
+  },
+  "CLAY AMANITA POT": {
+  "default": "clay-and-mousehide amanita pot",
+  "plural": "clay amanita pot",
+  "singular": "clay amanita pot"
+  },
+  "LEAF BOW": {
+  "default": "twisted leaf-bow",
+  "plural": "leafbows",
+  "singular": "leaf bow"
+  },
+  "ACORN": {
+      "default": "acorn",
+      "plural": "acorns",
+      "singular": "acorn"
+  },
+    "PELT MOSS": {
+      "default": "moss-covered pelt",
+      "plural": "mossy pelts",
+      "singular": "mossy pelt"
+  },
+  "BLANKET FLOWER": {
+      "default": "blanket flower",
+      "plural": "blanket flowers",
+      "singular": "blanket flower"
+  },
+  "ALLIUM": {
+      "default": "allium flowers",
+      "plural": "allium flowers",
+      "singular": "allium flowers"
+  },
+  "LACELEAF": {
+      "default": "laceleaf flower",
+      "plural": "laceleaf flowers",
+      "singular": "laceleaf flower"
+  },
+  "PURPLE GLORY": {
+      "default": "purple morning glory",
+      "plural": "purple morning glories",
+      "singular": "purple morning glory"
+  },
+  "WISTERIA": {
+      "default": "wisteria strand",
+      "plural": "wisteria strands",
+      "singular": "wisteria strand"
+  },
+  "RASPBERRY": {
+      "default": "raspberry",
+      "plural": "raspberries",
+      "singular": "raspberry"
+  },
+  "BLACKBERRY": {
+      "default": "blackberry",
+      "plural": "blackberries",
+      "singular": "blackberry"
+  },
+  "GOLDEN RASPBERRY": {
+      "default": "golden raspberry",
+      "plural": "golden raspberries",
+      "singular": "golden raspberry"
+  },
+  "CHERRY": {
+      "default": "cherry",
+      "plural": "cherries",
+      "singular": "cherry"
+  },
+  "YEW": {
+      "default": "yew",
+      "plural": "yew",
+      "singular": "yew"
+  },
+  "YELLOW PRIMROSE": {
+      "default": "yellow primrose",
+      "plural": "yellow primroses",
+      "singular": "yellow primroses"
+  },
+  "HESPERIS": {
+      "default": "hesperis",
+      "plural": "hesperis flowers",
+      "singular": "hesperis"
+  },
+  "MARIGOLD": {
+      "default": "marigold",
+      "plural": "marigold",
+      "singular": "marigold"
+  },
+  "DIANTHUS": {
+      "default": "pink dianthus",
+      "plural": "dianthus flowers",
+      "singular": "dianthus"
+  },
+  "BLEEDING HEARTS": {
+      "default": "bleeding heart",
+      "plural": "bleeding hearts",
+      "singular": "bleeding heart"
+  },
+  "IVY": {
+      "default": "ivy leaf",
+      "plural": "ivy leaves",
+      "singular": "ivy leaf"
+  },
+  "FRANGIPANI": {
+      "default": "frangipani",
+      "plural": "frangipani flowers",
+      "singular": "frangipani flower"
+  },
+  "BLUE GLORY": {
+      "default": "blue morning glory",
+      "plural": "blue morning glories",
+      "singular": "blue morning glory"
+  },
+  "LUNAR MOTH": {
+      "default": "lunar moth wings",
+      "plural": "lunar moth wings",
+      "singular": "lunar moth wings"
+  },
+  "CATNIP FLOWER": {
+      "default": "catnip flowers",
+      "plural": "catnip blooms",
+      "singular": "catnip flower"
+  },
+  "ROSY MAPLE MOTH": {
+      "default": "rosy maple moth wings",
+      "plural": "rosy maple moth wings",
+      "singular": "rosy maple moth wing"
+  },
+  "MONARCH BUTTERFLY": {
+      "default": "monarch butterfly wings",
+      "plural": "monarch butterfly wings",
+      "singular": "monarch butterfly wing"
+  },
+  "DAPPLED MONARCH": {
+      "default": "dappled monarch butterfly wings",
+      "plural": "dappled monarch butterfly wings",
+      "singular": "dappled monarch wing"
+  },
+  "POLYPHEMUS MOTH": {
+      "default": "polyphemus moth wings",
+      "plural": "polyphemus moth wings",
+      "singular": "polyphemus moth wing"
+  },
+  "MINT MOTH": {
+      "default": "mint moth wings",
+      "plural": "mint moth wings",
+      "singular": "mint moth wing"
+  },
+  "PUMPKIN": {
+      "default": "pumpkin",
+      "plural": "pumpkins",
+      "singular": "pumpkin"
+  },
+  "MOSS": {
+      "default": "moss",
+      "plural": "moss",
+      "singular": "moss"
+  },
+  "MOSS PELT": {
+      "default": "moss pelt",
+      "plural": "moss",
+      "singular": "moss"
+  },
+  "STICK" : {
+      "default": "stick",
+      "plural": "sticks",
+      "singular": "stick"
+  },
+  "DAISY": {
+      "default": "daisy",
+      "plural": "daisies",
+      "singular": "daisy"
+  },
+  "SEAWEED": {
+      "default": "seaweed wrap",
+      "plural": "seaweed",
+      "singular": "seaweed"
+  },"CLOVER" : {
+    "default": "clover",
+    "plural": "clovers",
+    "singular": "clover"
   }
+  
 }

@@ -218,13 +218,13 @@
 		]
 	},
 	"accessory_generation": {
-		"base_acc_chance": 150,
-		"med_modifier": -80,
-		"baby_modifier": -20,
-		"elder_modifier": 20,
-		"happy_trait_modifier": -30,
-		"grumpy_trait_modifier": 30,
-		"ceremony_modifier": -20
+		"base_acc_chance": 1,
+		"med_modifier": -8,
+		"baby_modifier": -2,
+		"elder_modifier": 2,
+		"happy_trait_modifier": -3,
+		"grumpy_trait_modifier": 3,
+		"ceremony_modifier": -2
 	},
 	"fading": {
 		"age_to_fade": 202,

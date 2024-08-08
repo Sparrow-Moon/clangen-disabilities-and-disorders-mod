@@ -717,7 +717,7 @@
     "sub_type": ["ceremony", "accessory"],
     "weight": 20,
     "event_text": "r_c gives m_c something to adorn {PRONOUN/m_c/poss} pelt as congratulations.",
-    "new_accessory": ["WILD","PLANT"],
+    "new_accessory": ["WILD", "PLANT", "FLOWER", "DEADINSECT", "PLANT2"],
     "m_c":{
       "age": ["any"],
       "status": ["any"]

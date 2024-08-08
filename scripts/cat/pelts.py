@@ -55,13 +55,21 @@ class Pelt:
                    'classic', 'sokoke', 'agouti', 'singlestripe', 'masked']
 
     pelt_length = ["short", "medium", "long"]
-    eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD',
-                   'PALEBLUE',
-                   'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW',
-                   'BRONZE', 'SILVER']
-    yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER']
-    blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY']
-    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL']
+    eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
+        'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'COBALT', 'SUNLITICE', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ROSE',
+        'ALGAE', 'SEAFOAM', 'LIGHT FLAME', 'CLOUDY', 'RED', 'TURQUOISE', 'SWAMP', 'RAINY', 'AQUAMARINE', 'EARTH', 'PUMPKIN', 'LILAC',
+        'PERIWINKLE', 'VIOLET', 'POND', 'DIRT', 'BROWN', 'CEDAR', 'CHRISTMAS', 'COTTON CANDY', 'DARK PINE', 'FALL', 'FOREST FIRE',
+        'GOLD MOON', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE', 'OXIDIZED', 'SNOW', 'BERRY BANANA', 'DAWN SKY', 'TWILIGHT SKY',
+        'WORMY', 'BLUE HAZEL', 'THUNDERBOLT', 'VOLCANO', 'SEASHELL', 'PARADOX', 'CURSE', 'BLESSING', 'FOXGLOVE', 'OLIVE', 'EASTER',
+        'VALENTINE', 'FIREWORK', 'LUCKY', 'LIME', 'PALE BROWN', 'CRIMSON']
+    yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'BRONZE', 'SILVER', 'ROSE', 'LIGHT FLAME', 'RED',
+                   'PUMPKIN', 'BROWN', 'CEDAR', 'DARK PINE', 'FALL', 'GOLD MOON', 'OXIDIZED', 'BERRY BANANA', 'WORMY', 'THUNDERBOLT',
+                   'VOLCANO', 'SEASHELL', 'PARADOX', 'BLESSING', 'EASTER', 'VALENTINE', 'PALE BROWN', 'CRIMSON']
+    blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'COBALT', 'SUNLITICE', 'GREY', 'SEAFOAM', 'CLOUDY', 'TURQUOISE',
+                 'RAINY', 'LILAC', 'PERIWINKLE', 'VIOLET', 'POND', 'COTTON CANDY', 'HALLOWEEN', 'LOBELIA', 'MIDNIGHT', 'MOONSTONE', 'SNOW',
+                 'DAWN SKY', 'TWILIGHT SKY', 'BLUE HAZEL', 'CURSE', 'FIREWORK']
+    green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'ALGAE', 'SWAMP', 'AQUAMARINE', 'EARTH', 'DIRT', 'CHRISTMAS', 'FOREST FIRE',
+                  'LIME', 'OLIVE', 'LUCKY']
 
     # bite scars by @wood pank on discord
 
@@ -112,6 +120,23 @@ class Pelt:
     aliveInsect_accessories = ["BROWN SNAIL", "RED SNAIL", "WORM", "BLUE SNAIL", "ZEBRA ISOPOD", "DUCKY ISOPOD",
                                "DAIRY COW ISOPOD",
                                "BEETLEJUICE ISOPOD", "BEE", "RED LADYBUG", "ORANGE LADYBUG", "YELLOW LADYBUG"]
+    flower_accessories = ["DAISY", "DIANTHUS", "BLEEDING HEARTS", "FRANGIPANI", "BLUE GLORY",
+                     "CATNIP FLOWER", "BLANKET FLOWER", "ALLIUM", "LACELEAF",
+                      "PURPLE GLORY", "YELLOW PRIMROSE", "HESPERIS",
+                      "MARIGOLD", "WISTERIA"]
+
+    plant2_accessories = ["CLOVER", "STICK", "PUMPKIN", "MOSS", "IVY", "ACORN", "MOSS PELT", "REEDS", "BAMBOO"
+                    ]
+    deadInsect_accessories = ["LUNAR MOTH", "ROSY MAPLE MOTH", "MONARCH BUTTERFLY", "DAPPLED MONARCH",
+                      "POLYPHEMUS MOTH", "MINT MOTH"
+                    ]
+    fruit_accessories = ["RASPBERRY", "BLACKBERRY", "GOLDEN RASPBERRY", "CHERRY", "YEW"
+                    ]
+
+    crafted_accessories = ["WILLOWBARK BAG", "CLAY DAISY POT", "CLAY AMANITA POT", "CLAY BROWNCAP POT", "BIRD SKULL", "LEAF BOW"
+                    ]
+    tail2_accessories = ["SEAWEED", "DAISY CORSAGE"
+                    ]
 
     # dad accessories
     toy_accessories = ["BALL", "MOUSE", "BONE"]
@@ -122,7 +147,7 @@ class Pelt:
         "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT", "PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"
     ]
 
-    all_natural_accessories = [plant_accessories, wild_accessories]
+    all_natural_accessories = [plant_accessories, wild_accessories, plant2_accessories, flower_accessories, fruit_accessories]
 
     tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
     spotted = ["Speckled", "Rosette"]
@@ -695,19 +720,29 @@ class Pelt:
         if age == "newborn":
             self.accessory = None
             return
-
-        acc_display_choice = random.randint(0, 80)
+        
+        chance = game.config["accessory_generation"]["base_acc_chance"]
+        
         if age in ['kitten', 'adolescent']:
-            acc_display_choice = random.randint(0, 180)
+            chance = chance * 2
         elif age in ['young adult', 'adult']:
-            acc_display_choice = random.randint(0, 100)
+            chance = int(chance * 1.2)
+        
+        acc_display_choice = 1
 
         if acc_display_choice == 1:
             self.accessory = choice([
                 choice(Pelt.plant_accessories),
                 choice(Pelt.wild_accessories),
-                choice(Pelt.flag_accessories)
-            ])
+                choice(Pelt.flag_accessories),
+                choice(Pelt.flower_accessories),
+                choice(Pelt.snake_accessories),
+                choice(Pelt.smallAnimal_accessories),
+                choice(Pelt.aliveInsect_accessories),
+                choice(Pelt.deadInsect_accessories),
+                choice(Pelt.fruit_accessories),
+                choice(Pelt.crafted_accessories),
+                choice(Pelt.tail2_accessories)])
         else:
             self.accessory = None
 

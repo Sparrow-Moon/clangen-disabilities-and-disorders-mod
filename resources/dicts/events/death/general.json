@@ -59,6 +59,832 @@
         ]
     },
     {
+        "event_id": "beetle_death_murder1",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was found murdered, covered in gashes and bites similar to a cats but no rogues or loners were in the area... Fear and distrust runs rampant as the culprit is left unknown.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder2",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was viciously murdered. r_c stands over {PRONOUN/m_c/object}, a dark look in {PRONOUN/m_c/poss} eyes and blood dripping from {PRONOUN/r_c/poss} pelt.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder3",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c was found dead, face down in a nearby river. The culprit is unknown.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder4",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "Competing in a tree-climbing race, r_c and m_c scale a particularly tall and old tree. In the heat of the competition, r_c 'accidentally' pushes a weak branch m_c is about to leap onto, causing {PRONOUN/m_c/object} to fall to their doom.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder5",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "r_c murders m_c and leave {PRONOUN/m_c/poss} body on the border, sparking wild controversy with the other clans.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder6",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "Out on patrol, r_c and m_c were battling in a training session. r_c comes back later with the body of m_c, blood dripping from a harsh training session.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder7",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "r_c decides that m_c brings no worth to the clan and ends {PRONOUN/m_c/poss} life swiftly when {PRONOUN/r_c/subject} go out for a patrol.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder8",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "In the dead of night, under the cold gaze of the moon, r_c ensures that m_c's voice will no longer spread lies about {PRONOUN/r_c/object}.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder9",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "r_c hates how m_c seems to always be so faithful and full of hope. r_c puts an end to {PRONOUN/m_c/object}. Now, will the stars save {PRONOUN/m_c/object}?",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder10",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c is always worried about the future of the clan, so r_c decides that {PRONOUN/m_c/subject} shouldn't be a part of it.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder11",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "m_c always seems to piss of r_c and it seems r_c has reached {PRONOUN/r_c/poss} boiling point as {PRONOUN/r_c/subject} stand over m_c's dead body.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder12",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "It all happened so quickly. One moment, r_c and m_c were arguing and the next, m_c lie motionless, {PRONOUN/m_c/poss} eyes staring blankly to the sky as r_c stares horrified, blood dripping from {PRONOUN/r_c/object}.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder13",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "r_c promises m_c a view of the most beautiful sunset, but m_c doesn't live to see the sunrise.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
+        "event_id": "beetle_death_murder14",
+        "location": [ "any" ],
+        "season": [
+            "any"
+        ],
+        "sub_type": ["murder"],
+        "tags": [],
+        "weight": 20,
+        "event_text": "They always said curiosity killed the cat. m_c should've never followed r_c to that treacherous cliff.",
+        "m_c": {
+            "status": [
+                "kitten",
+                "apprentice",
+                "warrior",
+                "deputy",
+                "medicine cat apprentice",
+                "medicine cat",
+                "mediator apprentice",
+                "mediator",
+                "elder"
+            ],
+            "dies": true
+        },
+        "r_c": {
+            "age": ["adolescent", "young adult", "adult", "senior adult"],
+            "status": [ "any" ]
+        },
+        "history": [{
+            "cats": ["m_c"],
+            "reg_death": "m_c was secretly murdered by r_c."
+        }],
+        "relationships": [
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "platonic"
+                ],
+                "amount": -15
+            },
+            {
+                "cats_from": [
+                    "r_c"
+                ],
+                "cats_to": [
+                    "m_c"
+                ],
+                "values": [
+                    "dislike"
+                ],
+                "amount": 15
+            }
+        ]
+    },
+    {
         "event_id": "gen_death_murder_any2",
         "location": [ "any" ],
         "season": [
