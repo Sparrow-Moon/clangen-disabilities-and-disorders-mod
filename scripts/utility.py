@@ -2614,7 +2614,26 @@ def generate_sprite(
                 new_sprite.blit(
                     sprites.sprites['acc_aliveInsect' + cat.pelt.accessory + cat_sprite], (0, 0)
                 )
-
+            elif cat.pelt.accessory in cat.pelt.deadInsect_accessories:
+                new_sprite.blit(
+                    sprites.sprites['acc_deadInsect' + cat.pelt.accessory + cat_sprite], (0, 0)
+                )
+            elif cat.pelt.accessory in cat.pelt.flower_accessories:
+                new_sprite.blit(
+                    sprites.sprites['acc_flower' + cat.pelt.accessory + cat_sprite], (0, 0)
+                )
+            elif cat.pelt.accessory in cat.pelt.plant2_accessories:
+                new_sprite.blit(
+                    sprites.sprites['acc_plant2' + cat.pelt.accessory + cat_sprite], (0, 0)
+                )    
+            elif cat.pelt.accessory in cat.pelt.fruit_accessories:
+                new_sprite.blit(
+                    sprites.sprites['acc_fruit' + cat.pelt.accessory + cat_sprite], (0, 0)
+                )
+            elif cat.pelt.accessory in cat.pelt.crafted_accessories:
+                new_sprite.blit(
+                    sprites.sprites['acc_crafted' + cat.pelt.accessory + cat_sprite], (0, 0)
+                )
             elif cat.pelt.accessory in cat.pelt.booties:
                 new_sprite.blit(
                     sprites.sprites['booties' + cat.pelt.accessory + cat_sprite], (0, 0)
