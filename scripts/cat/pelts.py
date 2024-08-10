@@ -25,6 +25,12 @@ class Pelt:
         'Masked': 'masked',
         'Tortie': None,
         'Calico': None,
+        'Maned': 'maned',
+        'Ocelot': 'ocelot',
+        'Lynx': 'lynx',
+        'Royal': 'royal',
+        'Bobcat': 'bobcat',
+        'Cheetah': 'cheetah',
     }
 
     # ATTRIBUTES, including non-pelt related
@@ -98,9 +104,14 @@ class Pelt:
     # make sure to add plural and singular forms of new accs to acc_display.json so that they will display nicely
     plant_accessories = ["MAPLE LEAF", "HOLLY", "BLUE BERRIES", "FORGET ME NOTS", "RYE STALK", "LAUREL",
                          "BLUEBELLS", "NETTLE", "POPPY", "LAVENDER", "HERBS", "PETALS", "DRY HERBS",
-                         "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER"]
+                         "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER", "OAK LEAVES", "CATMINT", "MAPLE SEED", "JUNIPER",
+                         "LILYPAD", "LARGE DEATHBERRY", "SMALL DEATHBERRY", "ACORN2", "PINECONE", "VINE",
+                         "CHERRY2", "BLEEDING HEARTS", "SHELL PACK", "FERNS", "GOLD FERNS", "WHEAT", "BLACK WHEAT",
+                         "BERRIES", "CLOVERS", "CLOVER", "MOSS", "FLOWER MOSS", "MUSHROOMS"]
 
-    wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS"]
+    wild_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "MOTH WINGS", "CICADA WINGS", "LARGE LUNA", "LARGE COMET", "SMALL LUNA", "SMALL COMET", "LADYBUG",
+                    "MUD PAWS", "ASHY PAWS", "ORANGEBUTTERFLY", "BLUEBUTTERFLY", "BROWNPELT", "GRAYPELT", "BROWNMOSSPELT", "GRAYMOSSPELT",
+                     "FERN", "MOREFERN", "BLEEDINGHEART", "LILY"]
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
@@ -112,6 +123,7 @@ class Pelt:
         "PURPLEBOW", "MULTIBOW", "INDIGOBOW", "CRIMSONNYLON", "BLUENYLON", "YELLOWNYLON", "CYANNYLON",
         "REDNYLON", "LIMENYLON", "GREENNYLON", "RAINBOWNYLON",
         "BLACKNYLON", "SPIKESNYLON", "WHITENYLON", "PINKNYLON", "PURPLENYLON", "MULTINYLON", "INDIGONYLON",
+        "REDHARNESS", "NAVYHARNESS", "YELLOWHARNESS", "TEALHARNESS", "ORANGEHARNESS", "GREENHARNESS","MOSSHARNESS", "RAINBOWHARNESS", "BLACKHARNESS", "BEEHARNESS", "CREAMHARNESS","PINKHARNESS", "MAGENTAHARNESS", "PEACHHARNESS", "VIOLETHARNESS"
     ]
 
     # ohdan's accessories
@@ -158,10 +170,10 @@ class Pelt:
 
     all_natural_accessories = [plant_accessories, wild_accessories, plant2_accessories, flower_accessories, fruit_accessories]
 
-    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti"]
-    spotted = ["Speckled", "Rosette"]
+    tabbies = ["Tabby", "Ticked", "Mackerel", "Classic", "Sokoke", "Agouti","Maned"]
+    spotted = ["Speckled", "Rosette","Lynx", "Bobcat"]
     plain = ["SingleColour", "TwoColour", "Smoke", "Singlestripe"]
-    exotic = ["Bengal", "Marbled", "Masked"]
+    exotic = ["Bengal", "Marbled", "Masked", "Royal", "Ocelot", "Cheetah"]
     torties = ["Tortie", "Calico"]
     pelt_categories = [tabbies, spotted, plain, exotic, torties]
 
@@ -240,6 +252,8 @@ class Pelt:
                  senior_sprite: int = None,
                  para_adult_sprite: int = None,
                  reverse: bool = False,
+                 accessories:list=None,
+                 inventory:list=[]
                  ) -> None:
         self.name = name
         self.colour = colour
@@ -255,6 +269,8 @@ class Pelt:
         self.length = length
         self.points = points
         self.accessory = accessory
+        self.accessories = accessories if accessories is not None else []
+        self.inventory = inventory
         self.paralyzed = paralyzed
         self.opacity = opacity
         self.scars = scars if isinstance(scars, list) else []
@@ -756,6 +772,10 @@ class Pelt:
                 choice(Pelt.fruit_accessories),
                 choice(Pelt.crafted_accessories),
                 choice(Pelt.tail2_accessories)])
+            if self.accessories is not None:
+                self.accessories.append(self.accessory)
+            else:
+                self.accessories = [self.accessory]
         else:
             self.accessory = None
 
@@ -1067,7 +1087,13 @@ class Pelt:
             "Singlestripe": "dorsal-striped c_n",
             "Rosette": "unusually spotted c_n",
             "Sokoke": "c_n tabby",
-            "Masked": "masked c_n tabby"
+            "Masked": "masked c_n tabby",
+            "Maned": "oddly caped c_n",
+            "Ocelot": "oddly dappled c_n",
+            "Lynx": "flecked c_n",
+            "Royal": "dappled c_n",
+            "Bobcat": "spotted c_n",
+            "Cheetah": "unusually speckled c_n"
         }
 
         # Start with determining the base color name

@@ -314,12 +314,24 @@ class HandleShortEvents:
         if "COLLAR" in possible_accs:
             acc_list.extend(pelts.collars)
         # ohdan's accessories
+        if "FLOWER" in possible_accs:
+            acc_list.extend(Pelt.flower_accessories)
+        if "PLANT2" in possible_accs:
+            acc_list.extend(Pelt.plant2_accessories)
         if "SNAKE" in possible_accs:
-            acc_list.extend(pelts.snake_accessories)
+            acc_list.extend(Pelt.snake_accessories)
         if "SMALLANIMAL" in possible_accs:
-            acc_list.extend(pelts.smallAnimal_accessories)
+            acc_list.extend(Pelt.smallAnimal_accessories)
+        if "DEADINSECT" in possible_accs:
+            acc_list.extend(Pelt.deadInsect_accessories)
         if "ALIVEINSECT" in possible_accs:
-            acc_list.extend(pelts.aliveInsect_accessories)
+            acc_list.extend(Pelt.aliveInsect_accessories)
+        if "FRUIT" in possible_accs:
+            acc_list.extend(Pelt.fruit_accessories)
+        if "CRAFTED" in possible_accs:
+            acc_list.extend(Pelt.crafted_accessories)
+        if "TAIL2" in possible_accs:
+            acc_list.extend(Pelt.tail2_accessories)
         # dad accessories
         if "BOOTIES" in possible_accs:
             acc_list.extend(pelts.booties)
@@ -343,6 +355,11 @@ class HandleShortEvents:
 
         if acc_list:
             self.main_cat.pelt.accessory = random.choice(acc_list)
+            if self.main_cat.pelt.accessories is not None:
+                self.main_cat.pelt.accessories.append(self.main_cat.pelt.accessory)
+            else:
+                self.main_cat.pelt.accessories = [self.main_cat.pelt.accessory]
+                
 
     def handle_death(self):
         """

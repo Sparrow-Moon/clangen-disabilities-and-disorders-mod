@@ -968,10 +968,292 @@
       "default": "seaweed wrap",
       "plural": "seaweed",
       "singular": "seaweed"
-  },"CLOVER" : {
+  },
+  "CLOVER" : {
     "default": "clover",
     "plural": "clovers",
     "singular": "clover"
+  },
+  
+  "LILYPAD": {
+    "default": "lilypad",
+    "plural": "lilypads",
+    "singular": "lilypad"
+  },
+  "LARGE DEATHBERRY": {
+    "default": "large collection of deathberries",
+    "plural": "large deathberries",
+    "singular": "large collection of deathberries"
+  },
+  "SMALL DEATHBERRY": {
+    "default": "small deathberry",
+    "plural": "small deathberries",
+    "singular": "small deathberry"
+  },
+  "ACORN2": {
+    "default": "acorn",
+    "plural": "acorns",
+    "singular": "acorn"
+  },
+  "PINECONE": {
+    "default": "pinecone",
+    "plural": "pinecones",
+    "singular": "pinecone"
+  },
+  "VINE": {
+    "default": "bundle of vines",
+    "plural": "vines",
+    "singular": "bundle of vines"
+  },
+  "CHERRY2": {
+    "default": "cherry",
+    "plural": "cherries",
+    "singular": "cherry"
+  },
+  "BLEEDING HEARTS": {
+    "default": "bleeding heart",
+    "plural": "bleeding hearts",
+    "singular": "bleeding heart"
+  },
+  "SHELL PACK": {
+    "default": "collection of sea accessories",
+    "plural": "sea accessories",
+    "singular": "collection of sea accessories"
+  },
+  "FERNS": {
+    "default": "fern",
+    "plural": "ferns",
+    "singular": "fern"
+  },
+  "GOLD FERNS": {
+    "default": "gold fern",
+    "plural": "gold ferns",
+    "singular": "gold fern"
+  },
+  "WHEAT": {
+    "default": "wheat stalk",
+    "plural": "wheat stalks",
+    "singular": "wheat stalk"
+  },
+  "BLACK WHEAT": {
+    "default": "black wheat stalk",
+    "plural": "black wheat stalks",
+    "singular": "black wheat stalk"
+  },
+  "BERRIES": {
+    "default": "berry",
+    "plural": "berries",
+    "singular": "berry"
+  },
+  "CLOVERS": {
+    "default": "bunch of clovers",
+    "plural": "clover bunches",
+    "singular": "bunch of clovers"
+  },
+  "CLOVER": {
+    "default": "clover",
+    "plural": "clovers",
+    "singular": "clover"
+  },
+  "MOSS": {
+    "default": "bundle of moss",
+    "plural": "moss",
+    "singular": "bundle of moss"
+  },
+  "FLOWER MOSS": {
+    "default": "bundle of flowering moss",
+    "plural": "flowering moss",
+    "singular": "bundle of flowering moss"
+  },
+  "MUSHROOMS": {
+    "default": "mushroom",
+    "plural": "mushrooms",
+    "singular": "mushroom"
+  },
+  "LARGE LUNA": {
+    "default": "large luna moth wing",
+    "plural": "large luna moth wings",
+    "singular": "large luna moth wing"
+  },
+  "LARGE COMET": {
+    "default": "large comet moth wing",
+    "plural": "large comet moth wings",
+    "singular": "large comet moth wing"
+  },
+  "SMALL LUNA": {
+    "default": "small luna moth wing",
+    "plural": "small luna moth wings",
+    "singular": "small luna moth wing"
+  },
+  "SMALL COMET": {
+    "default": "small comet moth wing",
+    "plural": "small comet moth wings",
+    "singular": "small comet moth wing"
+  },
+  "LADYBUGS": {
+    "default": "ladybugs",
+    "plural": "ladybug",
+    "singular": "ladybugs"
+  },
+  "LADYBUG": {
+    "default": "ladybugs",
+    "plural": "ladybug",
+    "singular": "ladybugs"
+  },
+  "MUD PAWS": {
+    "default": "muddy paws",
+    "plural": "muddy paws",
+    "singular": "muddy paws"
+  },
+  "ASHY PAWS": {
+    "default": "ashy paws",
+    "plural": "ashy paws",
+    "singular": "ashy paws"
+  },
+  "ORANGEBUTTERFLY": {
+    "default": "monarch butterfly",
+    "plural": "monarch butterflies",
+    "singular": "monarch butterfly"
+  },
+  "BLUEBUTTERFLY": {
+    "default": "blue butterfly",
+    "plural": "blue butterflies",
+    "singular": "blue butterfly"
+  },
+  "BROWNPELT": {
+    "default": "brown hide",
+    "plural": "brown hides",
+    "singular": "brown hide"
+  },
+  "GRAYPELT": {
+    "default": "gray hide",
+    "plural": "gray hides",
+    "singular": "gray hide"
+  },
+  "BROWNMOSSPELT": {
+    "default": "brown herb hide",
+    "plural": "brown herb hides",
+    "singular": "brown herb hide"
+  },
+  "GRAYMOSSPELT": {
+    "default": "gray herb hide",
+    "plural": "gray herb hides",
+    "singular": "gray herb hide"
+  },
+  "FERN": {
+    "default": "fern",
+    "plural": "ferns",
+    "singular": "fern"
+  },
+  "MOREFERN": {
+    "default": "fern wrap",
+    "plural": "fern wraps",
+    "singular": "fern wrap"
+  },
+  "BLEEDINGHEART": {
+    "default": "bleeding heart",
+    "plural": "bleeding hearts",
+    "singular": "bleeding heart"
+  },
+  "LILY": {
+    "default": "lily",
+    "plural": "lillies",
+    "singular": "lily"
+  },
+  "PINKFLOWERCROWN": {
+    "default": "pink flower crown",
+    "plural": "pink flower crowns",
+    "singular": "pink flower crown"
+  },
+  "YELLOWFLOWERCROWN": {
+    "default": "yellow flower crown",
+    "plural": "yellow flower crowns",
+    "singular": "yellow flower crown"
+  },
+  "BLUEFLOWERCROWN": {
+    "default": "blue flower crown",
+    "plural": "blue flower crowns",
+    "singular": "blue flower crown"
+  },
+  "PURPLEFLOWERCROWN": {
+    "default": "purple flower crown",
+    "plural": "purple flower crowns",
+    "singular": "purple flower crown"
+  },
+  "REDHARNESS": {
+    "default": "red harness",
+    "plural": "red harness",
+    "singular": "red harness"
+  },
+  "NAVYHARNESS": {
+    "default": "navy harness",
+    "plural": "navy harness",
+    "singular": "navy harness"
+  },
+  "YELLOWHARNESS": {
+    "default": "yellow harness",
+    "plural": "yellow harness",
+    "singular": "yellow harness"
+  },
+  "TEALHARNESS": {
+    "default": "teal harness",
+    "plural": "teal harness",
+    "singular": "teal harness"
+  },
+  "ORANGEHARNESS": {
+    "default": "orange harness",
+    "plural": "orange harness",
+    "singular": "orange harness"
+  },
+  "GREENHARNESS": {
+    "default": "green harness",
+    "plural": "green harness",
+    "singular": "green harness"
+  },
+  "MOSSHARNESS": {
+    "default": "moss harness",
+    "plural": "moss harness",
+    "singular": "moss harness"
+  },
+  "RAINBOWHARNESS": {
+    "default": "rainbow harness",
+    "plural": "rainbow harness",
+    "singular": "rainbow harness"
+  },
+  "BLACKHARNESS": {
+    "default": "black harness",
+    "plural": "black harness",
+    "singular": "black harness"
+  },
+  "BEEHARNESS": {
+    "default": "bee harness",
+    "plural": "bee harness",
+    "singular": "bee harness"
+  },
+  "CREAMHARNESS": {
+    "default": "cream harness",
+    "plural": "cream harness",
+    "singular": "cream harness"
+  },
+  "PINKHARNESS": {
+    "default": "pink harness",
+    "plural": "pink harness",
+    "singular": "pink harness"
+  },
+  "MAGENTAHARNESS": {
+    "default": "magenta harness",
+    "plural": "magenta harness",
+    "singular": "magenta harness"
+  },
+  "PEACHHARNESS": {
+    "default": "peach harness",
+    "plural": "peach harness",
+    "singular": "peach harness"
+  },
+  "VIOLETHARNESS": {
+    "default": "violet harness",
+    "plural": "violet harness",
+    "singular": "violet harness"
   }
   
 }
