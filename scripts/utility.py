@@ -2587,6 +2587,9 @@ def generate_sprite(
 
         # draw accessories & blep
         # draw accessories
+        if cat.pelt.accessory is not None:
+            if len(cat.pelt.accessories) < 1:
+                cat.pelt.accessories.append(cat.pelt.accessory)
         for i in cat.pelt.accessories:
             if not acc_hidden:
                 try:
