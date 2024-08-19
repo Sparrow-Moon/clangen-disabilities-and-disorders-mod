@@ -2553,9 +2553,10 @@ class Cat:
             return "skip"
 
         # chance of splitting if plural
-        if self.is_plural():
+        if condition in ["shattered soul", "budding spirit"]:
             splitting = randint(1, 100)
             if len(self.alters) < 1:
+                self.system_core()
                 self.new_alter()
             if splitting < 15:
                 if len(self.alters) < game.config["condition_related"]["max_alters"]:
