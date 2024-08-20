@@ -264,7 +264,10 @@ class Pelt:
                  para_adult_sprite: int = None,
                  reverse: bool = False,
                  accessories:list=None,
-                 inventory:list=[]
+                 inventory:list=[],
+                 fur_texture:str=None,
+                 build:str=None,
+                 height:str=None
                  ) -> None:
         self.name = name
         self.colour = colour
@@ -301,7 +304,10 @@ class Pelt:
 
         self.reverse = reverse
         self.skin = skin
-        self.blep = blep
+        self.blep = blep,
+        self.fur_texture = fur_texture if fur_texture is not None else choice(["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"])
+        self.build = build if build is not None else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate"])
+        self.height = height if height is not None else choice(["petite", "short", "average", "average", "tall", "towering"])
 
     @staticmethod
     def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):

@@ -131,6 +131,9 @@ def json_load():
                 accessory=cat["accessory"],
                 accessories=cat["accessories"],
                 opacity=cat["opacity"] if "opacity" in cat else 100,
+                fur_texture=cat["fur_texture"] if "fur_texture" in cat else choice(["soft", "curly", "rough", "silky", "sleek", "wavy", "sparse", "tangled", "fuzzy", "spiky"]),
+                build = cat['build'] if "build" in cat else choice(["stocky", "slender", "lithe", "wiry", "muscular", "lanky", "delicate"]),
+                height=cat["height"] if "height" in cat else choice(["petite", "short", "average", "average", "tall", "towering"])
             )
 
             # Runs a bunch of apperence-related convertion of old stuff.
