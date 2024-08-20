@@ -788,10 +788,7 @@ class Pelt:
                 choice(Pelt.deadInsect_accessories),
                 choice(Pelt.fruit_accessories),
                 choice(Pelt.crafted_accessories),
-                choice(Pelt.tail2_accessories),
-                choice(Pelt.bone_accessories),
-                choice(Pelt.butterflies_accessories),
-                choice(Pelt.stuff_accessories)])
+                choice(Pelt.tail2_accessories)])
             if self.accessories is not None:
                 self.accessories.append(self.accessory)
             else:
