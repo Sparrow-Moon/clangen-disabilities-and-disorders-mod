@@ -2617,6 +2617,13 @@ def generate_sprite(
                         new_sprite.blit(sprites.sprites['acc_crafted' + i + cat_sprite], (0, 0))
                     elif i in cat.pelt.tail2_accessories:
                         new_sprite.blit(sprites.sprites['acc_tail2' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.bone_accessories:
+                        new_sprite.blit(sprites.sprites['acc_bones' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.butterflies_accessories:
+                        new_sprite.blit(sprites.sprites['acc_butterflymoth' + i + cat_sprite], (0, 0))
+                    elif i in cat.pelt.stuff_accessories:
+                        new_sprite.blit(sprites.sprites['acc_twolegstuff' + i + cat_sprite], (0, 0))
+                        
                 except:
                     continue
 

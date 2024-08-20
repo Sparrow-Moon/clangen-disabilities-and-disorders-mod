@@ -136,7 +136,8 @@ class Sprites:
             'shadersnewwhite', 'lightingnew',
             'whitepatches', 'tortiepatchesmasks',
             'fademask', 'fadestarclan', 'fadedarkforest',
-            'symbols','wildacc', 'wildaccextra', 'wildacc2', 'wildacc2extra','superartsi','coffee','eragona'
+            'symbols','wildacc', 'wildaccextra', 'wildacc2', 'wildacc2extra','superartsi','coffee','eragona',
+            'bonesacc','butterflymothacc','twolegstuff'
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
                 self.spritesheet(f"sprites/aprilfools{x}.png", x)
@@ -432,6 +433,25 @@ class Sprites:
             ["GREENBOOT", "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT"],
             ["PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"]
         ]
+        bones_data = [
+            ["SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
+             "RAT SKULL", "TEETH COLLAR", "ROE SKULL"],
+            ["BIRD SKULL NECKLACE", "RIBS", "FISH BONES"]
+        ]
+        
+        butterflymoth_data = [
+            ["PEACOCK BUTTERFLY", "DEATH HEAD HAWKMOTH", "GARDEN TIGER MOTH", "ATLAS MOTH", "CECOROPIA MOTH", "WHITE ERMINE MOTH",
+             "IO MOTH", "COMET MOTH", "JADE HAWKMOTH", "HUMMINGBIRD HAWKMOTH"],
+            ["OWL BUTTERFLY", "GLASSWING BUTTERFLY", "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
+             "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]
+            
+        ]
+        
+        twolegstuff_data = [
+            ["OLD GOLD WATCH", "OLD SILVER WATCH", "GOLDEN KEY", "SILVER KEY", "DVD", "OLD PENCIL", "OLD BRUSH",
+             "BANANA PEEL", "BROKEN VHS TAPE", "OLD NEWSPAPER"],
+            ["SEA GLASS", "BAUBLES", "MUD AND DIRT"]
+        ]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
@@ -518,6 +538,19 @@ class Sprites:
         for row, bootiesaccs in enumerate(booties_data):
             for col, bootiesacc in enumerate(bootiesaccs):
                 self.make_group('booties', (col, row), f'booties{bootiesacc}')
+        # bones
+        for row, bones in enumerate(bones_data):
+            for col, bone in enumerate(bones):
+                self.make_group('bonesacc', (col, row), f'acc_bones{bone}')
+                
+      # butterflies and moths
+        for row, butterflymoth in enumerate(butterflymoth_data):
+            for col, butterflies in enumerate(butterflymoth):
+                self.make_group('butterflymothacc', (col, row), f'acc_butterflymoth{butterflies}')
+        # twoleg stuff
+        for row, twolegstuff in enumerate(twolegstuff_data):
+            for col, stuff in enumerate(twolegstuff):
+                self.make_group('twolegstuff', (col, row), f'acc_twolegstuff{stuff}')
         
         for a, i in enumerate([
             "LILYPAD", "LARGE DEATHBERRY", "SMALL DEATHBERRY", "ACORN2", "PINECONE", "VINE"]):

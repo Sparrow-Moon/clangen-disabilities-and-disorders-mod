@@ -113,6 +113,17 @@ class Pelt:
                     "MUD PAWS", "ASHY PAWS", "ORANGEBUTTERFLY", "BLUEBUTTERFLY", "BROWNPELT", "GRAYPELT", "BROWNMOSSPELT", "GRAYMOSSPELT",
                      "FERN", "MOREFERN", "BLEEDINGHEART", "LILY"]
     tail_accessories = ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]
+    bone_accessories = ["SNAKE", "BAT WINGS", "CANIDAE SKULL", "DEER ANTLERS", "RAM HORN", "GOAT HORN", "OX SKULL",
+                        "RAT SKULL", "TEETH COLLAR", "ROE SKULL",
+                        "BIRD SKULL NECKLACE", "RIBS", "FISH BONES"]
+    butterflies_accessories = ["PEACOCK BUTTERFLY", "DEATH HEAD HAWKMOTH", "GARDEN TIGER MOTH", "ATLAS MOTH",
+                        "CECOROPIA MOTH", "WHITE ERMINE MOTH", "IO MOTH", "COMET MOTH",
+                        "JADE HAWKMOTH", "HUMMINGBIRD HAWKMOTH", "OWL BUTTERFLY", "GLASSWING BUTTERFLY",
+                        "QUEEN ALEXANDRA BIRDWING BUTTERFLY", "GREEN DRAGONTAIL BUTTERFLY",
+                        "MENELAUS BLUE MORPHO BUTTERFLY", "DEAD LEAF BUTTERFLY"]
+    stuff_accessories = ["OLD SILVER WATCH", "OLD GOLD WATCH", "GOLDEN KEY", "SILVER KEY",
+                         "DVD", "OLD PENCIL", "OLD BRUSH", "BANANA PEEL", "BROKEN VHS TAPE",
+                         "OLD NEWSPAPER", "SEA GLASS", "BAUBLES", "MUD AND DIRT"]
     collars = [
         "CRIMSON", "BLUE", "YELLOW", "CYAN", "RED", "LIME", "GREEN", "RAINBOW",
         "BLACK", "SPIKES", "WHITE", "PINK", "PURPLE", "MULTI", "INDIGO", "CRIMSONBELL", "BLUEBELL",
@@ -771,7 +782,10 @@ class Pelt:
                 choice(Pelt.deadInsect_accessories),
                 choice(Pelt.fruit_accessories),
                 choice(Pelt.crafted_accessories),
-                choice(Pelt.tail2_accessories)])
+                choice(Pelt.tail2_accessories),
+                choice(Pelt.bone_accessories),
+                choice(Pelt.butterflies_accessories),
+                choice(Pelt.stuff_accessories)])
             if self.accessories is not None:
                 self.accessories.append(self.accessory)
             else:
