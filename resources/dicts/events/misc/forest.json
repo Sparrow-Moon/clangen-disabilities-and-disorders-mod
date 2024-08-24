@@ -8,9 +8,7 @@
     "weight": 15,
     "event_text": "The apprentices of the Clan are taking special training to learn how to land on enemies when jumping from trees.",
     "m_c": {
-      "status": [
-        "apprentice"
-      ]
+      "status": ["apprentice"]
     }
   },
   {
@@ -20,13 +18,8 @@
     "weight": 20,
     "event_text": "As a storm rages and the branches of the forest whip around outside, m_c is tucked up in the medicine cat den, {PRONOUN/m_c/poss} sleep anything but restful. {PRONOUN/m_c/subject/CAP} {VERB/m_c/keep/keeps} seeing flashes of prophecy_list_sight. {PRONOUN/m_c/subject/CAP} {VERB/m_c/wake/wakes} with a shiver, wondering what {PRONOUN/m_c/poss} dreams mean for the Clan.",
     "m_c": {
-      "status": [
-        "medicine cat",
-        "medicine cat apprentice"
-      ],
-      "skill": [
-        "PROPHET,0"
-      ]
+      "status": ["medicine cat", "medicine cat apprentice"],
+      "skill": ["PROPHET,0"]
     }
   },
   {
@@ -36,13 +29,8 @@
     "weight": 20,
     "event_text": "As a storm rages and the branches of the forest whip around outside, m_c is tucked up in the apprentices' den, {PRONOUN/m_c/poss} sleep anything but restful. {PRONOUN/m_c/subject/CAP} {VERB/m_c/keep/keeps} seeing flashes of prophecy_list_sight. {PRONOUN/m_c/subject/CAP} {VERB/m_c/wake/wakes} with a shiver, wondering what {PRONOUN/m_c/poss} dreams mean for the Clan.",
     "m_c": {
-      "status": [
-        "apprentice",
-        "mediator apprentice"
-      ],
-      "skill": [
-        "PROPHET,0"
-      ]
+      "status": ["apprentice", "mediator apprentice"],
+      "skill": ["PROPHET,0"]
     }
   },
   {
@@ -52,14 +40,8 @@
     "weight": 20,
     "event_text": "As a storm rages and the branches of the forest whip around outside, m_c is tucked up in the warriors' den, {PRONOUN/m_c/poss} sleep anything but restful. {PRONOUN/m_c/subject/CAP} {VERB/m_c/keep/keeps} seeing flashes of prophecy_list_sight. {PRONOUN/m_c/subject/CAP} {VERB/m_c/wake/wakes} with a shiver, wondering what {PRONOUN/m_c/poss} dreams mean for the Clan.",
     "m_c": {
-      "status": [
-        "deputy",
-        "mediator",
-        "warrior"
-      ],
-      "skill": [
-        "PROPHET,0"
-      ]
+      "status": ["deputy", "mediator", "warrior"],
+      "skill": ["PROPHET,0"]
     }
   },
   {
@@ -69,12 +51,8 @@
     "weight": 20,
     "event_text": "As a storm rages and the branches of the forest whip around outside, m_c is tucked up in the leader's den, {PRONOUN/m_c/poss} sleep anything but restful. {PRONOUN/m_c/subject/CAP} {VERB/m_c/keep/keeps} seeing flashes of prophecy_list_sight. {PRONOUN/m_c/subject/CAP} {VERB/m_c/wake/wakes} with a shiver, wondering what {PRONOUN/m_c/poss} dreams mean for the Clan.",
     "m_c": {
-      "status": [
-        "leader"
-      ],
-      "skill": [
-        "PROPHET,0"
-      ]
+      "status": ["leader"],
+      "skill": ["PROPHET,0"]
     }
   },
   {
@@ -84,12 +62,8 @@
     "weight": 20,
     "event_text": "As a storm rages and the branches of the forest whip around outside, m_c is tucked up in the elders' den, {PRONOUN/m_c/poss} sleep anything but restful. {PRONOUN/m_c/subject/CAP} {VERB/m_c/keep/keeps} seeing flashes of prophecy_list_sight. {PRONOUN/m_c/subject/CAP} {VERB/m_c/wake/wakes} with a shiver, wondering what {PRONOUN/m_c/poss} dreams mean for the Clan.",
     "m_c": {
-      "status": [
-        "elder"
-      ],
-      "skill": [
-        "PROPHET,0"
-      ]
+      "status": ["elder"],
+      "skill": ["PROPHET,0"]
     }
   },
   {
@@ -99,19 +73,8 @@
     "weight": 20,
     "event_text": "The things {PRONOUN/m_c/subject} saw today, omen_list_sight... m_c conceals {PRONOUN/m_c/self} in a hidden alcove under branches that drip all the way to the ground, needing privacy as {PRONOUN/m_c/subject} {VERB/m_c/consider/considers} what these new omens foretell.",
     "m_c": {
-      "age": [
-        "adolescent",
-        "young adult",
-        "adult",
-        "senior adult",
-        "senior"
-      ],
-      "status": [
-        "any"
-      ],
-      "skill": [
-        "OMEN,0"
-      ]
+      "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
+      "skill": ["OMEN,0"]
     }
   },
   {
@@ -124,7 +87,7 @@
     "new_accessory": ["MAPLE SEED"],
     "m_c": {
       "status": ["apprentice"],
-      "relationship_status": ["child/parent"]
+      "relationship_status":["child/parent"]
     },
     "r_c": {
       "status": ["any"]
@@ -134,7 +97,7 @@
         "cats_to": ["r_c"],
         "cats_from": ["m_c"],
         "mutual": true,
-        "values": ["platonic", "comfort", "trust"],
+        "values": ["platonic","comfort","trust"],
         "amount": 10
       },
       {
@@ -145,5 +108,14 @@
         "amount": 10
       }
     ]
+  },
+  {
+    "event_id": "fst_misc_sparrow_accessory",
+    "location": ["forest"],
+    "season": ["any"],
+    "subtype": ["accessory"],
+    "weight": 20,
+    "event_text": "A small flock of sparrows has decided to start frequenting the branches high above camp and, much to the annoyance of most, have dropped plenty of feathers everywhere as they preen. m_c thinks they're pretty though, and decides to keep some.",
+    "new_accessory": ["SPARROW FEATHERS"]
   }
 ]

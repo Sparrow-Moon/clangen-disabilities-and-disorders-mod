@@ -79,7 +79,7 @@
         ],
         "higher_disabled_med_rates": [
             "Higher med/mediator odds for cats with permanent conditions",
-            "Cats with permanent conditions will be 2 times more likely to become a medicine cat or mediator apprentice when they hit 6 moons old. This does not effect the chance to become a mediator later in life, if the setting is on.",
+            "Cats with permanent conditions will be 2 times more likely to become a medicine cat or mediator apprentice when they hit 6 moons old. This does not affect the chance to become a mediator later in life, if the setting is on.",
             false
         ],
         "become_mediator": [

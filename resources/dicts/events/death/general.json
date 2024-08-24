@@ -624,7 +624,7 @@
     },
     {
         "event_id": "gen_death_snake_any2",
-
+        "location": ["any"],
         "season": [
             "any"
         ],
@@ -3053,7 +3053,7 @@
         },
         "history": [{
             "cats": ["m_c"],
-            "reg_death": "m_c was killed in battle training with r_c."
+            "reg_death": "m_c hit {PRONOUN/m_c/poss} head on a rock after r_c attacked {PRONOUN/m_c/object} in \"battle training\" with {PRONOUN/r_c/object}."
         }],
         "relationships": [
             {
@@ -3633,7 +3633,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c fell from the top branches of a tree and didn't survive.",
+        "event_text": "m_c fell from the top branches of a tree and couldn't survive.",
         "m_c": {
             "age": [
                 "adolescent",
@@ -3734,7 +3734,7 @@
         ],
         "tags": [],
         "weight": 20,
-        "event_text": "m_c was bitten by a venomous spider and died.",
+        "event_text": "m_c was bitten by a venomous spider and succumbed to the venom.",
         "m_c": {
             "dies": true
         },
@@ -5316,7 +5316,7 @@
                 "injuries": [
                     "shock"
                 ],
-                "history:": {
+                "history": {
                     "reg_death": "m_c couldn't survive {PRONOUN/m_c/poss} shock from when r_c sacrificed one of {PRONOUN/r_c/poss} lives to save {PRONOUN/m_c/object}."
                 }
             }
@@ -5906,7 +5906,7 @@
         "status": ["warrior", "deputy", "leader"],
         "skill": ["FIGHTER,1"]
     },
-    "history:": [
+    "history": [
       {
           "cats": ["m_c"],
           "reg_death": "m_c died after r_c killed {PRONOUN/m_c/object} during a battle with o_c_n.",
@@ -5950,7 +5950,7 @@
     "r_c": {
       "status": ["apprentice", "warrior", "deputy", "leader"]
     },
-    "history:": [
+    "history": [
       {
       "cats": ["m_c"],
       "reg_death": "m_c died when the o_c_n deputy killed them in battle, r_c allowed {PRONOUN/m_c/poss} death to happen.",
@@ -5979,7 +5979,7 @@
       "trait": ["sneaky", "lonesome", "cold", "strict", "careful", "cunning"],
       "skill": ["CLEVER,1", "INSIGHTFUL,2"]
     },
-    "history:": [
+    "history": [
       {
       "cats": ["m_c"],
       "reg_death": "m_c died when r_c lured {PRONOUN/m_c/object} into a Twoleg trap.",
@@ -6003,7 +6003,7 @@
       "age": ["adolescent", "young adult", "adult", "senior adult", "senior"],
       "trait": ["vengeful", "arrogant", "rebellious", "troublesome", "fierce"]
     },
-    "history:": [
+    "history": [
       {
       "cats": ["m_c"],
       "reg_death": "m_c died when r_c lured {PRONOUN/m_c/object} into a Twoleg trap.",
@@ -6028,7 +6028,7 @@
         "age": ["young adult", "adult", "senior adult", "senior"],
         "dies": true
     },
-    "history:": [
+    "history": [
         {
             "cats": ["m_c"],
             "lead_death": "{VERB/m_c/were/was} lured by r_c into a Twoleg trap"

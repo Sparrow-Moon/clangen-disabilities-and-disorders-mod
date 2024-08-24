@@ -559,24 +559,24 @@ class Condition_Events:
         event_list = []
         illness_progression = {
             "running nose": ["whitecough", "silvercough"],
-            "kittencough": "silvercough",
+            "kittencough": ["silvercough"],
             "whitecough": ["silvercough", "greencough"],
-            "silvercough": "greencough",
-            "greencough": "yellowcough",
-            "yellowcough": "redcough",
-            "an infected wound": "a festering wound",
-            "heat exhaustion": "heat stroke",
+            "silvercough": ["greencough"],
+            "greencough": ["yellowcough"],
+            "yellowcough": ["redcough"],
+            "an infected wound": ["a festering wound"],
+            "heat exhaustion": ["heat stroke"],
             "stomachache": ["diarrhea", "constipation"],
-            "grief stricken": "lasting grief",
-            "nightmares": "constant nightmares",
-            "anxiety attack": "panic attack",
+            "grief stricken": ["lasting grief"],
+            "nightmares": ["constant nightmares"],
+            "anxiety attack": ["panic attack"],
             "panic attack": ["shock", "paranoia"],
-            "sleeplessness": "ongoing sleeplessness",
+            "sleeplessness": ["ongoing sleeplessness"],
             "ticks": ["tick bites", "severe tick bites"],
-            "nest wetting": "night dirtmaking",
-            "verbal shutdown": "mute",
-            "tics": "tic attack",
-            "nausea": "stomachache",
+            "nest wetting": ["night dirtmaking"],
+            "verbal shutdown": ["mute"],
+            "tics": ["tic attack"],
+            "nausea": ["stomachache"],
         }
         # ---------------------------------------------------------------------------- #
         #                         handle currently sick cats                           #
@@ -681,7 +681,7 @@ class Condition_Events:
         triggered = False
         event_list = []
 
-        injury_progression = {"poisoned": "redcough", "shock": "lingering shock", "wretched claws": "declawed"}
+        injury_progression = {"poisoned": ["redcough"], "shock": ["lingering shock"], "wretched claws": ["declawed"]}
 
         # need to hold this number so that we can check if the leader has died
         starting_life_count = game.clan.leader_lives
@@ -832,12 +832,12 @@ class Condition_Events:
 
         condition_progression = {
             "one bad eye": ["failing eyesight", "lazy eye"],
-            "failing eyesight": "blind",
-            "partial hearing loss": "deaf",
-            "lasting grief": "heavy soul",
-            "recurring shock": "echoing shock",
-            "echoing shock": "recurring shock",
-            "burning light": "blind",
+            "failing eyesight": ["blind"],
+            "partial hearing loss": ["deaf"],
+            "lasting grief": ["heavy soul"],
+            "recurring shock": ["echoing shock"],
+            "echoing shock": ["recurring shock"],
+            "burning light": ["blind"],
         }
 
         conditions = deepcopy(cat.permanent_condition)
@@ -1125,19 +1125,22 @@ class Condition_Events:
             if (
                 chance != 0
                 and not int(random.random() * chance)
-                and risk["name"] not in dictionary
+                and risk["name"] not in dictionary  # why u not working
             ):
                 # check if the new risk is a previous stage of a current illness
                 skip = False
                 if risk["name"] in progression:
-                    if progression[risk["name"]] in dictionary:
-                        skip = True
+                    for entry in progression.get(risk["name"]):
+                        if entry in dictionary:
+                            skip = True
+                if risk["name"] in dictionary:
+                    skip = True
                 # Making sure world tired can only be given if you have dangerous settings on
                 if not game.settings["allow shell farm"]:
-                    if risk['name'] == "world tired":
+                    if risk["name"] == "world tired":
                         skip = True
                 if not game.clan.clan_settings["pregnancy turmoil"]:
-                    if risk['name'] == "turmoiled litter":
+                    if risk["name"] == "turmoiled litter":
                         skip = True
                 # if it is, then break instead of giving the risk
                 if skip is True:
@@ -1183,7 +1186,7 @@ class Condition_Events:
                     # if it is a progressive condition, then remove the old condition and keep the new one
                     if (
                         condition in progression
-                        and new_condition_name == progression.get(condition)
+                        and new_condition_name in progression.get(condition)
                     ):
                         removed_condition = True
                         dictionary.pop(condition)

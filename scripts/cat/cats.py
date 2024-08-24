@@ -782,26 +782,34 @@ class Cat:
             self.moons = moons
             if moons > 300:
                 # Out of range, always elder
-                self.age = 'senior'
+                self.age = "senior"
             elif moons == 0:
-                self.age = 'newborn'
+                self.age = "newborn"
             else:
                 # In range
                 for key_age in self.age_moons.keys():
-                    if moons in range(self.age_moons[key_age][0], self.age_moons[key_age][1] + 1):
+                    if moons in range(
+                        self.age_moons[key_age][0], self.age_moons[key_age][1] + 1
+                    ):
                         self.age = key_age
         else:
-            if status == 'newborn':
-                self.age = 'newborn'
-            elif status == 'kitten':
-                self.age = 'kitten'
-            elif status == 'elder':
-                self.age = 'senior'
-            elif status in ['apprentice', 'mediator apprentice', 'medicine cat apprentice']:
-                self.age = 'adolescent'
+            if status == "newborn":
+                self.age = "newborn"
+            elif status == "kitten":
+                self.age = "kitten"
+            elif status == "elder":
+                self.age = "senior"
+            elif status in [
+                "apprentice",
+                "mediator apprentice",
+                "medicine cat apprentice",
+            ]:
+                self.age = "adolescent"
             else:
-                self.age = choice(['young adult', 'adult', 'adult', 'senior adult'])
-            self.moons = randint(self.age_moons[self.age][0], self.age_moons[self.age][1])
+                self.age = choice(["young adult", "adult", "adult", "senior adult"])
+            self.moons = randint(
+                self.age_moons[self.age][0], self.age_moons[self.age][1]
+            )
 
         # backstory
         if self.backstory is None:
@@ -954,43 +962,35 @@ class Cat:
         self.genderalign = self.gender
         trans_chance = randint(0, 50)
         nb_chance = randint(0, 75)
-        #newborns can't be trans, sorry babies
+
+        # GENDER IDENTITY
         if self.moons == 0 or self.age == "newborn":
-            trans_chance = 0
-            nb_chance = 0
-        self.genderalign = ""
-        if self.gender == "female":
-            if trans_chance == 1:
-                self.genderalign = "trans male"
-            elif nb_chance == 1:
-                self.genderalign = choice(genderqueer_list)
-            else:
-                self.genderalign = self.gender
-        elif self.gender == "male":
-            if trans_chance == 1:
-                self.genderalign = "trans female"
-            elif nb_chance == 1:
-                self.genderalign = choice(genderqueer_list)
-            else:
-                self.genderalign = self.gender
-        elif self.gender == "intersex":
-            if trans_chance == 1:
-                self.genderalign = choice(["trans male", "trans female"])
-            elif nb_chance == 1:
+            # newborns can't be trans, sorry babies
+            pass
+        elif nb_chance == 1:
+            if self.gender == "intersex":
                 self.genderalign = choice(intersex_genderqueer_list)
             else:
-                self.genderalign = self.gender
-        else:
-            self.genderalign = self.gender
+                self.genderalign = choice(genderqueer_list)
+        elif trans_chance == 1:
+            if self.gender == "female":
+                self.genderalign = "trans male"
+            elif self.gender == "male":
+                self.genderalign = "trans female"
+            else:
+                self.genderalign = choice(["trans male", "trans female"])
 
-        if theythemdefault:
+        # PRONOUNS
+        if theythemdefault is True:
             self.pronouns = [self.default_pronouns[0].copy()]
-        elif self.genderalign in ["female", "trans female"]:
-            self.pronouns = [self.default_pronouns[1].copy()]
-        elif self.genderalign in ["male", "trans male"]:
-            self.pronouns = [self.default_pronouns[2].copy()]
         else:
-            self.pronouns = [self.default_pronouns[0].copy()]
+            # Assigning pronouns based on gender
+            if self.genderalign in ["female", "trans female"]:
+                self.pronouns = [self.default_pronouns[1].copy()]
+            elif self.genderalign in ["male", "trans male"]:
+                self.pronouns = [self.default_pronouns[2].copy()]
+            else:
+                self.pronouns = [self.default_pronouns[0].copy()]
 
         if not theythemdefault and not (self.moons == 0 or self.age == "newborn"):
             self.handle_pronouns()
@@ -1006,9 +1006,9 @@ class Cat:
         self.personality = Personality(kit_trait=self.is_baby())
 
         # experience and current patrol status
-        if self.age in ['young', 'newborn']:
+        if self.age in ["young", "newborn"]:
             self.experience = 0
-        elif self.age in ['adolescent']:
+        elif self.age in ["adolescent"]:
             m = self.moons
             self.experience = 0
             while m > Cat.age_moons["adolescent"][0]:
@@ -1019,15 +1019,21 @@ class Cat:
                 )
                 self.experience += exp + 3
                 m -= 1
-        elif self.age in ['young adult', 'adult']:
-            self.experience = randint(Cat.experience_levels_range["prepared"][0],
-                                    Cat.experience_levels_range["proficient"][1])
-        elif self.age in ['senior adult']:
-            self.experience = randint(Cat.experience_levels_range["competent"][0],
-                                    Cat.experience_levels_range["expert"][1])
-        elif self.age in ['senior']:
-            self.experience = randint(Cat.experience_levels_range["competent"][0],
-                                    Cat.experience_levels_range["master"][1])
+        elif self.age in ["young adult", "adult"]:
+            self.experience = randint(
+                Cat.experience_levels_range["prepared"][0],
+                Cat.experience_levels_range["proficient"][1],
+            )
+        elif self.age in ["senior adult"]:
+            self.experience = randint(
+                Cat.experience_levels_range["competent"][0],
+                Cat.experience_levels_range["expert"][1],
+            )
+        elif self.age in ["senior"]:
+            self.experience = randint(
+                Cat.experience_levels_range["competent"][0],
+                Cat.experience_levels_range["master"][1],
+            )
         else:
             self.experience = 0
 
@@ -1294,10 +1300,12 @@ class Cat:
         text = ""
         darkforest = game.clan.instructor.df
         isoutside = self.outside
-        if self.status == 'leader':
+        if self.status == "leader":
             if game.clan.leader_lives > 0:
                 lives_left = game.clan.leader_lives
-                death_thought = Thoughts.leader_death_thought(self, lives_left, darkforest)
+                death_thought = Thoughts.leader_death_thought(
+                    self, lives_left, darkforest
+                )
                 final_thought = event_text_adjust(self, death_thought, main_cat=self)
                 self.thought = final_thought
                 return ""
@@ -1320,7 +1328,6 @@ class Cat:
             death_thought = Thoughts.new_death_thought(self, darkforest, isoutside)
             final_thought = event_text_adjust(self, death_thought, main_cat=self)
             self.thought = final_thought
-
 
         for app in self.apprentice.copy():
             fetched_cat = Cat.fetch_cat(app)
@@ -1384,7 +1391,7 @@ class Cat:
 
         # apply grief to cats with high positive relationships to dead cat
         for cat in Cat.all_cats.values():
-            if cat.dead or cat.outside:
+            if cat.dead or cat.outside or cat.moons < 1:
                 continue
 
             to_self = cat.relationships.get(self.ID)
@@ -1444,7 +1451,6 @@ class Cat:
             # If major_chance is not 0, there is a chance for major grief
             grief_type = None
             if major_chance and not int(random() * major_chance):
-
                 grief_type = "major"
 
                 possible_strings = []
@@ -1474,7 +1480,6 @@ class Cat:
             elif (very_high_values or high_values) and (
                 family_relation != "general" or not int(random() * 5)
             ):
-
                 grief_type = "minor"
 
                 # These minor grief message will be applied as thoughts.
@@ -1523,7 +1528,9 @@ class Cat:
                         )
                     )
 
-                text = event_text_adjust(Cat, choice(possible_strings), main_cat=self, random_cat=cat)
+                text = event_text_adjust(
+                    Cat, choice(possible_strings), main_cat=self, random_cat=cat
+                )
                 if cat.ID not in Cat.grief_strings:
                     Cat.grief_strings[cat.ID] = []
 
@@ -2237,6 +2244,10 @@ class Cat:
             return
 
         if self.dead:
+            for condition in self.permanent_condition:
+                if condition.born_with is True and condition.moons_until != -2:
+                    condition.moons_until = -2
+
             self.thoughts()
             return
 
@@ -2377,7 +2388,9 @@ class Cat:
             self, other_cat, game_mode, biome, season, camp
         )
 
-        chosen_thought = event_text_adjust(Cat, chosen_thought, main_cat=self, random_cat=other_cat, clan=game.clan)
+        chosen_thought = event_text_adjust(
+            Cat, chosen_thought, main_cat=self, random_cat=other_cat, clan=game.clan
+        )
 
         # insert thought
         self.thought = str(chosen_thought)
@@ -2943,7 +2956,10 @@ class Cat:
 
         if len(new_injury.also_got) > 0 and not int(random() * 5):
             avoided = False
-            if "blood loss" in new_injury.also_got and len(get_alive_status_cats(Cat, ["medicine cat"], working=True)) != 0:
+            if (
+                "blood loss" in new_injury.also_got
+                and len(get_alive_status_cats(Cat, ["medicine cat"], working=True)) != 0
+            ):
                 clan_herbs = set()
                 needed_herbs = {"horsetail", "raspberry", "marigold", "cobwebs"}
                 clan_herbs.update(game.clan.herbs.keys())
@@ -2976,8 +2992,8 @@ class Cat:
 
     def congenital_condition(self, cat):
         possible_conditions = []
-        multiple_condition_chance = game.config["cat_generation"]["multiple_permanent_conditions"]
-        max_conditions = game.config["cat_generation"]["max_conditions_born_with"]
+        extra_condition_chance = game.config["cat_generation"]["extra_congenital_condition"]
+        max_conditions = game.config["cat_generation"]["max_congenital_conditions"]
         comorbidity_chance = game.config["cat_generation"]["comorbidity_chance"]
         conditions = 1
         count = 1
@@ -3109,7 +3125,7 @@ class Cat:
             possible_conditions.remove("pcos")
 
         while count <= max_conditions:
-            if randint(1, multiple_condition_chance) == 1:
+            if randint(1, extra_condition_chance) == 1:
                 conditions += 1
             count += 1
 
@@ -3261,12 +3277,20 @@ class Cat:
             "RED FEATHERS",
             "BLUE FEATHERS",
             "JAY FEATHERS",
+            "GULL FEATHERS",
+            "SPARROW FEATHERS",
+            "CLOVER",
+            "DAISY"
         ]:
             self.pelt.accessory = None
         if "HALFTAIL" in self.pelt.scars and self.pelt.accessory in [
             "RED FEATHERS",
             "BLUE FEATHERS",
             "JAY FEATHERS",
+            "GULL FEATHERS",
+            "SPARROW FEATHERS",
+            "CLOVER",
+            "DAISY"
         ]:
             self.pelt.accessory = None
 
@@ -3322,7 +3346,7 @@ class Cat:
 
         if born_with and self.status not in ["kitten", "newborn"]:
             moons_until = -2
-        elif not born_with:
+        elif born_with is False:
             moons_until = 0
 
         if starting_moon == -1:
@@ -5063,11 +5087,11 @@ def create_cat(status, moons=None, biome=None):
         "DECLAWED": ["declawed"],
     }
 
+    if new_cat.moons < 5:
+        new_cat.pelt.scars = []
     for scar in new_cat.pelt.scars:
-        if new_cat.moons == 0:
-            new_cat.pelt.scars.remove(scar)
-        elif scar in scar_to_condition:
-            if (game.clan and game.clan.game_mode == "classic") or not game.clan or new_cat.moons < 4:
+        if scar in scar_to_condition:
+            if (game.clan and game.clan.game_mode == "classic") or not game.clan:
                 new_cat.pelt.scars.remove(scar)
             else:
                 condition = choice(scar_to_condition.get(scar))
@@ -5076,11 +5100,10 @@ def create_cat(status, moons=None, biome=None):
 
                 new_cat.get_permanent_condition(condition, born_with=False, starting_moon=-1)
 
-    if (game.clan and game.clan.game_mode != "classic") and not int(random() * game.config["cat_generation"]["base_permanent_condition"]):
+    if game.clan and game.clan.game_mode != "classic" and randint(1, game.config["cat_generation"]["base_congenital_condition_denominator"]) <= game.config["cat_generation"]["base_congenital_condition_compare"]:
         new_cat.congenital_condition(new_cat)
 
     return new_cat
-
 
 
 # Twelve example cats
@@ -5089,9 +5112,11 @@ def create_example_cats():
 
     for cat_index in range(12):
         if cat_index in warrior_indices:
-            game.choose_cats[cat_index] = create_cat(status='warrior')
+            game.choose_cats[cat_index] = create_cat(status="warrior")
         else:
-            random_status = choice(['kitten', 'apprentice', 'warrior', 'warrior', 'elder'])
+            random_status = choice(
+                ["kitten", "apprentice", "warrior", "warrior", "elder"]
+            )
             game.choose_cats[cat_index] = create_cat(status=random_status)
 
 

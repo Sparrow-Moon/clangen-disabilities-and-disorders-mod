@@ -188,9 +188,11 @@
 		]
 	},
 	"cat_generation": {
-		"base_permanent_condition": 35,
-		"multiple_permanent_conditions": 20,
-		"max_conditions_born_with": 3,
+		"base_congenital_condition_denominator": 1,
+		"base_congenital_condition_compare": 1,
+		"abandoned_kit_modifier": 1,
+		"extra_congenital_condition": 20,
+		"max_congenital_conditions": 3,
 		"comorbidity_chance": 5,
 		"base_male_tortie": 13,
 		"base_female_tortie": 4,
@@ -200,9 +202,17 @@
 		"vit_chance": 8,
 		"random_point_chance": 5,
 		"comment": [
-			"multiple_permanent_conditions (20 by default) - 1/chance for a cat to be born with one extra permanent condition,",
-			"runs until it's tried to give a cat [max_conditions_born_with - 1] extra conditions.",
-			"max_conditions_born_with (3 by default) - the max amount of permanent conditions a cat can be born with.",
+			"base_congenital_condition_denominator and base_congenital_condition_compare (1/1 or 100% by default) -",
+			"works as 'if randint(1, base_congenital_condition_denominator) <= base_congenital_condition_compare'",
+
+			"abandoned_kit_modifier (1 by default) - reduces base_congenital_condition_denominator by its value if a new cat",
+			"is generated as a kit or litter",
+
+			"extra_congenital_condition (20 by default) - 1/chance for a cat to be born with one extra permanent condition,",
+			"runs until it's tried to give a cat [max_congenital_conditions - 1] extra conditions.",
+
+			"max_congenital_conditions (3 by default) - the max amount of permanent conditions a cat can be born with.",
+
 			"comorbidity_chance (5 by default) - 1/chance for a cat being given an extra permanent condition to be given",
 			"a condition that is comorbid with any of their existing ones instead of a random one."
 		]
@@ -273,6 +283,8 @@
 		"fail_stat_cat_modifier": -15,
 		"chance_of_romance_patrol": 16,
 		"debug_ensure_patrol_id": null,
+		"debug_override_patrol_stat_requirements": false,
+		"debug_ensure_patrol_outcome": null,
 		"comment": [
 			"the Cruel Season difficulty modifier needs to have a space rather than an underscore,",
 			"due to how it's written in the save files. So don't try to 'fix' it."
@@ -283,7 +295,8 @@
 		"df_trainee_injury_event_compare": 3,
 		"debug_ensure_event_id": null,
 		"comment": [
-			"if randint(1, df_trainee_injury_event_denominator) <= df_trainee_injury_event_compare - base is 15% chance"
+			"df_trainee_injury_event_denominator and df_trainee_injury_event_compare (3/20 or 15% by default) -",
+			"works as 'if randint(1, df_trainee_injury_event_denominator) <= df_trainee_injury_event_compare'"
 		]
 	},
 	"death_related": {
@@ -462,6 +475,6 @@
 		"dark_mode_background": [57, 50, 36],
 		"light_mode_background": [206, 194, 168]
 	},
-	"lock_season": false, 
+	"lock_season": false,
 	"comment": "Forces the season to be locked at the Clan's starting_season"
 }

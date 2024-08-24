@@ -336,7 +336,7 @@ class ProfileScreen(Screens):
                 else:
                     self.the_cat.pronouns = [self.the_cat.default_pronouns[0].copy()]
 
-                if not game.settings["they them default"] and self.the_cat.age != "newborn":
+                if not game.settings["they them default"] and not (self.the_cat.moons == 0 or self.the_cat.age == "newborn"):
                     self.the_cat.handle_pronouns()
 
                 self.clear_profile()
@@ -1618,7 +1618,7 @@ class ProfileScreen(Screens):
             scar_history = self.get_scar_text()
             if scar_history:
                 body_history.append(scar_history)
-            death_history = self.get_death_text()
+            death_history = self.get_death_text(scarred=True if scar_history else False)
             if death_history:
                 body_history.append(death_history)
             # join scar and death into one paragraph
@@ -1657,7 +1657,7 @@ class ProfileScreen(Screens):
         else:
             text = str(self.the_cat.name) + "'s past history is unknown."
 
-        if not self.the_cat.dead and self.the_cat.status not in [
+        if self.the_cat.status not in [
             "kittypet",
             "loner",
             "rogue",
@@ -2008,11 +2008,12 @@ class ProfileScreen(Screens):
         return None
 
 
-    def get_death_text(self):
+    def get_death_text(self, scarred=False):
         """
         returns adjusted death history text
         """
         text = None
+        life_text = None
         death_history = self.the_cat.history.get_death_or_scars(
             self.the_cat, death=True
         )
@@ -2108,6 +2109,9 @@ class ProfileScreen(Screens):
             cat_dict = {"m_c": (str(self.the_cat.name), choice(self.the_cat.pronouns))}
             text = process_text(text, cat_dict)
 
+            if scarred and life_text:
+                text = "\n" + text
+
         return text
 
     def get_murder_text(self):
@@ -2157,14 +2161,14 @@ class ProfileScreen(Screens):
             if victim_names:
                 for name in victim_names:
 
-                    name_list = []
+                    name_list_list = []
                     for letter in name:
-                        name_list += letter
+                        name_list_list += letter
 
                     if not moons:
                         name_list.append(name)
                     else:
-                        if name_list[-1] == ".":
+                        if name_list_list[-1] == ".":
                             name_list.append(f"{name} (Moon {victim_names[name][0]})")
                         else:
                             name_list.append(f"{name} (moon {victim_names[name][0]})")

@@ -74,6 +74,21 @@
     "comment": ["just 'dry herb' sounds wrong, since the acc is visually multiple leaves on the cat. so i've structured",
       "this in a way that allows it to sound correct when used for the singular_acc abbreviation"]
   },
+  "DRY CATMINT": {
+    "default": "dried catmint",
+    "plural": "dried catmint",
+    "singular": "a dried catmint leaf"
+  },
+  "DRY NETTLES": {
+    "default": "dried nettle",
+    "plural": "dried nettles",
+    "singular": "a dried nettle stem"
+  },
+  "DRY LAURELS": {
+    "default": "dried laurel",
+    "plural": "dried laurels",
+    "singular": "a dried laurel stem"
+  },
   "OAK LEAVES": {
     "default": "oak leaves",
     "plural": "oak leaves",
@@ -118,6 +133,121 @@
     "default": "cicada wings",
     "plural": "cicada wings",
     "singular": "a cicada wing"
+  },
+  "ORANGE POPPY": {
+    "default": "orange poppy",
+    "plural": "orange poppies",
+    "singular": "an orange poppy"
+  },
+  "CYAN POPPY": {
+    "default": "cyan poppy",
+    "plural": "cyan poppies",
+    "singular": "a cyan poppy"
+  },
+  "WHITE POPPY": {
+    "default": "white poppy",
+    "plural": "white poppies",
+    "singular": "a white poppy"
+  },
+  "PINK POPPY": {
+    "default": "pink poppy",
+    "plural": "pink poppies",
+    "singular": "a pink poppy"
+  },
+  "CLOVER": {
+    "default": "clover tail corsage",
+    "plural": "clovers",
+    "singular": "a clover tail corsage"
+  },
+  "DAISY": {
+    "default": "daisy tail corsage",
+    "plural": "daisies",
+    "singular": "a daisy tail corsage"
+  },
+  "LILY OF THE VALLEY": {
+    "default": "lilies of the valley",
+    "plural": "lilies of the valley",
+    "singular": "a string of lilies of the valley"
+  },
+  "HEATHER": {
+    "default": "heather",
+    "plural": "heather",
+    "singular": "a heather stem"
+  },
+  "SNAPDRAGON": {
+    "default": "snapdragon flowers",
+    "plural": "snapdragon flowers",
+    "singular": "a string of snapdragon flowers"
+  },
+  "GORSE": {
+    "default": "gorse flowers",
+    "plural": "gorse flowers",
+    "singular": "a gorse stem"
+  },
+  "BULB WHITE": {
+    "default": "white bud",
+    "plural": "white buds",
+    "singular": "a white bud"
+  },
+  "BULB YELLOW": {
+    "default": "yellow bud",
+    "plural": "yellow buds",
+    "singular": "a yellow bud"
+  },
+  "BULB ORANGE": {
+    "default": "orange bud",
+    "plural": "orange buds",
+    "singular": "an orange bud"
+  },
+  "BULB PINK": {
+    "default": "pink bud",
+    "plural": "pink buds",
+    "singular": "a pink bud"
+  },
+  "BULB BLUE": {
+    "default": "blue bud",
+    "plural": "blue buds",
+    "singular": "a blue bud"
+  },
+  "RASPBERRY": {
+    "default": "no raspberries for you (ClanGen bug)!",
+    "plural": "UPDATE raspberries",
+    "singular": "UPDATE raspberry"
+  },
+  "CATTAIL": {
+    "default": "cattail",
+    "plural": "cattails",
+    "singular": "a cattail stem"
+  },
+  "GULL FEATHERS": {
+    "default": "gull feathers",
+    "plural": "gull feathers",
+    "singular": "a bunch of gull feathers"
+  },
+  "SPARROW FEATHERS": {
+    "default": "sparrow feathers",
+    "plural": "sparrow feathers",
+    "singular": "a bunch of sparrow feathers"
+  },
+  "ROSY MOTH WINGS": {
+    "default": "rosy maple moth wings",
+    "plural": "rosy maple moth wings",
+    "singular": "a rosy maple moth wing"
+  },
+  "MORPHO BUTTERFLY": {
+    "default": "morpho butterfly wings",
+    "plural": "morpho butterfly wings",
+    "singular": "a morpho butterfly wing"
+  },
+  "MONARCH BUTTERFLY": {
+    "default": "monarch butterfly wings",
+    "plural": "monarch butterfly wings",
+    "singular": "a monarch butterfly wing"
+  },
+  "BLACK CICADA": {
+    "default": "black cicada wings",
+    "plural": "black cicada wings",
+    "singular": "a black cicada wing"
   },
   "CRIMSON": {
     "default": "crimson leather collar",

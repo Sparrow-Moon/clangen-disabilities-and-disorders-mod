@@ -826,7 +826,7 @@ def create_new_cat(
                 )
 
         # give em a collar if they got one
-        if accessory and not (("NOTAIL" in new_cat.pelt.scars or "HALFTAIL" in new_cat.pelt.scars) and accessory in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS"]):
+        if accessory and not (("NOTAIL" in new_cat.pelt.scars or "HALFTAIL" in new_cat.pelt.scars) and accessory in ["RED FEATHERS", "BLUE FEATHERS", "JAY FEATHERS", "GULL FEATHERS", "SPARROW FEATHERS", "CLOVER", "DAISY"]):
             new_cat.pelt.accessory = accessory
 
         if game.clan.clan_settings["tnr"]:
@@ -907,27 +907,26 @@ def create_new_cat(
         elif clan_gain_moon > game.clan.age:
             clan_gain_moon = game.clan.age
 
+        if age < 5:
+            new_cat.pelt.scars = []
         for scar in new_cat.pelt.scars:
             if scar in scar_to_condition:
-                if game.clan.game_mode == "classic" or age < 4:
+                if game.clan.game_mode == "classic":
                     new_cat.pelt.scars.remove(scar)
                 else:
                     condition = choice(scar_to_condition.get(scar))
-                    if condition == "no":
+                    if condition == "no" or (condition == "lost a leg" and "born without a leg" in new_cat.permanent_condition):
                         continue
 
                     new_cat.get_permanent_condition(condition, born_with=False, starting_moon=clan_gain_moon)
 
         # chance to give the new cat a congenital permanent condition, higher chance for found kits and litters
         if game.clan.game_mode != "classic":
+            chance = game.config["cat_generation"]["base_congenital_condition_denominator"]
             if kit or litter:
-                chance = int(
-                    game.config["cat_generation"]["base_permanent_condition"] / 11.25
-                )
-            else:
-                chance = game.config["cat_generation"]["base_permanent_condition"]
+                chance -= game.config["cat_generation"]["abandoned_kit_modifier"]
 
-            if not int(random() * chance):
+            if randint(1, chance) <= game.config["cat_generation"]["base_congenital_condition_compare"]:
                 new_cat.congenital_condition(new_cat)
 
         if outside:
@@ -2028,6 +2027,7 @@ def event_text_adjust(
     :param str chosen_herb: string of chosen_herb (chosen_herb), if present
     """
     vowels = ["A", "E", "I", "O", "U"]
+
     if not text:
         text = "This should not appear, report as a bug please! Tried to adjust the text, but no text was provided."
         print("WARNING: Tried to adjust text, but no text was provided.")
@@ -2054,12 +2054,12 @@ def event_text_adjust(
     # random_cat
     if "r_c" in text:
         if random_cat:
-            replace_dict["r_c"] = (str(random_cat.name), choice(random_cat.pronouns))
+            replace_dict["r_c"] = (str(random_cat.name), get_pronouns(random_cat))
 
     # stat cat
     if "s_c" in text:
         if stat_cat:
-            replace_dict["s_c"] = (str(stat_cat.name), choice(stat_cat.pronouns))
+            replace_dict["s_c"] = (str(stat_cat.name), get_pronouns(stat_cat))
 
     # other_cats
     if patrol_cats:
@@ -2102,7 +2102,7 @@ def event_text_adjust(
 
     # mur_c (murdered cat for reveals)
     if "mur_c" in text:
-        replace_dict["mur_c"] = (str(victim_cat.name), choice(victim_cat.pronouns))
+        replace_dict["mur_c"] = (str(victim_cat.name), get_pronouns(victim_cat))
 
     # lead_name
     if "lead_name" in text:
@@ -2290,7 +2290,7 @@ def ceremony_text_adjust(
             else ("mentor_placeholder", None)
         ),
         "(deadmentor)": (
-            (str(dead_mentor.name), choice(dead_mentor.pronouns))
+            (str(dead_mentor.name), get_pronouns(dead_mentor))
             if dead_mentor
             else ("dead_mentor_name", None)
         ),
@@ -2340,29 +2340,40 @@ def ceremony_text_adjust(
     ):
         cat_dict["dead_par1"] = (
             str(dead_parents[0].name),
-            choice(dead_parents[0].pronouns),
+            get_pronouns(dead_parents[0]),
         )
         cat_dict["dead_par2"] = (
             str(dead_parents[1].name),
-            choice(dead_parents[1].pronouns),
+            get_pronouns(dead_parents[1]),
         )
     elif dead_parents:
         random_dead_parent = choice(dead_parents)
-        try:
-            cat_dict["dead_par1"] = (
-                str(random_dead_parent.name),
-                choice(random_dead_parent.pronouns),
-            )
-            cat_dict["dead_par2"] = (
-                str(random_dead_parent.name),
-                choice(random_dead_parent.pronouns),
-            )
-        except:
-            pass
+        cat_dict["dead_par1"] = (
+            str(random_dead_parent.name),
+            get_pronouns(random_dead_parent),
+        )
+        cat_dict["dead_par2"] = (
+            str(random_dead_parent.name),
+            get_pronouns(random_dead_parent),
+        )
 
     adjust_text = process_text(adjust_text, cat_dict)
 
     return adjust_text, random_living_parent, random_dead_parent
+
+def get_pronouns(Cat):
+    """ Get a cat's pronoun even if the cat has faded to prevent crashes (use gender-neutral pronouns when the cat has faded) """
+    if Cat.pronouns == []:
+        return{
+            "subject": "they",
+            "object": "them",
+            "poss": "their",
+            "inposs": "theirs",
+            "self": "themself",
+            "conju": 1,
+        }
+    else:
+        return choice(Cat.pronouns)
 
 
 def shorten_text_to_fit(

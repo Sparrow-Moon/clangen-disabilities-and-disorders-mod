@@ -1310,5 +1310,16 @@
         "random_living_status": [
             "living"
         ]
+    },
+    {
+        "id": "raspy_lungs_warrior",
+        "thoughts": [
+            "Wonders if {PRONOUN/m_c/poss} breathing troubles make {PRONOUN/m_c/object} a bad warrior"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "raspy lungs"
+            ]
+        }
     }
 ]
