@@ -1146,6 +1146,8 @@ class ProfileScreen(Screens):
                 con = "shattered soul"
             elif "budding spirit" in the_cat.permanent_condition:
                 con = "budding spirit"
+            elif "fractured spirit"in the_cat.permanent_condition:
+                con = "fractured spirit"
             if self.the_cat.permanent_condition[con]["born_with"] is True:
                 minmoons = -1
             else:
@@ -2268,6 +2270,14 @@ class ProfileScreen(Screens):
                     all_illness_injuries.extend([(i["name"], self.get_alter_details(i)) for i in self.the_cat.alters])
             elif "budding spirit" in self.the_cat.permanent_condition:
                 con = "budding spirit"
+                if self.the_cat.permanent_condition[con]["born_with"] is True:
+                    minmoons = -1
+                else:
+                    minmoons = 0
+                if self.the_cat.permanent_condition[con]["moons_until"] <= minmoons:
+                    all_illness_injuries.extend([(i["name"], self.get_alter_details(i)) for i in self.the_cat.alters])
+            elif "fractured spirit" in self.the_cat.permanent_condition:
+                con = "fractured spirit"
                 if self.the_cat.permanent_condition[con]["born_with"] is True:
                     minmoons = -1
                 else:

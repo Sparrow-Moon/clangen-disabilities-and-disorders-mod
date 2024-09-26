@@ -2181,5 +2181,40 @@
             }
         ],
         "herbs": []
+    },
+    "amnesia": {
+        "severity": "minor",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 2,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "verbal shutdown",
+                "chance": 10
+            },
+            {
+                "name": "brain fog",
+                "chance": 10
+            }
+        ],
+        "herbs": []
     }
 }

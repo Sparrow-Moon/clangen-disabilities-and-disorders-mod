@@ -474,6 +474,7 @@ class Condition_Events:
             "lazy eye",
             "shattered soul",
             "budding spirit",
+            "fractured spirit",
             "pcos",
             "infertile",
             "excess testosterone",

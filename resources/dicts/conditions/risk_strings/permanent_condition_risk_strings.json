@@ -364,7 +364,12 @@
 			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a budding spirit.",
 			"After moons of questioning and considering and wondering and forgetting that {PRONOUN/m_c/subject} {VERB/m_c/were/was} wondering, m_c has finally come to the realization that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit.",
 			"m_c has wondered for a long time if {PRONOUN/m_c/subject} {VERB/m_c/are/is} normal. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't normal, but that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit."
-		]
+		],
+		"fractured spirit": [
+    		"m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a fractured spirit.",
+   			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a fractured spirit.",
+   			"m_c doesn't understand why {PRONOUN/m_c/subject} {VERB/m_c/have/has} so many gaps in their memory."
+ 		]
 	},
     "echoing shock": {
 		"shock": [
@@ -427,7 +432,12 @@
 			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a budding spirit.",
 			"After moons of questioning and considering and wondering and forgetting that {PRONOUN/m_c/subject} {VERB/m_c/were/was} wondering, m_c has finally come to the realization that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit.",
 			"m_c has wondered for a long time if {PRONOUN/m_c/subject} {VERB/m_c/are/is} normal. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't normal, but that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit."
-		]
+		],
+		"fractured spirit": [
+    		"m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a fractured spirit.",
+   			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a fractured spirit.",
+   			"m_c doesn't understand why {PRONOUN/m_c/subject} {VERB/m_c/have/has} so many gaps in their memory."
+ 		]
     },
     "lasting grief": {
         "grief stricken": [
@@ -1258,7 +1268,12 @@
 			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a budding spirit.",
 			"After moons of questioning and considering and wondering and forgetting that {PRONOUN/m_c/subject} {VERB/m_c/were/was} wondering, m_c has finally come to the realization that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit.",
 			"m_c has wondered for a long time if {PRONOUN/m_c/subject} {VERB/m_c/are/is} normal. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't normal, but that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit."
-		]
+		],
+		"fractured spirit": [
+    		"m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a fractured spirit.",
+    		"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a fractured spirit.",
+    		"m_C doesn't understand why {PRONOUN/m_c/subject} {VERB/m_c/have/has} so many gaps in their memory."
+  		]
 	},
     "otherworldly mind": {
 		"kittenspace": [
@@ -1293,6 +1308,11 @@
 			"After moons of questioning and considering and wondering and forgetting that {PRONOUN/m_c/subject} {VERB/m_c/were/was} wondering, m_c has finally come to the realization that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit.",
 			"m_c has wondered for a long time if {PRONOUN/m_c/subject} {VERB/m_c/are/is} normal. {PRONOUN/m_c/subject/CAP}{VERB/m_c/'ve/'s} come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't normal, but that {PRONOUN/m_c/subject} {VERB/m_c/have/has} a budding spirit."
 		],
+		"fractured spirit": [
+    		"m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a fractured spirit.",
+    		"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a fractured spirit.",
+    		"m_C doesn't understand why {PRONOUN/m_c/subject} {VERB/m_c/have/has} so many gaps in their memory."
+  		],
 		"parrot chatter": [
             "When r_c mews hello to m_c, m_c mews it back a dozen times. It seems {PRONOUN/m_c/subject} {VERB/m_c/have/has} parrot chatter.",
             "m_c often catches {PRONOUN/m_c/self} repeating the same word over and over. The medicine cat suggests it might be parrot chatter.",
@@ -1719,6 +1739,11 @@
 		"puppy regressor": [
 			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a puppy regressor, and that's okay." ,
 			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a puppy regressor."
+		],
+		"amnesia": [
+			"m_c can't understand why r_c is so upset with {PRONOUN/m_c/object}, only to learn {PRONOUN/m_c/subject} said something awful- that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} remember at all.",
+			"m_c has a hard time remembering what happened these past few moons. {PRONOUN/m_c/subject/CAP} have a vague idea of what happened, but all the details are gone.",
+			"m_c swears that one of {PRONOUN/m_c/poss} clanmates was a kit yesterday. How can a few moons pass in just a moment?"
 		]
 	},
 	"budding spirit": {
@@ -1743,6 +1768,40 @@
 		"puppy regressor": [
 			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a puppy regressor, and that's okay." ,
 			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a puppy regressor."
+		],
+		"amnesia": [
+			"m_c can't understand why r_c is so upset with {PRONOUN/m_c/object}, only to learn {PRONOUN/m_c/subject} said something awful- that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} remember at all.",
+			"m_c has a hard time remembering what happened these past few moons. {PRONOUN/m_c/subject/CAP} have a vague idea of what happened, but all the details are gone.",
+			"m_c swears that one of {PRONOUN/m_c/poss} clanmates was a kit yesterday. How can a few moons pass in just a moment?"
+		]
+	},
+	"fractured spirit": {
+		"anxiety attack": [
+				"r_c understands that m_c has more trouble than most keeping calm, and talks with {PRONOUN/m_c/object} about why {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} extra anxious when {PRONOUN/m_c/subject} {VERB/m_c/fail/fails} to fully check the camp before doing {PRONOUN/m_c/poss} patrols.",
+				"When m_c starts to think about a possibility that scares {PRONOUN/m_c/object}, {PRONOUN/m_c/poss} mind fills with a fog and {PRONOUN/m_c/poss} heart starts beating erratically. {PRONOUN/m_c/subject/CAP} {VERB/m_c/panic/panics} and wake up a friend.",
+				"A Clanmate sits beside m_c and lets {PRONOUN/m_c/object} ramble on as {PRONOUN/m_c/subject} {VERB/m_c/catastrophize/catastrophizes}.",
+				"m_c starts crying because {PRONOUN/m_c/subject} didn't check the camp fully before leaving that morning."
+		],
+		"kittenspace": [
+			"Sometimes, m_c feels younger than the age {PRONOUN/m_c/poss} body is. {PRONOUN/m_c/subject/CAP} talk to r_c about it, worried something is wrong with {PRONOUN/m_c/object}, but r_c assures {PRONOUN/m_c/object} that what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling is perfectly normal - {PRONOUN/m_c/poss} brain is just in kittenspace",
+			"m_c, despite being old for a kit, acts younger then {PRONOUN/m_c/subject} {VERB/m_c/are/is} sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in kittenspace."
+		],
+		"puppyspace": [
+			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just in puppyspace, and that's okay." ,
+			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} in puppyspace."
+		],
+		"kitten regressor": [
+			"m_c feels younger than the age {PRONOUN/m_c/poss} body is. {PRONOUN/m_c/subject/CAP} talk to r_c about it, worried something is wrong with {PRONOUN/m_c/object}, but r_c assures {PRONOUN/m_c/object} that what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling is perfectly normal - {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a kitten regressor.",
+			"m_c, despite being old for a kit, acts younger then {PRONOUN/m_c/subject} {VERB/m_c/are/is}. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a kitten regressor."
+		],
+		"puppy regressor": [
+			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a puppy regressor, and that's okay." ,
+			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a puppy regressor."
+		],
+		"amnesia": [
+			"m_c can't understand why r_c is so upset with {PRONOUN/m_c/object}, only to learn {PRONOUN/m_c/subject} said something awful- that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} remember at all.",
+			"m_c has a hard time remembering what happened these past few moons. {PRONOUN/m_c/subject/CAP} have a vague idea of what happened, but all the details are gone.",
+			"m_c swears that one of {PRONOUN/m_c/poss} clanmates was a kit yesterday. How can a few moons pass in just a moment?"
 		]
 	},
 	"pcos": {
@@ -1864,14 +1923,16 @@
 			"r_c helps m_c stay on {PRONOUN/m_c/poss} paws as {PRONOUN/r_c/subject} {VERB/r_c/guide/guides} {PRONOUN/m_c/object} towards the medicine den to rest in until this period of dizziness passes.",
 			"m_c quickly sits back down and takes a deep breath. This stops {PRONOUN/m_c/object} from faiting, but the dizziness doesn't subside.",
 			"m_c stands up too quickly and finds the world spinning around {PRONOUN/m_c/object}.",
-			"m_c hisses when a Clanmate says that {PRONOUN/m_c/subject} should just be more careful when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up."
+			"m_c hisses when a Clanmate says that {PRONOUN/m_c/subject} should just be more careful when {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up.",
+			"m_c and r_c were sharing tongues when suddenly m_c was hit with a wave of dizziness."
 		],
 		"fainting":[
 			"r_c makes sure that the nest is nice and soft, set aside for m_c to rest in once {PRONOUN/m_c/subject} {VERB/m_c/recover/recovers} from {PRONOUN/m_c/poss} fainting spell.",
 			"m_c stood up too fast and ended up crashing back down to the distress of {PRONOUN/m_c/poss} Clanmates.",
 			"m_c fainted trying to power through the day.",
 			"m_c thought {PRONOUN/m_c/subject} could ride out the wave of dizziness, only to wake up on the ground.",
-			"m_c assures {PRONOUN/m_c/poss} Clanmates that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine. The fainting spell only lasted a few moments."
+			"m_c assures {PRONOUN/m_c/poss} clanmates that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine. The fainting spell only lasted a few moments.",
+			"m_c was sharing tongues with a clanmate when {PRONOUN/m_c/subject} suddenly collapsed."
 		],
 		"headache":[
 			"m_c knows the day isn't starting well when there's a dull thumping in {PRONOUN/m_c/poss} head.",
@@ -1880,7 +1941,8 @@
 		],
 		"seizure":[
 			"m_c doesn't remember falling down, but when {PRONOUN/m_c/subject} {VERB/m_c/blink/blinks} {PRONOUN/m_c/poss} eyes dizzily, {PRONOUN/m_c/subject} {VERB/m_c/find/finds} {PRONOUN/m_c/self} looking up at the sky above.",
-			"r_c is used to m_c's fainting spells, but not when {PRONOUN/m_c/poss} body begins spasming afterwards."
+			"r_c is used to m_c's fainting spells, but not when {PRONOUN/m_c/poss} body begins spasming afterwards.",
+			"r_c assures m_c that {PRONOUN/m_c/poss} seizure was nonepileptic and brought on by {PRONOUN/m_c/poss} frequent fainting."
 		]
 	},
 	"flooded paws": {

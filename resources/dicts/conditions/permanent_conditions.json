@@ -713,11 +713,15 @@
 			},
             {
                 "name": "budding spirit",
-                "chance": 50
+                "chance": 80
             },
             {
                 "name": "shattered soul",
-                "chance": 50
+                "chance": 80
+            },
+            {
+                "name": "fractured spirit",
+                "chance": 80
             }
         ],
         "herbs": [
@@ -776,11 +780,15 @@
 			},
             {
                 "name": "budding spirit",
-                "chance": 50
+                "chance": 80
             },
             {
                 "name": "shattered soul",
-                "chance": 50
+                "chance": 80
+            },
+            {
+                "name": "fractured spirit",
+                "chance": 80
             }
         ],
         "herbs": [
@@ -1677,6 +1685,10 @@
                 "chance": 70
             },
             {
+                "name": "fractured spirit",
+                "chance": 70
+            },
+            {
                 "name": "puzzled heart",
                 "chance": 100
             },
@@ -1726,6 +1738,10 @@
             },
             {
                 "name": "shattered soul",
+                "chance": 70
+            },
+            {
+                "name": "fractured spirit",
                 "chance": 70
             },
             {
@@ -2395,6 +2411,10 @@
             {
 				"name": "selective mutism",
 				"chance": 75
+			},
+            {
+				"name": "amnesia",
+				"chance": 20
 			}
         ],
         "herbs": []
@@ -2438,6 +2458,57 @@
             {
 				"name": "selective mutism",
 				"chance": 75
+			},
+            {
+				"name": "amnesia",
+				"chance": 75
+			}
+        ],
+        "herbs": []
+    },
+    "fractured spirit": {
+        "severity": "minor",
+        "congenital": "sometimes",
+        "moons_until": 6,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+				"name": "anxiety attack",
+				"chance": 15
+			},
+            {
+                "name": "kittenspace",
+                "chance": 50
+            },
+            {
+                "name": "puppyspace",
+                "chance": 50
+            },
+            {
+                "name": "kitten regressor",
+                "chance": 70
+            },
+            {
+                "name": "puppy regressor",
+                "chance": 70
+            },
+            {
+				"name": "selective mutism",
+				"chance": 75
+			},
+            {
+				"name": "amnesia",
+				"chance": 20
 			}
         ],
         "herbs": []
