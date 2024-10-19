@@ -870,9 +870,10 @@ class Cat:
         # for testing conditions for dadm
         '''
         if not self.example:
-            new_condition = choice(["curved spine", "bad knee", "born without a leg", "constant roaming pain"])
+            new_condition = choice(["fractured spirit", "budding spirit", "shattered soul"])
             self.get_permanent_condition(new_condition, born_with=True)
         '''
+        
         # Private Sprite
         self._sprite = None
 
@@ -2570,9 +2571,7 @@ class Cat:
                         "Webfoot", "Jake", "Sparkpelt", "Rootspring", "Nightcloud"
                     ])
                 else:
-                    alter_name = choice(names_dict["normal_prefixes"])
-            else:
-                alter_name = choice(names_dict["normal_prefixes"])
+                      alter_name = choice(names_dict["normal_prefixes"]) + choice(names_dict["normal_suffixes"])
 
             if template["role"] == "little":
                 if template["other"] in ["fictive", "fuzztive"]:
@@ -2594,14 +2593,13 @@ class Cat:
 
                             "Larchkit"  # names that belong to multiple cats
                         ])
-                    else:
-                        alter_name = choice(names_dict["normal_prefixes"])
-                        alter_name += choice(["kit", "paw"])
-                else:
-                    alter_name = choice(names_dict["normal_prefixes"])
-                    alter_name += choice(["kit", "paw"])
-            elif template["other"] == "cat" or template["other"] == "otherclan":
-                alter_name += choice(names_dict["normal_suffixes"])
+                if alter_name == "":
+                    alter_name = choice(names_dict["normal_prefixes"]) + choice(["kit", "paw"])
+                    
+            if alter_name == "":
+                alter_name = choice(names_dict["normal_prefixes"])
+                if template["other"] == "cat" or template["other"] == "otherclan":
+                    alter_name += choice(names_dict["normal_suffixes"])
         else:
             extra=randint(1,20)
             if extra == 1:
@@ -2623,7 +2621,7 @@ class Cat:
             different_name = randint(1,5)
             if different_name == 1:
                 # naming without making a whole new cat....yikers TT
-                if template["other"] == "fictive" or template["other"] == "fuzztive":
+                if template["other"] in ["fictive", "fuzztive"]:
                     canon_chance = randint(1, 5)
                     if canon_chance == 1:
                         alter_name = choice([
@@ -2638,9 +2636,7 @@ class Cat:
                             "Webfoot", "Jake", "Sparkpelt", "Rootspring", "Nightcloud"
                         ])
                     else:
-                        alter_name = choice(names_dict["normal_prefixes"])
-                else:
-                    alter_name = choice(names_dict["normal_prefixes"])
+                          alter_name = choice(names_dict["normal_prefixes"]) + choice(names_dict["normal_suffixes"])
 
                 if template["role"] == "little":
                     if template["other"] in ["fictive", "fuzztive"]:
@@ -2663,16 +2659,17 @@ class Cat:
                                 "Larchkit"  # names that belong to multiple cats
                             ])
                         else:
-                            alter_name = choice(names_dict["normal_prefixes"])
-                            alter_name += choice(["kit", "paw"])
+                            alter_name = choice(names_dict["normal_prefixes"]) + choice(["kit", "paw"])
                     else:
-                        alter_name = choice(names_dict["normal_prefixes"])
-                        alter_name += choice(["kit", "paw"])
-                elif template["other"] == "cat" or template["other"] == "otherclan":
-                    alter_name += choice(names_dict["normal_suffixes"])
+                        alter_name = choice(names_dict["normal_prefixes"]) + choice(["kit", "paw"])
             else:
                 alter_name = self.name.prefix
-                alter_name += choice(names_dict["normal_suffixes"])
+                if template["other"] == "cat" or template["other"] == "otherclan":
+                    alter_name += choice(names_dict["normal_suffixes"])
+        if alter_name == "":
+                alter_name = choice(names_dict["normal_prefixes"])
+                if template["other"] == "cat" or template["other"] == "otherclan":
+                    alter_name += choice(names_dict["normal_suffixes"])
         template["name"] = alter_name
         if template["ID"] != "1":
             splitrng = randint(1, (len(self.alters)+1))
@@ -3436,7 +3433,7 @@ class Cat:
             if self.is_plural():
                 if len(self.alters) < 1:
                     self.system_core()
-                    self.new_alter(condition)
+                    self.new_alter(new_condition)
             new_condition = True
         return new_condition
 
