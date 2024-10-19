@@ -121,6 +121,7 @@ class Pelt:
         "CRIMSONBOOT", "BLUEBOOT", "YELLOWBOOT", "CYANBOOT", "REDBOOT", "LIMEBOOT", "GREENBOOT",
         "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT", "PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"
     ]
+    wheels = ["WHEELS"]
 
     all_natural_accessories = [plant_accessories, wild_accessories]
 
@@ -699,13 +700,15 @@ class Pelt:
         if age == "newborn":
             self.accessory = None
             return
+        
+        base_chance = game.config["accessory_generation"]["base_acc_chance"]
 
         if age in ['kitten', 'adolescent']:
-            acc_display_choice = random.randint(0, 80)
+            acc_display_choice = random.randint(0, (0.8 * base_chance))
         elif age in ['young adult', 'adult']:
-            acc_display_choice = random.randint(0, 120)
+            acc_display_choice = random.randint(0, 1.2 * base_chance)
         else:
-            acc_display_choice = random.randint(0, 100)
+            acc_display_choice = random.randint(0, base_chance)
 
         if acc_display_choice == 1:
             self.accessory = choice([

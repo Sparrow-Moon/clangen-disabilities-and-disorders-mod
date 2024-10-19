@@ -868,9 +868,11 @@ class Cat:
             )
         
         # for testing conditions for dadm
-        #if not self.example:
-            #new_condition = choice(["spirited heart", "puzzled heart"])
-            #self.get_permanent_condition("fractured spirit", born_with=True)
+        '''
+        if not self.example:
+            new_condition = choice(["curved spine", "bad knee", "born without a leg", "constant roaming pain"])
+            self.get_permanent_condition(new_condition, born_with=True)
+        '''
         # Private Sprite
         self._sprite = None
 

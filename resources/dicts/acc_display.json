@@ -768,5 +768,10 @@
     "default": "yellow ladybug friend",
     "plural": "yellow ladybugs",
     "singular": "a yellow ladybug"
+  },
+  "WHEELS": {
+    "default": "cat wheelchair",
+    "plural": "cat wheelchairs",
+    "singular": "a cat wheelchair"
   }
 }

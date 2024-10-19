@@ -770,7 +770,7 @@ def create_new_cat(
             if kittypet:
                 name = choice(names.names_dict["loner_names"])
                 if randint(1, 5) > 3:
-                    accessory = choice([choice(Pelt.collars), choice(Pelt.collars), choice(Pelt.collars), choice(Pelt.collars), choice(Pelt.booties)])
+                    accessory = choice([choice(Pelt.collars), choice(Pelt.collars), choice(Pelt.collars), choice(Pelt.collars), choice(Pelt.booties), Pelt.wheels])
             elif (
                     loner and randint(1, 3) == 1
             ):  # try to give name from full loner name list
@@ -2736,6 +2736,10 @@ def generate_sprite(
             elif cat.pelt.accessory in cat.pelt.booties:
                 new_sprite.blit(
                     sprites.sprites['booties' + cat.pelt.accessory + cat_sprite], (0, 0)
+                )
+            elif cat.pelt.accessory in cat.pelt.wheels:
+                new_sprite.blit(
+                    sprites.sprites['wheels' + cat.pelt.accessory + cat_sprite], (0, 0)
                 )
             elif cat.pelt.accessory in cat.pelt.toy_accessories:
                 new_sprite.blit(

@@ -126,7 +126,7 @@ class Sprites:
             'eyes', 'eyes2', 'lazyeyes', 'skin', 'blep',
             'scars', 'missingscars', 'disabilityscars',
             'medcatherbs', 'snake_accessories', 'smallAnimal_accessories', 'aliveInsect_accessories', 'disabilityaccs',
-            'booties',
+            'booties', 'wheels',
             'collars', 'bellcollars', 'bowcollars', 'nyloncollars',
             'singlecolours', 'speckledcolours', 'tabbycolours', 'bengalcolours', 'marbledcolours',
             'rosettecolours', 'smokecolours', 'tickedcolours', 'mackerelcolours', 'classiccolours',
@@ -346,6 +346,8 @@ class Sprites:
             ["GREENBOOT", "RAINBOWBOOT", "BLACKBOOT", "BROWNBOOT", "WHITEBOOT"],
             ["PINKBOOT", "PURPLEBOOT", "MULTIBOOT", "INDIGOBOOT"]
         ]
+        
+        wheels_data = [["WHEELS"]]
 
         # medcatherbs
         for row, herbs in enumerate(medcatherbs_data):
@@ -402,6 +404,11 @@ class Sprites:
         for row, bootiesaccs in enumerate(booties_data):
             for col, bootiesacc in enumerate(bootiesaccs):
                 self.make_group('booties', (col, row), f'booties{bootiesacc}')
+                
+        # wheels added
+        for row, wheelsaccs in enumerate(wheels_data):
+            for col, wheelsacc in enumerate(wheelsaccs):
+                self.make_group('wheels', (col, row), f'wheels{wheelsacc}')
 
     def load_symbols(self):
         """

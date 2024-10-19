@@ -3834,6 +3834,66 @@
     }
   },
   {
+    "event_id": "gen_misc_any_wheelie",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 20,
+    "event_text": "m_c has been rustling through twoleg trash recently and found a mobility aid!",
+    "new_accessory": [
+      "WHEELS"
+    ],
+    "m_c": {
+      "age": [
+        "adolescent",
+        "young adult",
+        "adult",
+        "senior adult",
+        "senior"
+      ],
+      "permanent_condition": [
+        "curved spine",
+        "bad knee",
+        "weak leg",
+        "paralyzed",
+        "born without a leg",
+        "lost a leg",
+        "twisted leg",
+        "constant roaming pain"
+      ]
+    }
+  },
+  {
+    "event_id": "gen_misc_any_wheelie2",
+    "location": ["any"],
+    "season": ["any"],
+    "sub_type": ["accessory"],
+    "weight": 20,
+    "event_text": "m_c has been happily padding around camp with help from the new wheels {PRONOUN/m_c/subject} found.",
+    "new_accessory": [
+      "WHEELS"
+    ],
+    "m_c": {
+      "age": [
+        "adolescent",
+        "young adult",
+        "adult",
+        "senior adult",
+        "senior"
+      ],
+      "permanent_condition": [
+        "curved spine",
+        "bad knee",
+        "weak leg",
+        "paralyzed",
+        "born without a leg",
+        "lost a leg",
+        "twisted leg",
+        "constant roaming pain"
+      ]
+    }
+  },
+  {
     "event_id": "gen_misc_any_leader_twoleg_accessory1",
     "location": ["any"],
     "season": ["any"],
@@ -3984,7 +4044,7 @@
     "location": ["any"],
     "season": ["any"],
     "sub_type": ["accessory"],
-    "weight": 30,
+    "weight": 20,
     "event_text": "With r_c's assistance, m_c finds acc_singular to serve as an emotional support companion.",
     "new_accessory": [
       "SNAKE",
