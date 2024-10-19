@@ -288,5 +288,9 @@
 		"m_c's Clanmates are glad to see {PRONOUN/m_c/object} talking after {PRONOUN/m_c/poss} shutdown.",
 		"m_c is grateful to be alone after {PRONOUN/m_c/poss} shutdown.",
 		"m_c has regained control and calmed down."
+	],
+	"amnesia": [
+		"Although m_c still can't remember what happened, {PRONOUN/m_c/poss} clanmates step in to fill in the details and make new memories instead.",
+		"m_c can barely remember the past season, let alone a few days ago, and the missing pieces are just out of reach."
 	]
 }
