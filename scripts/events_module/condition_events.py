@@ -496,7 +496,8 @@ class Condition_Events:
             "bipolar ii",
             "essential tremor",
             "foggy mind",
-            "deer tick disease"
+            "deer tick disease",
+            "abandonment issues"
         ]
 
         got_condition = False

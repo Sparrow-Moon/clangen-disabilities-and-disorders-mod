@@ -399,7 +399,11 @@
     		"m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a fractured spirit.",
    			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a fractured spirit.",
    			"m_c doesn't understand why {PRONOUN/m_c/subject} {VERB/m_c/have/has} so many gaps in their memory."
- 		]
+ 		],
+		"abandonment issues": [
+			"m_c confides in r_c - {PRONOUN/m_c/subject} VERB/m_c/have/has} trouble acknowledging the fact that cats can come and go, especially the ones closest to m_c.",
+			"Every cat fears losing someone they love, but for m_c, the fear is constant and for no apparent reason."
+		]
 	},
     "echoing shock": {
 		"shock": [
@@ -501,7 +505,11 @@
     		"m_c has a nervous conversation with r_c after not feeling like {PRONOUN/m_c/self} for awhile. {PRONOUN/r_c/subject/CAP} {VERB/r_c/tell/tells} m_c that {PRONOUN/m_c/subject} might be a fractured spirit.",
    			"m_c vents to the medicine cat that sometimes, it feels like {PRONOUN/m_c/poss} body isn't {PRONOUN/m_c/poss} own. {PRONOUN/m_c/subject/CAP} may be a fractured spirit.",
    			"m_c doesn't understand why {PRONOUN/m_c/subject} {VERB/m_c/have/has} so many gaps in their memory."
- 		]
+ 		],
+		"abandonment issues": [
+			"m_c confides in r_c - {PRONOUN/m_c/subject} VERB/m_c/have/has} trouble acknowledging the fact that cats can come and go, especially the ones closest to m_c.",
+			"Every cat fears losing someone they love, but for m_c, the fear is constant and for no apparent reason."
+		]
     },
     "lasting grief": {
         "grief stricken": [
@@ -527,6 +535,10 @@
 				"Quietly, m_c talks to r_c about how tired {PRONOUN/m_c/subject} {VERB/m_c/are/is}. No matter how much {PRONOUN/m_c/subject} {VERB/m_c/sleep/sleeps}, it doesn't seem to get any better.",
 				"m_c has just been feeling exhausted recently, no matter how much sleep {PRONOUN/m_c/subject} {VERB/m_c/are/is} or {VERB/m_c/are/is}n't getting.",
 				"No matter how much sleep m_c gets a night, {PRONOUN/m_c/subject} {VERB/m_c/are/is}n't able to feel any less exhausted."
+		],
+		"abandonment issues": [
+			"m_c confides in r_c - {PRONOUN/m_c/subject} VERB/m_c/have/has} trouble acknowledging the fact that cats can come and go, especially the ones closest to m_c.",
+			"Every cat fears losing someone they love, but for m_c, the fear is constant and for no apparent reason."
 		]
     },
     "persistent headaches": {
@@ -634,6 +646,10 @@
 			"m_c comes into the medicine den looking out of it, telling r_c that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} very tired and keeps losing track of things.",
 			"m_c has some brain fog.",
 			"{PRONOUN/m_c/poss/CAP} Clanmates have noticed that m_c seems distracted, unable to hold onto {PRONOUN/m_c/poss} thoughts."
+		],
+		"abandonment issues": [
+			"m_c confides in r_c - {PRONOUN/m_c/subject} VERB/m_c/have/has} trouble acknowledging the fact that cats can come and go, especially the ones closest to m_c.",
+			"Every cat fears losing someone they love, but for m_c, the fear is constant and for no apparent reason."
 		]
     },
 	"murky mind": {
@@ -1144,6 +1160,10 @@
 			"m_c feels like if {PRONOUN/m_c/subject} {VERB/m_c/say/says} the wrong thing, everyone will hate {PRONOUN/m_c/object}. This, ironically, has led m_c to get in trouble lying.",
 			"m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} going to burst if {PRONOUN/m_c/subject} tell the truth.",
 			"m_c can't breathe when {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to tell the truth."
+		],
+		"abandonment issues": [
+			"m_c confides in r_c - {PRONOUN/m_c/subject} VERB/m_c/have/has} trouble acknowledging the fact that cats can come and go, especially the ones closest to m_c.",
+			"Every cat fears losing someone they love, but for m_c, the fear is constant and for no apparent reason."
 		]
     },
     "constant roaming pain": {
@@ -1453,6 +1473,10 @@
 			"It feels like m_c has another tongue. {PRONOUN/m_c/subject/CAP} {VERB/m_c/WANT/WANTS} to tell the truth, but it's like another tongue comes out and tells a lie for {PRONOUN/m_c/object}.",
 			"m_c feels like if {PRONOUN/m_c/subject} {VERB/m_c/tell/tells} the truth, no one will belive {PRONOUN/m_c/object}! So, instead {PRONOUN/m_c/subject} {VERB/m_c/start/starts} lying. Then it grows into a habit, regardless of however important the truth is.",
 			"m_c hates lying, but {PRONOUN/m_c/subject} can't stop {PRONOUN/m_c/self}."
+		],
+		"abandonment issues": [
+			"m_c confides in r_c - {PRONOUN/m_c/subject} VERB/m_c/have/has} trouble acknowledging the fact that cats can come and go, especially the ones closest to m_c.",
+			"Every cat fears losing someone they love, but for m_c, the fear is constant and for no apparent reason."
 		]
 	},
     "otherworldly mind": {

@@ -342,5 +342,9 @@
     "m_c feels less excited about life achivements than {PRONOUN/m_c/poss} other peers.",
     "m_c just doesn't seem to feel as much.",
     "m_c goes through life in a murk."
+  ],
+  "abandonment issues": [
+    "m_c asks r_c repeatedly if {PRONOUN/r_c/subject} would ever leave {PRONOUN/m_c/object}. Despite reassurance, m_c continues to fear abandonment.",
+    "m_c realizes that {PRONOUN/m_c/poss} fear of abandonment is much more severe than what most other cats experience."
   ]
 }

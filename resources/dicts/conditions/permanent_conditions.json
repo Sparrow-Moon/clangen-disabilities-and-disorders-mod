@@ -3492,5 +3492,76 @@
                 "daisy",
                 "marigold"
             ]
+        },
+        "abandonment issues": {
+        "severity": "major",
+        "congenital": "never",
+        "moons_until": 2,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness":[
+        ],
+        "risks": [
+            {
+                "name": "anxiety attack",
+                "chance": 10
+            },
+            {
+                "name": "brain fog",
+                "chance": 10
+            },
+            {
+                "name": "emotionally numb",
+                "chance": 20
+            },
+            {
+                "name": "delusions",
+                "chance": 10
+            },
+            {
+                "name": "harmful stims",
+                "chance": 20
+            },
+            {
+                "name": "black and white cloud",
+                "chance": 10
+            },
+            {
+                "name": "strong attachment",
+                "chance": 10
+            },
+            {
+                "name": "impulsivity",
+                "chance": 20
+            },
+            {
+                "name": "kittenspace",
+                "chance": 40
+            },
+            {
+                "name": "puppyspace",
+                "chance": 40
+            },
+            {
+                "name": "paranoia",
+                "chance": 20
+            },
+            {
+                "name": "panic attack",
+                "chance": 20
+            },
+            {
+                "name": "nightmares",
+                "chance": 20
+            }
+        ],
+        "herbs":[]
         }
     }

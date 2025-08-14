@@ -3331,7 +3331,7 @@ class Cat:
                     "jellyfish joints", "loose body", "curved spine"
                 ],
                 "thunderous spirit": [
-                    "shattered soul", "budding spirit", "spirited heart", "puzzled heart"
+                    "shattered soul", "budding spirit", "spirited heart", "puzzled heart", "abandonment issues"
                 ],
                 "otherworldly mind": [
                     "shattered soul", "budding spirit"
