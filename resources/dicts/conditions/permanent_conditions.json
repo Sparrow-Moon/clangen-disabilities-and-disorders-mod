@@ -3492,5 +3492,27 @@
                 "daisy",
                 "marigold"
             ]
+        },
+        "permanent ear buzzing": {
+            "severity": "minor",
+            "congenital": "sometimes",
+            "moons_until": 0,
+            "mortality": {
+                "newborn": 0,
+                "kitten": 0,
+                "adolescent": 5,
+                "young adult": 0,
+                "adult": 0,
+                "senior adult": 0,
+                "senior": 0
+            },
+            "illness_infectiousness": [
+            ],
+            "risks": [
+                {
+                    "name": "ear buzzing",
+                    "chance": 15
+                }
+            ]
         }
     }

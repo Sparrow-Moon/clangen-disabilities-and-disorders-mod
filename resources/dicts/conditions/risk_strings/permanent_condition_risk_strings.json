@@ -1338,6 +1338,10 @@
 			"When m_c comes into the medicine den to talk with r_c, {PRONOUN/r_c/subject}{VERB/r_c/'re/'s} quick to notice that m_c's ears look inflamed.",
 			"After purposely scratching at and putting objects into {PRONOUN/m_c/poss} ears, it's no shock that m_c has gotten an ear infection.",
 			"m_c has gotten an ear infection after putting objects into {PRONOUN/m_c/poss} ears."
+		],
+		"nosebleed": [
+			"r_c sighs when m_c comes in from a nosebleed from rubbing {PRONOUN/m_c/poss} nose too often.",
+			"m_c whinces when {PRONOUNS/m_c/poss} claws nick {PRONOUN/m_c/poss} nose and accidentally cut it open."
 		]
 	},
 
@@ -2008,6 +2012,11 @@
 		"puppy regressor": [
 			"m_c has slipped into a more puppy-like headspace. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} worried about this, but r_c assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a puppy regressor, and that's okay." ,
 			"m_c, despite being too old to play pretend, acts more dog like sometimes. It's possible that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a puppy regressor."
+		],
+		"selective mutism": [
+			"r_c reassures m_c's clanmates that m_c is only going to be quiet for awhile now. {PRONOUN/m_c/subject/CAP} just need some time.",
+			"m_c only wants to talk to the clanmates closest to {PRONOUN/m_c/object}. And for {PRONOUN/m_c/poss} other clanmates, {PRONOUN/m_c/subject} rely on sign language and tail signals to comunicate to the rest of them.",
+			"m_c has gone quiet for a bit, too overwhelmed to speak."
 		],
 		"amnesia": [
 			"m_c can't understand why r_c is so upset with {PRONOUN/m_c/object}, only to learn {PRONOUN/m_c/subject} said something awful- that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} remember at all.",

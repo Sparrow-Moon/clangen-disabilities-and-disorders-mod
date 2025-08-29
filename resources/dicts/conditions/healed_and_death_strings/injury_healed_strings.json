@@ -267,5 +267,9 @@
     "knee locking": [
 		"m_c's knees are free to bend now.",
 		"m_c's knee unlocks."
-	]
+	],
+    "nosebleed": [
+        "m_c sighs in relief when {PRONOUN/m_c/poss} nose stops bleeding.",
+        "m_c's nose has stopped bleeding."
+    ]
 }
