@@ -359,7 +359,7 @@ class Sprites:
                 self.make_group('medcatherbs', (col, row), f'acc_herbs{herb}')
         
         #dryherbs
-        for row, dryherbs in enumerate(medcatherbs_data):
+        for row, dryherbs in enumerate(dryherbs_data):
             for col, dryherb in enumerate(herbs):
                 self.make_group('medcatherbs', (col, 4), f'acc_herbs{herb}')
 
