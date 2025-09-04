@@ -257,7 +257,9 @@
   ],
   "pcos": [
     "After m_c comes to the medicine den asking for more herbs for their cramps, r_c insists on checking up on {PRONOUN/m_c/object}. It appears to be pcos.",
-    "After m_c was stuck in {PRONOUN/m_c/poss} nest with cramps for days, the medicine cat diagnoses m_c with pcos."
+    "After m_c was stuck in {PRONOUN/m_c/poss} nest with cramps for days, the medicine cat diagnoses m_c with pcos.",
+    "m_c has noticed {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} put on a bit of weight, and upon asking r_c for advice and being checked out, r_c confirms m_c's diagnosis is pcos.",
+    "m_c is shocked to learn that most cat's shark weeks only last a pawful of days rather than what feels like whole moons."
   ],
   "falling paws": [
     "m_c complains about feeling lightheaded whenever {PRONOUN/m_c/subject} {VERB/m_c/stand/stands} up too quickly. After running a few tests, r_c has come to the conclusion that m_c has falling paws.",

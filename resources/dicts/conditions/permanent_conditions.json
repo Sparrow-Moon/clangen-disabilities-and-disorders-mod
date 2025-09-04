@@ -2862,6 +2862,10 @@
             {
                 "name": "infertile",
                 "chance": 75
+            },
+            {
+                "name": "shark week",
+                "chance": 35
             }
         ],
         "herbs": []

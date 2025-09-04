@@ -659,5 +659,12 @@
 			"m_c has been stressed about every little thing. Unfortunatly, this means that m_c is now having an anxiety attack.",
 			"m_c has gotten an anxiety attack after burning out."
 		]
+	},
+	"shark week": {
+		"blood loss": [
+			"r_c sighs, m_c's shark week has taken a toll on {PRONOUN/m_c/poss} body. {PRONOUN/m_c/subject/CAP} {VERB/m_c/have/has} lost a lot of blood.",
+			"m_c's shark week has taken a larger than usual toll on {PRONOUN/m_c/poss} body.",
+			"m_c has lost a lot of blood due to {PRONOUN/m_c/poss} shark week."
+		]
 	}
 }
