@@ -343,5 +343,9 @@
 		"m_c has stopped lying.",
 		"Old habits die hard. Luckily for m_c, {PRONOUN/m_c/poss} double tongue has stopped for now.",
 		"The truth no longer seems so scary for m_c."
+	],
+	"shark week": [
+		"m_c's shark week has ended.",
+		"m_c is happy to say that {PRONOUN/m_c/poss} shark week has ended."
 	]
 }

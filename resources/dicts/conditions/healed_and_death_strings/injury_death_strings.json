@@ -18,7 +18,8 @@
         "m_c died from a rat bite."
     ],
     "blood loss": [
-        "m_c died from blood loss."
+        "m_c died from blood loss.",
+        "m_c's body couldn't whithstand the blood loss."
     ],
     "broken jaw": [
         "m_c died from a broken jaw."
