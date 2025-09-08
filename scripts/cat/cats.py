@@ -134,6 +134,7 @@ class Cat:
         "flooded paws": "POTS",
         "bad knee": "meniscus tear",
         "murky mind": "dysthemia",
+        "permanent ear buzzing": "tinnitus",
 
         "sunblindness": "light sensitivity",
         "faux pregnant": "phantom pregnancy",

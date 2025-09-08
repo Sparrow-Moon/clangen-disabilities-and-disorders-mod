@@ -344,5 +344,9 @@
     "m_c feels less excited about life achivements than {PRONOUN/m_c/poss} other peers.",
     "m_c just doesn't seem to feel as much.",
     "m_c goes through life in a murk."
+  ],
+  "permanent ear buzzing": [
+    "m_c has walked through life with a buzzing in {PRONOUN/m_c/poss} ears. Only when r_c tells {PRONOUN/m_c/object} that the buzzing isn't normal that {PRONOUN/m_c/subject} get diagnosed.",
+    "m_c has always felt like that {PRONOUN/m_c/subject} {VERB/m_c/have/had} a ringing in {PRONOUN/m_c/poss} ears."
   ]
 }

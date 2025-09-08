@@ -2043,7 +2043,10 @@
 		],
 		"shark week": [
 			"r_c starts to worry about m_c not having {PRONOUN/m_c/poss} shark week until it comes all at once, leaving m_c unable to leave the nest.",
-			"m_c groans, stricken by pain and stuck in {PRONOUN/m_c/poss} nest for the remainder of however long {PRONOUN/m_c/poss} shark week remains."
+			"m_c groans, stricken by pain and stuck in {PRONOUN/m_c/poss} nest for the remainder of however long {PRONOUN/m_c/poss} shark week remains.",
+			"That time of the moon has come around for m_c yet again.",
+    		"m_c groans in {PRONOUN/m_c/poss} nest. It's shark week again.",
+    		"m_c was distraught to find out {PRONOUN/m_c/subject} started shark week while {PRONOUN/m_c/subject} {VERB/m_c/were/was} sleeping. Great."
 		]
 	},
 	"excess testosterone": {
@@ -2426,6 +2429,12 @@
 			"m_c often finds it easier to lie. All of these lies have piled up and gotten m_c into trouble.",
 			"m_c's clanmates understand that this is a trauma response, but lying still has consequences.",
 			"It feels like m_c has another tongue. {PRONOUN/m_c/subject/CAP} {VERB/m_c/WANT/WANTS} to tell the truth, but it's like another tongue comes out and tells a lie for {PRONOUN/m_c/object}."
+		]
+	},
+	"permanent ear buzzing": {
+		"ear buzzing": [
+			"r_c has given m_c permission to skip out on patrols due to the ringing in {PRONOUN/m_c/poss} ears.",
+			"The ringing has intensified to where m_c can't leave {PRONOUN/m_c/poss} nest."
 		]
 	}
 }

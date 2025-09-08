@@ -1703,6 +1703,14 @@
             {
                 "name": "ear buzzing",
                 "chance": 20
+            },
+            {
+                "name": "permanent ear buzzing",
+                "chance": 100
+            },
+            {
+                "name": "deaf",
+                "chance": 1000
             }
         ],
         "herbs": [

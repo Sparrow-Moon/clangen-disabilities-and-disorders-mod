@@ -425,5 +425,15 @@
       "Despite r_c's diligent treatment, m_c's deer tick fever hasn't quite abated. {PRONOUN/m_c/subject/CAP} actually {VERB/m_c/seem/seems} to be developing new symptoms.",
       "Who knew a harmless little tick could cause this? m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
     ]
+  },
+  "ear infection": {
+    "permanent ear buzzing": [
+      "Despite r_c's diligent treatment, m_c has had some lasting aftereffects of {PRONOUN/m_c/poss} ear infection.",
+      "After {PRONOUN/m_c/poss} ear infection, m_c's hearing will never be the same."
+    ],
+    "deaf": [
+      "Despite r_c's diligent treatment, m_c has had some last aftereffects of {PRONOUN/m_c/poss} ear infection.",
+      "After {PRONOUN/m_c/poss} ear infection, m_c's hearing will never be the same."
+    ]
   }
 }
