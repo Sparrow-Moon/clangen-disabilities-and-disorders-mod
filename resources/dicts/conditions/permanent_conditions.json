@@ -736,7 +736,7 @@
                 "chance": 150
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 150
             },
             {
@@ -831,7 +831,7 @@
                 "chance": 140
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 140
             },
             {
@@ -1015,7 +1015,7 @@
                 "chance": 75
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 200
             },
             {
@@ -1219,7 +1219,7 @@
                 "chance": 200
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 200
             },
 			{
@@ -1320,7 +1320,7 @@
                 "chance": 200
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 200
             },
             {
@@ -1820,7 +1820,7 @@
                 "chance": 160
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 160
             },
             {
@@ -1896,7 +1896,7 @@
                 "chance": 180
             },
             {
-                "name": "shattered soul",
+                "name": "branching soul",
                 "chance": 180
             },
             {
@@ -2559,7 +2559,7 @@
             }
         ]
     },  
-    "shattered soul": {
+    "branching soul": {
         "severity": "minor",
         "congenital": "sometimes",
         "moons_until": 3,

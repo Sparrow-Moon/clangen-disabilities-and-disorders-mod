@@ -17,26 +17,26 @@
 		"spirited heart"
 	],
 	"weighted heart": [
-		"shattered soul", "budding spirit", "fractured spirit", "foggy mind"
+		"branching soul", "budding spirit", "fractured spirit", "foggy mind"
 	],
 	"comet spirit": [
 		"prismatic mind", "burning light", "jumbled noise", "disrupted senses", "confused body", "jumbled mind",
 		"counting fog", "spirited heart", "parrot chatter"
 	],
 	"antisocial": [
-		"shattered soul", "budding spirit", "puzzled heart", "fractured spirit"
+		"branching soul", "budding spirit", "puzzled heart", "fractured spirit"
 	],
 	"anxiety": [
-		"shattered soul", "budding spirit", "selective mutism", "fractured spirit"
+		"branching soul", "budding spirit", "selective mutism", "fractured spirit"
 	],
 	"constant roaming pain": [
 		"jellyfish joints", "loose body", "curved spine"
 	],
 	"thunderous spirit": [
-		"shattered soul", "budding spirit", "spirited heart", "puzzled heart", "fractured spirit"
+		"branching soul", "budding spirit", "spirited heart", "puzzled heart", "fractured spirit"
 	],
 	"otherworldly mind": [
-		"shattered soul", "budding spirit", "fractured spirit"
+		"branching soul", "budding spirit", "fractured spirit"
 	],
 	"irritable bowels": [
 		"jellyfish joints", "loose body"
@@ -59,7 +59,7 @@
 	"confused body": [
 		"seizure prone", "prismatic mind", "comet spirit", "parrot chatter"
 	],
-	"shattered soul": [
+	"branching soul": [
 		"weighted heart", "antisocial", "anxiety", "thunderous spirit", "otherworldly mind"
 	],
 	"budding spirit": [

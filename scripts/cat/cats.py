@@ -3970,6 +3970,16 @@ class Cat:
                 start = self.permanent_condition["heavy soul"][moon_start]
                 del self.permanent_condition["heavy soul"]
                 self.get_permanent_condition("weighted heart", born_with=congenital, starting_moon=-1)
+            if "starwalker" in self.permanent_condition:
+                congenital = self.permanent_condition["starwalker"][born_with]
+                start = self.permanent_condition["starwalker"][moon_start]
+                del self.permanent_condition["starwalker"]
+                self.get_permanent_condition("prismatic mind", born_with=congenital, starting_moon=-1)
+            if "shattered soul" in self.permanent_condition:
+                congenital = self.permanent_condition["shattered soul"][born_with]
+                start = self.permanent_condition["shattered soul"][moon_start]
+                del self.permanent_condition["shattered soul"]
+                self.get_permanent_condition("branching soul", born_with=congenital, starting_moon=-1)
 
             if "stimming" in self.illnesses and not self.pelt.blep:
                 self.pelt.blep = True

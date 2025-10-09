@@ -2,15 +2,15 @@
 	
 	"budding spirit":[
 		"fractured spirit",
-		"shattered soul"
+		"branching soul"
 	],
-	"shattered soul":[
+	"branching soul":[
 		"fractured spirit",
 		"budding spirit"
 	],
 	"fractured spirit":[
 		"budding spirit",
-		"shattered soul"
+		"branching soul"
 	],
 	"raspy lungs": [
 		"allergies",
