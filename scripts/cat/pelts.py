@@ -707,9 +707,9 @@ class Pelt:
         base_chance = game.config["accessory_generation"]["base_acc_chance"]
 
         if age in ['kitten', 'adolescent']:
-            acc_display_choice = random.randint(0, (0.8 * base_chance))
+            acc_display_choice = random.randint(0, int(0.8 * base_chance))
         elif age in ['young adult', 'adult']:
-            acc_display_choice = random.randint(0, 1.2 * base_chance)
+            acc_display_choice = random.randint(0, int(1.2 * base_chance))
         else:
             acc_display_choice = random.randint(0, base_chance)
 
