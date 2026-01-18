@@ -158,5 +158,9 @@
   "double tongue": [
     "m_c has been lying about little things. {PRONOUN/m_c/poss/CAP} double tongue has landed them unable to do patrols.",
     "While {PRONOUN/m_c/poss} clanmates understand that m_c is lying as a trauma response, that doesn't mean that {PRONOUN/m_c/subject} {VERB/m_c/haven't/hasn't} caused damage."
+  ],
+  "anemia": [
+    "m_c hasn't been feeling that well these days. r_c diagnoses {PRONOUN/m_c/object} with anemia. It should be temporary.",
+    "m_c feels colder than the rest of the clan. {PRONOUN/m_c/subject/CAP} {VERB/m_c/have/has} anemia. The med cat says it's not permanent."
   ]
 }

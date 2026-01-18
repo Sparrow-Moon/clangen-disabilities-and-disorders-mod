@@ -465,6 +465,7 @@ class Condition_Events:
             "snow vision",
             "echoing shock",
             "irritable bowels",
+            "irritated belly",
             "loose body",
             "longcough",
             "burning light",

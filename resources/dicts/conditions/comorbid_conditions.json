@@ -38,8 +38,11 @@
 	"otherworldly mind": [
 		"branching soul", "budding spirit", "fractured spirit"
 	],
+	"irritated belly": [
+		"irritable bowels", "constant joint pain"
+	],
 	"irritable bowels": [
-		"jellyfish joints", "loose body"
+		"jellyfish joints", "loose body", "irritated belly"
 	],
 	"jellyfish joints": [
 		"constant roaming pain", "irritable bowels"

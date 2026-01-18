@@ -135,6 +135,7 @@ class Cat:
         "bad knee": "meniscus tear",
         "murky mind": "dysthemia",
         "permanent ear buzzing": "tinnitus",
+        "irritated belly": "crohn's disease"
 
         "sunblindness": "light sensitivity",
         "faux pregnant": "phantom pregnancy",

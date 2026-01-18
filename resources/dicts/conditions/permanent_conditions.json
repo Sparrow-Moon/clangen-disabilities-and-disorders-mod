@@ -3442,6 +3442,40 @@
         ],
         "herbs":[]
         },
+        "irritated belly": {
+            "severity": "major",
+            "congenital": "always",
+            "moons_until": 3,
+            "mortality": {
+                "newborn": 0,
+                "kitten": 0,
+                "adolescent": 0,
+                "young adult": 0,
+                "adult": 0,
+                "senior adult": 0,
+                "senior": 0
+            },
+            "illness_infectiousness": [
+            ],
+            "risks": [
+                {
+                    "name": "anemia",
+                    "chance": 55
+                },
+                {
+                    "name": "stomachache",
+                    "chance": 20
+                },
+                {
+                    "name": "diarrhea",
+                    "chance": 30
+                },
+                {
+                    "name": "nausea",
+                    "chance": 25
+                }
+            ]
+        },
         "deer tick disease": {
            "severity": "major",
             "congenital": "never",

@@ -347,5 +347,10 @@
 	"shark week": [
 		"m_c's shark week has ended.",
 		"m_c is happy to say that {PRONOUN/m_c/poss} shark week has ended."
+	],
+	"anemia": [
+		"m_c has finally stopped feeling light headed.",
+		"m_c feels much better after {PRONOUN/m_c/poss} bout with anemia has ended.",
+		"m_c doesn't feel as cold anymore."
 	]
 }

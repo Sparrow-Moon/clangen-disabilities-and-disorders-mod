@@ -183,13 +183,20 @@
 	],
 	"irritable bowels":
 	[
-		"allergies"
+		"allergies",
+		"irritated belly"
+	],
+	"irritated belly": 
+	[
+		"allergies",
+		"irritable bowels"
 	],
 	"allergies":
 	[
 		"raspy lungs",
 		"irritable bowels",
-		"longcough"
+		"longcough",
+		"irritated belly"
 	],
 	"longcough":
 	[

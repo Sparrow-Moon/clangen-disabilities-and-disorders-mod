@@ -2434,7 +2434,30 @@
 	"permanent ear buzzing": {
 		"ear buzzing": [
 			"r_c has given m_c permission to skip out on patrols due to the ringing in {PRONOUN/m_c/poss} ears.",
-			"The ringing has intensified to where m_c can't leave {PRONOUN/m_c/poss} nest."
+			"The ringing has intensified to where m_c can't leave {PRONOUN/m_c/poss} nest.",
+			"m_c won't be much use on patrols. The ringing in {PRONOUN/m_c/poss} ears is too much."
+		]
+	},
+	"irritated belly": {
+		"anemia": [
+			"The limitted diet that r_c has put m_c on has left {PRONNOUN/m_c/subject} feeling cold and dizzy when {PRONNOUN/m_c/object} stand up.",
+			"It seems that m_c has become anemic from {PRONNOUN/m_c/poss} irritated belly."
+		],
+		"stomachache": [
+			"m_c has accidentally eaten something that r_c wouldn't approve of and now {PRONOUN/m_c/subject} {VERB/m_c/have/has} a stomachache.",
+			"m_c isn't sure what happeneed to give {PRONOUN/m_c/object} a stomachache, but {PRONOUN/m_c/subject} suspects it has something to do with a mischevious apprentice, or a prey pile mishap.",
+			"m_c's stomach feels tight and hard in {PRONOUN/m_c/poss} belly. {PRONOUN/m_c/subject/CAP} feel sick yet again.",
+			"Another day, another stomachache! m_c hates this."
+		],
+		"diarrhea": [
+			"r_c sighs as {PRONOUN/r_c/subject} watch m_c trot between the dirtplace and to get water. r_c is fully intent on talking to the Leader about this prey mix up.",
+			"m_c is cooped up in the dirtplace due to {PRONOUN/m_c/poss} irritated belly.",
+			"m_c ate something {PRONOUN/m_c/subject} shouldn't have and is feeling the consequences."
+		],
+		"nausea": [
+			"r_c gets some herbs for m_c's nausea. m_c looks beyond miserable.",
+			"m_c ate some prey and midway through realized {PRONOUN/m_c/poss} meal had ingested something that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not supposed to eat.",
+			"m_c can't eat anything today. {PRONOUN/m_c/subject} {VERB/m_c/are/is} just too nausious to."
 		]
 	}
 }
