@@ -1066,8 +1066,8 @@ class Pregnancy_Events:
                         y = random.randrange(0, 15)
                         start_relation = Relationship(the_cat, kit, False, True)
                         start_relation.platonic_like += parent_to_kit["platonic"] - y
-                        start_relation.dislike += parent_to_kit["dislike"] - y
-                        start_relation.jealousy = parent_to_kit["jealousy"] - y
+                        start_relation.dislike += game.config["new_cat"]["parent_buff"]["turmoiled_litter"]["dislike"] - y
+                        start_relation.jealousy = game.config["new_cat"]["parent_buff"]["turmoiled_litter"]["jealousy"] - y
                         the_cat.relationships[kit.ID] = start_relation
                     else:
                         parent_to_kit = game.config["new_cat"]["parent_buff"][
