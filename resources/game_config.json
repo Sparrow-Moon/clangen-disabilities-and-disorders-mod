@@ -108,16 +108,20 @@
 			"parent_to_kit": {
 				"romantic": 0,
 				"platonic": 40,
-				"dislike": 25,
+				"dislike": 0,
 				"admiration": 30,
 				"comfortable": 40,
-				"jealousy": 20,
+				"jealousy": 0,
 				"trust": 30,
 				"comment": [
 					"Dislike and jealousy are called for the turmoiled litter events.",
 					"While still having platonic value at least.",
 					"Only occurs with the turmoil right after a litter is born though."
 				]
+			},
+			"turmoiled_litter": {
+				"dislike": 25,
+				"jealousy": 20
 			}
 		},
 		"sib_buff": {
