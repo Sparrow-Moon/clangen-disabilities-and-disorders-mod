@@ -3443,7 +3443,7 @@
         "herbs":[]
         },
         "irritated belly": {
-            "severity": "major",
+            "severity": "minor",
             "congenital": "always",
             "moons_until": 3,
             "mortality": {
