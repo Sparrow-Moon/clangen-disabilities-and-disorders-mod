@@ -3552,5 +3552,67 @@
                     "chance": 15
                 }
             ]
+        },
+    "intermittent paralysis": {
+        "severity": "major",
+        "congenital": "sometimes",
+        "moons_until": 0,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "an infected wound",
+                "chance": 60
+            },
+            {
+                "name": "torn pelt",
+                "chance": 30
+            },
+            {
+                "name": "sore",
+                "chance": 20
+            },
+            {
+                "name": "joint pain",
+                "chance": 20
+            },
+			{
+				"name": "paralysis episode",
+				"chance": 15
+			},
+			{
+				"name": "paralyzed",
+				"chance": 120
+			},
+            {
+                "name": "dizziness",
+                "chance": 30
+            },
+            {
+                "name": "phantom pain",
+                "chance": 60
+            }
+        ],
+        "herbs": {
+            "1": [
+            "daisy",
+            "juniper",
+            "ragwort",
+            "marigold"
+        ],
+            "2": [
+            "poppy"			
+			],
+            "3": []
         }
+    }
     }

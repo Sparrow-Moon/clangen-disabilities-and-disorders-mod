@@ -3549,7 +3549,7 @@
 			"Purrs in celebration",
 			"Thinks that talking is exhausting",
 			"Wonders if {PRONOUN/m_c/subject} ever wants to talk again",
-			"Wishes the world could be as quiet as {PRONOUN/m_c/poss}",
+			"Wishes the world could be as quiet as {PRONOUN/m_c/object}",
 			"Doesn't care about talking",
 			"Doesn't see why not talking matters",
 			"Is catching up with r_c"
@@ -4027,6 +4027,56 @@
         ]
     },
     {
+        "id": "gen_intermittent_paralysis",
+        "thoughts": [
+            "Is having an unsteady day",
+			"Grumbles about the fact that swimming helps",
+			"Wonders if {PRONOUN/m_c/subject} can get out of patrol with sore paws today",
+			"Is exaggerating {PRONOUN/m_c/poss} inability to walk to get out of patrol with r_c",
+			"Is appreciative of {PRONOUN/m_c/poss} Clanmates patience",
+			"Took longer to come back from patrol than usual",
+			"Feels extra appreciated today",
+			"Is making up stories about how {PRONOUN/m_c/subject} lost {PRONOUN/m_c/poss} walking",
+			"Wishes r_c could be {PRONOUN/m_c/object} for the day",
+			"Feels like {PRONOUN/m_c/subject} stuck on a log in the river",
+			"Insists it's the world that's off balance not {PRONOUN/m_c/object}"
+        ],
+        "main_status_constraint": [
+            "apprentice",
+            "medicine cat apprentice",
+            "mediator apprentice",
+            "warrior",
+            "medicine cat",
+            "mediator",
+            "deputy",
+            "leader"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "intermittent paralysis"
+            ]
+        },
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "gen_sh_thoguhts_intermittent_paralysis",
+        "thoughts": [
+            "Wishes {PRONOUN/m_c/poss} legs would just stop working completely already",
+			"Wonders if it would be better if {PRONOUN/m_c/subject} were fully paralyzed",
+			"Purposely doesn't tell anyone about {PRONOUN/m_c/poss} injuries this moon",
+			"Doesn't even try to catch {PRONOUN/m_c/self} when falling",
+			"Clawed at {PRONOUN/m_c/poss} own legs just wishing to feel it"
+        ],
+        "trigger": "self_harm",
+        "has_injuries": {
+            "m_c": [
+                "intermittent paralysis"
+            ]
+        }
+    },
+    {
         "id": "gen_nausea_ED_adjacent",
         "thoughts": [
             "Wonders if it would be better not to eat at all",
@@ -4106,7 +4156,11 @@
             "Mindlessly scratches at {PRONOUN/m_c/poss} own skin until it starts to bleed",
             "Feels frustrated with {PRONOUN/m_c/poss} own body",
             "Knows {PRONOUN/m_c/subject} shouldn't bite {PRONOUN/m_c/self} but does it anyways",
-            "Bites down hard on {PRONOUN/m_c/poss} own skin to help {PRONOUN/m_c/object} focus"
+            "Bites down hard on {PRONOUN/m_c/poss} own skin to help {PRONOUN/m_c/object} focus",
+			"Keeps freaking {PRONOUN/m_c/self} out over {PRONOUN/m_c/poss} own blood",
+			"Discovers {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} opened an old wound again",
+			"Keeps grinding {PRONOUN/m_c/poss} teeth until {PRONOUN/m_c/poss} jaw hurts",
+			"Purposely scratched {PRONOUN/m_c/poss} own eyes"
         ],
         "trigger": "self_harm",
         "has_injuries": {

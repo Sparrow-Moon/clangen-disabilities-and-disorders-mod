@@ -37,7 +37,12 @@
         "a festering wound": [
             "The worried look in r_c's eyes as {PRONOUN/r_c/subject} {VERB/r_c/examine/examines} m_c's acrid rat bite makes {PRONOUN/m_c/poss} heart sink.",
             "m_c tries to ignore the smell coming from the site of {PRONOUN/m_c/poss} festering rat bite."
-        ]
+        ],
+		"rat bite fever": [
+			"m_c's heart sinks more and more, by the look in r_c's eyes something has gone very wrong with {PRONOUN/m_c/poss} rat bite.", 
+			"Not only does m_c's rat bite feel like it's burning, now {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like {PRONOUN/m_c/subject} {VERB/m_c/are/is} burning.",
+			"m_c writhes in the nest, {PRONOUN/m_c/poss} rat bite definitely doesn't feel like it's getting better, in fact it feels much like it's getting worse."
+		]
     },
     "tick bites": {
         "an infected wound": [
@@ -162,6 +167,10 @@
         "heat exhaustion": [
             "r_c has managed to get some water into m_c, but m_c is showing signs of confusion and fatigue - clear indications of heat exhaustion.",
             "m_c pants, helplessly searching for a cooler place to lie and nap. {PRONOUN/m_c/subject/CAP} {VERB/m_c/feel/feels} utterly exhausted by this heat."
+        ],
+        "sore throat": [
+            "The lack of water has left m_c's throat dry and sore.",
+            "r_c has tried to get some water into m_c, but {PRONOUN/m_c/poss} thirst has left {PRONOUN/m_c/poss} throat dry and scratchy."
         ]
     },
     "damaged eyes": {
@@ -182,7 +191,11 @@
             "r_c watches as the inevitable happens and m_c begins to cough and choke on {PRONOUN/m_c/poss} own blood. The end is coming quickly for {PRONOUN/m_c/object}.",
             "m_c has been left weak and barely responsive from the poison - and now, {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} begun to cough up blood. That can't be a good sign.",
             "m_c hacks and sputters on {PRONOUN/m_c/poss} own blood. {PRONOUN/m_c/subject/CAP} {VERB/m_c/know/knows} the end is soon."
-        ]
+        ],
+		"anaphylaxis": [
+			"To r_c's horror it looks as though m_c is having a severe reaction to the poison in {PRONOUN/m_c/poss} system, going into anaphylactic shock.",
+			"m_c chokes in horror, {PRONOUN/m_c/subject} can't breathe! {PRONOUN/m_c/poss/CAP} throat has swollen shut and {PRONOUN/m_c/subject} can't breathe!"
+		]
     },
     "broken back": {
         "an infected wound": [
@@ -200,11 +213,29 @@
             "m_c can't focus on anything but the searing pain in {PRONOUN/m_c/poss} head. {PRONOUN/m_c/poss/CAP} head injury must have rattled something deep in {PRONOUN/m_c/poss} skull."
         ]
     },
+	"bee sting": {
+		"anaphylaxis": [
+			"r_c frantically searches the herbstock for oak and elder leaves, {PRONOUN/r_c/subject} {VERB/r_c/have/has} to stop the swelling m_c's experiencing immediately.",
+			"It turns out that m_c is severely allergic to bees. {PRONOUN/m_c/poss/CAP} throat cloasing up and breathing becoming a struggle evidence of that.",
+			"While ordinarily a bee sting is only a minor issue, poor m_c has gone into anaphylaxis from {PRONOUN/m_c/imposs}."
+		]
+	},
+    "sore throat": {
+        "damaged throat": [
+            "The soreness of m_c's throat has lessened, but {PRONOUN/m_c/subject} still {VERB/m_c/struggle/struggles} to mew and purr as {PRONOUN/m_c/subject} did before.",
+            "m_c's sore throat was a sign of greater damage to the area, making vocalization difficult."
+        ]
+    },
 	"rash": {
 		"torn pelt": [
 			"r_c very gently applies the herbal paste and cobwebs to the torn and raw patches around m_c's fur.",
 			"After all the scratching {PRONOUN/m_c/subject} {VERB/m_c/have/has} done at the rash it's not a surprise that m_c has torn up {PRONOUN/m_c/poss} pelt.",
 			"All m_c's frantic itching has left {PRONOUN/m_c/poss} fur looking rather patchy in places."
+		],
+		"anaphylaxis": [
+			"Much to r_c's stress it appears that m_c's rash has progressed into anaphylaxis putting m_c at risk of suffocating to death.",
+			"It looks like m_c's rash has become much, much more dangerous, swelling up {PRONOUN/m_c/poss} throat and making it hard to even wheeze.",
+			"Poor m_c's rash has swiftly become anaphylaxis spreading into {PRONOUN/m_c/poss} throat."
 		]
 	},
 	"wrenched claws": {
@@ -264,6 +295,10 @@
 		"redcough": [
 			"As the black ash and smoke fills m_c's lungs, {PRONOUN/m_c/poss} coughs turn red. r_c knows that death is likely days away now.",
 			"As m_c weakly coughs, rasping on every breath, the red mixing with dark ash tells all."
+		],
+		"sore throat": [
+			"With all the coughing and wheezing that m_c has been doing, r_c isn't surprised to find that {PRONOUN/m_c/subject} now {VERB/m_c/have/has} quite the sore throat.",
+			"As if the ash choking m_c out wasn't bad enough, now {PRONOUN/m_c/poss} throat is sore as well."
 		]
 	},
 	"severe tick bites": {

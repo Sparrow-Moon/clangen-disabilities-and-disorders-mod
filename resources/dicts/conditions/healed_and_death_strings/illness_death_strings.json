@@ -3,6 +3,10 @@
     "m_c died from a seizure.",
     "m_c died during a seizure."
   ],
+    "breathless fit": [
+        "m_c suffocated to death during a breathless fit.",
+        "m_c's breathing got worse and worse, until {PRONOUN/m_c/subject} finally suffocated."
+    ],
   "diarrhea": [
     "m_c died to the dehydration caused by diarrhea.",
     "m_c's body could not keep up with the demands of {PRONOUN/m_c/poss} illness and they died.",
@@ -236,5 +240,10 @@
   ],
   "anemia": [
     "this should not appear! m_c died from anemia?"
-  ]
+  ],
+  "rat bite fever": [
+	"Incapable of fighting of the fever, poor m_c has passed away in {PRONOUN/m_c/poss} nest.",
+	"As the days pass m_c just gets weaker and weaker, eventually it's no shock when {PRONOUN/m_c/subject} {VERB/m_c/are/is} found dead in {PRONOUN/m_c/poss} nest.",
+	"m_c died from the rat bite fever."
+]
 }

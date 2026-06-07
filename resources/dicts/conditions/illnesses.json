@@ -39,6 +39,43 @@
             "ragwort"
         ]
     },
+    "breathless fit": {
+        "severity": "severe",
+        "mortality": {
+            "newborn": 2,
+            "kitten": 5,
+            "adolescent": 10,
+            "young adult": 20,
+            "adult": 20,
+            "senior adult": 20,
+            "senior": 5
+        },
+        "medicine_mortality": {
+            "newborn": 30,
+            "kitten": 50,
+            "adolescent": 70,
+            "young adult": 100,
+            "adult": 100,
+            "senior adult": 100,
+            "senior": 70
+        },
+        "duration": 1,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [],
+        "herbs": {
+            "1": [
+                "betony"
+            ],
+            "2": [
+                "rosemary",
+                "juniper"
+            ],
+            "3": [
+                "mullein"
+            ]
+        }
+    },
     "diarrhea": {
         "severity": "major",
         "mortality": {
@@ -138,7 +175,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 90
-			}
+			},
+            {
+                "name": "sore throat",
+                "chance": 20
+            }
         ],
         "herbs": [
             "catmint",
@@ -181,7 +222,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 90
-			}
+			},
+            {
+                "name": "sore throat",
+                "chance": 20
+            }
         ],
         "herbs": [
             "catmint",
@@ -287,7 +332,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 5
-			}
+			},
+            {
+                "name": "sore throat",
+                "chance": 2
+            }
 		],
         "herbs": [
             "lungwort",
@@ -335,7 +384,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 90
-			}
+			},
+            {
+                "name": "sore throat",
+                "chance": 20
+            }
         ],
         "herbs": [
             "ragwort",
@@ -378,7 +431,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 90
-			}			
+			}	,
+            {
+                "name": "sore throat",
+                "chance": 20
+            }		
         ],
         "herbs": [
             "catmint",
@@ -422,7 +479,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 90
-			}
+			},
+            {
+                "name": "sore throat",
+                "chance": 15
+            }
         ],
         "herbs": [
             "catmint",
@@ -466,7 +527,11 @@
 			{
 				"name": "nosebleed",
 				"chance": 45
-			}
+			},
+            {
+                "name": "sore throat",
+                "chance": 20
+            }
         ],
         "herbs": [
             "lungwort"
@@ -876,6 +941,10 @@
             {
 				"name": "hallucinations",
 				"chance": 60
+			},
+			{
+				"name": "breathless fit",
+				"chance": 45
 			}
 		],
         "herbs": [
@@ -2717,7 +2786,19 @@
             {
                 "name": "headache",
                 "chance": 20
-            }
+            },			
+			{
+				"name": "rash",
+				"chance": 5
+			},
+			{
+				"name": "anaphylaxis",
+				"chance": 50
+			},
+			{
+				"name": "intermittent paralysis",
+				"chance": 160
+			}
         ],
         "herbs": [
             "marigold",
@@ -2855,5 +2936,57 @@
         ],
         "herbs": [
         ]
+    },
+    "rat bite fever": {
+        "severity": "severe",
+        "mortality": {
+            "newborn": 5,
+            "kitten": 10,
+            "adolescent": 20,
+            "young adult": 40,
+            "adult": 40,
+            "senior adult": 40,
+            "senior": 10
+        },
+        "medicine_mortality": {
+            "newborn": 50,
+            "kitten": 50,
+            "adolescent": 60,
+            "young adult": 90,
+            "adult": 90,
+            "senior adult": 90,
+            "senior": 60
+        },
+        "duration": 4,
+        "medicine_duration": 3,
+        "infectiousness": 0,
+        "risks": [
+            {
+                "name": "joint pain",
+                "chance": 10
+            },
+			{
+                "name": "sore",
+                "chance": 10
+            },
+			{
+				"name": "headache",
+				"chance": 5
+			},
+			{
+				"name": "torn pelt",
+				"chance": 20
+			},
+			{
+				"name": "weak leg",
+				"chance": 50
+			}
+        ],
+        "herbs": [
+			"ragwort",
+			"wild_garlic",
+			"oak_leaves",
+			"feverfew"
+		]
     }
 }

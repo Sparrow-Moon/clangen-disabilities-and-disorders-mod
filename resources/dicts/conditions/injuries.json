@@ -234,7 +234,11 @@
             {
                 "name": "a festering wound",
                 "chance": 5
-            }
+            },
+			{
+				"name": "rat bite fever",
+				"chance": 5
+			}
         ],
         "also_got": [
             "torn pelt",
@@ -1179,6 +1183,10 @@
             {
                 "name": "heat exhaustion",
                 "chance": 10
+            },
+            {
+                "name": "sore throat",
+                "chance": 10
             }
         ],
         "also_got": [
@@ -1352,7 +1360,8 @@
         ],
         "cause_permanent": [
             "paralyzed",
-            "recurring shock"
+            "recurring shock",
+			"intermittent paralysis"
         ],
         "herbs": [
             "juniper",
@@ -1379,7 +1388,11 @@
             {
                 "name": "redcough",
                 "chance": 10
-            }
+            },
+			{
+				"name": "anaphylaxis",
+				"chance": 45
+			}
         ],
         "also_got": [
             "shock"
@@ -1412,6 +1425,10 @@
         "illness_infectiousness": [
         ],
         "risks": [
+			{
+				"name": "anaphylaxis",
+				"chance": 70
+			}
         ],
         "also_got": [
         ],
@@ -1521,7 +1538,11 @@
             {
                 "name": "torn pelt",
                 "chance": 40
-            }
+            },
+			{
+				"name": "anaphylaxis",
+				"chance": 90
+			}
         ],
         "also_got": [],
         "cause_permanent": [
@@ -1870,13 +1891,18 @@
             {
 				"name": "deer tick fever",
 				"chance": 40
+			},
+			{
+				"name": "paralysis episode",
+				"chance": 20
 			}
         ],
         "also_got": [
 			"dizziness"
 		],
         "cause_permanent": [
-            "paralyzed"
+            "paralyzed",
+			"intermittent paralysis"
 		],
         "herbs": [
             "moss",
@@ -1930,7 +1956,15 @@
         "illness_infectiousness": [
         ],
         "risks": [
-        ],
+            {
+                "name": "redcough",
+                "chance": 30
+            },
+			{
+				"name": "sore throat",
+				"chance": 15
+			}  
+      ],
         "also_got": [
         ],
         "cause_permanent": [
@@ -1946,6 +1980,106 @@
             "ragwort",
             "poppy",
             "moss"
+        ]
+    },
+    "anaphylaxis": {
+        "duration": 2,
+        "severity": "severe",
+        "medicine_duration": 2,
+        "mortality": {
+            "newborn": 4,
+            "kitten": 4,
+            "adolescent": 10,
+            "young adult": 14,
+            "adult": 14,
+            "senior adult": 10,
+            "senior": 4
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [],
+        "also_got": [
+        ],
+        "cause_permanent": [
+			"longcough"
+		],
+        "herbs": [
+            "honey",
+            "elder leaves",
+			"oak leaves",
+			"catmint",
+			"blackberry",
+			"poppy"			
+		]
+    },
+    "paralysis episode": {
+        "duration": 3,
+        "severity": "major",
+        "medicine_duration": 2,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+            {
+                "name": "sore",
+                "chance": 20
+            },
+            {
+                "name": "dizziness",
+                "chance": 30
+            },
+            {
+                "name": "phantom pain",
+                "chance": 60
+            }			
+		],
+        "also_got": [
+			"bruises"
+        ],
+        "cause_permanent": [
+            "intermittent paralysis",
+			"paralyzed"
+		],
+        "herbs": [
+            "daisy",
+			"juniper",
+            "ragwort",
+            "marigold"		
+			]
+    },
+    "sore throat": {
+        "duration": 1,
+        "severity": "minor",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
+        ],
+        "risks": [
+        ],
+        "also_got": [
+        ],
+        "cause_permanent": [
+            "damaged throat"
+        ],
+		"herbs": [
+            "poppy",
+            "juniper"
         ]
     },
     "faux pregnant": {

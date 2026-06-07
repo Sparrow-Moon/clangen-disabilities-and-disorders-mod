@@ -3,6 +3,10 @@
 		"m_c has recovered from {PRONOUN/m_c/poss} seizure.",
 		"m_c is up and moving again after resting from {PRONOUN/m_c/poss} seizure."
 	],
+    "breathless fit": [
+        "The tightness in m_c's chest has finally abated.",
+        "m_c is thrilled to finally be out of {PRONOUN/m_c/poss} nest and breathing easy."
+    ],
 	"diarrhea": [
 		"m_c has stopped constantly running to the dirtplace. It seems {PRONOUN/m_c/poss} brush with diarrhea has ended.",
 		"m_c is finally feeling better, {PRONOUN/m_c/poss} experience with diarrhea now over."
@@ -352,5 +356,10 @@
 		"m_c has finally stopped feeling light headed.",
 		"m_c feels much better after {PRONOUN/m_c/poss} bout with anemia has ended.",
 		"m_c doesn't feel as cold anymore."
-	]
+	],
+	"rat bite fever": [
+		"Finally after moons of feeling touch and go the fever has left m_c's pelt and {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} better than ever.",
+		"Waking up m_c finally feels the relief of been in good health. No longer panting or whimpering, even the lingering rat bite seems to have healed.",
+		"m_c is so relieved to be able to get up out of the den and work once more. Even if that work is just clearing out {PRONOUN/m_c/poss} sickness scented bedding."
+    ]
 }

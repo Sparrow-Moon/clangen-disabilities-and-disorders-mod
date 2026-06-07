@@ -434,6 +434,7 @@ class Condition_Events:
             "RATBITE": ["weak leg"],
             "DECLAWED": ["declawed"],
             "RASH": ["constant rash"],
+            "THROAT": ["damaged throat"],
         }
 
         scarless_conditions = [
@@ -497,7 +498,9 @@ class Condition_Events:
             "bipolar ii",
             "essential tremor",
             "foggy mind",
-            "deer tick disease"
+            "deer tick disease",
+            "intermittent paralysis",
+            "damaged throat"
         ]
 
         got_condition = False
@@ -698,7 +701,16 @@ class Condition_Events:
         triggered = False
         event_list = []
 
-        injury_progression = {"poisoned": "redcough", "shock": "lingering shock", "wretched claws": "declawed"}
+        injury_progression = {
+            "poisoned": "redcough", 
+            "shock": "lingering shock", 
+            "wretched claws": "declawed",
+            "tick bites": "deer tick fever",
+            "severe tick bites": "deer tick fever",
+            "rat bite": "rat bite fever",
+            "fatigue": "constant fatigue",
+            "paralysis episode": "paralyzed"
+        }
 
         # need to hold this number so that we can check if the leader has died
         starting_life_count = game.clan.leader_lives
@@ -856,6 +868,7 @@ class Condition_Events:
             "recurring shock": "echoing shock",
             "echoing shock": "recurring shock",
             "burning light": "blind",
+            "intermittent paralysis": "paralyzed"
         }
 
         conditions = deepcopy(cat.permanent_condition)
@@ -1198,6 +1211,7 @@ class Condition_Events:
                             if new_condition_name in [
                                 "an infected wound",
                                 "a festering wound",
+                                "anaphylaxis",
                             ]:
                                 # if it's infection or festering, we're removing the chance completely
                                 # this is both to prevent annoying infection loops
@@ -1267,6 +1281,15 @@ class Condition_Events:
                 # here we give the new condition
                 if new_condition_name in Condition_Events.INJURIES:
                     cat.get_injured(new_condition_name, event_triggered=event_triggered)
+                    keys = dictionary[condition].keys()
+                    complication = None
+                    if new_condition_name == "anaphylaxis":
+                        complication = "anaphylaxis"
+                    if complication is not None:
+                        if "complication" in keys:
+                            dictionary[condition]["complication"] = complication
+                        else:
+                            dictionary[condition].update({"complication": complication})
                     break
                 elif new_condition_name in Condition_Events.ILLNESSES:
                     cat.get_ill(new_condition_name, event_triggered=event_triggered)

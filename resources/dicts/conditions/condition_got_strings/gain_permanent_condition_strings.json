@@ -325,7 +325,12 @@
         "recurring shock": [
             "r_c puts {PRONOUN/r_c/poss} paws on m_c's paws, helping to calm {PRONOUN/m_c/object} down as the memories of what broke {PRONOUN/m_c/poss} back keep rolling through {PRONOUN/m_c/poss} mind.",
             "m_c shudders, {PRONOUN/m_c/poss} mind putting what happened to {PRONOUN/m_c/object} on replay."
-        ]
+        ],
+		"intermittent paralysis": [
+			"r_c carefully listens to m_c as {PRONOUN/m_c/subject} {VERB/m_c/express/expresses} that {PRONOUN/m_c/poss} pawsteps just don't feel as secure anymore.",
+			"It would appear that while m_c's broken back has healed, there is still some lingering issues as {PRONOUN/m_c/poss} paws stumble before returning to steady.",
+			"While m_c's broken back has healed fully, it has left {PRONOUN/m_c/object} with some lingering intermittent paralysis."
+		]
     },
     "poisoned": {
         "recurring shock": [
@@ -405,7 +410,12 @@
             "r_c, looking rather worried, comes over to m_c. As gently as {PRONOUN/r_c/subject} can, {PRONOUN/r_c/subject} {VERB/r_c/explain/explains} to m_c that the ticks have made {PRONOUN/m_c/object} unable to walk.",
 			"With more than a little distress, m_c keeps asking r_c over and over why {PRONOUN/m_c/poss} legs aren't responding.",
 			"Who knew a harmless little tick could cause this. m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
-        ]
+        ],
+		"intermittent paralysis": [
+			"r_c can only reassure m_c that it's not as bad as it could be. While m_c's body may never quite work as well as it used to, with time and effort {PRONOUN/m_c/subject} will still be able to get around just as well as any other cat.",
+			"With displeasure m_c hisses at the verdict. While {PRONOUN/m_c/subject} can only express relief that it's not permanent, the intermittent bouts of paralysis make the future feel much less certain.",
+			"Despite recovering well from {PRONOUN/m_c/poss} tick bites, m_c feels more than a little bit wobbly and worries about lingering side affects."
+		]
     },
 	"ashcough": {
 		"longcough": [
@@ -420,20 +430,46 @@
 			"Due to the effects of ashcough, m_c's lungs have weakened and now a rasp is present in {PRONOUN/m_c/poss} every breath."
 		]
 	},
-  "deer tick fever": {
-    "deer tick disease":[
-      "Despite r_c's diligent treatment, m_c's deer tick fever hasn't quite abated. {PRONOUN/m_c/subject/CAP} actually {VERB/m_c/seem/seems} to be developing new symptoms.",
-      "Who knew a harmless little tick could cause this? m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
-    ]
-  },
+	"deer tick fever": {
+		"deer tick disease":[
+			"Despite r_c's diligent treatment, m_c's deer tick fever hasn't quite abated. {PRONOUN/m_c/subject/CAP} actually {VERB/m_c/seem/seems} to be developing new symptoms.",
+			"Who knew a harmless little tick could cause this? m_c regrets how dismissive of tick bites {PRONOUN/m_c/subject} {VERB/m_c/were/was} before."
+		]
+	},
   "ear infection": {
     "permanent ear buzzing": [
-      "Despite r_c's diligent treatment, m_c has had some lasting aftereffects of {PRONOUN/m_c/poss} ear infection.",
-      "After {PRONOUN/m_c/poss} ear infection, m_c's hearing will never be the same."
-    ],
+		  "Despite r_c's diligent treatment, m_c has had some lasting aftereffects of {PRONOUN/m_c/poss} ear infection.",
+		  "After {PRONOUN/m_c/poss} ear infection, m_c's hearing will never be the same."
+		],
     "deaf": [
-      "Despite r_c's diligent treatment, m_c has had some last aftereffects of {PRONOUN/m_c/poss} ear infection.",
-      "After {PRONOUN/m_c/poss} ear infection, m_c's hearing will never be the same."
-    ]
-  }
+		  "Despite r_c's diligent treatment, m_c has had some last aftereffects of {PRONOUN/m_c/poss} ear infection.",
+		  "After {PRONOUN/m_c/poss} ear infection, m_c's hearing will never be the same."
+		]
+	},
+	"paralysis episode": {
+		"intermittent paralysis": [
+			"While it's a relief to see m_c up and walking again, r_c is worried taking note of just how wobbly {PRONOUN/m_c/subject} still {VERB/m_c/are/is}.",
+			"Even though m_c is back on {PRONOUN/m_c/poss} paws things still feel rather unsteady.",
+			"As m_c's hindquarters return to feeling, there's something under the surface that still itches and makes it feel like this won't be the last time {PRONOUN/m_c/subject} find {PRONOUN/m_c/self} stuck unable of moving.",
+			"m_c doesn't feel any relief to be walking once more, {PRONOUN/m_c/poss} lower half still tingles and buzzes, as if daring {PRONOUN/m_c/object} to get comfortable."
+		],
+		"paralyzed": [
+			"r_c gently sits with m_c, giving {PRONOUN/m_c/object} company as {PRONOUN/m_c/subject} {VERB/m_c/process/processes} the fact that this episode has become something more permanent.",
+			"m_c refuses to be pitied by {PRONOUN/m_c/poss} Clanmates for the paralysis.",
+			"As frustrating as it is, m_c is also relieved that now {PRONOUN/m_c/subject} won't have to worry so much about abruptly finding {PRONOUN/m_c/self} stuck with non-responsive hindlegs anymore.",
+			"This episode of paralysis for m_c has left {PRONOUN/m_c/object} fully paralyzed." 
+		]
+	},
+	"anaphylaxis": {
+		"longcough": [
+			"While the cough that m_c is left with still worries r_c it also comes as such a relief.",
+			"m_c reassures {PRONOUN/m_c/poss} clan mates that it's alright, a lingering longcough is nothing to worry about."
+		]
+	},
+    "sore throat": {
+        "damaged throat": [
+            "The soreness of m_c's throat has lessened, but {PRONOUN/m_c/subject} still {VERB/m_c/struggle/struggles} to mew and purr as {PRONOUN/m_c/subject} did before.",
+            "m_c's sore throat was a sign of greater damage to the area, making vocalization difficult."
+        ]
+    }
 }

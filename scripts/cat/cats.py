@@ -3834,6 +3834,11 @@ class Cat:
         is_injured = True
         if len(self.injuries) <= 0:
             is_injured = False
+            
+        if "paralysis episode" in self.injuries:
+            self.pelt.paralyzed = True              
+        elif self.pelt.paralyzed and "paralyzed" not in self.permanent_condition:
+                self.pelt.paralyzed = False            
         return is_injured is not False
 
     def is_disabled(self):
@@ -5481,7 +5486,7 @@ def create_cat(status, moons=None, biome=None):
         "NECKBITE": ["recurring shock", "no", "no", "no", "no"],
         "LEGBITE": ["weak leg"],
         "SNOUT": ["crooked jaw", "no", "no"],
-        "THROAT": ["recurring shock", "no", "no", "no", "no"],
+        "THROAT": ["recurring shock", "damaged throat", "no", "no", "no", "no"],
         "SIDE": ["recurring shock", "no", "no", "no", "no"],
         "TOETRAP": ["weak leg"],
         "RASH": ["constant rash"],

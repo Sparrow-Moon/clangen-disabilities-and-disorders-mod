@@ -271,5 +271,17 @@
     "nosebleed": [
         "m_c sighs in relief when {PRONOUN/m_c/poss} nose stops bleeding.",
         "m_c's nose has stopped bleeding."
+    ],
+    "paralysis episode": [
+        "The whole clan is relieved to see m_c prance out of the den with a new confidence to {PRONOUN/m_c/poss} steps.",
+		"While m_c's steps are still faintly shaky it's good to see that all {PRONOUN/m_c/poss} patience with physical therapy has {PRONOUN/m_c/object} back on all four paws.",
+		"m_c's paralysis episode has ended.",
+		"m_c is glad to have full control of {PRONOUN/m_c/poss} body once more.",
+		"After a few moons of physical therapy m_c is finally able to be more stable on {PRONOUN/m_c/poss} paws once again.",
+		"The paralysis that had afflicted m_c seems to have passed."
+    ],
+    "sore throat": [
+        "m_c's throat is no longer sore.",
+        "m_c's throat has healed."
     ]
 }

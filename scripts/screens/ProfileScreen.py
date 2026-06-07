@@ -2363,7 +2363,11 @@ class ProfileScreen(Screens):
             )
         ]
         all_illness_injuries.extend(
-            [(i, self.get_condition_details(i)) for i in self.the_cat.injuries]
+            [
+                [i, self.get_condition_details(i)] 
+                for i in self.the_cat.injuries
+                if i != "anaphylaxis"
+            ]
         )
         all_illness_injuries.extend(
             [
@@ -2506,6 +2510,8 @@ class ProfileScreen(Screens):
             if complication is not None:
                 if "a festering wound" in self.the_cat.illnesses:
                     complication = "festering"
+                if "anaphylaxis" in self.the_cat.injuries:
+                    complication = "anaphylaxis"  
                 text_list.append(f"is {complication}!")
 
         # collect details for injuries
@@ -2547,6 +2553,8 @@ class ProfileScreen(Screens):
                 if complication is not None:
                     if "a festering wound" in self.the_cat.illnesses:
                         complication = "festering"
+                    if "anaphylaxis" in self.the_cat.injuries:
+                        complication = "in anaphylaxis"   
                     text_list.append(f"is {complication}!")
 
             # can or can't patrol

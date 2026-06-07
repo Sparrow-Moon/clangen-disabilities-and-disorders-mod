@@ -89,7 +89,11 @@
 		"silvercough": [
 			"It's the season for whitecough and silvercough, and despite r_c helping m_c take extra precautions, {PRONOUN/m_c/subject} {VERB/m_c/sit/sits} miserably curled up in the medicine den with silvercough.",
 			"m_c's weakened lungs leave them unable to properly fight off the sickness this moon. Coughing and spluttering, {PRONOUN/m_c/subject} {VERB/m_c/find/finds} a nice nest to wait it out."
-		]
+		],
+        "breathless fit": [
+            "m_c is used to being breathless, but today {PRONOUN/m_c/subject} can hardly walk a few fox-lengths before growing faint. Something in the air must have irritated {PRONOUN/m_c/poss} lungs.",
+            "m_c wheezes to r_c that it feels like a cat is sitting on {PRONOUN/m_c/poss} chest. r_c waves fragrant herbs beneath m_c's nose, praying this breathlessness will not progress to suffocation."
+        ]
     },
     "wasting disease": {
         "running nose": [
@@ -265,6 +269,12 @@
 		"nosebleed": [
 			"m_c worriedly comes to r_c, fearing redcough when a sneeze comes along with blood. Thankfully, it's just a nosebleed.",
 			"m_c has noticed that all {PRONOUN/m_c/poss} sneezing seems to have led to a nosebleed."
+		],
+		"anaphylaxis": [
+			"r_c frets over m_c as {PRONOUN/m_c/subject} struggles, it looks as though m_c's allergy has become so, so much worse again.",
+			"Rather than the usual minor irritation that m_c's used to experiencing from {PRONOUN/m_c/poss} allergies, this time it feels like {PRONOUN/m_c/poss} life is in real danger.",
+			"m_c desperately wheezes, stumbling towards the medicine den as {PRONNOUN/m_c/poss} alergic reaction comes on worse than expected.",
+			"There's desperate yowling across the camp as m_c collapses due to {PRONNOUN/m_c/poss} allergic reaction."
 		]
     },
     "constantly dizzy": {
@@ -798,10 +808,10 @@
 				"Some of m_c's Clanmates find themselves confused because of m_c running around the camp in small circles, seemingly chasing {PRONOUN/m_c/poss} tail."
 		],
 		"harmful stims": [
-		  "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
-		  "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
-		  "m_c's stims are different from those of other cats: they leave damage behind.",
-		  "m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
+			  "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
+			  "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",
+			  "m_c's stims are different from those of other cats: they leave damage behind.",
+			  "m_c admits to r_c that the only way {PRONOUN/m_c/subject} can calm down is by hurting {PRONOUN/m_c/self}."
 		],
 		"verbal shutdown": [
 				"This moon has been overwhelming for everyone. {PRONOUN/r_c/subject/CAP} {VERB/r_c/encourage/encourages} the rest of the Clan to be understanding of that when m_c goes silent.",
@@ -1184,7 +1194,7 @@
 			"To the distress of {PRONOUN/m_c/poss} denmates, m_c has spent the day silently shaking, barely able to get out the information that {PRONOUN/m_c/poss} head hurts.",
 			"Barely coherent, m_c swallows the herbs delivered to {PRONOUN/m_c/object} by {PRONOUN/m_c/poss} Clanmates. Hopefully this pain will pass soon."
 		],
-		"paralyzed": [
+		"intermittent paralysis": [
 			"When r_c comes over to check m_c after complaints of tingling in {PRONOUN/m_c/poss} legs, it's to inform {PRONOUN/m_c/object} that it's because {PRONOUN/m_c/poss} legs aren't working properly anymore.",
 			"m_c has been complaining of tingling in {PRONOUN/m_c/poss} legs for days, but one day it stops. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} relieved, until {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to move again.",
 			"When m_c attempts to get up from {PRONOUN/m_c/poss} nest, {PRONOUN/m_c/subject} {VERB/m_c/let/lets} out a yowl of distress. It would appear that only half of {PRONOUN/m_c/object} has gotten up.",
@@ -1208,7 +1218,13 @@
 		"brain fog": [
 			"m_c comes into the medicine den looking out of it, telling r_c that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} very tired and keeps losing track of things.",
 			"m_c has some brain fog.",
-			"{PRONOUN/m_c/poss/CAP} Clanmates have noticed that m_c seems distracted, unable to hold onto {PRONOUN/m_c/poss} thoughts."
+			"{PRONOUN/m_c/poss/CAP} Clanmates have noticed that m_c seems distracted, unable to hold onto {PRONOUN/m_c/poss} thoughts.",
+			"m_c has been struggling to stay focused with {PRONOUN/m_c/poss} foggy thoughts recently"
+		],
+		"paralysis episode": [
+			"In distress m_c calls to r_c hoping for an explanation for {PRONOUN/m_c/poss} hindpaws failure to respond, after a bit of talking it's determined that the paralysis should be only temporary.",
+			"While m_c admits that the break is nice, {PRONOUN/m_c/subject} {VERB/m_c/are/is} a little bit anxious about the fact {PRONOUN/m_c/poss} legs refuse to respond.",
+			"m_c complains about the fact that {PRONOUN/m_c/poss} legs haven't been responding as much as usual recently, to the point it apprears {PRONOUN/m_c/subject} {VERB/m_c/have/has} an episode of paralysis."
 		]
     },
     "ongoing sleeplessness": {
@@ -2458,6 +2474,48 @@
 			"r_c gets some herbs for m_c's nausea. m_c looks beyond miserable.",
 			"m_c ate some prey and midway through realized {PRONOUN/m_c/poss} meal had ingested something that {PRONOUN/m_c/subject} {VERB/m_c/are/is} not supposed to eat.",
 			"m_c can't eat anything today. {PRONOUN/m_c/subject} {VERB/m_c/are/is} just too nausious to."
+		]
+	},
+	"intermittent paralysis": {
+		"an infected wound": [
+			"r_c has noticed that m_c reeks of infection, but m_c hasn't noticed anything that could have caused it.",
+			"m_c complains that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} worse than usual, it seems like a scratch or something has become infected without notice.",
+			"There's an infection building in one of m_c's untended scratches."
+		],
+		"joint pain": [
+			"Due to all the effort that m_c's been putting in {PRONOUN/m_c/poss} physical exercises recently r_c has requested {PRONOUN/m_c/subject} {VERB/m_c/take/takes} a break to let {PRONOUN/m_c/poss} joints rest.",
+			"All of m_c's physical therapy has left {PRONOUN/m_c/poss} joints hurting."
+		],
+		"sore": [
+			"m_c purrs as r_c masaages and soothes out the worst of the aches in {PRONOUN/m_c/poss} body.",
+			"After a number of false starts and falls m_c is feeling rather sore.",
+			"Even with all the work put into m_c's physical therapy {PRONOUN/m_c/subject} still {VERB/m_c/end/ends} up feeling sore at the end of the day."
+		],
+		"torn pelt": [
+			"With a hiss m_c sets to licking at and soothing the tears in {PRONOUN/m_c/poss} pelt, recalling r_c's warnings about risk of infection.",
+			"It would appear that m_c's most recent fall around camp has torn open some wounds on {PRONOUN/m_c/poss} pelt."
+		],
+		"paralysis episode": [
+			"r_c sighs as once more m_c worries about the lack of response and sensation from {PRONOUN/m_c/poss} hindquarters. With a gentle tone, {PRONOUN/r_c/subject} {VERB/r_c/reassure/reassures} {PRONOUN/m_c/object} it's just another paralysis episode.",
+			"It would seem that this moon m_c is having a flare up, unable to move {PRONOUN/m_c/poss} hindquarters as fluidly as {PRONOUN/m_c/subject} would like.",
+			"With a shake of the head m_c refuses to leave {PRONOUN/m_c/poss} nest. It seems to be another paralysis episode.",
+			"With much effort m_c drags {PRONOUN/m_c/self} out of the den to face the day. It appears {PRONOUN/m_c/subject} {VERB/m_c/are/is} having another paralysis episode.",
+			"m_c is experiencing a paralysis episode."
+		],
+		"paralyzed": [
+			"Quietly m_c admits to r_c in some ways {PRONOUN/m_c/subject} {VERB/m_c/are/is} relieved that {PRONOUN/m_c/poss} intermittent paralysis has progressed to full paralysis.",
+			"Even as {PRONOUN/m_c/poss} Clanmates keep trying to say it's not so bad, that it could be worse, m_c just wishes they would leave {PRONOUN/m_c/object} alone. It makes no difference to {PRONOUN/m_c/object} about been paralyzed.",
+			"All m_c can feel is tired at the confirmation that {PRONOUN/m_c/poss} intermittent paralysis has progressed to full."
+		],
+		"dizziness": [
+			"m_c complains to r_c about a recent bout of dizziness that seems to keep plaguing {PRONOUN/m_c/object}.",
+			"Cats have noticed that m_c seems to be spending more of {PRONNOUN/m_c/poss} day sitting down in an attempt to be slight less dizzy.",
+			"m_c complains about the sudden bout of dizziness that {PRONNOUN/m_c/subject} has been dealing with."
+		],
+		"phantom pain": [
+			"No matter how much m_c complains to r_c about pain, there just isn't any injury to be found.",
+			"m_c's body feels full of ants.",
+			"It's all apologies from m_c about snapping at a Clanmate, it's just {PRONNOUN/m_c/poss} body is full of pain without source." 
 		]
 	}
 }
