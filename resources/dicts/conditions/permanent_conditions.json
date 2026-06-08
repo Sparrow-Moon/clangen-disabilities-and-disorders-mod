@@ -1536,7 +1536,7 @@
 				"chance": 20
 			},			
 			{
-				"name": "paralyzed",
+				"name": "intermittent paralysis",
 				"chance": 90
 			},
 			{
