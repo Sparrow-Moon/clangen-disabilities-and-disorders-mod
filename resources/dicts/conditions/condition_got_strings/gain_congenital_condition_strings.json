@@ -19,6 +19,10 @@
     "r_c soothes m_c's frantically worried parent - their kit will never walk, but it's still possible for {PRONOUN/m_c/object} to have a happy, healthy life.",
     "It's immediately clear that m_c can't feel {PRONOUN/m_c/poss} hindlegs as soon as {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} born, but {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} like a happy bundle of newborn fluff anyway."
   ],
+  "intermittent paralysis": [
+    "r_c soothes m_c's frantically worried parent while m_c might have trouble walking with care and patience {PRONOUN/m_c/subject} can live a happy healthy life.",
+	"m_c expresses frustration that walking seems so much harder for {PRONOUN/m_c/object} than everyone else."
+  ],
   "raspy lungs": [
     "m_c has been having a lot of trouble keeping up while playing. r_c listens to {PRONOUN/m_c/poss} chest and diagnoses {PRONOUN/m_c/object} with raspy lungs.",
     "As m_c grows, {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} incapable of not snoring and panting loudly, until eventually it's clear {PRONOUN/m_c/poss} lungs are a little weaker than normal."
