@@ -596,7 +596,8 @@ class Condition_Events:
             "delusions": "psychotic episode",
             "psychotic episode": "ongoing psychosis",
             "ongoing psychosis": ["otherwordly mind", "obsessive mind", "thunderous spirit"],
-            "deer tick fever": "deer tick disease"
+            "deer tick fever": "deer tick disease",
+            "masking": ["meltdown", "shutdown", "burn out"]
         }
         # ---------------------------------------------------------------------------- #
         #                         handle currently sick cats                           #

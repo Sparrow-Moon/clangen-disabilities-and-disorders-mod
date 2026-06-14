@@ -889,7 +889,7 @@ def create_new_cat(
             "NECKBITE": ["recurring shock", "no", "no", "no", "no"],
             "LEGBITE": ["weak leg"],
             "SNOUT": ["crooked jaw", "no", "no"],
-            "THROAT": ["recurring shock", "no", "no", "no", "no"],
+            "THROAT": ["recurring shock", "damaged throat", "no", "no", "no", "no"],
             "SIDE": ["recurring shock", "no", "no", "no", "no"],
             "TOETRAP": ["weak leg"],
             "RASH": ["constant rash"],

@@ -962,7 +962,12 @@
 		"meltdown": [
 			"r_c finds m_c yowling into the sky and crying. {PRONOUN/r_c/subject/CAP} {VERB/m_c/do/does}n't know <i>why</i> {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} having this reaction, but it's clear that m_c is having a meltdown.",
 			"m_c has been trying to trudge through, but just <i>can't</i>.",
-			"Sometimes, prismatic minds can't control themselves when things get overwhelming for them. This time, it's clear that m_c can't."
+			"Sometimes, prismatic minds can't control themselves when things get overwhelming for them. This time, it's clear that m_c can't.",
+			"With no warning, m_c just breaks wailing over a broken piece of stone in the middle of camp.",
+			"m_c finally has a breakdown to {PRONNOUN/m_c/poss} own relief when things have been just <i>too much</i>.",
+			"m_c wants to apologize for {PRONNOUN/m_c/poss} behaviour, but all {PRONNOUN/m_c/subject} can do is feel things right now.",
+			"It's too loud, too bright, to <i>everything</i> for m_c with {PRONNOUN/m_c/poss} emotions right now.",
+			"A clanmate expresses worry watching m_c destroy {PRONNOUN/m_c/poss} own nest clearly overtaken by some emotion."
 		],
 		"shutdown": [
 			"r_c finds m_c quiet and numb. Looks like things have gotten too overwhelming for {PRONOUN/m_c/object}.",
@@ -972,6 +977,15 @@
 		"emotionally numb": [
 			"m_c has trouble understanding {PRONOUN/m_c/inposs} emotions. r_c says that this happens sometimes with cats like m_c.",
 			"m_c has never really known what {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling."
+		],
+		"masking": [
+			"r_c has noticed that m_c seems to be acting a bit more stiff and not quite {PRONNOUN/m_c/self} recently. {PRONOUN/m_c/subject/CAP} might be masking.",
+			"m_c's been feeling awkward about been {PRONOUN/m_c/self} recently.",
+			"With frustration m_c talks to a Clanmate about how {PRONNOUN/m_c/subject} {VERB/m_c/haven't/hasn't} been feeling {PRONNOUN/m_c/subject}.",
+			"With the stresses of recent events m_c's felt like {PRONNOUN/m_c/subject} {VERB/m_c/have/has} to put on an act for the cats around {PRONNOUN/m_c/object}.",
+			"m_c's been slipping into an act around others recently.",
+			"While mimicking others is good on occassion, m_c's Clanmates express worry at how much {PRONNOUN/m_c/subject} {VERB/m_c/seem/seems} to be doing it recently.",
+			"It looks like m_c feels the need to mask more recently."
 		]
     },
     "obsessive mind": {
@@ -1154,6 +1168,11 @@
 			"m_c feels like if {PRONOUN/m_c/subject} {VERB/m_c/say/says} the wrong thing, everyone will hate {PRONOUN/m_c/object}. This, ironically, has led m_c to get in trouble lying.",
 			"m_c feels like {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} going to burst if {PRONOUN/m_c/subject} tell the truth.",
 			"m_c can't breathe when {PRONOUN/m_c/subject} {VERB/m_c/try/tries} to tell the truth."
+		],
+		"breathless fit": [
+			"With all of {PRONNOUN/m_c/poss} anxieties chasing each other in m_c's head, it's hard for {PRONOUN/m_c/object} to focus on r_c's quiet encouragement to match breathing.",
+			"The breathing exercises that m_c's been using recently to keep calm have only resulted in the opposite.",
+			"m_c's anxiety is causing {PRONOUN/m_c/object} to struggle to breathe."
 		]
     },
     "constant roaming pain": {
@@ -1584,6 +1603,16 @@
 		"nosebleed": [
 			"In a bit of a panic, m_c goes to r_c about the blood {PRONOUN/m_c/subject} noticed in {PRONOUN/m_c/poss} coughs, but after a quick checkover, it's established to just be a nosebleed.",
 			"m_c has gotten a nosebleed."
+		],
+		"breathless fit": [
+			"r_c gathers as much of the betony and mullein as {PRONOUN/r_c/subject} can for aiding m_c in {PRONNOUN/m_c/poss} struggles to catch {PRONNOUN/m_c/poss} breath.",
+			"m_c feels like {PRONNOUN/m_c/self} coughing will never stop, and worse-- {PRONOUN/m_c/poss/CAP} breathing doesn't feel right anymore.",
+			"All the coughing from m_c's longcough has led to a breathless fit."
+		],
+		"sore throat": [
+			"With all the coughing from m_c's longcough r_c is unsurprised when {PRONNOUN/m_c/subject} {VERB/m_c/get/gets} a sore throat.",
+			"With a pained grumble m_c wanders towards the medicine den hoping for some honey to sooothe {PRONNOUN/m_c/poss} throat.",
+			"All the coughing has left m_c's throat ragged and torn feeling."
 		]
     },
     "jellyfish joints": {
@@ -2517,5 +2546,11 @@
 			"m_c's body feels full of ants.",
 			"It's all apologies from m_c about snapping at a Clanmate, it's just {PRONNOUN/m_c/poss} body is full of pain without source." 
 		]
-	}
+	},
+    "damaged throat": {
+        "sore throat": [
+            "m_c overexerted {PRONOUN/m_c/poss} voice and now can hardly speak at all, with how horribly sore {PRONOUN/m_c/poss} throat is.",
+            "m_c mimes the motions for numbing herbs to r_c, who understands and supplies them swiftly. Something must have irritated m_c's damaged throat."
+        ]
+    }
 }

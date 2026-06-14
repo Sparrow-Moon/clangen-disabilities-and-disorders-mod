@@ -1073,7 +1073,11 @@
             {
                 "name": "emotionally numb",
                 "chance": 10
-            }
+            },
+			{
+				"name": "masking",
+				"chance": 25
+			}
         ],
         "herbs": [
         ]
@@ -1484,6 +1488,10 @@
             {
 				"name": "vivid daydreamer",
 				"chance": 80
+			},
+			{
+				"name": "breathless fit",
+				"chance": 60
 			}
         ],
         "herbs": [
@@ -2081,6 +2089,14 @@
 			},
 			{
 				"name": "nosebleed",
+				"chance": 45
+			},
+			{
+				"name": "breathless fit",
+				"chance": 60
+			},
+			{
+				"name": "sore throat",
 				"chance": 45
 			}
         ],
@@ -3602,17 +3618,38 @@
                 "chance": 60
             }
         ],
-        "herbs": {
-            "1": [
+        "herbs": [
             "daisy",
             "juniper",
             "ragwort",
-            "marigold"
+            "marigold",
+			"poppy"
+        ]
+    },
+    "damaged throat": {
+        "severity": "minor",
+        "congenital": "never",
+        "moons_until": 4,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [
         ],
-            "2": [
-            "poppy"			
-			],
-            "3": []
-        }
+        "risks": [
+            {
+                "name": "sore throat",
+                "chance": 30
+            }
+        ],
+        "herbs": [
+            "poppy",
+            "juniper"
+        ]
     }
-    }
+}

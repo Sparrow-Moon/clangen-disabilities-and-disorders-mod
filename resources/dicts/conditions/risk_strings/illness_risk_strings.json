@@ -458,64 +458,6 @@
 			"m_c's nausea has turned into a stomachache."
 		]
 	},
-	"meltdown": {
-		"stimming": [
-			"r_c tries to stop m_c from throwing {PRONOUN/m_c/self} into a tree, but a Clanmate that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} close with stops {PRONOUN/r_c/subject}. This is how m_c copes with being overwhelmed.",
-			"During {PRONOUN/m_c/poss} meltdown, m_c starts kicking well meaning, albeit slightly foolish Clanmates away. {PRONOUN/m_c/subject/CAP} {VERB/m_c/need/needs} to be alone for this.",
-			"m_c can't stop clawing; the ground, a rock, {PRONOUN/m_c/poss} nest, all of it gets scratched up because of {PRONOUN/m_c/poss} meltdown."
-		],
-		"verbal shutdown": [
-			"m_c stops speaking during {PRONOUN/m_c/poss} meltdown.",
-			"m_c can't speak during {PRONOUN/m_c/poss} meltdown.",
-			"m_c is so overwhelmed that {PRONOUN/m_c/subject} can no longer speak.",
-			"Words become useless when m_c is this upset."
-		],
-		"overstimulation": [
-			"r_c realized that the cause of m_c's meltdown is overstimulation and moves {PRONOUN/m_c/object} to a less stimulating place.",
-			"The cause of m_c's meltdown is overstimulation.",
-			"The Clan realizes that to prevent m_c from melting down like that again, they need to be more careful with how camp is managed."
-		],
-		"understimulation": [
-			"r_c realized that the cause of m_c's meltdown is understimulation and makes sure to talk to the guardian about giving {PRONOUN/m_c/object} more patrols to do.",
-			"m_c's Clanmates realize that they might need to take m_c off of guard duty to prevent {PRONOUN/m_c/object} from melting down again.",
-			"The cause of m_c's meltdown is understimulation."
-		],
-		"brain fog": [
-			"During {PRONOUN/m_c/poss} meltdown, m_c starts feeling numb. It's hard to think.",
-			"m_c's thoughts melt away as {PRONOUN/m_c/subject} {VERB/m_c/melt/melts} down.",
-			"Thoughts don't work anymore. m_c is too overwhelmed.",
-			"It's hard to think when m_c is so overwhelmed."
-		]
-	},
-	"shutdown": {
-		"stimming": [
-			"m_c can't stop rocking back and forth. {PRONOUN/m_c/poss/CAP} mind is too clouded to think, so instead, {PRONOUN/m_c/subject} {VERB/m_c/rock/rocks}.",
-			"m_c sways back and forth like a branch in the wind.",
-			"m_c feels like {PRONOUN/m_c/subject} can't move - apart from {PRONOUN/m_c/poss} tail tip. {PRONOUN/m_c/poss/CAP} tail tip doesn't stop moving; it doesn't stop tapping on the ground."
-		],
-		"verbal shutdown": [
-			"The world is too much for m_c, so {PRONOUN/m_c/subject} try to speak less to help that.",
-			"m_c can't speak anymore due to {PRONOUN/m_c/poss} shutdown.",
-			"m_c stops talking during {PRONOUN/m_c/poss} shutdown.",
-			"{PRONOUN/m_c/poss/CAP} Clanmates try to get a helpful word out of m_c, only to be greeted with nothing..."
-		],
-		"overstimulation": [
-			"r_c has a talk with some of m_c's Clanmates about not making {PRONOUN/m_c/object} clean the dirtplace. After all, the last time they made m_c dig a new dirtplace trench, {PRONOUN/m_c/subject} had a shutdown, and we all don't want that to happen again. <b>Right?</b>",
-			"The cause of m_c's shutdown is overstimulation.",
-			"The Clan realizes that to prevent m_c from shutting down like that again, they need to be more careful with how camp is managed."
-		],
-		"understimulation": [
-			"r_c has a talk with the guardian about giving m_c more to do and a greater variety of things to do. Battle training and hunting might work well, but guarding camp for hours on end? Maybe not.",
-			"The reason that m_c has gotten quiet is because of nothing happening in camp.",
-			"There is nothing in camp that would have caused m_c to shut down due to overstimulation. Nothing. So much of nothing, that m_c's Clanmates have decided that it's because of <i>understimulation</i> that {PRONOUN/m_c/subject} shut down."
-		],
-		"brain fog": [
-			"During {PRONOUN/m_c/poss} meltdown, m_c starts feeling numb. It's hard to think.",
-			"m_c's thoughts melt away as {PRONOUN/m_c/subject} {VERB/m_c/shut/shuts} down.",
-			"Thoughts don't work anymore. m_c is too overwhelmed.",
-			"It's hard to think when m_c is so overwhelmed."
-		]
-	},
 	"paranoia": {
 		"nightmares": [
 			"r_c notices that m_c keeps whimpering in {PRONOUN/m_c/poss} sleep. r_c tries to check m_c for injuries, but m_c reveals {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fine- physically, at least.",
@@ -742,5 +684,21 @@
 			"Gingerly m_c attempts to stand up. {PRONOUN/m_c/poss/CAP} leg wobbles and barely seems to want to sustain {PRONOUN/m_c/object}.",
 			"m_c asks a denmate for assistance to the medicine den. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} not so proud to hide that {PRONOUN/m_c/poss} leg doesn't want to fully support {PRONOUN/m_c/object} anymore."
       ]
-    }
+    },
+	"masking": {
+		"meltdown": [
+			"At the end of a long day r_c's unsurprised to find m_c having a meltdown due to all {PRONOUN/m_c/poss} recent masking.",
+			"m_c's masking has led to a full meltdown as m_c reaches the end of {PRONOUN/m_c/poss} limit.",
+			"In the end m_c has a meltdown from all {PRONOUN/m_c/poss} masking."
+		],
+		"shutdown": [
+			"r_c checks on m_c with worry, it looks like {PRONOUN/m_c/subject} {VERB/m_c/have/has} gone from masking into shutdown.",
+			"Under all the pressure that m_c's been facing {PRONOUN/m_c/subject} {VERB/m_c/start/starts} to shut down.",
+			"The mask that's put distance between m_c and {PRONOUN/m_c/poss} Clanmates has led to shutdown."
+		],
+		"burn out": [
+			"r_c comforts m_c as {PRONOUN/m_c/subject} explain that everything is just too much and {PRONOUN/m_c/poss} so, so burnt out.",
+			"m_c's mask crumbles as {PRONOUN/m_c/poss} burn out becomes obvious."
+		]
+	}
 }

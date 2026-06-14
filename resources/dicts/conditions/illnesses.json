@@ -2230,100 +2230,6 @@
             "poppy"
         ]
     },
-    "meltdown": {
-        "severity": "major",
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "medicine_mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "duration": 2,
-        "medicine_duration": 1,
-        "infectiousness": 0,
-        "risks": [
-            {
-                "name": "stimming",
-                "chance": 10
-            },
-            {
-                "name": "verbal shutdown",
-                "chance": 10
-            },
-            {
-                "name": "overstimulation",
-                "chance": 30
-            },
-            {
-                "name": "understimulation",
-                "chance": 30
-            },
-            {
-                "name": "brain fog",
-                "chance": 20
-            }
-        ],
-        "herbs": []
-    },
-    "shutdown": {
-        "severity": "major",
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "medicine_mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "duration": 2,
-        "medicine_duration": 1,
-        "infectiousness": 0,
-        "risks": [
-            {
-                "name": "stimming",
-                "chance": 10
-            },
-            {
-                "name": "verbal shutdown",
-                "chance": 10
-            },
-            {
-                "name": "overstimulation",
-                "chance": 30
-            },
-            {
-                "name": "understimulation",
-                "chance": 30
-            },
-            {
-                "name": "brain fog",
-                "chance": 20
-            }
-        ],
-        "herbs": []
-    },
     "amnesia": {
         "severity": "minor",
         "mortality": {
@@ -2987,6 +2893,49 @@
 			"wild_garlic",
 			"oak_leaves",
 			"feverfew"
+		]
+    },
+    "masking": {
+        "severity": "minor",
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "medicine_mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "duration": 2,
+        "medicine_duration": 1,
+        "infectiousness": 0,
+        "risks": [
+			{
+				"name": "meltdown",
+				"chance": 25
+			},
+			{
+				"name": "shutdown",
+				"chance": 25
+			},
+			{
+				"name": "burn out",
+				"chance": 20
+			}
+		],
+        "herbs": [
+			"betony",
+			"honey",
+			"chamomile"
 		]
     }
 }

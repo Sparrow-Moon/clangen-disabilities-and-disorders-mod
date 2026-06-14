@@ -1687,7 +1687,6 @@
             "juniper"
         ]
     },
-
     "overstimulation":{
         "duration": 3,
         "severity": "major",
@@ -1717,7 +1716,6 @@
             "moss"
         ]
     },
-
     "understimulation":{
         "duration": 3,
         "severity": "major",
@@ -2011,6 +2009,92 @@
 			"blackberry",
 			"poppy"			
 		]
+    },
+    "meltdown": {
+        "duration": 2,
+        "severity": "major",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [],
+        "risks": [
+            {
+                "name": "stimming",
+                "chance": 10
+            },
+            {
+                "name": "verbal shutdown",
+                "chance": 10
+            },
+            {
+                "name": "overstimulation",
+                "chance": 30
+            },
+            {
+                "name": "understimulation",
+                "chance": 30
+            },
+            {
+                "name": "brain fog",
+                "chance": 20
+            }
+        "also_got": [
+			"overstimulation"
+        ],
+        "cause_permanent": [
+        ],
+        ],
+        "herbs": []
+    },
+    "shutdown": {
+        "duration": 2,
+        "severity": "major",
+        "medicine_duration": 1,
+        "mortality": {
+            "newborn": 0,
+            "kitten": 0,
+            "adolescent": 0,
+            "young adult": 0,
+            "adult": 0,
+            "senior adult": 0,
+            "senior": 0
+        },
+        "illness_infectiousness": [],
+        "risks": [
+            {
+                "name": "stimming",
+                "chance": 10
+            },
+            {
+                "name": "verbal shutdown",
+                "chance": 10
+            },
+            {
+                "name": "overstimulation",
+                "chance": 30
+            },
+            {
+                "name": "understimulation",
+                "chance": 30
+            },
+            {
+                "name": "brain fog",
+                "chance": 20
+            }
+        ],
+        "also_got": [
+			"understimulation"
+        ],
+        "cause_permanent": [
+        ],		
+        "herbs": []
     },
     "paralysis episode": {
         "duration": 3,

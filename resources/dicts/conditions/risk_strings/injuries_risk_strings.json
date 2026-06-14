@@ -220,12 +220,6 @@
 			"While ordinarily a bee sting is only a minor issue, poor m_c has gone into anaphylaxis from {PRONOUN/m_c/imposs}."
 		]
 	},
-    "sore throat": {
-        "damaged throat": [
-            "The soreness of m_c's throat has lessened, but {PRONOUN/m_c/subject} still {VERB/m_c/struggle/struggles} to mew and purr as {PRONOUN/m_c/subject} did before.",
-            "m_c's sore throat was a sign of greater damage to the area, making vocalization difficult."
-        ]
-    },
 	"rash": {
 		"torn pelt": [
 			"r_c very gently applies the herbal paste and cobwebs to the torn and raw patches around m_c's fur.",
@@ -315,6 +309,85 @@
             "r_c anxiously informs m_c of an unusual rash {PRONOUN/r_c/subject} found hidden within {PRONOUN/m_c/poss} fur. Some ticks can transmit diseases, r_c explains, and m_c seems to be showing symptoms.",
             "The tick on m_c was left for far too long - {PRONOUN/m_c/subject} {VERB/m_c/have/has} started to develop an unusual rash.",
             "It's a struggle for m_c to drag {PRONOUN/m_c/self} out of {PRONOUN/m_c/poss} nest. One of {PRONOUN/m_c/poss} tick bites may have been left untreated for too long."
-        ]
-    }
+        ],
+		"paralysis episode": [
+			"r_c hisses as it becomes more and more clear that m_c can't even feel {PRONOUN/m_c/poss} hindquarters. Hopefully this will only be a temporary situation.",
+			"Due to the tick bites it has become clear that m_c is experiencing some paralysis."
+		]
+    },
+	"meltdown": {
+		"stimming": [
+			"r_c tries to stop m_c from throwing {PRONOUN/m_c/self} into a tree, but a Clanmate that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} close with stops {PRONOUN/r_c/subject}. This is how m_c copes with being overwhelmed.",
+			"During {PRONOUN/m_c/poss} meltdown, m_c starts kicking well meaning, albeit slightly foolish Clanmates away. {PRONOUN/m_c/subject/CAP} {VERB/m_c/need/needs} to be alone for this.",
+			"m_c can't stop clawing; the ground, a rock, {PRONOUN/m_c/poss} nest, all of it gets scratched up because of {PRONOUN/m_c/poss} meltdown."
+		],
+		"verbal shutdown": [
+			"m_c stops speaking during {PRONOUN/m_c/poss} meltdown.",
+			"m_c can't speak during {PRONOUN/m_c/poss} meltdown.",
+			"m_c is so overwhelmed that {PRONOUN/m_c/subject} can no longer speak.",
+			"Words become useless when m_c is this upset."
+		],
+		"overstimulation": [
+			"r_c realized that the cause of m_c's meltdown is overstimulation and moves {PRONOUN/m_c/object} to a less stimulating place.",
+			"The cause of m_c's meltdown is overstimulation.",
+			"The Clan realizes that to prevent m_c from melting down like that again, they need to be more careful with how camp is managed."
+		],
+		"understimulation": [
+			"r_c realized that the cause of m_c's meltdown is understimulation and makes sure to talk to the guardian about giving {PRONOUN/m_c/object} more patrols to do.",
+			"m_c's Clanmates realize that they might need to take m_c off of guard duty to prevent {PRONOUN/m_c/object} from melting down again.",
+			"The cause of m_c's meltdown is understimulation."
+		],
+		"brain fog": [
+			"During {PRONOUN/m_c/poss} meltdown, m_c starts feeling numb. It's hard to think.",
+			"m_c's thoughts melt away as {PRONOUN/m_c/subject} {VERB/m_c/melt/melts} down.",
+			"Thoughts don't work anymore. m_c is too overwhelmed.",
+			"It's hard to think when m_c is so overwhelmed."
+		]
+	},
+	"shutdown": {
+		"stimming": [
+			"m_c can't stop rocking back and forth. {PRONOUN/m_c/poss/CAP} mind is too clouded to think, so instead, {PRONOUN/m_c/subject} {VERB/m_c/rock/rocks}.",
+			"m_c sways back and forth like a branch in the wind.",
+			"m_c feels like {PRONOUN/m_c/subject} can't move - apart from {PRONOUN/m_c/poss} tail tip. {PRONOUN/m_c/poss/CAP} tail tip doesn't stop moving; it doesn't stop tapping on the ground."
+		],
+		"verbal shutdown": [
+			"The world is too much for m_c, so {PRONOUN/m_c/subject} try to speak less to help that.",
+			"m_c can't speak anymore due to {PRONOUN/m_c/poss} shutdown.",
+			"m_c stops talking during {PRONOUN/m_c/poss} shutdown.",
+			"{PRONOUN/m_c/poss/CAP} Clanmates try to get a helpful word out of m_c, only to be greeted with nothing..."
+		],
+		"overstimulation": [
+			"r_c has a talk with some of m_c's Clanmates about not making {PRONOUN/m_c/object} clean the dirtplace. After all, the last time they made m_c dig a new dirtplace trench, {PRONOUN/m_c/subject} had a shutdown, and we all don't want that to happen again. <b>Right?</b>",
+			"The cause of m_c's shutdown is overstimulation.",
+			"The Clan realizes that to prevent m_c from shutting down like that again, they need to be more careful with how camp is managed."
+		],
+		"understimulation": [
+			"r_c has a talk with the guardian about giving m_c more to do and a greater variety of things to do. Battle training and hunting might work well, but guarding camp for hours on end? Maybe not.",
+			"The reason that m_c has gotten quiet is because of nothing happening in camp.",
+			"There is nothing in camp that would have caused m_c to shut down due to overstimulation. Nothing. So much of nothing, that m_c's Clanmates have decided that it's because of <i>understimulation</i> that {PRONOUN/m_c/subject} shut down."
+		],
+		"brain fog": [
+			"During {PRONOUN/m_c/poss} meltdown, m_c starts feeling numb. It's hard to think.",
+			"m_c's thoughts melt away as {PRONOUN/m_c/subject} {VERB/m_c/shut/shuts} down.",
+			"Thoughts don't work anymore. m_c is too overwhelmed.",
+			"It's hard to think when m_c is so overwhelmed."
+		]
+	},
+	"paralysis episode": {
+		"sore": [
+			"r_c expresses pride in m_c for all {PRONOUN/m_c/poss} effort at keeping up, but reminds {PRONOUN/m_c/object} that there isn't any shame in taking breaks to avoid this kind of soreness.",
+			"m_c has overdone it with {PRONOUN/m_c/poss} physical exercises in eagerness to get back to walking normally.",
+			"After taking an unexpected tumble during a practice walk, m_c's feeling particularly sore today."
+		],
+		"dizziness": [
+			"m_c explains to r_c about how dizziness seems to have overtaken {PRONOUN/m_c/object} recently.",
+			"m_c wonders if the dizziness that's been plaguing {PRONOUN/m_c/object} recently is to blame for {PRONOUN/m_c/poss} paralysis episode.",
+			"In trying to get up and push {PRONOUN/m_c/self} to walk sooner, m_c's made {PRONOUN/m_c/self} dizzy."
+		],
+		"phantom pain": [
+			"m_c complains loudly to r_c about the fire that {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} all throughout {PRONOUN/m_c/poss} hindquarters.",
+			"Quietly m_c wishes that {PRONOUN/m_c/poss} paralysis episode would also prevent {PRONOUN/m_c/object} from the ants under {PRONOUN/m_c/poss} skin.",
+			"Insistently m_c says that someone has been tugging on {PRONOUN/m_c/poss} tail, {PRONOUN/m_c/subject} can feel it so clearly."
+		]
+	}
 }

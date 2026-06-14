@@ -162,5 +162,9 @@
   "anemia": [
     "m_c hasn't been feeling that well these days. r_c diagnoses {PRONOUN/m_c/object} with anemia. It should be temporary.",
     "m_c feels colder than the rest of the clan. {PRONOUN/m_c/subject/CAP} {VERB/m_c/have/has} anemia. The med cat says it's not permanent."
-  ]
+  ],
+	"masking": [
+		"m_c's not acting like {PRONOUN/m_c/self} recently.",
+		"It would appear that m_c's begun to mask more often."
+	]
 }

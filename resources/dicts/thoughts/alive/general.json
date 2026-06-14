@@ -4168,6 +4168,138 @@
                 "harmful stims"
             ]
         }
-    }
-    
+    },
+    {
+        "id": "prismatic mind_masking",
+        "thoughts": [
+			"Isn't been {PRONOUN/m_c/self}",
+			"Wishes {PRONOUN/m_c/subject} were someone else",
+			"Plays down {PRONOUN/m_c/poss} own wishes",
+			"Just nods and agrees with r_c",
+			"Feels distant from {PRONOUN/m_c/self}",
+			"Holds back from stimming to not be awkward",
+			"Felt out of place last gathering",
+			"Worries that {PRONOUN/m_c/poss} speech pattern is too strange",
+			"Wants to fit in better",
+			"Wonders if {PRONOUN/m_c/subject} {VERB/m_c/are/is} getting a good grade in been a member of c_n",
+			"Worries {PRONOUN/m_c/subject} {VERB/m_c/are/is} just a mess",
+			"Feels like the whole Clan is judging {PRONOUN/m_c/object}",
+			"Feels wrong in {PRONOUN/m_c/poss} paws",
+			"Wishes {PRONOUN/m_c/subject} could stop masking",
+			"Wonders why {PRONOUN/m_c/subject} started masking again",
+			"Refrains from chasing a beam of sunlight",
+			"Feels too tightly wound",
+			"Suppresses {PRONOUN/m_c/poss} body language while talking r_c",
+			"Feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} about to scream",
+			"Isn't sure how to be {PRONOUN/m_c/self}",
+			"Feels unsure of {PRONOUN/m_c/poss} standing",
+			"Can't stim and is NOT coping"
+        ],
+        "perm_conditions": {
+            "m_c": [
+                "prismatic mind"
+            ]
+        },
+        "has_injuries": {
+            "m_c": [
+                "masking"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "gen_masking",
+        "thoughts": [
+			"Isn't been {PRONOUN/m_c/self}",
+			"Seems to be someone else right now",
+			"Isn't sure if {PRONOUN/m_c/subject} {VERB/m_c/are/is} acting or not",
+			"Is acting off from usual",
+			"Feels like been {PRONOUN/m_c/self} is unsafe"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "masking"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "meltdown_thoughts",
+        "thoughts": [
+			"Screams until the world is quiet",
+			"Wants to just be alone",
+			"Cries, screams and cries again",
+			"The whole world is against {PRONOUN/m_c/object}",
+			"Is tearing at the ground over and over and--",
+			"Was seen clawing at a spot on a remote border",
+			"Vanished for a few days but was still heard",
+			"Said some very rude things to r_c",
+			"Has been angry for no reason",
+			"Has been angry for all the reasons",
+			"Doesn't know what emotion {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling, but SURE IS FEELING ONE",
+			"Laughs until {PRONOUN/m_c/subject} cry",
+			"Cries until {PRONOUN/m_c/subject} laugh",
+			"Was seen running away from everything",
+			"Refuses to talk to r_c until calming down",
+			"Can't explain why-- just what",
+			"Is yowling until {PRONOUN/m_c/poss} throat hurts",
+			"Knocked down all {PRONOUN/m_c/poss} treasures",
+			"Tore up {PRONOUN/m_c/poss} prey in frustration",
+			"Can't be touched",
+			"Lashed out at r_c over a small comment",
+			"Curses r_c before sobbing in apology",
+			"Can't seem to rest",
+			"Was seen pacing the border on edge",
+			"Is having a crisis",
+			"Is having multiple crisises",
+			"Curses out the Dark Forest",
+			"Threw a fit over a single lost item",
+			"Looks like {PRONOUN/m_c/subject} will crash",
+			"Looks like a mess",
+			"Has overgroomed {PRONOUN/m_c/self} into a fluffy mess",
+			"Has fur all on end and messy",
+			"Can't stand the day or night"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "meltdown"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    },
+    {
+        "id": "shutdown_thoughts",
+        "thoughts": [
+			"Doesn't respond to anyone",
+			"Slept through the day",
+			"Didn't notice that r_c was calling {PRONOUN/m_c/object}",
+			"Feels like {PRONOUN/m_c/subject} {VERB/m_c/are/is} almost gone"
+        ],
+        "has_injuries": {
+            "m_c": [
+                "shutdown"
+            ]
+        },
+        "random_status_constraint": [
+            "any"
+        ],
+        "random_living_status": [
+            "living"
+        ]
+    }  
 ]

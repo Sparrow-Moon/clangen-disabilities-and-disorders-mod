@@ -8719,5 +8719,65 @@
                 "amount": -5
             }
         ]
+    },
+    {
+        "event_id": "gen_injury_meltdown_young1",
+        "weight": 5,
+        "event_text": "m_c has gotten so overwhelmed and frustrated by everything recently that it's resulted in a meltdown.",
+        "m_c": {
+            "age": [
+                "kitten",
+				"adolescent",
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"],
+                "injuries": [
+                    "meltdown"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "gen_injury_meltdown_young2",
+        "weight": 5,
+        "event_text": "With a lot of hissing and spitting, m_c storms across the camp, before collapsing into a meltdown in {PRONOUN/m_c/poss} own nest.",
+        "m_c": {
+            "age": [
+                "kitten",
+				"adolescent",
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"],
+                "injuries": [
+                    "meltdown"
+                ]
+            }
+        ]
+    },
+    {
+        "event_id": "gen_injury_shutdown_young",
+        "weight": 5,
+        "event_text": "After sneaking out of the Camp, m_c's come back quiet and not quite there. It would seem {PRONOUN/m_c/subject} {VERB/m_c/have/has} shut {PRONOUN/m_c/self} down for safety.",
+        "m_c": {
+            "age": [
+                "kitten",
+				"adolescent",
+            ]
+        },
+        "injury": [
+            {
+                "cats": [
+                    "m_c"],
+                "injuries": [
+                    "shutdown"
+                ]
+            }
+        ]
     }
 ]
