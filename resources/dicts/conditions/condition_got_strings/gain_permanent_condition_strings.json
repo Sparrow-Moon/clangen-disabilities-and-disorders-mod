@@ -202,6 +202,10 @@
 			"r_c has noticed that while the shock has gone it's replaced in m_c with a certain kind of worry that {PRONOUN/m_c/subject} {VERB/m_c/wear/wears} like a cloud of dust on {PRONOUN/m_c/poss} pelt.",
 			"r_c shakes {PRONOUN/r_c/poss} head as m_c shakes. While the shock is gone, it seems to have left {PRONOUN/m_c/object} with a lingering sense of anxiety.",
 			"m_c has found that since {PRONOUN/m_c/poss} shock has faded it's been replaced with an itch under {PRONOUN/m_c/poss} fur and a certain kind of jumpiness that they {PRONOUN/m_c/subject} can't explain."
+        ],
+        "selective mutism": [
+            "m_c's nerves seem to have eased, until {PRONOUN/m_c/poss} voice gets caught in {PRONOUN/m_c/poss} chest.",
+            "Ever since going into shock, m_c struggles with communicating with other cats when {PRONOUN/m_c/subject} {VERB/m_c/become/becomes} stressed."
         ]
     },
     "head damage": {

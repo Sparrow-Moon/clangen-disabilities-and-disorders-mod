@@ -1113,7 +1113,8 @@
         "cause_permanent": [
             "recurring shock",
 			"echoing shock",
-			"anxiety"
+			"anxiety",
+            "selective mutism"
         ],
         "herbs": [
             "thyme",

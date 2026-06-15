@@ -746,6 +746,10 @@
             {
                 "name": "foggy mind",
                 "chance": 150
+            },
+            {
+                "name": "selective mutism",
+                "chance": 250
             }
         ],
         "herbs": [
@@ -841,6 +845,10 @@
             {
                 "name": "foggy mind",
                 "chance": 140
+            },
+            {
+                "name": "selective mutism",
+                "chance": 250
             }
         ],
         "herbs": [
