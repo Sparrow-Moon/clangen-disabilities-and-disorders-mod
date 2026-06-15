@@ -2045,11 +2045,11 @@
                 "name": "brain fog",
                 "chance": 20
             }
+          ],
         "also_got": [
 			"overstimulation"
         ],
         "cause_permanent": [
-        ],
         ],
         "herbs": []
     },
