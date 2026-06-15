@@ -30,7 +30,7 @@
 		"branching soul", "budding spirit", "selective mutism", "fractured spirit"
 	],
 	"constant roaming pain": [
-		"jellyfish joints", "loose body", "curved spine"
+		"jellyfish joints", "loose body", "curved spine", "intermittent paralysis"
 	],
 	"thunderous spirit": [
 		"branching soul", "budding spirit", "spirited heart", "puzzled heart", "fractured spirit"
@@ -90,7 +90,7 @@
 		"infertile"
 	],
 	"curved spine": [
-		"paralyzed", "constant joint pain", "seizure prone", "constant roaming pain"
+		"paralyzed", "constant joint pain", "seizure prone", "constant roaming pain", "intermittent paralysis"
 	],
 	"jumbled mind": [
 		"prismatic mind", "comet spirit", "counting fog"
@@ -124,5 +124,8 @@
 	],
 	"recurring shock": [
 		"foggy mind"
+	],
+	"intermittent paralysis": [
+		"constant roaming pain", "curved spine"
 	]
 }
