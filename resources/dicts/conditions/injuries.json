@@ -1396,7 +1396,8 @@
 			}
         ],
         "also_got": [
-            "shock"
+            "shock",
+			"abdominal pain"
         ],
         "cause_permanent": [
             "recurring shock"
@@ -2167,6 +2168,28 @@
             "juniper"
         ]
     },
+    "abdominal pains": {
+        "duration": 3,
+        "medicine_duration": 2,
+        "severity": "major",
+        "mortality": {
+            "newborn": 90,
+            "kitten": 90,
+            "adolescent": 90,
+            "young adult": 80,
+            "adult": 80,
+            "senior adult": 75,
+            "senior": 70
+        },
+        "also_got": [],
+        "cause_permanent": [],
+        "risks": [],
+        "herbs": [
+				"poppy",
+				"fennel",
+				"chervil"
+			]
+    },	
     "faux pregnant": {
         "duration": 2,
         "severity": "major",

@@ -684,6 +684,10 @@
 			{
 				"name": "nausea",
 				"chance": 15
+			},
+			{
+				"name": "abdominal pains",
+				"chance": 50
 			}
         ],
         "herbs": [
@@ -1542,7 +1546,8 @@
         "herbs": [
             "juniper",
             "thyme",
-            "poppy"
+            "poppy",
+			"borage"
         ]
     },			
 	"sleeplessness": {
@@ -1674,7 +1679,11 @@
             {
                 "name": "anxiety attack",
                 "chance": 50
-            }
+            },
+			{
+				"name": "fatigue",
+				"chance": 20
+			}
         ],
         "herbs": [
 			"chamomile",
@@ -2807,7 +2816,11 @@
             {
                 "name": "blood loss",
                 "chance": 75
-            }
+            },
+			{
+				"name": "abdominal pains",
+				"chance": 35
+			}
         ],
         "herbs": [
             "poppy",

@@ -162,6 +162,11 @@
 		"nausea": [
 			"r_c has noticed that m_c is struggling to eat, it appears that {PRONOUN/m_c/poss} stomachache has left {PRONOUN/m_c/object} nauseous.",
 			"The aching in m_c's stomach has resulted in some nausea."
+		],
+		"abdominal pains": [
+			"With a yowl m_c calls to r_c, the new waves of sheer pain in {PRONOUN/m_c/poss} whole abdomen a lot more intense and spread than expected.",
+			"m_c's stomachache was only the start of the pains that are now radiating through m_c's whole abdomen.",
+			"It looks like m_c's stomachache was just the first hint of some abdomen injury that m_c didn't realise {PRONOUN/m_c/subject} had."
 		]
 	},
     "nightmares": {
@@ -649,6 +654,11 @@
 		"anxiety attack": [
 			"m_c has been stressed about every little thing. Unfortunatly, this means that m_c is now having an anxiety attack.",
 			"m_c has gotten an anxiety attack after burning out."
+		],
+		"fatigue": [
+			"r_c has noticed that m_c's been rather fatigued due to {PRONOUN/m_c/poss} burn out.",
+			"Because of {PRONOUN/m_c/poss} burn out, m_c has been left rather fatigued.",
+			"A clanmate asks m_c how {PRONOUN/m_c/subject} {VERB/m_c/are/is} feeling, noting that {PRONOUN/m_c/subject} {VERB/m_c/seem/seems} rather fatigued recently."
 		]
 	},
 	"shark week": {
@@ -656,6 +666,12 @@
 			"r_c sighs, m_c's shark week has taken a toll on {PRONOUN/m_c/poss} body. {PRONOUN/m_c/subject/CAP} {VERB/m_c/have/has} lost a lot of blood.",
 			"m_c's shark week has taken a larger than usual toll on {PRONOUN/m_c/poss} body.",
 			"m_c has lost a lot of blood due to {PRONOUN/m_c/poss} shark week."
+		],
+		"abdominal pains": [
+			"r_c dutifully fusses over a combination of poppy seeds and chervil to give to m_c for {PRONOUN/m_c/poss} intense abdominal pains.",
+			"m_c whimpers pitifully in {PRONOUN/m_c/poss} nest as yet another wave of fierce pain floods {PRONOUN/m_c/object}.",
+			"It's so intense, this pain in m_c's belly, it makes {PRONOUN/m_c/object} wonder if something worse is going on.",
+			"m_c's shark week is even more intensely painful than usual."
 		]
 	},
 	"rat bite fever": {

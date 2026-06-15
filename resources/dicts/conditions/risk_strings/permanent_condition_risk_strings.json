@@ -2096,6 +2096,11 @@
 			"That time of the moon has come around for m_c yet again.",
     		"m_c groans in {PRONOUN/m_c/poss} nest. It's shark week again.",
     		"m_c was distraught to find out {PRONOUN/m_c/subject} started shark week while {PRONOUN/m_c/subject} {VERB/m_c/were/was} sleeping. Great."
+		],
+		"abdominal pains": [
+			"Despite it not been {PRONNOUN/m_c/poss} shark week, m_c has found {PRONNOUN/m_c/self} in great abdominal pain recently.",
+			"Due to m_c's pcos, a sharp pain has taken over {PRONNOUN/m_c/poss} abdomen.",
+			"With a cry, m_c pleads to {PRONNOUN/m_c/poss} Denmates for assistance with {PRONNOUN/m_c/poss} latest bout of horrible abdominal pains."
 		]
 	},
 	"excess testosterone": {

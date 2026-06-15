@@ -295,5 +295,9 @@
 		"m_c's Clanmates are glad to see {PRONOUN/m_c/object} talking after {PRONOUN/m_c/poss} shutdown.",
 		"m_c is grateful to be alone after {PRONOUN/m_c/poss} shutdown.",
 		"m_c has regained control and calmed down."
-	]	
+	],
+	"abdominal pains":[
+		"To m_c's immense relief, {PRONOUN/m_c/poss} abdominal pains have passed.",
+		"After so much suffering m_c's abdominal pains are over."
+	]
 }

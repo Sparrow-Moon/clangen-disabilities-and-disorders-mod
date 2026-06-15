@@ -75,5 +75,8 @@
     ],
     "knee locking": [
         "m_c took a bad fall and by the time a Clanmate responded... {PRONOUN/m_c/subject} {VERB/m_c/were/was} gone."
-    ]
+    ],
+	"abdominal pains": [
+		"As carefully as m_c was cared for it looks like whatever was causing {PRONOUN/m_c/poss} abdominal pains was much more dangerous than anyone knew."
+	]
 }
