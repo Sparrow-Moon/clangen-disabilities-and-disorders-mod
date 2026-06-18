@@ -1,0 +1,22 @@
+[
+    {
+        "id": "newly_joined",
+        "strings": [
+            "Is looking around the camp with wonder"
+        ]
+    },
+    {
+        "id": "newly_joined_kit",
+        "strings": [
+            "Is snuggled safe in the nursery"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "status": [
+                    "kitten",
+                    "newborn"
+                ]
+            }
+        }
+    }
+]

@@ -1,2 +1,4 @@
-%AppData%\Python\Scripts\poetry install --no-root
-%AppData%\Python\Scripts\poetry run python main.py
+@echo off
+
+uv sync || ( pause & exit /b )
+uv run main.py || ( pause & exit /b )

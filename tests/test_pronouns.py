@@ -12,17 +12,17 @@ import os
 import re
 import sys
 import unittest
-
 import ujson
 
-from scripts.cat.cats import Cat
-from scripts.utility import process_text
 
 os.environ["SDL_VIDEODRIVER"] = "dummy"
 os.environ["SDL_AUDIODRIVER"] = "dummy"
 
+from scripts.cat.pronouns import get_new_pronouns
+from scripts.events_module.text_adjust import process_text
 
-def test():
+
+def _test():
     """Iterate through all files in 'resources'
     and verify that any detected pronoun tags are
     formatted correctly."""
@@ -33,7 +33,7 @@ def test():
     # to ensure that we are catching cases where only one verb conjugation
     # was provided - since singular-conjugation
     # should be the second provided conjugation.
-    _r = ("name", Cat.default_pronouns[1])
+    _r = ("Name", get_new_pronouns("female")[0])
     replacement_dict = {
         "m_c": _r,
         "r_c": _r,
@@ -57,6 +57,14 @@ def test():
         "(deadmentor)": _r,
         "(previous_mentor)": _r,
         "mur_c": _r,
+        "c_n": _r,
+        "o_c_n": _r,
+        "lead_name": _r,
+        "dep_name": _r,
+        "med_name": _r,
+        "cat_tag": _r,
+        "cat_to": _r,
+        "cat_from": _r,
     }
 
     for x in range(0, 11):
@@ -64,10 +72,14 @@ def test():
 
     for root, _, files in os.walk("resources"):
         for file in files:
-            if file.endswith(".json") and file != "credits_text.json":
+            if file.endswith(".json") and file not in (
+                "credits_text.json",
+                "clansettings.json",
+                "gamesettings.json",
+            ):
                 path = os.path.join(root, file)
 
-                if not test_replacement_failure(path, replacement_dict):
+                if not _test_replacement_failure(path, replacement_dict):
                     failed = True
                     failed_files.append(path)
 
@@ -83,14 +95,13 @@ def test():
         sys.exit(0)
 
 
-def test_replacement_failure(path: str, repl_dict: dict) -> bool:
+def _test_replacement_failure(path: str, repl_dict: dict) -> bool:
     """Reads in a file, and finds strings, and runs pronoun replacment on those strings.
     Returns False if there were any issues with the pronoun replacement, or if the
     json is incorrectly formatted."""
 
     success = True
-
-    with open(path, "r") as file:
+    with open(path, "r", encoding="utf-8") as file:
         try:
             contents = ujson.loads(file.read())
         except ujson.JSONDecodeError as _e:
@@ -100,7 +111,9 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
 
     for _str in get_all_strings(contents):
         try:
-            processed = process_text(_str, repl_dict, True)
+            processed = process_text(
+                text=_str, cat_dict=repl_dict, raise_exception=True
+            )
         except (KeyError, IndexError) as _e:
             print(
                 f'::error file={path}: "{_str}" contains invalid pronoun or verb tags.'
@@ -108,13 +121,24 @@ def test_replacement_failure(path: str, repl_dict: dict) -> bool:
             print(_e)
             success = False
         else:
-            # This test for any pronoun or verb tag fragments that might have
-            # sneaked through. This is most likely caused by using the incorrect type of
+            # This tests for any pronoun or verb tag fragments that might have
+            # snuck through. This is most likely caused by using the incorrect type of
             # brackets
-            if re.search(r"\{PRONOUN|\(PRONOUN|\{VERB|\(VERB", processed):
+            if re.search(r"\{PRONOUN|\(PRONOUN|\{VERB|\(VERB|\{ADJ|\(ADJ", processed):
                 print(
                     f'::error file={path}: "{_str}" contains pronoun tag fragments after replacment'
                 )
+                success = False
+
+            # This tests for any pronoun or verb that is incorrectly capitalized
+            # excludes ellipses (i.e. ... and . . .) but includes regular colons
+            # includes ? and ! always (e.g. "...!" is included).
+            # DOES NOT check the start of the string for capitalization
+            elif (
+                re.search(r"(?<!\.\.)(?<!\.\s\.\s)\.\s+[a-z]", processed) is not None
+                or re.search(r"[?!]\s+[a-z]", processed) is not None
+            ):
+                print(f'::error file={path}: Capitalization errors in "{_str}"')
                 success = False
 
     return success
@@ -147,5 +171,5 @@ class TestPronouns(unittest.TestCase):
     def test_pronouns(self):
         """Test that all files are ascii decodable."""
         with self.assertRaises(SystemExit) as cm:
-            test()
+            _test()
         self.assertEqual(cm.exception.code, 0)

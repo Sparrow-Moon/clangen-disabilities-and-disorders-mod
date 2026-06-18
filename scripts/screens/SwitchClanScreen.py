@@ -1,16 +1,32 @@
 import logging
+from math import ceil
+import ujson
 
 import pygame
 import pygame_gui
+from pygame_gui.core import ObjectID
+from pygame_gui.elements import UIImage
 
+import scripts.game_structure.screen_settings
 from scripts.clan import Clan
-from scripts.game_structure.game_essentials import game, screen, screen_x, screen_y, MANAGER
-from scripts.game_structure.ui_elements import UIImageButton
-from scripts.game_structure.windows import DeleteCheck
-from scripts.utility import get_text_box_theme, scale  # pylint: disable=redefined-builtin
+from scripts.game_structure import game
+from scripts.housekeeping.datadir import get_save_dir
+from ..ui.elements.image_button import UIImageButton
+from ..ui.elements.surface_image_button import UISurfaceImageButton
+from scripts.ui.windows.delete_check import CheckDeletionWindow
+from ..ui.theme import get_text_box_theme
+from ..ui.scale import ui_scale, ui_scale_dimensions, ui_scale_offset, ui_scale_value
 from .Screens import Screens
+from .enums import GameScreen
+from .screens_core.screens_core import rebuild_top_menu_buttons, rebuild_core
+from ..game_structure.game.save_load import read_clans
+from ..game_structure.game.settings import game_setting_get
+from ..game_structure.screen_settings import MANAGER
+from ..ui.generate_button import get_button_dict, ButtonStyles
+from ..ui.icon import Icon
 
 logger = logging.getLogger(__name__)
+
 
 class SwitchClanScreen(Screens):
     """
@@ -22,10 +38,10 @@ class SwitchClanScreen(Screens):
         TODO: DOCS
         """
         if event.type == pygame_gui.UI_BUTTON_START_PRESS:
-            if game.switches['window_open']:
-                pass
-            elif event.ui_element == self.main_menu:
-                self.change_screen('start screen')
+            self.mute_button_pressed(event)
+
+            if event.ui_element == self.main_menu:
+                self.change_screen(GameScreen.START)
             elif event.ui_element == self.next_page_button:
                 self.page += 1
                 self.update_page()
@@ -35,22 +51,29 @@ class SwitchClanScreen(Screens):
             else:
                 for page in self.delete_buttons:
                     if event.ui_element in page:
-                        DeleteCheck(
+                        CheckDeletionWindow(
                             self.change_screen,
-                            self.clan_name[self.page][page.index(
-                                event.ui_element)])
+                            self.clan_name[self.page][page.index(event.ui_element)],
+                            self.clan_display_names[self.page][
+                                page.index(event.ui_element)
+                            ],
+                        )
 
                         return
 
                 for page in self.clan_buttons:
                     if event.ui_element in page:
+                        self.change_screen(GameScreen.START)
                         Clan.switch_clans(
-                            self.clan_name[self.page][page.index(
-                                event.ui_element)])
+                            self.clan_name[self.page][page.index(event.ui_element)],
+                            False,
+                        )
+                        # rebuild to update menu scheme differences between game modes
+                        rebuild_core()
 
-        elif event.type == pygame.KEYDOWN and game.settings['keybinds']:
+        elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
-                self.change_screen('start screen')
+                self.change_screen(GameScreen.START)
 
     def exit_screen(self):
         """
@@ -58,10 +81,11 @@ class SwitchClanScreen(Screens):
         """
         self.main_menu.kill()
         del self.main_menu
-        self.info.kill()
-        del self.info
         self.current_clan.kill()
         del self.current_clan
+
+        self.clans_frame.kill()
+        del self.clans_frame
 
         # del self.screen  # No need to keep that in memory.
 
@@ -90,84 +114,152 @@ class SwitchClanScreen(Screens):
         """
         TODO: DOCS
         """
+        super().screen_switches()
+        self.set_bg("default", "mainmenu_bg")
+        self.show_mute_buttons()
         self.screen = pygame.transform.scale(
-            pygame.image.load(
-                "resources/images/clan_saves_frame.png").convert_alpha(),
-            (440 / 1600 * screen_x, 750 / 1400 * screen_y))
-        self.main_menu = UIImageButton(scale(pygame.Rect((50, 50), (306, 60))),
-                                       "",
-                                       object_id="#main_menu_button",
-                                       manager=MANAGER)
-        self.info = pygame_gui.elements.UITextBox(
-            'Note: This will close the game.\n When you open it next, it should have the new Clan.',
-            # pylint: disable=line-too-long
-            scale(pygame.Rect((200, 1200), (1200, 140))),
-            object_id=get_text_box_theme("#text_box_30_horizcenter"),
-            manager=MANAGER)
+            pygame.image.load("resources/images/clan_saves_frame.png").convert_alpha(),
+            ui_scale_dimensions((220, 368)),
+        )
+        self.main_menu = UISurfaceImageButton(
+            ui_scale(pygame.Rect((25, 25), (153, 30))),
+            "buttons.main_menu",
+            get_button_dict(ButtonStyles.SQUOVAL, (153, 30)),
+            manager=MANAGER,
+            object_id="@buttonstyles_squoval",
+            starting_height=1,
+        )
 
         self.current_clan = pygame_gui.elements.UITextBox(
-            "",
-            scale(pygame.Rect((200, 200), (1200, 140))),
+            "screens.switch_clan.current_clan",
+            ui_scale(pygame.Rect((0, 90), (600, 80))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
-            manager=MANAGER)
-        if game.clan:
-            self.current_clan.set_text(
-                f"The currently loaded Clan is {game.clan.name}Clan")
-        else:
-            self.current_clan.set_text("There is no Clan currently loaded.")
-
-        self.clan_list = game.read_clans()
+            manager=MANAGER,
+            anchors={"centerx": "centerx"},
+            text_kwargs={
+                "clan": game.clan.name if game.clan else "",
+                "clan_id": game.clan.save_id if game.clan else "",
+                "count": 1 if game.clan else 0,
+            },
+        )
+        self.clan_list = read_clans()
 
         self.clan_buttons = [[]]
         self.clan_name = [[]]
+        self.clan_display_names = [[]]
         self.delete_buttons = [[]]
 
+        # cursed math o clock!
+        # i am exceedingly sorry for this abomination
+        core_frame_dimensions = 375 - 49
+        core = ceil(ui_scale_value(core_frame_dimensions) / 8) * 8
+        item_height = core / 8
+        clan_frame_height = core + ui_scale_value(49)
+
+        self.clans_frame = UIImage(
+            pygame.Rect(
+                ui_scale_offset((0, 151)), (ui_scale_value(220), clan_frame_height)
+            ),
+            self.screen,
+            anchors={"centerx": "centerx"},
+            starting_height=0,
+        )
+        self.clans_frame.disable()
+
         i = 0
-        y_pos = 378
         for clan in self.clan_list[1:]:
             self.clan_name[-1].append(clan)
+            try:
+                with open(f"{get_save_dir()}/{clan}clan.json") as f:
+                    clan_button_name = ujson.load(f).get("displayname", clan)
+            except (FileNotFoundError, ujson.JSONDecodeError):
+                clan_button_name = clan
+            self.clan_display_names[-1].append(clan_button_name)
             self.clan_buttons[-1].append(
-                pygame_gui.elements.UIButton(scale(
-                    pygame.Rect((600, y_pos), (400, 78))),
-                    clan + "Clan",
-                    object_id="#saved_clan",
-                    manager=MANAGER))
-            self.delete_buttons[-1].append(
-                UIImageButton(scale(pygame.Rect((940, y_pos + 17), (44, 44))),
-                              "",
-                              object_id="#exit_window_button",
-                              manager=MANAGER,
-                              starting_height=2))
+                UISurfaceImageButton(
+                    pygame.Rect(
+                        (
+                            (0, 0)
+                            if len(self.clan_buttons[-1]) % 8 != 0
+                            else ui_scale_offset((0, 190))
+                        ),
+                        (ui_scale_value(200), item_height),
+                    ),
+                    "general.clan",
+                    get_button_dict(
+                        ButtonStyles.DROPDOWN,
+                        (
+                            200,
+                            item_height
+                            / scripts.game_structure.screen_settings.screen_scale,
+                        ),
+                    ),
+                    text_kwargs={"name": clan_button_name},
+                    object_id=ObjectID("#text_box_34_horizcenter_vertcenter", "#dark"),
+                    manager=MANAGER,
+                    anchors=(
+                        {
+                            "centerx": "centerx",
+                            "top_target": self.clan_buttons[-1][-1],
+                        }
+                        if len(self.clan_buttons[-1]) % 8 != 0
+                        else {"centerx": "centerx"}
+                    ),
+                )
+            )
 
-            y_pos += 82
+            # welcome to another bit of jank that I am embarrassed to put my name to!
+            self.delete_buttons[-1].append(
+                UIImageButton(
+                    pygame.Rect(
+                        (
+                            ui_scale_value(470),
+                            -0.5 * (item_height + ui_scale_value(22)),
+                        ),
+                        ui_scale_dimensions((22, 22)),
+                    ),
+                    "",
+                    object_id="#exit_window_button",
+                    manager=MANAGER,
+                    starting_height=2,
+                    anchors={"top_target": self.clan_buttons[-1][-1]},
+                )
+            )
+
             i += 1
-            if i >= 8:
+            if i % 8 == 0 and i != 0:
                 self.clan_buttons.append([])
                 self.clan_name.append([])
                 self.delete_buttons.append([])
-                i = 0
-                y_pos = 378
 
-        self.next_page_button = UIImageButton(scale(
-            pygame.Rect((912, 1080), (68, 68))),
-            "",
-            object_id="#arrow_right_button",
-            manager=MANAGER)
-        self.previous_page_button = UIImageButton(
-            scale(pygame.Rect((620, 1080), (68, 68))),
-            "",
-            object_id="#arrow_left_button",
-            manager=MANAGER)
+        self.next_page_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((456, 540), (34, 34))),
+            Icon.ARROW_RIGHT,
+            get_button_dict(ButtonStyles.ICON, (34, 34)),
+            object_id="@buttonstyles_icon",
+            manager=MANAGER,
+        )
+        self.previous_page_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((310, 540), (34, 34))),
+            Icon.ARROW_LEFT,
+            get_button_dict(ButtonStyles.ICON, (34, 34)),
+            object_id="@buttonstyles_icon",
+        )
         self.page_number = pygame_gui.elements.UITextBox(
             "",
-            scale(pygame.Rect((680, 1080), (220, 70))),
+            ui_scale(pygame.Rect((0, 540), (110, 35))),
             object_id=get_text_box_theme("#text_box_30_horizcenter"),
-            manager=MANAGER)
+            manager=MANAGER,
+            anchors={
+                "left": "left",
+                "right": "right",
+                "left_target": self.previous_page_button,
+                "right_target": self.next_page_button,
+            },
+        )
         self.page = 0
 
         self.update_page()
-
-        return super().screen_switches()
 
     def update_page(self):
         """
@@ -184,8 +276,7 @@ class SwitchClanScreen(Screens):
         else:
             self.next_page_button.enable()
 
-        self.page_number.set_text(
-            f"Page {self.page + 1} of {len(self.clan_buttons)}")
+        self.page_number.set_text(f"Page {self.page + 1} of {len(self.clan_buttons)}")
 
         for page in self.clan_buttons:
             for button in page:
@@ -204,5 +295,4 @@ class SwitchClanScreen(Screens):
         """
         TODO: DOCS
         """
-        screen.blit(self.screen,
-                    (580 / 1600 * screen_x, 300 / 1400 * screen_y))
+        super().on_use()
