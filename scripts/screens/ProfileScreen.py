@@ -583,8 +583,23 @@ class ProfileScreen(Screens):
 
         #Make sure only plural cats get alters :P
         if self.the_cat.is_plural():
-            self.alters_tab_button.enable()
-            self.alters_tab_button.set_text("screens.profile.tab_alters")
+            con = ""
+            if "shattered soul" in self.the_cat.permanent_condition:
+                con = "shattered soul"
+            elif "budding spirit" in self.the_cat.permanent_condition:
+                con = "budding spirit"
+            elif "fractured spirit"in self.the_cat.permanent_condition:
+                con = "fractured spirit"
+            if self.the_cat.permanent_condition[con]["born_with"] is True:
+                minmoons = -1
+            else:
+                minmoons = 0
+            if self.the_cat.permanent_condition[con]["moons_until"] <= minmoons:
+                self.alters_tab_button.enable()
+                self.alters_tab_button.set_text("screens.profile.tab_alters")
+            else:
+                self.alters_tab_button.disable()
+                self.alters_tab_button.set_text("")  
         else:
             self.alters_tab_button.disable()
             self.alters_tab_button.set_text("")  
@@ -2074,12 +2089,16 @@ class ProfileScreen(Screens):
                 con = "budding spirit"
             elif "fractured spirit" in self.the_cat.permanent_condition:
                 con = "fractured spirit"
+            else:
+                con = "none"
 
-            if self.the_cat.permanent_condition[con]["born_with"] is True:
+            if con == "none":
+                return
+            elif self.the_cat.permanent_condition[con]["born_with"] is True:
                 minmoons = -1
             else:
                 minmoons = 0
-            
+         
             if self.the_cat.permanent_condition[con]['moons_until'] <= minmoons:
                 all_illness_injuries.extend([(i['name'], self.get_alter_details(i)) for i in self.the_cat.alters])
 

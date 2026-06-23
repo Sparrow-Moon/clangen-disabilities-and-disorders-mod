@@ -3248,6 +3248,16 @@ class Cat:
             if "paralyzed" in self.permanent_condition and not self.pelt.paralyzed:
                 self.pelt.paralyzed = True
 
+            if "paralysis episode" in self.injuries:
+                self.pelt.paralyzed = True              
+            elif self.pelt.paralyzed and "paralyzed" not in self.permanent_condition:
+                    self.pelt.paralyzed = False
+
+            if "lazy eye" in self.permanent_condition and not self.pelt.lazy_eye:
+                cat.pelt.lazy_eye = cat.pelt.eye_colour
+                if cat.pelt.eye_colour2:
+                    cat.pelt.lazy_eye = cat.pelt.eye_colour2
+
             ##UPDATE NAME CHANGES
             if "heavy soul" in self.permanent_condition:
                 congenital = self.permanent_condition["heavy soul"][born_with]
