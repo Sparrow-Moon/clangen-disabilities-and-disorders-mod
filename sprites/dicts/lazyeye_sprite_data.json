@@ -1,7 +1,5 @@
 {
-    "spritesheet": [
-        "lazyeyes"
-    ],
+    "spritesheet": "lazyeyes",
     "sprite_list": [
         [
             "YELLOW",

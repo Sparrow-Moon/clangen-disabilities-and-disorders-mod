@@ -3254,12 +3254,12 @@ class Cat:
                     self.pelt.paralyzed = False
 
             if "lazy eye" in self.permanent_condition and not self.pelt.lazy_eye:
-                cat.pelt.lazy_eye = cat.pelt.eye_colour
-                if cat.pelt.eye_colour2:
-                    cat.pelt.lazy_eye = cat.pelt.eye_colour2
+                self.pelt.lazy_eye = self.pelt.eye_colour
+                if self.pelt.eye_colour2:
+                    self.pelt.lazy_eye = self.pelt.eye_colour2
 
             ##UPDATE NAME CHANGES
-            if "heavy soul" in self.permanent_condition:
+            '''if "heavy soul" in self.permanent_condition:
                 congenital = self.permanent_condition["heavy soul"][born_with]
                 start = self.permanent_condition["heavy soul"][moon_start]
                 del self.permanent_condition["heavy soul"]
@@ -3273,7 +3273,7 @@ class Cat:
                 congenital = self.permanent_condition["shattered soul"][born_with]
                 start = self.permanent_condition["shattered soul"][moon_start]
                 del self.permanent_condition["shattered soul"]
-                self.get_permanent_condition("branching soul", born_with=congenital, starting_moon=-1)
+                self.get_permanent_condition("branching soul", born_with=congenital, starting_moon=-1)'''
 
             if "stimming" in self.illnesses and not self.pelt.blep:
                 self.pelt.blep = True

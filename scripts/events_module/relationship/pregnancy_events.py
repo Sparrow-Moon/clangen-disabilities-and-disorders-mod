@@ -329,14 +329,17 @@ class Pregnancy_Events:
             if not other_cat and random.randint(0, 1):
                 amount = Pregnancy_Events.get_amount_of_kits(cat)
                 kits = Pregnancy_Events.get_kits(amount, cat, None, clan)
+                
+                insert=i18n.t("conditions.pregnancy.kit_amount", count=amount)
                 print_event = i18n.t(
                     choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"]),
-                    insert=i18n.t("conditions.pregnancy.kit_amount", count=amount),
                 )
                 cats_involved = [cat.ID]
                 cat_dict = {"m_c": cat}
                 for kit in kits:
                     cats_involved.append(kit.ID)
+
+                print_event = print_event.replace("{insert}", insert)  
                 game.cur_events_list.append(
                     Single_Event(
                         print_event, "birth_death", cats_involved, cat_dict=cat_dict
@@ -365,15 +368,17 @@ class Pregnancy_Events:
                 amount = Pregnancy_Events.get_amount_of_kits(cat)
                 kits = Pregnancy_Events.get_kits(amount, cat, None, clan)
 
+                insert = i18n.t("conditions.pregnancy.kit_amount", count=amount)
                 print_event = i18n.t(
-                    choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"]),
-                    insert=i18n.t("conditions.pregnancy.kit_amount", count=amount),
+                    choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"],
+                    insert=insert),
                 )
                 cats_involved = [cat.ID]
                 cat_dict = {"m_c": cat}
                 for kit in kits:
                     cats_involved.append(kit.ID)
                     
+                print_event = print_event.replace("{insert}", insert)  
                 print_event = event_text_adjust(Cat, print_event, main_cat=cat, clan=game.clan)
                 game.cur_events_list.append(
                     Single_Event(
@@ -383,20 +388,22 @@ class Pregnancy_Events:
                 return
             if not other_cat and cat.gender == 'intersex': 
             #Intersex cats result will be determined by their intersex condition. Admittedly this needs someone else doing a double check! 
-                if cat.permanent_condition  == "chimerism":
+                if "chimerism" in cat.permanent_condition:
                     if random.randint(0,1):
                         amount = Pregnancy_Events.get_amount_of_kits(cat)
                         kits = Pregnancy_Events.get_kits(amount, cat, None, clan)
 
+                        insert = i18n.t("conditions.pregnancy.kit_amount", count=amount)
                         print_event = i18n.t(
-                            choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"]),
-                            insert=i18n.t("conditions.pregnancy.kit_amount", count=amount),
+                            choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"],
+                            insert=insert),
                         )
                         cats_involved = [cat.ID]
                         cat_dict = {"m_c": cat}
                         for kit in kits:
                             cats_involved.append(kit.ID)
                             
+                        print_event = print_event.replace("{insert}", insert)  
                         print_event = event_text_adjust(Cat, print_event, main_cat=cat, clan=game.clan)
                         game.cur_events_list.append(
                             Single_Event(
@@ -426,15 +433,18 @@ class Pregnancy_Events:
                     amount = Pregnancy_Events.get_amount_of_kits(cat)
                     kits = Pregnancy_Events.get_kits(amount, cat, None, clan)
 
+                    insert = i18n.t("conditions.pregnancy.kit_amount", count=amount)
                     print_event = i18n.t(
-                        choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"]),
-                        insert=i18n.t("conditions.pregnancy.kit_amount", count=amount),
+                        choice(Pregnancy_Events.PREGNANT_STRINGS["birth"]["affair_outsider"],
+                        insert=insert),
                     )
+
                     cats_involved = [cat.ID]
                     cat_dict = {"m_c": cat}
                     for kit in kits:
                         cats_involved.append(kit.ID)
-                        
+                                          
+                    print_event = print_event.replace("{insert}", insert)  
                     print_event = event_text_adjust(Cat, print_event, main_cat=cat, clan=game.clan)
                     game.cur_events_list.append(
                         Single_Event(
@@ -632,7 +642,7 @@ class Pregnancy_Events:
         if get_clan_setting("pregnancy turmoil"):
             turmoil = random.randint(1, 100)
             if turmoil <= 20:
-                cat.get_injured("turmoiled litter", event_triggered=True)
+                cat.get_ill("turmoiled litter", event_triggered=True)
 
         kits = Pregnancy_Events.get_kits(kits_amount, cat, other_cat, clan)
         kits_amount = len(kits)
@@ -1320,7 +1330,7 @@ class Pregnancy_Events:
                             "parent_to_kit"
                         ]
                         y = random.randrange(0, 15)
-                        if "turmoiled litter" in the_cat.injuries:
+                        if "turmoiled litter" in the_cat.illnesses:
                             turmoiled = constants.CONFIG["new_cat"]["parent_buff"][
                             "turmoiled_litter"
 ]

@@ -183,7 +183,7 @@ dev_tools = false
       comfort = 70
       trust = 60
 
-    [new_cat.turmoiled_litter]
+    [new_cat.parent_buff.turmoiled_litter]
       like = 25
       trust = 20
 

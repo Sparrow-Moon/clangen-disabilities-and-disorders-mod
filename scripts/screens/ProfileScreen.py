@@ -3029,9 +3029,6 @@ class ProfileScreen(Screens):
             self.right_conditions_arrow.kill()
             self.conditions_background.kill()
             self.condition_container.kill()
-            for data in self.condition_data.values():
-                data.kill()
-            self.condition_data = {}
 
         self.open_tab = None
 

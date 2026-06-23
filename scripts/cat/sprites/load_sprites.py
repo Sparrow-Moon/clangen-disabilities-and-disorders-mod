@@ -70,7 +70,6 @@ class Sprites:
 
     with open("sprites/dicts/eye_sprite_data.json", "r", encoding="utf-8") as read_file:
         EYE_DATA = ujson.loads(read_file.read())
-
     with open("sprites/dicts/lazyeye_sprite_data.json", "r", encoding="utf-8") as read_file:
         LAZYEYE_DATA = ujson.loads(read_file.read())
 
@@ -272,6 +271,7 @@ class Sprites:
 
         data_jsons = (
             self.EYE_DATA,
+            self.LAZYEYE_DATA,
             self.PELT_DATA,
             self.WHITE_MOSTLY_DATA,
             self.WHITE_HIGH_DATA,
@@ -281,6 +281,7 @@ class Sprites:
             self.WHITE_POINT_DATA,
             self.TORTIE_DATA,
             self.SKIN_DATA,
+            self.BLEP_DATA,
             self.SCAR_DATA,
             self.SCAR_MISSING_PART_DATA,
             self.PLANT_DATA,

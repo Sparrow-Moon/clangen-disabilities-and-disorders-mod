@@ -4,22 +4,86 @@
         "mortality_down": "{PRONOUN/m_c/subject/CAP} will be less likely to die.",
         "duration_down": "{PRONOUN/m_c/subject/CAP} will heal sooner.",
         "risks_down": "The risks associated with {PRONOUN/m_c/poss} condition are lowered.",
-        "elder_leaves": {
-            "one": "elder leaf bundle",
-            "many": "elder leaf bundles"
+        "alderbark": {
+            "one": "alderbark piece",
+            "many": "alderbark pieces"
         },
+        "betony": {
+            "one": "betony",
+            "many": "betony"
+        },
+        "bindweed": {
+            "one": "bindweed bundle",
+            "many": "bindweed bundles"
+        },
+        "blackberry": {
+            "one": "blackberry cluster",
+            "many": "blackberry clusters"
+        },
+        "borage": {
+            "one": "borage leaf",
+            "many": "borage leaves"
+        },
+        "burdock": {
+            "one": "burdock root",
+            "many": "burdock roots"
+        },
+        "catmint": {
+            "one": "catmint pile",
+            "many": "catmint piles"
+        },
+        "chamomile": {
+            "one": "chamomile stalk",
+            "many": "chamomile stalks"
+        },
+        "chervil": {
+            "one": "chervil",
+            "many": "chervil|"
+        },		
         "cobwebs": {
             "one": "cobweb",
             "many": "cobwebs"
+        },
+        "coltsfoot": {
+            "one": "coltsfoot|",
+            "many": "coltsfoot"
+        },
+        "comfrey": {
+            "one": "comfrey",
+            "many": "comfrey"
         },
         "daisy": {
             "one": "daisy",
             "many": "daisies"
         },
+        "dandelion": {
+            "one": "dandelion",
+            "many": "dandelions"
+        },       
+		"elder_leaves": {
+            "one": "elder leaf bundle",
+            "many": "elder leaf bundles"
+        },       
+		"fennel": {
+            "one": "fennel stalk",
+            "many": "fennel stalks"
+        },       
+		"feverfew": {
+            "one": "feverfew",
+            "many": "feverfew"
+        },
+        "goldenrod": {
+            "one": "goldenrod",
+            "many": "goldenrod"
+        },
+        "honey": {
+            "one": "honey",
+            "many": "honey"
+        },
         "horsetail": {
             "one": "horsetail clump",
             "many": "horsetail clumps"
-        },
+        }, 
         "juniper": {
             "one": "juniper bunch",
             "many": "juniper bunches"
@@ -40,9 +104,21 @@
             "one": "moss clump",
             "many": "moss clumps"
         },
+        "mullein": {
+            "one": "mullein",
+            "many": "mullein"
+        },
         "oak_leaves": {
             "one": "oak leaf bundles",
             "many": "oak leaf bundles"
+        },
+        "plantain": {
+            "one": "plantain bundle",
+            "many": "plantain bundles"
+        },
+        "poppy": {
+            "one": "dose of poppy seed",
+            "many": "doses of poppy seeds"
         },
         "ragwort": {
             "one": "ragwort",
@@ -52,6 +128,10 @@
             "one": "raspberry cluster",
             "many": "raspberry clusters"
         },
+        "rosemary": {
+            "one": "rosemary clump",
+            "many": "rosemary clumps"
+        },
         "tansy": {
             "one": "tansy",
             "many": "tansy"
@@ -60,49 +140,13 @@
             "one": "thyme bundle",
             "many": "thyme bundles"
         },
+        "tormentil": {
+            "one": "tormentil root",
+            "many": "tormentil roots"
+        },
         "wild_garlic": {
             "one": "wild garlic",
             "many": "wild garlic"
-        },
-        "dandelion": {
-            "one": "dandelion",
-            "many": "dandelions"
-        },
-        "mullein": {
-            "one": "mullein",
-            "many": "mullein"
-        },
-        "rosemary": {
-            "one": "rosemary clump",
-            "many": "rosemary clumps"
-        },
-        "burdock": {
-            "one": "burdock root",
-            "many": "burdock roots"
-        },
-        "blackberry": {
-            "one": "blackberry cluster",
-            "many": "blackberry clusters"
-        },
-        "betony": {
-            "one": "betony",
-            "many": "betony"
-        },
-        "goldenrod": {
-            "one": "goldenrod",
-            "many": "goldenrod"
-        },
-        "poppy": {
-            "one": "dose of poppy seed",
-            "many": "doses of poppy seeds"
-        },
-        "plantain": {
-            "one": "plantain bundle",
-            "many": "plantain bundles"
-        },
-        "catmint": {
-            "one": "catmint pile",
-            "many": "catmint piles"
         }
     }
 }

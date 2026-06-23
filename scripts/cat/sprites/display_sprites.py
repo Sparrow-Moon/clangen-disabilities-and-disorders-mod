@@ -213,10 +213,12 @@ def generate_sprite(
             # Add eye onto cat
             new_sprite.blit(eyes2, (0, 0))
         if cat.pelt.lazy_eye != None:
-            lazy_name = f"{sprites.LAZYEYE_DATA['spritesheet']}{cat.pelt.lazy_eye}{cat_sprite}"
-            lazy_eyes = sprites.sprites[lazy_name].copy()
+            sprite_name = (
+                f"{sprites.LAZYEYE_DATA['spritesheet']}{cat.pelt.lazy_eye}{cat_sprite}"
+            )
+            lazyeyes = sprites.sprites[sprite_name].copy()
             #Hopefully this works how it should
-            new_sprite.blit(lazy_eyes, (0, 0))
+            new_sprite.blit(lazyeyes, (0, 0))
 
         if not scars_hidden:
             for scar in cat.pelt.scars:
@@ -296,6 +298,7 @@ def generate_sprite(
             new_sprite.blit(sprites.sprites["lineart_df" + cat_sprite], (0, 0))
         elif dead:
             new_sprite.blit(sprites.sprites["lineart_sc" + cat_sprite], (0, 0))
+        
         # draw skin and scars2
         blendmode = pygame.BLEND_RGBA_MIN
         sprite_name = f"{sprites.SKIN_DATA['spritesheet']}{cat.pelt.skin}{cat_sprite}"
@@ -365,10 +368,7 @@ def generate_sprite(
 
         if cat.pelt.blep:
             sprite_name = f"{sprites.BLEP_DATA['spritesheet']}{cat.pelt.skin}{cat_sprite}"
-            new_sprite.blit(
-                sprites.sprites[sprite_name],
-                (0, 0),
-            ) 
+            new_sprite.blit(sprites.sprites[sprite_name], (0, 0))
 
         # Apply fading fog
         if (
