@@ -304,8 +304,21 @@ class Condition_Events:
                 random_index = int(random.random() * len(possible_illnesses))
                 chosen_illness = possible_illnesses[random_index]
                 # if a non-kitten got kittencough, switch it to whitecough instead
-                if chosen_illness == "kittencough" and not cat.status.rank.is_baby():
+                if chosen_illness == "kittencough" and cat.status != "kitten":
                     chosen_illness = "whitecough"
+                elif chosen_illness == "nest wetting" and cat.status not in ['kitten', 'apprentice']:
+                    chosen_illness = "night dirtmaking"
+
+                # vaccinated cats
+                if cat.vaccinated:
+                    if chosen_illness == "yellowcough" and random.randint(1, 7) != 1:
+                        chosen_illness = "greencough"
+
+                    if chosen_illness == "greencough" and random.randint(1, 4) != 1:
+                        chosen_illness = "silvercough"
+
+                    if chosen_illness == "silvercough" and cat.status != "kitten" and random.randint(1, 3) == 1:
+                        chosen_illness = "whitecough"
 
                 # create event text
                 try:
@@ -395,7 +408,7 @@ class Condition_Events:
                     )
                     del cat.injuries[injury]
                     return triggered
-                elif injury == "pregnant":
+                elif injury in ["pregnant", "faux pregnant"]:
                     return triggered
             triggered = Condition_Events.handle_already_injured(cat)
         else:
@@ -431,12 +444,20 @@ class Condition_Events:
                     if not int(random.random() * stopping_chance):
                         return False
 
-                create_short_event(
-                    event_type="health",
-                    main_cat=cat,
-                    random_cat=random_cat,
-                )
-
+                if (cat.df_trainee or (random_cat and random_cat.df_trainee)) and random.randint(1, constants.CONFIG["event_generation"]["df_trainee_injury_event_denominator"]) <= constants.CONFIG["event_generation"]["df_trainee_injury_event_compare"]:
+                    create_short_event(
+                        event_type="health",
+                        main_cat=cat,
+                        random_cat=random_cat,
+                        sub_type=["dark_forest"]
+                    )
+                else:
+                    create_short_event(
+                        event_type="health",
+                        main_cat=cat,
+                        random_cat=random_cat,
+                    )
+        
         # just double-checking that trigger is only returned True if the cat is dead
         if cat.status.rank != CatRank.LEADER:
             # only checks for non-leaders, as leaders will not be dead if they are just losing a life
@@ -478,6 +499,8 @@ class Condition_Events:
             "TOETRAP": ["weak leg"],
             "HINDLEG": ["weak leg"],
             "THROAT": ["damaged throat"],
+            "DECLAWED": ["declawed"],
+            "RASH": ["constant rash"],
         }
 
         scarless_conditions = (
@@ -498,6 +521,54 @@ class Condition_Events:
             "selective mutism",
             "absent",
             "crooked jaw",
+            "comet spirit",
+            "weighted heart",
+            "prismatic mind",
+            "obsessive mind",
+            "antisocial",
+            "anxiety",
+            "constant roaming pain",
+            "thunderous spirit",
+            "otherworldly mind",
+            "kitten regressor",
+            "puppy regressor",
+            "snow vision",
+            "echoing shock",
+            "irritable bowels",
+            "irritated belly",
+            "loose body",
+            "longcough",
+            "burning light",
+            "disrupted senses",
+            "constant nightmares",
+            "jellyfish joints",
+            "lazy eye",
+            "shattered soul",
+            "budding spirit",
+            "fractured spirit",
+            "pcos",
+            "infertile",
+            "excess testosterone",
+            "aneuploidy",
+            "testosterone deficiency",
+            "chimerism",
+            "mosaicism",
+            "curved spine",
+            "jumbled mind",
+            "counting fog",
+            "spirited heart",
+            "puzzled heart",
+            "face blindness",
+            "parrot chatter",
+            "selective mutism",
+            "frequent fainting",
+            "flooded paws",
+            "bipolar i",
+            "bipolar ii",
+            "essential tremor",
+            "foggy mind",
+            "tick disease",
+            "intermittent paralysis"
         )
 
         got_condition = False
@@ -558,15 +629,33 @@ class Condition_Events:
         cat.healed_condition = False
         event_list = []
         illness_progression = {
-            "running nose": "whitecough",
-            "kittencough": "whitecough",
-            "whitecough": "greencough",
+            "running nose": ["whitecough", "silvercough"],
+            "kittencough": "silvercough",
+            "whitecough": ["silvercough", "greencough"],
+            "silvercough": "greencough",
             "greencough": "yellowcough",
             "yellowcough": "redcough",
             "an infected wound": "a festering wound",
             "heat exhaustion": "heat stroke",
-            "stomachache": "diarrhea",
+            "stomachache": ["diarrhea", "constipation"],
             "grief stricken": "lasting grief",
+            "nightmares": "constant nightmares",
+            "anxiety attack": "panic attack",
+            "panic attack": ["shock", "paranoia"],
+            "sleeplessness": "ongoing sleeplessness",
+            "ticks": ["tick bites", "severe tick bites"],
+            "nest wetting": "night dirtmaking",
+            "verbal shutdown": "mute",
+            "tics": "tic attack",
+            "nausea": "stomachache",
+            "paranoia": "delusions",
+            "hallucinations" : "hostile hallucinations",
+            "hostile hallucinations": "psychotic episode",
+            "delusions": "psychotic episode",
+            "psychotic episode": "ongoing psychosis",
+            "ongoing psychosis": ["otherwordly mind", "obsessive mind", "thunderous spirit"],
+            "deer tick fever": "deer tick disease",
+            "masking": ["meltdown", "shutdown", "burn out"]
         }
         cat_dict = {"m_c": cat}
         Condition_Events.rebuild_strings()
@@ -704,7 +793,16 @@ class Condition_Events:
         triggered = False
         event_list = []
 
-        injury_progression = {"poisoned": "redcough", "shock": "lingering shock"}
+        injury_progression = {
+            "poisoned": "redcough", 
+            "shock": "lingering shock", 
+            "wretched claws": "declawed",
+            "tick bites": "deer tick fever",
+            "severe tick bites": "deer tick fever",
+            "rat bite": "rat bite fever",
+            "fatigue": "constant fatigue",
+            "paralysis episode": "paralyzed"
+        }
 
         cat_dict = {"m_c": cat}
 
@@ -909,9 +1007,14 @@ class Condition_Events:
         Condition_Events.rebuild_strings()
 
         condition_progression = {
-            "one bad eye": "failing eyesight",
+            "one bad eye": ["failing eyesight", "lazy eye"],
             "failing eyesight": "blind",
             "partial hearing loss": "deaf",
+            "lasting grief": "weighted heart",
+            "recurring shock": "echoing shock",
+            "echoing shock": "recurring shock",
+            "burning light": "blind",
+            "intermittent paralysis": "paralyzed"
         }
 
         cat_dict = {"m_c": cat}
@@ -1011,6 +1114,10 @@ class Condition_Events:
                 if med_cat:
                     cat_dict["r_c"] = med_cat
                 continue
+
+                if game.game_setting_get("allow_triggers"):
+                    if game.game_setting_get("misdiagnosis") and cat.permanent_condition[condition]["misdiagnosis"] is not False:
+                        event = event.replace(condition, cat.permanent_condition[condition]["misdiagnosis"])
 
             # give risks
             Condition_Events.give_risks(
@@ -1148,10 +1255,20 @@ class Condition_Events:
                 and risk["name"] not in dictionary
             ):
                 # check if the new risk is a previous stage of a current illness
+                skip = False
                 if risk["name"] in progression:
-                    if progression[risk["name"]] in dictionary:
-                        # if it is, then break instead of giving the risk
-                        break
+                    if isinstance(progression[risk["name"]],list):
+                        for risk in progression[risk["name"]]:
+                            if risk in dictionary:
+                                skip = True
+                    elif progression[risk["name"]] in dictionary:
+                        skip = True
+                if not get_clan_setting("pregnancy turmoil"):
+                    if risk['name'] == "turmoiled litter":
+                        skip = True
+                # if it is, then break instead of giving the risk
+                if skip is True:
+                    break
 
                 new_condition_name = risk["name"]
 
@@ -1161,6 +1278,7 @@ class Condition_Events:
                         if new_condition_name in [
                             "an infected wound",
                             "a festering wound",
+                            "anaphylaxis",
                         ]:
                             # if it's infection or festering, we're removing the chance completely
                             # this is both to prevent annoying infection loops
@@ -1236,6 +1354,15 @@ class Condition_Events:
                 # here we give the new condition
                 if new_condition_name in Condition_Events.INJURIES:
                     cat.get_injured(new_condition_name, event_triggered=event_triggered)
+                    keys = dictionary[condition].keys()
+                    complication = None
+                    if new_condition_name == "anaphylaxis":
+                        complication = "anaphylaxis"
+                    if complication is not None:
+                        if "complication" in keys:
+                            dictionary[condition]["complication"] = complication
+                        else:
+                            dictionary[condition].update({"complication": complication})
                     break
                 elif new_condition_name in Condition_Events.ILLNESSES:
                     cat.get_ill(new_condition_name, event_triggered=event_triggered)

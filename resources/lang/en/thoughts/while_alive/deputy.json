@@ -335,6 +335,30 @@
             }
         }
     },
+	{
+        "id": "skeptic_deputy",
+        "strings": [
+            "Is having a crisis about {PRONOUN/m_c/poss} position as deputy",
+			"Wonders how {PRONOUN/m_c/subject} will ever survive as leader",
+			"Doubts that {PRONOUN/m_c/subject} will recieve nine lives",
+			"Carefully choses cats for the daily patrols",
+			"Worries about the clan",
+			"Worries about what will happen when the leader dies",
+			"Curls up in the den and wonders if {PRONOUN/m_c/subject} will truly be able to fill the pawsteps of a leader",
+			"Follows the code as much as {PRONOUN/m_c/subject} can",
+			"Was forced to mediate between arguing clanmates",
+			"Is doubtful that anyone in c_n could look up to {PRONOUN/m_c/object}"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            }
+        }
+    },
     {
         "id": "clever_deputy",
         "strings": [
@@ -548,6 +572,39 @@
                     "guided1"
                 ]
             }
+        }
+    },
+	{
+        "id": "face_blindness_deputy",
+        "strings": [
+            "Is fretting about who to put on patrols",
+			"Is dancing around saying anyone's name",
+			"Definitely knows who is who in the Clan",
+			"Struggles to remember what r_c is best at",
+			"Isn't sure {PRONOUN/m_c/subject} {VERB/m_c/wish/wishes} to be deputy anymore",
+			"Feels like the whole Clan is judging {PRONOUN/m_c/object}",
+			"Sets up yet more border patrols",
+			"Feels relieved that c_n is patient with {PRONOUN/m_c/object}",
+			"Feels in control",
+			"Doesn't need to know who is who to manage the Clan smoothly",
+			"Mixes up names in an announcement",
+			"Accidentally mixes up two cats and puts one on multiple conflicting patrols",
+			"Calls r_c the wrong name when trying to speak to {PRONOUN/r_c/object}",
+			"Worries about the future"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "face blindness"
+                    ]
+				}
+            },
+			"r_c": {
+                "group": [
+                    "-afterlife"
+                ]				
+			}
         }
     }
 ]

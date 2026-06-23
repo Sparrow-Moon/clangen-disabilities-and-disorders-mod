@@ -6,6 +6,7 @@
         "tab_dangerous": "dangerous",
         "tab_history": "history",
         "tab_conditions": "conditions",
+		"tab_alters": "alters",
         "family_tree": "family tree",
         "relationships": "see relationships",
         "mate": "choose mate",
@@ -33,6 +34,7 @@
         "pelt_label": "pelt: %{pelt}",
         "fur_label": "fur length: %{length}",
         "accessory_label": "accessory: %{accessory}",
+		"fronting_label": "current front: %{name}",
         "parent_label": {
             "one": "parent: %{parents}",
             "many": "parents: %{parents}"
@@ -40,6 +42,9 @@
         "lives_remaining_label": "remaining lives: %{count}",
         "experience_label": "experience: %{exp}",
         "backstory_label": "backstory: %{backstory}",
+		"intersex_label": "intersex: %{genderalign}",
+		"and_intersex_label": "%{genderalign} and intersex",
+		
         "subtab_favorite_tooltip": "favorite this sub-tab — it will be the default sub tab displayed when History is viewed",
         "subtab_unfavorite_tooltip": "un-favorite this sub-tab",
         "no_moons_tooltip": "Show the Moon that certain history events occurred on",
@@ -54,6 +59,10 @@
         "change_gender_transmale": "change to trans\nmale",
         "change_gender_transfemale": "change to trans\nfemale",
         "change_gender_nonbinary": "change to\nnonbinary",
-        "nutrition_text": "nutrition: %{nutrition_text}"
+        "change_gender_trans": "change to\ntrans",
+        "nutrition_text": "nutrition: %{nutrition_text}",
+        "malnourished_for": "has been malnourished for %{moons}",
+        "starving_for": "has been starving for %{moons}"
+		
     }
 }

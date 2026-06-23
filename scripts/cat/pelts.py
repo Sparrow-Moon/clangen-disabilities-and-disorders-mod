@@ -201,6 +201,7 @@ class Pelt:
         white_patches: str = None,
         eye_color: str = "BLUE",
         eye_colour2: str = None,
+        lazy_eye: str = None,
         tortie_base: str = None,
         tortie_colour: str = None,
         tortie_marking: str = None,
@@ -213,6 +214,7 @@ class Pelt:
         scars: list = None,
         tint: str = "none",
         skin: str = "BLACK",
+        blep: bool = False,
         white_patches_tint: str = "none",
         newborn_sprite: str = None,
         kitten_sprite: str = None,
@@ -227,6 +229,7 @@ class Pelt:
         self.white_patches = white_patches
         self.eye_colour = eye_color
         self.eye_colour2 = eye_colour2
+        self.lazy_eye = lazy_eye
         self.tortie_base = tortie_base
         self.tortie_marking = tortie_marking
         self.tortie_pattern = tortie_pattern
@@ -394,6 +397,7 @@ class Pelt:
 
         self.reverse = reverse
         self.skin = skin
+        self.blep = blep
 
     @property
     def accessory(self):

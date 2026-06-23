@@ -724,6 +724,76 @@
         }
     },
     {
+        "id": "skeptic_medicine_cat",
+        "strings": [
+            "Sasses the leader's choices",
+			"Rolls {PRONOUN/m_c/poss} eyes at {PRONOUN/m_c/poss} Clanmate's talk of StarClan",
+			"Had a strange dream the other night but dismisses it",
+			"Distracts {PRONOUN/m_c/self} with sorting herbs",
+			"Hisses at the state of the herb stores.",
+			"Longs to have a mate and kits",
+			"Is thinking about love",
+			"Is wondering if {PRONOUN/m_c/subject} can afford to have kittens",
+			"Is brushing up on {PRONOUN/m_c/poss} herblore",
+			"Has been having many strange dreams recently",
+			"Feels a sense of dread"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": "skeptic_medicine_cat_to_app",
+        "strings": [
+            "Scolds {PRONOUN/m_c/poss} apprentice for having {PRONOUN/m_c/poss} head in the clouds",
+			"Asks r_c to fetch {PRONOUN/m_c/object} extra herbs",
+			"Calls r_c over to teach {PRONOUN/r_c/object} how to properly bind a wound with webs",
+			"Has a long discussion with r_c about the nature of belief",
+			"Let's r_c handle talking with Starclan",
+			"Talks to r_c about the folly of blind loyalty",
+			"Worries about whether {PRONOUN/m_c/subject} {VERB/r_c/are/is} a good teacher for r_c",
+			"Worries that r_c might fall to the shadows",
+			"Tells r_c how proud {PRONOUN/m_c/subject} {VERB/m_c/are/is}"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            },
+			"r_c": {
+				"status": [
+                    "medicine cat apprentice"
+				],
+				"group": [
+					"-afterlife"
+				]
+			}
+        },
+        "relationship_constraint": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "mutual": false,
+                "constraints": [
+                    "mentor/app"
+                ]
+            }
+        ]		
+    },
+    {
         "id": "med_cat_dead_SC_gen",
         "strings": [
             "Wishes {PRONOUN/m_c/subject} could visit r_c in StarClan",
@@ -933,7 +1003,8 @@
                 "health": {
                     "condition": [
                         "greencough",
-                        "yellowcough"
+                        "yellowcough",
+						"silvercough"
                     ]
                 }
             }
@@ -952,7 +1023,8 @@
             "r_c": {
                 "health": {
                     "condition": [
-                        "pregnant"
+                        "pregnant",
+						"faux pregnant"
                     ]
                 }
             }
@@ -1000,5 +1072,53 @@
                 }
             }
         }
-    }
+    },
+	{
+        "id": "anxiety_med_cat",
+        "strings": [
+            "Smells some lavender to help {PRONOUN/m_c/object} stay calm",
+            "Smells some mint to help {PRONOUN/m_c/object} stay calm",
+            "Finds the herbal scents of the medicine den calming",
+            "Tells r_c about how much {PRONOUN/m_c/subject} {VERB/m_c/like/likes} the smell of lavender",
+            "Tells r_c about how much {PRONOUN/m_c/subject} {VERB/m_c/like/likes} the smell of mint"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "anxiety"
+                    ]
+				}
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+        "id": "face_blindness_med_cat",
+        "strings": [
+            "Stresses about keeping track of which herbs go to which cat",
+			"Verbally confirms {PRONOUN/m_c/subject} {VERB/m_c/are/is} talking to r_c",
+			"Piles up the herbs by cat name",
+			"Recognizes r_c by scent",
+			"Doesn't dare to look r_c in the face while sorting {PRONOUN/r_c/poss} herbs"
+        ],
+        "involved_cats": {
+          "m_c": {
+            "health": {
+              "condition": [
+                "face blindness"
+              ]
+            }
+          },
+          "r_c": {
+            "group": [
+              "-afterlife"
+            ]
+          }
+        }
+	}
 ]

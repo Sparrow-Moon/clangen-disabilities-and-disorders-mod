@@ -1054,6 +1054,128 @@
         }
     },
     {
+        "id": "comet_spirit_kit",
+        "strings": [
+            "Constantly loses things",
+			"Is really upset about something",
+			"Refuses to stay still for grooming",
+			"Attempts to sneak out of camp constantly",
+			"Wants to be free to explore"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "comet spirit"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": "otherworldly_mind_kit",
+        "strings": [
+            "Wants the monsters to go away",
+            "Is scared of the monster following {PRONOUN/m_c/object} around",
+            "Makes friends with the monster following {PRONOUN/m_c/object} around",
+            "Talks to a cat that's invisible",
+            "Haves a conversation with a bird",
+            "Hides from something the other kits can't see"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "otherworldly mind"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": "thunderous_spirit_kit_to_alive_gen",
+        "strings": [
+            "Can't stop crying",
+            "Had a nightmare that r_c abandoned {PRONOUN/m_c/object}",
+            "Doesn't want to be left alone"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "thunderous spirit"
+                    ]
+                }
+            },
+            "r_c": {
+                "status": [
+                    "kitten"
+                ],
+                "group": [
+                    "-afterlife"
+                ]
+            }			
+        }
+    },
+    {
+        "id": "disrupted_senses_kit",
+        "strings": [
+            "Complains loudly about how the world hates {PRONOUN/m_c/object}",
+            "Cries about how the world is too much",
+            "Is overwhelmed by all the sensations around {PRONOUN/m_c/object}",
+            "Wants to snuggle but doesn't like the feeling of touch",
+            "Doesn't like how much of the world there is"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "disrupted senses"
+                    ]
+                }
+            }
+        }
+    },
+	{
+        "id": "face_blindness_kit",
+        "strings": [
+            "Is surrounded by familiar strangers",
+			"Can't identify {PRONOUN/m_c/poss} parents",
+			"Cries out for someone familiar"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "face blindness"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "id": "prismatic mind_kit",
+        "strings": [
+            "Tells r_c the differences between a crow and a raven",
+            "Plans out an elaborate story in {PRONOUN/m_c/poss} mind",
+            "Feels exhausted from talking to the other kits"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "prismatic mind"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+    },
+    {
         "id": "kit_to_pregnant_cat",
         "strings": [
             "Wants r_c to let {PRONOUN/m_c/object} name one of the kits",

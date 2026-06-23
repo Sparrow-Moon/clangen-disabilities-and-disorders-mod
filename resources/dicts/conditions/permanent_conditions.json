@@ -2817,6 +2817,7 @@
 				"name": "brain fog",
 				"chance": 20
 			}
+          ],
         "herbs": {
 			"1": [
             "honey",
@@ -2911,7 +2912,7 @@
 				"name": "harmful stims",
 				"chance": 100
 			}
-        ]
+        ],
         "herbs": {
 			"1": [],
 			"2": [],
@@ -2954,7 +2955,7 @@
                 "name": "scrapes",
                 "chance": 40
             }
-        ]
+        ],
         "herbs": {
 			"1": [],
 			"2": [],
@@ -3279,7 +3280,7 @@
     },
     "pcos": {
         "severity": "minor",
-        "congenital": "sometimes",
+        "congenital": "special",
         "moons_until": 8,
         "mortality": {
             "newborn": 0,
@@ -3550,7 +3551,10 @@
 			}
         ],
         "herbs": {
-			"1": [],
+			"1": [
+				"poppy",
+				"juniper"
+			],
 			"2": [],
 			"3": []
 		}
@@ -3987,7 +3991,7 @@
 				"name": "nausea",
 				"chance": 25
 			}
-		]
+		],
         "herbs": {
 			"1": [
 				"borage",
@@ -4180,62 +4184,6 @@
             "3": [
 				"poppy"
 				]
-        }
-    },
-    "selective mutism": {
-        "severity": "minor",
-        "congenital": "sometimes",
-        "moons_until": 4,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [
-        ],
-        "herbs": {
-            "1": [
-				"poppy",
-				"juniper"
-			],
-            "2": [],
-            "3": []
-        }
-    },
-    "damaged throat": {
-        "severity": "minor",
-        "congenital": "never",
-        "moons_until": 4,
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "illness_infectiousness": [
-        ],
-        "risks": [
-            {
-                "name": "sore throat",
-                "chance": 30
-            }
-        ],
-        "herbs": {
-            "1": [
-				"poppy",
-				"juniper"
-			],
-            "2": [],
-            "3": []
         }
     }
 }

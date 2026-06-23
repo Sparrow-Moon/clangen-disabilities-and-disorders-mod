@@ -299,5 +299,18 @@
 	"abdominal pains":[
 		"To m_c's immense relief, {PRONOUN/m_c/poss} abdominal pains have passed.",
 		"After so much suffering m_c's abdominal pains are over."
-	]
+	],
+	"amnesia": [
+		"Although m_c still can't remember what happened, {PRONOUN/m_c/poss} clanmates step in to fill in the details and make new memories instead.",
+		"m_c can barely remember the past season, let alone a few days ago, and the missing pieces are just out of reach."
+	],
+	"depersonalization": [
+		"m_c was finally able to ground {PRONOUN/m_c/self} and is no longer experiencing depersonalization.",
+		"m_c no longer feels detatched from {PRONOUN/m_c/poss} own body."
+	],
+	"derealization": [
+		"m_c was finally able to ground {PRONOUN/m_c/self} and is no longer experiencing derealization.",
+		"m_c no longer feels trapped in an endless dream.",
+		"m_c feels back in touch with reality."
+	]	
 }

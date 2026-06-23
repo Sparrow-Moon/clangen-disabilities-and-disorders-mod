@@ -101,6 +101,14 @@ class SkillPath(Enum):
         "deep Dark Forest bond",
         "unshakable Dark Forest link",
     )
+    UNKNOWN = (
+        "interested in the Unkown Residence",
+        "Unknown Residence accord",
+        "deep Unkown Residence bond",
+        "unshakable Unknown Residence link",
+    )
+    DAY = ("good sleeper", "early bird", "sun watcher", "daylight warrior")
+    NIGHT = ("often naps", "night owl", "moon watcher", "moonlight warrior")    
 
     @staticmethod
     def get_random(exclude: list = ()):
@@ -117,6 +125,7 @@ class SkillPath(Enum):
                 SkillPath.STAR,
                 SkillPath.HEALER,
                 SkillPath.DARK,
+                SkillPath.UNKNOWN,
             )
             if i not in exclude
         ]
@@ -177,6 +186,9 @@ class Skill:
         SkillPath.PROPHET: "prophesying",
         SkillPath.GHOST: "ghosts",
         SkillPath.DARK: "dark forest",
+        SkillPath.UNKNOWN: "unknown residence",
+        SkillPath.DAY: "diurnal",
+        SkillPath.NIGHT: "nocturnal"
     }
 
     def __init__(self, path: SkillPath, points: int = 0, interest_only: bool = False):
@@ -329,6 +341,9 @@ class CatSkills:
         SkillPath.PROPHET: SkillTypeFlag.SUPERNATURAL,
         SkillPath.GHOST: SkillTypeFlag.SUPERNATURAL,
         SkillPath.DARK: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.UNKNOWN: SkillTypeFlag.SUPERNATURAL,
+        SkillPath.DAY: SkillTypeFlag.SOCIAL | SkillTypeFlag.OBSERVANT,
+        SkillPath.NIGHT: SkillTypeFlag.AGILE | SkillTypeFlag.OBSERVANT
     }
 
     # pylint: enable=unsupported-binary-operation

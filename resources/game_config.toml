@@ -183,6 +183,10 @@ dev_tools = false
       comfort = 70
       trust = 60
 
+    [new_cat.turmoiled_litter]
+      like = 25
+      trust = 20
+
   [new_cat.sib_buff]
     # default relationships buff for siblings' relationships in one direction
     [new_cat.sib_buff.cat1_to_cat2]
@@ -234,53 +238,57 @@ dev_tools = false
   # for this check, only other unmated cats can be the affair partner
   unmated_random_affair_chance = 10
 
-  # The kit number is incremental. It is 1-6 as default so if you change these numbers, you should probably keep this in mind.
-  # As in, your max kits number should probably be 5 more than the min kits number.
-  # But that's not required - just makes more sense that way with how the litters are generated.
+  #False pregnancy is still locked behind another setting per clan but it's 1/chance
+  false_pregnancy_chance = 80
+
+  # DisMod handles kittens and litter generation differently from base, increasing in rolls.
+  # This unfortunately means that the amount of kits is still somewhat hard coded but now-- 
+  # tiny_litter(min-3), small(4-6), large(7-9), huge(10-max
+  # Please adjust here 
   min_kits = 1
-  max_kits = 6
+  max_kits = 12
+  small_litter = 3
 
   # number / total for that age across all kit amounts = chance of having that many kits for that age
-  [pregnancy.one_kit_possibility]
-    "young adult" = 8
+  [pregnancy.tiny_litter_possibility]
+    "young adult" = 9
+    adult = 5
+    "senior adult" = 7
+    senior = 12
+
+  [pregnancy.small_litter_possibility]
+    "young adult" = 5
     adult = 9
-    "senior adult" = 10
-    senior = 4
+    "senior adult" = 12
+    senior = 8
 
-  [pregnancy.two_kit_possibility]
-    "young adult" = 10
-    adult = 13
-    "senior adult" = 15
-    senior = 3
-
-  [pregnancy.three_kit_possibility]
-    "young adult" = 17
-    adult = 15
-    "senior adult" = 5
-    senior = 1
-
-  [pregnancy.four_kit_possibility]
-    "young adult" = 12
-    adult = 8
-    "senior adult" = 2
-    senior = 0
-
-  [pregnancy.five_kit_possibility]
-    "young adult" = 6
-    adult = 2
-    "senior adult" = 0
-    senior = 0
-
-  [pregnancy.max_kit_possibility]
-    "young adult" = 2
+  [pregnancy.large_litter_possibility]
+    "young adult" = 0
     adult = 0
     "senior adult" = 0
     senior = 0
 
+  [pregnancy.huge_litter_possibility]
+    "young adult" = 0
+    adult = 0
+    "senior adult" = 0
+    senior = 0
+
+  [pregnancy.failed_adopt]
+    intersex = 0.10
+    female = 0.05
+    male = 0.15
+
 [cat_generation]
   # base 1/chance that a cat will generate with a permanent condition. gets modified further in code
-  base_permanent_condition = 90
-
+  base_permanent_condition = 30
+  
+  # DisMod allows for multiple conditions 1/num, until max_conditions reached
+  multiple_permanent_conditions = 20
+  max_born_with = 3
+  #And this is the odds that a second/third condition will be comorbid
+  comorbidity_chance = 5
+  
   # 1/2^(chance - 1) that a male cat will be a tortie
   base_male_tortie = 13
 
@@ -389,6 +397,9 @@ dev_tools = false
 
   # minimum percentage of medcat population that are ancient for buff to app chance
   threshold_percentage_ancient = 30
+  
+  #Now the adjusted for disabled cats to become medcat/mediator, divides their chance by this number
+  disabled_cat_med_chance_increase = 2
 
 [roles.become_mediator_chances]
   # 1/chance that a cat will switch to mediator. rolls every moon, so keep it high.
@@ -403,8 +414,8 @@ dev_tools = false
   # represents ranges for cat ages
   # these HAVE to be in the correct order: where one ends, the next one begins on the next number
   # if you DON'T DO THIS, your game WILL break
-  newborn = [0, 0]
-  kitten = [1, 5]
+  newborn = [0, 1]
+  kitten = [2, 5]
   adolescent = [6, 11]
   "young adult" = [12, 47]
   adult = [48, 95]
@@ -445,6 +456,17 @@ dev_tools = false
   debug_ensure_patrol_outcome = ""
 
 [event_generation]
+  #if randint(1, df_trainee_injury_event_denominator) <= df_trainee_injury_event_compare - base is 15% chanc
+  df_trainee_injury_event_denominator = 20
+  df_trainee_injury_event_compare = 3
+  
+  #Max perm conditions is -1 (disabled) be default. This feature is primarily for testing purposes and not recommended for gameplay.
+  #It cannot be set to lower than 3. I mean you can but  it will disable the limit entirely
+  #Max illnesses is the maximum total of illnesses and injuries a cat can have at once. Does not include perm conditions
+  #Set to -1 to disable
+  max_illnesses = -1
+  max_perm_conditions = -1
+  
   # forces event with this id to occur
   debug_ensure_event_id = ""
 
@@ -501,10 +523,19 @@ dev_tools = false
   # modifiers for injury chance based on if a war is going badly
   # SUBTRACTS from the denominator so higher = more likely to get injured
   war_injury_modifier = 225
+  
+  #Plural stuff-- Max Alters is best set to something <100 unless you have a beefy computer, must be more than 3.
+  #Max_splits-- per moon <10 is recommended, must be at least 1
+  max_alters = 50
+  max_splits = 3
+  
+  #Plural names, the chance for an adult cat to pick a Collective Name, must be at least 2, can be disabled fully per clan.
+  plural_names = 100
+  
 
 [clan_creation]
   # Set this to -1 for it to be infinite
-  rerolls = 3
+  rerolls = -1
 
 [graduation]
   # base possible experience gain for apprentices

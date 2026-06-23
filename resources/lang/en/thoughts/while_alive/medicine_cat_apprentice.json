@@ -279,6 +279,79 @@
         }
     },
     {
+        "id": "skeptic_medicine_cat_apprentice",
+        "strings": [
+            "Is wondering why cats even belive in Starclan",
+			"Wishes the other apprentices would leave {PRONOUN/m_c/object} alone while {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} learning herbs",
+			"Treats r_c for a small cut on {PRONOUN/r_c/poss} paw",
+			"Wishes that Twolegs wouldn't leave out so many traps",
+			"Is wondering if been a kittypet would be less stressful.",
+			"Is sitting and contemplating what {PRONOUN/m_c/poss} name might be",
+			"Hopes that {PRONOUN/m_c/poss} medicine cat name will end in anything but -feather",
+			"Thinks that Starclan is a myth to calm worried kits",
+			"Wishes that {PRONOUN/m_c/subject} had the foresight to choose to be a regular apprentice",
+			"Knows {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} believe in Starclan but tries to anyway",
+			"Is thinking {PRONOUN/m_c/subject} will be the best Medicine Cat in c_n even without Starclan",
+			"Wonders why {PRONOUN/m_c/subject} can't learn at least basic self defense",
+			"Dreamt {VERB/m_c/were/was} in a starry field last night and scoffs"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }		
+    },
+    {
+        "id": "skeptic_medicine_cat_apprentice_to_mentor",
+        "strings": [
+			"Loudly sorts the herbs to drown out {PRONOUN/m_c/poss} mentor's lecture",
+			"Wishes that r_c would stop lecturing {PRONOUN/m_c/object} about StarClan",
+			"Is happy to be learning from r_c",
+			"Wonders if r_c is proud of {PRONOUN/m_c/object}",
+			"Worries that r_c doesn't like {PRONOUN/m_c/poss} constant questions about StarClan",
+			"Worries that r_c is disappointed in {PRONOUN/m_c/object}",
+			"Wishes {PRONOUN/m_c/subject} could be a better apprentice for r_c",
+			"Is talking over {PRONOUN/m_c/poss} recent dreams with r_c"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        },
+        "relationship_constraint": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "mutual": false,
+                "constraints": [
+                    "app/mentor"
+                ]
+            }
+        ]		
+    },
+    {
         "id": "med_cat_app_to_dead_SC_kit",
         "strings": [
             "Is wondering if r_c would have bothered {PRONOUN/m_c/object} while {PRONOUN/m_c/subject} {VERB/m_c/were/was} sorting herbs",
@@ -352,6 +425,9 @@
         ],
         "involved_cats": {
             "r_c": {
+                "status": [
+                    "newborn"
+                ],
                 "group": [
                     "starclan"
                 ]
@@ -410,5 +486,146 @@
                 ]
             }
         ]
-    }
+    },
+	{
+        "id": "prismatic mind_medicine_cat_apprentice",
+        "strings": [
+            "Intently focuses on the herbs {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sorting",
+			"Forgot to eat today and is wondering if anyone will notice if {PRONOUN/m_c/subject} {VERB/m_c/take/takes} prey in the night",
+			"Is doing circles around the medicine den",
+			"Chatters to r_c about all of the herbs that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} learning",
+			"Intently watches as spiders spin webs in the corner of the medicine den",
+			"Swishes {PRONOUN/m_c/poss} tail happily while {PRONOUN/m_c/subject} {VERB/m_c/sort/sorts} herbs",
+			"Volunteers to collect extra herbs for {PRONOUN/m_c/poss} mentor",
+			"Diligently checks up on {PRONOUN/m_c/poss} sick Clanmates",
+			"Chatters to nobody about {PRONOUN/m_c/poss} favourite herbs",
+			"Wonders about the first medicine cats",
+			"Has heard that rats know how to cure carrionplace disease",
+			"Worries about r_c",
+			"Worries that {PRONOUN/m_c/subject} {VERB/m_c/have/has} forgotten something while sorting the herbs",
+			"Keeps rolling in the catmint to try and calm down",
+			"Hopes that {PRONOUN/m_c/poss} medicine cat name will end in -wing",
+			"Didn't hear r_c calling {PRONOUN/m_c/poss} name and is surprised when {PRONOUN/m_c/subject} looks up from the herbs"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "prismatic mind"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+        "id": "obsessive_mind_medicine_cat_apprentice",
+        "strings": [
+            "Intently focuses on the herbs {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} sorting",
+			"Forgot to eat today and is stressing about it to {PRONOUN/m_c/poss} denmates",
+			"Recounts the herbs and makes sure they're even",
+			"Sorts the herbs into piles based on size",
+			"Double checks that none of the herbs have gone bad",
+			"Talks to r_c about an issue {PRONOUN/m_c/subject} ran into concerning the medicine den last week",
+			"Chucks out day old herbs",
+			"Cries to r_c because {PRONOUN/m_c/subject} {VERB/m_c/do/does}n't think {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} good enough to be a medicine cat",
+			"Cries while sorting the moss for the nests",
+			"Cries because the cobwebs aren't even around the den"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "obsessive mind"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+        "id": "anxiety_medicine_cat_apprentice",
+        "strings": [
+            "Smells some lavender to help {PRONOUN/m_c/object} stay calm",
+            "Smells some mint to help {PRONOUN/m_c/object} stay calm",
+            "Finds the herbal scents of the medicine den calming",
+            "Tells r_c about how much {PRONOUN/m_c/subject} {VERB/m_c/like/likes} the smell of lavender",
+            "Tells r_c about how much {PRONOUN/m_c/subject} {VERB/m_c/like/likes} the smell of mint"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "anxiety"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+    },
+	{
+        "id": "anxiety_medicine_cat_apprentice_to_alive_mentor",
+        "strings": [
+            "Asks r_c if they can collect more lavender the next time they go out foraging together",
+            "Asks r_c if they can collect more mint the next time they go out foraging together",
+			"Appreciates r_c's patience with {PRONOUN/m_c/object}",
+			"Asks r_c about the calming properties of chamomile",
+			"Is thankful for r_c's steady presence as {PRONOUN/m_c/poss} mentor"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "anxiety"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        },
+        "relationship_constraint": [
+            {
+                "cats_from": [
+                    "m_c"
+                ],
+                "cats_to": [
+                    "r_c"
+                ],
+                "mutual": false,
+                "constraints": [
+                    "app/mentor"
+                ]
+            }
+        ]
+	},
+    {
+        "id": "face_blindness_medicine_cat_apprentice",
+        "strings": [
+            "Struggles to tell {PRONOUN/m_c/poss} Clanmates apart because of the strong scent of herbs."
+        ],
+        "involved_cats": {
+            "m_c": {
+                "health": {
+                    "condition": [
+                        "face blindness"
+                    ]
+                }
+            }
+        }
+	}
 ]

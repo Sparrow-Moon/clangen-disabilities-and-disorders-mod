@@ -115,8 +115,8 @@ def generate_sprite(
             new_sprite.blit(patches, (0, 0))
 
         # TINTS
-        if (
-            cat.pelt.tint is not None
+        if ( 
+            cat.pelt.tint != "none"
             and cat.pelt.tint in sprites.cat_tints["tint_colours"]
         ):
             # Multiply with alpha does not work as you would expect - it just lowers the alpha of the
@@ -125,8 +125,8 @@ def generate_sprite(
             tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
             tint.fill(tuple(sprites.cat_tints["tint_colours"][cat.pelt.tint]))
             new_sprite.blit(tint, (0, 0), special_flags=pygame.BLEND_RGB_MULT)
-        if (
-            cat.pelt.tint is not None
+        if ( 
+            cat.pelt.tint != "none"
             and cat.pelt.tint in sprites.cat_tints["dilute_tint_colours"]
         ):
             tint = pygame.Surface((sprites.size, sprites.size)).convert_alpha()
@@ -150,7 +150,7 @@ def generate_sprite(
 
             # Apply tint to white patches.
             if (
-                cat.pelt.white_patches_tint is not None
+                cat.pelt.white_patches_tint != "none"
                 and cat.pelt.white_patches_tint
                 in sprites.white_patches_tints["tint_colours"]
             ):
@@ -173,7 +173,7 @@ def generate_sprite(
 
             points = sprites.sprites[sprite_name].copy()
             if (
-                cat.pelt.white_patches_tint is not None
+                cat.pelt.white_patches_tint != "none"
                 and cat.pelt.white_patches_tint
                 in sprites.white_patches_tints["tint_colours"]
             ):
@@ -210,9 +210,13 @@ def generate_sprite(
                 (0, 0),
                 special_flags=pygame.BLEND_RGBA_MULT,
             )
-
             # Add eye onto cat
             new_sprite.blit(eyes2, (0, 0))
+        if cat.pelt.lazy_eye != None:
+            lazy_name = f"{sprites.LAZYEYE_DATA['spritesheet']}{cat.pelt.lazy_eye}{cat_sprite}"
+            lazy_eyes = sprites.sprites[lazy_name].copy()
+            #Hopefully this works how it should
+            new_sprite.blit(lazy_eyes, (0, 0))
 
         if not scars_hidden:
             for scar in cat.pelt.scars:
@@ -358,6 +362,13 @@ def generate_sprite(
                                 ),
                                 (0, 0),
                             )
+
+        if cat.pelt.blep:
+            sprite_name = f"{sprites.BLEP_DATA['spritesheet']}{cat.pelt.skin}{cat_sprite}"
+            new_sprite.blit(
+                sprites.sprites[sprite_name],
+                (0, 0),
+            ) 
 
         # Apply fading fog
         if (

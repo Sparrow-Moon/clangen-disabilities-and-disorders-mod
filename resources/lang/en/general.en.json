@@ -116,6 +116,7 @@
         "trans female": "trans female",
         "trans male": "trans male",
         "nonbinary": "nonbinary",
+		"intersex": "intersex",
         "is": "is",
         "are": "are",
         "can_work": "This cat can work",
@@ -149,6 +150,12 @@
         "granddaughter": "grandchild",
         "grandson": "grandchild",
         "grandchild": "grandchild",
+        "greatgrandmother": "great grandparent",
+        "greatgrandfather": "great grandparent",
+        "greatgrandparent": "great grandparent",
+        "greatgranddaughter": "great grandchild",
+        "greatgrandson": "great grandchild",
+        "greatgrandchild": "great grandchild",
         "mother": "parent",
         "father": "parent",
         "parent": "parent",
@@ -210,18 +217,25 @@
         "remove_favorite": "Remove favorite",
         "has_permanent_condition": "has a permanent condition",
         "born_with": "born with this condition",
+        "split_early": "split in early kithood",
         "had_perm_condition_for": {
             "one": "has had this condtion for %{count} moon",
             "many": "has had this condition for %{count} moons"
         },
+        "has_been_split_for": {
+            "one": "split last moon",
+            "many": "has been split for %{count} moons"
+        },	
         "had_injury_for": "has been hurt for %{moons}",
         "pregnant_for": "has been pregnant for %{moons}",
+        "faux_pregnant_for": "has possibly been pregnant for %{moons}",
         "recovering_from_birth_for": "has been recovering for %{moons}",
         "sick": "sick",
         "injured": "injured",
         "grieving": "grieving",
         "fleas": "flea-ridden",
         "is_infected": "is infected",
-        "is_festering": "is festering"
+        "is_festering": "is festering",
+        "is_anaphylactic": "is anaphylactic"
     }
 }

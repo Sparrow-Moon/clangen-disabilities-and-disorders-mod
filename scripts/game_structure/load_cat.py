@@ -136,6 +136,7 @@ def json_load():
                 colour=cat["pelt_color"],
                 eye_color=cat["eye_colour"],
                 eye_colour2=cat["eye_colour2"] if "eye_colour2" in cat else None,
+                lazy_eye=cat["lazy_eye"] if "lazy_eye" in cat else None,
                 paralyzed=cat["paralyzed"],
                 newborn_sprite=cat.get("sprite_newborn"),
                 kitten_sprite=(
@@ -175,6 +176,7 @@ def json_load():
                 tortie_pattern=cat["tortie_pattern"],
                 tortie_marking=cat["tortie_marking"],
                 skin=cat["skin"],
+                blep=cat["blep"] if "blep" in cat else False,
                 tint=cat["tint"] if "tint" in cat else None,
                 scars=cat["scars"] if "scars" in cat else [],
                 accessory=cat["accessory"],

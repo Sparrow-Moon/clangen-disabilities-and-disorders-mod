@@ -1,11 +1,185 @@
 {
-    "elder_leaves": {
+    "alderbark": {
+        "expiration": 20,
+        "rarity": {
+            "forest": {
+                "newleaf": 5,
+                "greenleaf": 4,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "mountainous": {
+                "newleaf": 5,
+                "greenleaf": 4,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 3
+            },
+            "beach": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 2
+            }
+        }		
+	},
+    "betony": {
+        "expiration": 10,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "mountainous": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "plains": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 4
+            },
+            "beach": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 4
+            }
+        }
+    },
+    "bindweed": {
+        "expiration": 10,
+        "rarity": {
+            "forest": {
+                "newleaf": 4,
+                "greenleaf": 4,
+                "leaf-fall": 3,
+                "leaf-bare": 2
+            },
+            "mountainous": {
+                "newleaf": 4,
+                "greenleaf": 4,
+                "leaf-fall": 3,
+                "leaf-bare": 2
+            },
+            "plains": {
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 2,
+                "leaf-bare": 1
+            },
+            "beach": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 1
+            }
+        }		
+	},
+    "blackberry": {
+        "expiration": 12,
+        "rarity": {
+            "forest": {
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 3,
+                "leaf-bare": 6
+            },
+            "mountainous": {
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 3,
+                "leaf-bare": 6
+            },
+            "plains": {
+                "newleaf": 4,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            },
+            "beach": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            }
+        }
+    },
+    "borage": {
+		"expiration": 8,
+        "rarity": {
+            "forest": {
+                "newleaf": 6,
+                "greenleaf": 2,
+                "leaf-fall": 0,
+                "leaf-bare": 0
+            },
+            "mountainous": {
+                "newleaf": 6,
+                "greenleaf": 2,
+                "leaf-fall": 0,
+                "leaf-bare": 0
+            },
+            "plains": {
+                "newleaf": 10,
+                "greenleaf": 5,
+                "leaf-fall": 2,
+                "leaf-bare": 0
+            },
+            "beach": {
+                "newleaf": 8,
+                "greenleaf": 4,
+                "leaf-fall": 2,
+                "leaf-bare": 0
+            }
+        }
+	},
+    "burdock": {
         "expiration": 12,
         "rarity": {
             "forest": {
                 "newleaf": 3,
                 "greenleaf": 2,
-                "leaf-fall": 4,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "mountainous": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            },
+            "beach": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 4
+            }
+        }
+    },
+    "catmint": {
+        "expiration": 12,
+        "rarity": {
+            "forest": {
+                "newleaf": 5,
+                "greenleaf": 4,
+                "leaf-fall": 5,
                 "leaf-bare": 6
             },
             "mountainous": {
@@ -15,8 +189,8 @@
                 "leaf-bare": 6
             },
             "plains": {
-                "newleaf": 3,
-                "greenleaf": 2,
+                "newleaf": 5,
+                "greenleaf": 4,
                 "leaf-fall": 5,
                 "leaf-bare": 6
             },
@@ -28,6 +202,64 @@
             }
         }
     },
+	"chamomile": {
+		"expiration": 8,
+        "rarity": {
+            "forest": {
+                "newleaf": 2,
+                "greenleaf": 3,
+                "leaf-fall": 6,
+                "leaf-bare": 1
+            },
+            "mountainous": {
+                "newleaf": 2,
+                "greenleaf": 3,
+                "leaf-fall": 6,
+                "leaf-bare": 1
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 4,
+                "leaf-fall": 8,
+                "leaf-bare": 2
+            },
+            "beach": {
+                "newleaf": 1,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 0
+            }
+        }
+	},
+	"chervil": {
+		"expiration": 6,
+        "rarity": {
+            "forest": {
+                "newleaf": 4,
+                "greenleaf": 1,
+                "leaf-fall": 1,
+                "leaf-bare": 6
+            },
+            "mountainous": {
+                "newleaf": 4,
+                "greenleaf": 1,
+                "leaf-fall": 1,
+                "leaf-bare": 6
+            },
+            "plains": {
+                "newleaf": 4,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 8
+            },
+            "beach": {
+                "newleaf": 4,
+                "greenleaf": 1,
+                "leaf-fall": 1,
+                "leaf-bare": 6
+            }
+        }
+	},
     "cobwebs": {
         "expiration": 24,
         "rarity": {
@@ -57,6 +289,64 @@
             }
         }
     },
+	"coltsfoot": {
+        "expiration": 12,
+        "rarity": {
+            "forest": {
+                "newleaf": 6,
+                "greenleaf": 4,
+                "leaf-fall": 1,
+                "leaf-bare": 0
+            },
+            "mountainous": {
+                "newleaf": 4,
+                "greenleaf": 2,
+                "leaf-fall": 0,
+                "leaf-bare": 0
+            },
+            "plains": {
+                "newleaf": 10,
+                "greenleaf": 6,
+                "leaf-fall": 3,
+                "leaf-bare": 1
+            },
+            "beach": {
+                "newleaf": 6,
+                "greenleaf": 4,
+                "leaf-fall": 1,
+                "leaf-bare": 0
+            }
+        }		
+	},
+	"comfrey": {
+        "expiration": 10,
+        "rarity": {
+            "forest": {
+                "newleaf": 5,
+                "greenleaf": 5,
+                "leaf-fall": 2,
+                "leaf-bare": 0
+            },
+            "mountainous": {
+                "newleaf": 5,
+                "greenleaf": 5,
+                "leaf-fall": 2,
+                "leaf-bare": 0
+            },
+            "plains": {
+                "newleaf": 6,
+                "greenleaf": 6,
+                "leaf-fall": 3,
+                "leaf-bare": 1
+            },
+            "beach": {
+                "newleaf": 6,
+                "greenleaf": 5,
+                "leaf-fall": 2,
+                "leaf-bare": 1
+            }
+        }		
+	},
     "daisy": {
         "expiration": 8,
         "rarity": {
@@ -86,7 +376,181 @@
             }
         }
     },
-    "horsetail": {
+    "dandelion": {
+        "expiration": 8,
+        "rarity": {
+            "forest": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            },
+            "mountainous": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            },
+            "plains": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 4
+            },
+            "beach": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 4
+            }
+        }
+    },
+	"elder_leaves": {
+        "expiration": 12,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 6
+            },
+            "mountainous": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 6
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 5,
+                "leaf-bare": 6
+            },
+            "beach": {
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 5,
+                "leaf-bare": 6
+            }
+        }
+    },
+	"fennel": {
+        "expiration": 15,
+        "rarity": {
+            "forest": {
+                "newleaf": 8,
+                "greenleaf": 8,
+                "leaf-fall": 2,
+                "leaf-bare": 2
+            },
+            "mountainous": {
+                "newleaf": 8,
+                "greenleaf": 6,
+                "leaf-fall": 2,
+                "leaf-bare": 2
+            },
+            "plains": {
+                "newleaf": 8,
+                "greenleaf": 8,
+                "leaf-fall": 2,
+                "leaf-bare": 2
+            },
+            "beach": {
+                "newleaf": 15,
+                "greenleaf": 10,
+                "leaf-fall": 5,
+                "leaf-bare": 5
+            }
+        }		
+	},
+	"feverfew": {
+        "expiration": 8,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 5
+            },
+            "mountainous": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 3,
+                "leaf-bare": 5
+            },
+            "plains": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 4
+            },
+            "beach": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 4
+            }
+        }	
+	},
+    "goldenrod": {
+        "expiration": 8,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 6
+            },
+            "mountainous": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 6
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 6
+            },
+            "beach": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 4,
+                "leaf-bare": 6
+            }
+        }
+    },
+	"honey": {
+        "expiration": 36,
+        "rarity": {
+            "forest": {
+                "newleaf": 10,
+                "greenleaf": 8,
+                "leaf-fall": 5,
+                "leaf-bare": 1
+            },
+            "mountainous": {
+                "newleaf": 10,
+                "greenleaf": 8,
+                "leaf-fall": 5,
+                "leaf-bare": 1
+            },
+            "plains": {
+                "newleaf": 12,
+                "greenleaf": 10,
+                "leaf-fall": 7,
+                "leaf-bare": 3
+            },
+            "beach": {
+                "newleaf": 5,
+                "greenleaf": 3,
+                "leaf-fall": 1,
+                "leaf-bare": 0
+            }
+        }		
+	},
+	"horsetail": {
         "expiration": 8,
         "rarity": {
             "forest": {
@@ -260,6 +724,35 @@
             }
         }
     },
+    "mullein": {
+        "expiration": 10,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            },
+            "mountainous": {
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 3,
+                "leaf-bare": 6
+            },
+            "plains": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 1,
+                "leaf-bare": 5
+            },
+            "beach": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 1,
+                "leaf-bare": 5
+            }
+        }
+    },
     "oak_leaves": {
         "expiration": 6,
         "rarity": {
@@ -285,6 +778,64 @@
                 "newleaf": 4,
                 "greenleaf": 3,
                 "leaf-fall": 3,
+                "leaf-bare": 6
+            }
+        }
+    },
+    "plantain": {
+        "expiration": 10,
+        "rarity": {
+            "forest": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 3
+            },
+            "mountainous": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 3
+            },
+            "plains": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 3
+            },
+            "beach": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 3
+            }
+        }
+    },
+    "poppy": {
+        "expiration": 6,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 6
+            },
+            "mountainous": {
+                "newleaf": 2,
+                "greenleaf": 1,
+                "leaf-fall": 1,
+                "leaf-bare": 5
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 6
+            },
+            "beach": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
                 "leaf-bare": 6
             }
         }
@@ -347,6 +898,35 @@
             }
         }
     },
+    "rosemary": {
+        "expiration": 12,
+        "rarity": {
+            "forest": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            },
+            "mountainous": {
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 3,
+                "leaf-bare": 6
+            },
+            "plains": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 5
+            },
+            "beach": {
+                "newleaf": 3,
+                "greenleaf": 2,
+                "leaf-fall": 2,
+                "leaf-bare": 6
+            }
+        }
+    },
     "tansy": {
         "expiration": 8,
         "rarity": {
@@ -405,6 +985,35 @@
             }
         }
     },
+	"tormentil": {
+        "expiration": 8,
+        "rarity": {
+            "forest": {
+                "newleaf": 1,
+                "greenleaf": 6,
+                "leaf-fall": 3,
+                "leaf-bare": 1
+            },
+            "mountainous": {
+                "newleaf": 1,
+                "greenleaf": 4,
+                "leaf-fall": 2,
+                "leaf-bare": 0
+            },
+            "plains": {
+                "newleaf": 2,
+                "greenleaf": 6,
+                "leaf-fall": 2,
+                "leaf-bare": 1
+            },
+            "beach": {
+                "newleaf": 1,
+                "greenleaf": 1,
+                "leaf-fall": 2,
+                "leaf-bare": 0
+            }
+        }		
+	},
     "wild_garlic": {
         "expiration": 8,
         "rarity": {
@@ -434,294 +1043,33 @@
             }
         }
     },
-    "dandelion": {
+	"yarrow": {
         "expiration": 8,
         "rarity": {
             "forest": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            },
-            "mountainous": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            },
-            "plains": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 4
-            },
-            "beach": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 4
-            }
-        }
-    },
-    "mullein": {
-        "expiration": 10,
-        "rarity": {
-            "forest": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            },
-            "mountainous": {
-                "newleaf": 4,
-                "greenleaf": 3,
-                "leaf-fall": 3,
-                "leaf-bare": 6
-            },
-            "plains": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 1,
-                "leaf-bare": 5
-            },
-            "beach": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 1,
-                "leaf-bare": 5
-            }
-        }
-    },
-    "rosemary": {
-        "expiration": 12,
-        "rarity": {
-            "forest": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            },
-            "mountainous": {
-                "newleaf": 4,
-                "greenleaf": 3,
-                "leaf-fall": 3,
-                "leaf-bare": 6
-            },
-            "plains": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            },
-            "beach": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 6
-            }
-        }
-    },
-    "burdock": {
-        "expiration": 12,
-        "rarity": {
-            "forest": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 3,
-                "leaf-bare": 4
-            },
-            "mountainous": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 3,
-                "leaf-bare": 4
-            },
-            "plains": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 3,
-                "leaf-bare": 4
-            },
-            "beach": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 3,
-                "leaf-bare": 4
-            }
-        }
-    },
-    "blackberry": {
-        "expiration": 12,
-        "rarity": {
-            "forest": {
-                "newleaf": 4,
-                "greenleaf": 3,
-                "leaf-fall": 3,
-                "leaf-bare": 6
-            },
-            "mountainous": {
-                "newleaf": 4,
-                "greenleaf": 3,
-                "leaf-fall": 3,
-                "leaf-bare": 6
-            },
-            "plains": {
-                "newleaf": 4,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            },
-            "beach": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 5
-            }
-        }
-    },
-    "betony": {
-        "expiration": 10,
-        "rarity": {
-            "forest": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 3,
-                "leaf-bare": 4
-            },
-            "mountainous": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 3,
-                "leaf-bare": 4
-            },
-            "plains": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 4
-            },
-            "beach": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 4
-            }
-        }
-    },
-    "goldenrod": {
-        "expiration": 8,
-        "rarity": {
-            "forest": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 4,
-                "leaf-bare": 6
-            },
-            "mountainous": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 4,
-                "leaf-bare": 6
-            },
-            "plains": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 4,
-                "leaf-bare": 6
-            },
-            "beach": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 4,
-                "leaf-bare": 6
-            }
-        }
-    },
-    "poppy": {
-        "expiration": 6,
-        "rarity": {
-            "forest": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 6
-            },
-            "mountainous": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 1,
-                "leaf-bare": 5
-            },
-            "plains": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 6
-            },
-            "beach": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 2,
-                "leaf-bare": 6
-            }
-        }
-    },
-    "plantain": {
-        "expiration": 10,
-        "rarity": {
-            "forest": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 3
-            },
-            "mountainous": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 3
-            },
-            "plains": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 3
-            },
-            "beach": {
-                "newleaf": 2,
-                "greenleaf": 1,
-                "leaf-fall": 2,
-                "leaf-bare": 3
-            }
-        }
-    },
-    "catmint": {
-        "expiration": 12,
-        "rarity": {
-            "forest": {
                 "newleaf": 5,
-                "greenleaf": 4,
-                "leaf-fall": 5,
-                "leaf-bare": 6
+                "greenleaf": 5,
+                "leaf-fall": 2,
+                "leaf-bare": 1
             },
             "mountainous": {
-                "newleaf": 3,
-                "greenleaf": 2,
-                "leaf-fall": 4,
-                "leaf-bare": 6
+                "newleaf": 4,
+                "greenleaf": 3,
+                "leaf-fall": 1,
+                "leaf-bare": 1
             },
             "plains": {
                 "newleaf": 5,
-                "greenleaf": 4,
-                "leaf-fall": 5,
-                "leaf-bare": 6
+                "greenleaf": 5,
+                "leaf-fall": 2,
+                "leaf-bare": 1
             },
             "beach": {
                 "newleaf": 4,
                 "greenleaf": 3,
-                "leaf-fall": 5,
-                "leaf-bare": 6
+                "leaf-fall": 1,
+                "leaf-bare": 1
             }
-        }
-    }
+        }		
+	}
 }

@@ -54,6 +54,11 @@ class Sprites:
         SKIN_DATA = ujson.loads(read_file.read())
 
     with open(
+        "sprites/dicts/skin_blep_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        BLEP_DATA = ujson.loads(read_file.read())
+
+    with open(
         "sprites/dicts/tortie_patches_sprite_data.json", "r", encoding="utf-8"
     ) as read_file:
         TORTIE_DATA = ujson.loads(read_file.read())
@@ -65,6 +70,9 @@ class Sprites:
 
     with open("sprites/dicts/eye_sprite_data.json", "r", encoding="utf-8") as read_file:
         EYE_DATA = ujson.loads(read_file.read())
+
+    with open("sprites/dicts/lazyeye_sprite_data.json", "r", encoding="utf-8") as read_file:
+        LAZYEYE_DATA = ujson.loads(read_file.read())
 
     with open(
         "sprites/dicts/white_patches_mostly_sprite_data.json", "r", encoding="utf-8"

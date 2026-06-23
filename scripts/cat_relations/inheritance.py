@@ -16,6 +16,7 @@ from scripts.events_module.text_adjust import adjust_list_text
 
 class RelationType(StrEnum):
     """An enum representing the possible relationships of a cat"""
+
     BLOOD = ""  # direct blood related - do not need a special print
     ADOPTIVE = "adoptive"  # not blood related but close (parents, kits, siblings)
     HALF_BLOOD = "half sibling"  # only one blood parent is the same (siblings only)
@@ -46,7 +47,7 @@ class Inheritance:
         self.parents_siblings = {}
         self.cousins = {}
         self.grand_parents = {}
-        self.great_grandparents = {}
+        self.great_grand_parents = {}
         self.grand_kits = {}
         self.all_involved = []
         self.all_but_cousins = []
@@ -73,7 +74,7 @@ class Inheritance:
         self.parents_siblings = {}
         self.cousins = {}
         self.grand_parents = {}
-        self.great_grandparents = {}
+        self.great_grand_parents = {}
         self.grand_kits = {}
         self.all_involved = []
         self.all_but_cousins = []
@@ -411,6 +412,7 @@ class Inheritance:
                     self.all_but_cousins.append(grand_id)
                 self.grand_parents[grand_id]["additional"].append(
                     i18n.t("inheritance.parent_of_inter", name=str(parent_cat.name))
+                )
 
     def init_great_grandparents(self):
         """Create a great-grandparent relationship."""
@@ -845,7 +847,7 @@ class Inheritance:
         ) + self.get_no_blood_relatives(self.grand_parents)
 
     # ---------------------------------------------------------------------------- #
-    #                                 great_grandparents                                #
+    #                                 great_grandparents                           #
     # ---------------------------------------------------------------------------- #
 
     def get_blood_great_grandparents(self) -> list:
@@ -861,6 +863,7 @@ class Inheritance:
         return self.get_blood_relatives(
             self.great_grandparents
         ) + self.get_no_blood_relatives(self.great_grandparents)
+
 
     # ---------------------------------------------------------------------------- #
     #                                  grand_kits                                  #

@@ -9,18 +9,31 @@
 
 [game]
     [game.general]
-        "dark mode" = false
+        "warriorified names" = true
+		"dark mode" = false
         "fullscreen scaling" = false
         "no sprite antialiasing" = false
         "custom cursor" = false
         shaders = false
-        gore = false
         discord = false
         check_for_updates = true
         show_changelog = true
         special_dates = true
         "random relation" = true
         "they them default" = false
+
+    [game.triggers]
+		gore = false
+        allow_triggers = false
+		misdiagnosis = false
+		iatrogenic_disorders = false
+		eating_disorders = false
+		self_harm = false
+		suicidal_ideation = false
+		psychosis = false
+		dissociation = false
+		"intrusive thoughts" = false
+		addiction = false
 
     [game.other]
         language = [
@@ -58,15 +71,19 @@
     [clan.role]
         deputy = false
         12_moon_graduation = false
-        retirement = false
+        retirement = true
+		higher_disabled_med_rates = false
         become_mediator = false
+		plural_names = true
     
     [clan.relation]
         affair = false
         "unmated parentage" = false
         "same sex birth" = false
         "same sex adoption" = false
-        "single parentage" = false
+        "pregnancy turmoil" = false
+		"single parentage" = false
+		tnr = false
         "romantic with former mentor" = true
         "first cousin mates" = false
     

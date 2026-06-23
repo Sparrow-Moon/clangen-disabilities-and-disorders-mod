@@ -22,12 +22,12 @@
     "CHOCOLATE": "brown"
   },
   "possible_tints": {
-    "basic": ["offwhite", "offwhite"],
-    "black": ["gray", "darkcream", "cream"],
+    "basic": ["offwhite", "offwhite", "none", "blue-white", "blue-white", "mint"],
+    "black": ["gray", "darkcream", "cream", "darklilac"],
     "gray": ["gray"],
-    "ginger": ["darkcream", "cream", "pink"],
-    "brown": ["darkcream", "cream"],
-    "white": []
+    "ginger": ["darkcream", "cream", "gold", "pink", "lilac", "darklilac"],
+    "brown": ["darkcream", "cream", "gold"],
+    "white": ["black", "none", "none", "none"]
   },
   "tint_colours":
   {
@@ -36,6 +36,12 @@
     "offwhite": [238, 249, 252],
     "gray": [208, 225, 229],
     "pink": [254, 248, 249],
+    "blue-white": [242, 247, 255],
+	"mint": [231, 243, 237],
+	"gold": [243, 237, 207],
+    "lilac": [243, 230, 250],
+    "darklilac": [222, 202, 230],
+	"black": [37, 36, 38],
     "none": null
   }
 }

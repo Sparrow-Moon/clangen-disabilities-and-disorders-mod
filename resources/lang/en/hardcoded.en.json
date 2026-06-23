@@ -87,6 +87,8 @@
             "many": " {PRONOUN/m_c/subject/CAP} {VERB/m_c/bring/brings} along {PRONOUN/m_c/poss} kittens."
         },
         "event_returning_child_of_lost": "m_c approaches the Clan and asks to join, claiming to be %{parent_name}'s kitten.",
+		"event_kittypet_neutered": " One of {PRONOUN/m_c/poss} ears is tipped, though.", 
+		"event_lost_neutered": " {PRONOUN/m_c/subject/CAP} {VERB/m_c/smell/smells} a bit different, though, and one of {PRONOUN/m_c/poss} ears is tipped.", 
         "kittencough_spread": {
             "one": "Kittencough has spread around the nursery. %{kits} is affected.",
             "many": "Kittencough has spread around the nursery. %{kits} are affected."},
@@ -107,6 +109,7 @@
         "consumed_prey": {
             "one": "One piece of prey was consumed.",
             "many": "%{count} pieces of prey were consumed."
-        }
+        },
+        "collective_name": "%{oldname}'s 's headmates have discussed things, and {PRONOUN/m_c/subject} {VERB/m_c/have/has} decided that a collective name will suit them better, like %{newname}!"
     }
 }

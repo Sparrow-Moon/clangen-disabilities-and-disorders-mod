@@ -1391,5 +1391,33 @@
                 ]
             }
         }
+    },
+    {
+        "id": "skeptic_gen",
+        "strings": [
+            "Doesn't believe in Fate",
+			"Believes that r_c is lying to {PRONOUN/m_c/object}",
+			"Is questioning why the rules are the way they are",
+			"Wonders how r_c has such strong beliefs",
+			"Heard some interesting gossip recently",
+			"Knows r_c is wrong!",
+			"Had a fight with r_c over beliefs",
+			"Explains that yes water is wet",
+			"Doesn't understand why r_c's in charge"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            },
+            "r_c": {
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
     }
 ]

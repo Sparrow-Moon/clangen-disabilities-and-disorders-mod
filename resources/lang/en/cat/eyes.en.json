@@ -29,6 +29,8 @@
         "MUSTARD": "mustard-yellow",
         "EARTHY": "earthy brown",
         "SEA": "sea blue",
-        "BLUEBELL": "bluebell"
+        "BLUEBELL": "bluebell",
+		"VOID": "black",
+		"GHOST": "white"
     }
 }

@@ -518,10 +518,8 @@ class MediationScreen(Screens):
         elif other_cat:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
-            if get_clan_setting("first cousin mates"):
-                check_cousins = False
-            else:
-                check_cousins = other_cat.is_cousin(cat)
+            if not get_clan_setting("first cousin mates"):
+                check_cousins = cat.is_second_cousin(other_cat)
 
             if (
                 other_cat.is_uncle_aunt(cat)
@@ -635,12 +633,33 @@ class MediationScreen(Screens):
                     relation = i18n.t(
                         "general.sibling_littermate", relation=i18n.t(relation)
                     )
-            elif not get_clan_setting("first cousin mates") and other_cat.is_cousin(
-                cat
-            ):
+            elif other_cat.is_cousin(cat):
                 if other_cat.genderalign in ("female", "trans female"):
                     relation = "general.cousin_female"
                 elif other_cat.genderalign in ("male", "trans male"):
+                    relation = "general.cousin_male"
+                else:
+                    relation = "general.cousin_nb"
+
+            elif self.inspect_cat.is_greatgrandkit(self.the_cat):
+                if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
+                    relation = "general.great_granddaughter"
+                elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
+                    relation = "general.great_grandson"
+                else:
+                    relation = "general.great_grandchild"
+            elif self.the_cat.is_greatgrandkit(self.inspect_cat):
+                if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
+                    relation = "general.great_grandmother"
+                elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
+                    relation = "general.great_grandfather"
+                else:
+                    relation = "general.great_grandparent"
+
+            elif not get_clan_setting("first cousin mates") and self.inspect_cat.is_second_cousin(self.the_cat):
+                if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
+                    relation = "general.cousin_female"
+                elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
                     relation = "general.cousin_male"
                 else:
                     relation = "general.cousin_nb"

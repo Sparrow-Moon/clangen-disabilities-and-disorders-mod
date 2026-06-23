@@ -120,6 +120,22 @@
         "interested in the Dark Forest": "interested in the Dark Forest",
         "Dark Forest affinity": "Dark Forest affinity",
         "deep Dark Forest bond": "deep Dark Forest bond",
-        "unshakable Dark Forest link": "unshakable Dark Forest link"
+        "unshakable Dark Forest link": "unshakable Dark Forest link",
+		"unknown residence": "unknown residence",
+		"interested in the Unkown Residence": "interested in the Unkown Residence",
+        "Unknown Residence accord": "Unknown Residence accord",
+        "deep Unkown Residence bond": "deep Unkown Residence bond",
+        "unshakable Unknown Residence link": "unshakable Unknown Residence link",
+		"diurnal": "diurnal",
+		"nocturnal": "nocturnal",
+		"good sleeper": "good sleeper",
+        "early bird": "early bird", 
+        "sun watcher": "sun watcher", 
+        "sunlight warrior": "sunlight warrior",
+        "often naps": "often naps", 
+        "night owl": "night owl", 
+        "moon watcher": "moon watcher", 
+        "moonlight warrior": "moonlight warrior"
+		
     }
 }

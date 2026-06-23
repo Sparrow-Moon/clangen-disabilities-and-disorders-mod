@@ -142,6 +142,18 @@ def event_for_tags(
         if _poss in tags and mode != _poss:
             return False
 
+    #check for triggers
+    if "trigger" in tags:
+            if not game.game_setting_get("allow_triggers"):
+                return False
+            else:
+                toggle = tags["trigger"]
+                if not game.game_setting_get(toggle):
+                    return False
+                #print("Warning. Thoughts with " + toggle + " are currently enabled.")
+
+
+
     # check romance
     if "romance" in tags and other_cat and other_cat not in get_possible_mates(cat):
         return False
@@ -387,6 +399,7 @@ def event_for_cat(
         "skill": _check_cat_skills,
         "backstory": _check_cat_backstory,
         "gender": _check_cat_gender,
+        "genderalign": _check_cat_genderalign,
         "health": _check_cat_health,
     }
 
@@ -845,14 +858,25 @@ def _check_cat_gender(cat, genders: list) -> bool:
         return True
 
     for gender in genders:
-        if gender not in ["male", "female"]:
-            raise ValueError(f"Gender must be one of 'male', 'female'. Got {gender}")
+        if gender not in ["male", "female", "intersex"]:
+            raise ValueError(f"Gender must be one of 'male', 'female', 'intersex'. Got {gender}")
 
     if cat.gender in genders:
         return True
 
     return False
 
+def _check_cat_genderalign(cat, genderalignments: list) -> bool:
+    """
+    checks if cat has the correct gender
+    """
+    if not genderalignments:
+        return True
+
+    if cat.genderalign in genderalignments:
+        return True
+
+    return False
 
 def _check_cat_health(cat, health_constraints: dict) -> bool:
     """

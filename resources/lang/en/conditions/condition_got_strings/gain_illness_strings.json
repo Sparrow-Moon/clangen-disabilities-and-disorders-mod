@@ -103,22 +103,6 @@
    "m_c is experiencing some brain fog.",
    "m_c has some brain fog."
   ],
-  "amnesia": [
-    "m_c can't understand why r_c is so upset with {PRONOUN/m_c/object}, only to learn {PRONOUN/m_c/subject} said something awful- that {PRONOUN/m_c/subject} {VERB/m_c/don't/doesn't} remember at all.",
-    "m_c has a hard time remembering what happened these past few moons. {PRONOUN/m_c/subject/CAP} have a vague idea of what happened, but all the details are gone.",
-    "m_c swears that one of {PRONOUN/m_c/poss} clanmates was a kit yesterday. How can a few moons pass in just a moment?"
-  ],
-  "derealization": [
-    "m_c keeps spacing out for longer and longer periods. Nothing feels real anymore.",
-    "m_c keeps confusing dreams and reality, as both feel equally fake.",
-    "m_c knows {PRONOUN/m_c/subject} woke up this morning, but {PRONOUN/m_c/subject} still {VERB/m_c/feel/feels} trapped in a dream.",
-    "For m_c, everything seems especially hazy lately. Is any of this even real?"
-  ],
-  "depersonalization": [
-    "m_c keeps double checking {PRONOUN/m_c/poss} paws, worried that they might belong to another cat.",
-    "m_c keeps spacing out, feeling as if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} floating above {PRONOUN/m_c/poss} own body.",
-    "Other cats keep asking why m_c is acting so different from {PRONOUN/m_c/poss} usual self. m_c doesn't understand who {PRONOUN/m_c/poss} 'usual self' is supposed to be."
-  ],
   "harmful stims": [
     "m_c confesses that {PRONOUN/m_c/subject} {VERB/m_c/keep/keeps} scratching at {PRONOUN/m_c/poss} own fur when overwhelmed.",
     "r_c catches m_c biting {PRONOUN/m_c/self} repeatedly whenever emotions run high.",

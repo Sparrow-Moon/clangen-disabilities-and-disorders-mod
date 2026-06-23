@@ -2,7 +2,98 @@
     {
         "id": "gen_guide_sc",
         "strings": [
-            "Hello. I am here to guide the dead cats of c_n into StarClan."
+            "Here to guide the dead cats of c_n into StarClan.",
+			"Is proudly overseeing c_n",
+			"Looks forwards to guiding the cats of c_n to the stars",
+			"Respects all cats of c_n",
+			"Is here to guide the pawsteps of c_n's warriors",
+			"Hopes that soon StarClan will be full of cats once more",
+			"Is eager to guide c_n as best {PRONOUN/m_c/subject} can"
         ]
-    }
+    },
+	{
+		"id": "guide_to_aliveleader",
+		"strings": [
+			"Looks down upon r_c with fondness",
+			"Wonders at how r_c shall lead c_n",
+			"Hopes r_c appreciates {PRONOUN/m_c/poss} work in StarClan"
+		],
+        "involved_cats": {
+            "r_c": {
+                "status": [
+                    "leader"
+                ],
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_alivemeddie",
+		"strings": [
+			"Looks down upon r_c with fondness",
+			"Gives r_c a dream about StarClan",
+			"Looks forwards to seeing r_c at the next Half-Moon meeting",
+			"Appreciates how r_c makes {PRONOUN/m_c/poss} work easier"
+		],
+        "involved_cats": {
+            "r_c": {
+                "status": [
+                    "medicine cat",
+                    "medicine cat apprentice"
+                ],
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_dead_SC",
+		"strings": [
+			"Talks to r_c about the state of c_n",
+			"Hopes r_c is doing well in StarClan",
+			"Wonders what r_c is currently doing",
+			"Proudly shows how {PRONOUN/m_c/subject} {VERB/m_c/are/is} guiding the cats of c_n to StarClan",
+			"Reassures r_c that {PRONOUN/r_c/subject} {VERB/r_c/belong/belongs} here",
+			"Is proud to see how far r_c has come since arriving in StarClan",
+			"Promises to guide r_c's Clanmates safely to StarClan"
+		],
+        "involved_cats": {
+            "r_c": {
+                "group": [
+                    "starclan"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_dead_DF",
+		"strings": [
+			"Worries about how r_c is doing in the Dark Forest",
+			"Knows why r_c deserves to be in the Dark Forest",
+			"Wonders if one day {PRONOUN/m_c/subject} will be able to guide r_c out of the Dark Forest"
+		],
+        "involved_cats": {
+            "r_c": {
+                "group": [
+                    "dark_forest"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_dead_UR",
+		"strings": [
+			"Hopes one day {PRONOUN/m_c/subject} can guide r_c to StarClan to"
+		],
+        "involved_cats": {
+            "r_c": {
+                "group": [
+                    "unknown_residence"
+                ]
+            }
+        }
+	}			
 ]

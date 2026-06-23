@@ -2536,5 +2536,42 @@
                 ]
             }
         }
+    },
+    {
+        "id": "old_face_blindness_elder",
+        "strings": [
+            "Blames {PRONOUN/m_c/poss} lack of recognition on failing memory"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "age": [
+                    "senior"
+                ],
+				"health": {
+					"condition": [
+						"face blindness"
+					]
+				}
+            }
+        }
+    },
+    {
+        "id": "old_brain_fog_elder",
+        "strings": [
+            "Feels more forgetful than usual",
+			"Head empty, but it's for napping"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "age": [
+                    "senior"
+                ],
+				"health": {
+					"condition": [
+						"brain fog"
+					]
+				}
+            }
+        }
     }
 ]

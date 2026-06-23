@@ -143,6 +143,12 @@ class InheritanceDb:
             grandparents.update(self.get_parents(p))
         return grandparents
 
+    def get_great_grandparents(self, cat_id: str) -> Set[str]:
+        great_grandparents = set()
+        for p in self.get_grandparents(cat_id):
+            great_grandparents.update(self.get_grandparents(p))
+        return great_grandparents
+
     def get_grandchildren(self, cat_id: str) -> Set[str]:
         grandchildren = set()
         for c in self.get_children(cat_id):
@@ -187,6 +193,7 @@ class InheritanceDb:
             self.get_children,
             self.get_siblings,
             self.get_grandparents,
+            self.get_great_grandparents,
             self.get_grandchildren,
             self.get_siblings_children,
             self.get_parents_siblings,
@@ -209,6 +216,9 @@ class InheritanceDb:
 
     def is_grandparent(self, maybe_grandparent: str, cat_a: str) -> bool:
         return maybe_grandparent in self.get_grandparents(cat_a)
+
+    def is_great_grandparent(self, maybe_great_grandparent: str, cat_a: str) -> bool:
+        return maybe_great_grandparent in self.get_great_grandparents(cat_a)
 
     def is_parent(self, maybe_parent: str, cat_a: str) -> bool:
         return maybe_parent in self.get_parents(cat_a)
@@ -272,6 +282,7 @@ class InheritanceDb:
             (inheritance.get_parents_siblings, self.get_parents_siblings),
             (inheritance.get_cousins, self.get_cousins),
             (inheritance.get_grandparents, self.get_grandparents),
+            (inheritance.get_great_grandparents, self.get_great_grandparents),
             (inheritance.get_grand_kits, self.get_grandchildren),
             (inheritance.get_siblings_kits, self.get_siblings_children),
             (inheritance.get_mates, self.get_mates),

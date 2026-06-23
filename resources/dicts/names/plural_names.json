@@ -1,4 +1,20 @@
 {
+	"normal_traits": [
+		"adventurous", "ambitious", "arrogant", "bloodthirsty", "bold", "calm", "careful", "charismatic", "childish", "cold",
+		"compassionate", "confident", "cunning", "daring", "dreamer", "dramatic", "faithful", "fierce", "flamboyant", "gloomy",
+		"grumpy", "haughty", "humble", "inquisitive", "insecure", "lonesome", "loving", "loyal", "nervous", "oblivious", "playful",
+		"rebellious", "responsible", "righteous", "shameless", "sincere", "skeptic", "sneaky", "strange", "stubborn", "strict",
+		"thoughtful", "troublesome", "vengeful", "wandering", "wise", "zealous", "mimic"
+	],
+	"little_traits": [
+		"attention-seeker", "bossy", "bouncy", "bullying", "charming", "curious", "daydreamer", "defiant", "fearless", "impulsive", 
+		"know-it-all", "noisy", "polite", "quiet", "odd", "self-conscious", "shy", "skittish", "snuggly", "sweet", "unruly"
+	],
+	
+	"noncat_alters": [
+		"slugcat", "skeleton", "snail", "frog", "wolf", "twoleg", "deer", "mouse", "rabbit", "dog", "ghost", "star", "bug", "noncat", "ambiguous", "blob"
+	],
+	
 	"alter_suffixes": [
 		"fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur", "fur",
 		"tuft", "tuft", "tuft", "tuft", "tuft", "tooth", "tooth", "tooth", "tooth", "tooth",
@@ -242,7 +258,11 @@
     "Ziti", "Zoe", "Zoomie", "Zorro", "Zorua", "Zuberi", "Zuko", "Zuma", "Zuna", "Zuva"
   ],
   
-  "noncat_alters": [
-	"slugcat", "skeleton", "snail", "frog", "wolf", "twoleg", "deer", "mouse", "rabbit", "dog", "ghost", "star", "bug"
-  ]
+	"inappropriate_names": [
+      "wetback", "yellowface", "redface", "blackface", "brownface", "pancakeface", "yellowbone", "molesting",
+      "bleaksight", "lostface", "deadfoot", "tornface", "brokentail", "crookedjaw", "crookedeye", "crookedfoot",
+      "brokeneye", "brokentooth", "brokenfoot", "brokenjaw", "brokenspirit", "crookedarch", "burneyes", "burneye",
+      "burntail", "burnleg", "burnfoot", "burnface", "wetdream", "littlecatcher", "wetdream", "cameltoe", "smokeweed",
+      "weedsmoke", "quicknut", "deepthroat"
+	]
 }

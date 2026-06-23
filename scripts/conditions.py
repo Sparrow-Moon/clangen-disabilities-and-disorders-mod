@@ -263,7 +263,6 @@ class PermanentCondition:
         self.severity = severity
         self.congenital = congenital
         self.moons_until = moons_until
-        self.moon_start = moon_start
         self.mortality = mortality
         self.risks = risks
         self.illness_infectiousness = illness_infectiousness

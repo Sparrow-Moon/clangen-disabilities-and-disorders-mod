@@ -112,6 +112,22 @@
         }
     },
     {
+        "id": "skeptic_mediator_apprentice",
+        "strings": [
+            "Is been scolded for mocking {PRONOUN/m_c/poss} clanmates",
+			"Wonders if {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} the only sane cat in this clan"
+        ],
+        "involved_cats": {
+            "m_c": {
+                "stat": {
+                    "trait": [
+                        "skeptic"
+                    ]
+                }
+            }
+        }
+    },
+    {
         "id": "mediator_apprentice_alive_romantic_crush",
         "strings": [
             "Wonders if {PRONOUN/m_c/subject} can use {PRONOUN/m_c/poss} new skills to impress r_c",

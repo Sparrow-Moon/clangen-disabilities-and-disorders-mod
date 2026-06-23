@@ -514,6 +514,8 @@ class RelationshipScreen(Screens):
                     )
 
             # Gender
+            enby_masc = ["trans male" , "demiboy", "genderfaun", "trans masc"]
+            enby_fem = ["trans female" , "demigirl", "genderfae", "trans femme"]
             if self.inspect_cat.genderalign == "female":
                 gender_icon = image_cache.load_image(
                     "resources/images/female_big.png"
@@ -522,11 +524,23 @@ class RelationshipScreen(Screens):
                 gender_icon = image_cache.load_image(
                     "resources/images/male_big.png"
                 ).convert_alpha()
-            elif self.inspect_cat.genderalign == "trans female":
+            elif self.inspect_cat.genderalign == "intersex":
+                gender_icon = image_cache.load_image(
+                    "resources/images/intersex_big.png"
+                ).convert_alpha()
+            elif self.inspect_cat.gender == "intersex" and self.inspect_cat.genderalign in enby_fem:
+                gender_icon = image_cache.load_image(
+                    "resources/images/transfem_intersex_big.png"
+                ).convert_alpha()
+            elif self.inspect_cat.gender == "intersex" and self.inspect_cat.genderalign in enby_masc:
+                gender_icon = image_cache.load_image(
+                    "resources/images/transmasc_intersex_big.png"
+                ).convert_alpha()
+            elif self.inspect_cat.gender == "male" and self.inspect_cat.genderalign in enby_fem:
                 gender_icon = image_cache.load_image(
                     "resources/images/transfem_big.png"
                 ).convert_alpha()
-            elif self.inspect_cat.genderalign == "trans male":
+            elif self.inspect_cat.gender == "female" and self.inspect_cat.genderalign in enby_masc:
                 gender_icon = image_cache.load_image(
                     "resources/images/transmasc_big.png"
                 ).convert_alpha()
@@ -535,7 +549,6 @@ class RelationshipScreen(Screens):
                 gender_icon = image_cache.load_image(
                     "resources/images/nonbi_big.png"
                 ).convert_alpha()
-
             gender_rect = ui_scale(pygame.Rect((0, 0), (34, 34)))
             gender_rect.topright = ui_scale_offset((-3, 3))
             self.inspect_cat_elements["gender"] = pygame_gui.elements.UIImage(
@@ -632,12 +645,33 @@ class RelationshipScreen(Screens):
                         relation = i18n.t(
                             "general.sibling_littermate", relation=i18n.t(relation)
                         )
-                elif not get_clan_setting(
-                    "first cousin mates"
-                ) and self.inspect_cat.is_cousin(self.the_cat):
-                    if self.inspect_cat.genderalign in ("female", "trans female"):
+                elif self.inspect_cat.is_cousin(self.the_cat):
+                    if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
                         relation = "general.cousin_female"
-                    elif self.inspect_cat.genderalign in ("male", "trans male"):
+                    elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
+                        relation = "general.cousin_male"
+                    else:
+                        relation = "general.cousin_nb"
+
+                elif self.inspect_cat.is_greatgrandkit(self.the_cat):
+                    if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
+                        relation = "general.great_granddaughter"
+                    elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
+                        relation = "general.great_grandson"
+                    else:
+                        relation = "general.great_grandchild"
+                elif self.the_cat.is_greatgrandkit(self.inspect_cat):
+                    if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
+                        relation = "general.great_grandmother"
+                    elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
+                        relation = "general.great_grandfather"
+                    else:
+                        relation = "general.great_grandparent"
+
+                elif not get_clan_setting("first cousin mates") and self.inspect_cat.is_second_cousin(self.the_cat):
+                    if self.inspect_cat.genderalign in ("female", "trans female", "demigirl"):
+                        relation = "general.cousin_female"
+                    elif self.inspect_cat.genderalign in ("male", "trans male", "demiboy"):
                         relation = "general.cousin_male"
                     else:
                         relation = "general.cousin_nb"
@@ -807,10 +841,14 @@ class RelationshipScreen(Screens):
         else:
             # FAMILY DOT
             # Only show family dot on cousins if first cousin mates are disabled.
+            ggp_cat = the_relationship.cat_to.get_great_grandparents()
+            ggp_other = self.the_cat.get_great_grandparents()
+            
             if get_clan_setting("first cousin mates"):
-                check_cousins = False
-            else:
-                check_cousins = the_relationship.cat_to.is_cousin(self.the_cat)
+                for key in ggp_cat:
+                    for key2 in ggp_other:
+                        if key == key2:
+                            check_cousins = True
 
             if (
                 the_relationship.cat_to.is_uncle_aunt(self.the_cat)
@@ -819,6 +857,11 @@ class RelationshipScreen(Screens):
                 or self.the_cat.is_grandparent(the_relationship.cat_to)
                 or the_relationship.cat_to.is_parent(self.the_cat)
                 or self.the_cat.is_parent(the_relationship.cat_to)
+                or self.the_cat.is_great_grandkit(the_relationship.cat_to) 
+                or the_relationship.cat_to.is_great_grandkit(self.the_cat) 
+                or the_relationship.cat_to.is_sibling(self.the_cat) 
+                or the_relationship.cat_to.is_cousin(self.the_cat) 
+                or check_cousins
                 or the_relationship.cat_to.is_sibling(self.the_cat)
                 or check_cousins
             ):

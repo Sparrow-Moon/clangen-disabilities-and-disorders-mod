@@ -137,6 +137,7 @@ def one_moon():
 
     trigger_future_events()
 
+    tnr_setting = get_clan_setting("tnr")
     # Calling of "one_moon" functions.
     other_clan_cats = [c for c in Cat.all_cats_list if c.status.is_other_clancat]
     for cat in Cat.all_cats_list.copy():
@@ -144,7 +145,7 @@ def one_moon():
         if cat.status.alive_in_player_clan or cat.status.group.is_afterlife():
             one_moon_cat(cat)
         elif not cat.status.group or cat.status.is_other_clancat:
-            one_moon_outside_cat(cat, other_clan_cats)
+            one_moon_outside_cat(cat, tnr_setting, other_clan_cats)
 
     # keeping this commented out till disasters are more polished
     # note: when we actually use this, import scripts.events_module.ongoing.disaster_events
@@ -859,6 +860,14 @@ def handle_lost_cats_return(predetermined_cat_IDs: list = None):
 
         additional_cats = lost_cat.add_to_clan()
         cat_IDs.extend(additional_cats)
+        
+        if lost_cat.neutered and not lost_cat.already_gave_neutered_message:
+            if lost_cat.give_kittypet_message:
+                text += i18n.t("hardcoded.event_kittypet_neutered", count=len(additional_cats))
+                lost_cat.already_gave_neutered_message = True
+            else:
+                text += i18n.t("hardcoded.event_lost_neutered", count=len(additional_cats))
+                lost_cat.already_gave_neutered_message = True
 
         if additional_cats:
             text += i18n.t("hardcoded.event_lost_kits", count=len(additional_cats))
@@ -946,7 +955,7 @@ def handle_fading(cat):
             cat.set_faded()
 
 
-def one_moon_outside_cat(cat, other_clan_cats: list = None):
+def one_moon_outside_cat(cat, tnr_setting, other_clan_cats: list = None):
     """
     exiled cat events
     """
@@ -979,6 +988,63 @@ def one_moon_outside_cat(cat, other_clan_cats: list = None):
             # exclude the roles that don't really retire
             if cat.status.rank not in (CatRank.LEADER, CatRank.MEDICINE_CAT):
                 cat.status._change_rank(CatRank.ELDER)
+
+    neutered_this_moon = False
+    attempted_to_be_neutered = False
+
+    if tnr_setting:
+        # tnr
+        if not cat.dead and cat.moons > 2:
+            if cat.status.rank == CatRank.KITTYPET:
+                if cat.moons <= 12 and random.randint(1, 9) == 1:
+                    cat.neutered = True
+                    cat.give_kittypet_message = True
+                    neutered_this_moon = True
+
+                elif cat.moons <= 24 and random.randint(1, 50) == 1:
+                    cat.neutered = True
+                    cat.give_kittypet_message = True
+                    neutered_this_moon = True
+
+                elif random.randint(1, 250) == 1:
+                    cat.neutered = True
+                    cat.give_kittypet_message = True
+                    neutered_this_moon = True
+
+            ''' I don't know what to do here, sorry.
+            elif cat.status != "driven off":
+                if cat.moons <= 12 and random.randint(1, 15) == 1:
+                    if cat.give_kittypet_message and cat.neutered and cat.status not in ["loner", "rogue", "former Clancat"]:
+                        attempted_to_be_neutered = True
+                    cat.neutered = True
+                    neutered_this_moon = True
+                    if cat.status in ["loner", "rogue", "former Clancat"]:
+                        cat.already_gave_neutered_message = True
+
+                elif random.randint(1, 100) == 1:
+                    if cat.give_kittypet_message and cat.neutered and cat.status not in ["loner", "rogue", "former Clancat"]:
+                        attempted_to_be_neutered = True
+                    cat.neutered = True
+                    neutered_this_moon = True
+                    if cat.status in ["loner", "rogue", "former Clancat"]:
+                        cat.already_gave_neutered_message = True
+                        '''
+
+        # vaccinate
+        if not cat.dead and cat.moons > 1 and not cat.neutered and cat.status.rank == CatRank.KITTYPET:
+            if cat.moons <= 12 and random.randint(1, 4) == 1:
+                cat.vaccinated = True
+            elif cat.moons <= 24 and random.randint(1, 30) == 1:
+                cat.vaccinated = True
+            elif random.randint(1, 175) == 1:
+                cat.vaccinated = True
+
+            if not cat.dead and "TIPPED" not in cat.pelt.scars and neutered_this_moon and ((cat.status.rank == CatRank.KITTYPET and cat.moons > 12 and random.randint(1, 10) == 1) or cat.status.rank != CatRank.KITTYPET):
+                if attempted_to_be_neutered:
+                    cat.history.add_scar(cat=cat, scar_text="m_c was mistakenly captured by Twolegs who thought {PRONOUN/m_c/subject} needed to be neutered, so {PRONOUN/m_c/poss} ear was tipped to prevent unnecessary stress in the future.")
+                else:
+                    cat.history.add_scar(cat=cat, scar_text="m_c's ear was tipped when {PRONOUN/m_c/subject} {VERB/m_c/were/was} neutered.")
+                cat.pelt.scars.append("TIPPED")
 
     # skill progression needs to be after rank progression
     cat.skills.progress_skill(cat)
@@ -1350,8 +1416,8 @@ def perform_ceremonies(cat):
                         "thoughtful",
                     ]:
                         chance = int(chance / 1.5)
-                    if cat.is_disabled():
-                        chance = int(chance / 2)
+                    if cat.is_disabled() and get_clan_setting("higher_disabled_med_rates"):
+                        chance = int(chance / constants.CONFIG["roles"]["disabled_cat_med_chance_increase"])
 
                     if chance == 0:
                         chance = 1
@@ -1542,6 +1608,7 @@ def _is_suitable_medcat_app(cat) -> bool:
         "troublesome",
         "sneaky",
         "vengeful",
+        "skeptic"
     ]:
         chance = chance * 2
         logger.info("Unsuitable trait, chance updated to %d", round(chance))
@@ -1565,8 +1632,8 @@ def _is_suitable_medcat_app(cat) -> bool:
         chance = chance / 4
         logger.info("beneficial secondary skill, chance updated to %d", round(chance))
 
-    if cat.is_disabled():
-        chance = chance / 2
+    if cat.is_disabled() and get_clan_setting("higher_disabled_med_rates"):
+        chance = int(chance / constants.CONFIG["roles"]["disabled_cat_med_chance_increase"])
 
     if num_med_apps == 0:
         # if there are no apprentices at all, make it slightly easier to get one

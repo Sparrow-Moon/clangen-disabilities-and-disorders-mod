@@ -37,7 +37,9 @@
             "MUSTARD": "yellow",
             "EARTHY": "yellow",
             "SEA": "blue",
-            "BLUEBELL": "blue"
+            "BLUEBELL": "blue",
+			"GHOST": "blue",
+			"VOID": "blue"
         }
     ]
 }

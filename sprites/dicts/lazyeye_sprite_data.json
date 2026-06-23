@@ -1,0 +1,45 @@
+{
+    "spritesheet": [
+        "lazyeyes"
+    ],
+    "sprite_list": [
+        [
+            "YELLOW",
+            "AMBER",
+            "HAZEL",
+            "PALEGREEN",
+            "GREEN",
+            "BLUE",
+            "DARKBLUE",
+            "GREY",
+            "CYAN",
+            "EMERALD",
+            "HEATHERBLUE",
+            "SUNLITICE"
+        ],
+        [
+            "COPPER",
+            "SAGE",
+            "COBALT",
+            "PALEBLUE",
+            "BRONZE",
+            "SILVER",
+            "PALEYELLOW",
+            "GOLD",
+            "GREENYELLOW",
+            "ORANGE",
+            "DAWN",
+            "DUSK"
+        ],
+        [
+            "AURORA",
+            "FOREST",
+            "MUSTARD",
+            "EARTHY",
+            "SEA",
+            "BLUEBELL",
+			"GHOST",
+			"VOID"
+        ]
+    ]
+}

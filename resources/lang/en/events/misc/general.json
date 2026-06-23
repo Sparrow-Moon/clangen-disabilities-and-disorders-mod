@@ -10802,52 +10802,6 @@
         ]
     },
     {
-        "event_id": "gen_misc_transition_from_female1",
-        "location": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "sub_type": [
-            "transition"
-        ],
-        "frequency": 4,
-        "event_text": "m_c has realized that she-cat doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
-        "m_c": {
-            "gender": [
-                "female"
-            ]
-        },
-        "new_gender": [
-            "trans male",
-            "nonbinary"
-        ]
-    },
-    {
-        "event_id": "gen_misc_transition_from_male1",
-        "location": [
-            "any"
-        ],
-        "season": [
-            "any"
-        ],
-        "sub_type": [
-            "transition"
-        ],
-        "frequency": 4,
-        "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
-        "m_c": {
-            "gender": [
-                "male"
-            ]
-        },
-        "new_gender": [
-            "trans female",
-            "nonbinary"
-        ]
-    },
-    {
         "event_id": "gen_injury_scratches_war_lostkit",
         "location": [
             "any"
@@ -14826,33 +14780,431 @@
      "r_c": {}
     },
     {
-    "event_id": "gen_misc_greenleaf_splashdate",
-    "location": ["any", "-desert"],
-    "season": ["greenleaf"],
-    "sub_type": [],
-    "tags": ["romance"],
-    "poi": {
-        "tags": ["water:flowing"]
+		"event_id": "gen_misc_greenleaf_splashdate",
+		"location": ["any", "-desert"],
+		"season": ["greenleaf"],
+		"sub_type": [],
+		"tags": ["romance"],
+		"poi": {
+			"tags": ["water:flowing"]
+		},
+		"frequency": 4,
+		"event_text": "m_c and r_c spend sunhigh frolicking and splashing each other by {POI/tag/water:flowing} to cool off in the sweltering heat.",
+		"m_c": {
+			"age": ["adolescent", "young adult"]
+		},
+		"r_c": {
+			"age": ["adolescent", "young adult"]
+		},
+		"relationships": [
+		{
+			"cats_from": ["m_c"],
+			"cats_to": ["r_c"],
+			"mutual": true,
+			"values": ["romance"],
+			"amount": 10,
+			"log": {
+				"cats_from": "cat_to and cat_from enjoyed splashing each other to beat the heat."
+			}
+		}
+		]
+	},
+    {
+        "event_id": "gen_misc_transition_from_female1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 4,
+        "event_text": "m_c has realized that she-cat doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
+        "m_c": {
+            "gender": [
+                "female"
+            ]
+        },
+        "new_gender": [
+            "trans male",
+            "nonbinary"
+        ]
     },
-    "frequency": 4,
-    "event_text": "m_c and r_c spend sunhigh frolicking and splashing each other by {POI/tag/water:flowing} to cool off in the sweltering heat.",
-    "m_c": {
-        "age": ["adolescent", "young adult"]
+    {
+        "event_id": "gen_misc_transition_from_male1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 4,
+        "event_text": "m_c has realized that tom doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
+        "m_c": {
+            "gender": [
+                "male"
+            ]
+        },
+        "new_gender": [
+            "trans female",
+            "nonbinary"
+        ]
     },
-    "r_c": {
-        "age": ["adolescent", "young adult"]
+    {
+        "event_id": "gen_misc_transition_from_intersex1",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 4,
+        "event_text": "m_c has realized that simply been intersex doesn't describe how {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} anymore.",
+        "m_c": {
+            "gender": [
+                "intersex"
+            ]
+        },
+        "new_gender": [
+            "trans female",
+			"trans male",
+            "nonbinary",
+			"intergender"
+        ]
     },
-    "relationships": [
-        {
-            "cats_from": ["m_c"],
-            "cats_to": ["r_c"],
-            "mutual": true,
-            "values": ["romance"],
-            "amount": 10,
-            "log": {
-  "cats_from": "cat_to and cat_from enjoyed splashing each other to beat the heat."
-                }
-        }
-    ]
-}
+    {
+        "event_id": "gen_misc_transition_to_questioning",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 3,
+        "event_text": "m_c has realized that {PRONOUN/m_c/subject} truly {VERB/m_c/don't/doesn't} know what gender {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} like.",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+            "???"
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_any",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 1,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/poss} gender is different than {PRONOUN/m_c/subject} previously thought.",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+            "nonbinary", 
+			"neutrois", 
+			"agender", 
+			"genderqueer", 
+			"demigirl", 
+			"demiboy", 
+			"demienby", 
+			"genderfluid",
+			"genderfae", 
+			"genderfaun", 
+			"genderflor", 
+			"bigender", 
+			"pangender", 
+			"???"
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_nonbinary",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} nonbinary",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+            "nonbinary"
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_neutrois",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} neutrois",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"neutrois"
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_agender",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} agender",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"agender"
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_genderqueer",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} genderqueer",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"genderqueer"		
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_anydemigender",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} demi",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"demigirl", 
+			"demiboy", 
+			"demienby"		
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_genderfluid",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} genderfluid",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"genderfluid"		
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_genderfae",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} genderfae",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"genderfae"		
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_genderfaun",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} genderfaun",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"genderfaun"		
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_genderflor",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} genderflor",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [ 
+			"genderflor"			
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_bigender",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} bigender",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"bigender"		
+        ]
+    },
+    {
+        "event_id": "gen_misc_transition_to_pangender",
+        "location": [
+            "any"
+        ],
+        "season": [
+            "any"
+        ],
+        "sub_type": [
+            "transition"
+        ],
+        "frequency": 2,
+        "event_text": "m_c has come to the conclusion that {PRONOUN/m_c/subject} {VERB/m_c/are/is} pangender",
+        "m_c": {
+            "gender": [
+                "female",
+				"male",
+				"intersex"
+            ]
+        },
+        "new_gender": [
+			"pangender"	
+        ]
+    }
 ]

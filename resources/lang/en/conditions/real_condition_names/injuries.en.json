@@ -45,7 +45,7 @@
 		"rash": "rash",
 		"acute pain": "acute pain",
 		"wrenched claws": "wrenched claws",
-		"sunblindness": "sunblindness",
+		"sunblindness": "light sensitivity",
 		"earache": "earache",
 		"overstimulation": "overstimulation",
 		"understimulation": "understimulation",
@@ -54,7 +54,7 @@
 		"knee locking": "knee locking",
 		"severe tick bites": "severe tick bites",
 		"nosebleed": "nosebleed",
-		"ashcough": "ashcough",
+		"ashcough": "smoke inhalation",
 		"anaphylaxis": "anaphylaxis",
 		"meltdown": "meltdown",
 		"shutdown": "shutdown",
@@ -64,21 +64,9 @@
 		"derealization": "derealization",
 		"depersonalization": "depersonalization",
 		"abdominal pains": "abdominal pains",
-		"world tired": "world tired",
-		"faux pregnant": "faux pregnant",
+		"world tired": "passive suicidality",
+		"faux pregnant": "phantom pregnancy",
         "pregnant": "pregnant",
-		
-		"overstimulated": "overstimulated",
-		"understimulated": "understimulated",
-		"fainted": "fainted",
-		"fatigued": "fatigued",
-		"melting_down": "in %{con}",
-		"turmoiled_birth": "recovering from a turmoiled birth",
-		
-		"understimulated_for": "has been understimulated for %{moons}",
-		"overstimulated_for": "has been understimulated for %{moons}",
-		"fatigued_for": "has been fatigued for %{moons}",
-		"fainted_for": "has been fainted for %{moons}"
-		
+		"turmoiled_birth": "recovering from postpartum"
     }
 }

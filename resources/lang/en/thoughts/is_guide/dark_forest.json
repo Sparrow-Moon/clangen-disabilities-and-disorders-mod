@@ -2,7 +2,99 @@
     {
         "id": "gen_guide_df",
         "strings": [
-            "Hello. I am here to drag the dead cats of c_n into the Dark Forest."
+            "Here to drag the dead cats of c_n into the Dark Forest",
+			"Sharpens {PRONOUN/m_c/poss} claws watching c_n",
+			"Hisses promises of fear and dread awaiting c_n cats",
+			"Wonders who {PRONOUN/m_c/subject} will get to drag into the Dark Forest next",
+			"Stalks the cats of c_n steadily",
+			"Is ready to curse the cats of c_n to the restless forest",
+			"Is the voice of the Dark Forest",
+			"Plots the downfall and doom of c_n"
         ]
-    }
+    },
+	{
+		"id": "guide_to_aliveleader",
+		"strings": [
+			"Curses r_c's name",
+			"Can't wait to drag r_c into the Dark Forest",
+			"Imagines hunting r_c in the murk of the Dark Forest",
+			"Stalks r_c's dreams with vicious eagerness",
+			"Whispers in r_c's ears about how c_n is doomed to the Dark Forest"
+		],
+        "involved_cats": {
+            "r_c": {
+                "status": [
+                    "leader"
+                ],
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_alivemeddie",
+		"strings": [
+			"Mocks r_c in {PRONOUN/r_c/poss} dreams",
+			"Knows r_c can't save c_n from {PRONOUN/m_c/object}"
+		],
+        "involved_cats": {
+            "r_c": {
+                "status": [
+                    "medicine cat",
+                    "medicine cat apprentice"
+                ],
+                "group": [
+                    "-afterlife"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_dead_DF",
+		"strings": [
+			"Mocks r_c for thinking {PRONOUN/r_c/subject} would go anywhere other than here",
+			"Hisses at r_c for interupting {PRONOUN/m_c/poss} plotting against c_n",
+			"Purrs over r_c's downfall",
+			"Lists off all r_c's crimes until {PRONOUN/r_c/subject} {VERB/r_c/cry/cries",
+			"Wishes that r_c would fade already",
+			"Encourages r_c's plotting against c_n",
+			"Brags about how easy r_c was to corrupt"
+		],
+        "involved_cats": {
+            "r_c": {
+                "group": [
+                    "dark_forest"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_dead_SC",
+		"strings": [
+			"Wonders how r_c is doing in StarClan",
+			"Saw r_c at the edge of the afterlives and tried to drag {PRONOUN/r_c/object} into the Dark Forest",
+			"Knows that r_c really belongs here under {PRONOUN/m_c/poss} paw"
+		],
+        "involved_cats": {
+            "r_c": {
+                "group": [
+                    "starclan"
+                ]
+            }
+        }
+	},
+	{
+		"id": "guide_to_dead_UR",
+		"strings": [
+			"Can't find r_c anywhere"
+		],
+        "involved_cats": {
+            "r_c": {
+                "group": [
+                    "unknown_residence"
+                ]
+            }
+        }
+	}				
 ]

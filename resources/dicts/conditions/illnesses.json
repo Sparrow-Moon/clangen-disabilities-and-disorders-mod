@@ -1096,7 +1096,7 @@
 					"betony"
 				],
 				"2": [
-				"	catmint"				
+				  "catmint"
 				],
 				"3": []
 		}
@@ -1160,7 +1160,7 @@
 					"betony"
 				],
 				"2": [
-				"	catmint"				
+				  "catmint"
 				],
 				"3": []
 		}
@@ -1680,7 +1680,7 @@
 		"herbs": {
 			"1": [
 				"juniper",
-				"thyme",
+				"thyme"
 			],
 			"2": [
 				"poppy",
@@ -2522,8 +2522,8 @@
 			"1": [
 				"chamomile"
 			],
-			"2": [,
-				"goldenrod"
+			"2": [
+				"goldenrod",
 				"daisy"
 			],
 			"3": [
@@ -2561,137 +2561,6 @@
 				"thyme",
 				"poppy"
 			],
-			"2": [],
-			"3": []
-		}
-    },
-    "amnesia": {
-        "severity": "minor",
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "medicine_mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "duration": 2,
-        "medicine_duration": 1,
-        "infectiousness": 0,
-        "risks": [
-            {
-                "name": "verbal shutdown",
-                "chance": 10
-            },
-            {
-                "name": "brain fog",
-                "chance": 10
-            }
-        ],
-        "herbs": {
-			"1": [
-				"chamomile"
-			],
-			"2": [],
-			"3": []
-		}
-    },
-    "derealization": {
-        "severity": "minor",
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "medicine_mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "duration": 2,
-        "medicine_duration": 1,
-        "infectiousness": 0,
-        "risks": [
-            {
-                "name": "verbal shutdown",
-                "chance": 10
-            },
-            {
-                "name": "brain fog",
-                "chance": 10
-            },
-            {
-                "name": "depersonalization",
-                "chance": 20
-            }
-        ],
-        "herbs": {
-			"1": [],
-			"2": [],
-			"3": []
-		}
-    },
-    "depersonalization": {
-        "severity": "minor",
-        "mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "medicine_mortality": {
-            "newborn": 0,
-            "kitten": 0,
-            "adolescent": 0,
-            "young adult": 0,
-            "adult": 0,
-            "senior adult": 0,
-            "senior": 0
-        },
-        "duration": 2,
-        "medicine_duration": 1,
-        "infectiousness": 0,
-        "risks": [
-            {
-                "name": "verbal shutdown",
-                "chance": 10
-            },
-            {
-                "name": "brain fog",
-                "chance": 10
-            },
-            {
-                "name": "amensia",
-                "chance": 10
-            },
-            {
-                "name": "derealization",
-                "chance": 20
-            }
-        ],
-        "herbs": {
-			"1": [],
 			"2": [],
 			"3": []
 		}
@@ -3336,7 +3205,6 @@
 				"name": "burn out",
 				"chance": 20
 			}
-		],
 		],
         "herbs": {
 			"1": [
