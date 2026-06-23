@@ -2286,14 +2286,20 @@ class ProfileScreen(Screens):
 
     def get_alter_details(self, alter):
         text_list = []
-        text_list.append(i18n.t(f"conditions.alters.{alter['gender']}"))
+        
+        gender = alter['gender']
+        text_list.append(i18n.t(f"conditions.alters.{gender}"))
         
         if "personality" in alter:
-            text_list.append(i18n.t(f"<b>conditions.alters.{alter['personality']}</b><br>"))
-        text_list.append(i18n.t(f"conditions.alters.{alter['role']}"))
+            personality = alter['personality']
+            text_list.append(i18n.t(f"cat.personality.{personality}"))
         
-        if alter['other'] != "cat":
-            text_list.append(i18n.t(f"conditions.alters.{alter['other']}"))
+        role = alter['role']
+        text_list.append(i18n.t(f"conditions.alters.{role}"))
+        
+        if alter["other"] != "cat":
+            other = alter["other"]
+            text_list.append(i18n.t(f"conditions.alters.{other}"))
         
         text_list.append(i18n.t(f"<i>conditions.alters.origin_label</i>", alter=alter['origin']))
         text = "<br>".join(text_list)
@@ -3000,6 +3006,9 @@ class ProfileScreen(Screens):
             self.right_conditions_arrow.kill()
             self.conditions_background.kill()
             self.condition_container.kill()
+            for data in self.condition_data.values():
+                data.kill()
+            self.condition_data = {}
 
         self.open_tab = None
 

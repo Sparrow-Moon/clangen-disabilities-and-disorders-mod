@@ -2882,7 +2882,7 @@ class Cat:
                     alter["origin"] = "core"
                     alter["splits"] = []
                 if "personality" not in alter:
-                    alter["personality"] = self.personality
+                    alter["personality"] = self.personality.trait
 
     def get_permanent_condition(self, name, born_with=False, event_triggered=False, starting_moon=0):
         if self.dead:
@@ -3212,6 +3212,10 @@ class Cat:
 
         if self.is_disabled():
             conditions["permanent conditions"] = self.permanent_condition
+
+        if self.is_plural():
+            self.update_alters()
+            conditions["alters"] = self.alters
 
         safe_save(condition_file_path, conditions)
 
