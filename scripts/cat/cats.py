@@ -380,9 +380,9 @@ class Cat:
 
         # for testing conditions for dadm
         
-        if not self.example:
+        '''if not self.example:
             new_condition = choice(["fractured spirit", "budding spirit", "branching soul"])
-            self.get_permanent_condition("budding spirit", born_with=True)
+            self.get_permanent_condition("budding spirit", born_with=True)'''
 
         # Private Sprite
         self._sprite: Optional["pygame.Surface"] = None
