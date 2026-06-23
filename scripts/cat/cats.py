@@ -2153,6 +2153,8 @@ class Cat:
                 gender = "female"
             template["gender"] = gender
             alter_name = ""
+            
+            alter_personality = choice(alter_traits)
         
             if template["other"] == "fictive" or template["other"] == "fuzztive":
                 canon_chance = randint(1,5)
@@ -3236,9 +3238,37 @@ class Cat:
                 self.illnesses = rel_data.get("illnesses", {})
                 self.injuries = rel_data.get("injuries", {})
                 self.permanent_condition = rel_data.get("permanent conditions", {})
+                for con in self.permanent_condition:
+                    if "misdiagnosis" not in con:
+                        self.permanent_condition[con]["misdiagnosis"] = False
+                if self.is_plural():
+                    self.alters = rel_data["alters"]
+                    self.update_alters()
 
             if "paralyzed" in self.permanent_condition and not self.pelt.paralyzed:
                 self.pelt.paralyzed = True
+
+            ##UPDATE NAME CHANGES
+            if "heavy soul" in self.permanent_condition:
+                congenital = self.permanent_condition["heavy soul"][born_with]
+                start = self.permanent_condition["heavy soul"][moon_start]
+                del self.permanent_condition["heavy soul"]
+                self.get_permanent_condition("weighted heart", born_with=congenital, starting_moon=-1)
+            if "starwalker" in self.permanent_condition:
+                congenital = self.permanent_condition["starwalker"][born_with]
+                start = self.permanent_condition["starwalker"][moon_start]
+                del self.permanent_condition["starwalker"]
+                self.get_permanent_condition("prismatic mind", born_with=congenital, starting_moon=-1)
+            if "shattered soul" in self.permanent_condition:
+                congenital = self.permanent_condition["shattered soul"][born_with]
+                start = self.permanent_condition["shattered soul"][moon_start]
+                del self.permanent_condition["shattered soul"]
+                self.get_permanent_condition("branching soul", born_with=congenital, starting_moon=-1)
+
+            if "stimming" in self.illnesses and not self.pelt.blep:
+                self.pelt.blep = True
+            else:
+                self.pelt.blep = False
 
         except Exception as e:
             print(

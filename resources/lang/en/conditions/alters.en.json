@@ -1,6 +1,12 @@
 {
     "en": {
         "alters": "alters",
+
+		"male": "male",
+		"female": "female",
+		"intersex": "intersex",
+		"intergender": "intergender",
+		"null": "null",
 		"nonbinary": "nonbinary", 
 		"neutrois": "neutrois", 
 		"agender": "agender", 
@@ -15,12 +21,16 @@
 		"bigender": "bigender", 
 		"pangender": "pangender", 
 		"???": "???",
+		
+		"host": "host",
 		"co-host": "co-host",
 		"caregiver": "caregiver", 
 		"little": "little", 
 		"protector": "protector", 
 		"trauma holder": "trauma holder", 
 		"persecutor": "persecutor",
+		
+		"core": "core",
 		"other": "other",
 		"rogue": "rogue", 
 		"loner": "loner", 

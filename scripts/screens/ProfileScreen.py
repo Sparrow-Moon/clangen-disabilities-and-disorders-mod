@@ -2113,7 +2113,7 @@ class ProfileScreen(Screens):
             x.kill()
         self.condition_data = {}
 
-        for con in all_illness_injuries[self.alters_page]:
+        for con in all_illness_injuries[self.conditions_page]:
             # Background Box
             self.condition_data[f"bg_{con}"] = pygame_gui.elements.UIPanel(
                 ui_scale(pygame.Rect((x_pos, 13), (142, 142))),
@@ -2291,7 +2291,9 @@ class ProfileScreen(Screens):
         text_list.append(i18n.t(f"conditions.alters.{gender}"))
         
         if "personality" in alter:
-            personality = alter['personality']
+            personality = (alter['personality'] if alter['personality'] != "none"
+                           else "unknown")
+
             text_list.append(i18n.t(f"cat.personality.{personality}"))
         
         role = alter['role']
@@ -2301,7 +2303,8 @@ class ProfileScreen(Screens):
             other = alter["other"]
             text_list.append(i18n.t(f"conditions.alters.{other}"))
         
-        text_list.append(i18n.t(f"<i>conditions.alters.origin_label</i>", alter=alter['origin']))
+
+        text_list.append(i18n.t(f"conditions.alters.origin_label", alter=alter['origin']))
         text = "<br>".join(text_list)
         return text
 
@@ -3000,6 +3003,7 @@ class ProfileScreen(Screens):
             for data in self.condition_data.values():
                 data.kill()
             self.condition_data = {}
+
 
         elif self.open_tab == "alters":
             self.left_conditions_arrow.kill()
