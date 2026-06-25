@@ -54,7 +54,7 @@ class Sprites:
         SKIN_DATA = ujson.loads(read_file.read())
 
     with open(
-        "sprites/dicts/skin_blep_sprite_data.json", "r", encoding="utf-8"
+        "sprites/dicts/blep_sprite_data.json", "r", encoding="utf-8"
     ) as read_file:
         BLEP_DATA = ujson.loads(read_file.read())
 

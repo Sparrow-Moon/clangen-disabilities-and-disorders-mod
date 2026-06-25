@@ -366,6 +366,7 @@ def generate_sprite(
                                 (0, 0),
                             )
 
+        # This is supposed to enable blep tongues
         if cat.pelt.blep:
             sprite_name = f"{sprites.BLEP_DATA['spritesheet']}{cat.pelt.skin}{cat_sprite}"
             new_sprite.blit(sprites.sprites[sprite_name], (0, 0))
