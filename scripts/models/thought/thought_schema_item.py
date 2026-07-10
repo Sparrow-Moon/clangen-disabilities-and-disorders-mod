@@ -7,10 +7,8 @@ from pydantic_core import MISSING
 
 from scripts.models.common.season import Season
 from scripts.models.shortevent.location import Location
-from scripts.models.thought.relationship_constraint_dict import (
-    ThoughtRelationshipConstraint,
-)
-from scripts.thoughts.text_pool_event.involved_cats import InvolvedCats
+from scripts.models.thought.involved_cats import InvolvedCats
+from scripts.models.thought.relationship_constraint_dict import RelationshipConstraint
 from scripts.models.thought.tag import Tag
 
 
@@ -39,9 +37,7 @@ class ThoughtSchemaItem(BaseModel):
         MISSING,
         description="Used to add constraints for the various involved cats.",
     )
-    relationship_constraint: Union[
-        List[ThoughtRelationshipConstraint], MISSING
-    ] = Field(
+    relationship_constraint: Union[List[RelationshipConstraint], MISSING] = Field(
         MISSING,
         description="Used to require specific relationships between the cats",
     )

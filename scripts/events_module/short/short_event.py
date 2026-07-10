@@ -227,7 +227,7 @@ class ShortEvent:
         self.dead_cat_objects.clear()
 
         if other_clan:
-            self.other_clan_name = other_clan.name
+            self.other_clan_name = i18n.t("general.clan", name=other_clan.name)
 
         self.all_involved_cat_ids.append(self.main_cat.ID)
 
@@ -598,7 +598,7 @@ class ShortEvent:
                     game.clan.leader_lives -= 1
 
                 cat.die(body)
-                self.additional_event_text = get_leader_life_notice(cat.name)
+                self.additional_event_text = get_leader_life_notice()
 
             else:
                 cat.die(body)
@@ -750,16 +750,15 @@ class ShortEvent:
             # new_cat history
             for abbr in block["cats"]:
                 if "n_c" in abbr:
-                    index = int(abbr.replace("n_c:", ""))
-                    for new_cat in self.new_cats[index]:
-                        if new_cat.dead:
+                    for i, new_cat_objects in enumerate(self.new_cats):
+                        if new_cat_objects[i].dead:
                             death_history = history_text_adjust(
                                 block.get("death"),
                                 self.other_clan_name,
                                 game.clan,
                                 self.random_cat,
                             )
-                            new_cat.history.add_death(
+                            new_cat_objects[i].history.add_death(
                                 death_history, other_cat=self.random_cat
                             )
 
@@ -804,11 +803,12 @@ class ShortEvent:
 
                 # NEW CATS
                 elif "n_c" in abbr:
-                    index = int(abbr.replace("n_c:", ""))
-                    for new_cat in self.new_cats[index]:
+                    for i, new_cat_objects in enumerate(self.new_cats):
                         injury = choice(possible_injuries)
-                        new_cat.get_injured(injury, potential_scars=potential_scars)
-                        self.handle_injury_history(new_cat, abbr, injury)
+                        new_cat_objects[i].get_injured(
+                            injury, potential_scars=potential_scars
+                        )
+                        self.handle_injury_history(new_cat_objects[i], abbr, injury)
 
     def handle_injury_history(self, cat, cat_abbr, injury=None):
         """

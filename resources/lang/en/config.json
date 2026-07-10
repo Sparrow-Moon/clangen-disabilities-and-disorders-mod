@@ -69,8 +69,5 @@
             }
         ]
     },
-    "oxford_comma": true,
-    "names": {
-        "clans_can_have_cat_prefixes": true
-    }
+    "oxford_comma": true
 }

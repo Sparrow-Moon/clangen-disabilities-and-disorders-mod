@@ -172,6 +172,9 @@ class SettingsScreen(Screens):
             elif event.ui_element == self.general_settings_button:
                 self.open_general_settings()
                 return
+            elif event.ui_element == self.trigger_settings_button:
+                self.open_trigger_settings()
+                return
             elif event.ui_element == self.audio_settings_button:
                 self.open_audio_settings()
             elif event.ui_element == self.info_button:
@@ -179,21 +182,25 @@ class SettingsScreen(Screens):
                 return
             elif event.ui_element == self.language_button:
                 self.open_lang_settings()
-            if self.sub_menu in ("general", "relation", "language"):
+            if self.sub_menu in ("general", "relation", "language", "triggers"):
                 self.handle_checkbox_events(event)
 
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 self.change_screen(GameScreen.START)
             elif event.key == pygame.K_RIGHT:
-                if self.sub_menu == "general":
+                if self.sub_menu == 'general':
+                    self.open_trigger_settings()
+                elif self.sub_menu == 'triggers':
                     self.open_info_screen()
-                elif self.sub_menu == "info":
+                elif self.sub_menu == 'info':
                     self.open_lang_settings()
             elif event.key == pygame.K_LEFT:
-                if self.sub_menu == "info":
-                    self.open_general_settings()
-                elif self.sub_menu == "language":
+                if self.sub_menu == 'info':
+                    self.open_trigger_settings()
+                elif self.sub_menu == 'triggers':
+                    self.open_general_settings()    
+                elif self.sub_menu == 'language':
                     self.open_info_screen()
 
     def handle_checkbox_events(self, event):
@@ -245,40 +252,48 @@ class SettingsScreen(Screens):
         self._discord_at_open = game_setting_get("discord")
 
         self.general_settings_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((100, 100), (150, 30))),
+            ui_scale(pygame.Rect((100, 100), (135, 30))),
             "screens.settings.general",
-            get_button_dict(ButtonStyles.MENU_LEFT, (150, 30)),
+            get_button_dict(ButtonStyles.MENU_LEFT, (135, 30)),
             object_id="@buttonstyles_menu_left",
             manager=MANAGER,
-        )
-        self.audio_settings_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((0, 100), (150, 30))),
-            "screens.settings.audio",
-            get_button_dict(ButtonStyles.MENU_MIDDLE, (150, 30)),
+        )        
+        self.trigger_settings_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((0, 100), (135, 30))),
+            "screens.settings.triggers",
+            get_button_dict(ButtonStyles.MENU_MIDDLE, (135, 30)),
             object_id="@buttonstyles_menu_middle",
             manager=MANAGER,
             anchors={"left_target": self.general_settings_button},
         )
+        self.audio_settings_button = UISurfaceImageButton(
+            ui_scale(pygame.Rect((0, 100), (135, 30))),
+            "screens.settings.audio",
+            get_button_dict(ButtonStyles.MENU_MIDDLE, (135, 30)),
+            object_id="@buttonstyles_menu_middle",
+            manager=MANAGER,
+            anchors={"left_target": self.trigger_settings_button},
+        )
         self.info_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((0, 100), (150, 30))),
+            ui_scale(pygame.Rect((0, 100), (100, 30))),
             "screens.settings.info",
-            get_button_dict(ButtonStyles.MENU_MIDDLE, (150, 30)),
+            get_button_dict(ButtonStyles.MENU_MIDDLE, (100, 30)),
             object_id="@buttonstyles_menu_middle",
             manager=MANAGER,
             anchors={"left_target": self.audio_settings_button},
         )
         self.language_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((0, 100), (150, 30))),
+            ui_scale(pygame.Rect((0, 100), (135, 30))),
             "screens.settings.language",
-            get_button_dict(ButtonStyles.MENU_RIGHT, (150, 30)),
+            get_button_dict(ButtonStyles.MENU_RIGHT, (135, 30)),
             object_id="@buttonstyles_menu_right",
             manager=MANAGER,
             anchors={"left_target": self.info_button},
         )
         self.save_settings_button = UISurfaceImageButton(
-            ui_scale(pygame.Rect((0, 550), (150, 30))),
+            ui_scale(pygame.Rect((0, 550), (135, 30))),
             "buttons.save_settings",
-            get_button_dict(ButtonStyles.SQUOVAL, (150, 30)),
+            get_button_dict(ButtonStyles.SQUOVAL, (135, 30)),
             object_id="@buttonstyles_squoval",
             manager=MANAGER,
             anchors={"centerx": "centerx"},
@@ -349,6 +364,8 @@ class SettingsScreen(Screens):
         self.clear_sub_settings_buttons_and_text()
         self.general_settings_button.kill()
         del self.general_settings_button
+        self.trigger_settings_button.kill()
+        del self.trigger_settings_button
         self.audio_settings_button.kill()
         del self.audio_settings_button
         self.info_button.kill()
@@ -390,6 +407,53 @@ class SettingsScreen(Screens):
         if game.clan:
             for cat in Cat.all_cats_list:
                 cat.pelt.rebuild_sprite = True
+
+    def open_trigger_settings(self):
+        """Opens and draws general_settings"""
+        self.enable_all_menu_buttons()
+        self.trigger_settings_button.disable()
+        self.clear_sub_settings_buttons_and_text()
+        self.sub_menu = "triggers"
+        self.save_settings_button.show()
+
+        self.checkboxes_text["container_triggers"] = UIModifiedScrollingContainer(
+            ui_scale(pygame.Rect((0, 220), (700, 300))),
+            allow_scroll_x=False,
+            allow_scroll_y=True,
+            manager=MANAGER,
+        )
+
+        for i, (code, desc) in enumerate(settings_dict["triggers"].items()):
+            self.checkboxes_text[code] = pygame_gui.elements.UITextBox(
+                f"settings.{code}",
+                ui_scale(pygame.Rect((225, 34 if i < 0 else 0), (500, 34))),
+                container=self.checkboxes_text["container_triggers"],
+                object_id=get_text_box_theme("#text_box_30_horizleft_vertcenter"),
+                manager=MANAGER,
+                anchors=(
+                    {"top_target": self.checkboxes_text[list(self.checkboxes_text)[-1]]}
+                    if i > 0
+                    else None
+                ),
+            )
+            self.checkboxes_text[code].disable()
+
+        self.checkboxes_text["container_triggers"].set_scrollable_area_dimensions(
+            ui_scale_dimensions((680, (len(settings_dict["triggers"].keys()) * 39 + 40)))
+        )
+
+        self.checkboxes_text["instr"] = pygame_gui.elements.UITextBox(
+            "screens.settings.triggers_info",
+            ui_scale(pygame.Rect((100, 160), (600, 100))),
+            object_id=get_text_box_theme("#text_box_30_horizcenter"),
+            manager=MANAGER,
+        )
+
+        # This is where the actual checkboxes are created. I don't like
+        #   how this is separated from the text boxes, but I've spent too much time to rewrite it.
+        #   It has to separated because the checkboxes must be updated when settings are changed.
+        #   Fix if you want. - keyraven
+        self.refresh_checkboxes()
 
     def open_general_settings(self):
         """Opens and draws general_settings"""
@@ -873,6 +937,9 @@ class SettingsScreen(Screens):
         if "container_general" in self.checkboxes_text:
             self.checkboxes_text["container_general"].kill()
 
+        if "container_triggers" in self.checkboxes_text:
+            self.checkboxes_text["container_triggers"].kill()
+
         for checkbox in self.checkboxes.values():
             checkbox.kill()
         self.checkboxes = {}
@@ -888,6 +955,7 @@ class SettingsScreen(Screens):
         TODO: DOCS
         """
         self.general_settings_button.enable()
+        self.trigger_settings_button.enable()
         self.info_button.enable()
         self.language_button.enable()
         self.audio_settings_button.enable()

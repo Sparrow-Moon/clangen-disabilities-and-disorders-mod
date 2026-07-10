@@ -67,18 +67,17 @@ class ChooseSymbolScreen(MakeClanScreenBase):
                 "top_target": self.text["clan_name"],
             },
         )
-        if self.clan_info.leader:
-            self.text["leader"] = pygame_gui.elements.UILabel(
-                ui_scale(pygame.Rect((0, 5), (-1, -1))),
-                text="screens.make_clan.symbol_leader",
-                container=self.elements["text_container"],
-                object_id=get_text_box_theme("#text_box_30_horizleft"),
-                manager=MANAGER,
-                text_kwargs={"prefix": self.clan_info.leader.name.prefix},
-                anchors={
-                    "top_target": self.text["biome"],
-                },
-            )
+        self.text["leader"] = pygame_gui.elements.UILabel(
+            ui_scale(pygame.Rect((0, 5), (-1, -1))),
+            text="screens.make_clan.symbol_leader",
+            container=self.elements["text_container"],
+            object_id=get_text_box_theme("#text_box_30_horizleft"),
+            manager=MANAGER,
+            text_kwargs={"prefix": self.clan_info.leader.name.prefix},
+            anchors={
+                "top_target": self.text["biome"],
+            },
+        )
         self.text["recommend"] = pygame_gui.elements.UILabel(
             ui_scale(pygame.Rect((0, 5), (-1, -1))),
             text="screens.make_clan.symbol_recommended",
@@ -94,9 +93,7 @@ class ChooseSymbolScreen(MakeClanScreenBase):
                 )
             },
             anchors={
-                "top_target": self.text.get("leader")
-                if self.text.get("leader")
-                else self.text.get("biome"),
+                "top_target": self.text["leader"],
             },
         )
         self.text["selected"] = pygame_gui.elements.UILabel(
