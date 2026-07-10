@@ -1,12 +1,12 @@
 {
     "en": {
         "untrained": "untrained",
-        "trainee": "trainee",
+        "learning": "learning",
         "prepared": "prepared",
-        "competent": "competent",
+        "capable": "capable",
         "proficient": "proficient",
-        "expert": "expert",
-        "master": "master",
+        "adept": "adept",
+        "masterful": "masterful",
         "teaching": "teaching",
         "quick to help": "quick to help",
         "good teacher": "good teacher",
@@ -136,6 +136,5 @@
         "night owl": "night owl", 
         "moon watcher": "moon watcher", 
         "moonlight warrior": "moonlight warrior"
-		
     }
 }

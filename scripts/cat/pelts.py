@@ -426,6 +426,33 @@ class Pelt:
         self.rebuild_sprite = True
         self._paralyzed = val
 
+    @property
+    def accessory(self):
+        return self._accessory
+
+    @accessory.setter
+    def accessory(self, val):
+        self.rebuild_sprite = True
+        self._accessory = val
+
+    @property
+    def scars(self):
+        return self._scars
+
+    @scars.setter
+    def scars(self, val):
+        self.rebuild_sprite = True
+        self._scars = val
+
+    @property
+    def paralyzed(self):
+        return self._paralyzed
+
+    @paralyzed.setter
+    def paralyzed(self, val):
+        self.rebuild_sprite = True
+        self._paralyzed = val
+
     @staticmethod
     def generate_new_pelt(gender: str, parents: tuple = (), age: str = "adult"):
         new_pelt = Pelt()
