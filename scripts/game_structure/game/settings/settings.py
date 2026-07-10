@@ -86,7 +86,7 @@ for setting, values in _game_settings["other"].items():
     settings[setting] = values[0]
     setting_lists[setting] = values
 
-_ = [_game_settings["general"]]
+_ = [_game_settings["general"], _game_settings["triggers"]]
 
 for cat in _:  # Add all the settings to the settings dictionary
     for setting_name, default in cat.items():

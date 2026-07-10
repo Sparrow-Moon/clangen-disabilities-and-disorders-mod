@@ -2,6 +2,8 @@
     "en": {
         "general": "general settings",
         "general_info": "Change the general settings of your game here.\nMore settings are available in the settings page of your Clan.",
+        "triggers": "trigger settings",
+        "triggers_info": "Change the settings related to triggering content here.",
         "audio": "audio settings",
         "audio_info": "Change the settings for the game audio here.",
         "ambiance_volume": "Ambiance Volume:",
