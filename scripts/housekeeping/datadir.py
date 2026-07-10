@@ -52,11 +52,8 @@ def get_cache_dir():
     return get_data_dir() + "/cache"
 
 
-
 def get_temp_dir():
     return get_data_dir() + "/.temp"
-
-
 
 def get_saved_images_dir():
     return get_data_dir() + "/saved_images"

@@ -549,6 +549,7 @@ class RelationshipScreen(Screens):
                 gender_icon = image_cache.load_image(
                     "resources/images/nonbi_big.png"
                 ).convert_alpha()
+
             gender_rect = ui_scale(pygame.Rect((0, 0), (34, 34)))
             gender_rect.topright = ui_scale_offset((-3, 3))
             self.inspect_cat_elements["gender"] = pygame_gui.elements.UIImage(
